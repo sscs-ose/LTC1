@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DRC runset</description>
+ <original-file/>
+ <generator>drc: script='/home/ethan/openmpw/pdk_1/gf180mcuC/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>inv</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>ANT.1</name>
+   <description>ANT.1: Maximum ratio of Poly2 perimeter area to related gate oxide area is 200</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.8</name>
+   <description>ANT.8: Maximum ratio of contact area to related gate oxide area is 10</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.2</name>
+   <description>ANT.16_i_ANT.2: Maximum ratio of Metal1 perimeter area to related thin gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.2</name>
+   <description>ANT.16_ii_ANT.2: Maximum ratio of Metal1 perimeter area to related thick gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.9</name>
+   <description>ANT.16_i_ANT.9: Maximum ratio of Via1 area to related thin gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.9</name>
+   <description>ANT.16_ii_ANT.9: Maximum ratio of Via1 area to related thick gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.3</name>
+   <description>ANT.16_i_ANT.3: Maximum ratio of Metal2 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.3</name>
+   <description>ANT.16_ii_ANT.3: Maximum ratio of Metal2 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.10</name>
+   <description>ANT.16_i_ANT.10: Maximum ratio of Via2 area to related thin gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.10</name>
+   <description>ANT.16_ii_ANT.10: Maximum ratio of Via2 area to related thick gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.4</name>
+   <description>ANT.16_i_ANT.4: Maximum ratio of Metal3 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.4</name>
+   <description>ANT.16_ii_ANT.4: Maximum ratio of Metal3 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.11</name>
+   <description>ANT.16_i_ANT.11: Maximum ratio of Via3 area to related thin gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.11</name>
+   <description>ANT.16_ii_ANT.11: Maximum ratio of Via3 area to related thick gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.5</name>
+   <description>ANT.16_i_ANT.5: Maximum ratio of Metal4 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.5</name>
+   <description>ANT.16_ii_ANT.5: Maximum ratio of Metal4 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.12</name>
+   <description>ANT.16_i_ANT.12: Maximum ratio of Via4 area to related thin gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.12</name>
+   <description>ANT.16_ii_ANT.12: Maximum ratio of Via4 area to related thick gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.6</name>
+   <description>ANT.16_i_ANT.6: Maximum ratio of Metal5 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.6</name>
+   <description>ANT.16_ii_ANT.6: Maximum ratio of Metal5 perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.13</name>
+   <description>ANT.16_i_ANT.13: Maximum ratio of Via5 area to related thin gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.13</name>
+   <description>ANT.16_ii_ANT.13: Maximum ratio of Via5 area to related thick gate oxide area is 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.7</name>
+   <description>ANT.16_i_ANT.7: Maximum ratio of Metaltop perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.7</name>
+   <description>ANT.16_ii_ANT.7: Maximum ratio of Metaltop perimeter area to related gate oxide area is 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.1a_3.3V</name>
+   <description>DF.1a_3.3V : Min. COMP Width. : 0.22µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.1a_5V</name>
+   <description>DF.1a_5V : Min. COMP Width. : 0.3µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.1c</name>
+   <description>DF.1c : Min. COMP Width for MOSCAP. : 1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.2a_3.3V</name>
+   <description>DF.2a_3.3V : Min Channel Width. : 0.22µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.2a_5V</name>
+   <description>DF.2a_5V : Min Channel Width. : nil,0.3µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.2b</name>
+   <description>DF.2b : Max. COMP width for all cases except those used for capacitors, marked by 'MOS_CAP_MK' layer: 100um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.3a_3.3V</name>
+   <description>DF.3a_3.3V : Min. COMP Space is : 0.28µm. [P-substrate tap (PCOMP outside NWELL and DNWELL) can be butted for different voltage devices as the potential is same]</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.3a_5V</name>
+   <description>DF.3a_5V :  Min. COMP Space is : 0.36µm. [P-substrate tap (PCOMP outside NWELL and DNWELL) can be butted for different voltage devices as the potential is same]</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.3b</name>
+   <description>DF.3b : Min./Max. NCOMP Space to PCOMP in the same well for butted COMP (MOSCAP butting is not allowed): 0 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.3c_3.3V</name>
+   <description>DF.3c_3.3V : Min. COMP Space in BJT area (area marked by DRC_BJT layer). : 0.32µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.3c_5V</name>
+   <description>DF.3c_5V : Min. COMP Space in BJT area (area marked by DRC_BJT layer) hasn't been assessed.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4a_3.3V</name>
+   <description>DF.4a_3.3V : Min. (LVPWELL Space to NCOMP well tap) inside DNWELL. : 0.12µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4a_5V</name>
+   <description>DF.4a_5V : Min. (LVPWELL Space to NCOMP well tap) inside DNWELL. : 0.16µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4b_3.3V</name>
+   <description>DF.4b_3.3V : Min. DNWELL overlap of NCOMP well tap. : 0.62µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4b_5V</name>
+   <description>DF.4b_5V : Min. DNWELL overlap of NCOMP well tap. : 0.66µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4c_3.3V</name>
+   <description>DF.4c_3.3V : Min. (Nwell overlap of PCOMP) outside DNWELL. : 0.43µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4c_5V</name>
+   <description>DF.4c_5V : Min. (Nwell overlap of PCOMP) outside DNWELL. : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4d_3.3V</name>
+   <description>DF.4d_3.3V : Min. (Nwell overlap of NCOMP) outside DNWELL. : 0.12µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4d_5V</name>
+   <description>DF.4d_5V : Min. (Nwell overlap of NCOMP) outside DNWELL. : 0.16µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4e_3.3V</name>
+   <description>DF.4e_3.3V : Min. DNWELL overlap of PCOMP. : 0.93µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.4e_5V</name>
+   <description>DF.4e_5V : Min. DNWELL overlap of PCOMP. : 1.1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.5_3.3V</name>
+   <description>DF.5_3.3V : Min. (LVPWELL overlap of PCOMP well tap) inside DNWELL. : 0.12µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.5_5V</name>
+   <description>DF.5_5V : Min. (LVPWELL overlap of PCOMP well tap) inside DNWELL. : 0.16µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.6_3.3V</name>
+   <description>DF.6_3.3V : Min. COMP extend beyond gate (it also means source/drain overhang). : 0.24µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.6_5V</name>
+   <description>DF.6_5V : Min. COMP extend beyond gate (it also means source/drain overhang). : 0.4µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.7_3.3V</name>
+   <description>DF.7_3.3V : Min. (LVPWELL Spacer to PCOMP) inside DNWELL. : 0.43µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.7_5V</name>
+   <description>DF.7_5V : Min. (LVPWELL Spacer to PCOMP) inside DNWELL. : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.8_3.3V</name>
+   <description>DF.8_3.3V : Min. (LVPWELL overlap of NCOMP) Inside DNWELL. : 0.43µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.8_5V</name>
+   <description>DF.8_5V : Min. (LVPWELL overlap of NCOMP) Inside DNWELL. : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.9</name>
+   <description>DF.9 : Min. COMP area (um2). : 0.2025µm²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.10</name>
+   <description>DF.10 : Min. field area (um2). : 0.26µm²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.11</name>
+   <description>DF.11 : Min. Length of butting COMP edge. : 0.3µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.12</name>
+   <description>DF.12 : COMP not covered by Nplus or Pplus is forbidden (except those COMP under marking).</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.13_3.3V</name>
+   <description>DF.13_3.3V : Max distance of Nwell tap (NCOMP inside Nwell) from (PCOMP inside Nwell): 20um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.13_5V</name>
+   <description>DF.13_5V : Max distance of Nwell tap (NCOMP inside Nwell) from (PCOMP inside Nwell): 20um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.14_3.3V</name>
+   <description>DF.14_3.3V : Max distance of substrate tap (PCOMP outside Nwell) from (NCOMP outside Nwell): 20um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.14_3.3V</name>
+   <description>DF.14_3.3V : Max distance of substrate tap (PCOMP outside Nwell) from (NCOMP outside Nwell): 20um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.16_3.3V</name>
+   <description>DF.16_3.3V : Min. space from (Nwell outside DNWELL) to (NCOMP outside Nwell and DNWELL). : 0.43µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.16_5V</name>
+   <description>DF.16_5V : Min. space from (Nwell outside DNWELL) to (NCOMP outside Nwell and DNWELL). : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.17_3.3V</name>
+   <description>DF.17_3.3V : Min. space from (Nwell Outside DNWELL) to (PCOMP outside Nwell and DNWELL). : 0.12µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.17_5V</name>
+   <description>DF.17_5V : Min. space from (Nwell Outside DNWELL) to (PCOMP outside Nwell and DNWELL). : 0.16µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.18</name>
+   <description>DF.18 : Min. DNWELL space to (PCOMP outside Nwell and DNWELL). : 2.5µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.19_3.3V</name>
+   <description>DF.19_3.3V : Min. DNWELL space to (NCOMP outside Nwell and DNWELL). : 3.2µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DF.19_5V</name>
+   <description>DF.19_5V : Min. DNWELL space to (NCOMP outside Nwell and DNWELL). : 3.28µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.1</name>
+   <description>CO.1 : Min/max contact size. : 0.22µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.2a</name>
+   <description>CO.2a : min. contact spacing : 0.25µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.2b</name>
+   <description>CO.2b : Space in 4x4 or larger contact array. : 0.28µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.3</name>
+   <description>CO.3 : Poly2 overlap of contact. : 0.07µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.4</name>
+   <description>CO.4 : COMP overlap of contact. : 0.07µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.5a</name>
+   <description>CO.5a : Nplus overlap of contact on COMP (Only for contacts to butted Nplus and Pplus COMP areas). : 0.1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.5b</name>
+   <description>CO.5b : Pplus overlap of contact on COMP (Only for contacts to butted Nplus and Pplus COMP areas). : 0.1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.6</name>
+   <description>CO.6 : Metal1 overlap of contact &gt;= 0.005 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.6a</name>
+   <description>CO.6a : (i) Metal1 (&lt; 0.34um) end-of-line overlap contact : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.6b</name>
+   <description>CO.6b : (ii) If Metal1 overlaps contact by &lt; 0.04um on one side, adjacent metal1 edges overlap : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.7</name>
+   <description>CO.7 : Space from COMP contact to Poly2 on COMP. : 0.15µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.8</name>
+   <description>CO.8 : Space from Poly2 contact to COMP. : 0.17µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.9</name>
+   <description>CO.9 : Contact on NCOMP to PCOMP butting edge is forbidden (contact must not straddle butting edge).</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.10</name>
+   <description>CO.10 : Contact on Poly2 gate over COMP is forbidden.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>CO.11</name>
+   <description>CO.11 : Contact on field oxide is forbidden.</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>inv</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'CO.11'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-5.3,4.3;-5.3,4.52;-5.08,4.52;-5.08,4.3)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

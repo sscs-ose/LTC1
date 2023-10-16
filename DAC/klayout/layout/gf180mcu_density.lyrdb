@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DRC runset</description>
+ <original-file/>
+ <generator>drc: script='/home/ethan/openmpw/pdk_1/gf180mcuC/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>inv</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%. Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30% (Refer to section 13.0 for Dummy Metal fill guidelines. Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30% (Refer to section 13.0 for Dummy Metal fill guidelines. Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30% (Refer to section 13.0 for Dummy Metal fill guidelines. Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30% (Refer to section 13.0 for Dummy Metal fill guidelines. Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30% (Refer to section 13.0 for Dummy Metal fill guidelines. Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30% (Refer to section 10.3 for Dummy Metal-fill guidelines. Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DN.1</name>
+   <description>DN.1 : Min. DNWELL Width : 1.7µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DN.2b_</name>
+   <description>DN.2b_ : Min. DNWELL Space (Different potential) : 5.42µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DN.3</name>
+   <description>DN.3 : Each DNWELL shall be directly surrounded by PCOMP guard ring tied to the P-substrate potential.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>BJT.1</name>
+   <description>BJT.1 : Min. DRC_BJT overlap of DNWELL for NPN BJT.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>BJT.2</name>
+   <description>BJT.2 : Min. DRC_BJT overlap of PCOM in Psub.</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>inv</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-3.28,3.21;-3.28,4.26;-4.935,4.26;-4.935,4.54;-3.28,4.54;-3.28,5.885;-3,5.885;-3,3.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-4.55,3.355;-4.55,3.91;-3.305,3.91;-3.305,3.355)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-5.45,4.15;-5.45,4.65;-4.95,4.65;-4.95,4.15)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-2.955,3.37;-2.955,5.735;-2.49,5.735;-2.49,3.37)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-4.51,5.165;-4.51,5.745;-3.32,5.745;-3.32,5.165)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
