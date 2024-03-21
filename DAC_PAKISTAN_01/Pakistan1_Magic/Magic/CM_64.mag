@@ -1,0 +1,51 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1693284239
+<< error_s >>
+rect 358 2674 391 2678
+<< metal1 >>
+rect 2521 5940 2780 6093
+rect 296 5783 363 5852
+rect 1 5409 47 5412
+rect -37 712 47 5409
+rect 5234 5367 5436 5447
+rect 5286 735 5436 5367
+<< metal2 >>
+rect 264 2622 358 5865
+rect 264 932 359 2622
+rect 1056 555 1118 5307
+rect 1658 598 1720 5582
+rect 2269 538 2331 5505
+rect 2874 621 2936 5554
+rect 3486 534 3548 5509
+rect 4092 609 4154 5580
+rect 4877 4490 5021 5030
+rect 4877 2744 5021 3462
+rect 4877 1170 5021 1994
+use CM_16  CM_16_0
+timestamp 1693229188
+transform 1 0 112 0 1 4692
+box -112 -60 5231 1437
+use CM_16  CM_16_1
+timestamp 1693229188
+transform 1 0 112 0 1 3148
+box -112 -60 5231 1437
+use CM_16  CM_16_2
+timestamp 1693229188
+transform 1 0 112 0 1 1604
+box -112 -60 5231 1437
+use CM_16  CM_16_3
+timestamp 1693229188
+transform 1 0 112 0 1 60
+box -112 -60 5231 1437
+<< labels >>
+flabel metal1 -1 5302 -1 5302 0 FreeSans 1600 0 0 0 IM
+port 0 nsew
+flabel metal2 328 5818 328 5818 0 FreeSans 1600 0 0 0 IM_T
+port 1 nsew
+flabel metal1 5337 5211 5337 5211 0 FreeSans 1600 0 0 0 OUT
+port 2 nsew
+flabel metal1 2645 6016 2645 6016 0 FreeSans 1600 0 0 0 VSS
+port 3 nsew
+<< end >>

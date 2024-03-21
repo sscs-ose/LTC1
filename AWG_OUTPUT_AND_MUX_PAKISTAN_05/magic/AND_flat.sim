@@ -1,0 +1,16 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x A a_28_145# a_176_156# VSS s=6184,328 d=3592,184 l=56 w=50 x=120 y=156 nfet_03v3
+x B a_176_156# VDD VDD s=5200,204 d=5200,204 l=56 w=100 x=448 y=516 pfet_03v3
+x B VSS a_28_145# VSS s=3592,184 d=6184,328 l=56 w=50 x=624 y=156 nfet_03v3
+x B a_28_145# VSS VSS s=3592,184 d=3592,184 l=56 w=50 x=456 y=156 nfet_03v3
+x a_176_156# VDD OUT VDD s=5200,204 d=8800,376 l=56 w=100 x=608 y=516 pfet_03v3
+x A a_176_156# a_28_145# VSS s=3592,184 d=3592,184 l=56 w=50 x=288 y=156 nfet_03v3
+x A VDD a_176_156# VDD s=8800,376 d=5200,204 l=56 w=100 x=288 y=516 pfet_03v3
+x a_176_156# VSS OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=989 y=156 nfet_03v3
+R OUT 21
+R A 120
+R B 195
+R VDD 1406
+R VSS 184
+R a_28_145# 74
+R a_176_156# 152

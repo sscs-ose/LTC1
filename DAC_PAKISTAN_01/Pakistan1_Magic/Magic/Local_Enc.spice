@@ -1,0 +1,29 @@
+* NGSPICE file created from Local_Enc.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt nmos_3p3_HZS5UA a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt NAND VDD VSS B A OUT
+Xpmos_3p3_M8RWPS_0 A VDD VDD OUT pmos_3p3_M8RWPS
+Xpmos_3p3_M8RWPS_1 B VDD VDD OUT pmos_3p3_M8RWPS
+Xnmos_3p3_HZS5UA_0 A m1_184_67# OUT VSS nmos_3p3_HZS5UA
+Xnmos_3p3_HZS5UA_1 B VSS m1_184_67# VSS nmos_3p3_HZS5UA
+.ends
+
+.subckt Local_Enc Ri-1 VDD VSS Q QB Ci Ri
+XNAND_0 VDD VSS Ri-1 Ri-1 NAND_1/B NAND
+XNAND_1 VDD VSS NAND_1/B NAND_1/B NAND_5/B NAND
+XNAND_2 VDD VSS Ci Ci NAND_6/B NAND
+XNAND_4 VDD VSS NAND_4/B Q QB NAND
+XNAND_3 VDD VSS Ri Ri NAND_6/A NAND
+XNAND_5 VDD VSS NAND_5/B NAND_5/A NAND_8/A NAND
+XNAND_6 VDD VSS NAND_6/B NAND_6/A NAND_5/A NAND
+XNAND_7 VDD VSS NAND_8/A NAND_8/A NAND_4/B NAND
+XNAND_8 VDD VSS QB NAND_8/A Q NAND
+.ends
+

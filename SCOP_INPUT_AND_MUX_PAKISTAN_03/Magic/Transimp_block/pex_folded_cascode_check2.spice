@@ -1,0 +1,22 @@
+* NGSPICE file created from folded_cascode_check2_flat.ext - technology: gf180mcuC
+
+
+* Top level circuit folded_cascode_check2_flat
+
+C0 m1_n2607_n3035# a_n2849_n2813# 0.164f
+C1 m3_n3500_n2804# a_n2849_n2813# 0.225f
+C2 m1_n2766_n3187# w_n3327_n3140# 0.364f
+C3 m1_n2607_n3035# w_n3327_n3140# 0.185f
+C4 m1_n2766_n3187# m1_n2607_n3035# 0.311f
+C5 m3_n3500_n2804# w_n3327_n3140# 0.0904f
+C6 m3_n3500_n2804# m1_n2766_n3187# 0.114f
+C7 w_n3327_n3140# a_n2849_n2813# 1.61f
+C8 m1_n2766_n3187# a_n2849_n2813# 0.123f
+C9 m3_n3500_n2804# m1_n2607_n3035# 0.0305f
+C10 m3_n3500_n2804# VSUBS 0.139f $ **FLOATING
+C11 m1_n2766_n3187# VSUBS 0.648f $ **FLOATING
+C12 m1_n2607_n3035# VSUBS 0.133f $ **FLOATING
+C13 a_n2849_n2813# VSUBS 0.618f $ **FLOATING
+C14 w_n3327_n3140# VSUBS 4.97f $ **FLOATING
+.end
+

@@ -1,0 +1,23 @@
+* NGSPICE file created from GF_INV16.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MD4UPK a_52_n324# a_226_n324# a_122_n280# a_n52_n280# a_296_n280#
++ w_n470_n410# a_n226_n280# a_n384_n280# a_n122_n324# a_n296_n324#
+X0 a_296_n280# a_226_n324# a_122_n280# w_n470_n410# pfet_03v3 ad=1.23p pd=6.48u as=0.728p ps=3.32u w=2.8u l=0.35u
+X1 a_n226_n280# a_n296_n324# a_n384_n280# w_n470_n410# pfet_03v3 ad=0.728p pd=3.32u as=1.23p ps=6.48u w=2.8u l=0.35u
+X2 a_122_n280# a_52_n324# a_n52_n280# w_n470_n410# pfet_03v3 ad=0.728p pd=3.32u as=0.728p ps=3.32u w=2.8u l=0.35u
+X3 a_n52_n280# a_n122_n324# a_n226_n280# w_n470_n410# pfet_03v3 ad=0.728p pd=3.32u as=0.728p ps=3.32u w=2.8u l=0.35u
+.ends
+
+.subckt nmos_3p3_S7UZWU a_52_n184# a_226_n184# a_122_n140# a_n52_n140# a_n122_n184#
++ a_296_n140# a_n226_n140# a_n296_n184# a_n384_n140# VSUBS
+X0 a_122_n140# a_52_n184# a_n52_n140# VSUBS nfet_03v3 ad=0.364p pd=1.92u as=0.364p ps=1.92u w=1.4u l=0.35u
+X1 a_n52_n140# a_n122_n184# a_n226_n140# VSUBS nfet_03v3 ad=0.364p pd=1.92u as=0.364p ps=1.92u w=1.4u l=0.35u
+X2 a_296_n140# a_226_n184# a_122_n140# VSUBS nfet_03v3 ad=0.616p pd=3.68u as=0.364p ps=1.92u w=1.4u l=0.35u
+X3 a_n226_n140# a_n296_n184# a_n384_n140# VSUBS nfet_03v3 ad=0.364p pd=1.92u as=0.616p ps=3.68u w=1.4u l=0.35u
+.ends
+
+.subckt GF_INV16 VDD IN OUT VSS
+Xpmos_3p3_MD4UPK_0 IN IN OUT VDD VDD VDD OUT VDD IN IN pmos_3p3_MD4UPK
+Xnmos_3p3_S7UZWU_0 IN IN OUT VSS IN VSS OUT IN VSS VSS nmos_3p3_S7UZWU
+.ends
+

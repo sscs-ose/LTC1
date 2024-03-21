@@ -1,0 +1,54 @@
+** sch_path: /home/shahid/GF180Projects/ahmar_data_latest/ahmar_data/ahmar/DFF.sch
+**.subckt DFF D VDD VSS Q CLK
+*.ipin D
+*.iopin VDD
+*.iopin VSS
+*.opin Q
+*.ipin CLK
+x1 VDD CLKB VSS net1 D tg
+x3 VDD CLK VSS net1 net5 tg
+x4 VDD CLK VSS net3 net2 tg
+x5 VDD CLKB VSS net3 net4 tg
+x2 VDD net1 net2 VSS inverter
+x6 VDD net3 Q VSS inverter
+x7 VDD Q net4 VSS inverter
+x8 VDD net2 net5 VSS inverter
+x9 VDD CLK CLKB VSS inverter
+**.ends
+
+* expanding   symbol:  tg.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/ahmar_data_latest/ahmar_data/ahmar/tg.sym
+** sch_path: /home/shahid/GF180Projects/ahmar_data_latest/ahmar_data/ahmar/tg.sch
+.subckt tg VDD CLK VSS OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin CLK
+*.ipin IN
+*.opin OUT
+x1 VDD CLK net1 VSS inverter
+XM1 OUT net1 IN VDD pfet_03v3 L=0.56u W=3.36u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT CLK IN VSS nfet_03v3 L=0.56u W=3.36u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/ahmar_data_latest/ahmar_data/ahmar/inverter.sym
+** sch_path: /home/shahid/GF180Projects/ahmar_data_latest/ahmar_data/ahmar/inverter.sch
+.subckt inverter VDD VIN VOUT VSS
+*.iopin VDD
+*.ipin VIN
+*.opin VOUT
+*.iopin VSS
+XM4 VOUT VIN VDD VDD pfet_03v3 L=0.56u W=4.48u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 VOUT VIN VSS VSS nfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

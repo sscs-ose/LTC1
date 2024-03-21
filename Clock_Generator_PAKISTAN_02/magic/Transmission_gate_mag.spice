@@ -1,0 +1,56 @@
+* NGSPICE file created from Transmission_gate_mag.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt inv_my_mag VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt pmos_3p3_Q354KU a_212_n144# a_268_n100# a_n692_n100# a_n268_n144# a_372_n144#
++ a_428_n100# a_n52_n100# a_n428_n144# a_532_n144# a_588_n100# w_n922_n230# a_n212_n100#
++ a_n588_n144# a_692_n144# a_748_n100# a_n372_n100# a_n748_n144# a_108_n100# a_52_n144#
++ a_n836_n100# a_n532_n100# a_n108_n144#
+X0 a_n52_n100# a_n108_n144# a_n212_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 a_588_n100# a_532_n144# a_428_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 a_n692_n100# a_n748_n144# a_n836_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X3 a_n212_n100# a_n268_n144# a_n372_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X4 a_748_n100# a_692_n144# a_588_n100# w_n922_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 a_108_n100# a_52_n144# a_n52_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X6 a_268_n100# a_212_n144# a_108_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 a_n372_n100# a_n428_n144# a_n532_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X8 a_428_n100# a_372_n144# a_268_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X9 a_n532_n100# a_n588_n144# a_n692_n100# w_n922_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt nmos_3p3_W9BEG7 a_212_n144# a_268_n100# a_n692_n100# a_n268_n144# a_372_n144#
++ a_428_n100# a_n52_n100# a_n428_n144# a_532_n144# a_588_n100# a_n212_n100# a_n588_n144#
++ a_692_n144# a_748_n100# a_n372_n100# a_n748_n144# a_108_n100# a_52_n144# a_n836_n100#
++ a_n532_n100# a_n108_n144# VSUBS
+X0 a_n52_n100# a_n108_n144# a_n212_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 a_588_n100# a_532_n144# a_428_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 a_n692_n100# a_n748_n144# a_n836_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X3 a_n212_n100# a_n268_n144# a_n372_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X4 a_748_n100# a_692_n144# a_588_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 a_108_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X6 a_268_n100# a_212_n144# a_108_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 a_n372_n100# a_n428_n144# a_n532_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X8 a_428_n100# a_372_n144# a_268_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X9 a_n532_n100# a_n588_n144# a_n692_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt Transmission_gate_mag CLK VDD VSS VIN VOUT
+Xinv_my_mag_0 VDD VSS CLK inv_my_mag_0/OUT inv_my_mag
+Xpmos_3p3_Q354KU_0 inv_my_mag_0/OUT VOUT VOUT inv_my_mag_0/OUT inv_my_mag_0/OUT VIN
++ VOUT inv_my_mag_0/OUT inv_my_mag_0/OUT VOUT VDD VIN inv_my_mag_0/OUT inv_my_mag_0/OUT
++ VIN VOUT inv_my_mag_0/OUT VIN inv_my_mag_0/OUT VIN VIN inv_my_mag_0/OUT pmos_3p3_Q354KU
+Xnmos_3p3_W9BEG7_0 CLK VOUT VOUT CLK CLK VIN VOUT CLK CLK VOUT VIN CLK CLK VIN VOUT
++ CLK VIN CLK VIN VIN CLK VSS nmos_3p3_W9BEG7
+.ends
+

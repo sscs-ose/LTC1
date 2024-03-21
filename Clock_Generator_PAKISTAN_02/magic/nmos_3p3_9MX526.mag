@@ -1,0 +1,70 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1691656227
+<< error_p >>
+rect -48 117 -37 163
+rect -48 -163 -37 -117
+<< pwell >>
+rect -300 -292 300 292
+<< nmos >>
+rect -50 -84 50 84
+<< ndiff >>
+rect -138 71 -50 84
+rect -138 -71 -125 71
+rect -79 -71 -50 71
+rect -138 -84 -50 -71
+rect 50 71 138 84
+rect 50 -71 79 71
+rect 125 -71 138 71
+rect 50 -84 138 -71
+<< ndiffc >>
+rect -125 -71 -79 71
+rect 79 -71 125 71
+<< psubdiff >>
+rect -276 196 276 268
+rect -276 152 -204 196
+rect -276 -152 -263 152
+rect -217 -152 -204 152
+rect 204 152 276 196
+rect -276 -196 -204 -152
+rect 204 -152 217 152
+rect 263 -152 276 152
+rect 204 -196 276 -152
+rect -276 -268 276 -196
+<< psubdiffcont >>
+rect -263 -152 -217 152
+rect 217 -152 263 152
+<< polysilicon >>
+rect -50 163 50 176
+rect -50 117 -37 163
+rect 37 117 50 163
+rect -50 84 50 117
+rect -50 -117 50 -84
+rect -50 -163 -37 -117
+rect 37 -163 50 -117
+rect -50 -176 50 -163
+<< polycontact >>
+rect -37 117 37 163
+rect -37 -163 37 -117
+<< metal1 >>
+rect -263 209 263 255
+rect -263 152 -217 209
+rect -48 117 -37 163
+rect 37 117 48 163
+rect 217 152 263 209
+rect -125 71 -79 82
+rect -125 -82 -79 -71
+rect 79 71 125 82
+rect 79 -82 125 -71
+rect -263 -209 -217 -152
+rect -48 -163 -37 -117
+rect 37 -163 48 -117
+rect 217 -209 263 -152
+rect -263 -255 263 -209
+<< properties >>
+string FIXED_BBOX -240 -232 240 232
+string gencell nmos_3p3
+string library gf180mcu
+string parameters w 0.84 l 0.5 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 full_metal 1 compatible {nmos_3p3 nmos_6p0 nmos_6p0_nat}
+<< end >>

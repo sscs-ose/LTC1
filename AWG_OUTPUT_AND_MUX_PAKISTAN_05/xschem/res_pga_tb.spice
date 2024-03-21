@@ -1,0 +1,56 @@
+** sch_path: /home/shahid/Music/resistor/resistor_pga/xschem/res_pga_tb.sch
+**.subckt res_pga_tb
+x1 P GND B res_pga1
+V1 P GND 3
+.save i(v1)
+V2 B GND 3
+.save i(v2)
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+*vp p 0 0
+*vm m 0 0
+*vb b 0 3.3
+
+.control
+save all
+*dc vp 0 3.3 0.01
+dc v1 0.1 3.3 0.1
+let i1 = i(v1)
+let r  = v(p)/i(v1)
+plot r
+display all
+*write res_sch_test.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  res_pga1.sym # of pins=3
+** sym_path: /home/shahid/Music/resistor/resistor_pga/xschem/res_pga1.sym
+** sch_path: /home/shahid/Music/resistor/resistor_pga/xschem/res_pga1.sch
+.subckt res_pga1 A B VDD
+*.iopin VDD
+*.iopin A
+*.iopin B
+XR1 net1 A VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR2 net7 net1 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR3 net2 net7 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR4 net3 net2 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR5 net8 net3 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR6 net4 net8 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR7 net5 net4 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR8 net9 net5 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR9 net6 net9 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR10 B net6 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+.ends
+
+.GLOBAL GND
+.end

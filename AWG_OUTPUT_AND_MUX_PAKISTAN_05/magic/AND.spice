@@ -1,0 +1,24 @@
+* NGSPICE file created from AND.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt nmos_3p3_49QVWA a_n204_n36# a_56_n69# a_112_n25# a_n112_n69# a_n56_n25# VSUBS
+X0 a_n56_n25# a_n112_n69# a_n204_n36# VSUBS nfet_03v3 ad=89.8f pd=0.92u as=0.155p ps=1.64u w=0.25u l=0.28u
+X1 a_112_n25# a_56_n69# a_n56_n25# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=89.8f ps=0.92u w=0.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt AND A B OUT VDD VSS
+Xnmos_3p3_H9QVWA_0 VSS OUT a_571_376# VSS nmos_3p3_H9QVWA
+Xnmos_3p3_49QVWA_0 m1_41_62# B m1_41_62# B VSS VSS nmos_3p3_49QVWA
+Xnmos_3p3_49QVWA_1 m1_41_62# A m1_41_62# A a_571_376# VSS nmos_3p3_49QVWA
+Xpmos_3p3_M8RWPS_0 a_571_376# VDD VDD OUT pmos_3p3_M8RWPS
+Xpmos_3p3_M8RWPS_1 A VDD VDD a_571_376# pmos_3p3_M8RWPS
+Xpmos_3p3_M8RWPS_2 B VDD a_571_376# VDD pmos_3p3_M8RWPS
+.ends
+

@@ -1,0 +1,108 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "CLK" 2 682 550 682 550 m1
+port "VOUT" 7 2628 1369 2628 1369 m1
+port "VIN" 5 2211 1262 2211 1262 m1
+port "VDD" 0 542 1016 542 1016 m1
+port "VSS" 1 542 213 542 213 m1
+node "Inverter_Layout_0.IN" 1455 3353.1 434 287 p 0 0 0 0 0 0 0 0 0 0 0 0 619592 22334 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23048 1052 0 0 0 0 0 0 0 0
+equiv "Inverter_Layout_0.IN" "CLK"
+node "VOUT" 1182 1055.58 2628 1369 m1 0 0 0 0 312000 8496 624000 16992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 809278 35278 0 0 0 0 0 0 0 0
+node "VIN" 1410 2703.86 2211 1262 m1 0 0 0 0 366000 10428 678000 18924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1038082 45226 0 0 0 0 0 0 0 0
+node "Inverter_Layout_0.OUT" 2640 2287.33 227 1274 p 0 0 0 0 8800 376 17600 576 0 0 0 0 1123504 40228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57938 2590 0 0 0 0 0 0 0 0
+node "Inverter_Layout_0.VDD" 3905 11812.5 61 1398 nw 3928028 9822 0 0 8836 376 17600 576 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26614 1098 0 0 0 0 0 0 0 0
+equiv "Inverter_Layout_0.VDD" "VDD"
+substrate "Inverter_Layout_0.VSS" 0 0 490 331 ndif 0 0 0 0 8800 376 9118 382 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22992 974 0 0 0 0 0 0 0 0
+equiv "Inverter_Layout_0.VSS" "VSS"
+cap "Inverter_Layout_0.IN" "VOUT" 318.483
+cap "VIN" "Inverter_Layout_0.OUT" 752.648
+cap "VIN" "Inverter_Layout_0.VDD" 665.868
+cap "VOUT" "Inverter_Layout_0.OUT" 623.461
+cap "Inverter_Layout_0.IN" "Inverter_Layout_0.OUT" 79.6977
+cap "VOUT" "Inverter_Layout_0.VDD" 379.131
+cap "Inverter_Layout_0.IN" "Inverter_Layout_0.VDD" 202.654
+cap "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 3756.8
+cap "VOUT" "VIN" 15922
+cap "Inverter_Layout_0.IN" "VIN" 574.879
+device msubckt nfet_03v3 1995 188 1996 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 22000,676
+device msubckt nfet_03v3 1835 188 1836 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1675 188 1676 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 1515 188 1516 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1355 188 1356 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 1195 188 1196 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1035 188 1036 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 875 188 876 189 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 22000,676 "VOUT" 250 13000,354
+device msubckt nfet_03v3 434 331 435 332 l=56 w=100 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "Inverter_Layout_0.OUT" 100 8800,376 "Inverter_Layout_0.VSS" 100 8800,376
+device msubckt nfet_03v3 1995 574 1996 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 22000,676
+device msubckt nfet_03v3 1835 574 1836 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1675 574 1676 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 1515 574 1516 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1355 574 1356 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 1195 574 1196 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1035 574 1036 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 875 574 876 575 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 22000,676 "VOUT" 250 13000,354
+device msubckt pfet_03v3 434 703 435 704 l=56 w=200 "Inverter_Layout_0.VDD" "Inverter_Layout_0.IN" 112 0 "Inverter_Layout_0.OUT" 200 17600,576 "Inverter_Layout_0.VDD" 200 17600,576
+device msubckt nfet_03v3 1995 960 1996 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 22000,676
+device msubckt nfet_03v3 1835 960 1836 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1675 960 1676 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 1515 960 1516 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1355 960 1356 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 1195 960 1196 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt nfet_03v3 1035 960 1036 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt nfet_03v3 875 960 876 961 l=56 w=250 "Inverter_Layout_0.VSS" "Inverter_Layout_0.IN" 112 0 "VIN" 250 22000,676 "VOUT" 250 13000,354
+device msubckt pfet_03v3 2635 1528 2636 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 22000,676
+device msubckt pfet_03v3 2475 1528 2476 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 2315 1528 2316 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 2155 1528 2156 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1995 1528 1996 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1835 1528 1836 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1675 1528 1676 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1515 1528 1516 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1355 1528 1356 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1195 1528 1196 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1035 1528 1036 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 875 1528 876 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 715 1528 716 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 555 1528 556 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 395 1528 396 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 235 1528 236 1529 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 22000,676 "VOUT" 250 13000,354
+device msubckt pfet_03v3 2635 1914 2636 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 22000,676
+device msubckt pfet_03v3 2475 1914 2476 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 2315 1914 2316 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 2155 1914 2156 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1995 1914 1996 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1835 1914 1836 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1675 1914 1676 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1515 1914 1516 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1355 1914 1356 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1195 1914 1196 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1035 1914 1036 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 875 1914 876 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 715 1914 716 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 555 1914 556 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 395 1914 396 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 235 1914 236 1915 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 22000,676 "VOUT" 250 13000,354
+device msubckt pfet_03v3 2635 2300 2636 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 22000,676
+device msubckt pfet_03v3 2475 2300 2476 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 2315 2300 2316 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 2155 2300 2156 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1995 2300 1996 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1835 2300 1836 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1675 2300 1676 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1515 2300 1516 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1355 2300 1356 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 1195 2300 1196 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 1035 2300 1036 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 875 2300 876 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 715 2300 716 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 555 2300 556 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 13000,354 "VOUT" 250 13000,354
+device msubckt pfet_03v3 395 2300 396 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VOUT" 250 13000,354 "VIN" 250 13000,354
+device msubckt pfet_03v3 235 2300 236 2301 l=56 w=250 "Inverter_Layout_0.VDD" "Inverter_Layout_0.OUT" 112 0 "VIN" 250 22000,676 "VOUT" 250 13000,354

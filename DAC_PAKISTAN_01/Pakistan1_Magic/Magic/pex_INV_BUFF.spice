@@ -1,0 +1,44 @@
+* NGSPICE file created from INV_BUFF_flat.ext - technology: gf180mcuC
+
+.subckt INV_BUFF_flat IN VDD OUT VSS
+X0 OUT inv_buff_0/Inverter_0.IN VDD.t3 VDD.t2 pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+X1 OUT inv_buff_0/Inverter_0.IN VSS.t1 VSS.t0 nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+X2 inv_buff_0/Inverter_0.IN IN.t0 VDD.t1 VDD.t0 pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+X3 inv_buff_0/Inverter_0.IN IN.t1 VSS.t3 VSS.t2 nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+R0 VDD.t0 VDD.n0 917.062
+R1 VDD VDD.t0 46.5849
+R2 VDD.n0 VDD.t2 40.2849
+R3 VDD.n1 VDD.t1 6.40636
+R4 VDD.n2 VDD.t3 6.40636
+R5 VDD VDD.n0 6.3005
+R6 VDD.n2 VDD 0.263332
+R7 VDD.n1 VDD 0.0936858
+R8 VDD VDD.n2 0.0594381
+R9 VDD VDD.n1 0.0594381
+R10 OUT.n2 OUT.n1 9.02722
+R11 OUT.n2 OUT.n0 6.48941
+R12 OUT OUT.n2 0.130713
+R13 VSS.t2 VSS.n0 3503.36
+R14 VSS VSS.t2 31.4102
+R15 VSS.n0 VSS.t0 26.2102
+R16 VSS.n2 VSS.t1 8.96939
+R17 VSS.n1 VSS.t3 8.96939
+R18 VSS VSS.n0 5.2005
+R19 VSS.n2 VSS 0.253774
+R20 VSS.n1 VSS 0.0952788
+R21 VSS VSS.n2 0.0689956
+R22 VSS VSS.n1 0.0689956
+R23 IN.n0 IN.t1 19.0247
+R24 IN.n0 IN.t0 17.3935
+R25 IN IN.n0 4.15272
+C0 OUT VDD 0.123f
+C1 inv_buff_0/Inverter_0.IN IN 0.107f
+C2 inv_buff_0/Inverter_0.IN OUT 0.114f
+C3 inv_buff_0/Inverter_0.IN VDD 0.4f
+C4 VDD IN 0.244f
+C5 OUT VSS 0.185f
+C6 inv_buff_0/Inverter_0.IN VSS 0.421f
+C7 IN VSS 0.345f
+C8 VDD VSS 1.28f
+.ends
+

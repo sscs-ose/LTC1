@@ -1,0 +1,17 @@
+* NGSPICE file created from NAND.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt nmos_3p3_HZS5UA a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt NAND VDD VSS B A OUT
+Xpmos_3p3_M8RWPS_0 A VDD VDD OUT pmos_3p3_M8RWPS
+Xpmos_3p3_M8RWPS_1 B VDD VDD OUT pmos_3p3_M8RWPS
+Xnmos_3p3_HZS5UA_0 A m1_184_67# OUT VSS nmos_3p3_HZS5UA
+Xnmos_3p3_HZS5UA_1 B VSS m1_184_67# VSS nmos_3p3_HZS5UA
+.ends
+

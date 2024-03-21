@@ -1,0 +1,47 @@
+* NGSPICE file created from Mux2x1.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt Inverter VDD VSS IN OUT
+Xnmos_3p3_H9QVWA_0 VSS OUT IN VSS nmos_3p3_H9QVWA
+Xpmos_3p3_M8RWPS_0 IN VDD VDD OUT pmos_3p3_M8RWPS
+.ends
+
+.subckt nmos_3p3_HZS5UA a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt AND VDD VSS OUT A B
+Xpmos_3p3_M8RWPS_0 B VDD Inverter_0/IN VDD pmos_3p3_M8RWPS
+XInverter_0 VDD VSS Inverter_0/IN OUT Inverter
+Xpmos_3p3_M8RWPS_1 A VDD VDD Inverter_0/IN pmos_3p3_M8RWPS
+Xnmos_3p3_HZS5UA_0 A VSS m1_279_80# VSS nmos_3p3_HZS5UA
+Xnmos_3p3_HZS5UA_1 B m1_279_80# Inverter_0/IN VSS nmos_3p3_HZS5UA
+.ends
+
+.subckt pmos_3p3_MGRWPS a_n52_n50# a_n196_n50# a_52_n94# a_108_n50# a_n108_n94# w_n282_n180#
+X0 a_108_n50# a_52_n94# a_n52_n50# w_n282_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+X1 a_n52_n50# a_n108_n94# a_n196_n50# w_n282_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt OR A B VSS VDD OUT
+Xnmos_3p3_H9QVWA_0 VSS Inverter_0/IN A VSS nmos_3p3_H9QVWA
+Xpmos_3p3_MGRWPS_0 Inverter_0/IN m1_242_550# A m1_242_550# A VDD pmos_3p3_MGRWPS
+Xnmos_3p3_H9QVWA_1 VSS Inverter_0/IN B VSS nmos_3p3_H9QVWA
+Xpmos_3p3_MGRWPS_1 m1_242_550# VDD B VDD B VDD pmos_3p3_MGRWPS
+XInverter_0 VDD VSS Inverter_0/IN OUT Inverter
+.ends
+
+.subckt Mux2x1 A B VDD VSS SEL OUT
+XAND_0 VDD VSS OR_0/A B AND_0/B AND
+XAND_1 VDD VSS OR_0/B A SEL AND
+XInverter_0 VDD VSS SEL AND_0/B Inverter
+XOR_0 OR_0/A OR_0/B VSS VDD OUT OR
+.ends
+

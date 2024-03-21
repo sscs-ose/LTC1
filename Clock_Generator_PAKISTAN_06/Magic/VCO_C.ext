@@ -1,0 +1,673 @@
+timestamp 1697518002
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use INV_2 INV_2_5 1 0 5578 0 1 5260
+use INV_2 INV_2_4 -1 0 6645 0 1 2323
+use INV_2 INV_2_3 -1 0 7880 0 -1 1165
+use INV_2 INV_2_2 -1 0 7854 0 1 2284
+use INV_2 INV_2_1 -1 0 6684 0 -1 1123
+use INV_2 INV_2_0 1 0 5578 0 -1 4306
+use DelayCell_mag DelayCell_mag_1 1 0 4062 0 -1 5952
+use DelayCell_mag DelayCell_mag_0 -1 0 8828 0 1 643
+port "VDD" 9 14055 1135 14055 1135 m1
+port "OUTB" 12 5144 780 5144 780 m1
+port "OUT" 13 5235 2311 5235 2311 m1
+port "VCTRL" 7 4567 6296 4567 6296 m1
+port "VCTRL2" 14 6645 6983 6645 6983 m1
+port "VSS" 8 5215 6405 5215 6405 m1
+node "m3_7779_3989#" 3 8.64916 7779 3989 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 62 0 0 0 0
+node "m3_7730_5979#" 0 70.2101 7730 5979 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11820 514 0 0 0 0
+node "m2_5005_519#" 0 91.5496 5005 519 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16551 576 0 0 0 0 0 0
+node "m1_6651_516#" 0 93.6202 6651 516 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11682 486 0 0 0 0 0 0 0 0
+node "m1_7811_763#" 1 405.132 7811 763 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97520 2052 0 0 0 0 0 0 0 0
+node "VDD" 1 449.87 14055 1135 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69236 1974 0 0 0 0 0 0 0 0
+node "OUTB" 2 502.738 5144 780 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72174 2564 0 0 0 0 0 0 0 0
+node "m1_6600_1151#" 1 99.8852 6600 1151 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12905 652 0 0 0 0 0 0 0 0
+node "m1_7796_1192#" 3 754.687 7796 1192 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66176 1832 121166 3422 0 0 0 0 0 0
+node "m1_4833_1514#" 2 315.738 4833 1514 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57132 2224 0 0 0 0 0 0 0 0
+node "m1_6577_1799#" 1 228.049 6577 1799 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51304 1358 0 0 0 0 0 0 0 0
+node "m1_4830_1880#" 2 321.932 4830 1880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57132 2224 0 0 0 0 0 0 0 0
+node "m1_6555_2240#" 1 100.418 6555 2240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13524 680 0 0 0 0 0 0 0 0
+node "OUT" 1 304.793 5235 2311 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44197 1712 0 0 0 0 0 0 0 0
+node "m1_7818_2177#" 2 842.806 7818 2177 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80410 1820 173082 3376 0 0 0 0 0 0
+node "m1_6614_2858#" 0 95.5373 6614 2858 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15375 560 0 0 0 0 0 0 0 0
+node "m1_7669_3008#" 1 545.776 7669 3008 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116861 2518 0 0 0 0 0 0 0 0
+node "m1_6122_2965#" 0 436.614 6122 2965 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127605 1772 0 0 0 0 0 0 0 0
+node "m1_4521_3647#" 7 2086.25 4521 3647 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78250 1996 463000 11716 0 0 0 0 0 0
+node "m1_7779_3956#" 0 49.1434 7779 3956 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3427 292 0 0 0 0 0 0 0 0
+node "m1_4151_3905#" 1 504.644 4151 3905 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148274 3222 0 0 0 0 0 0 0 0
+node "m1_6596_4304#" 4 770.093 6596 4304 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66164 2464 95245 3350 0 0 0 0 0 0
+node "m1_4934_4147#" 4 935.025 4934 4147 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70752 2094 121525 4124 0 0 0 0 0 0
+node "m1_6573_4762#" 3 579.201 6573 4762 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79692 2218 117698 2982 0 0 0 0 0 0
+node "m1_5337_5160#" 3 905.008 5337 5160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35750 888 153635 4556 0 0 0 0 0 0
+node "m1_6542_3664#" 2 1322.8 6542 3664 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 349011 6200 0 0 0 0 0 0 0 0
+node "m1_6596_5182#" 5 924.759 6596 5182 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77634 2374 133195 4616 0 0 0 0 0 0
+node "VCTRL" 3 1108.67 4567 6296 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 179932 4508 30302 774 0 0 0 0 0 0
+node "VCTRL2" 0 10780.7 6645 6983 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70032 1374 2456462 47268 0 0 0 0 0 0
+substrate "VSS" 0 0 5215 6405 m1 0 0 0 0 0 0 5823102 90306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8297526 107160 0 0 0 0 0 0 0 0
+cap "m1_7818_2177#" "m1_6555_2240#" 2.0255
+cap "m1_6542_3664#" "m1_6596_4304#" 158.972
+cap "m1_7779_3956#" "m1_6573_4762#" 3.33699
+cap "m1_4521_3647#" "VCTRL" 0.247152
+cap "m1_6651_516#" "OUTB" 1.84145
+cap "m1_4521_3647#" "m1_7796_1192#" 73.5186
+cap "m1_5337_5160#" "m1_4151_3905#" 0.868912
+cap "VCTRL2" "m1_6596_5182#" 72.5045
+cap "m1_7796_1192#" "m1_6600_1151#" 1.77157
+cap "m1_5337_5160#" "VCTRL2" 75.2429
+cap "m1_4830_1880#" "m1_4833_1514#" 141.524
+cap "m1_5337_5160#" "m1_4934_4147#" 36.5056
+cap "m1_4521_3647#" "OUT" 9.79198
+cap "m1_6573_4762#" "VCTRL2" 3.68483
+cap "m1_4521_3647#" "m1_6651_516#" 0.161814
+cap "m1_4151_3905#" "VCTRL" 36.1656
+cap "m1_4833_1514#" "OUTB" 66.3585
+cap "m1_7796_1192#" "m1_7811_763#" 168.025
+cap "VCTRL" "VCTRL2" 20.972
+cap "m1_6651_516#" "m1_6600_1151#" 12.558
+cap "m1_5337_5160#" "m1_6596_5182#" 7.11965
+cap "m1_4151_3905#" "OUT" 6.56775
+cap "m1_4521_3647#" "m1_6555_2240#" 33.6541
+cap "m1_6542_3664#" "m1_6122_2965#" 1.06145
+cap "m1_6542_3664#" "m3_7779_3989#" 0.240933
+cap "m1_6573_4762#" "m1_6596_5182#" 174.392
+cap "m1_4521_3647#" "m1_6542_3664#" 27.7999
+cap "m1_6596_4304#" "m3_7779_3989#" 3.94753
+cap "m1_6555_2240#" "m1_6577_1799#" 29.6158
+cap "m1_7779_3956#" "m1_6542_3664#" 4.94703
+cap "m1_6614_2858#" "m1_6555_2240#" 14.7775
+cap "m1_4521_3647#" "m1_6596_4304#" 3.79577
+cap "VCTRL2" "m3_7730_5979#" 3.51338
+cap "m1_6596_4304#" "m1_7669_3008#" 5.23101
+cap "m1_5337_5160#" "VCTRL" 118.161
+cap "m1_7779_3956#" "m1_6596_4304#" 9.57882
+cap "m1_6614_2858#" "m1_6542_3664#" 11.5187
+cap "m1_4521_3647#" "m1_7818_2177#" 92.3604
+cap "m1_7818_2177#" "m1_7669_3008#" 113.909
+cap "m1_4151_3905#" "m1_6542_3664#" 3.11631
+cap "m1_6614_2858#" "m1_6596_4304#" 0.0475
+cap "VCTRL2" "m1_6542_3664#" 10.6006
+cap "m1_4521_3647#" "m1_4830_1880#" 1.32735
+cap "m1_4833_1514#" "m1_4934_4147#" 0.0366748
+cap "m1_6542_3664#" "m1_4934_4147#" 1.5484
+cap "m1_6614_2858#" "m1_7818_2177#" 0.125181
+cap "m1_6596_5182#" "m3_7730_5979#" 36.5357
+cap "m1_6596_4304#" "m1_4934_4147#" 3.81475
+cap "m1_6600_1151#" "OUTB" 0.96959
+cap "m1_6651_516#" "m2_5005_519#" 0.098657
+cap "m1_6573_4762#" "m3_7730_5979#" 0.452902
+cap "m1_6542_3664#" "m1_6596_5182#" 133.538
+cap "m1_4521_3647#" "m1_6122_2965#" 106.896
+cap "m1_6122_2965#" "m1_7669_3008#" 4.42072
+cap "m1_7669_3008#" "m3_7779_3989#" 0.00528306
+cap "m1_5337_5160#" "m1_6542_3664#" 0.713812
+cap "m1_4830_1880#" "m1_4934_4147#" 0.350814
+cap "m1_6596_4304#" "m1_6596_5182#" 4.28633
+cap "m1_4521_3647#" "m1_7669_3008#" 4.13245
+cap "m1_6573_4762#" "m1_6542_3664#" 113.467
+cap "m1_7779_3956#" "m1_7669_3008#" 2.8819
+cap "m1_4521_3647#" "m1_6600_1151#" 0.582806
+cap "m1_4521_3647#" "m1_6577_1799#" 67.8682
+cap "m1_4833_1514#" "m2_5005_519#" 0.295376
+cap "m1_6573_4762#" "m1_6596_4304#" 173.502
+cap "m1_4521_3647#" "m1_6614_2858#" 38.7398
+cap "m1_6614_2858#" "m1_7669_3008#" 1.05977
+cap "m1_6600_1151#" "m1_6577_1799#" 28.5049
+cap "m1_6555_2240#" "OUT" 0.305586
+cap "m1_4521_3647#" "m1_4151_3905#" 256.396
+cap "m1_4521_3647#" "m1_7811_763#" 0.747299
+cap "m1_6122_2965#" "m1_4934_4147#" 1.8952
+cap "m1_4521_3647#" "m1_4934_4147#" 112.674
+cap "m1_7796_1192#" "m1_7818_2177#" 12.6383
+cap "m1_4830_1880#" "m2_5005_519#" 0.144962
+cap "m1_6596_5182#" "m3_7779_3989#" 0.00100494
+cap "m1_6555_2240#" "m1_6542_3664#" 2.63565
+cap "m1_4151_3905#" "m1_4934_4147#" 178.571
+cap "OUTB" "m2_5005_519#" 33.6618
+cap "m1_4521_3647#" "m1_5337_5160#" 0.42999
+cap "m1_4830_1880#" "OUT" 59.4556
+cap "m1_6573_4762#" "m3_7779_3989#" 0.00442208
+cap "m1_4521_3647#" "m1_6573_4762#" 5.16339
+cap "DelayCell_mag_0/VSS" "DelayCell_mag_0/VCTRL2" 0.636648
+cap "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_764_n50#" "DelayCell_mag_0/VCTRL2" -0.119688
+cap "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_764_n50#" "DelayCell_mag_0/VSS" 76.9867
+cap "DelayCell_mag_0/VSS" "DelayCell_mag_0/VCTRL2" 2.31625
+cap "DelayCell_mag_0/NMOS_Pairs_0/VCTRL2" "DelayCell_mag_0/VSS" 1.24828
+cap "DelayCell_mag_0/NMOS_Pairs_0/VCTRL2" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_764_n50#" -0.0586439
+cap "DelayCell_mag_0/VSS" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_764_n50#" 98.4584
+cap "INV_2_4/OUT" "INV_2_1/a_195_417#" 0.259434
+cap "INV_2_4/OUT" "INV_2_1/OUT" 0.0832059
+cap "INV_2_1/a_195_417#" "INV_2_1/OUT" 0.0180279
+cap "INV_2_4/OUT" "INV_2_1/VDD" 0.178101
+cap "INV_2_4/VSS" "INV_2_4/OUT" 3.59109
+cap "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_n172_n50#" "INV_2_1/OUT" 0.330293
+cap "INV_2_1/VDD" "INV_2_1/OUT" 0.27672
+cap "INV_2_4/VSS" "INV_2_1/OUT" 24.3135
+cap "INV_2_4/VSS" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_84_n50#" 2.22683
+cap "INV_2_4/VSS" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_n172_n50#" 25.2589
+cap "INV_2_1/OUT" "INV_2_4/VSS" 169.12
+cap "INV_2_1/OUT" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_n172_n50#" 0.330293
+cap "INV_2_4/VSS" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_84_n50#" 2.4091
+cap "INV_2_1/OUT" "INV_2_3/OUT" 3.6349
+cap "INV_2_1/OUT" "INV_2_3/VDD" 105.968
+cap "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_84_n50#" "INV_2_3/OUT" 3.52643
+cap "INV_2_3/VDD" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_84_n50#" 3.39829
+cap "INV_2_4/VSS" "INV_2_3/OUT" 1.4957
+cap "INV_2_4/VSS" "INV_2_3/VDD" 10.8806
+cap "INV_2_1/OUT" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_0/a_84_n50#" 3.48003
+cap "INV_2_1/OUT" "INV_2_3/VDD" 24.1048
+cap "INV_2_3/OUT" "INV_2_4/IN" 2.04411
+cap "INV_2_4/VSS" "INV_2_3/IN" 0.6654
+cap "INV_2_3/OUT" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_n172_n50#" 0.132713
+cap "INV_2_3/VDD" "INV_2_4/VSS" 143.434
+cap "INV_2_1/OUT" "INV_2_4/VSS" 2.55481
+cap "INV_2_3/OUT" "INV_2_3/IN" 8.91068
+cap "INV_2_3/OUT" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_4/a_n172_n50#" 0.0361399
+cap "DelayCell_mag_0/NMOS_Pairs_0/GM8" "INV_2_3/OUT" 0.122761
+cap "INV_2_3/OUT" "INV_2_4/VDD" 0.00789756
+cap "INV_2_3/OUT" "INV_2_3/VDD" 13.61
+cap "INV_2_3/OUT" "INV_2_4/OUT" 0.144688
+cap "INV_2_1/OUT" "INV_2_3/OUT" 5.00918
+cap "INV_2_3/OUT" "INV_2_4/VSS" 0.282897
+cap "INV_2_3/VDD" "INV_2_3/IN" 7.7391
+cap "INV_2_1/OUT" "INV_2_3/IN" 0.95179
+cap "INV_2_3/VDD" "INV_2_4/VSS" 81.4134
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/IN" 3.49597
+cap "INV_2_3/IN" "DelayCell_mag_1/VCTRL_mag_0/M4" 0.403487
+cap "INV_2_3/VDD" "INV_2_3/OUT" 2.9204
+cap "INV_2_3/VDD" "INV_2_3/IN" 6.87674
+cap "INV_2_4/VSS" "INV_2_3/OUT" 1.69324
+cap "INV_2_3/IN" "INV_2_4/VSS" 5.36331
+cap "INV_2_2/IN" "INV_2_3/IN" 1.28158
+cap "INV_2_1/OUT" "INV_2_3/OUT" 3.10341
+cap "INV_2_3/IN" "INV_2_3/OUT" 7.3596
+cap "INV_2_1/OUT" "INV_2_3/IN" 0.054467
+cap "INV_2_4/VDD" "INV_2_3/IN" 0.00735587
+cap "INV_2_4/IN" "INV_2_3/IN" 0.222887
+cap "INV_2_3/IN" "INV_2_3/VSS" 47.2691
+cap "INV_2_3/pmos_3p3_KYEELV_0/a_152_68#" "DelayCell_mag_1/VCTRL" 0.00533246
+cap "INV_2_3/VDD" "DelayCell_mag_1/VCTRL" 1.57592
+cap "INV_2_3/VSS" "DelayCell_mag_1/VCTRL" 0.167562
+cap "INV_2_3/IN" "DelayCell_mag_1/VCTRL" 23.6338
+cap "INV_2_3/pmos_3p3_KYEELV_0/a_152_68#" "INV_2_3/VDD" 2.09937
+cap "INV_2_3/pmos_3p3_KYEELV_0/a_152_68#" "DelayCell_mag_1/VCTRL_mag_0/M4" 0.250522
+cap "INV_2_3/IN" "INV_2_3/pmos_3p3_KYEELV_0/a_152_68#" 1.74798
+cap "DelayCell_mag_1/VCTRL_mag_0/M4" "INV_2_3/VDD" 0.169001
+cap "INV_2_3/VSS" "INV_2_3/VDD" 91.8541
+cap "INV_2_3/IN" "INV_2_3/VDD" 154.904
+cap "INV_2_3/VSS" "DelayCell_mag_1/VCTRL_mag_0/M4" 0.739947
+cap "INV_2_3/IN" "DelayCell_mag_1/VCTRL_mag_0/M4" 15.7589
+cap "DelayCell_mag_1/VDD" "VSS" 72.0262
+cap "DelayCell_mag_1/OUTB" "VSS" 5.04831
+cap "VSS" "DelayCell_mag_1/VCTRL_mag_0/M4" 2.04374
+cap "VSS" "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_18/a_n172_n50#" 3.76974
+cap "VSS" "DelayCell_mag_1/VDD" 72.0584
+cap "VSS" "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 8.12803
+cap "VSS" "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_9/a_52_n94#" 2.4122
+cap "VSS" "DelayCell_mag_1/VDD" 54.9066
+cap "VSS" "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" 1.08705
+cap "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" "VSS" 8.33111
+cap "DelayCell_mag_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" 2.88266
+cap "DelayCell_mag_0/VCTRL2" "DelayCell_mag_0/VSS" 6.45753
+cap "DelayCell_mag_0/VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" -0.00618517
+cap "DelayCell_mag_0/VSS" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_764_n50#" 0.410218
+cap "INV_2_4/OUT" "INV_2_1/OUT" 0.00133078
+cap "INV_2_4/VSS" "INV_2_1/OUT" 0.0297892
+cap "INV_2_1/a_195_417#" "INV_2_1/OUT" 0.00360325
+cap "INV_2_4/VDD" "INV_2_4/OUT" 0.244822
+cap "INV_2_4/OUT" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" 0.0229551
+cap "INV_2_4/OUT" "INV_2_4/nmos_3p3_6FEA4B_0/a_256_n94#" 0.269847
+cap "INV_2_0/IN" "INV_2_4/VSS" 0.163431
+cap "INV_2_4/nmos_3p3_6FEA4B_0/a_256_n94#" "INV_2_1/OUT" 0.229206
+cap "INV_2_3/OUT" "INV_2_1/OUT" 0.353893
+cap "INV_2_1/OUT" "INV_2_4/VSS" 9.38769
+cap "INV_2_4/VDD" "INV_2_4/OUT" 45.1108
+cap "INV_2_4/VSS" "INV_2_4/OUT" 65.0488
+cap "INV_2_1/OUT" "INV_2_4/OUT" 1.08863
+cap "INV_2_4/IN" "INV_2_4/VSS" 1.31871
+cap "INV_2_1/OUT" "INV_2_4/IN" 1.29458
+cap "INV_2_3/VDD" "INV_2_4/VSS" -0.783335
+cap "INV_2_0/IN" "INV_2_4/VSS" 1.09694
+cap "INV_2_4/VDD" "DelayCell_mag_0/NMOS_Pairs_0/M9" 2.45817
+cap "INV_2_4/IN" "INV_2_4/OUT" 6.60987
+cap "DelayCell_mag_0/VCTRL_mag_0/VCTRL" "INV_2_4/VSS" 0.0203946
+cap "INV_2_3/OUT" "DelayCell_mag_0/NMOS_Pairs_0/M9" 0.415575
+cap "INV_2_0/IN" "INV_2_4/OUT" 3.07583
+cap "DelayCell_mag_0/NMOS_Pairs_0/M9" "INV_2_4/VSS" 4.72018
+cap "INV_2_1/OUT" "DelayCell_mag_0/NMOS_Pairs_0/M9" 0.0758645
+cap "DelayCell_mag_0/VCTRL_mag_0/VCTRL" "INV_2_4/OUT" 9.65099
+cap "DelayCell_mag_0/NMOS_Pairs_0/M9" "INV_2_4/OUT" 2.35367
+cap "INV_2_4/IN" "DelayCell_mag_0/NMOS_Pairs_0/M9" 3.21253
+cap "INV_2_4/VDD" "INV_2_4/VSS" 7.28857
+cap "INV_2_3/OUT" "INV_2_4/VSS" -1.86577
+cap "INV_2_2/IN" "INV_2_3/VDD" 0.282766
+cap "INV_2_4/VDD" "INV_2_4/OUT" 4.58519
+cap "INV_2_4/IN" "INV_2_3/VDD" 0.401838
+cap "INV_2_4/OUT" "INV_2_4/VSS" 2.8063
+cap "INV_2_4/IN" "INV_2_1/OUT" 0.514461
+cap "INV_2_3/OUT" "INV_2_4/OUT" 0.0638071
+cap "INV_2_2/IN" "DelayCell_mag_1/VCTRL" 50.9281
+cap "INV_2_3/IN" "INV_2_4/VSS" 1.37308
+cap "INV_2_4/IN" "DelayCell_mag_1/VCTRL" 58.5852
+cap "INV_2_3/VDD" "INV_2_4/VSS" -1.94438
+cap "INV_2_3/IN" "INV_2_3/OUT" 0.046827
+cap "INV_2_2/IN" "INV_2_4/IN" 8.8031
+cap "INV_2_1/OUT" "INV_2_3/OUT" 0.184012
+cap "INV_2_4/IN" "INV_2_0/IN" 0.00374679
+cap "INV_2_4/VDD" "DelayCell_mag_1/VCTRL" 88.4932
+cap "DelayCell_mag_1/VCTRL" "INV_2_4/VSS" 134.141
+cap "INV_2_2/IN" "INV_2_4/VDD" 7.17852
+cap "INV_2_4/IN" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_n172_n50#" 0.189939
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/OUT" 0.759413
+cap "INV_2_2/IN" "INV_2_4/VSS" 1.65523
+cap "INV_2_4/IN" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_8/a_n172_n50#" 0.0648654
+cap "INV_2_2/IN" "INV_2_3/OUT" 0.0206203
+cap "INV_2_4/IN" "INV_2_4/VDD" 9.96696
+cap "INV_2_4/IN" "INV_2_4/VSS" -2.17533
+cap "DelayCell_mag_1/VCTRL" "INV_2_4/OUT" 13.0993
+cap "INV_2_4/IN" "INV_2_3/OUT" 8.76172
+cap "INV_2_2/IN" "INV_2_4/OUT" 0.922456
+cap "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_n172_n50#" "INV_2_3/OUT" 0.0189427
+cap "INV_2_4/VDD" "INV_2_4/VSS" -1.94435
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/IN" 7.11944
+cap "INV_2_4/IN" "INV_2_4/OUT" 6.06607
+cap "INV_2_4/VDD" "INV_2_3/OUT" 0.383926
+cap "INV_2_3/VDD" "DelayCell_mag_1/VCTRL" 6.68483
+cap "INV_2_2/IN" "INV_2_3/IN" 2.13097
+cap "INV_2_3/OUT" "INV_2_2/IN" 0.222887
+cap "INV_2_3/IN" "INV_2_2/IN" 7.6432
+cap "DelayCell_mag_1/VCTRL" "DelayCell_mag_1/m1_4218_2395#" -0.269183
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/OUT" 9.38092
+cap "INV_2_4/VDD" "INV_2_3/IN" 0.548452
+cap "INV_2_4/IN" "INV_2_4/OUT" 3.13077
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/IN" 26.702
+cap "INV_2_4/VSS" "INV_2_3/IN" 3.96996
+cap "INV_2_4/VDD" "INV_2_2/IN" 147.492
+cap "INV_2_4/IN" "INV_2_2/IN" 18.1099
+cap "INV_2_4/VSS" "INV_2_2/IN" 8.39808
+cap "DelayCell_mag_1/VCTRL" "INV_2_2/IN" 62.4336
+cap "DelayCell_mag_1/VCTRL" "INV_2_4/VDD" 27.5998
+cap "INV_2_4/IN" "INV_2_4/VDD" 0.533323
+cap "INV_2_4/VDD" "INV_2_4/VSS" 10.5507
+cap "INV_2_4/IN" "DelayCell_mag_1/VCTRL" 16.7067
+cap "DelayCell_mag_1/VCTRL" "INV_2_4/VSS" 212.811
+cap "INV_2_4/IN" "INV_2_4/VSS" 1.535
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/VDD" 40.4201
+cap "INV_2_3/pmos_3p3_KYEELV_0/a_152_68#" "INV_2_2/IN" 0.255831
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/VSS" 3.28237
+cap "INV_2_3/VDD" "INV_2_3/VSS" 12.294
+cap "DelayCell_mag_1/VCTRL" "INV_2_2/IN" 48.178
+cap "INV_2_3/VDD" "INV_2_2/IN" 24.2419
+cap "INV_2_2/IN" "INV_2_3/VSS" 6.21037
+cap "DelayCell_mag_1/VCTRL" "INV_2_2/nmos_3p3_6FEA4B_0/a_152_n50#" 1.16029
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/IN" 0.533081
+cap "INV_2_3/IN" "INV_2_3/VSS" 0.351283
+cap "INV_2_2/nmos_3p3_6FEA4B_0/a_152_n50#" "INV_2_2/IN" 1.56596
+cap "INV_2_3/IN" "INV_2_2/IN" 0.897265
+cap "INV_2_3/pmos_3p3_KYEELV_0/a_152_68#" "DelayCell_mag_1/VCTRL" 0.0164418
+cap "DelayCell_mag_1/NMOS_Pairs_0/VSS" "DelayCell_mag_1/VCTRL_mag_0/M4" 0.161517
+cap "DelayCell_mag_1/VCTRL" "DelayCell_mag_1/VDD" 0.0142172
+cap "DelayCell_mag_1/OUTB" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 2.97352
+cap "DelayCell_mag_1/NMOS_Pairs_0/VSS" "DelayCell_mag_1/VDD" 0.171413
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_18/a_n172_n50#" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 0.488772
+cap "DelayCell_mag_1/NMOS_Pairs_0/VSS" "DelayCell_mag_1/NMOS_Pairs_0/M9" 0.150268
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/VDD" 0.000797859
+cap "DelayCell_mag_1/VDD" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 29.3002
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_9/a_52_n94#" -0.0048499
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 0.0835398
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_9/a_52_n94#" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 0.371136
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_20/a_84_n50#" 0.0225313
+cap "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" "VSS" 32.2451
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" "DelayCell_mag_0/VDD" -0.587626
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 99.6973
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" "DelayCell_mag_0/VCTRL2" 1.20112
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" "DelayCell_mag_0/VCTRL2" 0.0486957
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" "DelayCell_mag_0/NMOS_Pairs_0/VSS" -1.35697
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/VCTRL2" 217.697
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" -0.223005
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" "DelayCell_mag_0/VCTRL2" 49.3846
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL2" 84.1842
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" -0.00711033
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HVHTA7_4/a_n52_n50#" "DelayCell_mag_0/VCTRL2" 0.122735
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" 1.75324
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" 0.0560092
+cap "DelayCell_mag_0/NMOS_Pairs_0/M9" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 0.0403934
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" -0.0485507
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/NMOS_Pairs_0/M9" -0.0845142
+cap "DelayCell_mag_0/VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" 0.216205
+cap "DelayCell_mag_0/VCTRL2" "DelayCell_mag_0/NMOS_Pairs_0/M9" 0.354754
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" 0.0307218
+cap "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" "INV_2_0/IN" 8.27401
+cap "INV_2_4/VDD" "INV_2_0/IN" 0.242945
+cap "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" "INV_2_4/VSS" 2.87592
+cap "INV_2_0/IN" "DelayCell_mag_0/VCTRL" 4.0405
+cap "DelayCell_mag_0/VCTRL" "INV_2_4/VSS" -0.0417937
+cap "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" "DelayCell_mag_0/VCTRL" 7.0742
+cap "INV_2_4/IN" "DelayCell_mag_0/VCTRL_mag_0/M2" 0.0156077
+cap "INV_2_4/OUT" "INV_2_4/VDD" -0.285296
+cap "INV_2_0/IN" "INV_2_4/VDD" 24.5382
+cap "INV_2_5/VSS" "INV_2_4/VDD" 17.5596
+cap "DelayCell_mag_0/m1_4218_2395#" "INV_2_4/VDD" 2.26067
+cap "DelayCell_mag_0/VCTRL" "INV_2_4/OUT" 5.41228
+cap "DelayCell_mag_0/VCTRL" "INV_2_0/IN" 58.5511
+cap "DelayCell_mag_0/VCTRL" "INV_2_5/VSS" 11.2498
+cap "DelayCell_mag_0/VCTRL" "DelayCell_mag_0/m1_4218_2395#" 0.209699
+cap "INV_2_4/OUT" "INV_2_0/IN" 0.226444
+cap "DelayCell_mag_0/VCTRL_mag_0/M2" "INV_2_4/VDD" 0.0111931
+cap "INV_2_0/IN" "INV_2_5/VSS" 1.40786
+cap "DelayCell_mag_0/m1_4218_2395#" "INV_2_0/IN" 0.614576
+cap "DelayCell_mag_0/VCTRL" "INV_2_4/VDD" 139.012
+cap "INV_2_0/OUT" "INV_2_0/IN" 1.0139
+cap "DelayCell_mag_1/VCTRL" "INV_2_4/VDD" 187.731
+cap "INV_2_5/OUT" "DelayCell_mag_1/VCTRL" 0.49159
+cap "INV_2_0/OUT" "INV_2_4/VDD" -0.642272
+cap "INV_2_2/IN" "INV_2_4/VDD" 0.628321
+cap "INV_2_4/VDD" "INV_2_5/VSS" 7.17549
+cap "INV_2_0/IN" "INV_2_4/VDD" 15.5382
+cap "DelayCell_mag_0/m1_4218_2395#" "INV_2_4/VDD" 1.29466
+cap "INV_2_4/IN" "DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_6/a_n172_n50#" 0.000978601
+cap "INV_2_4/IN" "INV_2_4/VDD" 8.99821
+cap "INV_2_0/OUT" "DelayCell_mag_1/VCTRL" 8.16221
+cap "INV_2_2/IN" "DelayCell_mag_1/VCTRL" 0.427616
+cap "DelayCell_mag_1/VCTRL" "INV_2_5/IN" 2.36996
+cap "DelayCell_mag_1/VCTRL" "INV_2_5/VSS" 7.80571
+cap "INV_2_0/OUT" "INV_2_2/IN" 0.00178862
+cap "INV_2_0/IN" "DelayCell_mag_1/VCTRL" 36.0056
+cap "INV_2_4/IN" "DelayCell_mag_1/VCTRL" 20.1073
+cap "INV_2_0/IN" "INV_2_0/OUT" 0.102781
+cap "INV_2_2/IN" "INV_2_4/IN" 0.0780358
+cap "INV_2_0/IN" "INV_2_5/VSS" 0.0983951
+cap "INV_2_4/OUT" "DelayCell_mag_1/VCTRL" 3.38783
+cap "INV_2_4/IN" "INV_2_5/VSS" 0.0627255
+cap "INV_2_0/IN" "INV_2_4/IN" 7.49054
+cap "INV_2_0/OUT" "DelayCell_mag_1/VCTRL_mag_0/M2" 7.74238
+cap "INV_2_4/VDD" "DelayCell_mag_1/VCTRL_mag_0/M2" 0.16492
+cap "DelayCell_mag_1/VCTRL" "INV_2_4/VDD" 133.892
+cap "INV_2_0/IN" "INV_2_0/OUT" 2.69493
+cap "DelayCell_mag_1/m1_4218_2395#" "INV_2_2/IN" 2.96325
+cap "INV_2_2/IN" "INV_2_5/VSS" 6.42143
+cap "INV_2_0/OUT" "INV_2_2/IN" 6.46934
+cap "INV_2_0/OUT" "INV_2_5/VSS" 17.7618
+cap "DelayCell_mag_1/m1_4218_2395#" "INV_2_4/VDD" 30.7107
+cap "INV_2_4/VDD" "INV_2_5/VSS" 28.4159
+cap "INV_2_2/IN" "INV_2_4/VDD" 72.0693
+cap "INV_2_0/OUT" "INV_2_4/VDD" 32.0947
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/IN" 2.51411
+cap "INV_2_2/IN" "DelayCell_mag_1/VCTRL_mag_0/M2" 0.00261399
+cap "INV_2_5/VSS" "DelayCell_mag_1/VCTRL_mag_0/M2" 1.42109e-14
+cap "INV_2_0/OUT" "INV_2_5/OUT" 0.964383
+cap "DelayCell_mag_1/VCTRL" "DelayCell_mag_1/m1_4218_2395#" -16.5724
+cap "DelayCell_mag_1/VCTRL" "INV_2_2/IN" 37.7016
+cap "DelayCell_mag_1/VCTRL" "INV_2_5/VSS" -1.2785
+cap "DelayCell_mag_1/VCTRL" "INV_2_3/VSS" -3.38989
+cap "DelayCell_mag_1/VCTRL_mag_0/M2" "INV_2_2/VDD" 0.207921
+cap "INV_2_3/VSS" "INV_2_2/VDD" 16.4637
+cap "INV_2_3/VSS" "INV_2_2/IN" -5.68434e-14
+cap "DelayCell_mag_1/VCTRL" "INV_2_2/VDD" 30.1015
+cap "DelayCell_mag_1/VCTRL" "INV_2_2/IN" 5.93096
+cap "INV_2_2/VDD" "INV_2_2/IN" 16.4872
+cap "m1_6542_3664#" "DelayCell_mag_1/IN" 0.000710545
+cap "INV_2_2/VDD" "DelayCell_mag_1/IN" 0.0496236
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_20/a_84_n50#" "DelayCell_mag_1/VCTRL2" 0.0547381
+cap "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" "DelayCell_mag_1/VCTRL2" 53.4785
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "DelayCell_mag_1/VCTRL2" 8.71902
+cap "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 9.25896
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "DelayCell_mag_1/NMOS_Pairs_0/VSS" -1.34109
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 124.989
+cap "DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_9/a_52_n94#" "DelayCell_mag_1/VCTRL2" 0.00941661
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/VCTRL_mag_0/M2" 0.00942225
+cap "DelayCell_mag_1/NMOS_Pairs_0/VSS" "DelayCell_mag_1/VCTRL2" 0.766954
+cap "DelayCell_mag_1/NMOS_Pairs_0/VSS" "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" 11.9451
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VDD" 165.153
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" 9.5404
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" "DelayCell_mag_0/VDD" -1.12228
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" "DelayCell_mag_0/VCTRL2" 82.7653
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" -0.958399
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" 0.0636749
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/VCTRL2" 271.522
+cap "DelayCell_mag_0/VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" 8.33896
+cap "DelayCell_mag_0/VCTRL2" "DelayCell_mag_0/NMOS_Pairs_0/M9" 3.81887
+cap "DelayCell_mag_0/NMOS_Pairs_0/M9" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 7.83442
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" "DelayCell_mag_0/VCTRL2" 30.5028
+cap "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_2/a_84_n50#" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 0.393804
+cap "DelayCell_mag_0/VDD" "VCTRL2" 0.149819
+cap "DelayCell_mag_0/VDD" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 0.15595
+cap "DelayCell_mag_0/OUTB" "VCTRL2" 6.59486
+cap "VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/M4" 19.7638
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/OUTB" 7.30792
+cap "DelayCell_mag_0/NMOS_Pairs_0/VSS" "DelayCell_mag_0/VCTRL_mag_0/M4" 0.212748
+cap "INV_2_0/IN" "DelayCell_mag_0/VCTRL" 9.27777
+cap "VCTRL2" "DelayCell_mag_0/VCTRL" 0.108555
+cap "DelayCell_mag_0/VCTRL" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 1.27444
+cap "INV_2_0/IN" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" 6.89793
+cap "VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" 0.00638087
+cap "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 0.030015
+cap "DelayCell_mag_0/VCTRL" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" 62.7688
+cap "INV_2_0/IN" "INV_2_5/IN" 12.4485
+cap "VCTRL2" "INV_2_5/IN" 0.6213
+cap "INV_2_5/IN" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 0.946951
+cap "DelayCell_mag_0/VCTRL" "INV_2_5/IN" 10.7359
+cap "INV_2_0/IN" "INV_2_5/VDD" 0.0998105
+cap "INV_2_0/IN" "VCTRL2" 0.260206
+cap "INV_2_0/IN" "DelayCell_mag_0/NMOS_Pairs_0/VSS" 3.40076
+cap "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" "INV_2_5/IN" 10.6889
+cap "INV_2_5/VSS" "INV_2_5/OUT" 3.78472
+cap "INV_2_5/VSS" "DelayCell_mag_0/VCTRL" 4.94073
+cap "DelayCell_mag_0/VCTRL" "INV_2_5/VDD" 68.9637
+cap "INV_2_0/IN" "INV_2_0/OUT" 4.82179
+cap "INV_2_5/VSS" "INV_2_5/VDD" 15.4651
+cap "INV_2_0/IN" "DelayCell_mag_0/VCTRL" 19.7297
+cap "INV_2_5/IN" "DelayCell_mag_0/VCTRL" 11.917
+cap "INV_2_5/VSS" "INV_2_0/IN" -6.41148
+cap "INV_2_5/IN" "INV_2_5/OUT" 2.8045
+cap "INV_2_5/VSS" "INV_2_5/IN" -6.66445
+cap "INV_2_5/IN" "VCTRL2" -0.0979359
+cap "INV_2_0/IN" "INV_2_5/VDD" 15.2366
+cap "INV_2_5/IN" "INV_2_5/VDD" 38.7234
+cap "DelayCell_mag_0/VCTRL" "INV_2_0/OUT" 1.25361
+cap "INV_2_0/IN" "INV_2_5/IN" 9.57723
+cap "DelayCell_mag_0/m1_4218_2395#" "DelayCell_mag_0/VCTRL" -0.269183
+cap "INV_2_5/OUT" "INV_2_0/IN" 0.346265
+cap "INV_2_0/IN" "INV_2_5/IN" 19.6006
+cap "INV_2_5/OUT" "INV_2_5/IN" 8.89176
+cap "INV_2_5/VSS" "DelayCell_mag_0/VCTRL" 3.08485
+cap "INV_2_5/VSS" "INV_2_5/VDD" 94.594
+cap "INV_2_5/VSS" "VCTRL2" -0.0307997
+cap "INV_2_0/OUT" "DelayCell_mag_0/VCTRL" 1.07693
+cap "INV_2_0/OUT" "INV_2_5/VSS" -4.85193
+cap "INV_2_0/OUT" "INV_2_5/VDD" 14.4605
+cap "INV_2_0/OUT" "INV_2_2/pmos_3p3_KYEELV_0/a_256_24#" 0.182748
+cap "INV_2_5/VSS" "INV_2_0/IN" 8.45099
+cap "INV_2_5/OUT" "INV_2_5/VSS" -2.32176
+cap "DelayCell_mag_0/VCTRL" "INV_2_0/IN" 0.230129
+cap "INV_2_5/OUT" "INV_2_5/VDD" 13.2196
+cap "INV_2_0/IN" "INV_2_5/VDD" 4.32112
+cap "INV_2_5/VSS" "INV_2_5/IN" 9.5109
+cap "DelayCell_mag_0/VCTRL" "INV_2_5/IN" 0.241684
+cap "INV_2_5/OUT" "VCTRL2" -0.026391
+cap "INV_2_0/OUT" "INV_2_0/IN" 5.39285
+cap "INV_2_5/IN" "INV_2_5/VDD" 4.12508
+cap "INV_2_4/a_195_180#" "INV_2_0/IN" 0.00374679
+cap "INV_2_0/OUT" "INV_2_5/IN" 0.346265
+cap "VCTRL2" "INV_2_5/IN" -0.00447867
+cap "INV_2_0/OUT" "INV_2_2/pmos_3p3_KYEELV_0/a_256_24#" 0.734649
+cap "INV_2_5/OUT" "VCTRL2" -6.81652
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_8/a_84_n50#" "INV_2_5/VSS" 0.130641
+cap "INV_2_5/OUT" "INV_2_5/VDD" 4.84771
+cap "VCTRL2" "INV_2_5/VSS" -0.2793
+cap "INV_2_5/VDD" "INV_2_5/VSS" 19.9125
+cap "INV_2_5/VDD" "DelayCell_mag_1/NMOS_Pairs_0/M9" 0.723309
+cap "INV_2_5/OUT" "DelayCell_mag_1/NMOS_Pairs_0/M9" 31.0584
+cap "INV_2_5/OUT" "INV_2_5/IN" 1.45189
+cap "INV_2_5/OUT" "INV_2_5/VSS" 114.925
+cap "INV_2_5/VSS" "DelayCell_mag_1/NMOS_Pairs_0/M9" 0.36413
+cap "INV_2_0/OUT" "INV_2_5/VDD" 7.92348
+cap "INV_2_0/OUT" "INV_2_5/OUT" 0.26201
+cap "INV_2_0/OUT" "INV_2_0/IN" 0.768716
+cap "INV_2_0/OUT" "DelayCell_mag_1/NMOS_Pairs_0/M9" 12.6576
+cap "INV_2_0/OUT" "INV_2_5/VSS" 52.8854
+cap "INV_2_5/VSS" "DelayCell_mag_1/OUT" 1.95927
+cap "DelayCell_mag_1/IN" "DelayCell_mag_1/INB" 0.395737
+cap "DelayCell_mag_1/IN" "VSS" 2.14078
+cap "DelayCell_mag_1/IN" "m1_6542_3664#" 8.56078e-06
+cap "VSS" "DelayCell_mag_1/OUT" 0.768784
+cap "VSS" "DelayCell_mag_1/INB" 0.00124808
+cap "m1_6542_3664#" "DelayCell_mag_1/INB" 0.00192618
+cap "DelayCell_mag_1/NMOS_Pairs_0/M9" "m1_6542_3664#" 0.0331301
+cap "VCTRL2" "DelayCell_mag_1/INB" 0.00119344
+cap "DelayCell_mag_1/VSS" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" 0.00825771
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/VSS" 0.00194546
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" 0.164535
+cap "DelayCell_mag_1/VSS" "DelayCell_mag_1/VCTRL2" 157.372
+cap "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" -0.00618517
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" "DelayCell_mag_1/VCTRL2" 10.3799
+cap "DelayCell_mag_1/VSS" "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" 1.34031
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" "DelayCell_mag_1/VSS" 0.0796458
+cap "DelayCell_mag_1/NMOS_Pairs_0/VSS" "DelayCell_mag_1/VCTRL2" -4.44089e-16
+cap "VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" 0.335184
+cap "VCTRL2" "DelayCell_mag_0/VDD" 44.9369
+cap "VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_n84_n94#" 5.42241
+cap "DelayCell_mag_0/VDD" "VSS" 52.1257
+cap "VCTRL2" "DelayCell_mag_0/VDD" 30.4711
+cap "VSS" "DelayCell_mag_0/VDD" 67.909
+cap "VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_17/a_84_n50#" 30.1245
+cap "VCTRL2" "DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_4/a_84_n50#" 1.54114
+cap "DelayCell_mag_0/VCTRL_mag_0/M4" "VCTRL2" 19.5594
+cap "VSS" "DelayCell_mag_0/VDD" 67.9002
+cap "DelayCell_mag_0/VDD" "VCTRL2" 37.4779
+cap "DelayCell_mag_0/OUTB" "VCTRL2" 4.91752
+cap "VSS" "DelayCell_mag_0/w_5819_4436#" 102.215
+cap "DelayCell_mag_0/w_5819_4436#" "VCTRL2" 15.9297
+cap "DelayCell_mag_0/w_5819_4436#" "DelayCell_mag_0/VCTRL" 25.598
+cap "VSS" "INV_2_5/IN" 12.3377
+cap "VCTRL2" "INV_2_5/IN" 181.925
+cap "INV_2_5/IN" "DelayCell_mag_0/VCTRL" 0.000242107
+cap "DelayCell_mag_0/VCTRL_mag_0/VCTRL" "INV_2_5/IN" 5.73057
+cap "DelayCell_mag_0/w_5819_4436#" "INV_2_5/IN" 10.5653
+cap "INV_2_5/IN" "INV_2_5/VSS" 8.52201
+cap "INV_2_5/IN" "VCTRL2" 3.95902
+cap "INV_2_5/VDD" "INV_2_5/IN" 2.38614
+cap "VCTRL2" "INV_2_5/VSS" 0.0729961
+cap "INV_2_5/VDD" "INV_2_5/VSS" 44.4942
+cap "INV_2_5/VDD" "VCTRL2" 3.41059
+cap "DelayCell_mag_0/VCTRL_mag_0/VCTRL" "INV_2_5/IN" 5.73057
+cap "DelayCell_mag_0/VCTRL" "DelayCell_mag_0/w_5819_4436#" 30.9936
+cap "INV_2_5/IN" "DelayCell_mag_0/w_5819_4436#" 50.9752
+cap "INV_2_5/IN" "INV_2_5/OUT" 0.148426
+cap "INV_2_5/IN" "DelayCell_mag_0/VCTRL" 23.0201
+cap "INV_2_5/IN" "DelayCell_mag_0/VCTRL" 0.0600865
+cap "INV_2_5/OUT" "INV_2_5/VDD" -1.3099
+cap "INV_2_5/VSS" "INV_2_5/VDD" 62.0437
+cap "INV_2_5/VDD" "VCTRL2" 32.8361
+cap "INV_2_5/OUT" "INV_2_5/VSS" -0.311379
+cap "INV_2_5/OUT" "VCTRL2" 3.93145
+cap "INV_2_5/VSS" "VCTRL2" 2.54565
+cap "INV_2_5/IN" "INV_2_5/VDD" 0.423388
+cap "INV_2_5/IN" "INV_2_5/VSS" 1.9715
+cap "INV_2_5/IN" "INV_2_5/OUT" 0.0453905
+cap "INV_2_5/IN" "VCTRL2" 20.3295
+cap "INV_2_5/IN" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" 0.0351818
+cap "INV_2_5/OUT" "VCTRL2" 77.2247
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n172_n50#" "INV_2_5/OUT" 27.5556
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n172_n50#" "VCTRL2" 8.53045
+cap "INV_2_5/OUT" "INV_2_5/VSS" 261.167
+cap "INV_2_5/VSS" "VCTRL2" 70.6665
+cap "INV_2_5/OUT" "INV_2_5/VDD" 3.52783
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n172_n50#" "INV_2_5/VSS" 1.42109e-14
+cap "INV_2_5/VSS" "INV_2_5/VDD" 0.127213
+cap "INV_2_5/OUT" "INV_2_0/OUT" 0.478246
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_8/a_84_n50#" "INV_2_5/OUT" 0.257409
+cap "INV_2_5/IN" "INV_2_5/OUT" 0.989689
+cap "VSS" "DelayCell_mag_1/IN" 2.80832
+cap "VCTRL2" "DelayCell_mag_1/INB" 46.5759
+cap "DelayCell_mag_1/IN" "m1_6542_3664#" 0.00100161
+cap "VCTRL2" "VSS" 143.528
+cap "VCTRL2" "DelayCell_mag_1/IN" 12.774
+cap "VCTRL2" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n172_n50#" 37.8273
+cap "VCTRL2" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_8/a_84_n50#" 182.37
+cap "VSS" "DelayCell_mag_1/INB" 23.3967
+cap "DelayCell_mag_1/IN" "DelayCell_mag_1/INB" 0.151048
+cap "DelayCell_mag_1/INB" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n172_n50#" 0.848032
+cap "DelayCell_mag_1/VSS" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n1036_n94#" 0.527893
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n1036_n94#" "VCTRL2" 0.490078
+cap "DelayCell_mag_1/VSS" "VCTRL2" 58.6707
+cap "DelayCell_mag_1/VSS" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_8/a_84_n50#" 6.08573
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_AG6HDQ_8/a_84_n50#" "VCTRL2" 323.913
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" "VCTRL2" 175.938
+cap "DelayCell_mag_1/VSS" "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" 5.41934
+cap "DelayCell_mag_1/VSS" "VCTRL2" 62.661
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n1036_n94#" "VCTRL2" 3.09931
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n1036_n94#" "DelayCell_mag_1/VSS" 1.69542
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n764_n94#" "DelayCell_mag_1/VSS" 0.366057
+cap "DelayCell_mag_1/VSS" "VCTRL2" 103.403
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n764_n94#" "VCTRL2" 1.96586
+cap "DelayCell_mag_1/NMOS_Pairs_0/nmos_3p3_FG6HDQ_0/a_n868_n50#" "VCTRL2" 1.48084
+cap "VCTRL2" "DelayCell_mag_1/NMOS_Pairs_0/VSS" 4.44089e-16
+merge "DelayCell_mag_1/IN" "m3_7779_3989#" -470.285 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5865 -490 -10674 -496 -30 -62 0 0 0 0
+merge "m3_7779_3989#" "m1_7779_3956#"
+merge "m1_7779_3956#" "INV_2_0/OUT"
+merge "INV_2_0/OUT" "m1_6596_4304#"
+merge "DelayCell_mag_0/INB" "m2_5005_519#" -548.637 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15926 -668 -14994 -538 0 0 0 0 0 0
+merge "m2_5005_519#" "INV_2_1/OUT"
+merge "INV_2_1/OUT" "OUTB"
+merge "DelayCell_mag_1/VSS" "DelayCell_mag_1/NMOS_Pairs_0/VSS" -14127 0 0 0 0 0 0 -2009304 -31168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2703757 -40220 0 0 0 0 0 0 0 0
+merge "DelayCell_mag_1/NMOS_Pairs_0/VSS" "INV_2_5/VSS"
+merge "INV_2_5/VSS" "m1_6573_4762#"
+merge "m1_6573_4762#" "INV_2_0/VSS"
+merge "INV_2_0/VSS" "DelayCell_mag_1/VSUBS"
+merge "DelayCell_mag_1/VSUBS" "INV_2_2/VSS"
+merge "INV_2_2/VSS" "INV_2_3/VSS"
+merge "INV_2_3/VSS" "DelayCell_mag_0/NMOS_Pairs_0/VSS"
+merge "DelayCell_mag_0/NMOS_Pairs_0/VSS" "m1_6577_1799#"
+merge "m1_6577_1799#" "INV_2_1/VSS"
+merge "INV_2_1/VSS" "m1_4833_1514#"
+merge "m1_4833_1514#" "INV_2_4/VSS"
+merge "INV_2_4/VSS" "m1_4830_1880#"
+merge "m1_4830_1880#" "DelayCell_mag_0/VSUBS"
+merge "DelayCell_mag_0/VSUBS" "DelayCell_mag_0/VSS"
+merge "DelayCell_mag_0/VSS" "VSS"
+merge "DelayCell_mag_1/VCTRL2" "DelayCell_mag_1/NMOS_Pairs_0/VCTRL2" -7031.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70032 -1374 -1806362 -35044 0 0 0 0 0 0
+merge "DelayCell_mag_1/NMOS_Pairs_0/VCTRL2" "DelayCell_mag_0/NMOS_Pairs_0/VCTRL2"
+merge "DelayCell_mag_0/NMOS_Pairs_0/VCTRL2" "DelayCell_mag_0/VCTRL2"
+merge "DelayCell_mag_0/VCTRL2" "VCTRL2"
+merge "INV_2_1/IN" "INV_2_3/OUT" -137.798 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5545 -424 0 0 0 0 0 0 0 0
+merge "INV_2_3/OUT" "m1_6600_1151#"
+merge "DelayCell_mag_0/IN" "INV_2_4/OUT" -290.671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6178 -440 0 0 0 0 0 0 0 0
+merge "INV_2_4/OUT" "OUT"
+merge "DelayCell_mag_0/OUTB" "INV_2_5/IN" -494.042 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4348 -266 -4378 -286 0 0 0 0 0 0
+merge "INV_2_5/IN" "m1_5337_5160#"
+merge "DelayCell_mag_1/OUT" "INV_2_2/IN" -579.445 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72 -146 -11986 -478 0 0 0 0 0 0
+merge "INV_2_2/IN" "m1_7818_2177#"
+merge "INV_2_5/VDD" "DelayCell_mag_0/VDD" -2193.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39106 -3014 0 0 0 0 0 0 0 0
+merge "DelayCell_mag_0/VDD" "DelayCell_mag_1/VDD"
+merge "DelayCell_mag_1/VDD" "VDD"
+merge "VDD" "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#"
+merge "DelayCell_mag_1/VCTRL_mag_0/w_1846_n1269#" "INV_2_1/VDD"
+merge "INV_2_1/VDD" "m1_7811_763#"
+merge "m1_7811_763#" "INV_2_3/VDD"
+merge "INV_2_3/VDD" "m1_6651_516#"
+merge "m1_6651_516#" "INV_2_0/VDD"
+merge "INV_2_0/VDD" "m1_6542_3664#"
+merge "m1_6542_3664#" "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#"
+merge "DelayCell_mag_0/VCTRL_mag_0/w_1846_n1269#" "m1_4151_3905#"
+merge "m1_4151_3905#" "INV_2_2/VDD"
+merge "INV_2_2/VDD" "m1_6122_2965#"
+merge "m1_6122_2965#" "m1_7669_3008#"
+merge "m1_7669_3008#" "INV_2_4/VDD"
+merge "INV_2_4/VDD" "m1_6614_2858#"
+merge "DelayCell_mag_0/OUT" "INV_2_0/IN" -389.484 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3936 -264 -4724 -302 0 0 0 0 0 0
+merge "INV_2_0/IN" "m1_4934_4147#"
+merge "DelayCell_mag_1/OUTB" "INV_2_3/IN" -392.503 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3528 -242 -4317 -284 0 0 0 0 0 0
+merge "INV_2_3/IN" "m1_7796_1192#"
+merge "DelayCell_mag_0/VCTRL" "VCTRL" -1667.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25176 -1014 -26975 -992 0 0 0 0 0 0
+merge "VCTRL" "DelayCell_mag_0/VCTRL_mag_0/VCTRL"
+merge "DelayCell_mag_0/VCTRL_mag_0/VCTRL" "DelayCell_mag_1/VCTRL"
+merge "DelayCell_mag_1/VCTRL" "m1_4521_3647#"
+merge "INV_2_2/OUT" "INV_2_4/IN" -151.995 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5566 -426 0 0 0 0 0 0 0 0
+merge "INV_2_4/IN" "m1_6555_2240#"
+merge "DelayCell_mag_1/INB" "m3_7730_5979#" -751.585 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15402 -728 -12460 -512 -10884 -514 0 0 0 0
+merge "m3_7730_5979#" "INV_2_5/OUT"
+merge "INV_2_5/OUT" "m1_6596_5182#"

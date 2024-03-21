@@ -1,0 +1,125 @@
+timestamp 1699521709
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use Inverter_Layout Inverter_Layout_0 1 0 -45 0 1 97
+use pmos_3p3_MN2VAR pmos_3p3_MN2VAR_0 1 0 810 0 1 637
+use nmos_3p3_FGGST2 nmos_3p3_FGGST2_0 1 0 890 0 1 215
+port "VSS" 4 95 29 95 29 m1
+port "VOUT" 3 1436 326 1436 326 m1
+port "VIN" 2 1296 470 1296 470 m1
+port "VDD" 5 95 887 95 887 m1
+port "CLK" 6 207 343 207 343 p
+port "CLKB" 7 281 483 281 483 m1
+node "VSS" 0 164.696 95 29 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33600 824 0 0 0 0 0 0 0 0
+node "m1_387_75#" 3 357.428 387 75 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60030 2702 0 0 0 0 0 0 0 0
+node "VOUT" 0 79.2419 1436 326 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9430 502 0 0 0 0 0 0 0 0
+node "VIN" 4 375.556 1296 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95036 4224 0 0 0 0 0 0 0 0
+node "m1_387_234#" 1 70.1068 387 234 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14720 732 0 0 0 0 0 0 0 0
+node "m1_387_706#" 2 261.292 387 706 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43378 1978 0 0 0 0 0 0 0 0
+node "VDD" 0 200.247 95 887 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45248 1032 0 0 0 0 0 0 0 0
+node "a_462_101#" 142 539.137 462 101 p 0 0 0 0 0 0 0 0 0 0 0 0 37664 1800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLK" 57 321.382 207 343 p 0 0 0 0 0 0 0 0 0 0 0 0 32788 1140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLKB" 48 263.637 281 483 m1 0 0 0 0 0 0 0 0 0 0 0 0 22592 886 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6700 334 0 0 0 0 0 0 0 0
+node "a_462_740#" 117 406.924 462 740 p 0 0 0 0 0 0 0 0 0 0 0 0 31576 1514 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_297_867#" 12035 267.03 297 867 nw 89010 2242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VIN" "VOUT" 45.1865
+cap "VIN" "m1_387_75#" 212.009
+cap "w_297_867#" "VIN" 3.46618
+cap "a_462_740#" "VIN" 9.10836
+cap "VIN" "CLKB" 8.64655
+cap "CLK" "VIN" 8.48425
+cap "VIN" "a_462_101#" 18.222
+cap "m1_387_234#" "m1_387_706#" 13.1236
+cap "m1_387_706#" "m1_387_75#" 7.10518
+cap "w_297_867#" "m1_387_706#" 20.4071
+cap "a_462_740#" "m1_387_706#" 52.7649
+cap "CLKB" "m1_387_706#" 2.403
+cap "CLK" "m1_387_706#" 1.05712
+cap "a_462_101#" "m1_387_706#" 0.31312
+cap "w_297_867#" "VDD" 11.4738
+cap "CLKB" "VDD" 13.614
+cap "CLK" "VDD" 1.42312
+cap "m1_387_234#" "m1_387_75#" 64.2604
+cap "CLKB" "m1_387_234#" 49.198
+cap "CLK" "m1_387_234#" 22.8782
+cap "VOUT" "m1_387_75#" 71.6751
+cap "VSS" "VDD" 13.983
+cap "a_462_740#" "m1_387_75#" 0.326405
+cap "w_297_867#" "a_462_740#" 45.3503
+cap "CLK" "VOUT" 0.112498
+cap "CLKB" "m1_387_75#" 1.23448
+cap "w_297_867#" "CLKB" 1.18848
+cap "a_462_740#" "CLKB" 3.32347
+cap "VIN" "m1_387_706#" 88.6556
+cap "CLK" "m1_387_75#" 4.29866
+cap "w_297_867#" "a_462_101#" 0.339309
+cap "a_462_101#" "m1_387_75#" 67.0428
+cap "CLK" "CLKB" 80.6729
+cap "a_462_740#" "a_462_101#" 11.7985
+cap "CLK" "a_462_101#" 5.97585
+cap "VSS" "m1_387_75#" 3.06909
+cap "VSS" "CLKB" 5.62498
+cap "VSS" "CLK" 4.92665
+cap "VIN" "m1_387_234#" 93.8243
+cap "nmos_3p3_FGGST2_0/a_428_n50#" "Inverter_Layout_0/OUT" 154.425
+cap "nmos_3p3_FGGST2_0/a_268_n50#" "Inverter_Layout_0/OUT" 51.3461
+cap "Inverter_Layout_0/IN" "Inverter_Layout_0/OUT" 42.0407
+cap "Inverter_Layout_0/VDD" "Inverter_Layout_0/OUT" 307.734
+cap "nmos_3p3_FGGST2_0/a_428_n50#" "Inverter_Layout_0/VSS" 8.49679
+cap "Inverter_Layout_0/IN" "Inverter_Layout_0/VSS" -2.21546
+cap "Inverter_Layout_0/VSS" "Inverter_Layout_0/VDD" -14.0992
+cap "nmos_3p3_FGGST2_0/a_428_n50#" "nmos_3p3_FGGST2_0/a_268_n50#" 339.665
+cap "Inverter_Layout_0/IN" "nmos_3p3_FGGST2_0/a_428_n50#" 38.4168
+cap "nmos_3p3_FGGST2_0/a_268_n50#" "Inverter_Layout_0/VDD" 72.3913
+cap "nmos_3p3_FGGST2_0/a_428_n50#" "Inverter_Layout_0/VDD" 67.6949
+cap "Inverter_Layout_0/IN" "nmos_3p3_FGGST2_0/a_268_n50#" 45.7127
+cap "Inverter_Layout_0/IN" "Inverter_Layout_0/VDD" 55.8717
+cap "Inverter_Layout_0/VSS" "Inverter_Layout_0/OUT" -5.43292
+cap "Inverter_Layout_0/VDD" "nmos_3p3_FGGST2_0/a_428_n50#" 0.358984
+cap "Inverter_Layout_0/IN" "Inverter_Layout_0/VDD" 2.86875
+cap "Inverter_Layout_0/IN" "nmos_3p3_FGGST2_0/a_428_n50#" 6.86974
+cap "Inverter_Layout_0/VDD" "nmos_3p3_FGGST2_0/a_268_n50#" 6.71711
+cap "nmos_3p3_FGGST2_0/a_268_n50#" "nmos_3p3_FGGST2_0/a_428_n50#" -5.01711
+cap "Inverter_Layout_0/IN" "nmos_3p3_FGGST2_0/a_268_n50#" 1.83523
+merge "nmos_3p3_FGGST2_0/VSUBS" "pmos_3p3_MN2VAR_0/VSUBS" -174.246 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -33600 -824 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MN2VAR_0/VSUBS" "Inverter_Layout_0/VSS"
+merge "Inverter_Layout_0/VSS" "VSUBS"
+merge "VSUBS" "VSS"
+merge "nmos_3p3_FGGST2_0/a_268_n50#" "nmos_3p3_FGGST2_0/a_n52_n50#" -327.617 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10212 -996 0 0 0 0 0 0 0 0
+merge "nmos_3p3_FGGST2_0/a_n52_n50#" "nmos_3p3_FGGST2_0/a_n372_n50#"
+merge "nmos_3p3_FGGST2_0/a_n372_n50#" "pmos_3p3_MN2VAR_0/a_348_n100#"
+merge "pmos_3p3_MN2VAR_0/a_348_n100#" "pmos_3p3_MN2VAR_0/a_28_n100#"
+merge "pmos_3p3_MN2VAR_0/a_28_n100#" "pmos_3p3_MN2VAR_0/a_n292_n100#"
+merge "pmos_3p3_MN2VAR_0/a_n292_n100#" "VIN"
+merge "nmos_3p3_FGGST2_0/a_428_n50#" "VOUT" -448.383 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14122 -1534 0 0 0 0 0 0 0 0
+merge "VOUT" "nmos_3p3_FGGST2_0/a_108_n50#"
+merge "nmos_3p3_FGGST2_0/a_108_n50#" "nmos_3p3_FGGST2_0/a_n212_n50#"
+merge "nmos_3p3_FGGST2_0/a_n212_n50#" "nmos_3p3_FGGST2_0/a_n516_n50#"
+merge "nmos_3p3_FGGST2_0/a_n516_n50#" "m1_387_75#"
+merge "m1_387_75#" "pmos_3p3_MN2VAR_0/a_188_n100#"
+merge "pmos_3p3_MN2VAR_0/a_188_n100#" "pmos_3p3_MN2VAR_0/a_n132_n100#"
+merge "pmos_3p3_MN2VAR_0/a_n132_n100#" "pmos_3p3_MN2VAR_0/a_n436_n100#"
+merge "pmos_3p3_MN2VAR_0/a_n436_n100#" "m1_387_234#"
+merge "m1_387_234#" "m1_387_706#"
+merge "pmos_3p3_MN2VAR_0/a_292_n144#" "Inverter_Layout_0/OUT" -739.33 0 0 0 0 0 0 0 0 0 0 0 0 -10472 -1046 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4462 -328 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_0/OUT" "CLKB"
+merge "CLKB" "pmos_3p3_MN2VAR_0/a_132_n144#"
+merge "pmos_3p3_MN2VAR_0/a_132_n144#" "pmos_3p3_MN2VAR_0/a_n28_n144#"
+merge "pmos_3p3_MN2VAR_0/a_n28_n144#" "pmos_3p3_MN2VAR_0/a_n188_n144#"
+merge "pmos_3p3_MN2VAR_0/a_n188_n144#" "pmos_3p3_MN2VAR_0/a_n348_n144#"
+merge "pmos_3p3_MN2VAR_0/a_n348_n144#" "a_462_740#"
+merge "pmos_3p3_MN2VAR_0/w_n522_n230#" "Inverter_Layout_0/VDD" -241.508 -4140 -3180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45248 -1032 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_0/VDD" "VDD"
+merge "VDD" "w_297_867#"
+merge "nmos_3p3_FGGST2_0/a_372_n94#" "nmos_3p3_FGGST2_0/a_212_n94#" -449.918 0 0 0 0 0 0 0 0 0 0 0 0 -14051 -1410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_FGGST2_0/a_212_n94#" "nmos_3p3_FGGST2_0/a_52_n94#"
+merge "nmos_3p3_FGGST2_0/a_52_n94#" "nmos_3p3_FGGST2_0/a_n108_n94#"
+merge "nmos_3p3_FGGST2_0/a_n108_n94#" "nmos_3p3_FGGST2_0/a_n268_n94#"
+merge "nmos_3p3_FGGST2_0/a_n268_n94#" "nmos_3p3_FGGST2_0/a_n428_n94#"
+merge "nmos_3p3_FGGST2_0/a_n428_n94#" "a_462_101#"
+merge "a_462_101#" "Inverter_Layout_0/IN"
+merge "Inverter_Layout_0/IN" "CLK"

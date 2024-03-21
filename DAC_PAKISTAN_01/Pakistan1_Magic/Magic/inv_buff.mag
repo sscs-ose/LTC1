@@ -1,0 +1,33 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694585882
+<< metal1 >>
+rect -11 742 805 813
+rect -11 700 0 742
+rect -90 372 81 453
+rect 395 371 427 418
+rect 761 371 858 418
+rect -11 58 0 113
+rect -11 2 798 58
+rect -11 0 0 2
+use Inverter  Inverter_0
+timestamp 1693893072
+transform 1 0 522 0 1 214
+box -118 -214 286 599
+use Inverter  Inverter_1
+timestamp 1693893072
+transform 1 0 118 0 1 214
+box -118 -214 286 599
+<< labels >>
+flabel metal1 -49 407 -49 407 0 FreeSans 640 0 0 0 IN
+port 1 nsew
+flabel metal1 842 393 842 393 0 FreeSans 640 0 0 0 OUT
+port 3 nsew
+flabel metal1 380 760 380 760 0 FreeSans 640 0 0 0 VDD
+port 4 nsew
+flabel metal1 400 40 400 40 0 FreeSans 640 0 0 0 VSS
+port 5 nsew
+flabel metal1 400 380 400 380 0 FreeSans 480 0 0 0 SD1
+port 6 nsew
+<< end >>

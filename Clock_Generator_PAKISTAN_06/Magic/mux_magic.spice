@@ -1,0 +1,73 @@
+* NGSPICE file created from mux_magic.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_VZX6F7 a_164_n112# a_n164_n156# a_n252_n112# a_52_n156# w_n338_n242#
++ a_n52_n112#
+X0 a_164_n112# a_52_n156# a_n52_n112# w_n338_n242# pfet_03v3 ad=0.493p pd=3.12u as=0.291p ps=1.64u w=1.12u l=0.56u
+X1 a_n52_n112# a_n164_n156# a_n252_n112# w_n338_n242# pfet_03v3 ad=0.291p pd=1.64u as=0.493p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt nmos_3p3_F2UGVV a_164_n112# a_n164_n156# a_n252_n112# a_52_n156# a_n52_n112#
++ VSUBS
+X0 a_164_n112# a_52_n156# a_n52_n112# VSUBS nfet_03v3 ad=0.493p pd=3.12u as=0.291p ps=1.64u w=1.12u l=0.56u
+X1 a_n52_n112# a_n164_n156# a_n252_n112# VSUBS nfet_03v3 ad=0.291p pd=1.64u as=0.493p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt nmos_3p3_A2UGVV a_56_n112# a_n56_n156# a_n144_n112# VSUBS
+X0 a_56_n112# a_n56_n156# a_n144_n112# VSUBS nfet_03v3 ad=0.493p pd=3.12u as=0.493p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt AND2_magic VDD OUT A B VSS
+Xpmos_3p3_VZX6F7_0 VDD A VDD A VDD a_1073_377# pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_1 VDD B VDD B VDD a_1073_377# pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_2 VDD a_1073_377# VDD a_1073_377# VDD OUT pmos_3p3_VZX6F7
+Xnmos_3p3_F2UGVV_0 m1_349_n207# B m1_349_n207# B VSS VSS nmos_3p3_F2UGVV
+Xnmos_3p3_A2UGVV_0 m1_349_n207# A a_1073_377# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 a_1073_377# A m1_349_n207# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 OUT a_1073_377# VSS VSS nmos_3p3_A2UGVV
+.ends
+
+.subckt pmos_3p3_VRCSD7 a_n56_24# a_n272_24# a_272_n292# a_56_n292# a_160_24# a_n360_n292#
++ a_n160_68# a_n272_n336# a_n360_68# a_160_n336# a_n56_n336# a_272_68# a_56_68# w_n446_n422#
++ a_n160_n292#
+X0 a_272_68# a_160_24# a_56_68# w_n446_n422# pfet_03v3 ad=0.493p pd=3.12u as=0.291p ps=1.64u w=1.12u l=0.56u
+X1 a_56_n292# a_n56_n336# a_n160_n292# w_n446_n422# pfet_03v3 ad=0.291p pd=1.64u as=0.291p ps=1.64u w=1.12u l=0.56u
+X2 a_272_n292# a_160_n336# a_56_n292# w_n446_n422# pfet_03v3 ad=0.493p pd=3.12u as=0.291p ps=1.64u w=1.12u l=0.56u
+X3 a_n160_68# a_n272_24# a_n360_68# w_n446_n422# pfet_03v3 ad=0.291p pd=1.64u as=0.493p ps=3.12u w=1.12u l=0.56u
+X4 a_n160_n292# a_n272_n336# a_n360_n292# w_n446_n422# pfet_03v3 ad=0.291p pd=1.64u as=0.493p ps=3.12u w=1.12u l=0.56u
+X5 a_56_68# a_n56_24# a_n160_68# w_n446_n422# pfet_03v3 ad=0.291p pd=1.64u as=0.291p ps=1.64u w=1.12u l=0.56u
+.ends
+
+.subckt pmos_3p3_V9Y6F7 w_n230_n242# a_56_n112# a_n56_n156# a_n144_n112#
+X0 a_56_n112# a_n56_n156# a_n144_n112# w_n230_n242# pfet_03v3 ad=0.493p pd=3.12u as=0.493p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt OR_magic A B VSS VDD VOUT
+Xpmos_3p3_V9Y6F7_0 VDD VOUT a_822_n570# VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_4 VDD a_822_n570# B m1_99_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_VZX6F7_0 m1_99_40# B m1_99_40# B VDD a_822_n570# pmos_3p3_VZX6F7
+Xpmos_3p3_V9Y6F7_5 VDD m1_99_40# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_VZX6F7_1 m1_99_40# A m1_99_40# A VDD VDD pmos_3p3_VZX6F7
+Xpmos_3p3_V9Y6F7_6 VDD VOUT a_822_n570# VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_7 VDD a_822_n570# B m1_99_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_8 VDD m1_99_40# A VDD pmos_3p3_V9Y6F7
+Xnmos_3p3_A2UGVV_0 a_822_n570# B VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 VOUT a_822_n570# VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 VSS A a_822_n570# VSS nmos_3p3_A2UGVV
+.ends
+
+.subckt nmos_3p3_G2UGVV a_272_n112# a_56_n112# a_n272_n156# a_160_n156# a_n56_n156#
++ a_n360_n112# a_n160_n112# VSUBS
+X0 a_56_n112# a_n56_n156# a_n160_n112# VSUBS nfet_03v3 ad=0.291p pd=1.64u as=0.291p ps=1.64u w=1.12u l=0.56u
+X1 a_272_n112# a_160_n156# a_56_n112# VSUBS nfet_03v3 ad=0.493p pd=3.12u as=0.291p ps=1.64u w=1.12u l=0.56u
+X2 a_n160_n112# a_n272_n156# a_n360_n112# VSUBS nfet_03v3 ad=0.291p pd=1.64u as=0.493p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt mux_magic VOUT VDD VSS SEL IN2 IN1
+XAND2_magic_0 VDD OR_magic_0/A AND2_magic_0/A IN1 VSS AND2_magic
+XAND2_magic_1 VDD OR_magic_0/B SEL IN2 VSS AND2_magic
+Xpmos_3p3_VRCSD7_0 SEL SEL AND2_magic_0/A VDD SEL VDD AND2_magic_0/A SEL VDD SEL SEL
++ AND2_magic_0/A VDD VDD AND2_magic_0/A pmos_3p3_VRCSD7
+XOR_magic_0 OR_magic_0/A OR_magic_0/B VSS VDD VOUT OR_magic
+Xnmos_3p3_G2UGVV_0 AND2_magic_0/A VSS SEL SEL SEL VSS AND2_magic_0/A VSS nmos_3p3_G2UGVV
+.ends
+

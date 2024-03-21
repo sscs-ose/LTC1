@@ -1,0 +1,141 @@
+* NGSPICE file created from VCO_mag.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_9MTZEK a_n52_n70# a_52_n114# a_n122_n114# a_n210_n70# a_122_n70#
++ VSUBS
+X0 a_n52_n70# a_n122_n114# a_n210_n70# VSUBS nfet_03v3 ad=0.182p pd=1.22u as=0.308p ps=2.28u w=0.7u l=0.35u
+X1 a_122_n70# a_52_n114# a_n52_n70# VSUBS nfet_03v3 ad=0.308p pd=2.28u as=0.182p ps=1.22u w=0.7u l=0.35u
+.ends
+
+.subckt pmos_3p3_585UPK a_52_n184# a_122_n140# a_n52_n140# a_n122_n184# a_n210_n140#
++ w_n296_n270#
+X0 a_122_n140# a_52_n184# a_n52_n140# w_n296_n270# pfet_03v3 ad=0.616p pd=3.68u as=0.364p ps=1.92u w=1.4u l=0.35u
+X1 a_n52_n140# a_n122_n184# a_n210_n140# w_n296_n270# pfet_03v3 ad=0.364p pd=1.92u as=0.616p ps=3.68u w=1.4u l=0.35u
+.ends
+
+.subckt GF_INV4 VDD IN OUT VSS
+Xnmos_3p3_9MTZEK_0 OUT IN IN VSS VSS VSS nmos_3p3_9MTZEK
+Xpmos_3p3_585UPK_0 IN VDD OUT IN VDD VDD pmos_3p3_585UPK
+.ends
+
+.subckt pmos_3p3_ZB3RD7 a_268_n144# a_n52_n100# a_n468_n100# a_164_n100# a_380_n100#
++ a_n164_n144# a_n380_n144# a_52_n144# a_n268_n100# w_n554_n230#
+X0 a_n268_n100# a_n380_n144# a_n468_n100# w_n554_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.56u
+X1 a_380_n100# a_268_n144# a_164_n100# w_n554_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.56u
+X2 a_164_n100# a_52_n144# a_n52_n100# w_n554_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+X3 a_n52_n100# a_n164_n144# a_n268_n100# w_n554_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+.ends
+
+.subckt nmos_3p3_FSHHD6 a_n52_n100# a_164_n100# a_n164_n144# a_n252_n100# a_52_n144#
++ VSUBS
+X0 a_164_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.56u
+X1 a_n52_n100# a_n164_n144# a_n252_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.56u
+.ends
+
+.subckt nmos_3p3_VMHHD6 a_268_n144# a_n52_n100# a_n468_n100# a_164_n100# a_380_n100#
++ a_n164_n144# a_n380_n144# a_52_n144# a_n268_n100# VSUBS
+X0 a_n268_n100# a_n380_n144# a_n468_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.56u
+X1 a_380_n100# a_268_n144# a_164_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.56u
+X2 a_164_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+X3 a_n52_n100# a_n164_n144# a_n268_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+.ends
+
+.subckt nmos_3p3_QNHHD6 a_56_n100# a_n56_n144# a_n144_n100# VSUBS
+X0 a_56_n100# a_n56_n144# a_n144_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.56u
+.ends
+
+.subckt Delay_Cell_mag OUT OUTB EN VCONT INB IN VSS VDD
+Xpmos_3p3_ZB3RD7_5 OUT VDD VDD OUTB VDD OUT OUT OUT OUTB VDD pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_4 OUTB VDD VDD OUT VDD OUTB OUTB OUTB OUT VDD pmos_3p3_ZB3RD7
+Xnmos_3p3_FSHHD6_0 a_562_n2079# VSS EN VSS EN VSS nmos_3p3_FSHHD6
+Xnmos_3p3_VMHHD6_0 VCONT VSS VSS a_2095_n808# VSS VCONT VCONT VCONT a_2095_n808# VSS
++ nmos_3p3_VMHHD6
+Xnmos_3p3_VMHHD6_2 INB a_562_n2079# a_562_n2079# OUTB a_562_n2079# INB INB INB OUTB
++ VSS nmos_3p3_VMHHD6
+Xnmos_3p3_VMHHD6_1 IN a_562_n2079# a_562_n2079# OUT a_562_n2079# IN IN IN OUT VSS
++ nmos_3p3_VMHHD6
+Xnmos_3p3_QNHHD6_0 a_562_n2079# a_562_n2079# a_562_n2079# VSS nmos_3p3_QNHHD6
+Xnmos_3p3_QNHHD6_1 a_562_n2079# a_562_n2079# a_562_n2079# VSS nmos_3p3_QNHHD6
+Xpmos_3p3_ZB3RD7_0 a_2095_n808# VDD VDD a_2095_n808# VDD a_2095_n808# a_2095_n808#
++ a_2095_n808# a_2095_n808# VDD pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_1 OUT m1_277_n67# m1_277_n67# OUT m1_277_n67# OUT OUT OUT OUT VDD
++ pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_2 OUTB m1_277_n67# m1_277_n67# OUTB m1_277_n67# OUTB OUTB OUTB OUTB
++ VDD pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_3 a_2095_n808# m1_277_n67# m1_277_n67# VDD m1_277_n67# a_2095_n808#
++ a_2095_n808# a_2095_n808# VDD VDD pmos_3p3_ZB3RD7
+.ends
+
+.subckt nmos_3p3_AQSZEK a_n123_n70# a_35_n70# a_n35_n114# VSUBS
+X0 a_35_n70# a_n35_n114# a_n123_n70# VSUBS nfet_03v3 ad=0.308p pd=2.28u as=0.308p ps=2.28u w=0.7u l=0.35u
+.ends
+
+.subckt pmos_3p3_HBGRPK w_n213_n166# a_35_n35# a_n35_n79# a_n127_n36#
+X0 a_35_n35# a_n35_n79# a_n127_n36# w_n213_n166# pfet_03v3 ad=0.165p pd=1.64u as=0.165p ps=1.64u w=0.35u l=0.35u
+.ends
+
+.subckt GF_INV1 VDD IN OUT VSS
+Xnmos_3p3_AQSZEK_0 VSS OUT IN VSS nmos_3p3_AQSZEK
+Xpmos_3p3_HBGRPK_0 VDD OUT IN VDD pmos_3p3_HBGRPK
+.ends
+
+.subckt pmos_3p3_MD4UPK a_52_n324# a_226_n324# a_122_n280# a_n52_n280# a_296_n280#
++ w_n470_n410# a_n226_n280# a_n384_n280# a_n122_n324# a_n296_n324#
+X0 a_296_n280# a_226_n324# a_122_n280# w_n470_n410# pfet_03v3 ad=1.23p pd=6.48u as=0.728p ps=3.32u w=2.8u l=0.35u
+X1 a_n226_n280# a_n296_n324# a_n384_n280# w_n470_n410# pfet_03v3 ad=0.728p pd=3.32u as=1.23p ps=6.48u w=2.8u l=0.35u
+X2 a_122_n280# a_52_n324# a_n52_n280# w_n470_n410# pfet_03v3 ad=0.728p pd=3.32u as=0.728p ps=3.32u w=2.8u l=0.35u
+X3 a_n52_n280# a_n122_n324# a_n226_n280# w_n470_n410# pfet_03v3 ad=0.728p pd=3.32u as=0.728p ps=3.32u w=2.8u l=0.35u
+.ends
+
+.subckt nmos_3p3_S7UZWU a_52_n184# a_226_n184# a_122_n140# a_n52_n140# a_n122_n184#
++ a_296_n140# a_n226_n140# a_n296_n184# a_n384_n140# VSUBS
+X0 a_n226_n140# a_n296_n184# a_n384_n140# VSUBS nfet_03v3 ad=0.364p pd=1.92u as=0.616p ps=3.68u w=1.4u l=0.35u
+X1 a_122_n140# a_52_n184# a_n52_n140# VSUBS nfet_03v3 ad=0.364p pd=1.92u as=0.364p ps=1.92u w=1.4u l=0.35u
+X2 a_n52_n140# a_n122_n184# a_n226_n140# VSUBS nfet_03v3 ad=0.364p pd=1.92u as=0.364p ps=1.92u w=1.4u l=0.35u
+X3 a_296_n140# a_226_n184# a_122_n140# VSUBS nfet_03v3 ad=0.616p pd=3.68u as=0.364p ps=1.92u w=1.4u l=0.35u
+.ends
+
+.subckt GF_INV16 VDD IN OUT VSS
+Xpmos_3p3_MD4UPK_0 IN IN OUT VDD VDD VDD OUT VDD IN IN pmos_3p3_MD4UPK
+Xnmos_3p3_S7UZWU_0 IN IN OUT VSS IN VSS OUT IN VSS VSS nmos_3p3_S7UZWU
+.ends
+
+.subckt pmos_3p3_HDJZPK a_n52_n50# a_n384_n50# a_296_n50# a_226_n94# a_n296_n94# w_n470_n180#
++ a_52_n94# a_n226_n50# a_122_n50# a_n122_n94#
+X0 a_n52_n50# a_n122_n94# a_n226_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.35u
+X1 a_122_n50# a_52_n94# a_n52_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.35u
+X2 a_296_n50# a_226_n94# a_122_n50# w_n470_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.35u
+X3 a_n226_n50# a_n296_n94# a_n384_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.35u
+.ends
+
+.subckt nmos_3p3_VDSZE6 a_122_n100# a_n52_n100# a_n122_n144# a_296_n100# a_n226_n100#
++ a_n296_n144# a_n384_n100# a_52_n144# a_226_n144# VSUBS
+X0 a_296_n100# a_226_n144# a_122_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.35u
+X1 a_n226_n100# a_n296_n144# a_n384_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.35u
+X2 a_n52_n100# a_n122_n144# a_n226_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.35u
+X3 a_122_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.35u
+.ends
+
+.subckt Stage_INV IN OUT VDD VSS
+Xpmos_3p3_HDJZPK_0 VDD VDD VDD IN IN VDD IN OUT OUT IN pmos_3p3_HDJZPK
+Xnmos_3p3_VDSZE6_0 OUT VSS IN VSS OUT IN VSS IN IN VSS nmos_3p3_VDSZE6
+.ends
+
+**.subckt VCO_mag VSS EN VCONT OUT OUTB VDD
+XGF_INV4_0 VDD GF_INV4_0/IN GF_INV4_0/OUT VSS GF_INV4
+XGF_INV4_1 VDD GF_INV4_1/IN GF_INV4_1/OUT VSS GF_INV4
+XDelay_Cell_mag_0 Delay_Cell_mag_3/INB Delay_Cell_mag_3/IN EN VCONT Stage_INV_0/OUT
++ Stage_INV_1/OUT VSS VDD Delay_Cell_mag
+XGF_INV1_1 VDD GF_INV1_1/IN GF_INV4_1/IN VSS GF_INV1
+XGF_INV1_0 VDD GF_INV1_0/IN GF_INV4_0/IN VSS GF_INV1
+XDelay_Cell_mag_1 Delay_Cell_mag_2/INB Delay_Cell_mag_2/IN EN VCONT GF_INV1_0/IN GF_INV1_1/IN
++ VSS VDD Delay_Cell_mag
+XGF_INV16_2 VDD GF_INV4_0/OUT OUT VSS GF_INV16
+XGF_INV16_1 VDD GF_INV4_1/OUT OUTB VSS GF_INV16
+XStage_INV_0 Stage_INV_0/IN Stage_INV_0/OUT VDD VSS Stage_INV
+XDelay_Cell_mag_2 Stage_INV_0/IN Stage_INV_1/IN EN VCONT Delay_Cell_mag_2/INB Delay_Cell_mag_2/IN
++ VSS VDD Delay_Cell_mag
+XDelay_Cell_mag_3 GF_INV1_0/IN GF_INV1_1/IN EN VCONT Delay_Cell_mag_3/INB Delay_Cell_mag_3/IN
++ VSS VDD Delay_Cell_mag
+XStage_INV_1 Stage_INV_1/IN Stage_INV_1/OUT VDD VSS Stage_INV
+.ends
+

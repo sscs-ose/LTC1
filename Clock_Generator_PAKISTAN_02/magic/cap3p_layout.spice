@@ -1,0 +1,10 @@
+* NGSPICE file created from cap3p_layout.ext - technology: gf180mcuC
+
+.subckt mim_2p0fF_WS3THJ m4_n4490_n4370# m4_n4370_n4250#
+X0 m4_n4370_n4250# m4_n4490_n4370# cap_mim_2f0_m4m5_noshield c_width=42.5u c_length=42.5u
+.ends
+
+.subckt cap3p_layout Pp Nn
+Xmim_2p0fF_WS3THJ_0 Nn Pp mim_2p0fF_WS3THJ
+.ends
+

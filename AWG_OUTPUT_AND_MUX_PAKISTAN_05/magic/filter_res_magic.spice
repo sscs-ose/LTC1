@@ -1,0 +1,58 @@
+* NGSPICE file created from filter_res_magic.ext - technology: gf180mcuC
+
+.subckt cap_mim_2p0fF_NEQE26 m4_n1840_n3340# m4_n1720_n3220#
+X0 m4_n1720_n3220# m4_n1840_n3340# cap_mim_2f0_m4m5_noshield c_width=16u c_length=15.2u
+X1 m4_n1720_n3220# m4_n1840_n3340# cap_mim_2f0_m4m5_noshield c_width=16u c_length=15.2u
+.ends
+
+.subckt ppolyf_u_6V6NLJ a_n520_n332# a_1160_n332# a_320_230# a_n1080_n332# a_n240_230#
++ a_1440_230# a_n800_n332# w_n1824_n516# a_1440_n332# a_n1360_n332# a_n1360_230# a_n1640_n332#
++ a_880_230# a_600_230# a_n520_230# a_40_n332# a_n1640_230# a_320_n332# a_1160_230#
++ a_40_230# a_600_n332# a_n1080_230# a_880_n332# a_n240_n332# a_n800_230#
+X0 a_n1640_230# a_n1640_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X1 a_n1360_230# a_n1360_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X2 a_n520_230# a_n520_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X3 a_n1080_230# a_n1080_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X4 a_n800_230# a_n800_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X5 a_n240_230# a_n240_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X6 a_1440_230# a_1440_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X7 a_40_230# a_40_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X8 a_1160_230# a_1160_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X9 a_600_230# a_600_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X10 a_880_230# a_880_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+X11 a_320_230# a_320_n332# w_n1824_n516# ppolyf_u r_width=1u r_length=2.3u
+.ends
+
+.subckt filter_res_magic R7_R8_R10_C R3_R7 INN_P VDD OP_AMP_IN_P OP_AMP_IN_N
+Xcap_mim_2p0fF_NEQE26_0 OP_AMP_IN_N m1_387_n4916# cap_mim_2p0fF_NEQE26
+Xcap_mim_2p0fF_NEQE26_1 R3_R7 m1_387_n186# cap_mim_2p0fF_NEQE26
+Xcap_mim_2p0fF_NEQE26_2 OP_AMP_IN_P m1_387_731# cap_mim_2p0fF_NEQE26
+Xcap_mim_2p0fF_NEQE26_3 R3_R7 m1_387_n186# cap_mim_2p0fF_NEQE26
+Xcap_mim_2p0fF_NEQE26_4 R3_R7 m1_387_n186# cap_mim_2p0fF_NEQE26
+Xcap_mim_2p0fF_NEQE26_5 m1_387_n1103# R7_R8_R10_C cap_mim_2p0fF_NEQE26
+Xppolyf_u_6V6NLJ_1 m1_767_n4438# m1_2067_n3999# m1_2167_n5030# m1_767_n4438# m1_1047_n5030#
++ VDD m1_486_n4324# VDD VDD m1_486_n4324# m1_387_n4916# VDD m1_2167_n5030# m1_2446_n4916#
++ m1_1326_n4916# m1_1887_n4438# VDD m1_1607_n4324# m1_2446_n4916# m1_1326_n4916# m1_1887_n4438#
++ R3_R7 m1_2704_n4323# m1_1607_n4324# m1_1047_n5030# ppolyf_u_6V6NLJ
+Xppolyf_u_6V6NLJ_0 m1_946_n2582# OP_AMP_IN_N m1_1789_n3097# m1_384_n2588# m1_1227_n3094#
++ VDD m1_946_n2582# VDD VDD m1_384_n2588# R7_R8_R10_C VDD OP_AMP_IN_N OP_AMP_IN_N
++ m1_1227_n3094# m1_1506_n2582# VDD m1_2066_n2585# OP_AMP_IN_N m1_1789_n3097# m1_2066_n2585#
++ m1_667_n3094# OP_AMP_IN_N m1_1506_n2582# m1_667_n3094# ppolyf_u_6V6NLJ
+Xppolyf_u_6V6NLJ_2 m1_1327_n3521# m1_2447_n3407# m1_2067_n3999# R7_R8_R10_C m1_1607_n3999#
++ VDD m1_1047_n3636# VDD VDD m1_488_n3407# R3_R7 VDD m1_1607_n3999# m1_1887_n4113#
++ m1_767_n4113# m1_1327_n3521# VDD m1_1047_n3636# m1_2704_n4323# m1_1887_n4113# m1_2447_n3407#
++ m1_767_n4113# m1_2627_n3434# m1_488_n3407# R7_R8_R10_C ppolyf_u_6V6NLJ
+Xppolyf_u_6V6NLJ_3 m1_945_n1681# OP_AMP_IN_P m1_1783_n1186# m1_387_n1682# m1_1225_n1159#
++ VDD m1_945_n1681# VDD VDD m1_387_n1682# m1_387_n1103# VDD OP_AMP_IN_P OP_AMP_IN_P
++ m1_1225_n1159# m1_1506_n1677# VDD m1_2064_n1679# OP_AMP_IN_P m1_1783_n1186# m1_2064_n1679#
++ m1_665_n1170# OP_AMP_IN_P m1_1506_n1677# m1_665_n1170# ppolyf_u_6V6NLJ
+Xppolyf_u_6V6NLJ_4 m1_767_166# m1_2067_n186# m1_2167_758# m1_767_166# m1_1047_758#
++ VDD m1_486_52# VDD VDD m1_486_52# m1_387_731# VDD m1_2167_758# m1_2446_644# m1_1326_644#
++ m1_1887_166# VDD m1_1607_52# m1_2446_644# m1_1326_644# m1_1887_166# m1_387_n186#
++ m1_2704_51# m1_1607_52# m1_1047_758# ppolyf_u_6V6NLJ
+Xppolyf_u_6V6NLJ_5 m1_1327_n751# m1_2447_n865# m1_2067_n186# m1_387_n1103# m1_1607_n300#
++ VDD m1_1047_n751# VDD VDD m1_488_n865# m1_387_n186# VDD m1_1607_n300# m1_1887_n159#
++ m1_767_n159# m1_1327_n751# VDD m1_1047_n751# m1_2704_51# m1_1887_n159# m1_2447_n865#
++ m1_767_n159# INN_P m1_488_n865# m1_387_n1103# ppolyf_u_6V6NLJ
+.ends
+

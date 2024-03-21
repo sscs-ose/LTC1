@@ -1,0 +1,15 @@
+* NGSPICE file created from Inv_16x_Layout.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_T3QPFJ a_n316_n36# a_224_n22# a_n224_n66# VSUBS
+X0 a_224_n22# a_n224_n66# a_n316_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=2.24u
+.ends
+
+.subckt pmos_3p3_HYFKQ3 w_n398_n174# a_n312_n44# a_224_n44# a_n224_n88#
+X0 a_224_n44# a_n224_n88# a_n312_n44# w_n398_n174# pfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=2.24u
+.ends
+
+.subckt Inv_16x_Layout IN OUT VSS VDD
+Xnmos_3p3_T3QPFJ_0 VSS OUT IN VSS nmos_3p3_T3QPFJ
+Xpmos_3p3_HYFKQ3_0 VDD VDD OUT IN pmos_3p3_HYFKQ3
+.ends
+

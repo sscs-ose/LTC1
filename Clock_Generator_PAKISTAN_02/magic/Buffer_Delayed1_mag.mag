@@ -1,0 +1,128 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694693600
+<< nwell >>
+rect -18 857 4312 936
+rect -68 754 4312 857
+rect -18 720 4312 754
+<< nsubdiff >>
+rect 71 782 394 838
+rect 618 782 941 812
+rect 1162 782 1489 839
+<< metal1 >>
+rect 23 1627 4302 1747
+rect 23 1560 420 1627
+rect 536 1560 4302 1627
+rect 23 1529 4302 1560
+rect -147 1247 86 1305
+rect -147 375 -89 1247
+rect 360 1236 668 1308
+rect 908 1217 1225 1289
+rect 1455 1237 1773 1309
+rect 1975 1303 2273 1361
+rect 2589 1302 2821 1360
+rect 3115 1302 3369 1360
+rect 3643 1291 3960 1363
+rect 4182 1291 4344 1363
+rect -18 704 4277 874
+rect -147 303 106 375
+rect 375 306 617 364
+rect 929 303 1209 375
+rect 1465 303 1750 375
+rect 2031 303 2304 375
+rect 2565 303 2859 375
+rect 3117 303 3399 375
+rect 3657 303 3939 375
+rect 4213 306 4312 365
+rect -6 59 4273 107
+rect -6 -5 420 59
+rect 524 -5 4273 59
+rect -6 -111 4273 -5
+<< via1 >>
+rect 420 1560 536 1627
+rect 420 -5 524 59
+<< metal2 >>
+rect 403 1627 550 1650
+rect 403 1560 420 1627
+rect 536 1560 550 1627
+rect 403 1553 550 1560
+rect 436 73 524 1553
+rect 403 59 550 73
+rect 403 -5 420 59
+rect 524 -5 550 59
+rect 403 -24 550 -5
+use Inverter_delayed_mag  Inverter_delayed_mag_0
+timestamp 1694693600
+transform 1 0 1246 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_1
+timestamp 1694693600
+transform 1 0 150 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_2
+timestamp 1694693600
+transform 1 0 698 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_3
+timestamp 1694693600
+transform 1 0 1794 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_4
+timestamp 1694693600
+transform 1 0 2342 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_5
+timestamp 1694693600
+transform 1 0 2889 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_6
+timestamp 1694693600
+transform 1 0 3437 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_7
+timestamp 1694693600
+transform 1 0 3985 0 1 175
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_8
+timestamp 1694693600
+transform -1 0 314 0 -1 1436
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_9
+timestamp 1694693600
+transform -1 0 862 0 -1 1417
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_10
+timestamp 1694693600
+transform -1 0 1410 0 -1 1437
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_11
+timestamp 1694693600
+transform -1 0 1958 0 -1 1489
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_12
+timestamp 1694693600
+transform -1 0 2501 0 -1 1492
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_13
+timestamp 1694693600
+transform -1 0 3049 0 -1 1491
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_14
+timestamp 1694693600
+transform -1 0 3597 0 -1 1491
+box -218 -175 330 631
+use Inverter_delayed_mag  Inverter_delayed_mag_15
+timestamp 1694693600
+transform -1 0 4145 0 -1 1491
+box -218 -175 330 631
+<< labels >>
+flabel metal1 4314 1326 4314 1326 0 FreeSans 480 0 0 0 IN
+port 0 nsew
+flabel metal1 4276 341 4276 341 0 FreeSans 480 0 0 0 OUT
+port 1 nsew
+flabel metal1 2058 -18 2058 -18 0 FreeSans 480 0 0 0 VSS
+port 2 nsew
+flabel metal1 2125 813 2125 813 0 FreeSans 480 0 0 0 VDD
+port 3 nsew
+<< end >>

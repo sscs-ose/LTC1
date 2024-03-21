@@ -1,0 +1,45 @@
+timestamp 1694693600
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use pmos_3p3_MW53B7 pmos_3p3_MW53B7_0 1 0 56 0 1 369
+use nmos_3p3_MGBSF7 nmos_3p3_MGBSF7_0 1 0 56 0 1 37
+use Inverter_delayed_mag Inverter_delayed_mag_0 1 0 548 0 1 0
+port "OUT" 1 770 160 770 160 m1
+port "IN" 0 -80 160 -80 160 m1
+port "VDD" 2 80 570 80 570 nsc
+port "VSS" 3 80 -110 80 -110 psc
+node "OUT" 0 46.1268 770 160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2700 240 0 0 0 0 0 0 0 0
+node "m1_179_14#" 1 272.735 179 14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41355 1384 0 0 0 0 0 0 0 0
+node "IN" 10 362.683 -80 160 m1 0 0 0 0 0 0 0 0 0 0 0 0 29400 694 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15192 566 0 0 0 0 0 0 0 0
+node "VDD" 9029 511.797 80 570 nsc 75659 1834 0 0 26486 810 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75926 1832 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 80 -110 psc 0 0 0 0 0 0 22752 776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71480 1654 0 0 0 0 0 0 0 0
+cap "OUT" "IN" 0.0694677
+cap "VDD" "IN" 68.5942
+cap "IN" "m1_179_14#" 54.5338
+cap "OUT" "m1_179_14#" 4.11986
+cap "VDD" "m1_179_14#" 95.0984
+cap "pmos_3p3_MW53B7_0/a_100_n80#" "Inverter_delayed_mag_0/OUT" 9.46338
+cap "pmos_3p3_MW53B7_0/a_100_n80#" "pmos_3p3_MW53B7_0/w_n274_n210#" 65.674
+cap "pmos_3p3_MW53B7_0/w_n274_n210#" "nmos_3p3_MGBSF7_0/a_n192_n36#" -1.15314
+cap "pmos_3p3_MW53B7_0/a_100_n80#" "pmos_3p3_MW53B7_0/a_n100_n124#" 36.5004
+cap "pmos_3p3_MW53B7_0/a_n100_n124#" "nmos_3p3_MGBSF7_0/a_n192_n36#" 28.3219
+cap "pmos_3p3_MW53B7_0/a_100_n80#" "nmos_3p3_MGBSF7_0/a_n192_n36#" 14.9851
+cap "Inverter_delayed_mag_0/OUT" "pmos_3p3_MW53B7_0/w_n274_n210#" 1.10602
+cap "Inverter_delayed_mag_0/OUT" "pmos_3p3_MW53B7_0/a_n100_n124#" -0.0694677
+cap "pmos_3p3_MW53B7_0/a_n100_n124#" "pmos_3p3_MW53B7_0/w_n274_n210#" 111.657
+merge "Inverter_delayed_mag_0/IN" "nmos_3p3_MGBSF7_0/a_100_n22#" -263.496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10425 -776 0 0 0 0 0 0 0 0
+merge "nmos_3p3_MGBSF7_0/a_100_n22#" "pmos_3p3_MW53B7_0/a_100_n80#"
+merge "pmos_3p3_MW53B7_0/a_100_n80#" "m1_179_14#"
+merge "Inverter_delayed_mag_0/VSS" "nmos_3p3_MGBSF7_0/VSUBS" -140.737 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7683 -526 0 0 0 0 0 0 0 0
+merge "nmos_3p3_MGBSF7_0/VSUBS" "nmos_3p3_MGBSF7_0/a_n192_n36#"
+merge "nmos_3p3_MGBSF7_0/a_n192_n36#" "pmos_3p3_MW53B7_0/VSUBS"
+merge "pmos_3p3_MW53B7_0/VSUBS" "VSS"
+merge "Inverter_delayed_mag_0/VDD" "pmos_3p3_MW53B7_0/a_n188_n80#" -401.018 -47163 -2674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10126 -672 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MW53B7_0/a_n188_n80#" "pmos_3p3_MW53B7_0/w_n274_n210#"
+merge "pmos_3p3_MW53B7_0/w_n274_n210#" "VDD"
+merge "nmos_3p3_MGBSF7_0/a_n100_n66#" "pmos_3p3_MW53B7_0/a_n100_n124#" -298.123 0 0 0 0 0 0 0 0 0 0 0 0 -1000 -810 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MW53B7_0/a_n100_n124#" "IN"
+merge "Inverter_delayed_mag_0/OUT" "OUT" -59.4797 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2700 -240 0 0 0 0 0 0 0 0

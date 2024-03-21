@@ -1,0 +1,206 @@
+timestamp 1692168538
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use OR OR_0 1 0 1327 0 1 129
+use Inverter Inverter_0 1 0 118 0 1 1151
+use AND AND_1 1 0 18 0 1 137
+use AND AND_0 1 0 422 0 1 1074
+port "OUT" 5 2907 383 2907 383 m1
+port "A" 0 -113 548 -113 548 m1
+port "VSS" 3 804 8 804 8 m1
+port "SEL" 4 -97 1358 -97 1358 m1
+port "B" 1 -89 1523 -89 1523 v
+port "VDD" 2 274 1774 274 1774 m1
+node "OUT" 0 48.9609 2907 383 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3478 242 0 0 0 0 0 0 0 0
+node "m1_1234_326#" 0 51.426 1234 326 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8037 436 0 0 0 0 0 0 0 0
+node "A" 0 96.7611 -113 548 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11342 534 0 0 0 0 0 0 0 0
+node "m1_1197_792#" 0 75.6985 1197 792 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15345 508 0 0 0 0 0 0 0 0
+node "VSS" 4 951.71 804 8 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104488 3420 71816 2320 0 0 0 0 0 0
+node "m1_322_1355#" 2 22.8718 322 1355 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 328 172 0 0 0 0 0 0 0 0
+node "m1_1264_477#" 3 476.557 1264 477 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14666 718 75116 2766 0 0 0 0 0 0
+node "SEL" 2 441.2 -97 1358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28680 1086 60434 2244 0 0 0 0 0 0
+node "B" 2 314.718 -89 1523 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10692 584 40405 1506 0 0 0 0 0 0
+node "m1_1481_1706#" 1 662.937 1481 1706 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 161892 2938 0 0 0 0 0 0 0 0
+node "VDD" 0 186.07 274 1774 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52156 1120 0 0 0 0 0 0 0 0
+node "w_1250_423#" 4179 157.248 1250 423 nw 52416 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_0_1710#" 11220 200.016 0 1710 nw 66672 1884 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_0_1710#" "VSS" 1.71657
+cap "w_0_1710#" "B" 7.22772
+cap "VSS" "m1_322_1355#" 2.56719
+cap "m1_322_1355#" "B" 1.6967
+cap "m1_1234_326#" "OUT" 1.25655
+cap "VSS" "m1_1481_1706#" 3.42389
+cap "B" "m1_1481_1706#" 2.0105
+cap "VSS" "SEL" 110.928
+cap "B" "SEL" 72.2546
+cap "VSS" "A" 0.607075
+cap "B" "A" 0.846916
+cap "m1_1481_1706#" "w_1250_423#" 0.0694175
+cap "SEL" "w_1250_423#" 0.0346554
+cap "w_0_1710#" "VDD" 41.2265
+cap "w_1250_423#" "A" 0.0611211
+cap "VSS" "B" 17.2606
+cap "VDD" "m1_322_1355#" 9.74189
+cap "VDD" "m1_1481_1706#" 4.64569
+cap "VDD" "SEL" 18.5475
+cap "w_0_1710#" "m1_1264_477#" 0.177136
+cap "m1_1197_792#" "m1_1481_1706#" 4.81075
+cap "m1_1197_792#" "SEL" 0.0751079
+cap "m1_322_1355#" "m1_1264_477#" 0.164777
+cap "VSS" "w_1250_423#" 0.834361
+cap "m1_1264_477#" "m1_1481_1706#" 54.5034
+cap "SEL" "m1_1264_477#" 15.3947
+cap "m1_1234_326#" "SEL" 2.18286
+cap "m1_1264_477#" "A" 1.27383
+cap "VDD" "VSS" 0.685588
+cap "VDD" "B" 28.9104
+cap "VSS" "m1_1197_792#" 2.56161
+cap "VSS" "m1_1264_477#" 34.681
+cap "m1_1234_326#" "VSS" 22.9641
+cap "m1_1197_792#" "w_1250_423#" 16.0858
+cap "m1_1264_477#" "w_1250_423#" 25.8716
+cap "m1_1234_326#" "w_1250_423#" 3.08731
+cap "m1_1197_792#" "m1_1264_477#" 45.0343
+cap "m1_1234_326#" "m1_1197_792#" 3.3389
+cap "w_0_1710#" "m1_322_1355#" 0.0556749
+cap "m1_1234_326#" "m1_1264_477#" 53.6586
+cap "w_0_1710#" "m1_1481_1706#" 0.208418
+cap "w_0_1710#" "SEL" 0.778953
+cap "m1_322_1355#" "SEL" 0.979259
+cap "SEL" "A" 39.3553
+cap "Inverter_0/IN" "AND_1/A" 4.70423
+cap "OR_0/B" "OR_0/A" 21.6973
+cap "OR_0/VSS" "OR_0/VDD" 1475.71
+cap "AND_1/Inverter_0/IN" "OR_0/Inverter_0/IN" 0.0472007
+cap "Inverter_0/IN" "OR_0/B" -1.70278
+cap "AND_1/Inverter_0/IN" "Inverter_0/OUT" 2.39858
+cap "AND_0/Inverter_0/IN" "Inverter_0/OUT" 2.20493
+cap "Inverter_0/IN" "OR_0/Inverter_0/IN" 0.00022306
+cap "OR_0/VSS" "AND_1/A" 13.5176
+cap "AND_0/A" "Inverter_0/OUT" 2.11743
+cap "AND_1/Inverter_0/IN" "OR_0/A" 1.43836
+cap "Inverter_0/OUT" "OR_0/A" 0.149259
+cap "Inverter_0/IN" "AND_1/Inverter_0/IN" 3.57282
+cap "Inverter_0/IN" "Inverter_0/OUT" 12.8082
+cap "OR_0/B" "OR_0/VSS" 2.3918
+cap "AND_0/Inverter_0/IN" "OR_0/A" 1.49359
+cap "Inverter_0/IN" "AND_0/Inverter_0/IN" 0.875728
+cap "AND_1/Inverter_0/IN" "AND_0/nmos_3p3_HZS5UA_0/a_28_n50#" 0.05442
+cap "Inverter_0/OUT" "AND_0/nmos_3p3_HZS5UA_0/a_28_n50#" 0.0453808
+cap "Inverter_0/IN" "AND_0/A" 8.86906
+cap "AND_1/A" "OR_0/VDD" 1.49438
+cap "OR_0/VSS" "OR_0/Inverter_0/IN" 0.351418
+cap "Inverter_0/IN" "OR_0/A" -0.9334
+cap "OR_0/B" "OR_0/VDD" 12.5754
+cap "AND_1/Inverter_0/IN" "OR_0/VSS" 48.4956
+cap "OR_0/VSS" "Inverter_0/OUT" 22.7151
+cap "AND_1/A" "OR_0/pmos_3p3_MGRWPS_1/a_n52_n50#" 0.00522256
+cap "Inverter_0/IN" "AND_0/nmos_3p3_HZS5UA_0/a_28_n50#" 1.63842
+cap "OR_0/B" "OR_0/pmos_3p3_MGRWPS_1/a_n52_n50#" 0.0409122
+cap "AND_0/A" "OR_0/VSS" -3.51681
+cap "OR_0/VSS" "AND_1/nmos_3p3_HZS5UA_0/a_28_n50#" 25.4497
+cap "OR_0/VSS" "OR_0/A" 0.463412
+cap "Inverter_0/IN" "OR_0/VSS" 76.2065
+cap "AND_1/Inverter_0/IN" "OR_0/VDD" 7.89867
+cap "OR_0/VDD" "Inverter_0/OUT" 5.88552
+cap "AND_0/Inverter_0/IN" "OR_0/VDD" 0.0888282
+cap "AND_0/A" "OR_0/VDD" 4.31122
+cap "OR_0/VDD" "OR_0/A" 3.42279
+cap "AND_1/Inverter_0/IN" "OR_0/pmos_3p3_MGRWPS_1/a_n52_n50#" 0.0788269
+cap "AND_1/A" "Inverter_0/OUT" 0.111738
+cap "Inverter_0/IN" "OR_0/VDD" 74.2826
+cap "OR_0/B" "OR_0/Inverter_0/IN" 2.07578
+cap "OR_0/B" "AND_1/Inverter_0/IN" 4.36117
+cap "AND_0/A" "AND_1/A" 0.0776854
+cap "AND_1/A" "OR_0/A" -0.630345
+cap "OR_0/VDD" "OR_0/VSS" 485.955
+cap "OR_0/VDD" "OR_0/A" 147.121
+cap "Inverter_0/IN" "OR_0/A" 0.687682
+cap "OR_0/B" "OR_0/Inverter_0/IN" 3.33744
+cap "OR_0/VDD" "OR_0/Inverter_0/IN" 0.0363715
+cap "OR_0/A" "AND_1/A" -0.631933
+cap "OR_0/A" "Inverter_0/OUT" 6.07595
+cap "AND_1/Inverter_0/IN" "OR_0/A" 3.02748
+cap "AND_1/Inverter_0/IN" "OR_0/VSS" 0.234423
+cap "OR_0/A" "OR_0/VSS" 88.2457
+cap "OR_0/A" "OR_0/OUT" 0.183359
+cap "AND_1/Inverter_0/IN" "OR_0/Inverter_0/IN" 0.0827135
+cap "OR_0/B" "AND_0/Inverter_0/IN" 0.0769259
+cap "OR_0/A" "OR_0/Inverter_0/IN" 3.16432
+cap "OR_0/VDD" "AND_0/Inverter_0/IN" 6.50333
+cap "Inverter_0/IN" "AND_0/Inverter_0/IN" 0.234333
+cap "OR_0/VDD" "OR_0/B" 15.4351
+cap "OR_0/pmos_3p3_MGRWPS_1/a_n52_n50#" "OR_0/VDD" 13.1945
+cap "Inverter_0/IN" "OR_0/B" 0.486763
+cap "OR_0/A" "AND_0/A" 1.11197
+cap "Inverter_0/OUT" "AND_0/Inverter_0/IN" 0.0231056
+cap "AND_1/Inverter_0/IN" "OR_0/B" 2.9878
+cap "OR_0/A" "AND_0/nmos_3p3_HZS5UA_0/a_28_n50#" 3.3669
+cap "AND_1/Inverter_0/IN" "OR_0/VDD" 0.224631
+cap "AND_1/nmos_3p3_HZS5UA_0/a_28_n50#" "OR_0/B" 0.0407023
+cap "OR_0/VSS" "AND_0/Inverter_0/IN" 0.10326
+cap "OR_0/A" "AND_0/Inverter_0/IN" 47.3438
+cap "OR_0/B" "OR_0/OUT" -0.628275
+cap "OR_0/pmos_3p3_MGRWPS_1/a_n52_n50#" "OR_0/VSS" 3.00061
+cap "OR_0/pmos_3p3_MGRWPS_1/a_n52_n50#" "OR_0/A" 28.5678
+cap "OR_0/B" "OR_0/VSS" -2.59434
+cap "OR_0/B" "OR_0/A" 17.8062
+cap "OR_0/B" "OR_0/OUT" -0.628275
+cap "OR_0/Inverter_0/IN" "OR_0/OUT" 0.162392
+cap "Inverter_0/IN" "OR_0/A" -0.0714128
+cap "Inverter_0/IN" "Inverter_0/OUT" 0.387359
+cap "Inverter_0/IN" "AND_0/A" 15.351
+cap "AND_0/A" "AND_1/Inverter_0/IN" 0.691469
+cap "OR_0/VDD" "Inverter_0/OUT" 10.0485
+cap "OR_0/VDD" "AND_0/A" 152.384
+cap "OR_0/VDD" "OR_0/VSS" -0.342794
+cap "AND_0/A" "OR_0/A" 0.278089
+cap "Inverter_0/OUT" "AND_0/A" 83.2668
+cap "AND_0/Inverter_0/IN" "Inverter_0/IN" 0.359462
+cap "AND_1/A" "AND_0/A" 1.43907
+cap "AND_0/Inverter_0/IN" "OR_0/VDD" 0.549922
+cap "OR_0/VDD" "Inverter_0/IN" -7.27214
+cap "AND_0/A" "OR_0/VSS" 2.38457
+cap "AND_1/nmos_3p3_HZS5UA_0/a_28_n50#" "AND_0/A" 0.255809
+cap "AND_0/Inverter_0/IN" "AND_0/A" 2.78343
+cap "AND_0/Inverter_0/IN" "Inverter_0/OUT" 3.14025
+cap "OR_0/A" "OR_0/VDD" 29.4048
+cap "AND_0/Inverter_0/IN" "Inverter_0/IN" 0.15466
+cap "OR_0/A" "Inverter_0/OUT" 0.0377317
+cap "AND_0/A" "OR_0/VDD" -0.965047
+cap "AND_0/A" "OR_0/A" 0.0159254
+cap "OR_0/A" "Inverter_0/IN" -0.0716562
+cap "AND_0/Inverter_0/IN" "OR_0/VDD" 1.27951
+cap "AND_0/Inverter_0/IN" "OR_0/A" 0.418382
+merge "AND_1/B" "Inverter_0/IN" -229.731 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16935 -794 0 0 0 0 0 0 0 0
+merge "Inverter_0/IN" "SEL"
+merge "AND_1/Inverter_0/VSS" "AND_0/VSS" -1244.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -66041 -3600 0 0 0 0 0 0 0 0
+merge "AND_0/VSS" "AND_1/VSS"
+merge "AND_1/VSS" "Inverter_0/VSS"
+merge "Inverter_0/VSS" "OR_0/VSS"
+merge "OR_0/VSS" "VSUBS"
+merge "VSUBS" "VSS"
+merge "AND_0/Inverter_0/VDD" "AND_1/Inverter_0/VDD" -1117.78 -32540 -4372 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49500 -2624 0 0 0 0 0 0 0 0
+merge "AND_1/Inverter_0/VDD" "AND_0/VDD"
+merge "AND_0/VDD" "Inverter_0/VDD"
+merge "Inverter_0/VDD" "VDD"
+merge "VDD" "w_0_1710#"
+merge "w_0_1710#" "AND_1/VDD"
+merge "AND_1/VDD" "OR_0/VDD"
+merge "OR_0/VDD" "m1_1197_792#"
+merge "m1_1197_792#" "m1_1481_1706#"
+merge "m1_1481_1706#" "w_1250_423#"
+merge "OR_0/OUT" "OR_0/Inverter_0/OUT" -37.3849 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2209 -188 0 0 0 0 0 0 0 0
+merge "OR_0/Inverter_0/OUT" "OUT"
+merge "AND_0/OUT" "OR_0/A" -339.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4371 -378 0 0 0 0 0 0 0 0
+merge "OR_0/A" "m1_1264_477#"
+merge "AND_1/OUT" "OR_0/B" -137.651 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3661 -342 0 0 0 0 0 0 0 0
+merge "OR_0/B" "m1_1234_326#"
+merge "AND_0/B" "Inverter_0/OUT" -107.328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -264 0 0 0 0 0 0 0 0
+merge "Inverter_0/OUT" "m1_322_1355#"
+merge "AND_0/A" "B" -208.915 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4292 -264 0 0 0 0 0 0 0 0
+merge "AND_1/A" "A" -48.2402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3604 -242 0 0 0 0 0 0 0 0

@@ -1,0 +1,24 @@
+* NGSPICE file created from Inverter_flat.ext - technology: gf180mcuC
+
+.subckt Inverter_flat VDD VSS IN OUT
+X0 OUT IN.t0 VSS.t1 VSS.t0 nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+X1 OUT IN.t1 VDD.t1 VDD.t0 pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+R0 IN.n0 IN.t0 19.0247
+R1 IN.n0 IN.t1 17.3935
+R2 IN IN.n0 4.15272
+R3 VSS.n1 VSS.t0 1563.24
+R4 VSS VSS.t1 9.03788
+R5 VSS VSS.n1 2.6005
+R6 VSS.n1 VSS.n0 0.0206149
+R7 OUT.n2 OUT.n1 9.02722
+R8 OUT.n2 OUT.n0 6.48941
+R9 OUT OUT.n2 0.130713
+R10 VDD.n1 VDD.t0 428.894
+R11 VDD VDD.t1 6.4653
+R12 VDD VDD.n1 3.1505
+R13 VDD.n1 VDD.n0 0.0220753
+C0 OUT VDD 0.122f
+C1 IN VDD 0.235f
+C2 OUT IN 0.0939f
+.ends
+

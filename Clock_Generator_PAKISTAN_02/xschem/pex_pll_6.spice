@@ -1,0 +1,77 @@
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/pex_pll_6.sch
+**.subckt pex_pll_6
+VCNTL1 Vref GND pulse(3.3 0 0 100p 100p 250n 500n)
+.save i(vcntl1)
+V4 VDD_VCO GND PWL( 0 0 100n 0 100.001n 3.3)
+.save i(v4)
+V6 VDD VSS 3.3
+.save i(v6)
+V7 VSS GND 0
+.save i(v7)
+V8 RST_DIV VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v8)
+V9 S1 VSS 3.3
+.save i(v9)
+V11 S2 VSS 3.3
+.save i(v11)
+I2 IPD_ VSS 20u
+I3 VDD IPD+ 20u
+x9 VSS VDD RST_DIV Vdiv net2 pex_CLK_div_110_mag
+x11 IPD+ IPD_ net3 net7 LP_op_test VSS VDD_VCO pex_CP_mag
+C1 net5 VSS 80.14p m=1
+C2 net4 VSS 3.77p m=1
+R1 net4 net5 48.84k m=1
+x4 net4 VDD LP_op_test S2 VSS net6 pex_a2x1mux_mag
+x1 net6 VDD VSS pex_LF_mag
+x2 VSS S1 net3 PU_test PU VDD pex_mux_2x1_ibr
+x3 VSS S1 net7 PD_test PD VDD pex_mux_2x1_ibr
+x5 VSS S1 net1 Vdiv_test Vdiv VDD pex_mux_2x1_ibr
+V1 Vdiv_test VSS 3.3
+.save i(v1)
+V2 PD_test VSS 3.3
+.save i(v2)
+V3 PU_test VSS 3.3
+.save i(v3)
+x7 VDD VSS vcntl_test LP_op_test S1 net8 A_MUX_pex
+x6 VSS S1 net2 Vo_test VCO_op VDD pex_mux_2x1_ibr
+x8 VSS Vref net1 PU PD VDD pex_PFD_layout
+x10 VDD_VCO VDD VCO_op VCO_op_bar net8 VSS VCO_PEX
+V5 Vo_test VSS 3.3
+.save i(v5)
+V10 vcntl_test VSS 3.3
+.save i(v10)
+**** begin user architecture code
+
+
+.include pex_PFD_layout.spice
+.include pex_A_MUX.spice
+.include pex_CP_mag.spice
+.include pex_a2x1mux_mag.spice
+.include pex_LF_mag.spice
+.include VCO_PEX.spice
+.include pex_CLK_div_110_mag.spice
+.include pex_mux_2x1_ibr.spice
+.control
+save all
+tran 10n 45u
+plot v(VCO_op) v(VCO_op_bar)+4
+plot v(vcntl)
+plot v(Vdiv)
+plot v(vref)
+**write pll_4.raw
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

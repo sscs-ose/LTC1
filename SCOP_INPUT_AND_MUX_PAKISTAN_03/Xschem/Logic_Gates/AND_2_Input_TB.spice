@@ -1,0 +1,70 @@
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/AND_2_Input_TB.sch
+**.subckt AND_2_Input_TB OUT OUTP
+*.opin OUT
+*.opin OUTP
+V1 VDD VSS 3
+.save i(v1)
+V2 VSS GND 0
+.save i(v2)
+V3 A VSS PULSE(3 0 0 100p 100p 2u 4u)
+.save i(v3)
+V4 B VSS PULSE(3 0 0 100p 100p 4u 8u)
+.save i(v4)
+x1 VDD A OUT B VSS AND_2_Input_PEX
+x2 VDD A OUTP B VSS AND_2_Input
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_AND_2_In_Layout.spice
+.control
+set color0 = white
+set color1 = black
+save all
+**dc v2 0 3 0.1
+*plot v(VIN) v(PH1A) v(PH1) v(PH2)
+
+tran 1n 8u
+plot v(A) v(B)+3.5 v(OUT)+7 v(OUTP)+7
+*plot v(S1) v(S2)+3.5 v(S3)+7 v(S4)+10.5 v(S5)+14 v(S6)+17.5
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  AND_2_Input.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/AND_2_Input.sym
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/AND_2_Input.sch
+.subckt AND_2_Input VDD A OUT B VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.ipin B
+*.opin OUT
+XM2 net2 A VDD VDD pfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 B VSS VSS nfet_03v3 L=0.28u W=1u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net2 A net1 VSS nfet_03v3 L=0.28u W=1u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 net2 B VDD VDD pfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 OUT net2 VDD VDD pfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 OUT net2 VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

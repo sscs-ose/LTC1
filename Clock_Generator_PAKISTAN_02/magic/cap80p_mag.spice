@@ -1,0 +1,76 @@
+* NGSPICE file created from cap80p_mag.ext - technology: gf180mcuC
+
+.subckt mim_2p0fF_Q67PCK m4_5681_n21380# m4_11295_n21380# m4_n16775_n21380# m4_n22389_n21380#
++ m4_n11041_n21260# m4_17029_n21260# m4_5801_n21260# m4_11415_n21260# m4_67_n21380#
++ m4_n16655_n21260# m4_187_n21260# m4_n5547_n21380# m4_n22269_n21260# m4_16909_n21380#
++ m4_n11161_n21380# m4_n5427_n21260#
+X0 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X1 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X2 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X3 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X4 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X5 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X6 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X7 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X8 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X9 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X10 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X11 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X12 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X13 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X14 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X15 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X16 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X17 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X18 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X19 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X20 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X21 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X22 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X23 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X24 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X25 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X26 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X27 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X28 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X29 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X30 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X31 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X32 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X33 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X34 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X35 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X36 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X37 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X38 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X39 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X40 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X41 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X42 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X43 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X44 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X45 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X46 m4_17029_n21260# m4_16909_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X47 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X48 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X49 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X50 m4_n16655_n21260# m4_n16775_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X51 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X52 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X53 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X54 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X55 m4_n5427_n21260# m4_n5547_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X56 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X57 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X58 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X59 m4_5801_n21260# m4_5681_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X60 m4_11415_n21260# m4_11295_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X61 m4_n22269_n21260# m4_n22389_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X62 m4_n11041_n21260# m4_n11161_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+X63 m4_187_n21260# m4_67_n21380# cap_mim_2f0_m4m5_noshield c_width=25u c_length=25u
+.ends
+
+.subckt cap80p_mag P N
+Xmim_2p0fF_Q67PCK_0 N N N N P P P P N P P N P N N P mim_2p0fF_Q67PCK
+.ends
+

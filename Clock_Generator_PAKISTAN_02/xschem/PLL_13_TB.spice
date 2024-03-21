@@ -1,0 +1,1600 @@
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/PLL_13_TB.sch
+**.subckt PLL_13_TB
+C1 Output1 VSS 100f m=1
+C2 Output2 VSS 100f m=1
+C3 Output_test VSS 100f m=1
+C5 LP_op_test VSS 100f m=1
+C4 net1 VSS 80.14p m=1
+C6 LP_ext VSS 3.77p m=1
+R2 LP_ext net1 48.84k m=1
+V1 P1 VSS 0
+.save i(v1)
+V14 P0 VSS 0
+.save i(v14)
+VCNTL Vref VSS pulse(3.3 0 0 100p 100p 250n 500n)
+.save i(vcntl)
+V23 VDD_VCO VSS PWL( 0 0 100n 0 100.001n 3.3)
+.save i(v23)
+V27 VDD VSS 3.3
+.save i(v27)
+V28 VSS GND 0
+.save i(v28)
+V29 RST_DIV VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v29)
+V30 F1 VSS 3.3
+.save i(v30)
+V31 F0 VSS 3.3
+.save i(v31)
+V32 F2 VSS 3.3
+.save i(v32)
+V33 OPA0 VSS 3.3
+.save i(v33)
+V34 OPA1 VSS 3.3
+.save i(v34)
+V35 OPB0 VSS 3.3
+.save i(v35)
+V36 OPB1 VSS 0
+.save i(v36)
+I3 VDD Iref 100u
+V37 S1 VSS 3.3
+.save i(v37)
+V38 S0 VSS 3.3
+.save i(v38)
+V39 S2 VSS 3.3
+.save i(v39)
+V40 T1 VSS 0
+.save i(v40)
+V41 T0 VSS 0
+.save i(v41)
+V42 vcntl_test VSS 1.08
+.save i(v42)
+V43 Vo_test VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v43)
+V44 Vdiv_test VSS pulse(3.3 0 20n 100p 100p 50n 100n)
+.save i(v44)
+V45 PU_test VSS pulse(3.3 0 50n 100p 100p 75n 100n)
+.save i(v45)
+V46 PD_test VSS pulse(3.3 0 0 100p 100p 75n 100n)
+.save i(v46)
+x1 Iref LP_ext VDD_BUFF VDD VDD_VCO VSS RST_DIV Vref S2 T0 S0 S1 F2 F0 T1 F1 OPA1 OPA0 OPB1 P1 OPB0
++ P0 Vo_test PD_test vcntl_test PU_test Vdiv_test Output1 Output2 Output_test LP_op_test PLL_13
+V2 VDD_BUFF VSS 3.3
+.save i(v2)
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+.control
+save F2  F1  LP_op_test  Vref  Output1  Output2  RST_DIV  x1.net1  x1.net2  x1.PU  x1.PD  x1.net6
++  x1.net5  x1.net1  x1.net9  x1.VCO_op  x1.VCO_op_bar
+
+
+
+tran 20n 45u
+plot v(Output_test) v(LP_op_test)+4
+plot v(Output1) v(Output1B)+4 v(Output2)+8
+plot v(Vref)
+write pex_PLL_13_TB.raw
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  PLL_13.sym # of pins=31
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/PLL_13.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/PLL_13.sch
+.subckt PLL_13 Iref LP_ext VDD_BUFF VDD VDD_VCO VSS RST_DIV Vref S2 T0 S0 S1 F2 F0 T1 F1 OPA1 OPA0
++ OPB1 P1 OPB0 P0 Vo_test PD_test Vcntl_test PU_test Vdiv_test Output1 Output2 test_output LP_op_test
+*.ipin S1
+*.ipin S0
+*.ipin T0
+*.ipin T1
+*.iopin VDD
+*.iopin VDD_VCO
+*.ipin Vref
+*.ipin F1
+*.ipin F2
+*.ipin P0
+*.ipin P1
+*.ipin OPA0
+*.ipin RST_DIV
+*.ipin F0
+*.ipin OPA1
+*.ipin OPB1
+*.ipin OPB0
+*.ipin Vdiv_test
+*.ipin PU_test
+*.ipin PD_test
+*.ipin Vcntl_test
+*.ipin Vo_test
+*.opin LP_op_test
+*.opin test_output
+*.opin Output2
+*.opin Output1
+*.iopin VSS
+*.ipin S2
+*.iopin Iref
+*.iopin LP_ext
+*.iopin VDD_BUFF
+x3 VSS net1 net2 PU PD VDD PFD
+x2 VSS VDD RST_DIV Vdiv F2 F1 F0 net8 Feedback_Divider
+x5 VSS VDD RST_DIV net4 OPB1 OPB0 VCO_op Output_Divider
+x6 IPD+ IPD_ net5 net6 LP_op_test VSS VDD CP
+x4 VSS VDD RST_DIV net3 OPA1 OPA0 VCO_op Output_Divider
+x12 VDD VSS vcntl_test LP_op_test S1 net9 A_MUX
+x13 VDD VSS Vo_test VCO_op S1 net8 A_MUX
+x7 net10 VDD VSS LF
+x15 LP_ext VDD LP_op_test net15 VSS net10 a2x1mux
+x16 VDD T1 VSS Vco_op Vdiv T0 PU PD net11 4x1_mux_ibr.
+x1 VSS VDD RST_DIV net7 P1 P0 Vref Prescaler_Divider
+x11 VSS S0 net1 Vref net7 VDD 2x1_mux_ibr
+x14 VSS S1 net2 Vdiv_test Vdiv VDD 2x1_mux_ibr
+x9 VSS S1 net5 PU_test PU VDD 2x1_mux_ibr
+x10 VSS S1 net6 PD_test PD VDD 2x1_mux_ibr
+x8 VDD_VCO VDD VCO_op VCO_op_bar net9 VSS VCO
+x17 VSS VDD_BUFF Output1 net12 Tappered-Buffer_1
+x18 VSS VDD_BUFF Output2 net14 Tappered-Buffer_1
+x19 VSS VDD_BUFF test_output net13 Tappered-Buffer_1
+x20 VSS VDD_BUFF net12 net3 INV_2
+x21 VSS VDD_BUFF net14 net4 INV_2
+x22 VSS VDD_BUFF net13 net11 INV_2
+x23 VDD Iref IPD+ IPD_ VSS Current_Mirror_Top_s
+.ends
+
+
+* expanding   symbol:  PFD.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/PFD.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/PFD.sch
+.subckt PFD VSS VREF VDIV PU PD VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin VREF
+*.ipin VDIV
+*.opin PU
+*.opin PD
+x1 VSS VDD net6 net2 net7 net1 VDD DFF
+x2 VSS VDD net6 net5 net4 net3 VDD DFF
+x3 net4 VSS VDD net8 net7 NAND
+x4 VSS VDD PU net4 buffer_loading
+x8 VSS VDD PD net7 buffer_loading
+x6 VSS VDIV net2 VDD inv_PFD
+x7 VSS VREF net5 VDD inv_PFD
+x5 VSS net8 net6 VDD buffer_PFD
+.ends
+
+
+* expanding   symbol:  Feedback_Divider.sym # of pins=8
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Feedback_Divider.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Feedback_Divider.sch
+.subckt Feedback_Divider VSS VDD RST Vdiv F2 F1 F0 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv
+*.ipin F2
+*.ipin F1
+*.ipin F0
+x1 VSS net6 RST net2 CLK CLK_div_100
+x4 VSS net8 RST net15 CLK CLK_div_108
+x5 VSS net9 RST net16 CLK CLK_div_110
+x6 VSS net3 RST net10 CLK CLK_div_90
+x7 VSS net11 RST net13 CLK CLK_div_96
+x8 VSS net4 net12 RST CLK CLK_div_93
+x9 VSS net5 net1 RST CLK CLK_div_99
+x2 VDD VSS F1 F0 Vdiv F2 net10 net16 net1 net13 net14 net12 net2 net15 8x1_mux_ibr.
+x10 F2 VSS VDD net3 net4 net11 net5 net6 net7 net8 net9 F0 F1 dec_3x8_updated_ibr
+x3 VSS net7 RST net14 CLK CLK_div_105
+.ends
+
+
+* expanding   symbol:  Output_Divider.sym # of pins=7
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Output_Divider.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Output_Divider.sch
+.subckt Output_Divider VSS VDD RST Vdiv OPA1 OPA0 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv
+*.ipin OPA1
+*.ipin OPA0
+x1 VSS net1 net6 RST CLK CLK_div_2
+x2 VSS net2 net9 net10 RST net7 CLK CLK_div_3
+x3 VSS net3 net8 RST CLK CLK_div_4
+x4 VDD OPA1 VSS net7 net8 OPA0 net5 net6 Vdiv 4x1_mux_ibr.
+x5 OPA0 VSS VDD net4 net1 net2 net3 OPA1 decoder_2x4_ibr
+x6 VSS CLK net5 net4 buffer_opd
+.ends
+
+
+* expanding   symbol:  CP.sym # of pins=7
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CP.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CP.sch
+.subckt CP IPD+ IPD_ PU PD VCNTL VSS VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin PU
+*.opin VCNTL
+*.ipin PD
+*.ipin IPD+
+*.ipin IPD_
+XM4 VCNTL PD net1 VSS nfet_03v3 L=0.56u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VSS PU net3 VDD inv_my
+XM5 net1 IPD+ VSS VSS nfet_03v3 L=0.56u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 IPD+ IPD+ VSS VSS nfet_03v3 L=0.56u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 VCNTL net3 net2 VDD pfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net2 IPD_ VDD VDD pfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 IPD_ IPD_ VDD VDD pfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  A_MUX.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/A_MUX.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/A_MUX.sch
+.subckt A_MUX VDD VSS IN1 IN2 SEL OUT
+*.iopin VSS
+*.ipin IN1
+*.ipin IN2
+*.ipin SEL
+*.opin OUT
+*.iopin VDD
+x1 OUT VDD VSS IN2 SEL TR_Gate
+x2 OUT VDD VSS IN1 net1 TR_Gate
+x3 VSS VDD net1 SEL INV_2
+.ends
+
+
+* expanding   symbol:  LF.sym # of pins=3
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/LF.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/LF.sch
+.subckt LF VCNTL VDD VSS
+*.iopin VSS
+*.iopin VCNTL
+*.iopin VDD
+x1 VCNTL net1 VDD res_sch
+x2 VSS net1 cap80p
+x3 VSS VCNTL cap3p
+.ends
+
+
+* expanding   symbol:  a2x1mux.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/a2x1mux.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/a2x1mux.sch
+.subckt a2x1mux IN1 VDD VOUT SEL VSS IN2
+*.iopin VDD
+*.iopin VSS
+*.ipin SEL
+*.ipin IN1
+*.ipin IN2
+*.opin VOUT
+x2 VDD VSS VOUT IN1 SEL_B Transmission_Gate
+x3 VDD VSS VOUT IN2 SEL Transmission_Gate
+x1 VSS SEL SEL_B VDD inv_my
+.ends
+
+
+* expanding   symbol:  4x1_mux_ibr..sym # of pins=9
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/4x1_mux_ibr..sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/4x1_mux_ibr..sch
+.subckt 4x1_mux_ibr. VDD S1 VSS I2 I3 S0 I0 I1 OUT
+*.iopin VDD
+*.iopin VSS
+*.ipin S1
+*.opin OUT
+*.ipin I2
+*.ipin I3
+*.ipin S0
+*.ipin I0
+*.ipin I1
+x1 VSS S0 net1 I0 I1 VDD 2x1_mux_ibr
+x2 VSS S0 net2 I2 I3 VDD 2x1_mux_ibr
+x3 VSS S1 OUT net1 net2 VDD 2x1_mux_ibr
+.ends
+
+
+* expanding   symbol:  Prescaler_Divider.sym # of pins=7
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Prescaler_Divider.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Prescaler_Divider.sch
+.subckt Prescaler_Divider VSS VDD RST Vdiv OPA1 OPA0 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv
+*.ipin OPA1
+*.ipin OPA0
+x1 VSS net1 net6 RST CLK CLK_div_2
+x2 VSS net2 net9 net10 RST net7 CLK CLK_div_3
+x3 VSS net3 net8 RST CLK CLK_div_4
+x4 VDD OPA1 VSS net7 net8 OPA0 net5 net6 Vdiv 4x1_mux_ibr.
+x5 OPA0 VSS VDD net4 net1 net2 net3 OPA1 decoder_2x4_ibr
+x6 VSS CLK net5 net4 buffer_opd
+.ends
+
+
+* expanding   symbol:  2x1_mux_ibr.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/2x1_mux_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/2x1_mux_ibr.sch
+.subckt 2x1_mux_ibr VSS Sel OUT I0 I1 VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin Sel
+*.opin OUT
+*.ipin I0
+*.ipin I1
+x4 VSS Sel net1 VDD inv_my_ibr
+x1 I0 VSS VDD net2 net1 NAND_ibr_mx2
+x2 Sel VSS VDD net3 I1 NAND_ibr_mx2
+x3 net2 VSS VDD OUT net3 NAND_ibr_mx2
+.ends
+
+
+* expanding   symbol:  VCO.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/VCO.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/VCO.sch
+.subckt VCO VDD EN OUT OUTB VCONT VSS
+*.opin OUT
+*.opin OUTB
+*.ipin VDD
+*.ipin VCONT
+*.ipin EN
+*.ipin VSS
+x5 VSS VDD net3 net1 GF_INV_1
+x6 VSS VDD net4 net2 GF_INV_1
+x7 VSS VDD net5 net3 GF_INV_4
+x8 VSS VDD net6 net4 GF_INV_4
+x9 VSS VDD OUT net5 GF_INV_16
+x10 VSS VDD OUTB net6 GF_INV_16
+x3 VSS VDD net8 net12 GF_INV_STAGE
+x4 VSS VDD net7 net9 GF_INV_STAGE
+x1 VDD VSS VCONT net14 net13 net12 net9 EN Delay_Cell
+x2 VDD VSS VCONT net7 net8 net10 net11 EN Delay_Cell
+x11 VDD VSS VCONT net2 net1 net13 net14 EN Delay_Cell
+x12 VDD VSS VCONT net11 net10 net1 net2 EN Delay_Cell
+.ends
+
+
+* expanding   symbol:  Tappered-Buffer_1.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Tappered-Buffer_1.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Tappered-Buffer_1.sch
+.subckt Tappered-Buffer_1 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM3 net1 IN VSS VSS nfet_03v3 L=0.5u W=5.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net1 IN VDD VDD pfet_03v3 L=0.5u W=11.2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 net2 net1 VSS VSS nfet_03v3 L=0.5u W=22.4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net2 net1 VDD VDD pfet_03v3 L=0.5u W=44.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 OUT net2 VSS VSS nfet_03v3 L=0.5u W=89.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT net2 VDD VDD pfet_03v3 L=0.5u W=89.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 OUT net2 VDD VDD pfet_03v3 L=0.5u W=89.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 VSS VSS VSS VSS nfet_03v3 L=0.5u W=39.2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  INV_2.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/INV_2.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/INV_2.sch
+.subckt INV_2 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.5u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.5u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Current_Mirror_Top_s.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Current_Mirror_Top_s.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Current_Mirror_Top_s.sch
+.subckt Current_Mirror_Top_s VDD ITAIL ITAIL_SRC ITAIL_SINK VSS
+*.ipin ITAIL
+*.iopin VDD
+*.iopin VSS
+*.opin ITAIL_SRC
+*.opin ITAIL_SINK
+XM1 net2 ITAIL net1 VSS nfet_03v3 L=0.5u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 net5 VSS VSS nfet_03v3 L=0.5u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net2 net2 net3 VDD pfet_03v3 L=0.5u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net3 net3 VDD VDD pfet_03v3 L=0.5u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 G_sink_up net2 net4 VDD pfet_03v3 L=0.5u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM10 net4 net3 VDD VDD pfet_03v3 L=0.5u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM11 G_sink_up G_sink_up G_sink_dn VSS nfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u'
++ as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)'
++ nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM12 G_sink_dn G_sink_dn VSS VSS nfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 ITAIL ITAIL net5 VSS nfet_03v3 L=0.5u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net5 net5 VSS VSS nfet_03v3 L=0.5u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 G_source_dn G_sink_up net6 VSS nfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 net6 G_sink_dn VSS VSS nfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM13 G_source_dn G_source_dn G_source_up VDD pfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u'
++ as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)'
++ nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM14 G_source_up G_source_up VDD VDD pfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM15 ITAIL_SINK G_sink_up net7 VSS nfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM16 net7 G_sink_dn VSS VSS nfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM17 ITAIL_SRC G_source_dn net8 VDD pfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM18 net8 G_source_up VDD VDD pfet_03v3 L=0.5u W=4.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  DFF.sym # of pins=7
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/DFF.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/DFF.sch
+.subckt DFF VSS D RST CLK Q QB VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin D
+*.ipin RST
+*.ipin CLK
+*.opin Q
+*.opin QB
+x1 RST VSS VDD net6 CLK NAND_pfd
+x2 net1 VSS VDD net2 D NAND_pfd
+x3 net2 VSS VDD net4 net3 NAND_pfd
+x4 RST VSS VDD net5 net4 NAND_pfd
+x5 net6 VSS VDD net3 net7 NAND_pfd
+x6 net5 VSS VDD net1 net6 NAND_pfd
+x7 net1 VSS VDD QB Q NAND_pfd
+x8 QB VSS VDD Q net3 NAND_pfd
+x9 VSS net5 net7 VDD inv_DFF
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND.sch
+.subckt NAND IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  buffer_loading.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/buffer_loading.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/buffer_loading.sch
+.subckt buffer_loading VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 net1 IN VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT net1 VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT net1 VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inv_PFD.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_PFD.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_PFD.sch
+.subckt inv_PFD VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=1.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  buffer_PFD.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/buffer_PFD.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/buffer_PFD.sch
+.subckt buffer_PFD VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x1 VSS VDD net1 IN GF_INV_PFD
+x2 VSS VDD OUT net1 GF_INV_PFD
+.ends
+
+
+* expanding   symbol:  CLK_div_100.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_100.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_100.sch
+.subckt CLK_div_100 VSS VDD RST Vdiv100 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv100
+x1 VSS VDD net2 net3 RST net1 net4 net5 CLK CLK_div_10
+x2 VSS VDD net6 net7 RST Vdiv100 net8 net9 net1 CLK_div_10
+.ends
+
+
+* expanding   symbol:  CLK_div_108.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_108.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_108.sch
+.subckt CLK_div_108 VSS VDD RST Vdiv108 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv108
+x2 VSS VDD net5 net6 RST net1 CLK CLK_div_3
+x1 VSS VDD net7 net8 RST net2 net1 CLK_div_3
+x3 VSS VDD net9 net10 RST net3 net2 CLK_div_3
+x4 net3 VSS VDD net4 VDD net11 RST VDD JK_flipflop
+x5 net4 VSS VDD Vdiv108 VDD net12 RST VDD JK_flipflop
+.ends
+
+
+* expanding   symbol:  CLK_div_110.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_110.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_110.sch
+.subckt CLK_div_110 VSS VDD RST Vdiv110 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv110
+x2 VSS VDD net2 net3 RST Vdiv110 net4 net5 net1 CLK_div_10
+x1 VSS VDD net6 net7 RST net1 net8 net9 CLK CLK_div_11_new
+.ends
+
+
+* expanding   symbol:  CLK_div_90.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_90.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_90.sch
+.subckt CLK_div_90 VSS VDD RST Vdiv90 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv90
+x1 VSS VDD net3 net4 RST net2 CLK CLK_div_3
+x2 VSS VDD net5 net6 RST net1 net2 CLK_div_3
+x3 VSS VDD net7 net8 RST Vdiv90 net9 net10 net1 CLK_div_10
+.ends
+
+
+* expanding   symbol:  CLK_div_96.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_96.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_96.sch
+.subckt CLK_div_96 VSS VDD RST Vdiv96 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv96
+x1 net3 VSS VDD net4 VDD net6 RST VDD JK_flipflop
+x2 VSS VDD net7 net8 RST Vdiv96 net4 CLK_div_3
+x3 net2 VSS VDD net3 VDD net9 RST VDD JK_flipflop
+x4 net1 VSS VDD net2 VDD net10 RST VDD JK_flipflop
+x5 net5 VSS VDD net1 VDD net11 RST VDD JK_flipflop
+x6 CLK VSS VDD net5 VDD net12 RST VDD JK_flipflop
+.ends
+
+
+* expanding   symbol:  CLK_div_93.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_93.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_93.sch
+.subckt CLK_div_93 VSS VDD Vdiv93 RST CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Vdiv93
+*.ipin RST
+x1 VSS VDD net2 net3 net4 net5 net6 net1 RST CLK CLK_div_31
+x2 VSS VDD net7 net8 RST Vdiv93 net1 CLK_div_3
+.ends
+
+
+* expanding   symbol:  CLK_div_99.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_99.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_99.sch
+.subckt CLK_div_99 VSS VDD Vdiv99 RST CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Vdiv99
+*.ipin RST
+x2 VSS VDD net3 net4 RST net2 net1 CLK_div_3
+x3 VSS VDD net5 net6 RST net1 CLK CLK_div_3
+x1 VSS VDD net7 net8 RST Vdiv99 net9 net10 net2 CLK_div_11_new
+.ends
+
+
+* expanding   symbol:  8x1_mux_ibr..sym # of pins=14
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/8x1_mux_ibr..sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/8x1_mux_ibr..sch
+.subckt 8x1_mux_ibr. VDD VSS S1 S0 OUT S2 I0 I7 I3 I2 I5 I1 I4 I6
+*.iopin VDD
+*.iopin VSS
+*.ipin S1
+*.opin OUT
+*.ipin S0
+*.ipin I6
+*.ipin I7
+*.ipin I4
+*.ipin I5
+*.ipin I2
+*.ipin I3
+*.ipin I0
+*.ipin I1
+*.ipin S2
+x2 VDD S1 VSS I2 I3 S0 I0 I1 net2 4x1_mux_ibr.
+x3 VDD S1 VSS I6 I7 S0 I4 I5 net1 4x1_mux_ibr.
+x1 VSS S2 OUT net2 net1 VDD 2x1_mux_ibr
+.ends
+
+
+* expanding   symbol:  dec_3x8_updated_ibr.sym # of pins=13
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/dec_3x8_updated_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/dec_3x8_updated_ibr.sch
+.subckt dec_3x8_updated_ibr IN1 VSS VDD D0 D1 D2 D3 D4 D5 D6 D7 IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin D0
+*.opin D1
+*.opin D2
+*.opin D3
+*.opin D4
+*.opin D5
+*.opin D6
+*.opin D7
+*.ipin IN3
+x1 IN3B VSS VDD D0 IN1B IN2B and_3_ibr
+x2 IN3 VSS VDD D1 IN2B IN1B and_3_ibr
+x3 IN3B VSS VDD D2 IN1B IN2 and_3_ibr
+x4 IN3 VSS VDD D3 IN1B IN2 and_3_ibr
+x5 IN3 VSS VDD D7 IN1 IN2 and_3_ibr
+x6 IN3B VSS VDD D6 IN1 IN2 and_3_ibr
+x7 IN3 VSS VDD D5 IN2B IN1 and_3_ibr
+x8 IN3B VSS VDD D4 IN2B IN1 and_3_ibr
+x9 VSS IN1 IN1B VDD inv_my_ibr
+x10 VSS IN2 IN2B VDD inv_my_ibr
+x11 VSS IN3 IN3B VDD inv_my_ibr
+.ends
+
+
+* expanding   symbol:  CLK_div_105.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_105.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_105.sch
+.subckt CLK_div_105 VSS VDD RST Vdiv105 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv105
+x1 VSS VDD net2 net3 RST net1 net4 net5 CLK CLK_div_10
+x2 VSS VDD net6 net7 RST Vdiv105 net8 net9 net1 CLK_div_10
+.ends
+
+
+* expanding   symbol:  CLK_div_2.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_2.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_2.sch
+.subckt CLK_div_2 VSS VDD Vdiv2 RST CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Vdiv2
+*.ipin RST
+x1 CLK VSS VDD Vdiv2 VDD net1 RST VDD JK_flipflop
+.ends
+
+
+* expanding   symbol:  CLK_div_3.sym # of pins=7
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_3.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_3.sch
+.subckt CLK_div_3 VSS VDD Q0 Q1 RST Vdiv3 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.ipin RST
+*.opin Vdiv3
+x1 CLK VSS VDD Q1 net1 net3 RST VDD JK_flipflop
+x2 CLK VSS VDD Q0 Q1 net1 RST VDD JK_flipflop
+x4 Q0 VSS VDD Vdiv3 net2 or_2
+x3 Q1 VSS VDD net2 CLK and_2
+.ends
+
+
+* expanding   symbol:  CLK_div_4.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_4.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_4.sch
+.subckt CLK_div_4 VSS VDD Vdiv4 RST CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Vdiv4
+*.ipin RST
+x3 VSS VDD net1 RST CLK CLK_div_2
+x4 VSS VDD Vdiv4 RST net1 CLK_div_2
+.ends
+
+
+* expanding   symbol:  decoder_2x4_ibr.sym # of pins=8
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/decoder_2x4_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/decoder_2x4_ibr.sch
+.subckt decoder_2x4_ibr IN1 VSS VDD D0 D1 D2 D3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin D0
+*.opin D1
+*.opin D2
+*.opin D3
+x1 VSS IN1 IN1B VDD inv_my_ibr
+x2 VSS IN2 IN2B VDD inv_my_ibr
+x3 IN2B VSS VDD D0 IN1B and_2_ibr.
+x4 IN2B VSS VDD D1 IN1 and_2_ibr.
+x5 IN2 VSS VDD D2 IN1B and_2_ibr.
+x6 IN2 VSS VDD D3 IN1 and_2_ibr.
+.ends
+
+
+* expanding   symbol:  buffer_opd.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/buffer_opd.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/buffer_opd.sch
+.subckt buffer_opd VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x1 VSS VDD net1 IN GF_INV_opd
+x2 VSS VDD OUT net1 GF_INV_opd
+.ends
+
+
+* expanding   symbol:  inv_my.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_my.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_my.sch
+.subckt inv_my VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  TR_Gate.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/TR_Gate.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/TR_Gate.sch
+.subckt TR_Gate OUT VDD VSS IN CLK
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+*.ipin CLK
+XM1 IN net1 OUT VDD pfet_03v3 L=0.5u W=3.36u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 IN CLK OUT VSS nfet_03v3 L=0.5u W=3.36u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 CLK VDD VDD pfet_03v3 L=0.5u W=3.36u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net1 CLK VSS VSS nfet_03v3 L=0.5u W=1.68u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  res_sch.sym # of pins=3
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/res_sch.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/res_sch.sch
+.subckt res_sch A B VDD
+*.iopin VDD
+*.iopin A
+*.iopin B
+XR1 B A VDD ppolyf_u r_width=0.8e-6 r_length=100e-6 m=1
+.ends
+
+
+* expanding   symbol:  cap80p.sym # of pins=2
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/cap80p.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/cap80p.sch
+.subckt cap80p N P
+*.iopin P
+*.iopin N
+XC1 P N cap_mim_2f0_m4m5_noshield c_width=25e-6 c_length=25e-6 m=64
+.ends
+
+
+* expanding   symbol:  cap3p.sym # of pins=2
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/cap3p.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/cap3p.sch
+.subckt cap3p Nn Pp
+*.iopin Pp
+*.iopin Nn
+XC1 Pp Nn cap_mim_2f0_m4m5_noshield c_width=42.5e-6 c_length=42.5e-6 m=1
+.ends
+
+
+* expanding   symbol:  Transmission_Gate.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Transmission_Gate.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Transmission_Gate.sch
+.subckt Transmission_Gate VDD VSS VOUT VIN CLK
+*.iopin VDD
+*.iopin VSS
+*.ipin VIN
+*.opin VOUT
+*.ipin CLK
+XM1 VOUT net1 VIN VDD pfet_03v3 L=0.28u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 VOUT CLK VIN VSS nfet_03v3 L=0.28u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VSS CLK net1 VDD inv_my
+.ends
+
+
+* expanding   symbol:  inv_my_ibr.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_my_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_my_ibr.sch
+.subckt inv_my_ibr VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  NAND_ibr_mx2.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND_ibr_mx2.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND_ibr_mx2.sch
+.subckt NAND_ibr_mx2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_1.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_1.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_1.sch
+.subckt GF_INV_1 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=700n nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=350n nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_4.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_4.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_4.sch
+.subckt GF_INV_4 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=1.4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=2.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_16.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_16.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_16.sch
+.subckt GF_INV_16 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=5.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=11.2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_STAGE.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_STAGE.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_STAGE.sch
+.subckt GF_INV_STAGE VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Delay_Cell.sym # of pins=8
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Delay_Cell.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Delay_Cell.sch
+.subckt Delay_Cell VDD VSS VCONT IN INB OUT OUTB EN
+*.iopin VDD
+*.iopin VSS
+*.iopin VCONT
+*.iopin IN
+*.iopin INB
+*.iopin OUT
+*.iopin OUTB
+*.iopin EN
+XM1 OUTB OUT VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net3 net1 VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT OUTB VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 OUTB OUTB net3 VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT OUT net3 VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 OUT IN net2 VSS nfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 OUTB INB net2 VSS nfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 net1 VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM10 net1 VCONT VSS VSS nfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net2 EN VSS VSS nfet_03v3 L=0.56u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM11 net2 net2 net2 VSS nfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM12 net2 net2 net2 VSS nfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  NAND_pfd.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND_pfd.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND_pfd.sch
+.subckt NAND_pfd IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inv_DFF.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_DFF.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/inv_DFF.sch
+.subckt inv_DFF VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=1.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_PFD.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_PFD.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_PFD.sch
+.subckt GF_INV_PFD VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.35u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.35u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  CLK_div_10.sym # of pins=9
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_10.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_10.sch
+.subckt CLK_div_10 VSS VDD Q0 Q1 RST Vdiv10 Q2 Q3 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.ipin RST
+*.opin Vdiv10
+*.opin Q2
+*.opin Q3
+x9 Q3 VSS VDD Vdiv10 net8 net2 nor_3
+x6 Q2 VSS VDD net1 Q0 and_2
+x7 Q2 VSS VDD net2 Q1 and_2
+x10 CLK VSS VDD Q0 VDD net5 RST VDD JK_flipflop
+x11 Q0 VSS VDD Q1 net4 net6 RST VDD JK_flipflop
+x12 Q1 VSS VDD Q2 VDD net7 RST VDD JK_flipflop
+x13 Q0 VSS VDD Q3 net3 net4 RST VDD JK_flipflop
+x14 Q1 VSS VDD net3 Q2 and_2
+x1 VSS net1 net8 VDD Buffer_Delayed
+.ends
+
+
+* expanding   symbol:  JK_flipflop.sym # of pins=8
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/JK_flipflop.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/JK_flipflop.sch
+.subckt JK_flipflop CLK VSS VDD Q J Qb RST K
+*.ipin K
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q
+*.ipin J
+*.opin Qb
+*.ipin RST
+x1 Qb VSS VDD net6 J CLK nand_3
+x2 Q VSS VDD net5 K CLK nand_3
+x4 net2 VSS VDD net1 net5 RST nand_3
+x9 VSS VDD CLK_b CLK GF_INV
+x3 net1 VSS VDD net2 net6 NAND
+x5 CLK_b VSS VDD net4 net1 NAND
+x6 CLK_b VSS VDD net3 net2 NAND
+x7 Qb VSS VDD Q net3 NAND
+x8 Q VSS VDD Qb net4 NAND
+.ends
+
+
+* expanding   symbol:  CLK_div_11_new.sym # of pins=9
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_11_new.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_11_new.sch
+.subckt CLK_div_11_new VSS VDD Q0 Q1 RST Vdiv11 Q2 Q3 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.ipin RST
+*.opin Vdiv11
+*.opin Q2
+*.opin Q3
+x1 CLK VSS VDD Q3 net1 net10 RST net1 JK_flipflop
+x2 CLK VSS VDD Q2 net2 net17 RST net2 JK_flipflop
+x3 CLK VSS VDD Q1 net3 net9 RST net3 JK_flipflop
+x4 CLK VSS VDD Q0 net4 net18 RST net4 JK_flipflop
+x5 net5 VSS VDD net1 net6 or_2
+x7 VSS VDD net6 net7 GF_INV
+x8 Q2 VSS VDD net7 Q1 Q0 nand_3
+x10 net9 VSS VDD net4 net10 or_2
+x11 net8 VSS VDD net3 Q0 or_2
+x13 VSS VDD net14 net11 GF_INV
+x14 CLK VSS VDD net11 net12 Q0 nand_3
+x17 Q3 VSS VDD net15 net16 net13 nor_3
+x18 VSS VDD Vdiv11 net15 GF_INV
+x6 Q3 VSS VDD net5 Q1 and_2
+x12 Q3 VSS VDD net8 Q1 and_2
+x15 net12 VSS VDD net13 Q1 and_2
+x9 Q1 VSS VDD net2 Q0 and_2
+x16 VSS net14 net16 VDD Buffer_Delayed
+x19 VSS Q2 net12 VDD Buffer_Delayed
+.ends
+
+
+* expanding   symbol:  CLK_div_31.sym # of pins=10
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_31.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/CLK_div_31.sch
+.subckt CLK_div_31 VSS VDD Q0 Q1 Q2 Q3 Q4 Vdiv31 RST CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.opin Q2
+*.opin Q3
+*.opin Q4
+*.opin Vdiv31
+*.ipin RST
+x1 CLK VSS VDD Q0 VDD net3 RST VDD JK_flipflop
+x2 Q0 VSS VDD Q1 VDD net4 RST VDD JK_flipflop
+x3 Q1 VSS VDD Q2 VDD net5 RST VDD JK_flipflop
+x4 Q2 VSS VDD Q3 VDD net6 RST VDD JK_flipflop
+x5 Q3 VSS VDD Q4 VDD net7 RST VDD JK_flipflop
+x6 VSS VDD Q4 RST Q3 Q2 Q1 Q0 nand_5
+x10 net2 VSS VDD Vdiv31 Q4 or_2
+x7 VSS VDD Q1 net1 Q2 Q3 CLK Q0 and_5
+x8 VSS net1 net2 VDD Buffer_Delayed1
+.ends
+
+
+* expanding   symbol:  and_3_ibr.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_3_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_3_ibr.sch
+.subckt and_3_ibr IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+x1 IN1 VSS VDD net1 IN3 IN2 nand3_ibr
+x2 VSS net1 OUT VDD inv_my_ibr
+.ends
+
+
+* expanding   symbol:  or_2.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/or_2.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/or_2.sch
+.subckt or_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM4 net1 IN1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 net2 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM7 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net2 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+x1 VSS VDD OUT net1 GF_INV
+.ends
+
+
+* expanding   symbol:  and_2.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_2.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_2.sch
+.subckt and_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM7 OUT net1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT net1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 net1 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 net2 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  and_2_ibr..sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_2_ibr..sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_2_ibr..sch
+.subckt and_2_ibr. IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+x2 VSS net1 OUT VDD inv_my_ibr
+x1 IN1 VSS VDD net1 IN2 NAND_ibr
+.ends
+
+
+* expanding   symbol:  GF_INV_opd.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_opd.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV_opd.sch
+.subckt GF_INV_opd VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=1u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=1u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nor_3.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nor_3.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nor_3.sch
+.subckt nor_3 IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 OUT IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT IN1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 OUT IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net1 IN2 net2 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM9 net2 IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM10 OUT IN1 net1 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+.ends
+
+
+* expanding   symbol:  Buffer_Delayed.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Buffer_Delayed.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Buffer_Delayed.sch
+.subckt Buffer_Delayed VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x2 VSS VDD net1 IN Inverter_Delayed
+x3 VSS VDD OUT net1 Inverter_Delayed
+.ends
+
+
+* expanding   symbol:  nand_3.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nand_3.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nand_3.sch
+.subckt nand_3 IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 net1 IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM4 OUT IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM1 OUT IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net2 IN2 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM8 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/GF_INV.sch
+.subckt GF_INV VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nand_5.sym # of pins=8
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nand_5.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nand_5.sch
+.subckt nand_5 VSS VDD A VOUT D C E B
+*.ipin B
+*.iopin VSS
+*.iopin VDD
+*.ipin A
+*.opin VOUT
+*.ipin D
+*.ipin C
+*.ipin E
+x5 VSS VDD VOUT net1 GF_INV
+x1 VSS VDD A net1 D C E B and_5
+.ends
+
+
+* expanding   symbol:  and_5.sym # of pins=8
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_5.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/and_5.sch
+.subckt and_5 VSS VDD A VOUT D C E B
+*.ipin B
+*.iopin VSS
+*.iopin VDD
+*.ipin A
+*.opin VOUT
+*.ipin D
+*.ipin C
+*.ipin E
+x1 A VSS VDD net1 B and_2
+x2 C VSS VDD net2 net1 and_2
+x3 D VSS VDD net3 net2 and_2
+x4 E VSS VDD VOUT net3 and_2
+.ends
+
+
+* expanding   symbol:  Buffer_Delayed1.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Buffer_Delayed1.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Buffer_Delayed1.sch
+.subckt Buffer_Delayed1 VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x2 VSS VDD net2 IN Inverter_Delayed
+x3 VSS VDD net1 net2 Inverter_Delayed
+x1 VSS VDD net4 net1 Inverter_Delayed
+x4 VSS VDD net3 net4 Inverter_Delayed
+x5 VSS VDD net6 net3 Inverter_Delayed
+x6 VSS VDD net5 net6 Inverter_Delayed
+x7 VSS VDD net8 net5 Inverter_Delayed
+x8 VSS VDD net7 net8 Inverter_Delayed
+x9 VSS VDD net10 net7 Inverter_Delayed
+x10 VSS VDD net9 net10 Inverter_Delayed
+x11 VSS VDD net12 net9 Inverter_Delayed
+x12 VSS VDD net11 net12 Inverter_Delayed
+x13 VSS VDD net13 net11 Inverter_Delayed
+x14 VSS VDD net15 net13 Inverter_Delayed
+x15 VSS VDD net14 net15 Inverter_Delayed
+x16 VSS VDD OUT net14 Inverter_Delayed
+.ends
+
+
+* expanding   symbol:  nand3_ibr.sym # of pins=6
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nand3_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/nand3_ibr.sch
+.subckt nand3_ibr IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 net1 IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM4 OUT IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM1 OUT IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net2 IN2 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM8 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  NAND_ibr.sym # of pins=5
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND_ibr.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/NAND_ibr.sch
+.subckt NAND_ibr IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.88u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.88u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=1.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=1.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Inverter_Delayed.sym # of pins=4
+** sym_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Inverter_Delayed.sym
+** sch_path: /home/shahid/Downloads/Pakistan2_PLL/xschem/Inverter_Delayed.sch
+.subckt Inverter_Delayed VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=1u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=1u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

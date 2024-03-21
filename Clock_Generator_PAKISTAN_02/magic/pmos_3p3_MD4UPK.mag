@@ -1,0 +1,63 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1693477706
+<< nwell >>
+rect -470 -410 470 410
+<< pmos >>
+rect -296 -280 -226 280
+rect -122 -280 -52 280
+rect 52 -280 122 280
+rect 226 -280 296 280
+<< pdiff >>
+rect -384 267 -296 280
+rect -384 -267 -371 267
+rect -325 -267 -296 267
+rect -384 -280 -296 -267
+rect -226 267 -122 280
+rect -226 -267 -197 267
+rect -151 -267 -122 267
+rect -226 -280 -122 -267
+rect -52 267 52 280
+rect -52 -267 -23 267
+rect 23 -267 52 267
+rect -52 -280 52 -267
+rect 122 267 226 280
+rect 122 -267 151 267
+rect 197 -267 226 267
+rect 122 -280 226 -267
+rect 296 267 384 280
+rect 296 -267 325 267
+rect 371 -267 384 267
+rect 296 -280 384 -267
+<< pdiffc >>
+rect -371 -267 -325 267
+rect -197 -267 -151 267
+rect -23 -267 23 267
+rect 151 -267 197 267
+rect 325 -267 371 267
+<< polysilicon >>
+rect -296 280 -226 324
+rect -122 280 -52 324
+rect 52 280 122 324
+rect 226 280 296 324
+rect -296 -324 -226 -280
+rect -122 -324 -52 -280
+rect 52 -324 122 -280
+rect 226 -324 296 -280
+<< metal1 >>
+rect -371 267 -325 278
+rect -371 -278 -325 -267
+rect -197 267 -151 278
+rect -197 -278 -151 -267
+rect -23 267 23 278
+rect -23 -278 23 -267
+rect 151 267 197 278
+rect 151 -278 197 -267
+rect 325 267 371 278
+rect 325 -278 371 -267
+<< properties >>
+string gencell pmos_3p3
+string library gf180mcu
+string parameters w 2.8 l 0.35 m 1 nf 4 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 full_metal 0 compatible {pmos_3p3 pmos_6p0}
+<< end >>

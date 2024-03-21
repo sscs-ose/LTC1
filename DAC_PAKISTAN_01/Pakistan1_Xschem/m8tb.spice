@@ -1,0 +1,161 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/m8tb.sch
+**.subckt m8tb
+V1 net2 GND 3
+.save i(v1)
+V2 net1 GND 3
+.save i(v2)
+V3 net4 GND 3
+.save i(v3)
+V4 net3 GND 3
+.save i(v4)
+XM1 net3 net4 GND GND nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 GND net1 GND net2 nfet_03V3_m128
+V5 net6 GND 3
+.save i(v5)
+V6 net5 GND 3
+.save i(v6)
+V7 net8 GND 3
+.save i(v7)
+V8 net7 GND 3
+.save i(v8)
+V9 net10 GND 3
+.save i(v9)
+V10 net9 GND 3
+.save i(v10)
+V11 net12 GND 3
+.save i(v11)
+V12 net11 GND 3
+.save i(v12)
+V13 net14 GND 3
+.save i(v13)
+V14 net13 GND 3
+.save i(v14)
+x2 GND net5 GND net6 nfet_03V3_m2
+x3 GND net7 GND net8 nfet_03V3_m4
+x4 GND net9 GND net10 nfet_03V3_m8
+x5 GND net11 GND net12 nfet_03V3_m16
+x6 GND net13 GND net14 nfet_03V3_m32
+x7 GND net15 GND net16 nfet_03V3_m64
+V15 net16 GND 3
+.save i(v15)
+V16 net15 GND 3
+.save i(v16)
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+*.options savecurrents
+.control
+save all
+op
+
+tran 1000p 1u
+plot i(V2) i(V4) i(V16) i(V6) i(V8) i(V10) i(V12) i(V14)
+*write DAC_12Bit_TB_v1.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  nfet_03V3_m128.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m128.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m128.sch
+.subckt nfet_03V3_m128 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m64
+x2 S D B G nfet_03V3_m64
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m2.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m2.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m2.sch
+.subckt nfet_03V3_m2 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+XM1 D G S B nfet_03v3 L=0.28u W=0.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 D G S B nfet_03v3 L=0.28u W=0.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m4.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m4.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m4.sch
+.subckt nfet_03V3_m4 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m2
+x2 S D B G nfet_03V3_m2
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m8.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m8.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m8.sch
+.subckt nfet_03V3_m8 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m4
+x2 S D B G nfet_03V3_m4
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m16.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m16.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m16.sch
+.subckt nfet_03V3_m16 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m8
+x2 S D B G nfet_03V3_m8
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m32.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m32.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m32.sch
+.subckt nfet_03V3_m32 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m16
+x2 S D B G nfet_03V3_m16
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m64.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m64.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m64.sch
+.subckt nfet_03V3_m64 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m32
+x2 S D B G nfet_03V3_m32
+.ends
+
+.GLOBAL GND
+.end

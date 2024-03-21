@@ -1,0 +1,25 @@
+* NGSPICE file created from 200_ohm_magic.ext - technology: gf180mcuC
+
+.subckt ppolyf_u_S2N82J a_1160_n492# a_320_390# a_n520_n492# w_n1544_n676# a_n1080_n492#
++ a_n240_390# a_n800_n492# a_n1360_n492# a_n1360_390# a_880_390# a_600_390# a_n520_390#
++ a_40_n492# a_320_n492# a_1160_390# a_40_390# a_600_n492# a_n1080_390# a_880_n492#
++ a_n240_n492# a_n800_390#
+X0 a_n1360_390# a_n1360_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X1 a_n520_390# a_n520_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X2 a_n1080_390# a_n1080_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X3 a_n800_390# a_n800_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X4 a_n240_390# a_n240_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X5 a_40_390# a_40_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X6 a_1160_390# a_1160_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X7 a_600_390# a_600_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X8 a_320_390# a_320_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+X9 a_880_390# a_880_n492# w_n1544_n676# ppolyf_u r_width=1u r_length=3.9u
+.ends
+
+.subckt x200_ohm_magic R1_IN R2_IN COMMON VDD
+Xppolyf_u_S2N82J_0 VDD COMMON R2_IN VDD R2_IN COMMON R1_IN VDD VDD COMMON COMMON COMMON
++ R2_IN R1_IN VDD COMMON R2_IN COMMON R1_IN R1_IN COMMON ppolyf_u_S2N82J
+Xppolyf_u_S2N82J_1 VDD R2_IN COMMON VDD COMMON R2_IN COMMON VDD VDD R2_IN R1_IN R1_IN
++ COMMON COMMON VDD R1_IN COMMON R1_IN COMMON COMMON R2_IN ppolyf_u_S2N82J
+.ends
+

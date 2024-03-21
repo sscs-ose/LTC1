@@ -1,0 +1,14 @@
+* NGSPICE file created from cap_layout.ext - technology: gf180mcuC
+
+.subckt mim_2p0fF_Q6YL6H m4_67_60# m4_n20547_n20300# m4_n20427_n20180# m4_n20427_180#
++ m4_187_n20180# m4_n20547_60# m4_67_n20300# m4_187_180#
+X0 m4_187_180# m4_67_60# cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+X1 m4_187_n20180# m4_67_n20300# cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+X2 m4_n20427_n20180# m4_n20547_n20300# cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+X3 m4_n20427_180# m4_n20547_60# cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+.ends
+
+.subckt cap_layout P N
+Xmim_2p0fF_Q6YL6H_0 N N P P P N N P mim_2p0fF_Q6YL6H
+.ends
+

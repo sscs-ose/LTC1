@@ -1,0 +1,37 @@
+** sch_path: /home/shahid/GF180Projects/CP_PFD_dff_inv_nand_/Xschem/RES/res_sch_test.sch
+**.subckt res_sch_test
+x1 P M B res_sch
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+vp p 0 0
+vm m 0 0
+vb b 0 3.3
+
+.control
+save all
+dc vp 0 3.3 0.01
+write res_sch_test.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  res_sch.sym # of pins=3
+** sym_path: /home/shahid/GF180Projects/CP_PFD_dff_inv_nand_/Xschem/RES/res_sch.sym
+** sch_path: /home/shahid/GF180Projects/CP_PFD_dff_inv_nand_/Xschem/RES/res_sch.sch
+.subckt res_sch A B VDD
+*.iopin VDD
+*.iopin A
+*.iopin B
+XR1 B A VDD ppolyf_u r_width=0.8e-6 r_length=100e-6 m=1
+.ends
+
+.end

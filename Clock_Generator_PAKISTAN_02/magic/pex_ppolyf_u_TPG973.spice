@@ -1,0 +1,63 @@
+* NGSPICE file created from ppolyf_u_TPG973_flat.ext - technology: gf180mcuC
+
+.subckt ppolyf_u_TPG973_flat A B
+X0 a_364_2227# a_124_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X1 a_844_2227# a_604_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X2 a_1324_2227# a_1084_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X3 a_1804_2227# a_1564_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X4 a_1804_2227# a_2044_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X5 a_2284_2227# a_2524_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X6 a_844_2227# a_1084_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X7 a_1324_2227# a_1564_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X8 A.t0 a_124_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X9 a_364_2227# a_604_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X10 a_2284_2227# a_2044_124# VDD ppolyf_u r_width=0.8u r_length=10u
+X11 B.t0 a_2524_124# VDD ppolyf_u r_width=0.8u r_length=10u
+R0 A A.t0 7.19856
+R1 B B.t0 7.19406
+C0 a_2044_124# a_2524_124# 0.0416f
+C1 VDD a_2524_124# 0.261f
+C2 a_1084_124# VDD 0.253f
+C3 a_124_124# a_604_124# 0.0416f
+C4 a_1324_2227# A 4.21e-19
+C5 a_2284_2227# a_1804_2227# 0.0416f
+C6 B a_2284_2227# 0.049f
+C7 a_844_2227# B 5.34e-20
+C8 a_1804_2227# VDD 0.235f
+C9 B VDD 0.182f
+C10 a_364_2227# A 0.0489f
+C11 a_1324_2227# a_844_2227# 0.0416f
+C12 a_124_124# VDD 0.261f
+C13 a_844_2227# A 0.00112f
+C14 a_1564_124# a_2044_124# 0.0416f
+C15 a_1324_2227# VDD 0.235f
+C16 a_1564_124# VDD 0.321f
+C17 VDD A 0.182f
+C18 VDD a_604_124# 0.253f
+C19 a_844_2227# a_364_2227# 0.0416f
+C20 B a_1804_2227# 0.00114f
+C21 a_1564_124# a_1084_124# 0.0416f
+C22 VDD a_364_2227# 0.235f
+C23 a_1084_124# a_604_124# 0.0416f
+C24 a_2284_2227# VDD 0.235f
+C25 a_844_2227# VDD 0.235f
+C26 a_2044_124# VDD 0.253f
+C27 a_1324_2227# a_1804_2227# 0.0416f
+C28 a_1324_2227# B 4.29e-19
+C29 a_1804_2227# A 5.24e-20
+C30 B VSUBS 0.192f
+C31 A VSUBS 0.193f
+C32 a_2524_124# VSUBS 0.227f
+C33 a_2044_124# VSUBS 0.213f
+C34 a_2284_2227# VSUBS 0.231f
+C35 a_1564_124# VSUBS 0.18f
+C36 a_1804_2227# VSUBS 0.231f
+C37 a_1084_124# VSUBS 0.213f
+C38 a_1324_2227# VSUBS 0.231f
+C39 a_604_124# VSUBS 0.213f
+C40 a_844_2227# VSUBS 0.231f
+C41 a_124_124# VSUBS 0.227f
+C42 a_364_2227# VSUBS 0.231f
+C43 VDD VSUBS 26.7f
+.ends
+

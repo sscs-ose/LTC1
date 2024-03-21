@@ -1,0 +1,51 @@
+* NGSPICE file created from cap_layout_flat.ext - technology: gf180mcuC
+
+.subckt cap_layout_flat P N
+X0 P.t0 N.t3 cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+X1 P.t1 N.t2 cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+X2 P.t2 N.t1 cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+X3 P.t3 N.t0 cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+R0 P.n2 P.t0 2.75978
+R1 P.n1 P.t2 2.55789
+R2 P.n1 P.n0 2.25929
+R3 P.n2 P.t3 2.2505
+R4 P.n3 P.t1 2.2505
+R5 P P.n3 0.322674
+R6 P.n3 P.n2 0.10259
+R7 P P.n1 0.00439262
+R8 N.n1 N.n0 9.3705
+R9 N.n1 N.t1 6.86117
+R10 N.n0 N.t2 6.86117
+R11 N.n0 N.t0 6.85663
+R12 N.t3 N.n1 6.85663
+R13 N.n3 N.t3 3.86463
+R14 N.n3 N.n2 2.25471
+R15 N N.n3 0.00075
+C0 P m2_n24097_n2824# 0.195f
+C1 N P 66.8f
+C2 N m2_n24097_n2824# 0.0229f
+C3 m1_n24097_n2824# P 0.00152f
+C4 m1_n24097_n2824# m2_n24097_n2824# 0.192f
+C5 m1_n24097_n2824# N 0.0123f
+C6 P VSUBS 0.327p
+C7 N VSUBS 45.1f
+C8 m2_n24097_n2824# VSUBS 0.245f $ **FLOATING
+C9 m1_n24097_n2824# VSUBS 0.385f $ **FLOATING
+C10 N.t1 VSUBS 15.3f
+C11 N.t2 VSUBS 15.3f
+C12 N.t0 VSUBS 15.3f
+C13 N.n0 VSUBS 2.66f
+C14 N.n1 VSUBS 2.66f
+C15 N.t3 VSUBS 14.1f
+C16 N.n2 VSUBS 0.251f
+C17 N.n3 VSUBS 1.22f
+C18 P.t2 VSUBS 9.39f
+C19 P.n0 VSUBS 0.00546f
+C20 P.n1 VSUBS 7.3f
+C21 P.t1 VSUBS 8.41f
+C22 P.t3 VSUBS 8.41f
+C23 P.t0 VSUBS 9.94f
+C24 P.n2 VSUBS 15f
+C25 P.n3 VSUBS 8.15f
+.ends
+

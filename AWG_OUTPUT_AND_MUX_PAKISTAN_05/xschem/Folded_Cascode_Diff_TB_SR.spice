@@ -1,0 +1,67 @@
+** sch_path:
+*+ /home/shahid/GF180Projects/Tapeout/Xschem/Folded_Cascode_Amplifier/Folded_Cascode_Diff_TB_SR.sch
+**.subckt Folded_Cascode_Diff_TB_SR OUT_N OUT_P
+*.opin OUT_N
+*.opin OUT_P
+V1 VSS GND 0
+.save i(v1)
+V2 VDD VSS 3.3
+.save i(v2)
+V3 VCM VSS 1.6
+.save i(v3)
+I0 IBIAS1 VSS 20u
+V5 IN2 VSS PULSE(1.2 0.1 0 100p 100p 100n 200n)
+.save i(v5)
+C1 OUT_P VSS 15p m=1
+C2 OUT_N VSS 15p m=1
+R1 IN_N IN1 1k m=1
+R2 OUT_P IN_N 1k m=1
+R3 OUT_N IN_P 1k m=1
+R4 IN_P IN2 1k m=1
+V4 IN1 VSS PULSE(0.1 1.2 0 100p 100p 100n 200n)
+.save i(v4)
+x1 VDD VSS IN_N IN_P IBIAS1 VCM OUT_N OUT_P Folded_Cascode_Diff_PEX
+**** begin user architecture code
+
+
+.include pex_Folded_Diff_Op_Amp_Layout.spice
+.control
+save all
+set color0 = white
+set color 1 = black
+save all
+.options savecurrents
+
+tran 1n 400n
+*dc V4 0 100m 1m
+plot v(OUT_P) v(OUT_N)
+plot i(v2)
+
+
+write Folded_Cascode_Diff_TB_SR.raw
+*let vdiff = @m.xm1.m0[vdsat]+vds
+*plot @m.xm1.m0[vdsat]
+*tran 1u 2m
+*let gain = (maximum(out1)-minimum(out2) )* 1000
+*print vbb
+
+
+
+*plot vdiff
+display all
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

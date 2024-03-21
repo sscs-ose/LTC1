@@ -1,0 +1,43 @@
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/JK_FF_PEX_TB.sch
+**.subckt JK_FF_PEX_TB
+C1 QB VSS 50f m=1
+C2 Q VSS 50f m=1
+x1 CLK VSS VDD Q J QB RST K pex_JK_FF_mag
+V7 VDD VSS 3.3
+.save i(v7)
+V8 VSS GND 0
+.save i(v8)
+V9 CLK VSS pulse(0 3.3 0 100p 100p 50n 100n)
+.save i(v9)
+V10 J VSS pulse(0 3.3 0 100p 100p 200n 400n)
+.save i(v10)
+V12 K VSS pulse(0 3.3 0 100p 100p 100n 200n)
+.save i(v12)
+V5 RST VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v5)
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_JK_FF_mag.spice
+.control
+save all
+tran 50p 500n
+plot v(J)
+plot v(K)
+plot V(CLK)
+plot v(Q)
+plot v(QB)
+plot V(RST)
+
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

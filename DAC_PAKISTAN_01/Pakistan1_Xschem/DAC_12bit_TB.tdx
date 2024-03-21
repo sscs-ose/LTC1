@@ -1,0 +1,17 @@
+tEDAx v1
+begin netlist v1 DAC_12bit_TB
+ value R1 200
+ value R2 200
+ conn OUT+ R1 1
+ pinname R1 1 P
+ conn VDD R1 2
+ pinname R1 2 M
+ conn OUT- R2 1
+ pinname R2 1 P
+ conn VDD R2 2
+ pinname R2 2 M
+ footprint R1 1206
+ footprint R2 1206
+ device R1 resistor
+ device R2 resistor
+end netlist

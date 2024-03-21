@@ -1,0 +1,31 @@
+* NGSPICE file created from Balance_Inverter.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8LTNG a_n120_n36# a_28_n22# a_n28_n66# w_n206_n159#
+X0 a_28_n22# a_n28_n66# a_n120_n36# w_n206_n159# pfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt Inverter VDD VSS IN OUT
+Xnmos_3p3_H9QVWA_0 VSS OUT IN VSS nmos_3p3_H9QVWA
+Xpmos_3p3_M8RWPS_0 IN VDD VDD OUT pmos_3p3_M8RWPS
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt Balance_Inverter
+Xpmos_3p3_M8LTNG_0 a_1126_606# Inverter_0/VDD a_703_386# Inverter_0/VDD pmos_3p3_M8LTNG
+Xpmos_3p3_M8LTNG_1 Inverter_0/VDD a_703_386# a_1126_606# Inverter_0/VDD pmos_3p3_M8LTNG
+XInverter_0 Inverter_0/VDD Inverter_0/VSS Inverter_0/IN Inverter_0/OUT Inverter
+Xnmos_3p3_DDNVWA_0 a_1126_606# Inverter_0/VSS Inverter_0/OUT Inverter_0/VSS nmos_3p3_DDNVWA
+Xnmos_3p3_DDNVWA_1 Inverter_0/VSS a_703_386# Inverter_0/IN Inverter_0/VSS nmos_3p3_DDNVWA
+.ends
+

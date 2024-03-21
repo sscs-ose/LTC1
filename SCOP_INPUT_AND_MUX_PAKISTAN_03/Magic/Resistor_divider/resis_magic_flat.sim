@@ -1,0 +1,17 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x a_668_n54# VDD VDD VDD s=16480,526 l=1292 w=160 x=668 y=-53 ppolyf_u
+x a_1148_n54# r1 r2 VDD s=16480,526 d=16480,526 l=1292 w=160 x=1148 y=-53 ppolyf_u
+x a_1628_n54# r1 r2 VDD s=16480,526 d=16480,526 l=1292 w=160 x=1628 y=-53 ppolyf_u
+x a_1388_n54# r1 r2 VDD s=16480,526 d=16480,526 l=1292 w=160 x=1388 y=-53 ppolyf_u
+x a_1868_n54# VDD VDD VDD s=16480,526 l=1292 w=160 x=1868 y=-53 ppolyf_u
+x a_908_n54# r1 r2 VDD s=16480,526 d=16480,526 l=1292 w=160 x=908 y=-53 ppolyf_u
+R r2 109
+R r1 109
+C VDD0 11.9
+R VDD 1773
+R a_1868_n54# 2826
+R a_1628_n54# 2826
+R a_1388_n54# 2826
+R a_1148_n54# 2826
+R a_908_n54# 2826
+R a_668_n54# 2826

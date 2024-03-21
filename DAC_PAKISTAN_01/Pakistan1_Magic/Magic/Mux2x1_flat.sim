@@ -1,0 +1,64 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x B VSS a_672_1152# VSS s=8800,376 d=8800,376 l=56 w=100 x=616 y=1152 nfet_03v3
+x A VSS a_268_215# VSS s=8800,376 d=8800,376 l=56 w=100 x=212 y=215 nfet_03v3
+x SEL VDD AND_0.B VDD s=8800,376 d=8800,376 l=56 w=100 x=174 y=1458 pfet_03v3
+x SEL AND_1.Inverter_0.IN VDD VDD s=8800,376 d=8800,376 l=56 w=100 x=616 y=554 pfet_03v3
+x OR_0.B VSS OR_0.Inverter_0.IN VSS s=6184,328 d=6184,328 l=56 w=50 x=1661 y=203 nfet_03v3
+x AND_0.B a_672_1152# AND_0.Inverter_0.IN VSS s=8800,376 d=8800,376 l=56 w=100 x=1020 y=1152 nfet_03v3
+x SEL VSS AND_0.B VSS s=6184,328 d=6184,328 l=56 w=50 x=174 y=1159 nfet_03v3
+x OR_0.A OR_0.Inverter_0.IN a_1557_553# VDD s=5200,204 d=8800,376 l=56 w=100 x=2225 y=553 pfet_03v3
+x OR_0.A VSS OR_0.Inverter_0.IN VSS s=6184,328 d=6184,328 l=56 w=50 x=2065 y=203 nfet_03v3
+x AND_0.Inverter_0.IN VDD OR_0.A VDD s=8800,376 d=8800,376 l=56 w=100 x=1424 y=1458 pfet_03v3
+x OR_0.Inverter_0.IN VDD OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=2629 y=500 pfet_03v3
+x OR_0.B VDD a_1557_553# VDD s=8800,376 d=5200,204 l=56 w=100 x=1501 y=553 pfet_03v3
+x B VDD AND_0.Inverter_0.IN VDD s=8800,376 d=8800,376 l=56 w=100 x=616 y=1491 pfet_03v3
+x AND_1.Inverter_0.IN VDD OR_0.B VDD s=8800,376 d=8800,376 l=56 w=100 x=1020 y=521 pfet_03v3
+x SEL a_268_215# AND_1.Inverter_0.IN VSS s=8800,376 d=8800,376 l=56 w=100 x=616 y=215 nfet_03v3
+x A VDD AND_1.Inverter_0.IN VDD s=8800,376 d=8800,376 l=56 w=100 x=212 y=554 pfet_03v3
+x AND_0.Inverter_0.IN VSS OR_0.A VSS s=6184,328 d=6184,328 l=56 w=50 x=1424 y=1159 nfet_03v3
+x OR_0.Inverter_0.IN VSS OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=2629 y=201 nfet_03v3
+x OR_0.B a_1557_553# VDD VDD s=5200,204 d=8800,376 l=56 w=100 x=1661 y=553 pfet_03v3
+x AND_0.B AND_0.Inverter_0.IN VDD VDD s=8800,376 d=8800,376 l=56 w=100 x=1020 y=1491 pfet_03v3
+x AND_1.Inverter_0.IN VSS OR_0.B VSS s=6184,328 d=6184,328 l=56 w=50 x=1020 y=222 nfet_03v3
+x OR_0.A a_1557_553# OR_0.Inverter_0.IN VDD s=8800,376 d=5200,204 l=56 w=100 x=2065 y=553 pfet_03v3
+R a_268_215# 38
+R OUT 20
+= OUT OR_0.Inverter_0.OUT
+= OUT OR_0.OUT
+R OR_0.Inverter_0.IN 118
+R a_1557_553# 72
+R AND_1.Inverter_0.IN 117
+R OR_0.B 149
+= OR_0.B AND_1.Inverter_0.OUT
+= OR_0.B AND_1.OUT
+R A 111
+= A AND_1.A
+R a_672_1152# 38
+R OR_0.A 151
+= OR_0.A AND_0.Inverter_0.OUT
+= OR_0.A AND_0.OUT
+R AND_0.Inverter_0.IN 117
+R AND_0.B 131
+= AND_0.B Inverter_0.OUT
+R B 112
+= B AND_0.A
+R SEL 195
+= SEL Inverter_0.IN
+= SEL AND_1.B
+C VDD0 9.5
+R VDD 14075
+= VDD AND_0.Inverter_0.VDD
+= VDD AND_1.Inverter_0.VDD
+= VDD AND_0.VDD
+= VDD Inverter_0.VDD
+= VDD OR_0.Inverter_0.VDD
+= VDD AND_1.VDD
+= VDD OR_0.VDD
+R VSS 647
+= VSS AND_0.Inverter_0.VSS
+= VSS AND_1.Inverter_0.VSS
+= VSS AND_0.VSS
+= VSS Inverter_0.VSS
+= VSS OR_0.Inverter_0.VSS
+= VSS AND_1.VSS
+= VSS OR_0.VSS

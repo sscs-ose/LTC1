@@ -1,0 +1,32 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/DAC_low_curr/CM_tb.sch
+**.subckt CM_tb
+I0 VDD ITAIL 50u
+V1 VSS GND 0
+.save i(v1)
+V2 VDD GND 3.3
+.save i(v2)
+R1 VDD OUT 10k m=1
+x1 OUT ITAIL VSS pex_CM_magic
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_CM_magic.spice
+.option savecurrents
+.control
+save all
+op
+
+tran 10n 3.2u
+plot v(OUT)
+write LSB_TB.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

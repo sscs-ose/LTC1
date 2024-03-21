@@ -1,0 +1,64 @@
+** sch_path:
+*+ /home/shahid/GF180Projects/PGA_Decoder/Folded_OPAMP_nobias/Xschem/folded_single_TB_DC.sch
+**.subckt folded_single_TB_DC
+V5 VDD GND 3.3
+.save i(v5)
+V2 VINP net1 0
+.save i(v2)
+V1 VSS GND 0
+.save i(v1)
+I1 IBIAS VSS 50u
+C1 OUTo VSS 15p m=1
+V3 VINN net1 0
+.save i(v3)
+x1 OUT VDD VSS VINN VINP IBIAS VBS2 VBS3 VBIASN OUTo pex_fold_cascode_opamp_mag
+V4 net1 GND 0
+.save i(v4)
+**** begin user architecture code
+
+
+.include pex_fold_cascode_opamp_mag.spice
+.control
+*save all
+*.options savecurrents
+save all
+
+*tran 100p 400n
+dc V4 0 3 10m
+plot v(OUTo)
+*plot v(IBIAS)
+plot i(V5)
+
+*ac dec 50 1 1e9
+let tf = outo/vinp
+let gain = db(tf)
+let phase = (180/pi)*ph(tf)
+
+*plot gain
+*plot phase
+
+*write pmos_nmos.raw
+*let vdiff = @m.xm1.m0[vdsat]+vds
+*plot @m.xm1.m0[vdsat]
+*tran 1u 2m
+*let gain = (maximum(out1)-minimum(out2) )* 1000
+*print vbb
+
+*plot vdiff
+display all
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,164 @@
+** sch_path: /home/shahid/GF180Projects/AHMAR/3b_DC.sch
+**.subckt 3b_DC VDD VSS Q3 Q1 D2_1 D2_2 D2_3 CLK Q2 LD
+*.iopin VDD
+*.iopin VSS
+*.opin Q3
+*.opin Q1
+*.ipin D2_1
+*.ipin D2_2
+*.ipin D2_3
+*.ipin CLK
+*.opin Q2
+*.opin LD
+x1 VDD LD D2_1 VSS CLK Q1 1 1 mod_DFF
+x2 VDD LD D2_2 VSS Q1 Q2 2 2 mod_DFF
+x3 VDD LD D2_2 VSS Q1 Q2 2 2 mod_DFF
+x4 VDD LD D2_3 VSS Q2 Q3 3 3 mod_DFF
+x5 VDD 1 2 3 net1 VSS 3_inp_NOR
+x7 CLK VDD net3 net2 net4 ned_DFF
+x6 VDD net3 net2 net1 VSS NAND
+x8 VDD net2 LD VSS inverter
+**.ends
+
+* expanding   symbol:  mod_DFF.sym # of pins=8
+** sym_path: /home/shahid/GF180Projects/AHMAR/mod_DFF.sym
+** sch_path: /home/shahid/GF180Projects/AHMAR/mod_DFF.sch
+.subckt mod_DFF VDD LD D2 VSS CLK Q D1 Q-
+*.ipin LD
+*.ipin D2
+*.iopin VDD
+*.iopin VSS
+*.ipin D1
+*.opin Q
+*.opin Q-
+*.ipin CLK
+x1 VDD net6 LD D2 VSS NAND
+x2 VDD net5 LD net1 VSS NAND
+x3 VDD D2 net1 VSS inverter
+x4 VDD CLKB VSS net2 D1 tg
+x5 VDD net3 net2 net5 VSS NAND
+x6 VDD CLK VSS net4 net3 tg
+x7 VDD Q net4 net6 VSS NAND
+x8 VDD D2 net1 VSS inverter
+x9 VDD Q Q- VSS inverter
+x10 VDD net7 net5 Q VSS NAND
+x11 VDD CLKB VSS net4 net7 tg
+x12 VDD net8 net6 net3 VSS NAND
+x13 VDD CLK VSS net2 net8 tg
+x14 VDD D2 net1 VSS inverter
+x15 VDD CLK CLKB VSS inverter
+.ends
+
+
+* expanding   symbol:  3_inp_NOR.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/AHMAR/3_inp_NOR.sym
+** sch_path: /home/shahid/GF180Projects/AHMAR/3_inp_NOR.sch
+.subckt 3_inp_NOR VDD A B C VOUT VSS
+*.iopin VSS
+*.iopin VDD
+*.ipin A
+*.ipin B
+*.ipin C
+*.opin VOUT
+XM1 VOUT A VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 B net2 VDD pfet_03v3 L=0.28u W=2.64u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 VOUT B VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 VOUT C VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 VOUT C net1 VDD pfet_03v3 L=0.28u W=2.64u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 net2 A VDD VDD pfet_03v3 L=0.28u W=2.64u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  ned_DFF.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/AHMAR/ned_DFF.sym
+** sch_path: /home/shahid/GF180Projects/AHMAR/ned_DFF.sch
+.subckt ned_DFF CLK VDD D Q VSS
+*.ipin D
+*.iopin VDD
+*.iopin VSS
+*.opin Q
+*.ipin CLK
+x1 VDD CLK VSS net1 D tg
+x3 VDD CLKB VSS net1 net5 tg
+x4 VDD CLKB VSS net3 net2 tg
+x5 VDD CLK VSS net3 net4 tg
+x2 VDD net1 net2 VSS inverter
+x6 VDD net3 Q VSS inverter
+x7 VDD Q net4 VSS inverter
+x8 VDD net2 net5 VSS inverter
+x9 VDD CLK CLKB VSS inverter
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/AHMAR/NAND.sym
+** sch_path: /home/shahid/GF180Projects/AHMAR/NAND.sch
+.subckt NAND VDD VOUT A B VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.ipin B
+*.opin VOUT
+XM1 VOUT A net1 VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 VOUT A VDD VDD pfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 VOUT B VDD VDD pfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net1 B VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/AHMAR/inverter.sym
+** sch_path: /home/shahid/GF180Projects/AHMAR/inverter.sch
+.subckt inverter VDD VIN VOUT VSS
+*.iopin VDD
+*.ipin VIN
+*.opin VOUT
+*.iopin VSS
+XM4 VOUT VIN VDD VDD pfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 VOUT VIN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  tg.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/AHMAR/tg.sym
+** sch_path: /home/shahid/GF180Projects/AHMAR/tg.sch
+.subckt tg VDD CLK VSS OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin CLK
+*.ipin IN
+*.opin OUT
+x1 VDD CLK net1 VSS inverter
+XM1 OUT net1 IN VDD pfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT CLK IN VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

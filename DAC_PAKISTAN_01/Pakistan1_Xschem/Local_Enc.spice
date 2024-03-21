@@ -1,0 +1,44 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/Local_Enc.sch
+**.subckt Local_Enc VDD VSS Ri-1 Ri Ci Q QB
+*.iopin VDD
+*.iopin VSS
+*.ipin Ri-1
+*.ipin Ri
+*.ipin Ci
+*.opin Q
+*.opin QB
+x1 VDD VSS Ri-1 Ri-1 net5 NAND
+x2 VDD VSS Ri Ri net6 NAND
+x3 VDD VSS Ci Ci net7 NAND
+x4 VDD VSS net5 net5 net3 NAND
+x5 VDD VSS net6 net7 net4 NAND
+x6 VDD VSS net3 net4 net2 NAND
+x7 VDD VSS net2 net2 net1 NAND
+x8 VDD VSS Q net1 QB NAND
+x9 VDD VSS net2 QB Q NAND
+**.ends
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/NAND.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/NAND.sch
+.subckt NAND VDD VSS A B OUT
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.ipin B
+*.opin OUT
+XM1 net1 B VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT A VDD VDD pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT B VDD VDD pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT A net1 VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

@@ -1,0 +1,182 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1692688043
+<< nwell >>
+rect 114 746 838 945
+<< psubdiff >>
+rect 38 -14 201 1
+rect 38 -73 55 -14
+rect 184 -73 201 -14
+rect 38 -88 201 -73
+rect 283 -8 446 7
+rect 283 -67 300 -8
+rect 429 -67 446 -8
+rect 283 -82 446 -67
+rect 515 -11 678 4
+rect 515 -70 532 -11
+rect 661 -70 678 -11
+rect 515 -85 678 -70
+rect 762 -12 925 3
+rect 762 -71 779 -12
+rect 908 -71 925 -12
+rect 762 -86 925 -71
+rect 986 -12 1149 3
+rect 986 -71 1003 -12
+rect 1132 -71 1149 -12
+rect 986 -86 1149 -71
+<< nsubdiff >>
+rect 150 900 295 915
+rect 150 849 166 900
+rect 282 849 295 900
+rect 150 833 295 849
+rect 401 902 546 918
+rect 401 851 417 902
+rect 533 851 546 902
+rect 401 837 546 851
+rect 641 901 786 916
+rect 641 850 657 901
+rect 773 850 786 901
+rect 641 835 786 850
+<< psubdiffcont >>
+rect 55 -73 184 -14
+rect 300 -67 429 -8
+rect 532 -70 661 -11
+rect 779 -71 908 -12
+rect 1003 -71 1132 -12
+<< nsubdiffcont >>
+rect 166 849 282 900
+rect 417 851 533 902
+rect 657 850 773 901
+<< polysilicon >>
+rect 87 756 161 771
+rect 87 710 101 756
+rect 147 710 504 756
+rect 87 696 161 710
+rect 448 648 504 710
+rect 469 616 477 648
+rect 608 472 664 477
+rect 70 320 150 335
+rect 288 320 344 472
+rect 70 316 344 320
+rect 70 267 86 316
+rect 134 267 344 316
+rect 70 264 344 267
+rect 70 253 176 264
+rect 120 250 176 253
+rect 288 224 344 264
+rect 456 310 504 472
+rect 608 464 1045 472
+rect 598 454 1045 464
+rect 571 436 1045 454
+rect 571 390 591 436
+rect 637 416 1045 436
+rect 637 390 664 416
+rect 571 383 664 390
+rect 571 376 648 383
+rect 456 262 680 310
+rect 456 249 512 262
+rect 624 250 680 262
+rect 989 250 1045 416
+<< polycontact >>
+rect 101 710 147 756
+rect 86 267 134 316
+rect 591 390 637 436
+<< metal1 >>
+rect 114 902 838 945
+rect 114 900 417 902
+rect 114 849 166 900
+rect 282 851 417 900
+rect 533 901 838 902
+rect 533 851 657 901
+rect 282 850 657 851
+rect 773 850 838 901
+rect 282 849 838 850
+rect 114 822 838 849
+rect 87 758 161 771
+rect 26 756 161 758
+rect 26 712 101 756
+rect 87 710 101 712
+rect 147 710 161 756
+rect 87 696 161 710
+rect 213 614 259 822
+rect 533 604 579 822
+rect 373 435 419 518
+rect 693 472 1174 519
+rect 571 436 648 454
+rect 571 435 591 436
+rect 209 390 591 435
+rect 637 390 648 436
+rect 209 389 648 390
+rect 70 316 150 335
+rect 70 315 86 316
+rect -4 268 86 315
+rect 70 267 86 268
+rect 134 267 150 316
+rect 70 253 150 267
+rect 209 204 255 389
+rect 571 376 648 389
+rect 377 253 759 299
+rect 377 206 423 253
+rect 713 206 759 253
+rect 366 204 434 206
+rect 366 160 377 204
+rect 423 160 434 204
+rect 41 108 87 160
+rect 377 108 423 159
+rect 41 62 423 108
+rect 545 12 591 168
+rect 702 160 770 206
+rect 1077 204 1124 472
+rect 713 158 759 160
+rect 910 12 956 166
+rect 3 -8 1161 12
+rect 3 -14 300 -8
+rect 3 -73 55 -14
+rect 184 -67 300 -14
+rect 429 -11 1161 -8
+rect 429 -67 532 -11
+rect 184 -70 532 -67
+rect 661 -12 1161 -11
+rect 661 -70 779 -12
+rect 184 -71 779 -70
+rect 908 -71 1003 -12
+rect 1132 -71 1161 -12
+rect 184 -73 1161 -71
+rect 3 -102 1161 -73
+use nmos_3p3_49QVWA  nmos_3p3_49QVWA_0
+timestamp 1692173274
+transform -1 0 568 0 1 181
+box -228 -99 228 99
+use nmos_3p3_49QVWA  nmos_3p3_49QVWA_1
+timestamp 1692173274
+transform -1 0 232 0 1 181
+box -228 -99 228 99
+use nmos_3p3_H9QVWA  nmos_3p3_H9QVWA_0
+timestamp 1692686659
+transform 1 0 1017 0 1 181
+box -144 -99 144 99
+use pmos_3p3_M8RWPS  pmos_3p3_M8RWPS_0
+timestamp 1692173274
+transform 1 0 636 0 1 566
+box -202 -180 202 180
+use pmos_3p3_M8RWPS  pmos_3p3_M8RWPS_1
+timestamp 1692173274
+transform 1 0 316 0 1 566
+box -202 -180 202 180
+use pmos_3p3_M8RWPS  pmos_3p3_M8RWPS_2
+timestamp 1692173274
+transform 1 0 476 0 1 566
+box -202 -180 202 180
+<< labels >>
+flabel metal1 19 296 19 296 0 FreeSans 800 0 0 0 A
+port 1 nsew
+flabel metal1 50 724 50 724 0 FreeSans 800 0 0 0 B
+port 3 nsew
+flabel metal1 1126 494 1126 494 0 FreeSans 320 0 0 0 OUT
+port 9 nsew
+flabel nsubdiffcont 447 891 447 891 0 FreeSans 320 0 0 0 VDD
+port 10 nsew
+flabel metal1 483 -42 483 -42 0 FreeSans 320 0 0 0 VSS
+port 11 nsew
+<< end >>

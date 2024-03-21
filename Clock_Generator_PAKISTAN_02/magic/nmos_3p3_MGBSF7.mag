@@ -1,0 +1,40 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694669839
+<< error_p >>
+rect -190 -23 -179 23
+rect 122 -23 133 23
+<< pwell >>
+rect -216 -97 216 97
+<< nmos >>
+rect -100 -22 100 22
+<< ndiff >>
+rect -192 23 -120 36
+rect -192 -23 -179 23
+rect -133 22 -120 23
+rect 120 23 192 36
+rect 120 22 133 23
+rect -133 -22 -100 22
+rect 100 -22 133 22
+rect -133 -23 -120 -22
+rect -192 -36 -120 -23
+rect 120 -23 133 -22
+rect 179 -23 192 23
+rect 120 -36 192 -23
+<< ndiffc >>
+rect -179 -23 -133 23
+rect 133 -23 179 23
+<< polysilicon >>
+rect -100 22 100 66
+rect -100 -66 100 -22
+<< metal1 >>
+rect -190 -23 -179 23
+rect -133 -23 -122 23
+rect 122 -23 133 23
+rect 179 -23 190 23
+<< properties >>
+string gencell nmos_3p3
+string library gf180mcu
+string parameters w 0.220 l 1 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 full_metal 0 compatible {nmos_3p3 nmos_6p0 nmos_6p0_nat}
+<< end >>

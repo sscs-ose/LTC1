@@ -1,0 +1,30 @@
+* NGSPICE file created from resistor_PGA.ext - technology: gf180mcuC
+
+.subckt ppolyf_u_GQDP2M a_n280_100# a_n600_100# a_680_n202# w_n1104_n386# a_40_n202#
++ a_n600_n202# a_680_100# a_40_100# a_n920_100# a_360_n202# a_n920_n202# a_360_100#
++ a_n280_n202#
+X0 a_680_100# a_680_n202# w_n1104_n386# ppolyf_u r_width=1.2u r_length=1u
+X1 a_n280_100# a_n280_n202# w_n1104_n386# ppolyf_u r_width=1.2u r_length=1u
+X2 a_40_100# a_40_n202# w_n1104_n386# ppolyf_u r_width=1.2u r_length=1u
+X3 a_360_100# a_360_n202# w_n1104_n386# ppolyf_u r_width=1.2u r_length=1u
+X4 a_n920_100# a_n920_n202# w_n1104_n386# ppolyf_u r_width=1.2u r_length=1u
+X5 a_n600_100# a_n600_n202# w_n1104_n386# ppolyf_u r_width=1.2u r_length=1u
+.ends
+
+
+* Top level circuit resistor_PGA
+
+Xppolyf_u_GQDP2M_0 m1_5846_455# m1_5580_n524# m1_7180_n869# ppolyf_u_GQDP2M_3/w_n1104_n386#
++ m1_6224_n865# m1_5907_n1021# m1_5844_1117# m1_6548_n502# m1_5580_n524# m1_5907_n1021#
++ m1_5220_n868# m1_6807_n537# m1_6224_n865# ppolyf_u_GQDP2M
+Xppolyf_u_GQDP2M_1 m1_6220_1452# m1_5904_1472# m1_6855_1117# ppolyf_u_GQDP2M_3/w_n1104_n386#
++ m1_6546_955# m1_5844_1117# m1_7182_1475# m1_6220_1452# m1_5587_1473# m1_6855_1117#
++ m1_5527_1119# m1_6807_n537# m1_6167_1120# ppolyf_u_GQDP2M
+Xppolyf_u_GQDP2M_2 m1_6216_789# m1_5233_944# m1_6487_130# ppolyf_u_GQDP2M_3/w_n1104_n386#
++ m1_6488_451# m1_5846_455# m1_7192_810# m1_6216_789# m1_5232_785# m1_6865_481# m1_5524_456#
++ m1_6546_955# m1_5585_154# ppolyf_u_GQDP2M
+Xppolyf_u_GQDP2M_3 m1_5524_456# m1_5527_1119# m1_7176_n207# ppolyf_u_GQDP2M_3/w_n1104_n386#
++ m1_6223_n209# m1_5903_n179# m1_6488_451# m1_6487_130# m1_5585_154# m1_5903_n179#
++ m1_5210_n206# m1_6870_159# m1_6223_n209# ppolyf_u_GQDP2M
+.end
+

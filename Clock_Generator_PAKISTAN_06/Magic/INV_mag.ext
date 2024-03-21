@@ -1,0 +1,40 @@
+timestamp 1697518002
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use pmos_3p3_KG2TLV pmos_3p3_KG2TLV_0 1 0 326 0 1 180
+use nmos_3p3_MGEA4B nmos_3p3_MGEA4B_0 1 0 315 0 1 -141
+port "OUT" 4 642 29 642 29 m1
+port "IN" 1 8 27 8 29 m1
+port "VDD" 0 315 421 315 423 nsc
+port "VSS" 2 314 -335 314 -333 psc
+node "OUT" 1 276.859 642 29 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34348 1558 0 0 0 0 0 0 0 0
+node "IN" 44 362.578 8 27 m1 0 0 0 0 0 0 0 0 0 0 0 0 28051 958 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18515 682 0 0 0 0 0 0 0 0
+node "w_163_0#" 5780 70.395 163 0 nw 23465 864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 8728 647.603 315 421 nsc 93637 2012 0 0 33417 1004 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105615 2464 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 314 -335 psc 0 0 0 0 0 0 36080 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66695 1532 0 0 0 0 0 0 0 0
+cap "VDD" "OUT" 136.189
+cap "OUT" "IN" 114.095
+cap "w_163_0#" "IN" 65.0371
+cap "w_163_0#" "OUT" 0.169231
+cap "VDD" "IN" 75.316
+cap "nmos_3p3_MGEA4B_0/a_n138_n50#" "nmos_3p3_MGEA4B_0/a_50_n50#" -20.2953
+cap "nmos_3p3_MGEA4B_0/a_50_n50#" "pmos_3p3_KG2TLV_0/a_152_n50#" -17.1379
+cap "nmos_3p3_MGEA4B_0/a_n50_n94#" "nmos_3p3_MGEA4B_0/a_50_n50#" 32.158
+cap "nmos_3p3_MGEA4B_0/a_n138_n50#" "pmos_3p3_KG2TLV_0/a_152_n50#" 1.3032
+cap "nmos_3p3_MGEA4B_0/a_n138_n50#" "nmos_3p3_MGEA4B_0/a_n50_n94#" 19.6247
+cap "nmos_3p3_MGEA4B_0/a_n50_n94#" "pmos_3p3_KG2TLV_0/a_152_n50#" 111.455
+merge "nmos_3p3_MGEA4B_0/a_n50_n94#" "pmos_3p3_KG2TLV_0/a_52_n94#" -231.773 0 0 0 0 0 0 0 0 0 0 0 0 -300 -606 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_3p3_KG2TLV_0/a_52_n94#" "pmos_3p3_KG2TLV_0/a_n152_n94#"
+merge "pmos_3p3_KG2TLV_0/a_n152_n94#" "IN"
+merge "nmos_3p3_MGEA4B_0/VSUBS" "nmos_3p3_MGEA4B_0/a_n138_n50#" -54.526 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -260 0 0 0 0 0 0 0 0
+merge "nmos_3p3_MGEA4B_0/a_n138_n50#" "pmos_3p3_KG2TLV_0/VSUBS"
+merge "pmos_3p3_KG2TLV_0/VSUBS" "VSS"
+merge "pmos_3p3_KG2TLV_0/a_152_n50#" "pmos_3p3_KG2TLV_0/a_n240_n50#" -321.801 -35602 -2626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8740 -564 0 0 0 0 0 0 0 0
+merge "pmos_3p3_KG2TLV_0/a_n240_n50#" "pmos_3p3_KG2TLV_0/w_n326_n180#"
+merge "pmos_3p3_KG2TLV_0/w_n326_n180#" "w_163_0#"
+merge "w_163_0#" "VDD"
+merge "nmos_3p3_MGEA4B_0/a_50_n50#" "pmos_3p3_KG2TLV_0/a_n52_n50#" -132.208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8832 -568 0 0 0 0 0 0 0 0
+merge "pmos_3p3_KG2TLV_0/a_n52_n50#" "OUT"

@@ -1,0 +1,35 @@
+* NGSPICE file created from CP_mag.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_GYTGVN a_n260_n36# a_168_n28# a_56_n72# a_n168_n72# a_n56_n28# VSUBS
+X0 a_n56_n28# a_n168_n72# a_n260_n36# VSUBS nfet_03v3 ad=92.8f pd=0.92u as=0.158p ps=1.64u w=0.28u l=0.56u
+X1 a_168_n28# a_56_n72# a_n56_n28# VSUBS nfet_03v3 ad=0.158p pd=1.64u as=92.8f ps=0.92u w=0.28u l=0.56u
+.ends
+
+.subckt pmos_3p3_HVHFD7 a_n52_n50# w_n338_n180# a_52_n94# a_164_n50# a_n252_n50# a_n164_n94#
+X0 a_164_n50# a_52_n94# a_n52_n50# w_n338_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.56u
+X1 a_n52_n50# a_n164_n94# a_n252_n50# w_n338_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.56u
+.ends
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt inv VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+**.subckt CP_mag VDD VSS VCNTL PU PD IPD_ IPD+
+Xnmos_3p3_GYTGVN_0 m1_1391_990# m1_1391_990# PD PD VCNTL VSS nmos_3p3_GYTGVN
+Xnmos_3p3_GYTGVN_1 VSS VSS IPD+ IPD+ IPD+ VSS nmos_3p3_GYTGVN
+Xnmos_3p3_GYTGVN_2 VSS VSS IPD+ IPD+ m1_1391_990# VSS nmos_3p3_GYTGVN
+Xpmos_3p3_HVHFD7_0 m1_1376_1265# VDD IPD_ VDD VDD IPD_ pmos_3p3_HVHFD7
+Xpmos_3p3_HVHFD7_1 VCNTL VDD inv_0/OUT m1_1376_1265# m1_1376_1265# inv_0/OUT pmos_3p3_HVHFD7
+Xpmos_3p3_HVHFD7_2 IPD_ VDD IPD_ VDD VDD IPD_ pmos_3p3_HVHFD7
+Xinv_0 VDD VSS PU inv_0/OUT inv
+.ends
+

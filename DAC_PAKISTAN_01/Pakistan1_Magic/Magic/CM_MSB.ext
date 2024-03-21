@@ -1,0 +1,380 @@
+timestamp 1692949456
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use MSB_Unit_Cell_p1 MSB_Unit_Cell_p1_1 1 0 -3264 0 1 3004
+use MSB_Unit_Cell_p1 MSB_Unit_Cell_p1_0 1 0 -3264 0 1 1874
+port "IM_T" 3 -3132 3305 -3132 3305 m2
+port "IM" 2 -3691 2889 -3691 2889 m1
+port "OUT" 0 3588 2438 3588 2438 m1
+port "VSS" 1 1890 3535 1890 3535 psc
+node "m2_3076_2018#" 2 313.62 3076 2018 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21050 924 53530 1972 0 0 0 0
+node "m2_2669_2019#" 2 183.779 2669 2019 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17186 786 53586 1974 0 0 0 0
+node "m2_2260_2023#" 2 191.581 2260 2023 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21042 932 53408 1978 0 0 0 0
+node "m2_1445_2009#" 2 193.77 1445 2009 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20770 914 54370 2002 0 0 0 0
+node "m2_1855_1986#" 2 183.783 1855 1986 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16402 758 55714 2050 0 0 0 0
+node "m2_1037_2002#" 2 177.03 1037 2002 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16234 752 54650 2012 0 0 0 0
+node "m2_630_2002#" 2 192.446 630 2002 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20154 892 54706 2014 0 0 0 0
+node "m2_n595_2003#" 2 197.494 -595 2003 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20210 894 54370 2002 0 0 0 0
+node "m2_221_1998#" 2 179.31 221 1998 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17746 806 54874 2020 0 0 0 0
+node "m2_n184_2810#" 2 177.165 -184 2810 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17354 792 54370 2002 0 0 0 0
+node "m2_n1002_2812#" 2 177.792 -1002 2812 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17074 782 54650 2012 0 0 0 0
+node "m2_n1411_2812#" 2 178.778 -1411 2812 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17074 782 54594 2010 0 0 0 0
+node "m2_n1819_2002#" 2 196.507 -1819 2002 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19986 886 54650 2012 0 0 0 0
+node "m2_n3041_1976#" 2 261.464 -3041 1976 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16032 770 55856 2046 0 0 0 0
+node "m2_n2227_2813#" 2 181.82 -2227 2813 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17578 800 55098 2028 0 0 0 0
+node "m2_n2635_2813#" 2 171.463 -2635 2813 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15229 742 54818 2018 0 0 0 0
+node "IM_T" 6 1338.52 -3132 3305 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195048 7078 0 0 0 0 0 0
+node "m1_n3041_1976#" 0 77.6969 -3041 1976 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7520 348 0 0 0 0 0 0 0 0
+node "m1_2261_2815#" 0 54.1845 2261 2815 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6885 332 0 0 0 0 0 0 0 0
+node "m1_n2635_2813#" 0 54.5899 -2635 2813 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6885 332 0 0 0 0 0 0 0 0
+node "IM" 4 1259.6 -3691 2889 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69710 2834 74586 2704 0 0 0 0 0 0
+node "OUT" 18 5256.3 3588 2438 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 673004 23418 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 1890 3535 psc 0 0 0 0 0 0 2322567 40404 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2586838 42898 139028 4968 0 0 0 0 0 0
+cap "m2_n3041_1976#" "m2_n2635_2813#" 155.362
+cap "m2_n1819_2002#" "OUT" 10.7533
+cap "m2_n595_2003#" "m2_n184_2810#" 159.781
+cap "m2_1855_1986#" "m2_2669_2019#" 2.95678
+cap "m2_630_2002#" "OUT" 18.5592
+cap "m2_1037_2002#" "m2_2260_2023#" 0.0064692
+cap "m2_n595_2003#" "m2_221_1998#" 0.452036
+cap "m2_n595_2003#" "m2_1037_2002#" 0.00032094
+cap "m1_2261_2815#" "m2_1855_1986#" 0.742928
+cap "m2_n184_2810#" "m2_n1411_2812#" 0.000772273
+cap "m1_n2635_2813#" "m2_n2635_2813#" 14.0822
+cap "m2_1445_2009#" "m2_3076_2018#" 0.000272935
+cap "m2_2260_2023#" "m2_2669_2019#" 157.315
+cap "m2_n595_2003#" "m2_n2227_2813#" 0.00432849
+cap "m2_221_1998#" "m2_n1411_2812#" 0.000407998
+cap "m2_n1002_2812#" "m2_n184_2810#" 3.67282
+cap "IM_T" "m2_n1819_2002#" 0.612865
+cap "m2_630_2002#" "m2_1445_2009#" 6.67475
+cap "m1_2261_2815#" "m2_2260_2023#" 12.3692
+cap "m2_n2227_2813#" "m2_n1411_2812#" 3.3483
+cap "m1_n3041_1976#" "m2_n2227_2813#" 0.188461
+cap "m2_n1002_2812#" "m2_221_1998#" 0.229485
+cap "m2_n3041_1976#" "m2_n1411_2812#" 0.000723622
+cap "m2_1445_2009#" "OUT" 18.7697
+cap "m1_n3041_1976#" "m2_n3041_1976#" 15.5164
+cap "IM_T" "OUT" 4.04157
+cap "m2_n184_2810#" "m2_n1819_2002#" 0.000713153
+cap "m2_n1002_2812#" "m2_n2227_2813#" 0.0571342
+cap "m2_630_2002#" "m2_n184_2810#" 0.249777
+cap "m1_n2635_2813#" "m2_n1411_2812#" 0.0832688
+cap "m2_630_2002#" "m2_221_1998#" 161.369
+cap "m2_n184_2810#" "OUT" 18.6707
+cap "m2_2260_2023#" "m2_1855_1986#" 159.291
+cap "m2_630_2002#" "m2_1037_2002#" 161.521
+cap "m2_3076_2018#" "m2_2669_2019#" 157.907
+cap "m2_n1819_2002#" "m2_n2227_2813#" 161.547
+cap "IM" "IM_T" 69.2638
+cap "m2_n1002_2812#" "m1_n2635_2813#" 0.0289533
+cap "OUT" "m2_221_1998#" 23.0646
+cap "m2_n1819_2002#" "m2_n3041_1976#" 3.984
+cap "m2_1037_2002#" "OUT" 16.2152
+cap "m1_2261_2815#" "m2_3076_2018#" 0.174887
+cap "m2_n2635_2813#" "m2_n1411_2812#" 0.00077741
+cap "m1_n3041_1976#" "m2_n2635_2813#" 0.612329
+cap "OUT" "m2_n2227_2813#" 18.2361
+cap "OUT" "m2_2669_2019#" 18.7815
+cap "m2_n184_2810#" "m2_1445_2009#" 0.0612137
+cap "m1_2261_2815#" "m2_630_2002#" 0.0304072
+cap "m2_n1819_2002#" "m1_n2635_2813#" 0.188413
+cap "m2_1445_2009#" "m2_221_1998#" 0.010624
+cap "m1_2261_2815#" "OUT" 80.9941
+cap "m2_1445_2009#" "m2_1037_2002#" 160.356
+cap "m1_n2635_2813#" "OUT" 74.8591
+cap "m2_3076_2018#" "m2_1855_1986#" 0.0913528
+cap "m2_n595_2003#" "m2_n1411_2812#" 0.0672736
+cap "IM" "m2_n2227_2813#" 0.0277261
+cap "m2_n1819_2002#" "m2_n2635_2813#" 0.0188959
+cap "IM_T" "m2_n2227_2813#" 1.10946
+cap "m2_1445_2009#" "m2_2669_2019#" 0.00851447
+cap "IM" "m2_n3041_1976#" 6.4784
+cap "IM_T" "m2_n3041_1976#" 119.025
+cap "m2_630_2002#" "m2_1855_1986#" 0.016562
+cap "m2_n184_2810#" "m2_221_1998#" 167.885
+cap "m2_n1002_2812#" "m2_n595_2003#" 160.677
+cap "m2_n184_2810#" "m2_1037_2002#" 0.00312779
+cap "m1_n3041_1976#" "m2_n1411_2812#" 0.0210124
+cap "m2_3076_2018#" "m2_2260_2023#" 7.56374
+cap "OUT" "m2_n2635_2813#" 15.2454
+cap "m1_2261_2815#" "m2_1445_2009#" 0.192657
+cap "OUT" "m2_1855_1986#" 16.8908
+cap "m2_1037_2002#" "m2_221_1998#" 2.54066
+cap "m2_n1002_2812#" "m2_n1411_2812#" 168.207
+cap "IM" "m1_n2635_2813#" 2.75082
+cap "IM_T" "m1_n2635_2813#" 0.08566
+cap "m2_630_2002#" "m2_2260_2023#" 0.00121959
+cap "m2_n595_2003#" "m2_n1819_2002#" 4.22739
+cap "m2_630_2002#" "m2_n595_2003#" 4.2216
+cap "m2_1037_2002#" "m2_2669_2019#" 0.0898338
+cap "OUT" "m2_2260_2023#" 14.7334
+cap "m2_n1819_2002#" "m2_n1411_2812#" 161.303
+cap "m2_n595_2003#" "OUT" 8.48381
+cap "IM" "m2_n2635_2813#" 0.334408
+cap "IM_T" "m2_n2635_2813#" 11.7809
+cap "m1_n3041_1976#" "m2_n1819_2002#" 0.0874221
+cap "m2_1445_2009#" "m2_1855_1986#" 160.93
+cap "m2_n3041_1976#" "m2_n2227_2813#" 1.3955
+cap "m1_2261_2815#" "m2_1037_2002#" 0.0833234
+cap "m2_n1002_2812#" "m2_n1819_2002#" 0.0633782
+cap "OUT" "m2_n1411_2812#" 14.0588
+cap "m2_630_2002#" "m2_n1002_2812#" 0.000386585
+cap "m1_2261_2815#" "m2_2669_2019#" 0.723732
+cap "m1_n2635_2813#" "m2_n2227_2813#" 0.739426
+cap "m2_1445_2009#" "m2_2260_2023#" 7.27046
+cap "m2_n3041_1976#" "m1_n2635_2813#" 0.629552
+cap "m2_n1002_2812#" "OUT" 14.0331
+cap "m2_1855_1986#" "m2_221_1998#" 0.344271
+cap "m2_1037_2002#" "m2_1855_1986#" 2.96804
+cap "m2_3076_2018#" "OUT" 36.547
+cap "m2_n2227_2813#" "m2_n2635_2813#" 166.887
+cap "IM_T" "m2_n1411_2812#" 0.0303814
+cap "m1_n3041_1976#" "IM" 0.173745
+cap "m1_n3041_1976#" "IM_T" 1.12124
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.127677
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/m1_224_128#" 9.70741
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/a_84_242#" 171.252
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p1_1/a_84_242#" 21.9026
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -15.1845
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/m1_224_128#" 21.8254
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p1_1/m1_224_128#" 9.72143
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -0.00342856
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/a_62_n164#" 14.0973
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/m1_224_128#" 142.581
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p1_1/a_62_n164#" 19.7726
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/a_62_n164#" 29.4442
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.0120253
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_n138_n60#" -2.04925
+cap "MSB_Unit_Cell_p1_0/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" 5.80021
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_0_435#" -54.6321
+cap "MSB_Unit_Cell_p1_0/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_0_435#" 5.7276
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/m1_224_128#" 66.4167
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/m1_224_128#" 211.311
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.255353
+cap "MSB_Unit_Cell_p1_0/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_84_242#" -0.274211
+cap "MSB_Unit_Cell_p1_0/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_62_n164#" -0.0391994
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/m1_224_128#" 13.0739
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/m1_0_435#" 221.949
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/m1_0_435#" 9.44144
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/a_84_242#" 14.7742
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" -0.0297871
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -54.5247
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_0/a_62_n164#" 7.89888
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/a_316_n447#" 96.1411
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 33.1823
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_0/a_62_n164#" -2.8363
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" 187.609
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 54.3092
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.0130796
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -1.83105
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/a_62_n164#" 3.77736
+cap "MSB_Unit_Cell_p1_0/a_316_n447#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" 4.3009
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" 93.1706
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -136.684
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" "MSB_Unit_Cell_p1_0/a_62_n164#" 12.4583
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_1/a_316_n447#" 170.049
+cap "MSB_Unit_Cell_p1_0/a_316_n447#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 112.226
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/a_316_n447#" 1.53943
+cap "MSB_Unit_Cell_p1_0/a_316_n447#" "MSB_Unit_Cell_p1_0/a_62_n164#" -0.985674
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 81.7929
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/a_62_n164#" -3.14393
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_0/a_62_n164#" 10.3315
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_4/a_n50_n104#" 0.00380407
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" 5.93478
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -0.00192661
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/a_62_n164#" 0.127677
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" 3.64089
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_12/a_n50_n104#" 0.00860219
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/a_62_n164#" -12.7907
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_0/a_62_n164#" 8.58218
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/m1_0_n631#" 67.2036
+cap "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 9.53643
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 128.757
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_0/m1_37_n24#" -236.78
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" "MSB_Unit_Cell_p1_0/a_62_n164#" -4.64972
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" 138.123
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" 53.1232
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 6.76873
+cap "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_1/a_62_n164#" 3.87313
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.029539
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_0/a_62_n164#" 8.414
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/a_62_n164#" -1.91583
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_316_n447#" 72.3943
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/a_316_n447#" 34.2648
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" "MSB_Unit_Cell_p1_1/a_62_n164#" 5.30461
+cap "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_0/a_316_n447#" -1.48072
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" 169.18
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_0/a_316_n447#" 112.653
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/a_316_n447#" 1.16774
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/a_62_n164#" 0.255353
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 0.00110338
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -54.4476
+cap "MSB_Unit_Cell_p1_0/m1_37_n24#" "MSB_Unit_Cell_p1_0/a_316_n447#" 6.78864
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" 165.175
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -1.60089
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" -14.026
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/a_316_n447#" 8.6482
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/a_316_n447#" 32.0957
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_0/a_316_n447#" -2.03855
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" 5.10972
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" 1.32524
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 50.7214
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/a_316_n447#" 1.15087
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -287.568
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" 3.87313
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 8.50959
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/a_316_n447#" 151.782
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.0199613
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.00584067
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_316_n447#" 0.465452
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_224_128#" 81.064
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_1/a_316_n447#" 10.6568
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 6.04349
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" -4.49655
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_316_n447#" 80.9169
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_0/a_316_n447#" 148.786
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 10.8609
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 175.401
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_22/a_n50_n104#" 3.22141
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 16.6343
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_22/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 3.65178
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 3.33805
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_22/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 0.807216
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_22/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" -0.253246
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -1.33848
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 0.853723
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_22/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -0.165709
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 43.7953
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" 2.32842
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 22.9113
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_62_n164#" 21.9686
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/a_62_n164#" 22.2357
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.268245
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -30.1436
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_0_435#" -65.8562
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_84_242#" 84.9865
+cap "MSB_Unit_Cell_p1_1/a_84_242#" "MSB_Unit_Cell_p1_1/m1_0_435#" 40.8744
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_n138_n60#" 0.0234934
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.341026
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/a_62_n164#" 14.4629
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/m1_0_435#" -3.39836
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/m1_224_128#" 2.80856
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_62_n164#" -4.91199
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_84_242#" 15.1146
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_84_242#" 67.9136
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 0.0329142
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" 109.525
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/a_62_n164#" 7.27944
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/a_84_242#" 43.5818
+cap "MSB_Unit_Cell_p1_1/m1_0_435#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -192.264
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/a_84_242#" -1.23435
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 0.492492
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_62_n164#" 9.09876
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_1/a_62_n164#" -4.18219
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/a_62_n164#" 6.77156
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_4/a_n50_n104#" 45.3889
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" "MSB_Unit_Cell_p1_1/a_62_n164#" 0.554735
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" 0.38653
+cap "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" 0.0102777
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 138.95
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/a_316_n447#" 84.286
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_1/a_62_n164#" 6.63173
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_316_n447#" 6.29914
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" 2.37032
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_1/a_62_n164#" -3.77819
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" 3.96707
+cap "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_1/a_62_n164#" 3.77736
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_4/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 6.91483
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_62_n164#" 20.502
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -183.665
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/a_316_n447#" 0.00240532
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_3/a_50_n60#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_4/a_50_n60#" 0.00511875
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_1/a_62_n164#" -1.42748
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_12/a_n50_n104#" -4.29457
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_12/a_n50_n104#" 44.3673
+cap "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.023299
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 0.58451
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/a_62_n164#" 7.05463
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" 0.308512
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/a_316_n447#" -1.42962
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/a_316_n447#" 0.00716469
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" 123.408
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/a_62_n164#" 3.87313
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_12/a_n50_n104#" 5.97217
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_12/a_n50_n104#" 6.96852
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -181.932
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 9.38625
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_12/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 1.87504
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_316_n447#" 6.55044
+cap "MSB_Unit_Cell_p1_1/a_62_n164#" "MSB_Unit_Cell_p1_1/m1_224_128#" -4.61622
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_0/m1_37_n24#" 0.00348774
+cap "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_224_128#" 3.44621
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/a_316_n447#" 63.7533
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 4.22238
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" 3.87313
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" 10.8003
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AGPLV7_17/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.0155972
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_224_128#" 93.7262
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" -2.96313
+cap "MSB_Unit_Cell_p1_0/a_316_n447#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.00159269
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" 42.9678
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" 0.857664
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" 6.24238
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_0/m1_0_n631#" -181.173
+cap "MSB_Unit_Cell_p1_1/m1_37_n24#" "MSB_Unit_Cell_p1_1/a_316_n447#" 8.62503
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" -4.09533
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" -1.96821
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" 7.51114
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_224_128#" 2.72555
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_224_128#" -0.738676
+cap "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_1/m1_224_128#" 73.0343
+cap "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_20/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_17/a_n50_n104#" 4.63551
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_22/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 9.47853
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_22/a_n50_n104#" -0.242903
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 0.524879
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_224_128#" 0.479809
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_22/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" 0.956225
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_24/a_n50_n104#" 1.42348
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 24.9407
+cap "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_1/nmos_3p3_AGPLV7_22/a_n50_n104#" 0.401834
+cap "MSB_Unit_Cell_p1_1/nmos_3p3_AQEADK_24/a_n50_n104#" "MSB_Unit_Cell_p1_0/m1_0_n631#" 2.90079
+cap "MSB_Unit_Cell_p1_1/m1_224_128#" "MSB_Unit_Cell_p1_1/m1_37_n24#" 2.30319
+merge "MSB_Unit_Cell_p1_0/m1_224_128#" "m2_3076_2018#" -2450.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19145 -980 -277014 -12950 -217049 -7844 0 0 0 0
+merge "m2_3076_2018#" "m2_2669_2019#"
+merge "m2_2669_2019#" "m2_2260_2023#"
+merge "m2_2260_2023#" "m1_2261_2815#"
+merge "m1_2261_2815#" "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_50_n60#"
+merge "MSB_Unit_Cell_p1_0/nmos_3p3_AQEADK_1/a_50_n60#" "m2_1855_1986#"
+merge "m2_1855_1986#" "m2_1445_2009#"
+merge "m2_1445_2009#" "m2_1037_2002#"
+merge "m2_1037_2002#" "m2_630_2002#"
+merge "m2_630_2002#" "m2_221_1998#"
+merge "m2_221_1998#" "m2_n184_2810#"
+merge "m2_n184_2810#" "m2_n595_2003#"
+merge "m2_n595_2003#" "m1_n3041_1976#"
+merge "m1_n3041_1976#" "MSB_Unit_Cell_p1_1/m1_224_128#"
+merge "MSB_Unit_Cell_p1_1/m1_224_128#" "m2_n1002_2812#"
+merge "m2_n1002_2812#" "m2_n1411_2812#"
+merge "m2_n1411_2812#" "m2_n1819_2002#"
+merge "m2_n1819_2002#" "m2_n2227_2813#"
+merge "m2_n2227_2813#" "m2_n2635_2813#"
+merge "m2_n2635_2813#" "m1_n2635_2813#"
+merge "m1_n2635_2813#" "m2_n3041_1976#"
+merge "MSB_Unit_Cell_p1_0/a_316_n447#" "MSB_Unit_Cell_p1_0/a_84_242#" -1012.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24080 -1308 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p1_0/a_84_242#" "MSB_Unit_Cell_p1_1/a_316_n447#"
+merge "MSB_Unit_Cell_p1_1/a_316_n447#" "MSB_Unit_Cell_p1_1/a_84_242#"
+merge "MSB_Unit_Cell_p1_1/a_84_242#" "IM_T"
+merge "MSB_Unit_Cell_p1_0/a_62_n164#" "MSB_Unit_Cell_p1_1/a_62_n164#" -144.831 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3392 -338 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p1_1/a_62_n164#" "IM"
+merge "MSB_Unit_Cell_p1_0/VSUBS" "MSB_Unit_Cell_p1_0/m1_0_n631#" -10291.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1861930 -54266 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p1_0/m1_0_n631#" "MSB_Unit_Cell_p1_0/m1_0_435#"
+merge "MSB_Unit_Cell_p1_0/m1_0_435#" "MSB_Unit_Cell_p1_1/VSUBS"
+merge "MSB_Unit_Cell_p1_1/VSUBS" "MSB_Unit_Cell_p1_1/m1_0_n631#"
+merge "MSB_Unit_Cell_p1_1/m1_0_n631#" "MSB_Unit_Cell_p1_1/m1_0_435#"
+merge "MSB_Unit_Cell_p1_1/m1_0_435#" "VSS"
+merge "MSB_Unit_Cell_p1_0/m1_37_n24#" "MSB_Unit_Cell_p1_1/m1_37_n24#" -2911.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -269133 -20923 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p1_1/m1_37_n24#" "OUT"

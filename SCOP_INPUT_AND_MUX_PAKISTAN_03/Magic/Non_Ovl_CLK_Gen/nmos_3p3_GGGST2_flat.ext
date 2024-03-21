@@ -1,0 +1,155 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "PH1" 2 3090 497 3090 497 m1
+port "PH2" 3 2962 -384 2962 -384 m1
+port "VIN" 0 -1448 377 -1448 377 m1
+port "VDD" 5 355 912 355 912 m1
+port "VSS" 4 392 58 392 58 m1
+node "a_n787_n607#" 85 141.056 -787 -607 pdif 0 0 0 0 0 0 56000 1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69184 3100 0 0 0 0 0 0 0 0
+node "Inverter_Layout_0.IN" 124 519.229 2190 -114 ndif 0 0 0 0 6064 328 7744 352 0 0 0 0 44832 1704 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41792 1888 0 0 0 0 0 0 0 0
+equiv "Inverter_Layout_0.IN" "Inv_16x_Layout_0.OUT"
+node "Inv_16x_Layout_0.IN" 103 1363.88 1404 -114 ndif 0 0 0 0 6064 328 7744 352 0 0 0 0 182592 3112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46106 2074 0 0 0 0 0 0 0 0
+equiv "Inv_16x_Layout_0.IN" "Inv_16x_Layout_2.OUT"
+node "Inv_16x_Layout_2.IN" 103 1363.65 618 -114 ndif 0 0 0 0 6064 328 7744 352 0 0 0 0 182592 3112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46106 2074 0 0 0 0 0 0 0 0
+equiv "Inv_16x_Layout_2.IN" "Inv_16x_Layout_1.OUT"
+node "Inv_16x_Layout_1.IN" 104 1454.27 -483 -168 ndif 0 0 0 0 10400 408 20800 608 0 0 0 0 182592 3112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59216 2644 0 0 0 0 0 0 0 0
+equiv "Inv_16x_Layout_1.IN" "NOR_Layout_0.OUT"
+node "Inverter_Layout_1.OUT" 207 1565.73 -379 -651 p 0 0 0 0 8800 376 17600 576 0 0 0 0 75816 2810 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 91636 4104 177648 6428 0 0 0 0 0 0
+equiv "Inverter_Layout_1.OUT" "NOR_Layout_0.B"
+equiv "Inverter_Layout_1.OUT" "PH1"
+node "a_n787_519#" 85 99.8923 -787 519 pdif 0 0 0 0 0 0 56000 1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69184 3100 0 0 0 0 0 0 0 0
+node "Inverter_Layout_1.IN" 124 519.229 2190 182 ndif 0 0 0 0 6064 328 7744 352 0 0 0 0 44832 1704 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41792 1888 0 0 0 0 0 0 0 0
+equiv "Inverter_Layout_1.IN" "Inv_16x_Layout_3.OUT"
+node "Inv_16x_Layout_3.IN" 103 1363.88 1404 182 ndif 0 0 0 0 6064 328 7744 352 0 0 0 0 182592 3112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46106 2074 0 0 0 0 0 0 0 0
+equiv "Inv_16x_Layout_3.IN" "Inv_16x_Layout_4.OUT"
+node "Inv_16x_Layout_4.IN" 103 1363.65 618 182 ndif 0 0 0 0 6064 328 7744 352 0 0 0 0 182592 3112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46106 2074 0 0 0 0 0 0 0 0
+equiv "Inv_16x_Layout_4.IN" "Inv_16x_Layout_5.OUT"
+node "Inv_16x_Layout_5.IN" 104 1449.14 -483 180 ndif 0 0 0 0 10400 408 20800 608 0 0 0 0 182592 3112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59216 2644 0 0 0 0 0 0 0 0
+equiv "Inv_16x_Layout_5.IN" "NOR_Layout_1.OUT"
+node "Inverter_Layout_0.OUT" 207 1448.83 -379 136 p 0 0 0 0 8800 376 17600 576 0 0 0 0 75816 2810 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84874 3810 171432 6206 0 0 0 0 0 0
+equiv "Inverter_Layout_0.OUT" "NOR_Layout_1.B"
+equiv "Inverter_Layout_0.OUT" "PH2"
+node "NOR_Layout_1.A" 182 535.83 -1049 192 ndif 0 0 0 0 8800 376 17600 576 0 0 0 0 67760 2522 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49704 2232 0 0 0 0 0 0 0 0
+equiv "NOR_Layout_1.A" "Inverter_Layout_2.OUT"
+node "NOR_Layout_0.A" 278 1410.91 -1225 334 p 0 0 0 0 0 0 0 0 0 0 0 0 112592 4226 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74292 3280 0 0 0 0 0 0 0 0
+equiv "NOR_Layout_0.A" "Inverter_Layout_2.IN"
+equiv "NOR_Layout_0.A" "VIN"
+node "Inverter_Layout_1.VDD" 19878 13831.2 -1279 434 nw 3915756 18076 0 0 510480 15764 140864 5056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 991246 21450 103056 3764 0 0 0 0 0 0
+equiv "Inverter_Layout_1.VDD" "Inverter_Layout_0.VDD"
+equiv "Inverter_Layout_1.VDD" "Inv_16x_Layout_3.VDD"
+equiv "Inverter_Layout_1.VDD" "Inv_16x_Layout_0.VDD"
+equiv "Inverter_Layout_1.VDD" "Inv_16x_Layout_4.VDD"
+equiv "Inverter_Layout_1.VDD" "Inv_16x_Layout_2.VDD"
+equiv "Inverter_Layout_1.VDD" "Inv_16x_Layout_5.VDD"
+equiv "Inverter_Layout_1.VDD" "Inv_16x_Layout_1.VDD"
+equiv "Inverter_Layout_1.VDD" "NOR_Layout_1.VDD"
+equiv "Inverter_Layout_1.VDD" "NOR_Layout_0.VDD"
+equiv "Inverter_Layout_1.VDD" "Inverter_Layout_2.VDD"
+equiv "Inverter_Layout_1.VDD" "VDD"
+substrate "Inverter_Layout_1.VSS" 0 0 -1207 20 ppd 0 0 0 0 97984 4600 201168 6452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 535208 12162 0 0 0 0 0 0 0 0
+equiv "Inverter_Layout_1.VSS" "Inverter_Layout_0.VSS"
+equiv "Inverter_Layout_1.VSS" "Inv_16x_Layout_3.VSS"
+equiv "Inverter_Layout_1.VSS" "Inv_16x_Layout_0.VSS"
+equiv "Inverter_Layout_1.VSS" "Inv_16x_Layout_4.VSS"
+equiv "Inverter_Layout_1.VSS" "Inv_16x_Layout_2.VSS"
+equiv "Inverter_Layout_1.VSS" "Inv_16x_Layout_5.VSS"
+equiv "Inverter_Layout_1.VSS" "Inv_16x_Layout_1.VSS"
+equiv "Inverter_Layout_1.VSS" "NOR_Layout_1.VSS"
+equiv "Inverter_Layout_1.VSS" "NOR_Layout_0.VSS"
+equiv "Inverter_Layout_1.VSS" "Inverter_Layout_2.VSS"
+equiv "Inverter_Layout_1.VSS" "VSS"
+cap "Inv_16x_Layout_4.IN" "Inverter_Layout_1.OUT" 9.9089
+cap "a_n787_n607#" "Inv_16x_Layout_1.IN" 370.532
+cap "Inv_16x_Layout_5.IN" "NOR_Layout_0.A" 0.524814
+cap "Inverter_Layout_1.VDD" "Inv_16x_Layout_1.IN" 546.156
+cap "Inv_16x_Layout_3.IN" "Inverter_Layout_1.OUT" 10.2823
+cap "NOR_Layout_1.A" "NOR_Layout_0.A" 66.6732
+cap "Inv_16x_Layout_5.IN" "a_n787_519#" 370.532
+cap "Inv_16x_Layout_5.IN" "Inverter_Layout_1.VDD" 546.501
+cap "Inverter_Layout_0.OUT" "Inverter_Layout_1.OUT" 1006.93
+cap "Inv_16x_Layout_5.IN" "Inv_16x_Layout_4.IN" 65.6996
+cap "Inv_16x_Layout_2.IN" "Inverter_Layout_1.OUT" 99.2774
+cap "Inverter_Layout_1.VDD" "Inverter_Layout_0.IN" 281.004
+cap "NOR_Layout_1.A" "a_n787_519#" 254.311
+cap "Inv_16x_Layout_1.IN" "Inverter_Layout_0.OUT" 8.94506
+cap "Inv_16x_Layout_1.IN" "Inv_16x_Layout_2.IN" 65.6996
+cap "NOR_Layout_1.A" "Inverter_Layout_1.VDD" 478.233
+cap "Inv_16x_Layout_0.IN" "Inverter_Layout_1.OUT" 94.6241
+cap "Inverter_Layout_1.VDD" "Inverter_Layout_1.IN" 281.004
+cap "NOR_Layout_0.A" "a_n787_519#" 1.0156
+cap "Inv_16x_Layout_5.IN" "Inverter_Layout_0.OUT" 236.808
+cap "Inv_16x_Layout_3.IN" "Inverter_Layout_1.IN" 76.6823
+cap "a_n787_n607#" "NOR_Layout_0.A" 166.785
+cap "Inverter_Layout_0.IN" "Inverter_Layout_0.OUT" 73.0179
+cap "NOR_Layout_0.A" "Inverter_Layout_1.VDD" 473.638
+cap "NOR_Layout_1.A" "Inverter_Layout_0.OUT" 40.4421
+cap "Inverter_Layout_0.OUT" "Inverter_Layout_1.IN" 63.8761
+cap "Inv_16x_Layout_0.IN" "Inverter_Layout_0.IN" 76.6823
+cap "Inverter_Layout_1.VDD" "a_n787_519#" 847.261
+cap "Inv_16x_Layout_4.IN" "a_n787_519#" 6.95923
+cap "Inv_16x_Layout_1.IN" "Inverter_Layout_1.OUT" 237.072
+cap "a_n787_n607#" "Inverter_Layout_1.VDD" 846.836
+cap "Inv_16x_Layout_4.IN" "Inverter_Layout_1.VDD" 578.701
+cap "NOR_Layout_0.A" "Inverter_Layout_0.OUT" 0.0010632
+cap "Inv_16x_Layout_5.IN" "Inverter_Layout_1.OUT" 8.91508
+cap "Inverter_Layout_1.VDD" "Inv_16x_Layout_3.IN" 578.688
+cap "Inv_16x_Layout_4.IN" "Inv_16x_Layout_3.IN" 80.2698
+cap "Inverter_Layout_0.IN" "Inverter_Layout_1.OUT" 63.1665
+cap "a_n787_519#" "Inverter_Layout_0.OUT" 36.5464
+cap "Inv_16x_Layout_5.IN" "Inv_16x_Layout_1.IN" 32.3264
+cap "a_n787_n607#" "Inv_16x_Layout_2.IN" 6.95923
+cap "Inverter_Layout_1.VDD" "Inverter_Layout_0.OUT" 508.296
+cap "Inv_16x_Layout_4.IN" "Inverter_Layout_0.OUT" 99.1409
+cap "Inverter_Layout_1.VDD" "Inv_16x_Layout_2.IN" 578.701
+cap "Inverter_Layout_1.IN" "Inverter_Layout_1.OUT" 72.1294
+cap "Inv_16x_Layout_4.IN" "Inv_16x_Layout_2.IN" 32.3264
+cap "Inv_16x_Layout_0.IN" "Inverter_Layout_1.VDD" 578.688
+cap "Inverter_Layout_0.OUT" "Inv_16x_Layout_3.IN" 94.5166
+cap "NOR_Layout_0.A" "Inverter_Layout_1.OUT" 40.1179
+cap "Inv_16x_Layout_5.IN" "NOR_Layout_1.A" 31.0714
+cap "Inv_16x_Layout_0.IN" "Inv_16x_Layout_3.IN" 32.3264
+cap "NOR_Layout_0.A" "Inv_16x_Layout_1.IN" 26.3876
+cap "Inverter_Layout_0.OUT" "Inv_16x_Layout_2.IN" 9.9477
+cap "Inverter_Layout_0.IN" "Inverter_Layout_1.IN" 5.98311
+cap "a_n787_n607#" "Inverter_Layout_1.OUT" 36.5554
+cap "Inv_16x_Layout_0.IN" "Inverter_Layout_0.OUT" 10.3385
+cap "Inverter_Layout_1.VDD" "Inverter_Layout_1.OUT" 508.234
+cap "Inv_16x_Layout_0.IN" "Inv_16x_Layout_2.IN" 80.2698
+device msubckt pfet_03v3 2544 -652 2545 -651 l=56 w=200 "Inverter_Layout_1.VDD" "Inverter_Layout_0.IN" 112 0 "Inverter_Layout_1.VDD" 200 17600,576 "Inverter_Layout_0.OUT" 200 17600,576
+device msubckt pfet_03v3 1746 -618 1747 -617 l=448 w=88 "Inverter_Layout_1.VDD" "Inv_16x_Layout_0.IN" 896 0 "Inverter_Layout_1.VDD" 88 7744,352 "Inverter_Layout_0.IN" 88 7744,352
+device msubckt pfet_03v3 960 -618 961 -617 l=448 w=88 "Inverter_Layout_1.VDD" "Inv_16x_Layout_2.IN" 896 0 "Inverter_Layout_1.VDD" 88 7744,352 "Inv_16x_Layout_0.IN" 88 7744,352
+device msubckt pfet_03v3 174 -618 175 -617 l=448 w=88 "Inverter_Layout_1.VDD" "Inv_16x_Layout_1.IN" 896 0 "Inverter_Layout_1.VDD" 88 7744,352 "Inv_16x_Layout_2.IN" 88 7744,352
+device msubckt nfet_03v3 2544 -180 2545 -179 l=56 w=100 "Inverter_Layout_1.VSS" "Inverter_Layout_0.IN" 112 0 "Inverter_Layout_1.VSS" 100 8800,376 "Inverter_Layout_0.OUT" 100 8800,376
+device msubckt pfet_03v3 -219 -607 -218 -606 l=56 w=200 "Inverter_Layout_1.VDD" "Inverter_Layout_1.OUT" 112 0 "Inv_16x_Layout_1.IN" 200 10400,304 "a_n787_n607#" 200 17600,576
+device msubckt pfet_03v3 -379 -607 -378 -606 l=56 w=200 "Inverter_Layout_1.VDD" "Inverter_Layout_1.OUT" 112 0 "a_n787_n607#" 200 10400,304 "Inv_16x_Layout_1.IN" 200 10400,304
+device msubckt pfet_03v3 -539 -607 -538 -606 l=56 w=200 "Inverter_Layout_1.VDD" "NOR_Layout_0.A" 112 0 "Inverter_Layout_1.VDD" 200 10400,304 "a_n787_n607#" 200 10400,304
+device msubckt pfet_03v3 -699 -607 -698 -606 l=56 w=200 "Inverter_Layout_1.VDD" "NOR_Layout_0.A" 112 0 "a_n787_n607#" 200 17600,576 "Inverter_Layout_1.VDD" 200 10400,304
+device msubckt nfet_03v3 1742 -114 1743 -113 l=448 w=44 "Inverter_Layout_1.VSS" "Inv_16x_Layout_0.IN" 896 0 "Inverter_Layout_1.VSS" 44 6064,328 "Inverter_Layout_0.IN" 44 6064,328
+device msubckt nfet_03v3 956 -114 957 -113 l=448 w=44 "Inverter_Layout_1.VSS" "Inv_16x_Layout_2.IN" 896 0 "Inverter_Layout_1.VSS" 44 6064,328 "Inv_16x_Layout_0.IN" 44 6064,328
+device msubckt nfet_03v3 170 -114 171 -113 l=448 w=44 "Inverter_Layout_1.VSS" "Inv_16x_Layout_1.IN" 896 0 "Inverter_Layout_1.VSS" 44 6064,328 "Inv_16x_Layout_2.IN" 44 6064,328
+device msubckt nfet_03v3 -379 -168 -378 -167 l=56 w=100 "Inverter_Layout_1.VSS" "Inverter_Layout_1.OUT" 112 0 "Inv_16x_Layout_1.IN" 100 5200,204 "Inverter_Layout_1.VSS" 100 8800,376
+device msubckt nfet_03v3 -539 -168 -538 -167 l=56 w=100 "Inverter_Layout_1.VSS" "NOR_Layout_0.A" 112 0 "Inverter_Layout_1.VSS" 100 8800,376 "Inv_16x_Layout_1.IN" 100 5200,204
+device msubckt nfet_03v3 2544 192 2545 193 l=56 w=100 "Inverter_Layout_1.VSS" "Inverter_Layout_1.IN" 112 0 "Inverter_Layout_1.VSS" 100 8800,376 "Inverter_Layout_1.OUT" 100 8800,376
+device msubckt nfet_03v3 1742 182 1743 183 l=448 w=44 "Inverter_Layout_1.VSS" "Inv_16x_Layout_3.IN" 896 0 "Inverter_Layout_1.VSS" 44 6064,328 "Inverter_Layout_1.IN" 44 6064,328
+device msubckt nfet_03v3 956 182 957 183 l=448 w=44 "Inverter_Layout_1.VSS" "Inv_16x_Layout_4.IN" 896 0 "Inverter_Layout_1.VSS" 44 6064,328 "Inv_16x_Layout_3.IN" 44 6064,328
+device msubckt nfet_03v3 170 182 171 183 l=448 w=44 "Inverter_Layout_1.VSS" "Inv_16x_Layout_5.IN" 896 0 "Inverter_Layout_1.VSS" 44 6064,328 "Inv_16x_Layout_4.IN" 44 6064,328
+device msubckt pfet_03v3 2544 564 2545 565 l=56 w=200 "Inverter_Layout_1.VDD" "Inverter_Layout_1.IN" 112 0 "Inverter_Layout_1.VDD" 200 17600,576 "Inverter_Layout_1.OUT" 200 17600,576
+device msubckt nfet_03v3 -379 180 -378 181 l=56 w=100 "Inverter_Layout_1.VSS" "Inverter_Layout_0.OUT" 112 0 "Inv_16x_Layout_5.IN" 100 5200,204 "Inverter_Layout_1.VSS" 100 8800,376
+device msubckt nfet_03v3 -539 180 -538 181 l=56 w=100 "Inverter_Layout_1.VSS" "NOR_Layout_1.A" 112 0 "Inverter_Layout_1.VSS" 100 8800,376 "Inv_16x_Layout_5.IN" 100 5200,204
+device msubckt nfet_03v3 -1105 192 -1104 193 l=56 w=100 "Inverter_Layout_1.VSS" "NOR_Layout_0.A" 112 0 "Inverter_Layout_1.VSS" 100 8800,376 "NOR_Layout_1.A" 100 8800,376
+device msubckt pfet_03v3 1746 642 1747 643 l=448 w=88 "Inverter_Layout_1.VDD" "Inv_16x_Layout_3.IN" 896 0 "Inverter_Layout_1.VDD" 88 7744,352 "Inverter_Layout_1.IN" 88 7744,352
+device msubckt pfet_03v3 960 642 961 643 l=448 w=88 "Inverter_Layout_1.VDD" "Inv_16x_Layout_4.IN" 896 0 "Inverter_Layout_1.VDD" 88 7744,352 "Inv_16x_Layout_3.IN" 88 7744,352
+device msubckt pfet_03v3 174 642 175 643 l=448 w=88 "Inverter_Layout_1.VDD" "Inv_16x_Layout_5.IN" 896 0 "Inverter_Layout_1.VDD" 88 7744,352 "Inv_16x_Layout_4.IN" 88 7744,352
+device msubckt pfet_03v3 -219 519 -218 520 l=56 w=200 "Inverter_Layout_1.VDD" "Inverter_Layout_0.OUT" 112 0 "Inv_16x_Layout_5.IN" 200 10400,304 "a_n787_519#" 200 17600,576
+device msubckt pfet_03v3 -379 519 -378 520 l=56 w=200 "Inverter_Layout_1.VDD" "Inverter_Layout_0.OUT" 112 0 "a_n787_519#" 200 10400,304 "Inv_16x_Layout_5.IN" 200 10400,304
+device msubckt pfet_03v3 -539 519 -538 520 l=56 w=200 "Inverter_Layout_1.VDD" "NOR_Layout_1.A" 112 0 "Inverter_Layout_1.VDD" 200 10400,304 "a_n787_519#" 200 10400,304
+device msubckt pfet_03v3 -699 519 -698 520 l=56 w=200 "Inverter_Layout_1.VDD" "NOR_Layout_1.A" 112 0 "a_n787_519#" 200 17600,576 "Inverter_Layout_1.VDD" 200 10400,304
+device msubckt pfet_03v3 -1105 564 -1104 565 l=56 w=200 "Inverter_Layout_1.VDD" "NOR_Layout_0.A" 112 0 "Inverter_Layout_1.VDD" 200 17600,576 "NOR_Layout_1.A" 200 17600,576

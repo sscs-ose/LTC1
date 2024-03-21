@@ -1,0 +1,109 @@
+timestamp 1691668704
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use nmos_3p3_GGGST2 nmos_3p3_GGGST2_0 1 0 918 0 1 118
+use pmos_3p3_MNVUAR pmos_3p3_MNVUAR_1 1 0 300 0 1 540
+use pmos_3p3_MNVUAR pmos_3p3_MNVUAR_2 1 0 460 0 1 540
+use pmos_3p3_MNVUAR pmos_3p3_MNVUAR_0 1 0 620 0 1 540
+use nmos_3p3_BGGST2 nmos_3p3_BGGST2_1 1 0 220 0 1 118
+use nmos_3p3_BGGST2 nmos_3p3_BGGST2_0 1 0 540 0 1 118
+port "OUT" 4 1025 465 1025 465 m1
+port "B" 3 48 -102 48 -102 m1
+port "A" 2 71 253 71 253 m1
+port "VDD" 5 460 764 460 764 nsc
+port "VSS" 6 534 -252 534 -252 psc
+node "m1_37_n22#" 1 198.855 37 -22 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23552 1116 0 0 0 0 0 0 0 0
+node "m1_357_137#" 1 123.713 357 137 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24518 1158 0 0 0 0 0 0 0 0
+node "OUT" 1 267.701 1025 465 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34730 1602 0 0 0 0 0 0 0 0
+node "B" 91 642.125 48 -102 m1 0 0 0 0 0 0 0 0 0 0 0 0 39736 1522 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6878 370 0 0 0 0 0 0 0 0
+node "a_592_162#" 7 43.5374 592 162 p 0 0 0 0 0 0 0 0 0 0 0 0 3080 222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_589_329#" 78 541.666 589 329 p 0 0 0 0 0 0 0 0 0 0 0 0 33296 1292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36778 1670 0 0 0 0 0 0 0 0
+node "a_432_162#" 37 155.001 432 162 p 0 0 0 0 0 0 0 0 0 0 0 0 15904 680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 71 369.826 71 253 m1 0 0 0 0 0 0 0 0 0 0 0 0 31304 1216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6464 352 0 0 0 0 0 0 0 0
+node "VDD" 9627 534.349 460 764 nsc 71400 1826 0 0 45792 1416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 90196 2068 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 534 -252 psc 0 0 0 0 0 0 72936 2170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144984 3506 0 0 0 0 0 0 0 0
+cap "m1_37_n22#" "B" 136.649
+cap "a_589_329#" "a_592_162#" 8.72401
+cap "A" "a_589_329#" 112.81
+cap "m1_357_137#" "a_432_162#" 15.5184
+cap "OUT" "a_432_162#" 0.827066
+cap "VDD" "a_432_162#" 2.0078
+cap "m1_357_137#" "B" 7.17193
+cap "B" "VDD" 1.02894
+cap "m1_357_137#" "m1_37_n22#" 60.1146
+cap "a_432_162#" "a_592_162#" 6.49351
+cap "A" "a_432_162#" 33.5301
+cap "a_589_329#" "a_432_162#" 32.4256
+cap "m1_37_n22#" "VDD" 2.88513
+cap "B" "a_592_162#" 5.97585
+cap "B" "A" 10.8874
+cap "B" "a_589_329#" 1.34069
+cap "m1_357_137#" "OUT" 33.812
+cap "m1_357_137#" "VDD" 1.65731
+cap "m1_37_n22#" "A" 36.6097
+cap "m1_37_n22#" "a_589_329#" 33.0874
+cap "VDD" "OUT" 27.9726
+cap "m1_357_137#" "a_592_162#" 6.91381
+cap "m1_357_137#" "A" 6.42568
+cap "m1_357_137#" "a_589_329#" 227.064
+cap "B" "a_432_162#" 5.97585
+cap "A" "OUT" 0.274675
+cap "A" "VDD" 9.13805
+cap "OUT" "a_589_329#" 58.5645
+cap "VDD" "a_589_329#" 73.999
+cap "nmos_3p3_BGGST2_1/a_n196_n50#" "nmos_3p3_GGGST2_0/a_28_n50#" -6.48755
+cap "nmos_3p3_BGGST2_1/a_n196_n50#" "pmos_3p3_MNVUAR_2/a_n28_n144#" 8.29833
+cap "nmos_3p3_BGGST2_1/a_n196_n50#" "nmos_3p3_GGGST2_0/a_n28_n94#" 25.5312
+cap "nmos_3p3_BGGST2_1/a_n196_n50#" "pmos_3p3_MNVUAR_1/w_n202_n230#" 7.03857
+cap "pmos_3p3_MNVUAR_1/a_n28_n144#" "pmos_3p3_MNVUAR_2/a_n28_n144#" 17.9885
+cap "pmos_3p3_MNVUAR_1/a_n28_n144#" "nmos_3p3_GGGST2_0/a_n28_n94#" 7.43618
+cap "pmos_3p3_MNVUAR_1/a_n28_n144#" "pmos_3p3_MNVUAR_1/w_n202_n230#" 80.1413
+cap "nmos_3p3_BGGST2_1/a_n196_n50#" "nmos_3p3_GGGST2_0/a_n116_n50#" 76.8543
+cap "nmos_3p3_GGGST2_0/a_28_n50#" "pmos_3p3_MNVUAR_2/a_n28_n144#" -0.206187
+cap "nmos_3p3_GGGST2_0/a_28_n50#" "nmos_3p3_GGGST2_0/a_n28_n94#" -4.51672
+cap "nmos_3p3_GGGST2_0/a_n28_n94#" "pmos_3p3_MNVUAR_2/a_n28_n144#" 14.338
+cap "nmos_3p3_GGGST2_0/a_28_n50#" "pmos_3p3_MNVUAR_1/w_n202_n230#" 39.3505
+cap "pmos_3p3_MNVUAR_1/w_n202_n230#" "pmos_3p3_MNVUAR_2/a_n28_n144#" 43.8269
+cap "pmos_3p3_MNVUAR_1/w_n202_n230#" "nmos_3p3_GGGST2_0/a_n28_n94#" 230.189
+cap "nmos_3p3_BGGST2_1/a_n196_n50#" "pmos_3p3_MNVUAR_1/a_n28_n144#" 35.5265
+cap "nmos_3p3_GGGST2_0/a_n116_n50#" "nmos_3p3_GGGST2_0/a_28_n50#" 2.90737
+cap "nmos_3p3_GGGST2_0/a_n116_n50#" "pmos_3p3_MNVUAR_2/a_n28_n144#" 6.52995
+cap "nmos_3p3_GGGST2_0/a_n116_n50#" "nmos_3p3_GGGST2_0/a_n28_n94#" 5.10679
+cap "nmos_3p3_GGGST2_0/a_n116_n50#" "pmos_3p3_MNVUAR_1/w_n202_n230#" 0.80451
+merge "nmos_3p3_BGGST2_0/a_52_n94#" "a_592_162#" -288.437 0 0 0 0 0 0 0 0 0 0 0 0 -11088 -956 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "a_592_162#" "nmos_3p3_BGGST2_0/a_n108_n94#"
+merge "nmos_3p3_BGGST2_0/a_n108_n94#" "B"
+merge "B" "pmos_3p3_MNVUAR_2/a_n28_n144#"
+merge "pmos_3p3_MNVUAR_2/a_n28_n144#" "a_432_162#"
+merge "nmos_3p3_BGGST2_0/a_108_n50#" "nmos_3p3_BGGST2_0/a_n196_n50#" -188.575 0 0 0 0 -7200 -344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10350 -910 0 0 0 0 0 0 0 0
+merge "nmos_3p3_BGGST2_0/a_n196_n50#" "nmos_3p3_BGGST2_1/a_108_n50#"
+merge "nmos_3p3_BGGST2_1/a_108_n50#" "m1_357_137#"
+merge "m1_357_137#" "nmos_3p3_BGGST2_1/a_n196_n50#"
+merge "nmos_3p3_BGGST2_1/a_n196_n50#" "m1_37_n22#"
+merge "pmos_3p3_MNVUAR_0/a_n116_n100#" "pmos_3p3_MNVUAR_0/w_n202_n230#" -1018.07 -250268 -4516 0 0 0 0 -14400 -544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11684 -784 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MNVUAR_0/w_n202_n230#" "pmos_3p3_MNVUAR_2/a_28_n100#"
+merge "pmos_3p3_MNVUAR_2/a_28_n100#" "pmos_3p3_MNVUAR_2/w_n202_n230#"
+merge "pmos_3p3_MNVUAR_2/w_n202_n230#" "pmos_3p3_MNVUAR_1/a_n116_n100#"
+merge "pmos_3p3_MNVUAR_1/a_n116_n100#" "pmos_3p3_MNVUAR_1/w_n202_n230#"
+merge "pmos_3p3_MNVUAR_1/w_n202_n230#" "VDD"
+merge "nmos_3p3_BGGST2_0/VSUBS" "nmos_3p3_BGGST2_0/a_n52_n50#" -79.3909 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -296 0 0 0 0 0 0 0 0
+merge "nmos_3p3_BGGST2_0/a_n52_n50#" "nmos_3p3_BGGST2_1/VSUBS"
+merge "nmos_3p3_BGGST2_1/VSUBS" "pmos_3p3_MNVUAR_0/VSUBS"
+merge "pmos_3p3_MNVUAR_0/VSUBS" "pmos_3p3_MNVUAR_2/VSUBS"
+merge "pmos_3p3_MNVUAR_2/VSUBS" "pmos_3p3_MNVUAR_1/VSUBS"
+merge "pmos_3p3_MNVUAR_1/VSUBS" "nmos_3p3_GGGST2_0/VSUBS"
+merge "nmos_3p3_GGGST2_0/VSUBS" "nmos_3p3_GGGST2_0/a_n116_n50#"
+merge "nmos_3p3_GGGST2_0/a_n116_n50#" "VSS"
+merge "nmos_3p3_BGGST2_1/a_52_n94#" "nmos_3p3_BGGST2_1/a_n108_n94#" -264.253 0 0 0 0 0 0 0 0 0 0 0 0 -8624 -644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_BGGST2_1/a_n108_n94#" "pmos_3p3_MNVUAR_1/a_n28_n144#"
+merge "pmos_3p3_MNVUAR_1/a_n28_n144#" "A"
+merge "nmos_3p3_BGGST2_1/a_n52_n50#" "pmos_3p3_MNVUAR_0/a_n28_n144#" -435.797 0 0 0 0 0 0 -14400 -544 0 0 0 0 -5432 -418 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12466 -818 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MNVUAR_0/a_n28_n144#" "pmos_3p3_MNVUAR_2/a_n116_n100#"
+merge "pmos_3p3_MNVUAR_2/a_n116_n100#" "pmos_3p3_MNVUAR_1/a_28_n100#"
+merge "pmos_3p3_MNVUAR_1/a_28_n100#" "nmos_3p3_GGGST2_0/a_n28_n94#"
+merge "nmos_3p3_GGGST2_0/a_n28_n94#" "a_589_329#"
+merge "pmos_3p3_MNVUAR_0/a_28_n100#" "nmos_3p3_GGGST2_0/a_28_n50#" -96.9247 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5382 -418 0 0 0 0 0 0 0 0
+merge "nmos_3p3_GGGST2_0/a_28_n50#" "OUT"

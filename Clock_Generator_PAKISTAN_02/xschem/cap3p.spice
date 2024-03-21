@@ -1,0 +1,7 @@
+** sch_path: /home/shahid/GF180Projects/CP_PFD_dff_inv_nand_/Xschem/CP_LF_CMB/cap3p.sch
+**.subckt cap3p Pp Nn
+*.iopin Pp
+*.iopin Nn
+XC1 Pp Nn cap_mim_2f0_m4m5_noshield c_width=42.5e-6 c_length=42.5e-6 m=1
+**.ends
+.end

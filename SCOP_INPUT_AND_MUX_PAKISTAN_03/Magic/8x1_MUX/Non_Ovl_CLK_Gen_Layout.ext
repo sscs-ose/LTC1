@@ -1,0 +1,337 @@
+timestamp 1698601753
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use Inverter_Layout Inverter_Layout_2 1 0 -1217 0 1 124
+use NOR_Layout NOR_Layout_0 1 0 -873 0 -1 0
+use NOR_Layout NOR_Layout_1 1 0 -873 0 1 112
+use Inv_16x_Layout Inv_16x_Layout_1 1 0 58 0 -1 5
+use Inv_16x_Layout Inv_16x_Layout_5 1 0 58 0 1 107
+use Inv_16x_Layout Inv_16x_Layout_2 1 0 844 0 -1 5
+use Inv_16x_Layout Inv_16x_Layout_4 1 0 844 0 1 107
+use Inv_16x_Layout Inv_16x_Layout_0 1 0 1630 0 -1 5
+use Inv_16x_Layout Inv_16x_Layout_3 1 0 1630 0 1 107
+use Inverter_Layout Inverter_Layout_0 1 0 2432 0 -1 -12
+use Inverter_Layout Inverter_Layout_1 1 0 2432 0 1 124
+port "VSS" 4 392 58 392 58 m1
+port "PH2" 3 2962 -384 2962 -384 m1
+port "PH1" 2 3090 497 3090 497 m1
+port "VIN" 0 -1448 377 -1448 377 m1
+port "VDD" 5 355 912 355 912 m1
+node "m1_1527_n363#" 1 78.0829 1527 -363 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13202 666 0 0 0 0 0 0 0 0
+node "m1_741_n363#" 1 78.1669 741 -363 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13202 666 0 0 0 0 0 0 0 0
+node "m1_n206_n363#" 1 111.723 -206 -363 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19780 952 0 0 0 0 0 0 0 0
+node "m1_2315_n363#" 0 63.316 2315 -363 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8786 474 0 0 0 0 0 0 0 0
+node "VSS" 3 1292.63 392 58 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 442288 8122 0 0 0 0 0 0 0 0
+node "PH2" 7 1006.79 2962 -384 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51214 2370 171432 6206 0 0 0 0 0 0
+node "PH1" 8 1121.73 3090 497 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57884 2660 177648 6428 0 0 0 0 0 0
+node "m1_2315_347#" 0 59.9741 2315 347 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7774 430 0 0 0 0 0 0 0 0
+node "m1_1527_429#" 1 77.8607 1527 429 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13156 664 0 0 0 0 0 0 0 0
+node "m1_741_429#" 1 77.9597 741 429 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13156 664 0 0 0 0 0 0 0 0
+node "m1_n212_429#" 1 109.451 -212 429 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19872 956 0 0 0 0 0 0 0 0
+node "m1_n912_321#" 1 115.694 -912 321 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16192 796 0 0 0 0 0 0 0 0
+node "VIN" 3 502.347 -1448 377 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64814 2910 0 0 0 0 0 0 0 0
+node "VDD" 9 3822 355 912 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 862400 15848 103056 3764 0 0 0 0 0 0
+node "w_2368_n868#" 234000 2.808 2368 -868 nw 936 940 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2368_512#" 234000 2.808 2368 512 nw 936 940 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n875_434#" 273000 3.276 -875 434 nw 1092 1096 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_1527_429#" "PH2" 14.8091
+cap "PH2" "w_2368_n868#" 0.00282617
+cap "VIN" "PH1" 2.63102
+cap "VIN" "PH2" 1.2075
+cap "m1_1527_n363#" "VSS" 37.8728
+cap "VDD" "m1_n212_429#" 48.2692
+cap "m1_1527_n363#" "m1_741_n363#" 3.81094
+cap "VDD" "m1_n912_321#" 50.5363
+cap "m1_n206_n363#" "VSS" 49.8812
+cap "VSS" "PH1" 153.945
+cap "m1_2315_347#" "VSS" 15.6646
+cap "PH2" "VSS" 199.753
+cap "m1_1527_429#" "VSS" 37.7408
+cap "w_2368_512#" "PH1" 0.00280967
+cap "m1_741_n363#" "PH1" 14.9409
+cap "m1_2315_347#" "w_2368_512#" 0.150379
+cap "m1_n206_n363#" "m1_741_n363#" 3.67564
+cap "VIN" "VSS" 229.862
+cap "w_2368_512#" "PH2" 0.0882328
+cap "m1_741_429#" "m1_1527_429#" 3.80317
+cap "m1_741_429#" "PH2" 14.8091
+cap "VDD" "m1_2315_n363#" 10.6832
+cap "w_n875_434#" "m1_n912_321#" 0.321926
+cap "m1_741_n363#" "VSS" 37.8728
+cap "m1_n212_429#" "PH2" 42.9972
+cap "m1_n912_321#" "PH2" 1.39996
+cap "m1_741_429#" "VSS" 37.7408
+cap "VDD" "m1_1527_n363#" 31.4242
+cap "VIN" "m1_n912_321#" 9.1109
+cap "VDD" "PH1" 40.1702
+cap "VDD" "w_n875_434#" 0.474063
+cap "m1_n206_n363#" "VDD" 48.0326
+cap "m1_2315_347#" "VDD" 8.71139
+cap "m1_1527_n363#" "m1_2315_n363#" 3.79542
+cap "VDD" "m1_1527_429#" 31.3147
+cap "VDD" "PH2" 40.4797
+cap "m1_n212_429#" "VSS" 50.1451
+cap "VDD" "w_2368_n868#" 0.371451
+cap "m1_n912_321#" "VSS" 40.3084
+cap "VDD" "VIN" 50.3849
+cap "m1_2315_n363#" "PH1" 10.4935
+cap "m1_2315_n363#" "PH2" 11.8881
+cap "m1_741_429#" "m1_n212_429#" 3.64687
+cap "m1_2315_n363#" "w_2368_n868#" 0.150379
+cap "m1_1527_n363#" "PH1" 14.9409
+cap "VDD" "VSS" 339.721
+cap "VDD" "w_2368_512#" 0.371451
+cap "VDD" "m1_741_n363#" 31.4625
+cap "m1_n206_n363#" "PH1" 43.6276
+cap "m1_2315_347#" "PH1" 9.10375
+cap "m1_2315_347#" "PH2" 9.27899
+cap "PH2" "PH1" 894.318
+cap "m1_2315_347#" "m1_1527_429#" 3.78771
+cap "VDD" "m1_741_429#" 31.353
+cap "m1_n212_429#" "m1_n912_321#" 2.89371
+cap "PH1" "w_2368_n868#" 0.0883352
+cap "m1_2315_n363#" "VSS" 19.6258
+cap "Inverter_Layout_2/VDD" "NOR_Layout_1/OUT" 4.33059
+cap "NOR_Layout_0/OUT" "NOR_Layout_0/SD1" 58.2337
+cap "NOR_Layout_0/SD1" "NOR_Layout_0/B" -4.50737
+cap "Inverter_Layout_2/VDD" "Inv_16x_Layout_5/OUT" 0.249895
+cap "Inverter_Layout_2/OUT" "Inverter_Layout_2/VDD" 39.0745
+cap "NOR_Layout_0/OUT" "NOR_Layout_0/B" 16.6959
+cap "Inverter_Layout_2/VDD" "Inverter_Layout_2/IN" 29.8687
+cap "NOR_Layout_1/B" "Inverter_Layout_2/VDD" 3.85076
+cap "Inverter_Layout_2/VDD" "NOR_Layout_1/SD1" 13.9638
+cap "NOR_Layout_1/OUT" "NOR_Layout_0/B" 0.117548
+cap "Inverter_Layout_2/VSS" "Inverter_Layout_2/VDD" -33.891
+cap "NOR_Layout_0/SD1" "Inverter_Layout_2/IN" 11.6018
+cap "Inverter_Layout_2/VSS" "Inv_16x_Layout_1/OUT" 1.16204
+cap "NOR_Layout_1/OUT" "Inv_16x_Layout_5/OUT" 2.41175
+cap "NOR_Layout_0/OUT" "Inverter_Layout_2/IN" 1.60593
+cap "NOR_Layout_0/B" "Inverter_Layout_2/IN" -1.22315
+cap "NOR_Layout_1/B" "NOR_Layout_0/OUT" 0.117548
+cap "Inverter_Layout_2/OUT" "NOR_Layout_1/OUT" 3.33657
+cap "NOR_Layout_1/B" "NOR_Layout_0/B" 9.33328
+cap "NOR_Layout_1/B" "NOR_Layout_1/OUT" 16.1988
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/IN" 0.0941928
+cap "Inverter_Layout_2/VSS" "NOR_Layout_0/OUT" -0.24596
+cap "NOR_Layout_1/OUT" "NOR_Layout_1/SD1" 56.3392
+cap "Inverter_Layout_2/VSS" "NOR_Layout_0/B" 7.96716
+cap "Inverter_Layout_2/OUT" "Inverter_Layout_2/IN" 18.7235
+cap "NOR_Layout_1/B" "Inverter_Layout_2/OUT" 0.332084
+cap "Inv_16x_Layout_5/OUT" "NOR_Layout_1/SD1" 0.305646
+cap "Inverter_Layout_2/VDD" "Inv_16x_Layout_1/OUT" 0.46034
+cap "Inverter_Layout_2/VSS" "NOR_Layout_1/OUT" -1.03773
+cap "Inverter_Layout_2/OUT" "NOR_Layout_1/SD1" 59.4546
+cap "NOR_Layout_1/B" "Inverter_Layout_2/IN" -1.20644
+cap "Inverter_Layout_2/VSS" "Inv_16x_Layout_5/OUT" 1.16204
+cap "NOR_Layout_1/B" "NOR_Layout_1/SD1" -4.32064
+cap "Inverter_Layout_2/VSS" "Inverter_Layout_2/OUT" 25.4804
+cap "Inverter_Layout_2/IN" "NOR_Layout_1/SD1" 0.53726
+cap "Inverter_Layout_2/VDD" "NOR_Layout_0/SD1" 51.5045
+cap "NOR_Layout_0/SD1" "Inv_16x_Layout_1/OUT" 3.41768
+cap "NOR_Layout_0/OUT" "Inverter_Layout_2/VDD" 3.38056
+cap "Inverter_Layout_2/VSS" "Inverter_Layout_2/IN" 108.357
+cap "Inverter_Layout_2/VDD" "NOR_Layout_0/B" 8.50824
+cap "NOR_Layout_0/OUT" "Inv_16x_Layout_1/OUT" 2.41175
+cap "Inverter_Layout_2/VSS" "NOR_Layout_1/B" 8.00399
+cap "NOR_Layout_0/B" "Inv_16x_Layout_1/OUT" 0.00623118
+cap "Inverter_Layout_2/OUT" "NOR_Layout_1/OUT" 0.022531
+cap "NOR_Layout_1/SD1" "Inv_16x_Layout_5/OUT" 0.327111
+cap "Inv_16x_Layout_1/OUT" "Inverter_Layout_2/VSS" 12.4769
+cap "NOR_Layout_0/SD1" "Inverter_Layout_2/VDD" 18.9374
+cap "NOR_Layout_0/OUT" "Inv_16x_Layout_1/OUT" 11.0127
+cap "NOR_Layout_0/B" "Inverter_Layout_2/VSS" 28.7739
+cap "NOR_Layout_0/B" "NOR_Layout_0/OUT" 91.0072
+cap "NOR_Layout_0/OUT" "NOR_Layout_1/OUT" 32.3058
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/VSS" -7.40186
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_1/B" 8.3705
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_5/OUT" 7.57868
+cap "Inv_16x_Layout_5/OUT" "Inverter_Layout_2/VSS" 12.6089
+cap "NOR_Layout_0/B" "NOR_Layout_1/B" 1.00553
+cap "NOR_Layout_1/B" "NOR_Layout_1/OUT" 90.2541
+cap "Inverter_Layout_2/VSS" "Inverter_Layout_2/VDD" -105.454
+cap "NOR_Layout_0/OUT" "Inverter_Layout_2/VDD" 45.8158
+cap "NOR_Layout_1/B" "Inv_16x_Layout_5/OUT" 78.9046
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/IN" 0.0709867
+cap "NOR_Layout_0/B" "Inv_16x_Layout_1/OUT" 79.2227
+cap "NOR_Layout_1/B" "Inverter_Layout_2/VDD" 29.2114
+cap "NOR_Layout_0/B" "NOR_Layout_1/OUT" 8.79399
+cap "NOR_Layout_0/OUT" "NOR_Layout_0/SD1" 1.07824
+cap "Inv_16x_Layout_1/OUT" "Inv_16x_Layout_5/OUT" 26.3758
+cap "Inv_16x_Layout_1/OUT" "Inv_16x_Layout_2/OUT" 11.2383
+cap "NOR_Layout_0/B" "Inv_16x_Layout_5/OUT" 8.33457
+cap "NOR_Layout_0/B" "Inv_16x_Layout_2/OUT" 0.0103992
+cap "Inv_16x_Layout_1/OUT" "Inverter_Layout_2/VDD" 46.4227
+cap "NOR_Layout_1/OUT" "Inv_16x_Layout_5/OUT" 6.96083
+cap "NOR_Layout_0/B" "Inverter_Layout_2/VDD" 24.9329
+cap "NOR_Layout_1/SD1" "NOR_Layout_1/B" -0.0563527
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/VDD" 31.507
+cap "NOR_Layout_0/OUT" "Inverter_Layout_2/VSS" -7.94373
+cap "Inv_16x_Layout_5/OUT" "Inverter_Layout_2/VDD" 14.6065
+cap "NOR_Layout_1/B" "Inv_16x_Layout_4/OUT" 0.0103992
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_0/SD1" 3.54155
+cap "NOR_Layout_1/B" "Inverter_Layout_2/VSS" 28.7964
+cap "NOR_Layout_0/B" "NOR_Layout_0/SD1" -0.0562303
+cap "NOR_Layout_0/OUT" "NOR_Layout_1/B" 8.82751
+cap "NOR_Layout_0/OUT" "Inverter_Layout_2/IN" 0.0107481
+cap "NOR_Layout_1/SD1" "NOR_Layout_1/OUT" 0.246702
+cap "NOR_Layout_0/B" "Inv_16x_Layout_5/OUT" 1.57079
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_3/OUT" 16.9858
+cap "NOR_Layout_1/B" "Inv_16x_Layout_5/OUT" 4.90712
+cap "Inv_16x_Layout_3/OUT" "NOR_Layout_0/VSS" 27.3733
+cap "Inv_16x_Layout_0/OUT" "Inv_16x_Layout_2/OUT" 24.2523
+cap "NOR_Layout_0/B" "Inv_16x_Layout_2/OUT" 79.5131
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_0/VSS" 13.9981
+cap "NOR_Layout_1/B" "Inv_16x_Layout_2/OUT" 10.3261
+cap "NOR_Layout_0/VDD" "NOR_Layout_0/VSS" -67.3599
+cap "NOR_Layout_1/VDD" "Inv_16x_Layout_2/OUT" 0.00460375
+cap "Inv_16x_Layout_1/OUT" "Inv_16x_Layout_5/OUT" 5.92999
+cap "Inv_16x_Layout_0/OUT" "Inv_16x_Layout_3/OUT" 5.64826
+cap "NOR_Layout_0/B" "Inv_16x_Layout_3/OUT" 24.1465
+cap "NOR_Layout_1/B" "Inv_16x_Layout_3/OUT" 54.0175
+cap "Inv_16x_Layout_3/OUT" "NOR_Layout_1/VDD" 4.0436
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_0/B" 10.0659
+cap "NOR_Layout_0/B" "NOR_Layout_0/VSS" 11.2092
+cap "Inv_16x_Layout_1/OUT" "Inv_16x_Layout_2/OUT" 16.6211
+cap "NOR_Layout_0/B" "NOR_Layout_0/VDD" 42.8466
+cap "Inv_16x_Layout_0/OUT" "NOR_Layout_0/VSS" 23.4121
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_1/B" 79.0172
+cap "NOR_Layout_1/B" "NOR_Layout_0/VSS" 23.2362
+cap "Inv_16x_Layout_0/OUT" "NOR_Layout_0/VDD" 42.8459
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_1/VDD" 14.9023
+cap "NOR_Layout_1/VDD" "NOR_Layout_0/VSS" -35.5514
+cap "NOR_Layout_1/B" "NOR_Layout_0/VDD" 1.10412
+cap "Inv_16x_Layout_0/OUT" "NOR_Layout_0/B" 52.6216
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_0/VSS" 2.6012
+cap "NOR_Layout_1/B" "NOR_Layout_0/B" 80.2016
+cap "NOR_Layout_0/B" "NOR_Layout_1/VDD" 0.408932
+cap "Inv_16x_Layout_0/OUT" "NOR_Layout_1/B" 26.9066
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_0/VDD" 5.80957
+cap "NOR_Layout_1/B" "NOR_Layout_1/VDD" 43.8754
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_5/OUT" 9.98629
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_0/B" 5.10762
+cap "Inv_16x_Layout_5/OUT" "NOR_Layout_0/VSS" 2.6012
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_1/B" 1.5772
+cap "Inv_16x_Layout_1/OUT" "NOR_Layout_1/VDD" 0.00460375
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_2/OUT" 32.3058
+cap "NOR_Layout_0/VSS" "Inv_16x_Layout_2/OUT" 13.8661
+cap "NOR_Layout_0/VDD" "Inv_16x_Layout_2/OUT" 52.7186
+cap "Inv_16x_Layout_4/nmos_3p3_T3QPFJ_0/a_n224_n66#" "Inverter_Layout_0/OUT" 0.017731
+cap "Inv_16x_Layout_2/VDD" "Inv_16x_Layout_4/VDD" -0.0255113
+cap "Inv_16x_Layout_4/VDD" "Inverter_Layout_0/OUT" 2.63417
+cap "Inverter_Layout_1/OUT" "Inverter_Layout_0/OUT" 18.914
+cap "Inv_16x_Layout_2/VDD" "Inverter_Layout_1/OUT" 2.66447
+cap "Inv_16x_Layout_4/OUT" "Inverter_Layout_0/OUT" 0.152818
+cap "Inv_16x_Layout_4/VDD" "Inverter_Layout_1/OUT" -1.57023
+cap "Inv_16x_Layout_3/OUT" "Inverter_Layout_0/OUT" 0.976794
+cap "Inv_16x_Layout_3/OUT" "Inverter_Layout_1/OUT" -4.55187
+cap "Inv_16x_Layout_0/OUT" "Inverter_Layout_0/OUT" -5.23846
+cap "Inv_16x_Layout_2/OUT" "Inverter_Layout_1/OUT" 0.127112
+cap "Inv_16x_Layout_0/OUT" "Inverter_Layout_1/OUT" 0.357137
+cap "Inv_16x_Layout_2/VSS" "Inverter_Layout_0/OUT" 12.0823
+cap "Inv_16x_Layout_2/VSS" "Inverter_Layout_1/OUT" 0.0541367
+cap "Inv_16x_Layout_2/VDD" "Inverter_Layout_0/OUT" -4.41274
+cap "Inverter_Layout_2/VDD" "NOR_Layout_0/SD1" 0.049935
+cap "NOR_Layout_1/SD1" "NOR_Layout_1/B" -0.195612
+cap "NOR_Layout_1/B" "NOR_Layout_1/OUT" 0.559991
+cap "Inverter_Layout_2/VDD" "Inverter_Layout_2/OUT" 17.4258
+cap "NOR_Layout_1/SD1" "Inverter_Layout_2/OUT" 39.6734
+cap "Inverter_Layout_2/VDD" "Inv_16x_Layout_5/OUT" 0.210446
+cap "NOR_Layout_1/SD1" "Inv_16x_Layout_5/OUT" 3.11203
+cap "Inverter_Layout_2/VDD" "NOR_Layout_1/SD1" 38.0153
+cap "Inverter_Layout_2/VDD" "NOR_Layout_1/OUT" -1.65136
+cap "Inverter_Layout_2/VDD" "Inverter_Layout_2/IN" 6.34743
+cap "Inverter_Layout_2/VDD" "Inverter_Layout_2/VSS" -22.5773
+cap "NOR_Layout_1/B" "Inv_16x_Layout_5/OUT" 0.00623118
+cap "NOR_Layout_1/SD1" "NOR_Layout_1/OUT" 1.89445
+cap "Inverter_Layout_2/VDD" "NOR_Layout_1/B" 4.65684
+cap "Inverter_Layout_2/IN" "NOR_Layout_1/SD1" 0.478336
+cap "Inverter_Layout_2/IN" "NOR_Layout_1/OUT" 0.198021
+cap "Inverter_Layout_2/VDD" "Inv_16x_Layout_5/OUT" 31.9257
+cap "NOR_Layout_1/SD1" "Inverter_Layout_2/VDD" 18.9374
+cap "NOR_Layout_1/OUT" "Inv_16x_Layout_5/OUT" 4.08063
+cap "NOR_Layout_1/SD1" "NOR_Layout_1/OUT" 0.831541
+cap "NOR_Layout_0/B" "NOR_Layout_1/OUT" 0.00354491
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_5/OUT" 3.66347
+cap "NOR_Layout_1/B" "Inv_16x_Layout_5/OUT" 0.298591
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/VDD" 15.1182
+cap "NOR_Layout_0/OUT" "NOR_Layout_1/OUT" 0.0206667
+cap "Inverter_Layout_2/VSS" "Inverter_Layout_2/VDD" -31.948
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/OUT" 0.0338798
+cap "NOR_Layout_1/B" "Inverter_Layout_2/VDD" -4.34614
+cap "NOR_Layout_1/OUT" "Inverter_Layout_2/IN" 0.17258
+cap "NOR_Layout_1/SD1" "Inv_16x_Layout_5/OUT" 3.21444
+cap "NOR_Layout_1/B" "NOR_Layout_1/OUT" 1.05611
+cap "NOR_Layout_1/VDD" "NOR_Layout_1/B" -1.15719
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_5/OUT" 6.63866
+cap "NOR_Layout_1/B" "Inv_16x_Layout_5/OUT" 0.19753
+cap "NOR_Layout_1/VDD" "NOR_Layout_0/B" 0.695185
+cap "NOR_Layout_0/B" "Inv_16x_Layout_3/OUT" 3.94704
+cap "NOR_Layout_0/B" "Inv_16x_Layout_5/OUT" 0.00354491
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_0/VDD" 0.00460375
+cap "NOR_Layout_1/VDD" "Inv_16x_Layout_3/OUT" 40.7741
+cap "NOR_Layout_1/VDD" "Inv_16x_Layout_5/OUT" 5.80957
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_2/OUT" 0.0206667
+cap "Inv_16x_Layout_5/OUT" "Inv_16x_Layout_1/OUT" 0.0206667
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_1/B" 0.496121
+cap "NOR_Layout_0/VDD" "Inv_16x_Layout_5/OUT" 0.00460375
+cap "NOR_Layout_1/VDD" "NOR_Layout_0/VSS" -33.0797
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_0/B" 0.20345
+cap "Inv_16x_Layout_4/OUT" "Inv_16x_Layout_3/OUT" 7.27417
+cap "Inv_16x_Layout_4/OUT" "NOR_Layout_1/VDD" 37.9258
+cap "Inv_16x_Layout_2/VDD" "Inv_16x_Layout_4/VDD" -0.0255113
+cap "Inverter_Layout_1/OUT" "Inv_16x_Layout_4/VDD" -2.87038
+cap "Inverter_Layout_0/OUT" "Inv_16x_Layout_4/VDD" -0.0455947
+merge "Inverter_Layout_1/VSS" "Inverter_Layout_0/VSS" -3240.09 0 0 0 0 0 0 -182448 -5788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -656320 -14408 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_0/VSS" "Inv_16x_Layout_3/VSS"
+merge "Inv_16x_Layout_3/VSS" "Inv_16x_Layout_0/VSS"
+merge "Inv_16x_Layout_0/VSS" "Inv_16x_Layout_4/VSS"
+merge "Inv_16x_Layout_4/VSS" "Inv_16x_Layout_2/VSS"
+merge "Inv_16x_Layout_2/VSS" "Inv_16x_Layout_5/VSS"
+merge "Inv_16x_Layout_5/VSS" "Inv_16x_Layout_1/VSS"
+merge "Inv_16x_Layout_1/VSS" "NOR_Layout_1/VSS"
+merge "NOR_Layout_1/VSS" "NOR_Layout_0/VSS"
+merge "NOR_Layout_0/VSS" "Inverter_Layout_2/VSS"
+merge "Inverter_Layout_2/VSS" "VSUBS"
+merge "VSUBS" "VSS"
+merge "Inverter_Layout_1/VDD" "Inverter_Layout_0/VDD" -4516.04 -29016 -11668 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -868672 -17976 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_0/VDD" "Inv_16x_Layout_3/VDD"
+merge "Inv_16x_Layout_3/VDD" "w_2368_512#"
+merge "w_2368_512#" "Inv_16x_Layout_0/VDD"
+merge "Inv_16x_Layout_0/VDD" "w_2368_n868#"
+merge "w_2368_n868#" "Inv_16x_Layout_4/VDD"
+merge "Inv_16x_Layout_4/VDD" "Inv_16x_Layout_2/VDD"
+merge "Inv_16x_Layout_2/VDD" "Inv_16x_Layout_5/VDD"
+merge "Inv_16x_Layout_5/VDD" "Inv_16x_Layout_1/VDD"
+merge "Inv_16x_Layout_1/VDD" "NOR_Layout_1/VDD"
+merge "NOR_Layout_1/VDD" "NOR_Layout_0/VDD"
+merge "NOR_Layout_0/VDD" "Inverter_Layout_2/VDD"
+merge "Inverter_Layout_2/VDD" "VDD"
+merge "VDD" "w_n875_434#"
+merge "Inverter_Layout_1/IN" "Inv_16x_Layout_3/OUT" -202.392 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3404 -332 0 0 0 0 0 0 0 0
+merge "Inv_16x_Layout_3/OUT" "m1_2315_347#"
+merge "NOR_Layout_1/A" "Inverter_Layout_2/OUT" -237.752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3726 -346 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_2/OUT" "m1_n912_321#"
+merge "Inv_16x_Layout_5/IN" "NOR_Layout_1/OUT" -199.298 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4462 -378 0 0 0 0 0 0 0 0
+merge "NOR_Layout_1/OUT" "m1_n212_429#"
+merge "Inv_16x_Layout_3/IN" "Inv_16x_Layout_4/OUT" -233.738 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5152 -408 0 0 0 0 0 0 0 0
+merge "Inv_16x_Layout_4/OUT" "m1_1527_429#"
+merge "Inv_16x_Layout_0/IN" "Inv_16x_Layout_2/OUT" -233.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5198 -410 0 0 0 0 0 0 0 0
+merge "Inv_16x_Layout_2/OUT" "m1_1527_n363#"
+merge "Inv_16x_Layout_4/IN" "Inv_16x_Layout_5/OUT" -236.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5152 -408 0 0 0 0 0 0 0 0
+merge "Inv_16x_Layout_5/OUT" "m1_741_429#"
+merge "Inverter_Layout_0/OUT" "NOR_Layout_1/B" -489.969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4912 -396 0 0 0 0 0 0 0 0
+merge "NOR_Layout_1/B" "PH2"
+merge "Inverter_Layout_1/OUT" "NOR_Layout_0/B" -421.196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4820 -392 0 0 0 0 0 0 0 0
+merge "NOR_Layout_0/B" "PH1"
+merge "Inverter_Layout_0/IN" "Inv_16x_Layout_0/OUT" -205.734 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4416 -376 0 0 0 0 0 0 0 0
+merge "Inv_16x_Layout_0/OUT" "m1_2315_n363#"
+merge "Inv_16x_Layout_1/IN" "NOR_Layout_0/OUT" -196.443 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4370 -374 0 0 0 0 0 0 0 0
+merge "NOR_Layout_0/OUT" "m1_n206_n363#"
+merge "NOR_Layout_0/A" "Inverter_Layout_2/IN" -163.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4278 -370 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_2/IN" "VIN"
+merge "Inv_16x_Layout_2/IN" "Inv_16x_Layout_1/OUT" -236.667 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5198 -410 0 0 0 0 0 0 0 0
+merge "Inv_16x_Layout_1/OUT" "m1_741_n363#"

@@ -1,0 +1,63 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/DC_trans.sch
+**.subckt DC_trans
+XM1 net2 net1 GND GND nfet_03v3 L=0.56u W=0.28u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+V1 net1 GND 1.2
+.save i(v1)
+VDS net2 GND DC{vds}
+.save i(vds)
+XM2 net4 net3 GND GND pfet_03v3 L=0.28u W=50u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+V3 net3 GND -1
+.save i(v3)
+V4 net4 GND -1.5
+.save i(v4)
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+
+*Parameters
+.param vds = 3.3
+
+.options TEMP = 50.0
+
+
+*Data to save
+.save all  @M.xm1.m0[id]  @M.xm2.m0[id]  @M.xm1.m0[vds]  @M.xm1.m0[vgs]  @M.xm1.m0[vth]  @M.xm1.m0[cgg]  @M.xm1.m0[cgs]  @M.xm1.m0[gds]  @M.xm1.m0[gm]
+
+*Simulation
+.control
+
+dc VDS 0 3.3 0.01
+setplot dc1
+*plot @M.xm1.m0[id] ylabel Id xlabel Vds
+set filetype = binary
+write DC_trans.raw
+
+reset
+dc V1 0 3.3 0.01
+setplot dc2
+*plot @M.xm1.m0[id] ylabel Id xlabel Vgs
+set filetype = binary
+write DC_trans2.raw
+
+reset
+op
+save all
+set filetype = binary
+write nmos_char_dc.raw
+
+.endc
+.end
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

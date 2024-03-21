@@ -1,0 +1,86 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x Inv_16x_Layout_0.IN VDD Inverter_Layout_0.IN VDD s=7744,352 d=7744,352 l=448 w=88 x=1746 y=-617 pfet_03v3
+x PH1A VDD Inv_16x_Layout_4.IN VDD s=7744,352 d=7744,352 l=448 w=88 x=174 y=642 pfet_03v3
+x Inv_16x_Layout_3.IN VSS Inverter_Layout_1.IN VSS s=6064,328 d=6064,328 l=448 w=44 x=1742 y=182 nfet_03v3
+x Inv_16x_Layout_0.IN VSS Inverter_Layout_0.IN VSS s=6064,328 d=6064,328 l=448 w=44 x=1742 y=-113 nfet_03v3
+x VIN VDD NOR_Layout_1.A VDD s=17600,576 d=17600,576 l=56 w=200 x=-1104 y=564 pfet_03v3
+x Inv_16x_Layout_4.IN VDD Inv_16x_Layout_3.IN VDD s=7744,352 d=7744,352 l=448 w=88 x=960 y=642 pfet_03v3
+x NOR_Layout_1.A VDD a_n787_519# VDD s=10400,304 d=10400,304 l=56 w=200 x=-538 y=519 pfet_03v3
+x NOR_Layout_1.A VSS PH1A VSS s=8800,376 d=5200,204 l=56 w=100 x=-538 y=180 nfet_03v3
+x Inverter_Layout_0.IN VSS PH2 VSS s=8800,376 d=8800,376 l=56 w=100 x=2544 y=-179 nfet_03v3
+x NOR_Layout_1.A a_n787_519# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=-698 y=519 pfet_03v3
+x Inv_16x_Layout_3.IN VDD Inverter_Layout_1.IN VDD s=7744,352 d=7744,352 l=448 w=88 x=1746 y=642 pfet_03v3
+x Inverter_Layout_1.IN VSS PH1 VSS s=8800,376 d=8800,376 l=56 w=100 x=2544 y=192 nfet_03v3
+x NOR_Layout_0.OUT VDD Inv_16x_Layout_2.IN VDD s=7744,352 d=7744,352 l=448 w=88 x=174 y=-617 pfet_03v3
+x VIN a_n787_n607# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=-698 y=-606 pfet_03v3
+x PH1A VSS Inv_16x_Layout_4.IN VSS s=6064,328 d=6064,328 l=448 w=44 x=170 y=182 nfet_03v3
+x VIN VSS NOR_Layout_0.OUT VSS s=8800,376 d=5200,204 l=56 w=100 x=-538 y=-167 nfet_03v3
+x VIN VDD a_n787_n607# VDD s=10400,304 d=10400,304 l=56 w=200 x=-538 y=-606 pfet_03v3
+x Inverter_Layout_0.IN VDD PH2 VDD s=17600,576 d=17600,576 l=56 w=200 x=2544 y=-651 pfet_03v3
+x PH2 PH1A a_n787_519# VDD s=10400,304 d=17600,576 l=56 w=200 x=-218 y=519 pfet_03v3
+x NOR_Layout_0.OUT VSS Inv_16x_Layout_2.IN VSS s=6064,328 d=6064,328 l=448 w=44 x=170 y=-113 nfet_03v3
+x Inv_16x_Layout_4.IN VSS Inv_16x_Layout_3.IN VSS s=6064,328 d=6064,328 l=448 w=44 x=956 y=182 nfet_03v3
+x PH2 a_n787_519# PH1A VDD s=10400,304 d=10400,304 l=56 w=200 x=-378 y=519 pfet_03v3
+x VIN VSS NOR_Layout_1.A VSS s=8800,376 d=8800,376 l=56 w=100 x=-1104 y=192 nfet_03v3
+x PH2 PH1A VSS VSS s=5200,204 d=8800,376 l=56 w=100 x=-378 y=180 nfet_03v3
+x Inverter_Layout_1.IN VDD PH1 VDD s=17600,576 d=17600,576 l=56 w=200 x=2544 y=564 pfet_03v3
+x Inv_16x_Layout_2.IN VSS Inv_16x_Layout_0.IN VSS s=6064,328 d=6064,328 l=448 w=44 x=956 y=-113 nfet_03v3
+x PH1 NOR_Layout_0.OUT VSS VSS s=5200,204 d=8800,376 l=56 w=100 x=-378 y=-167 nfet_03v3
+x PH1 a_n787_n607# NOR_Layout_0.OUT VDD s=10400,304 d=10400,304 l=56 w=200 x=-378 y=-606 pfet_03v3
+x PH1 NOR_Layout_0.OUT a_n787_n607# VDD s=10400,304 d=17600,576 l=56 w=200 x=-218 y=-606 pfet_03v3
+x Inv_16x_Layout_2.IN VDD Inv_16x_Layout_0.IN VDD s=7744,352 d=7744,352 l=448 w=88 x=960 y=-617 pfet_03v3
+R a_n787_n607# 85
+R Inverter_Layout_0.IN 124
+= Inverter_Layout_0.IN Inv_16x_Layout_0.OUT
+R Inv_16x_Layout_0.IN 103
+= Inv_16x_Layout_0.IN Inv_16x_Layout_2.OUT
+R Inv_16x_Layout_2.IN 103
+= Inv_16x_Layout_2.IN Inv_16x_Layout_1.OUT
+R NOR_Layout_0.OUT 104
+= NOR_Layout_0.OUT Inv_16x_Layout_1.IN
+R PH1 207
+= PH1 Inverter_Layout_1.OUT
+= PH1 NOR_Layout_0.B
+R a_n787_519# 85
+R Inverter_Layout_1.IN 124
+= Inverter_Layout_1.IN Inv_16x_Layout_3.OUT
+R Inv_16x_Layout_3.IN 103
+= Inv_16x_Layout_3.IN Inv_16x_Layout_4.OUT
+R Inv_16x_Layout_4.IN 103
+= Inv_16x_Layout_4.IN Inv_16x_Layout_5.OUT
+R PH1A 106
+= PH1A Inv_16x_Layout_5.IN
+= PH1A NOR_Layout_1.OUT
+R PH2 207
+= PH2 Inverter_Layout_0.OUT
+= PH2 NOR_Layout_1.B
+R NOR_Layout_1.A 182
+= NOR_Layout_1.A Inverter_Layout_2.OUT
+R VIN 278
+= VIN Inverter_Layout_2.IN
+= VIN NOR_Layout_0.A
+C VDD0 13.8
+R VDD 19878
+= VDD Inverter_Layout_0.VDD
+= VDD Inverter_Layout_1.VDD
+= VDD Inv_16x_Layout_0.VDD
+= VDD Inv_16x_Layout_3.VDD
+= VDD Inv_16x_Layout_2.VDD
+= VDD Inv_16x_Layout_4.VDD
+= VDD Inv_16x_Layout_1.VDD
+= VDD Inv_16x_Layout_5.VDD
+= VDD NOR_Layout_0.VDD
+= VDD Inverter_Layout_2.VDD
+= VDD NOR_Layout_1.VDD
+R VSS 681
+= VSS Inverter_Layout_0.VSS
+= VSS Inverter_Layout_1.VSS
+= VSS Inv_16x_Layout_0.VSS
+= VSS Inv_16x_Layout_3.VSS
+= VSS Inv_16x_Layout_2.VSS
+= VSS Inv_16x_Layout_4.VSS
+= VSS Inv_16x_Layout_1.VSS
+= VSS Inv_16x_Layout_5.VSS
+= VSS NOR_Layout_0.VSS
+= VSS Inverter_Layout_2.VSS
+= VSS NOR_Layout_1.VSS

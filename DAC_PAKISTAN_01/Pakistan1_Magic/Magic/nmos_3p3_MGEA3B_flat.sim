@@ -1,0 +1,583 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4058 y=-642 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-72 y=1486 nfet_03v3
+x B6 VDD Balance_Inverter_5.Inverter_0.OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=1257 y=-5756 pfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=5401 y=-3083 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=3792,184 l=100 w=60 x=5613 y=38 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4865 y=-3083 nfet_03v3
+x ITAIL ITAIL a_n1480_n399# VSS s=10560,416 d=6240,224 l=100 w=120 x=128 y=-257 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=21 y=-4508 nfet_03v3
+x Balance_Inverter_2.OUT a_n104_68# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4218 y=538 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=837 y=-3824 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=335 y=744 nfet_03v3
+x a_n1480_n399# a_n640_n258# VSS VSS s=6240,224 d=10560,416 l=100 w=120 x=-535 y=68 nfet_03v3
+x ITAIL a_n1584_n258# a_n1772_n258# VSS s=6240,224 d=10560,416 l=100 w=120 x=-1071 y=68 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=5937 y=-3083 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=429 y=-3824 nfet_03v3
+x Balance_Inverter_0.OUT_B a_n1772_n258# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3854 y=14 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-4786 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=1297 y=-3292 nfet_03v3
+x Balance_Inverter_2.OUT_B a_n104_68# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3810 y=538 nfet_03v3
+x a_n1772_n1050# a_n1772_n1050# a_n1772_n1050# VSS s=10560,416 l=100 w=120 x=2144 y=744 nfet_03v3
+x OUT- OUT- OUT- VSS d=6384,328 l=100 w=60 x=3120 y=876 nfet_03v3
+x B1 VSS Balance_Inverter_3.OUT_B VSS s=6064,328 d=6064,328 l=56 w=44 x=-955 y=-3459 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-3717 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=2369 y=-3292 nfet_03v3
+x Balance_Inverter_5.Inverter_0.OUT Balance_Inverter_5.OUT VSS VSS s=6064,328 d=6064,328 l=56 w=44 x=1735 y=-6054 nfet_03v3
+x a_n1480_n399# VSS a_n1584_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=1940 y=-257 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1041 y=-4508 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=2144 y=-1790 nfet_03v3
+x a_n1480_n399# a_n1584_n258# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1479 y=-257 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=10560,416 l=100 w=120 x=1763 y=1183 nfet_03v3
+x Balance_Inverter_1.OUT a_n828_n258# OUT+ VSS s=6240,224 d=10560,416 l=100 w=120 x=5753 y=556 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-6182 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=5757 y=-3717 nfet_03v3
+x Balance_Inverter_2.OUT VDD Balance_Inverter_2.OUT_B VDD s=6064,328 d=6064,328 l=56 w=44 x=-1017 y=-4022 pfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=131 y=-1049 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-6182 nfet_03v3
+x ITAIL a_n1584_n258# a_n1772_n258# VSS s=6240,224 d=10560,416 l=100 w=120 x=-1071 y=-257 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1296 y=-1049 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4422 y=538 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=5425 y=-5113 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=2393 y=-3824 nfet_03v3
+x Balance_Inverter_0.OUT OUT+ a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3242 y=-363 nfet_03v3
+x OUT- OUT- OUT- VSS s=6384,328 l=100 w=60 x=4795 y=1196 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-5113 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=5400 y=-527 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=10560,416 l=100 w=120 x=1763 y=-1049 nfet_03v3
+x a_n1480_n399# a_228_68# VSS VSS s=6240,224 d=10560,416 l=100 w=120 x=332 y=68 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1355 y=-1049 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-5502 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=-1683 y=-1790 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=4849 y=38 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1092 y=1183 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-888 y=-1049 nfet_03v3
+x Balance_Inverter_2.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=3460 y=876 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-4401 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=743 y=1183 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3589 y=-5502 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-4106 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-480 y=-1790 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3589 y=-4401 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=539 y=744 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=1833 y=-3292 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=5425 y=-5797 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=5425 y=-4786 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=21 y=-3824 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-4786 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4329 y=-2699 nfet_03v3
+x a_n1480_n399# VSS a_n1584_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=1940 y=68 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=10560,416 l=100 w=120 x=1763 y=1486 nfet_03v3
+x B3 VDD Balance_Inverter_1.Inverter_0.OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=-1969 y=-4888 pfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-72 y=-1049 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-3717 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=743 y=-1480 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS d=6384,328 l=100 w=60 x=4509 y=38 nfet_03v3
+x Balance_Inverter_0.OUT a_n1772_n258# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3854 y=-642 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=4125 y=-2025 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=21 y=-3292 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-3717 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3589 y=-2025 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=335 y=-1480 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=633 y=-4213 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=1629 y=-3008 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=225 y=-4213 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=2189 y=-4893 nfet_03v3
+x OUT- OUT- OUT- VSS d=3792,184 l=100 w=60 x=5612 y=-277 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1041 y=-3824 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=761 y=-3292 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-5502 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1092 y=1486 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-4401 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5197 y=-2699 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=743 y=744 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=743 y=1486 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1559 y=-1480 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=1857 y=-4213 nfet_03v3
+x Balance_Inverter_1.OUT_B Balance_Inverter_1.OUT VDD VDD s=6064,328 d=6064,328 l=56 w=44 x=-1429 y=-4881 pfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-5113 nfet_03v3
+x Balance_Inverter_0.Inverter_0.OUT Balance_Inverter_0.OUT VSS VSS s=6064,328 d=6064,328 l=56 w=44 x=-1491 y=-6054 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=5961 y=-4106 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5757 y=-5502 nfet_03v3
+x ITAIL a_40_68# a_228_68# VSS s=10560,416 d=6240,224 l=100 w=120 x=128 y=68 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1449 y=-4213 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5757 y=-4401 nfet_03v3
+x Balance_Inverter_3.OUT_B a_40_68# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3660 y=1184 nfet_03v3
+x ITAIL a_n640_n258# a_n828_n258# VSS s=6240,224 d=10560,416 l=100 w=120 x=1200 y=68 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-6182 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=4329 y=-3083 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=557 y=-3008 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-72 y=744 nfet_03v3
+x Balance_Inverter_1.OUT_B OUT+ OUT+ VSS s=3792,184 l=100 w=60 x=5559 y=1438 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=633 y=-4508 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=3792,184 l=100 w=60 x=5612 y=-852 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=225 y=-4508 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-4786 nfet_03v3
+x a_n1480_n399# a_n1584_n258# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1736 y=68 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS s=3792,184 l=100 w=60 x=5060 y=-527 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=3793 y=-2409 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=1653 y=-4893 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS d=10560,416 l=100 w=120 x=2144 y=-1480 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=4508 y=-277 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=5197 y=-3083 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=1857 y=-4508 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=1245 y=-4893 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=5401 y=-2409 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=4661 y=-2699 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=4865 y=-2409 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=4272 y=1184 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1449 y=-4508 nfet_03v3
+x Balance_Inverter_2.Inverter_0.OUT Balance_Inverter_2.OUT VSS VSS s=6064,328 d=6064,328 l=56 w=44 x=-1491 y=-4327 nfet_03v3
+x B1 VSS Balance_Inverter_3.Inverter_0.OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=-1969 y=-3460 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=947 y=-1049 nfet_03v3
+x a_n1480_n399# a_n1584_n258# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1736 y=-257 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-888 y=1183 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1559 y=1183 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=539 y=-1049 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=5733 y=-2699 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=5937 y=-2409 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-5502 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=131 y=-1790 nfet_03v3
+x ITAIL a_n292_n258# a_n104_68# VSS s=10560,416 d=10560,416 l=100 w=120 x=-203 y=68 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-480 y=1183 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=947 y=744 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-4401 nfet_03v3
+x Balance_Inverter_1.OUT OUT- OUT- VSS d=6384,328 l=100 w=60 x=5899 y=1438 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-5502 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT- a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3650 y=-363 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1151 y=1183 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-4401 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=5961 y=-6182 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1296 y=-1790 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-4106 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-3717 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3038 y=-363 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=-1683 y=-1480 nfet_03v3
+x Balance_Inverter_3.OUT_B Balance_Inverter_3.OUT VDD VDD s=6064,328 d=6064,328 l=56 w=44 x=-1429 y=-3154 pfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=10560,416 l=100 w=120 x=1763 y=-1790 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-480 y=-1480 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS d=6384,328 l=100 w=60 x=4508 y=-852 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1355 y=-1790 nfet_03v3
+x ITAIL a_n828_n258# a_n640_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=-739 y=68 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-888 y=-1790 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=4848 y=-277 nfet_03v3
+x a_n1480_n399# VSS a_n1584_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=-1275 y=68 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=539 y=1183 nfet_03v3
+x Balance_Inverter_4.OUT VDD Balance_Inverter_4.OUT_B VDD s=6064,328 d=6064,328 l=56 w=44 x=600 y=-5749 pfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-5113 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=4661 y=-3083 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=131 y=1183 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3589 y=-5113 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=633 y=-3824 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-888 y=1486 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5733 y=-3083 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=225 y=-3824 nfet_03v3
+x B5 VSS Balance_Inverter_4.OUT_B VSS s=6064,328 d=6064,328 l=56 w=44 x=662 y=-6054 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1559 y=1486 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=1093 y=-3292 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=5401 y=38 nfet_03v3
+x a_n1480_n399# a_n640_n258# VSS VSS s=6240,224 d=10560,416 l=100 w=120 x=-535 y=-257 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-72 y=-1790 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-480 y=1486 nfet_03v3
+x Balance_Inverter_1.OUT VDD Balance_Inverter_1.OUT_B VDD s=6064,328 d=6064,328 l=56 w=44 x=-1017 y=-4881 pfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1151 y=1486 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=2165 y=-3292 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=225 y=-3292 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=1857 y=-3824 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=4848 y=-852 nfet_03v3
+x Balance_Inverter_0.OUT_B Balance_Inverter_0.OUT VDD VDD s=6064,328 d=6064,328 l=56 w=44 x=-1429 y=-5749 pfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-4786 nfet_03v3
+x B4 VSS Balance_Inverter_0.Inverter_0.OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=-1969 y=-6055 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=5961 y=-3717 nfet_03v3
+x Balance_Inverter_0.OUT OUT+ a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3242 y=-642 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3589 y=-5797 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1449 y=-3824 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3589 y=-4786 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=1297 y=-3008 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=5425 y=-4106 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-6182 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT- a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3242 y=14 nfet_03v3
+x Balance_Inverter_2.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=3800 y=876 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-4106 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=539 y=1486 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=2369 y=-3008 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1092 y=-1049 nfet_03v3
+x Balance_Inverter_0.OUT_B a_n1772_n258# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3854 y=-1020 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-5113 nfet_03v3
+x B4 VSS Balance_Inverter_0.OUT_B VSS s=6064,328 d=6064,328 l=56 w=44 x=-955 y=-6054 nfet_03v3
+x Balance_Inverter_0.OUT a_n1772_n258# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3446 y=-1020 nfet_03v3
+x Balance_Inverter_1.OUT OUT- OUT- VSS d=3792,184 l=100 w=60 x=5007 y=1438 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=131 y=1486 nfet_03v3
+x Balance_Inverter_3.OUT OUT+ a_40_68# VSS s=10560,416 d=6240,224 l=100 w=120 x=3456 y=1184 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3038 y=-1020 nfet_03v3
+x a_n1480_n399# VSS a_n640_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=996 y=-257 nfet_03v3
+x a_n1772_n1050# a_n1772_n1050# a_n1772_n1050# VSS s=10560,416 l=100 w=120 x=-1683 y=744 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1151 y=744 nfet_03v3
+x Balance_Inverter_4.OUT_B Balance_Inverter_4.OUT VDD VDD s=6064,328 d=6064,328 l=56 w=44 x=188 y=-5749 pfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1151 y=-1049 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=5757 y=-5113 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-5502 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=5400 y=-277 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=837 y=-4893 nfet_03v3
+x a_n1480_n399# VSS a_n640_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=996 y=68 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-4401 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-684 y=-1049 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=429 y=-4893 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=2189 y=-4213 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-276 y=-1049 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=3792,184 l=100 w=60 x=5061 y=38 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=3792,184 l=100 w=60 x=4224 y=1504 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3198 y=538 nfet_03v3
+x Balance_Inverter_1.OUT OUT+ a_n828_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=5141 y=858 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-4786 nfet_03v3
+x B2 VSS Balance_Inverter_2.Inverter_0.OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=-1969 y=-4328 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=4125 y=-2699 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4329 y=-2409 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3589 y=-2699 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-276 y=744 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5757 y=-5797 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=5757 y=-4786 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=3793 y=-2025 nfet_03v3
+x a_n1480_n399# a_n292_n258# VSS VSS s=10560,416 d=10560,416 l=100 w=120 x=-203 y=-257 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=4068 y=1184 nfet_03v3
+x B5 VSS Balance_Inverter_4.Inverter_0.OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=-351 y=-6055 nfet_03v3
+x Balance_Inverter_1.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=5347 y=1438 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-3717 nfet_03v3
+x B2 VSS Balance_Inverter_2.OUT_B VSS s=6064,328 d=6064,328 l=56 w=44 x=-955 y=-4327 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=1833 y=-3008 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=131 y=-1480 nfet_03v3
+x Balance_Inverter_3.OUT VDD Balance_Inverter_3.OUT_B VDD s=6064,328 d=6064,328 l=56 w=44 x=-1017 y=-3154 pfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=947 y=-1790 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=5400 y=-852 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=5401 y=-2025 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4865 y=-2025 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=539 y=-1790 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=5425 y=-6182 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=2393 y=-4893 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1296 y=-1480 nfet_03v3
+x a_n1480_n399# VSS a_n1584_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=-1275 y=-257 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3038 y=14 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-276 y=1183 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-6182 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-4106 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=2189 y=-4508 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=5937 y=-2025 nfet_03v3
+x Balance_Inverter_0.OUT_B a_n1772_n258# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3446 y=-363 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=10560,416 l=100 w=120 x=1763 y=-1480 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5197 y=-2409 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-5113 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=21 y=-3008 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1355 y=-1480 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=5961 y=-5502 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=1653 y=-4213 nfet_03v3
+x ITAIL a_n1772_n258# a_n1584_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1683 y=68 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=5961 y=-4401 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-5113 nfet_03v3
+x B1 VDD Balance_Inverter_3.Inverter_0.OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=-1969 y=-3161 pfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-888 y=-1480 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1355 y=744 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=1245 y=-4213 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1296 y=1183 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=947 y=1183 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-480 y=744 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=761 y=-3008 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=4125 y=-3083 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3124 y=1184 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3589 y=-3083 nfet_03v3
+x a_n1480_n399# VSS a_n292_n258# VSS s=10560,416 d=10560,416 l=100 w=120 x=664 y=-257 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=21 y=-4893 nfet_03v3
+x Balance_Inverter_1.OUT_B a_n828_n258# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=5345 y=858 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=4058 y=14 nfet_03v3
+x Balance_Inverter_4.Inverter_0.OUT Balance_Inverter_4.OUT VSS VSS s=6064,328 d=6064,328 l=56 w=44 x=126 y=-6054 nfet_03v3
+x Balance_Inverter_0.OUT VDD Balance_Inverter_0.OUT_B VDD s=6064,328 d=6064,328 l=56 w=44 x=-1017 y=-5749 pfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-4786 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-72 y=-1480 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-5797 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-4786 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=4058 y=-363 nfet_03v3
+x Balance_Inverter_1.OUT_B OUT+ OUT+ VSS d=3792,184 l=100 w=60 x=5559 y=1196 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=5425 y=-3717 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS s=3792,184 l=100 w=60 x=5060 y=-277 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-276 y=1486 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=1653 y=-4508 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-3717 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1041 y=-4893 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=4661 y=-2409 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT- a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3650 y=-642 nfet_03v3
+x Balance_Inverter_0.OUT OUT+ a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3650 y=14 nfet_03v3
+x B4 VDD Balance_Inverter_0.Inverter_0.OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=-1969 y=-5756 pfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=1245 y=-4508 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=743 y=-1049 nfet_03v3
+x OUT- OUT- OUT- VSS s=6384,328 l=100 w=60 x=4795 y=1438 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=4937 y=858 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3038 y=-642 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=335 y=-1049 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-6182 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=5733 y=-2409 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1296 y=1486 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=-1683 y=1183 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=947 y=1486 nfet_03v3
+x Balance_Inverter_1.Inverter_0.OUT Balance_Inverter_1.OUT VSS VSS s=6064,328 d=6064,328 l=56 w=44 x=-1491 y=-5186 nfet_03v3
+x B6 VSS Balance_Inverter_5.OUT_B VSS s=6064,328 d=6064,328 l=56 w=44 x=2271 y=-6054 nfet_03v3
+x Balance_Inverter_2.OUT_B OUT+ OUT+ VSS s=3792,184 l=100 w=60 x=4012 y=876 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-5502 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-4401 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1092 y=-1790 nfet_03v3
+x a_n1480_n399# a_n1584_n258# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1479 y=68 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1559 y=744 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=2189 y=-3824 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=3864 y=1184 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-684 y=744 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1559 y=-1049 nfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=3792,184 l=100 w=60 x=5060 y=-852 nfet_03v3
+x Balance_Inverter_1.OUT OUT- OUT- VSS d=6384,328 l=100 w=60 x=5899 y=1196 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1151 y=-1790 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-4106 nfet_03v3
+x Balance_Inverter_1.OUT_B OUT- a_n828_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=5549 y=858 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-684 y=-1790 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=3589 y=-4106 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-276 y=-1790 nfet_03v3
+x B6 VSS Balance_Inverter_5.Inverter_0.OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=1257 y=-6055 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-5113 nfet_03v3
+x a_n1480_n399# a_n1480_n399# VSS VSS s=6240,224 d=10560,416 l=100 w=120 x=332 y=-257 nfet_03v3
+x Balance_Inverter_1.OUT OUT+ a_n828_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=5141 y=556 nfet_03v3
+x Balance_Inverter_3.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=3800 y=1504 nfet_03v3
+x ITAIL a_n1584_n258# a_n1772_n258# VSS s=6240,224 d=10560,416 l=100 w=120 x=2144 y=68 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=1629 y=-3292 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=2144 y=1183 nfet_03v3
+x Balance_Inverter_2.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=4352 y=876 nfet_03v3
+x Balance_Inverter_3.Inverter_0.OUT Balance_Inverter_3.OUT VSS VSS s=6064,328 d=6064,328 l=56 w=44 x=-1491 y=-3459 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=947 y=-1480 nfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=-1683 y=1486 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=10560,416 l=100 w=120 x=1763 y=744 nfet_03v3
+x B5 VDD Balance_Inverter_4.Inverter_0.OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=-351 y=-5756 pfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=4329 y=-2025 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-3717 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=539 y=-1480 nfet_03v3
+x Balance_Inverter_0.OUT a_n1772_n258# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3446 y=14 nfet_03v3
+x ITAIL a_n104_68# a_n292_n258# VSS s=10560,416 d=10560,416 l=100 w=120 x=664 y=68 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=837 y=-4213 nfet_03v3
+x OUT- OUT- OUT- VSS d=3792,184 l=100 w=60 x=5612 y=-527 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=3792,184 l=100 w=60 x=4012 y=1504 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=429 y=-4213 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-5797 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=1653 y=-3824 nfet_03v3
+x a_n1772_n1050# a_n1772_n1050# a_n1772_n1050# VSS s=10560,416 l=100 w=120 x=2144 y=-1049 nfet_03v3
+x ITAIL a_n1772_n258# a_n1584_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1683 y=-257 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=3793 y=-4786 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-684 y=1183 nfet_03v3
+x B2 VDD Balance_Inverter_2.Inverter_0.OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=-1969 y=-4029 pfet_03v3
+x ITAIL a_n1772_n258# a_n1584_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=1532 y=-257 nfet_03v3
+x Balance_Inverter_1.OUT a_n828_n258# OUT+ VSS s=6240,224 d=10560,416 l=100 w=120 x=5753 y=858 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=1245 y=-3824 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=5425 y=-5502 nfet_03v3
+x Balance_Inverter_0.OUT a_n1772_n258# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3854 y=-363 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1355 y=1183 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=1093 y=-3008 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=5425 y=-4401 nfet_03v3
+x Balance_Inverter_4.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=557 y=-3292 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-4106 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-5502 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT- a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=5017 y=-4401 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=2165 y=-3008 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=3402 y=538 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=225 y=-3008 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-888 y=744 nfet_03v3
+x Balance_Inverter_0.OUT OUT+ a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3650 y=-1020 nfet_03v3
+x a_n1480_n399# a_n1197_n1050# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1092 y=744 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5757 y=-4106 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=10560,416 l=100 w=120 x=5197 y=-2025 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT- a_n1772_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=3242 y=-1020 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-6182 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=5961 y=-5113 nfet_03v3
+x a_n1772_n1050# a_n1772_n1050# a_n1772_n1050# VSS s=10560,416 l=100 w=120 x=-1683 y=-1049 nfet_03v3
+x OUT- OUT- OUT- VSS s=6384,328 l=100 w=60 x=3120 y=1504 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3589 y=-6182 nfet_03v3
+x Balance_Inverter_2.OUT_B Balance_Inverter_2.OUT VDD VDD s=6064,328 d=6064,328 l=56 w=44 x=-1429 y=-4022 pfet_03v3
+x a_n1772_n1791# a_n1772_n1791# a_n1772_n1791# VSS s=10560,416 l=100 w=120 x=2144 y=1486 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=633 y=-4893 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=2393 y=-4213 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=-480 y=-1049 nfet_03v3
+x Balance_Inverter_1.OUT_B a_n828_n258# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=5345 y=556 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=335 y=1183 nfet_03v3
+x Balance_Inverter_4.OUT a_n1772_n1050# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=837 y=-4508 nfet_03v3
+x Balance_Inverter_4.OUT_B OUT- a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=225 y=-4893 nfet_03v3
+x Balance_Inverter_1.OUT OUT- OUT- VSS s=3792,184 l=100 w=60 x=5007 y=1196 nfet_03v3
+x Balance_Inverter_4.OUT_B a_n1772_n1050# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=429 y=-4508 nfet_03v3
+x ITAIL a_n1584_n258# a_n1772_n258# VSS s=6240,224 d=10560,416 l=100 w=120 x=2144 y=-257 nfet_03v3
+x Balance_Inverter_2.OUT_B OUT- a_n104_68# VSS s=6240,224 d=6240,224 l=100 w=120 x=4014 y=538 nfet_03v3
+x Balance_Inverter_5.OUT_B Balance_Inverter_5.OUT VDD VDD s=6064,328 d=6064,328 l=56 w=44 x=1797 y=-5749 pfet_03v3
+x Balance_Inverter_0.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=4508 y=-527 nfet_03v3
+x ITAIL a_n1197_n1050# a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=131 y=744 nfet_03v3
+x ITAIL a_n828_n258# a_n640_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=-739 y=-257 nfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=3793 y=-2699 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-72 y=1183 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-684 y=1486 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=1857 y=-4893 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=4125 y=-2409 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=5961 y=-5797 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=5961 y=-4786 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3589 y=-2409 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=1355 y=1486 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1449 y=-4893 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=5401 y=-2699 nfet_03v3
+x Balance_Inverter_5.OUT VDD Balance_Inverter_5.OUT_B VDD s=6064,328 d=6064,328 l=56 w=44 x=2209 y=-5749 pfet_03v3
+x Balance_Inverter_5.OUT OUT- OUT- VSS s=6240,224 l=100 w=120 x=4865 y=-2699 nfet_03v3
+x B3 VSS Balance_Inverter_1.Inverter_0.OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=-1969 y=-5187 nfet_03v3
+x Balance_Inverter_0.OUT_B a_n1772_n258# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=3446 y=-642 nfet_03v3
+x ITAIL a_n1772_n258# a_n1584_n258# VSS s=10560,416 d=6240,224 l=100 w=120 x=1532 y=68 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=21 y=-4213 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=743 y=-1790 nfet_03v3
+x OUT+ OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=4937 y=556 nfet_03v3
+x Balance_Inverter_3.OUT OUT- OUT- VSS s=6384,328 l=100 w=60 x=3460 y=1504 nfet_03v3
+x OUT- OUT- OUT- VSS d=6240,224 l=100 w=120 x=5937 y=-2699 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=4661 y=-2025 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=335 y=-1790 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=5221 y=-6182 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-1092 y=-1480 nfet_03v3
+x Balance_Inverter_5.OUT_B a_n1772_n1791# OUT- VSS s=6240,224 d=6240,224 l=100 w=120 x=4813 y=-4106 nfet_03v3
+x OUT+ OUT+ OUT+ VSS d=6240,224 l=100 w=120 x=2393 y=-4508 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-5502 nfet_03v3
+x ITAIL a_n640_n258# a_n828_n258# VSS s=6240,224 d=10560,416 l=100 w=120 x=1200 y=-257 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4609 y=-4401 nfet_03v3
+x B3 VSS Balance_Inverter_1.OUT_B VSS s=6064,328 d=6064,328 l=56 w=44 x=-955 y=-5186 nfet_03v3
+x Balance_Inverter_2.OUT OUT+ a_n104_68# VSS s=6240,224 d=6240,224 l=100 w=120 x=3606 y=538 nfet_03v3
+x Balance_Inverter_1.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=5347 y=1196 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=4405 y=-4106 nfet_03v3
+x Balance_Inverter_5.OUT a_n1772_n1791# OUT+ VSS s=6240,224 d=6240,224 l=100 w=120 x=3997 y=-3717 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=10560,416 l=100 w=120 x=5733 y=-2025 nfet_03v3
+x ITAIL a_n1772_n1050# a_n1197_n1050# VSS s=10560,416 d=6240,224 l=100 w=120 x=-1296 y=744 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=5757 y=-6182 nfet_03v3
+x OUT- OUT- OUT- VSS s=10560,416 l=100 w=120 x=3589 y=-3717 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1151 y=-1480 nfet_03v3
+x ITAIL a_n1772_n1791# a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=335 y=1486 nfet_03v3
+x OUT- OUT- OUT- VSS s=6240,224 l=100 w=120 x=4058 y=-1020 nfet_03v3
+x Balance_Inverter_0.OUT_B OUT+ OUT+ VSS s=6384,328 l=100 w=60 x=4848 y=-527 nfet_03v3
+x Balance_Inverter_5.OUT OUT+ a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=4201 y=-5113 nfet_03v3
+x ITAIL a_n1197_n1791# a_n1772_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=-684 y=-1480 nfet_03v3
+x Balance_Inverter_4.OUT OUT+ a_n1772_n1050# VSS s=6240,224 d=6240,224 l=100 w=120 x=1041 y=-4213 nfet_03v3
+x a_n1480_n399# VSS a_n1197_n1791# VSS s=6240,224 d=6240,224 l=100 w=120 x=1559 y=-1790 nfet_03v3
+x a_n1480_n399# a_n1197_n1791# VSS VSS s=6240,224 d=6240,224 l=100 w=120 x=-276 y=-1480 nfet_03v3
+x Balance_Inverter_5.OUT_B OUT+ OUT+ VSS s=6240,224 l=100 w=120 x=3793 y=-3083 nfet_03v3
+x Balance_Inverter_1.OUT_B OUT- a_n828_n258# VSS s=6240,224 d=6240,224 l=100 w=120 x=5549 y=556 nfet_03v3
+C Balance_Inverter_5.OUT_B OUT+ 2.5
+C Balance_Inverter_5.OUT OUT+ 2.8
+C Balance_Inverter_4.OUT OUT- 2.2
+C a_n1772_n1050# a_n1197_n1050# 2.1
+C Balance_Inverter_5.OUT_B OUT- 2.6
+C Balance_Inverter_5.OUT OUT- 3.4
+C a_n1772_n1050# OUT- 2.1
+C Balance_Inverter_2.OUT_B Balance_Inverter_2.OUT 2.7
+C a_n1197_n1791# a_n1772_n1791# 3.7
+C a_n1480_n399# ITAIL 5.3
+C a_n1772_n1791# OUT+ 5.1
+C Balance_Inverter_1.OUT Balance_Inverter_1.OUT_B 6.5
+C Balance_Inverter_5.OUT_B Balance_Inverter_5.OUT 3.1
+C Balance_Inverter_0.OUT_B Balance_Inverter_0.OUT 4.9
+C Balance_Inverter_3.OUT_B Balance_Inverter_3.OUT 3.4
+C OUT+ OUT- 15.9
+C a_n1772_n1791# OUT- 6.4
+C a_n1772_n1050# a_n1197_n1791# 2.6
+C OUT+0 18.7
+R OUT+ 5611
+C OUT-0 20.6
+R OUT- 5472
+C ITAIL0 19.3
+R ITAIL 3649
+R Balance_Inverter_5.Inverter_0.OUT 99
+R B6 150
+= B6 Balance_Inverter_5.Inverter_0.IN
+= B6 Balance_Inverter_5.VIN
+R Balance_Inverter_4.Inverter_0.OUT 99
+R B5 150
+= B5 Balance_Inverter_4.Inverter_0.IN
+= B5 Balance_Inverter_4.VIN
+R Balance_Inverter_0.Inverter_0.OUT 99
+R B4 150
+= B4 Balance_Inverter_0.Inverter_0.IN
+= B4 Balance_Inverter_0.VIN
+R Balance_Inverter_1.Inverter_0.OUT 99
+R B3 150
+= B3 Balance_Inverter_1.Inverter_0.IN
+= B3 Balance_Inverter_1.VIN
+R Balance_Inverter_2.Inverter_0.OUT 99
+R B2 150
+= B2 Balance_Inverter_2.Inverter_0.IN
+= B2 Balance_Inverter_2.VIN
+R Balance_Inverter_3.Inverter_0.OUT 99
+R B1 150
+= B1 Balance_Inverter_3.Inverter_0.IN
+= B1 Balance_Inverter_3.VIN
+C Balance_Inverter_4.OUT0 6.6
+R Balance_Inverter_4.OUT 988
+C Balance_Inverter_4.OUT_B0 7.5
+R Balance_Inverter_4.OUT_B 1028
+C Balance_Inverter_5.OUT0 14.1
+R Balance_Inverter_5.OUT 1972
+C Balance_Inverter_5.OUT_B0 14.2
+R Balance_Inverter_5.OUT_B 2107
+C Balance_Inverter_0.OUT0 5.5
+R Balance_Inverter_0.OUT 838
+R a_n292_n258# 94
+R a_n640_n258# 93
+R a_n1584_n258# 200
+C a_n1772_n258#0 2.1
+R a_n1772_n258# 418
+C Balance_Inverter_0.OUT_B0 8.2
+R Balance_Inverter_0.OUT_B 1112
+R a_n104_68# 100
+R a_n828_n258# 208
+R Balance_Inverter_2.OUT_B 170
+C Balance_Inverter_2.OUT0 3.0
+R Balance_Inverter_2.OUT 295
+C a_n1197_n1050#0 5.4
+R a_n1197_n1050# 415
+R a_40_68# 46
+C a_n1772_n1050#0 3.8
+R a_n1772_n1050# 1040
+C Balance_Inverter_1.OUT_B0 5.1
+R Balance_Inverter_1.OUT_B 264
+C Balance_Inverter_1.OUT0 4.0
+R Balance_Inverter_1.OUT 397
+R Balance_Inverter_3.OUT_B 169
+C a_n1197_n1791#0 6.1
+R a_n1197_n1791# 832
+C Balance_Inverter_3.OUT0 2.1
+R Balance_Inverter_3.OUT 188
+C a_n1480_n399#0 21.9
+R a_n1480_n399# 3835
+C a_n1772_n1791#0 6.7
+R a_n1772_n1791# 1992
+C VDD0 18.2
+R VDD 49436
+= VDD Balance_Inverter_3.Inverter_0.VDD
+= VDD Balance_Inverter_2.Inverter_0.VDD
+= VDD Balance_Inverter_2.VDD
+= VDD Balance_Inverter_1.Inverter_0.VDD
+= VDD Balance_Inverter_1.VDD
+= VDD Balance_Inverter_5.Inverter_0.VDD
+= VDD Balance_Inverter_3.VDD
+= VDD Balance_Inverter_4.Inverter_0.VDD
+= VDD Balance_Inverter_4.VDD
+= VDD Balance_Inverter_0.Inverter_0.VDD
+= VDD Balance_Inverter_0.VDD
+= VDD Balance_Inverter_5.VDD
+R VSS 5861
+= VSS Balance_Inverter_3.Inverter_0.VSS
+= VSS Balance_Inverter_2.Inverter_0.VSS
+= VSS Balance_Inverter_2.VSS
+= VSS Balance_Inverter_1.Inverter_0.VSS
+= VSS Balance_Inverter_1.VSS
+= VSS Balance_Inverter_5.Inverter_0.VSS
+= VSS Balance_Inverter_3.VSS
+= VSS Balance_Inverter_4.Inverter_0.VSS
+= VSS Balance_Inverter_4.VSS
+= VSS Balance_Inverter_0.Inverter_0.VSS
+= VSS Balance_Inverter_0.VSS
+= VSS Balance_Inverter_5.VSS

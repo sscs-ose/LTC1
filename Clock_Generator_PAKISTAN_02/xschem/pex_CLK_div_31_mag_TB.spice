@@ -1,0 +1,38 @@
+** sch_path:
+*+ /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/pex_CLK_div_31_mag_TB.sch
+**.subckt pex_CLK_div_31_mag_TB
+V1 VDD VSS 3.3
+.save i(v1)
+V2 VSS GND 0
+.save i(v2)
+V3 CLK VSS pulse(3.3 0 0 100p 100p 2.50n 5n)
+.save i(v3)
+C5 Q0 VSS 10f m=1
+C1 Q1 VSS 10f m=1
+C2 Q2 VSS 10f m=1
+C3 Q3 VSS 10f m=1
+C4 Q4 VSS 10f m=1
+C6 Vdiv31 VSS 10f m=1
+V5 RST VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v5)
+x1 VSS VDD Q0 Q1 Q2 Q3 Q4 Vdiv31 RST CLK pex_CLK_div_31_mag
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_CLK_div_31_mag.spice
+.control
+save all
+tran 50p 250n
+plot v(CLK) v(Q0)+3.5 v(Q1)+7 v(Q2)+10.5 v(Q3)+14 v(Q4)+17.5 v(Vdiv31)+21
+write pex_CLK_div_31_mag_TB.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

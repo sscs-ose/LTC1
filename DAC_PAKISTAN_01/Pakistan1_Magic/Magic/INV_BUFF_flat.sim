@@ -1,0 +1,17 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x inv_buff_0/Inverter_0.IN VDD OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=578 y=521 pfet_03v3
+x inv_buff_0/Inverter_0.IN VSS OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=578 y=222 nfet_03v3
+x IN VDD inv_buff_0/Inverter_0.IN VDD s=8800,376 d=8800,376 l=56 w=100 x=174 y=521 pfet_03v3
+x IN VSS inv_buff_0/Inverter_0.IN VSS s=6184,328 d=6184,328 l=56 w=50 x=174 y=222 nfet_03v3
+R OUT 20
+= OUT inv_buff_0/Inverter_0.OUT
+R inv_buff_0/Inverter_0.IN 86
+= inv_buff_0/Inverter_0.IN inv_buff_0/Inverter_1.OUT
+R IN 67
+= IN inv_buff_0/Inverter_1.IN
+R VDD 2245
+= VDD inv_buff_0/Inverter_0.VDD
+= VDD inv_buff_0/Inverter_1.VDD
+R VSS 122
+= VSS inv_buff_0/Inverter_0.VSS
+= VSS inv_buff_0/Inverter_1.VSS

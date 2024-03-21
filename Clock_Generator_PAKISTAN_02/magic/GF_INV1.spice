@@ -1,0 +1,15 @@
+* NGSPICE file created from GF_INV_1.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_AQSZEK a_n123_n70# a_35_n70# a_n35_n114# VSUBS
+X0 a_35_n70# a_n35_n114# a_n123_n70# VSUBS nfet_03v3 ad=0.308p pd=2.28u as=0.308p ps=2.28u w=0.7u l=0.35u
+.ends
+
+.subckt pmos_3p3_HBGRPK w_n213_n166# a_35_n35# a_n35_n79# a_n127_n36#
+X0 a_35_n35# a_n35_n79# a_n127_n36# w_n213_n166# pfet_03v3 ad=0.165p pd=1.64u as=0.165p ps=1.64u w=0.35u l=0.35u
+.ends
+
+.subckt GF_INV_1 VDD IN OUT VSS
+Xnmos_3p3_AQSZEK_0 VSS OUT IN VSS nmos_3p3_AQSZEK
+Xpmos_3p3_HBGRPK_0 VDD OUT IN VDD pmos_3p3_HBGRPK
+.ends
+

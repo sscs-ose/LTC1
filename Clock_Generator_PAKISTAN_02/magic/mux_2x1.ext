@@ -1,0 +1,160 @@
+timestamp 1695109904
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use nverterlayout nverterlayout_0 1 0 255 0 -1 220
+use nand2 nand2_2 1 0 633 0 -1 -188
+use nand2 nand2_1 1 0 633 0 1 188
+use nand2 nand2_0 1 0 70 0 1 188
+port "VDD" 4 834 -939 834 -939 m1
+port "I0" 1 986 -579 986 -579 m1
+port "VSS" 6 414 -68 414 -68 m1
+port "OUT" 5 1058 480 1058 480 m1
+port "I1" 2 167 480 167 480 m1
+port "Sel" 0 326 -373 326 -373 v
+node "VDD" 0 119.087 834 -939 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18988 592 0 0 0 0 0 0 0 0
+node "m1_569_n896#" 0 27.1777 569 -896 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1568 162 0 0 0 0 0 0 0 0
+node "I0" 0 44.6228 986 -579 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4062 256 0 0 0 0 0 0 0 0
+node "m1_430_n515#" 1 124.459 430 -515 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19380 794 0 0 0 0 0 0 0 0
+node "m1_646_n25#" 1 132.516 646 -25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21395 888 0 0 0 0 0 0 0 0
+node "VSS" 1 267.59 414 -68 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59833 1526 0 0 0 0 0 0 0 0
+node "OUT" 0 73.8327 1058 480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9999 510 0 0 0 0 0 0 0 0
+node "m1_421_448#" 1 119.242 421 448 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19877 836 0 0 0 0 0 0 0 0
+node "I1" 0 43.3771 167 480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4615 272 0 0 0 0 0 0 0 0
+node "m1_945_548#" 2 333.52 945 548 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12716 636 67388 2108 0 0 0 0 0 0
+node "Sel" 2 387.062 326 -373 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12797 658 71672 2378 0 0 0 0 0 0
+node "m1_645_n729#" 3 419.259 645 -729 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19285 802 98246 3102 0 0 0 0 0 0
+node "m1_256_729#" 0 53.0463 256 729 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5896 310 0 0 0 0 0 0 0 0
+node "w_569_n896#" 1531 4.704 569 -896 nw 1568 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_645_n729#" 15200 1.14 645 -729 nw 380 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_361_n401#" 3410 0.303 361 -401 nw 101 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_83_n28#" 0 0 83 -28 ppd 0 0 0 0 0 0 46181 1914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_645_n729#" "m1_645_n729#" 0.278388
+cap "m1_945_548#" "Sel" 7.09896
+cap "I1" "m1_645_n729#" 0.0342452
+cap "m1_945_548#" "m1_421_448#" 1.42302
+cap "Sel" "m1_646_n25#" 0.199107
+cap "w_569_n896#" "m1_569_n896#" 1.14872
+cap "m1_421_448#" "m1_646_n25#" 12.5111
+cap "Sel" "VSS" 78.6835
+cap "m1_256_729#" "m1_645_n729#" 10.8287
+cap "m1_945_548#" "m1_645_n729#" 161.552
+cap "m1_430_n515#" "m1_646_n25#" 11.8759
+cap "m1_421_448#" "VSS" 11.8979
+cap "VDD" "m1_430_n515#" 4.44116
+cap "OUT" "m1_421_448#" 17.1878
+cap "m1_645_n729#" "m1_646_n25#" 29.8306
+cap "m1_430_n515#" "VSS" 12.1244
+cap "VDD" "m1_645_n729#" 0.857369
+cap "m1_645_n729#" "VSS" 7.81211
+cap "I0" "m1_645_n729#" 1.76455
+cap "m1_421_448#" "Sel" 52.3317
+cap "OUT" "m1_645_n729#" 0.84552
+cap "m1_430_n515#" "Sel" 0.0372795
+cap "m1_421_448#" "m1_430_n515#" 4.70229
+cap "I1" "VSS" 6.94771
+cap "m1_645_n729#" "Sel" 147.044
+cap "m1_421_448#" "m1_645_n729#" 53.8176
+cap "m1_945_548#" "m1_646_n25#" 44.4769
+cap "m1_256_729#" "VSS" 3.91674
+cap "m1_430_n515#" "m1_645_n729#" 55.6173
+cap "m1_945_548#" "VSS" 0.371018
+cap "m1_430_n515#" "m1_569_n896#" 5.85572
+cap "I1" "Sel" 3.91257
+cap "m1_945_548#" "I0" 15.188
+cap "m1_945_548#" "OUT" 109.871
+cap "VDD" "m1_646_n25#" 7.40844
+cap "m1_646_n25#" "VSS" 21.9799
+cap "I1" "m1_421_448#" 11.4261
+cap "m1_256_729#" "Sel" 1.09408
+cap "w_361_n401#" "Sel" 0.0739926
+cap "OUT" "m1_646_n25#" 12.8861
+cap "nverterlayout_0/VSS" "nand2_0/IN2" -2.49602
+cap "nand2_2/OUT" "nand2_1/OUT" 11.6738
+cap "nverterlayout_0/VSS" "nand2_1/OUT" -2.44038
+cap "nverterlayout_0/OUT" "nand2_2/IN1" 0.646117
+cap "nand2_2/IN1" "nand2_2/OUT" -4.64829
+cap "nverterlayout_0/VDD" "nand2_2/OUT" 30.2744
+cap "nverterlayout_0/VSS" "nand2_2/IN1" -0.71289
+cap "nverterlayout_0/OUT" "nverterlayout_0/VDD" 68.6457
+cap "nand2_1/nmos_3p3_5QNVWA_1/a_n116_n44#" "nand2_1/IN2" 0.254847
+cap "nverterlayout_0/VSS" "nverterlayout_0/VDD" 56.0169
+cap "nverterlayout_0/OUT" "nverterlayout_0/IN" 19.2198
+cap "nverterlayout_0/IN" "nand2_2/OUT" -1.54755
+cap "nverterlayout_0/VSS" "nverterlayout_0/IN" 91.1294
+cap "nverterlayout_0/VDD" "nand2_0/IN2" 0.780287
+cap "nand2_0/IN2" "nverterlayout_0/IN" 1.70555
+cap "nand2_2/IN1" "nand2_1/OUT" 0.135761
+cap "nverterlayout_0/VDD" "nand2_1/OUT" 0.0501019
+cap "nverterlayout_0/VSS" "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0379181
+cap "nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" "nand2_2/OUT" 27.3937
+cap "nverterlayout_0/OUT" "nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.253041
+cap "nverterlayout_0/VDD" "nand2_2/IN1" 6.02047
+cap "nand2_1/nmos_3p3_5QNVWA_1/a_n116_n44#" "nand2_2/OUT" 6.0122
+cap "nverterlayout_0/OUT" "nand2_1/IN2" -0.538865
+cap "nand2_1/IN2" "nand2_2/OUT" 1.5651
+cap "nverterlayout_0/VSS" "nand2_1/IN2" 21.9363
+cap "nverterlayout_0/VDD" "nverterlayout_0/IN" 33.0778
+cap "nand2_1/IN2" "nand2_1/OUT" 0.406747
+cap "nverterlayout_0/IN" "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 10.9722
+cap "nand2_2/IN1" "nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" -0.544912
+cap "nverterlayout_0/VDD" "nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" 4.12909
+cap "nverterlayout_0/OUT" "nand2_2/OUT" 24.8871
+cap "nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" "nverterlayout_0/IN" 0.262469
+cap "nand2_1/nmos_3p3_5QNVWA_1/a_n116_n44#" "nverterlayout_0/VDD" 4.12909
+cap "nverterlayout_0/OUT" "nverterlayout_0/VSS" 38.0315
+cap "nverterlayout_0/VSS" "nand2_2/OUT" 50.062
+cap "nverterlayout_0/VDD" "nand2_1/IN2" 4.31531
+cap "nverterlayout_0/IN" "nand2_1/IN2" 8.72117
+cap "nverterlayout_0/VSS" "nand2_0/IN2" -3.24773
+cap "nverterlayout_0/VSS" "nand2_1/IN2" 2.58284
+cap "nand2_0/IN2" "nand2_1/IN2" -11.1142
+cap "nand2_1/IN2" "nverterlayout_0/OUT" -2.04004
+cap "nverterlayout_0/VSS" "nverterlayout_0/VDD" -4.58144
+cap "nverterlayout_0/VSS" "nverterlayout_0/IN" -3.5723
+cap "nand2_0/IN2" "nverterlayout_0/IN" 2.76498
+cap "nverterlayout_0/VDD" "nand2_0/IN2" 0.820634
+cap "nverterlayout_0/VDD" "nverterlayout_0/OUT" 0.00319844
+cap "nverterlayout_0/VSS" "nand2_2/OUT" -2.44976
+cap "nverterlayout_0/IN" "nverterlayout_0/OUT" 0.861572
+cap "nverterlayout_0/IN" "nand2_1/IN2" 88.5678
+cap "nverterlayout_0/VDD" "nand2_1/IN2" 37.3468
+cap "nverterlayout_0/VSS" "nand2_1/OUT" -2.44038
+cap "nand2_1/IN2" "nand2_2/OUT" 3.35232
+cap "nand2_1/IN2" "nand2_1/OUT" -3.87443
+cap "nand2_2/IN1" "nand2_2/OUT" 0.47736
+cap "nverterlayout_0/VDD" "nverterlayout_0/IN" 37.7367
+cap "nverterlayout_0/IN" "nand2_2/OUT" -5.10531
+cap "nverterlayout_0/VDD" "nand2_2/OUT" 14.3027
+cap "nverterlayout_0/IN" "nand2_1/OUT" 9.46422
+cap "nverterlayout_0/VDD" "nand2_1/OUT" 27.447
+cap "nand2_2/OUT" "nand2_1/OUT" -9.28564
+merge "nand2_0/VDD" "nand2_1/VDD" -689.733 -2797 -2212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32048 -1786 0 0 0 0 0 0 0 0
+merge "nand2_1/VDD" "nand2_2/VDD"
+merge "nand2_2/VDD" "VDD"
+merge "VDD" "m1_645_n729#"
+merge "m1_645_n729#" "w_645_n729#"
+merge "w_645_n729#" "nverterlayout_0/VDD"
+merge "nverterlayout_0/VDD" "m1_569_n896#"
+merge "m1_569_n896#" "w_569_n896#"
+merge "w_569_n896#" "w_361_n401#"
+merge "nand2_0/IN1" "nverterlayout_0/IN" -236.075 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9635 -584 0 0 0 0 0 0 0 0
+merge "nverterlayout_0/IN" "Sel"
+merge "nand2_0/OUT" "m1_256_729#" -227.998 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12733 -824 0 0 0 0 0 0 0 0
+merge "m1_256_729#" "nand2_1/IN2"
+merge "nand2_1/IN2" "m1_421_448#"
+merge "nand2_0/VSS" "nand2_1/VSS" -934.275 0 0 0 0 0 0 -9480 -3092 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -62227 -4784 0 0 0 0 0 0 0 0
+merge "nand2_1/VSS" "nand2_2/VSS"
+merge "nand2_2/VSS" "m1_646_n25#"
+merge "m1_646_n25#" "nverterlayout_0/VSS"
+merge "nverterlayout_0/VSS" "VSS"
+merge "VSS" "a_83_n28#"
+merge "nand2_1/IN1" "nand2_2/OUT" -171.931 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8834 -542 0 0 0 0 0 0 0 0
+merge "nand2_2/OUT" "m1_945_548#"
+merge "nand2_2/IN2" "nverterlayout_0/OUT" -205.366 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7481 -494 0 0 0 0 0 0 0 0
+merge "nverterlayout_0/OUT" "m1_430_n515#"
+merge "nand2_2/IN1" "I0" -47.4821 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3994 -254 0 0 0 0 0 0 0 0
+merge "nand2_0/IN2" "I1" -44.1771 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4615 -272 0 0 0 0 0 0 0 0
+merge "nand2_1/OUT" "OUT" -87.7281 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6765 -378 0 0 0 0 0 0 0 0

@@ -1,0 +1,28 @@
+** sch_path: /home/shahid/Music/resistor/200 _ohm/xschem/200_OHM.sch
+**.subckt 200_OHM VDD R1_IN COMMON R2_IN
+*.iopin VDD
+*.iopin R1_IN
+*.iopin COMMON
+*.iopin R2_IN
+XR28 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR29 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR30 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR31 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR6 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR7 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR8 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR9 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR12 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR13 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR14 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR15 COMMON R1_IN VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR1 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR2 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR3 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR4 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR5 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR10 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR11 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+XR16 R2_IN COMMON VDD ppolyf_u r_width=1e-6 r_length=3.9e-6 m=1
+**.ends
+.end

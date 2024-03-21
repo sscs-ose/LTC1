@@ -1,0 +1,21 @@
+* NGSPICE file created from cap3p_layout_flat.ext - technology: gf180mcuC
+
+.subckt cap3p_layout_flat Pp Nn
+X0 Nn.t0 Pp.t0 cap_mim_2f0_m4m5_noshield c_width=42.5u c_length=42.5u
+R0 Nn.n1 Nn.t0 2.35324
+R1 Nn.n1 Nn.n0 2.26041
+R2 Nn Nn.n1 0.00224402
+R3 Pp.n1 Pp.t0 4.37478
+R4 Pp.n1 Pp.n0 2.25957
+R5 Pp Pp.n1 0.000726629
+C0 Nn Pp 3.64f
+C1 Nn VSUBS 19.7f
+C2 Pp VSUBS 8.61f
+C3 Pp.t0 VSUBS 3.15f
+C4 Pp.n0 VSUBS 0.168f
+C5 Pp.n1 VSUBS 0.267f
+C6 Nn.t0 VSUBS 1.88f
+C7 Nn.n0 VSUBS 0.0322f
+C8 Nn.n1 VSUBS 1.68f
+.ends
+

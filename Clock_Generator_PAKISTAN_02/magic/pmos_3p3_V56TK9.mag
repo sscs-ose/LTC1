@@ -1,0 +1,98 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1691568605
+<< error_p >>
+rect -121 233 -110 279
+rect 53 233 64 279
+rect -121 -279 -110 -233
+rect 53 -279 64 -233
+<< nwell >>
+rect -372 -408 372 408
+<< pmos >>
+rect -122 -200 -52 200
+rect 52 -200 122 200
+<< pdiff >>
+rect -210 187 -122 200
+rect -210 -187 -197 187
+rect -151 -187 -122 187
+rect -210 -200 -122 -187
+rect -52 187 52 200
+rect -52 -187 -23 187
+rect 23 -187 52 187
+rect -52 -200 52 -187
+rect 122 187 210 200
+rect 122 -187 151 187
+rect 197 -187 210 187
+rect 122 -200 210 -187
+<< pdiffc >>
+rect -197 -187 -151 187
+rect -23 -187 23 187
+rect 151 -187 197 187
+<< nsubdiff >>
+rect -348 312 348 384
+rect -348 268 -276 312
+rect -348 -268 -335 268
+rect -289 -268 -276 268
+rect 276 268 348 312
+rect -348 -312 -276 -268
+rect 276 -268 289 268
+rect 335 -268 348 268
+rect 276 -312 348 -268
+rect -348 -384 348 -312
+<< nsubdiffcont >>
+rect -335 -268 -289 268
+rect 289 -268 335 268
+<< polysilicon >>
+rect -123 279 -51 292
+rect -123 233 -110 279
+rect -64 233 -51 279
+rect -123 220 -51 233
+rect 51 279 123 292
+rect 51 233 64 279
+rect 110 233 123 279
+rect 51 220 123 233
+rect -122 200 -52 220
+rect 52 200 122 220
+rect -122 -220 -52 -200
+rect 52 -220 122 -200
+rect -123 -233 -51 -220
+rect -123 -279 -110 -233
+rect -64 -279 -51 -233
+rect -123 -292 -51 -279
+rect 51 -233 123 -220
+rect 51 -279 64 -233
+rect 110 -279 123 -233
+rect 51 -292 123 -279
+<< polycontact >>
+rect -110 233 -64 279
+rect 64 233 110 279
+rect -110 -279 -64 -233
+rect 64 -279 110 -233
+<< metal1 >>
+rect -335 325 335 371
+rect -335 268 -289 325
+rect -121 233 -110 279
+rect -64 233 -53 279
+rect 53 233 64 279
+rect 110 233 121 279
+rect 289 268 335 325
+rect -197 187 -151 198
+rect -197 -198 -151 -187
+rect -23 187 23 198
+rect -23 -198 23 -187
+rect 151 187 197 198
+rect 151 -198 197 -187
+rect -335 -325 -289 -268
+rect -121 -279 -110 -233
+rect -64 -279 -53 -233
+rect 53 -279 64 -233
+rect 110 -279 121 -233
+rect 289 -325 335 -268
+rect -335 -371 335 -325
+<< properties >>
+string FIXED_BBOX -312 -348 312 348
+string gencell pmos_3p3
+string library gf180mcu
+string parameters w 2 l 0.35 m 1 nf 2 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 full_metal 1 compatible {pmos_3p3 pmos_6p0}
+<< end >>

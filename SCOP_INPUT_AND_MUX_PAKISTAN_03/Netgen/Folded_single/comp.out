@@ -1,0 +1,58 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0_m4m5_noshield are black boxes.
+Equate elements:  no current cell.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0_m4m5_noshield are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Equate elements:  no current cell.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell pmos_3p3_9K6RD7 in circuit fold_cascode_opamp_mag.spice (0)(24 instances)
+Flattening unmatched subcell pmos_3p3_MA2VAR#0 in circuit fold_cascode_opamp_mag.spice (0)(32 instances)
+Flattening unmatched subcell pmos_3p3_VK6RD7 in circuit fold_cascode_opamp_mag.spice (0)(8 instances)
+Flattening unmatched subcell pmos_3p3_HWZ2RY in circuit fold_cascode_opamp_mag.spice (0)(3 instances)
+Flattening unmatched subcell nmos_3p3_276RTJ#0 in circuit fold_cascode_opamp_mag.spice (0)(12 instances)
+Flattening unmatched subcell nmos_3p3_M86RTJ#0 in circuit fold_cascode_opamp_mag.spice (0)(40 instances)
+Flattening unmatched subcell pmos_3p3_MAJNAR in circuit fold_cascode_opamp_mag.spice (0)(6 instances)
+Flattening unmatched subcell pmos_3p3_VTYQD7 in circuit fold_cascode_opamp_mag.spice (0)(3 instances)
+Flattening unmatched subcell cap_mim_2p0fF_XHV85N in circuit fold_cascode_opamp_mag.spice (0)(1 instance)
+Flattening unmatched subcell nmos_3p3_NQ5EG7 in circuit fold_cascode_opamp_mag.spice (0)(2 instances)
+Flattening unmatched subcell nmos_3p3_QNHHV5 in circuit fold_cascode_opamp_mag.spice (0)(8 instances)
+Flattening unmatched subcell nmos_3p3_4F3WC4 in circuit fold_cascode_opamp_mag.spice (0)(2 instances)
+Flattening unmatched subcell pmos_3p3_H6V2RY in circuit fold_cascode_opamp_mag.spice (0)(2 instances)
+Flattening unmatched subcell pmos_3p3_M22VUP in circuit fold_cascode_opamp_mag.spice (0)(4 instances)
+Flattening unmatched subcell pmos_3p3_M22VAR#0 in circuit fold_cascode_opamp_mag.spice (0)(10 instances)
+Flattening unmatched subcell nmos_3p3_5F3WC4 in circuit fold_cascode_opamp_mag.spice (0)(1 instance)
+Flattening unmatched subcell pmos_3p3_M2JNAR in circuit fold_cascode_opamp_mag.spice (0)(3 instances)
+Flattening unmatched subcell pmos_3p3_MJGNAR in circuit fold_cascode_opamp_mag.spice (0)(6 instances)
+Flattening unmatched subcell nmos_3p3_676RTJ in circuit fold_cascode_opamp_mag.spice (0)(2 instances)
+Flattening unmatched subcell ppolyf_u_WRMTN3 in circuit fold_cascode_opamp_mag.spice (0)(1 instance)
+Flattening unmatched subcell nmos_3p3_M56RTJ in circuit fold_cascode_opamp_mag.spice (0)(4 instances)
+Flattening unmatched subcell pmos_3p3_9BLZD7 in circuit fold_cascode_opamp_mag.spice (0)(1 instance)
+Flattening unmatched subcell nmos_3p3_N3WVC4 in circuit fold_cascode_opamp_mag.spice (0)(2 instances)
+
+Class fold_cascode_opamp_mag.spice (0):  Merged 459 parallel devices.
+Class folded_single.spice (1):  Merged 11 parallel devices.
+Subcircuit summary:
+Circuit 1: fold_cascode_opamp_mag.spice    |Circuit 2: folded_single.spice             
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (308->22)                        |pfet_03v3 (27->22)                         
+nfet_03v3 (186->18)                        |nfet_03v3 (21->18)                         
+cap_mim_2f0_m4m5_noshield (2->1)           |cap_mim_2f0_m4m5_noshield (2->1)           
+ppolyf_u (6->2)                            |ppolyf_u (6->2)                            
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes fold_cascode_opamp_mag.spice and folded_single.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

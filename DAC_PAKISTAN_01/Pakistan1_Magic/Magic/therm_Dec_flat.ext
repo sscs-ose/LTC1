@@ -1,0 +1,592 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "D7" 12 4200 -4382 4200 -4382 m1
+port "D6" 11 2471 -3426 2471 -3426 m1
+port "D5" 9 3737 -2461 3737 -2461 m1
+port "D3" 8 3741 -1506 3741 -1506 m1
+port "D4" 7 3372 -543 3372 -543 m1
+port "D2" 6 3367 -373 3367 -373 v
+port "D1" 5 3562 396 3562 396 m1
+port "B3" 2 18 270 18 270 v
+port "B2" 1 4 398 4 398 m1
+port "B1" 0 34 536 34 536 m1
+port "VDD" 3 1320 841 1320 841 m1
+port "VSS" 4 1314 46 1314 46 m1
+node "INV_BUFF_6.Inverter_0.OUT" 20 205.994 3937 -4558 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34255 1298 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_6.Inverter_0.OUT" "INV_BUFF_6.OUT"
+equiv "INV_BUFF_6.Inverter_0.OUT" "D7"
+node "INV_BUFF_6.Inverter_1.OUT" 86 407.754 3533 -4558 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_6.Inverter_1.OUT" "INV_BUFF_6.Inverter_0.IN"
+node "INV_BUFF_6.Inverter_1.IN" 87 460.73 2968 -4558 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56784 1900 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_6.Inverter_1.IN" "INV_BUFF_6.IN"
+equiv "INV_BUFF_6.Inverter_1.IN" "OR_3.Inverter_0.OUT"
+equiv "INV_BUFF_6.Inverter_1.IN" "OR_3.OUT"
+node "OR_3.Inverter_0.IN" 118 749.217 2000 -4556 ndif 0 0 0 0 12368 656 10400 408 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79980 3242 0 0 0 0 0 0 0 0
+node "a_1840_n4206#" 72 139.463 1840 -4206 pdif 0 0 0 0 0 0 28000 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42348 1958 31148 1182 0 0 0 0 0 0
+node "OR_4.Inverter_0.IN" 118 751.134 428 -4556 ndif 0 0 0 0 12368 656 10400 408 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79980 3242 0 0 0 0 0 0 0 0
+node "a_268_n4206#" 72 69.6425 268 -4206 pdif 0 0 0 0 0 0 28000 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42348 1958 31148 1182 0 0 0 0 0 0
+node "OR_4.Inverter_0.OUT" 149 593.846 1396 -4558 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 53252 2044 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52907 2008 0 0 0 0 0 0 0 0
+equiv "OR_4.Inverter_0.OUT" "OR_4.OUT"
+equiv "OR_4.Inverter_0.OUT" "OR_3.B"
+node "INV_BUFF_5.Inverter_0.OUT" 20 197.04 2215 -3596 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34114 1292 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_5.Inverter_0.OUT" "INV_BUFF_5.OUT"
+equiv "INV_BUFF_5.Inverter_0.OUT" "D6"
+node "INV_BUFF_5.Inverter_1.OUT" 86 398.995 1811 -3596 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_5.Inverter_1.OUT" "INV_BUFF_5.Inverter_0.IN"
+node "OR_2.Inverter_0.OUT" 86 380.485 1396 -3596 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49921 1530 0 0 0 0 0 0 0 0
+equiv "OR_2.Inverter_0.OUT" "OR_2.OUT"
+equiv "OR_2.Inverter_0.OUT" "INV_BUFF_5.Inverter_1.IN"
+equiv "OR_2.Inverter_0.OUT" "INV_BUFF_5.IN"
+node "OR_2.Inverter_0.IN" 118 746.52 428 -3594 ndif 0 0 0 0 12368 656 10400 408 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79980 3242 0 0 0 0 0 0 0 0
+node "a_268_n3244#" 72 88.5694 268 -3244 pdif 0 0 0 0 0 0 28000 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42348 1958 31148 1182 0 0 0 0 0 0
+node "a_268_n2622#" 38 188.4 268 -2622 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "INV_BUFF_4.Inverter_0.OUT" 20 193.169 3504 -2636 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33503 1266 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_4.Inverter_0.OUT" "INV_BUFF_4.OUT"
+equiv "INV_BUFF_4.Inverter_0.OUT" "D5"
+node "INV_BUFF_4.Inverter_1.OUT" 86 401.456 3100 -2636 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_4.Inverter_1.OUT" "INV_BUFF_4.Inverter_0.IN"
+node "OR_1.Inverter_0.OUT" 86 381.949 2685 -2636 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49921 1530 0 0 0 0 0 0 0 0
+equiv "OR_1.Inverter_0.OUT" "OR_1.OUT"
+equiv "OR_1.Inverter_0.OUT" "INV_BUFF_4.Inverter_1.IN"
+equiv "OR_1.Inverter_0.OUT" "INV_BUFF_4.IN"
+node "OR_1.Inverter_0.IN" 118 739.607 1717 -2634 ndif 0 0 0 0 12368 656 10400 408 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79980 3242 0 0 0 0 0 0 0 0
+node "a_1557_n2284#" 72 122.224 1557 -2284 pdif 0 0 0 0 0 0 28000 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42348 1958 31148 1182 0 0 0 0 0 0
+node "AND_4.Inverter_0.IN" 117 400.381 268 -2283 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "OR_1.B" 149 601.656 1076 -2615 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 53252 2044 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55121 2124 0 0 0 0 0 0 0 0
+equiv "OR_1.B" "AND_4.Inverter_0.OUT"
+equiv "OR_1.B" "AND_4.OUT"
+node "a_1881_n1685#" 38 188.4 1881 -1685 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "INV_BUFF_2.Inverter_0.OUT" 20 194.633 3508 -1678 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33221 1254 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_2.Inverter_0.OUT" "INV_BUFF_2.OUT"
+equiv "INV_BUFF_2.Inverter_0.OUT" "D3"
+node "INV_BUFF_2.Inverter_1.OUT" 86 401.757 3104 -1678 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_2.Inverter_1.OUT" "INV_BUFF_2.Inverter_0.IN"
+node "INV_BUFF_2.Inverter_1.IN" 86 382.972 2689 -1678 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49918 1530 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_2.Inverter_1.IN" "INV_BUFF_2.IN"
+equiv "INV_BUFF_2.Inverter_1.IN" "AND_3.Inverter_0.OUT"
+equiv "INV_BUFF_2.Inverter_1.IN" "AND_3.OUT"
+node "AND_3.Inverter_0.IN" 117 385.607 1881 -1346 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "OR_0.Inverter_0.OUT" 131 524.287 1396 -1678 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 41917 1696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58127 2256 0 0 0 0 0 0 0 0
+equiv "OR_0.Inverter_0.OUT" "OR_0.OUT"
+equiv "OR_0.Inverter_0.OUT" "AND_3.B"
+node "OR_0.Inverter_0.IN" 118 758.488 428 -1676 ndif 0 0 0 0 12368 656 10400 408 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79980 3242 0 0 0 0 0 0 0 0
+node "a_268_n1326#" 72 64.0815 268 -1326 pdif 0 0 0 0 0 0 28000 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42348 1958 31148 1182 0 0 0 0 0 0
+node "a_268_n724#" 38 190.527 268 -724 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "INV_BUFF_3.Inverter_0.OUT" 20 171.26 3137 -717 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34114 1292 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_3.Inverter_0.OUT" "INV_BUFF_3.OUT"
+equiv "INV_BUFF_3.Inverter_0.OUT" "D4"
+node "INV_BUFF_1.Inverter_0.OUT" 23 661.52 2005 -717 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59976 2350 81683 2960 0 0 0 0 0 0
+equiv "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_1.OUT"
+equiv "INV_BUFF_1.Inverter_0.OUT" "D2"
+node "INV_BUFF_3.Inverter_1.OUT" 86 404.316 2733 -717 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_3.Inverter_1.OUT" "INV_BUFF_3.Inverter_0.IN"
+node "INV_BUFF_1.Inverter_1.OUT" 86 393.218 1601 -717 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_1.Inverter_1.OUT" "INV_BUFF_1.Inverter_0.IN"
+node "INV_BUFF_1.Inverter_1.IN" 87 436.56 1076 -717 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54873 1820 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_1.Inverter_1.IN" "INV_BUFF_1.IN"
+equiv "INV_BUFF_1.Inverter_1.IN" "AND_2.Inverter_0.OUT"
+equiv "INV_BUFF_1.Inverter_1.IN" "AND_2.OUT"
+node "AND_2.Inverter_0.IN" 117 400.439 268 -385 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "a_1628_215#" 38 188.4 1628 215 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "INV_BUFF_0.Inverter_0.OUT" 20 187.42 3334 222 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32422 1220 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_0.Inverter_0.OUT" "INV_BUFF_0.OUT"
+equiv "INV_BUFF_0.Inverter_0.OUT" "D1"
+node "a_268_215#" 38 188.4 268 215 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "INV_BUFF_0.Inverter_1.OUT" 86 403.127 2930 222 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46149 1578 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_0.Inverter_1.OUT" "INV_BUFF_0.Inverter_0.IN"
+node "INV_BUFF_0.Inverter_1.IN" 87 401.447 2436 222 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53447 1758 0 0 0 0 0 0 0 0
+equiv "INV_BUFF_0.Inverter_1.IN" "INV_BUFF_0.IN"
+equiv "INV_BUFF_0.Inverter_1.IN" "AND_0.Inverter_0.OUT"
+equiv "INV_BUFF_0.Inverter_1.IN" "AND_0.OUT"
+node "AND_0.Inverter_0.IN" 117 392.833 1628 554 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "AND_1.Inverter_0.OUT" 131 565.73 1076 222 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 41917 1696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61145 2390 0 0 0 0 0 0 0 0
+equiv "AND_1.Inverter_0.OUT" "AND_1.OUT"
+equiv "AND_1.Inverter_0.OUT" "AND_0.B"
+node "OR_3.A" 542 4707.18 212 -1370 p 0 0 0 0 0 0 0 0 0 0 0 0 190901 7484 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 174899 7396 506245 18160 0 0 0 0 0 0
+equiv "OR_3.A" "OR_0.B"
+equiv "OR_3.A" "AND_0.A"
+equiv "OR_3.A" "AND_4.B"
+equiv "OR_3.A" "B3"
+node "AND_1.Inverter_0.IN" 117 402.665 268 554 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "OR_4.B" 809 3426.37 0 -2345 p 0 0 0 0 0 0 0 0 0 0 0 0 286070 11224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 297681 12608 283377 10144 0 0 0 0 0 0
+equiv "OR_4.B" "OR_2.B"
+equiv "OR_4.B" "OR_0.A"
+equiv "OR_4.B" "AND_1.B"
+equiv "OR_4.B" "AND_2.B"
+equiv "OR_4.B" "AND_4.A"
+equiv "OR_4.B" "B2"
+node "OR_4.A" 901 4390.03 0 -447 p 0 0 0 0 0 0 0 0 0 0 0 0 319601 12436 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 406199 16078 657259 23594 0 0 0 0 0 0
+equiv "OR_4.A" "OR_2.A"
+equiv "OR_4.A" "OR_1.A"
+equiv "OR_4.A" "AND_1.A"
+equiv "OR_4.A" "INV_BUFF_3.Inverter_1.IN"
+equiv "OR_4.A" "INV_BUFF_3.IN"
+equiv "OR_4.A" "AND_2.A"
+equiv "OR_4.A" "AND_3.A"
+equiv "OR_4.A" "B1"
+node "INV_BUFF_6.Inverter_1.VDD" 3939 48733.9 38 -4336 nw 9063035 50398 0 0 1308900 37816 387200 16544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3971572 72920 281059 10032 0 0 0 0 0 0
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_4.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_4.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_3.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_3.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_2.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_2.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_1.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_0.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "OR_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_1.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_0.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_3.Inverter_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_3.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_3.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_2.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_2.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_3.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_3.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_4.Inverter_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_4.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_4.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_4.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "AND_4.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_5.Inverter_1.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_5.Inverter_0.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_5.VDD"
+equiv "INV_BUFF_6.Inverter_1.VDD" "VDD"
+substrate "INV_BUFF_6.Inverter_1.VSS" 0 0 64 -2813 ppd 0 0 0 0 254256 13032 1335789 39730 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2925071 58344 280875 10052 0 0 0 0 0 0
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_6.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_6.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_4.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_4.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_3.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_3.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_2.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_2.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_1.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_0.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "OR_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_0.Inverter_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_0.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_1.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_0.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_3.Inverter_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_3.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_3.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_1.Inverter_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_1.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_2.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_2.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_2.Inverter_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_2.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_2.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_3.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_3.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_4.Inverter_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_4.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_4.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_4.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "AND_4.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_5.Inverter_1.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_5.Inverter_0.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_5.VSS"
+equiv "INV_BUFF_6.Inverter_1.VSS" "VSS"
+cap "OR_1.Inverter_0.OUT" "INV_BUFF_1.Inverter_0.OUT" 0.0314019
+cap "OR_4.A" "a_268_n1326#" 189.752
+cap "a_1628_215#" "AND_1.Inverter_0.OUT" 155.402
+cap "OR_4.Inverter_0.OUT" "OR_4.Inverter_0.IN" 123.128
+cap "a_1840_n4206#" "INV_BUFF_5.Inverter_0.OUT" 2.30636
+cap "INV_BUFF_6.Inverter_1.VDD" "a_1840_n4206#" 900.866
+cap "INV_BUFF_6.Inverter_1.IN" "INV_BUFF_6.Inverter_1.OUT" 120.18
+cap "INV_BUFF_1.Inverter_1.IN" "OR_3.A" 1.92245
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_3.Inverter_0.IN" 308.26
+cap "OR_4.A" "OR_0.Inverter_0.OUT" 183.951
+cap "a_268_215#" "OR_4.A" 3.20871
+cap "INV_BUFF_6.Inverter_1.VDD" "a_1628_215#" 2.53352
+cap "a_268_n2622#" "OR_4.A" 19.1759
+cap "AND_4.Inverter_0.IN" "a_1557_n2284#" 0.0788269
+cap "OR_2.Inverter_0.OUT" "OR_4.Inverter_0.OUT" 0.818856
+cap "AND_1.Inverter_0.IN" "AND_1.Inverter_0.OUT" 113.544
+cap "AND_1.Inverter_0.IN" "AND_2.Inverter_0.IN" 2.18373
+cap "OR_1.Inverter_0.IN" "AND_3.Inverter_0.IN" 2.03269
+cap "AND_2.Inverter_0.IN" "a_268_n1326#" 3.44079
+cap "INV_BUFF_6.Inverter_1.VDD" "AND_1.Inverter_0.IN" 579.691
+cap "INV_BUFF_0.Inverter_1.OUT" "AND_1.Inverter_0.OUT" 0.0245713
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_1.Inverter_0.IN" 313.017
+cap "a_268_n4206#" "OR_3.A" 166.419
+cap "OR_4.A" "INV_BUFF_2.Inverter_1.IN" 0.497148
+cap "OR_0.Inverter_0.OUT" "AND_3.Inverter_0.IN" 129.156
+cap "AND_1.Inverter_0.IN" "OR_4.B" 124.339
+cap "INV_BUFF_1.Inverter_0.OUT" "a_1557_n2284#" 0.117337
+cap "OR_1.B" "a_1557_n2284#" 24.2097
+cap "INV_BUFF_6.Inverter_1.VDD" "a_268_n1326#" 887.848
+cap "INV_BUFF_0.Inverter_1.IN" "OR_4.A" 0.491887
+cap "a_1881_n1685#" "a_1557_n2284#" 1.39109
+cap "a_268_n3244#" "AND_4.Inverter_0.IN" 2.36471
+cap "OR_4.A" "INV_BUFF_3.Inverter_0.OUT" 0.131389
+cap "a_1840_n4206#" "OR_3.A" 172.805
+cap "OR_4.A" "OR_4.Inverter_0.OUT" 1.52159
+cap "INV_BUFF_4.Inverter_1.OUT" "INV_BUFF_6.Inverter_1.IN" 0.210278
+cap "OR_4.B" "a_268_n1326#" 166.277
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_1.OUT" 405.934
+cap "OR_3.Inverter_0.IN" "OR_3.A" 261.025
+cap "INV_BUFF_5.Inverter_0.OUT" "OR_0.Inverter_0.OUT" 0.00245692
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_0.Inverter_0.OUT" 386.445
+cap "a_268_n724#" "a_268_n1326#" 2.72037
+cap "a_268_215#" "INV_BUFF_6.Inverter_1.VDD" 2.53352
+cap "OR_0.Inverter_0.OUT" "OR_4.B" 0.140642
+cap "a_268_n2622#" "INV_BUFF_6.Inverter_1.VDD" 2.53352
+cap "a_1628_215#" "OR_3.A" 1.05915
+cap "a_268_215#" "OR_4.B" 155.545
+cap "AND_4.Inverter_0.IN" "OR_1.B" 119.863
+cap "a_268_n2622#" "OR_4.B" 1.17643
+cap "AND_3.Inverter_0.IN" "INV_BUFF_2.Inverter_1.IN" 125.373
+cap "INV_BUFF_2.Inverter_1.OUT" "OR_0.Inverter_0.OUT" 0.0289762
+cap "INV_BUFF_0.Inverter_1.OUT" "INV_BUFF_3.Inverter_1.OUT" 0.122237
+cap "a_268_n4206#" "a_1840_n4206#" 3.93977
+cap "OR_4.A" "INV_BUFF_1.Inverter_1.OUT" 43.8064
+cap "INV_BUFF_0.Inverter_1.IN" "AND_1.Inverter_0.OUT" 0.216581
+cap "INV_BUFF_4.Inverter_1.OUT" "OR_1.Inverter_0.OUT" 126.113
+cap "AND_1.Inverter_0.IN" "OR_3.A" 95.0518
+cap "OR_2.Inverter_0.OUT" "INV_BUFF_5.Inverter_1.OUT" 126.113
+cap "OR_1.Inverter_0.IN" "OR_3.A" 0.0695968
+cap "OR_1.Inverter_0.OUT" "OR_4.A" 0.274012
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_1.IN" 416.708
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_0.Inverter_0.OUT" 1.24533
+cap "OR_0.Inverter_0.IN" "AND_4.Inverter_0.IN" 0.129439
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_1.IN" 436.99
+cap "a_1840_n4206#" "OR_3.Inverter_0.IN" 162.324
+cap "OR_3.A" "a_268_n1326#" 19.9077
+cap "INV_BUFF_1.Inverter_1.IN" "OR_0.Inverter_0.OUT" 0.0924641
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_3.Inverter_0.OUT" 132.708
+cap "INV_BUFF_4.Inverter_1.OUT" "INV_BUFF_4.Inverter_0.OUT" 114.45
+cap "INV_BUFF_4.Inverter_0.OUT" "OR_4.A" 0.0219378
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.Inverter_1.IN" 410.179
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_4.Inverter_0.OUT" 393.136
+cap "OR_2.Inverter_0.OUT" "a_1557_n2284#" 1.16299
+cap "AND_4.Inverter_0.IN" "OR_2.Inverter_0.IN" 0.0482543
+cap "INV_BUFF_0.Inverter_1.OUT" "OR_3.A" 0.107737
+cap "a_268_215#" "OR_3.A" 15.3963
+cap "INV_BUFF_2.Inverter_1.OUT" "INV_BUFF_2.Inverter_1.IN" 126.11
+cap "a_268_n3244#" "OR_2.Inverter_0.IN" 162.324
+cap "INV_BUFF_3.Inverter_1.OUT" "INV_BUFF_2.Inverter_1.IN" 1.47469
+cap "INV_BUFF_1.Inverter_1.OUT" "AND_3.Inverter_0.IN" 0.175143
+cap "INV_BUFF_1.Inverter_1.OUT" "AND_1.Inverter_0.OUT" 2.17653
+cap "INV_BUFF_1.Inverter_0.OUT" "AND_0.Inverter_0.IN" 0.109536
+cap "a_268_n2622#" "OR_3.A" 155.454
+cap "INV_BUFF_3.Inverter_1.OUT" "INV_BUFF_0.Inverter_1.IN" 0.155106
+cap "OR_4.A" "INV_BUFF_5.Inverter_1.OUT" 1.5284
+cap "OR_0.Inverter_0.IN" "OR_1.B" 0.0797471
+cap "INV_BUFF_2.Inverter_1.OUT" "INV_BUFF_3.Inverter_0.OUT" 0.00868935
+cap "a_1881_n1685#" "OR_0.Inverter_0.IN" 0.193879
+cap "INV_BUFF_3.Inverter_1.OUT" "INV_BUFF_3.Inverter_0.OUT" 114.513
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_1.OUT" 407.59
+cap "a_1840_n4206#" "OR_1.Inverter_0.IN" 0.447616
+cap "OR_2.Inverter_0.IN" "OR_1.B" 0.100981
+cap "OR_4.A" "a_1557_n2284#" 184.653
+cap "INV_BUFF_1.Inverter_1.OUT" "OR_4.B" 0.0231102
+cap "AND_1.Inverter_0.IN" "a_1628_215#" 0.160698
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_1.Inverter_0.OUT" 415.122
+cap "INV_BUFF_0.Inverter_1.IN" "OR_3.A" 0.343784
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_4.Inverter_0.OUT" 125.675
+cap "OR_4.Inverter_0.OUT" "OR_3.A" 478.005
+cap "INV_BUFF_6.Inverter_1.IN" "OR_3.A" 0.29092
+cap "OR_2.Inverter_0.OUT" "OR_1.B" 0.547478
+cap "AND_4.Inverter_0.IN" "OR_4.A" 91.1552
+cap "OR_0.Inverter_0.IN" "OR_2.Inverter_0.IN" 0.43736
+cap "a_268_n3244#" "OR_4.A" 202.476
+cap "AND_3.Inverter_0.IN" "a_1557_n2284#" 0.589365
+cap "OR_2.Inverter_0.IN" "OR_4.Inverter_0.IN" 2.09351
+cap "INV_BUFF_1.Inverter_1.IN" "INV_BUFF_1.Inverter_1.OUT" 121.355
+cap "INV_BUFF_5.Inverter_0.OUT" "INV_BUFF_5.Inverter_1.OUT" 114.513
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_5.Inverter_1.OUT" 406.863
+cap "a_268_n4206#" "OR_4.Inverter_0.OUT" 0.215696
+cap "INV_BUFF_1.Inverter_1.OUT" "OR_3.A" 0.00326613
+cap "INV_BUFF_6.Inverter_1.VDD" "a_1557_n2284#" 909.703
+cap "OR_0.Inverter_0.OUT" "OR_1.Inverter_0.IN" 0.00275066
+cap "a_268_215#" "AND_1.Inverter_0.IN" 60.8117
+cap "INV_BUFF_1.Inverter_0.OUT" "OR_4.A" 252.032
+cap "OR_4.A" "OR_1.B" 368.635
+cap "OR_2.Inverter_0.OUT" "OR_2.Inverter_0.IN" 128.47
+cap "OR_4.B" "a_1557_n2284#" 0.0514515
+cap "OR_0.Inverter_0.OUT" "a_268_n1326#" 0.0160211
+cap "a_1840_n4206#" "OR_4.Inverter_0.OUT" 24.2097
+cap "a_1881_n1685#" "OR_4.A" 1.78408
+cap "AND_4.Inverter_0.IN" "AND_2.Inverter_0.IN" 0.443603
+cap "OR_3.Inverter_0.IN" "OR_4.Inverter_0.OUT" 43.9577
+cap "INV_BUFF_6.Inverter_1.IN" "OR_3.Inverter_0.IN" 124.811
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_0.OUT" 123.222
+cap "OR_4.A" "AND_0.Inverter_0.IN" 6.5173
+cap "INV_BUFF_6.Inverter_1.VDD" "AND_4.Inverter_0.IN" 586.322
+cap "OR_0.Inverter_0.IN" "OR_4.A" 87.494
+cap "AND_4.Inverter_0.IN" "OR_4.B" 10.6201
+cap "a_268_n3244#" "INV_BUFF_6.Inverter_1.VDD" 893.055
+cap "INV_BUFF_6.Inverter_1.OUT" "INV_BUFF_6.Inverter_0.OUT" 114.528
+cap "AND_1.Inverter_0.OUT" "INV_BUFF_0.Inverter_0.OUT" 0.0123983
+cap "INV_BUFF_1.Inverter_0.OUT" "AND_3.Inverter_0.IN" 2.87632
+cap "INV_BUFF_1.Inverter_0.OUT" "AND_1.Inverter_0.OUT" 0.00326613
+cap "INV_BUFF_1.Inverter_0.OUT" "AND_2.Inverter_0.IN" 0.192276
+cap "OR_3.A" "INV_BUFF_5.Inverter_1.OUT" 0.105976
+cap "a_268_n3244#" "OR_4.B" 24.223
+cap "OR_4.A" "OR_4.Inverter_0.IN" 258.492
+cap "OR_4.A" "OR_2.Inverter_0.IN" 261.102
+cap "a_1881_n1685#" "AND_3.Inverter_0.IN" 60.8117
+cap "INV_BUFF_2.Inverter_0.OUT" "INV_BUFF_2.Inverter_1.OUT" 114.42
+cap "INV_BUFF_1.Inverter_1.IN" "a_1557_n2284#" 0.00801215
+cap "OR_1.Inverter_0.IN" "OR_4.Inverter_0.OUT" 0.0408627
+cap "a_1628_215#" "INV_BUFF_1.Inverter_1.OUT" 0.0924633
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_0.OUT" 331.874
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_0.OUT" 125.024
+cap "OR_0.Inverter_0.OUT" "INV_BUFF_2.Inverter_1.IN" 0.216581
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_1.B" 414.003
+cap "OR_3.A" "a_1557_n2284#" 0.0919334
+cap "INV_BUFF_0.Inverter_1.OUT" "INV_BUFF_0.Inverter_1.IN" 122.442
+cap "AND_1.Inverter_0.OUT" "AND_0.Inverter_0.IN" 128.732
+cap "INV_BUFF_6.Inverter_1.VDD" "a_1881_n1685#" 2.53352
+cap "OR_1.B" "OR_4.B" 0.0156831
+cap "INV_BUFF_1.Inverter_0.OUT" "OR_4.B" 0.0118628
+cap "OR_2.Inverter_0.OUT" "OR_4.A" 0.201653
+cap "INV_BUFF_0.Inverter_1.OUT" "INV_BUFF_3.Inverter_0.OUT" 0.137296
+cap "a_1881_n1685#" "OR_4.B" 0.00137112
+cap "OR_0.Inverter_0.IN" "AND_3.Inverter_0.IN" 0.902587
+cap "OR_0.Inverter_0.IN" "AND_2.Inverter_0.IN" 0.0503426
+cap "INV_BUFF_6.Inverter_1.VDD" "AND_0.Inverter_0.IN" 583.859
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_2.Inverter_1.OUT" 1.12004
+cap "AND_4.Inverter_0.IN" "OR_3.A" 124.755
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_3.Inverter_1.OUT" 90.3751
+cap "a_1840_n4206#" "INV_BUFF_5.Inverter_1.OUT" 5.4966
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_0.Inverter_0.IN" 316.537
+cap "OR_1.Inverter_0.OUT" "OR_1.Inverter_0.IN" 128.47
+cap "OR_3.Inverter_0.IN" "INV_BUFF_5.Inverter_1.OUT" 0.0717925
+cap "a_268_n3244#" "OR_3.A" 4.17592
+cap "OR_0.Inverter_0.IN" "OR_4.B" 258.792
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_4.Inverter_0.IN" 312.377
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_2.Inverter_0.IN" 317.684
+cap "OR_0.Inverter_0.OUT" "INV_BUFF_1.Inverter_1.OUT" 0.0820458
+cap "INV_BUFF_1.Inverter_1.IN" "INV_BUFF_1.Inverter_0.OUT" 0.678701
+cap "INV_BUFF_1.Inverter_1.IN" "OR_1.B" 0.777172
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.Inverter_1.OUT" 401.822
+cap "OR_4.B" "OR_4.Inverter_0.IN" 38.6874
+cap "OR_2.Inverter_0.IN" "OR_4.B" 38.7465
+cap "INV_BUFF_4.Inverter_1.OUT" "OR_4.A" 0.0450019
+cap "a_268_n4206#" "AND_4.Inverter_0.IN" 0.0509457
+cap "OR_1.B" "OR_3.A" 1.2174
+cap "a_268_n3244#" "a_268_n4206#" 24.7558
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_2.Inverter_0.OUT" 419.158
+cap "OR_1.Inverter_0.IN" "INV_BUFF_5.Inverter_1.OUT" 0.457083
+cap "INV_BUFF_1.Inverter_1.IN" "OR_0.Inverter_0.IN" 0.154413
+cap "AND_0.Inverter_0.IN" "OR_3.A" 11.178
+cap "OR_1.Inverter_0.IN" "a_1557_n2284#" 162.324
+cap "OR_4.A" "AND_1.Inverter_0.OUT" 6.83768
+cap "OR_0.Inverter_0.IN" "OR_3.A" 39.0446
+cap "OR_4.A" "AND_3.Inverter_0.IN" 13.8044
+cap "OR_4.A" "AND_2.Inverter_0.IN" 76.0843
+cap "OR_1.Inverter_0.OUT" "INV_BUFF_2.Inverter_1.IN" 2.03269
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.Inverter_0.OUT" 123.222
+cap "OR_3.A" "OR_4.Inverter_0.IN" 84.8175
+cap "OR_2.Inverter_0.IN" "OR_3.A" 5.13441
+cap "INV_BUFF_5.Inverter_0.OUT" "OR_4.A" 0.171139
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_4.Inverter_1.OUT" 402.688
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 6044.03
+cap "INV_BUFF_6.Inverter_1.OUT" "OR_3.A" 0.0334437
+cap "OR_1.Inverter_0.OUT" "INV_BUFF_6.Inverter_1.IN" 0.00894283
+cap "OR_0.Inverter_0.OUT" "a_1557_n2284#" 2.03142
+cap "OR_4.A" "OR_4.B" 3724.42
+cap "AND_4.Inverter_0.IN" "OR_1.Inverter_0.IN" 0.129914
+cap "OR_4.A" "a_268_n724#" 4.90678
+cap "INV_BUFF_6.Inverter_1.IN" "INV_BUFF_4.Inverter_0.OUT" 0.00188705
+cap "AND_4.Inverter_0.IN" "a_268_n1326#" 0.114629
+cap "OR_2.Inverter_0.OUT" "OR_3.A" 1.85214
+cap "AND_1.Inverter_0.OUT" "AND_3.Inverter_0.IN" 0.00634265
+cap "INV_BUFF_4.Inverter_1.OUT" "INV_BUFF_2.Inverter_1.OUT" 2.03269
+cap "INV_BUFF_2.Inverter_0.OUT" "OR_0.Inverter_0.OUT" 0.0139377
+cap "INV_BUFF_2.Inverter_1.OUT" "OR_4.A" 0.119078
+cap "a_268_n4206#" "OR_2.Inverter_0.IN" 1.98078
+cap "a_268_n4206#" "OR_4.Inverter_0.IN" 159.169
+cap "INV_BUFF_4.Inverter_1.OUT" "INV_BUFF_3.Inverter_1.OUT" 0.00516536
+cap "INV_BUFF_3.Inverter_1.OUT" "OR_4.A" 109.301
+cap "a_1628_215#" "AND_0.Inverter_0.IN" 60.8117
+cap "INV_BUFF_6.Inverter_1.VDD" "AND_1.Inverter_0.OUT" 381.627
+cap "INV_BUFF_1.Inverter_0.OUT" "OR_1.Inverter_0.IN" 0.145464
+cap "OR_4.Inverter_0.OUT" "INV_BUFF_5.Inverter_1.OUT" 0.817864
+cap "a_268_n2622#" "AND_4.Inverter_0.IN" 60.8117
+cap "OR_1.Inverter_0.IN" "OR_1.B" 43.7642
+cap "INV_BUFF_6.Inverter_1.VDD" "AND_3.Inverter_0.IN" 586.954
+cap "INV_BUFF_6.Inverter_1.VDD" "AND_2.Inverter_0.IN" 581.258
+cap "a_1840_n4206#" "OR_4.Inverter_0.IN" 0.120584
+cap "AND_1.Inverter_0.OUT" "OR_4.B" 0.216581
+cap "OR_3.A" "INV_BUFF_6.Inverter_0.OUT" 0.01667
+cap "OR_3.Inverter_0.IN" "OR_4.Inverter_0.IN" 0.380078
+cap "AND_3.Inverter_0.IN" "OR_4.B" 0.000443791
+cap "INV_BUFF_1.Inverter_1.IN" "OR_4.A" 41.4184
+cap "AND_2.Inverter_0.IN" "OR_4.B" 125.849
+cap "a_268_n3244#" "a_268_n2622#" 2.23133
+cap "AND_2.Inverter_0.IN" "a_268_n724#" 60.8117
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_5.Inverter_0.OUT" 132.685
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_0.Inverter_1.OUT" 4.34548
+cap "INV_BUFF_0.Inverter_1.OUT" "INV_BUFF_0.Inverter_0.OUT" 114.328
+cap "OR_4.A" "OR_3.A" 657.366
+cap "OR_0.Inverter_0.OUT" "OR_1.B" 0.276218
+cap "INV_BUFF_1.Inverter_0.OUT" "OR_0.Inverter_0.OUT" 0.627142
+cap "AND_1.Inverter_0.IN" "AND_0.Inverter_0.IN" 0.838955
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 2104.73
+cap "INV_BUFF_6.Inverter_1.VDD" "a_268_n724#" 2.53352
+cap "a_1881_n1685#" "OR_0.Inverter_0.OUT" 155.409
+cap "a_268_n2622#" "OR_1.B" 0.0407023
+cap "OR_4.B" "a_268_n724#" 155.368
+cap "OR_0.Inverter_0.IN" "a_268_n1326#" 159.169
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_1.OUT" 405.315
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_3.Inverter_1.OUT" 405.464
+cap "OR_0.Inverter_0.OUT" "AND_0.Inverter_0.IN" 0.00632586
+cap "INV_BUFF_1.Inverter_1.OUT" "a_1557_n2284#" 0.565735
+cap "INV_BUFF_1.Inverter_1.IN" "AND_1.Inverter_0.OUT" 0.0653496
+cap "INV_BUFF_1.Inverter_1.IN" "AND_2.Inverter_0.IN" 122.424
+cap "a_268_n4206#" "OR_4.A" 163.867
+cap "OR_0.Inverter_0.IN" "OR_0.Inverter_0.OUT" 116.513
+cap "AND_1.Inverter_0.OUT" "OR_3.A" 168.231
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_2.Inverter_1.IN" 2.46163
+cap "AND_2.Inverter_0.IN" "OR_3.A" 0.239749
+cap "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_1.IN" 416.14
+cap "a_1840_n4206#" "OR_4.A" 0.720032
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_0.Inverter_1.IN" 3.60123
+cap "OR_2.Inverter_0.OUT" "OR_1.Inverter_0.IN" 0.22014
+cap "INV_BUFF_3.Inverter_1.OUT" "INV_BUFF_2.Inverter_1.OUT" 0.0464974
+cap "INV_BUFF_1.Inverter_1.IN" "OR_4.B" 0.216581
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_3.Inverter_0.OUT" 102.918
+cap "INV_BUFF_5.Inverter_0.OUT" "OR_3.A" 0.429246
+cap "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 1867.87
+cap "a_1628_215#" "OR_4.A" 2.37059
+cap "OR_4.B" "OR_3.A" 2981.41
+cap "OR_3.A" "a_268_n724#" 0.335451
+cap "INV_BUFF_0.Inverter_1.IN" "AND_0.Inverter_0.IN" 123.084
+cap "INV_BUFF_2.Inverter_0.OUT" "INV_BUFF_4.Inverter_0.OUT" 3.46218
+cap "a_1557_n2284#" "INV_BUFF_5.Inverter_1.OUT" 0.748867
+cap "INV_BUFF_1.Inverter_0.OUT" "INV_BUFF_1.Inverter_1.OUT" 117.126
+cap "AND_1.Inverter_0.IN" "OR_4.A" 14.4639
+cap "a_268_n4206#" "INV_BUFF_6.Inverter_1.VDD" 886.454
+cap "OR_4.A" "OR_1.Inverter_0.IN" 261.391
+cap "a_1881_n1685#" "INV_BUFF_1.Inverter_1.OUT" 0.0760671
+cap "a_268_n4206#" "OR_4.B" 22.8644
+device msubckt nfet_03v3 3881 -4558 3882 -4557 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_6.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_6.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 3477 -4558 3478 -4557 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_6.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_6.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 2912 -4558 2913 -4557 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_3.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_6.Inverter_1.IN" 50 6184,328
+device msubckt nfet_03v3 2348 -4556 2349 -4555 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_3.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_3.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 1944 -4556 1945 -4555 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.Inverter_0.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_3.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 1340 -4558 1341 -4557 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_4.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 776 -4556 777 -4555 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_4.Inverter_0.IN" 50 6184,328
+device msubckt pfet_03v3 3881 -4259 3882 -4258 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_6.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 3477 -4259 3478 -4258 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_6.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_6.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 2912 -4259 2913 -4258 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_6.Inverter_1.IN" 100 8800,376
+device msubckt nfet_03v3 372 -4556 373 -4555 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_4.Inverter_0.IN" 50 6184,328
+device msubckt pfet_03v3 2508 -4206 2509 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 112 0 "OR_3.Inverter_0.IN" 100 5200,204 "a_1840_n4206#" 100 8800,376
+device msubckt pfet_03v3 2348 -4206 2349 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 112 0 "a_1840_n4206#" 100 8800,376 "OR_3.Inverter_0.IN" 100 5200,204
+device msubckt pfet_03v3 1944 -4206 1945 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.Inverter_0.OUT" 112 0 "a_1840_n4206#" 100 5200,204 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 1784 -4206 1785 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.Inverter_0.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "a_1840_n4206#" 100 5200,204
+device msubckt pfet_03v3 1340 -4259 1341 -4258 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "OR_4.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 936 -4206 937 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "OR_4.Inverter_0.IN" 100 5200,204 "a_268_n4206#" 100 8800,376
+device msubckt pfet_03v3 776 -4206 777 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "a_268_n4206#" 100 8800,376 "OR_4.Inverter_0.IN" 100 5200,204
+device msubckt pfet_03v3 372 -4206 373 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "a_268_n4206#" 100 5200,204 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 212 -4206 213 -4205 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "a_268_n4206#" 100 5200,204
+device msubckt nfet_03v3 2159 -3596 2160 -3595 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_5.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_5.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 1755 -3596 1756 -3595 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_2.Inverter_0.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_5.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 1340 -3596 1341 -3595 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_2.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_2.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 776 -3594 777 -3593 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_2.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 372 -3594 373 -3593 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_2.Inverter_0.IN" 50 6184,328
+device msubckt pfet_03v3 2159 -3297 2160 -3296 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_5.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_5.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 1755 -3297 1756 -3296 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_2.Inverter_0.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_5.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 1340 -3297 1341 -3296 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_2.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "OR_2.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 936 -3244 937 -3243 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "OR_2.Inverter_0.IN" 100 5200,204 "a_268_n3244#" 100 8800,376
+device msubckt pfet_03v3 776 -3244 777 -3243 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "a_268_n3244#" 100 8800,376 "OR_2.Inverter_0.IN" 100 5200,204
+device msubckt pfet_03v3 372 -3244 373 -3243 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "a_268_n3244#" 100 5200,204 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 212 -3244 213 -3243 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "a_268_n3244#" 100 5200,204
+device msubckt nfet_03v3 3448 -2636 3449 -2635 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_4.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_4.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 3044 -2636 3045 -2635 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_1.Inverter_0.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_4.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 2629 -2636 2630 -2635 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_1.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_1.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 2065 -2634 2066 -2633 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_1.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 1661 -2634 1662 -2633 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_1.B" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_1.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 1020 -2615 1021 -2614 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "AND_4.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_1.B" 50 6184,328
+device msubckt nfet_03v3 616 -2622 617 -2621 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_3.A" 112 0 "a_268_n2622#" 100 8800,376 "AND_4.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 212 -2622 213 -2621 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VSS" 100 8800,376 "a_268_n2622#" 100 8800,376
+device msubckt pfet_03v3 3448 -2337 3449 -2336 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_4.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_4.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 3044 -2337 3045 -2336 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_1.Inverter_0.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_4.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 2629 -2337 2630 -2336 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_1.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "OR_1.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 2225 -2284 2226 -2283 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "OR_1.Inverter_0.IN" 100 5200,204 "a_1557_n2284#" 100 8800,376
+device msubckt pfet_03v3 2065 -2284 2066 -2283 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "a_1557_n2284#" 100 8800,376 "OR_1.Inverter_0.IN" 100 5200,204
+device msubckt pfet_03v3 1661 -2284 1662 -2283 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_1.B" 112 0 "a_1557_n2284#" 100 5200,204 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 1501 -2284 1502 -2283 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_1.B" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "a_1557_n2284#" 100 5200,204
+device msubckt pfet_03v3 1020 -2316 1021 -2315 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "AND_4.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "OR_1.B" 100 8800,376
+device msubckt pfet_03v3 616 -2283 617 -2282 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 112 0 "AND_4.Inverter_0.IN" 100 8800,376 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 212 -2283 213 -2282 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "AND_4.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 3452 -1678 3453 -1677 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_2.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_2.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 3048 -1678 3049 -1677 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_2.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_2.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 2633 -1678 2634 -1677 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "AND_3.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_2.Inverter_1.IN" 50 6184,328
+device msubckt nfet_03v3 2229 -1685 2230 -1684 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_0.Inverter_0.OUT" 112 0 "a_1881_n1685#" 100 8800,376 "AND_3.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 1825 -1685 1826 -1684 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 100 8800,376 "a_1881_n1685#" 100 8800,376
+device msubckt nfet_03v3 1340 -1678 1341 -1677 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_0.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_0.Inverter_0.OUT" 50 6184,328
+device msubckt pfet_03v3 3452 -1379 3453 -1378 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_2.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 3048 -1379 3049 -1378 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_2.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_2.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 2633 -1379 2634 -1378 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "AND_3.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_2.Inverter_1.IN" 100 8800,376
+device msubckt nfet_03v3 776 -1676 777 -1675 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.B" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_0.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 372 -1676 373 -1675 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_3.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "OR_0.Inverter_0.IN" 50 6184,328
+device msubckt pfet_03v3 2229 -1346 2230 -1345 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_0.Inverter_0.OUT" 112 0 "AND_3.Inverter_0.IN" 100 8800,376 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 1825 -1346 1826 -1345 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "AND_3.Inverter_0.IN" 100 8800,376
+device msubckt pfet_03v3 1340 -1379 1341 -1378 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_0.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "OR_0.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 936 -1326 937 -1325 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "OR_0.Inverter_0.IN" 100 5200,204 "a_268_n1326#" 100 8800,376
+device msubckt pfet_03v3 776 -1326 777 -1325 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "a_268_n1326#" 100 8800,376 "OR_0.Inverter_0.IN" 100 5200,204
+device msubckt pfet_03v3 372 -1326 373 -1325 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 112 0 "a_268_n1326#" 100 5200,204 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 212 -1326 213 -1325 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "a_268_n1326#" 100 5200,204
+device msubckt nfet_03v3 3081 -717 3082 -716 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_3.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_3.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 2677 -717 2678 -716 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_3.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 1949 -717 1950 -716 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_1.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_1.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 1545 -717 1546 -716 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_1.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_1.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 1020 -717 1021 -716 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "AND_2.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_1.Inverter_1.IN" 50 6184,328
+device msubckt nfet_03v3 616 -724 617 -723 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_4.B" 112 0 "a_268_n724#" 100 8800,376 "AND_2.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 212 -724 213 -723 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 100 8800,376 "a_268_n724#" 100 8800,376
+device msubckt pfet_03v3 3081 -418 3082 -417 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_3.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_3.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 2677 -418 2678 -417 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_3.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 1949 -418 1950 -417 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_1.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 1545 -418 1546 -417 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_1.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_1.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 1020 -418 1021 -417 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "AND_2.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_1.Inverter_1.IN" 100 8800,376
+device msubckt pfet_03v3 616 -385 617 -384 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "AND_2.Inverter_0.IN" 100 8800,376 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 212 -385 213 -384 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "AND_2.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 3278 222 3279 223 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_0.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_0.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 2874 222 2875 223 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "INV_BUFF_0.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_0.Inverter_1.OUT" 50 6184,328
+device msubckt nfet_03v3 2380 222 2381 223 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "AND_0.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "INV_BUFF_0.Inverter_1.IN" 50 6184,328
+device msubckt nfet_03v3 1976 215 1977 216 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "AND_1.Inverter_0.OUT" 112 0 "a_1628_215#" 100 8800,376 "AND_0.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 1572 215 1573 216 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_3.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 100 8800,376 "a_1628_215#" 100 8800,376
+device msubckt nfet_03v3 1020 222 1021 223 l=56 w=50 "INV_BUFF_6.Inverter_1.VSS" "AND_1.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VSS" 50 6184,328 "AND_1.Inverter_0.OUT" 50 6184,328
+device msubckt pfet_03v3 3278 521 3279 522 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_1.OUT" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_0.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 2874 521 2875 522 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "INV_BUFF_0.Inverter_1.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_0.Inverter_1.OUT" 100 8800,376
+device msubckt pfet_03v3 2380 521 2381 522 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "AND_0.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "INV_BUFF_0.Inverter_1.IN" 100 8800,376
+device msubckt nfet_03v3 616 215 617 216 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_4.B" 112 0 "a_268_215#" 100 8800,376 "AND_1.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 212 215 213 216 l=56 w=100 "INV_BUFF_6.Inverter_1.VSS" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VSS" 100 8800,376 "a_268_215#" 100 8800,376
+device msubckt pfet_03v3 1976 554 1977 555 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "AND_1.Inverter_0.OUT" 112 0 "AND_0.Inverter_0.IN" 100 8800,376 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 1572 554 1573 555 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_3.A" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "AND_0.Inverter_0.IN" 100 8800,376
+device msubckt pfet_03v3 1020 521 1021 522 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "AND_1.Inverter_0.IN" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "AND_1.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 616 554 617 555 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.B" 112 0 "AND_1.Inverter_0.IN" 100 8800,376 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376
+device msubckt pfet_03v3 212 554 213 555 l=56 w=100 "INV_BUFF_6.Inverter_1.VDD" "OR_4.A" 112 0 "INV_BUFF_6.Inverter_1.VDD" 100 8800,376 "AND_1.Inverter_0.IN" 100 8800,376

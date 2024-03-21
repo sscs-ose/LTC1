@@ -1,0 +1,24 @@
+* NGSPICE file created from INV_BUFF.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt Inverter VDD VSS IN OUT
+Xnmos_3p3_H9QVWA_0 VSS OUT IN VSS nmos_3p3_H9QVWA
+Xpmos_3p3_M8RWPS_0 IN VDD VDD OUT pmos_3p3_M8RWPS
+.ends
+
+.subckt inv_buff Inverter_0/IN Inverter_1/IN Inverter_0/OUT Inverter_1/VDD VSUBS
+XInverter_0 Inverter_1/VDD VSUBS Inverter_0/IN Inverter_0/OUT Inverter
+XInverter_1 Inverter_1/VDD VSUBS Inverter_1/IN Inverter_0/IN Inverter
+.ends
+
+.subckt INV_BUFF IN OUT VDD VSS
+Xinv_buff_0 inv_buff_0/Inverter_0/IN IN OUT VDD VSS inv_buff
+.ends
+

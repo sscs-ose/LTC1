@@ -1,0 +1,55 @@
+* NGSPICE file created from Non_Ovl_CLK_Gen_Layout.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_T3QPFJ a_n316_n36# a_224_n22# a_n224_n66# VSUBS
+X0 a_224_n22# a_n224_n66# a_n316_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=2.24u
+.ends
+
+.subckt pmos_3p3_HYFKQ3 w_n398_n174# a_n312_n44# a_224_n44# a_n224_n88#
+X0 a_224_n44# a_n224_n88# a_n312_n44# w_n398_n174# pfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=2.24u
+.ends
+
+.subckt Inv_16x_Layout IN OUT VSS VDD
+Xnmos_3p3_T3QPFJ_0 VSS OUT IN VSS nmos_3p3_T3QPFJ
+Xpmos_3p3_HYFKQ3_0 VDD VDD OUT IN pmos_3p3_HYFKQ3
+.ends
+
+.subckt nmos_3p3_GGGST2 a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt pmos_3p3_MNVUAR w_n202_n230# a_28_n100# a_n28_n144# a_n116_n100#
+X0 a_28_n100# a_n28_n144# a_n116_n100# w_n202_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt Inverter_Layout IN OUT VSS VDD
+Xnmos_3p3_GGGST2_0 IN VSS OUT VSS nmos_3p3_GGGST2
+Xpmos_3p3_MNVUAR_0 VDD OUT IN VDD pmos_3p3_MNVUAR
+.ends
+
+.subckt pmos_3p3_MEVUAR a_n196_n100# a_n52_n100# w_n282_n230# a_108_n100# a_52_n144#
++ a_n108_n144#
+X0 a_n52_n100# a_n108_n144# a_n196_n100# w_n282_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 a_108_n100# a_52_n144# a_n52_n100# w_n282_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt NOR_Layout A B OUT VDD VSS
+Xpmos_3p3_MEVUAR_0 m1_99_317# OUT VDD m1_99_317# B B pmos_3p3_MEVUAR
+Xpmos_3p3_MEVUAR_1 m1_99_317# VDD VDD m1_99_317# A A pmos_3p3_MEVUAR
+Xnmos_3p3_GGGST2_0 B OUT VSS VSS nmos_3p3_GGGST2
+Xnmos_3p3_GGGST2_1 A VSS OUT VSS nmos_3p3_GGGST2
+.ends
+
+**.subckt Non_Ovl_CLK_Gen_Layout VIN PH1A PH1 PH2 VSS VDD
+XInv_16x_Layout_0 Inv_16x_Layout_0/IN Inverter_Layout_0/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_1 NOR_Layout_0/OUT Inv_16x_Layout_2/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_2 Inv_16x_Layout_2/IN Inv_16x_Layout_0/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_3 Inv_16x_Layout_3/IN Inverter_Layout_1/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_4 Inv_16x_Layout_4/IN Inv_16x_Layout_3/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_5 PH1A Inv_16x_Layout_4/IN VSS VDD Inv_16x_Layout
+XInverter_Layout_1 Inverter_Layout_1/IN PH1 VSS VDD Inverter_Layout
+XInverter_Layout_0 Inverter_Layout_0/IN PH2 VSS VDD Inverter_Layout
+XInverter_Layout_2 VIN NOR_Layout_1/A VSS VDD Inverter_Layout
+XNOR_Layout_0 VIN PH1 NOR_Layout_0/OUT VDD VSS NOR_Layout
+XNOR_Layout_1 NOR_Layout_1/A PH2 PH1A VDD VSS NOR_Layout
+**.ends
+

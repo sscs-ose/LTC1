@@ -1,0 +1,206 @@
+* NGSPICE file created from MUX_8x1_Layout.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_METUKR a_n28_n930# a_n28_342# a_28_n886# a_n116_n886# w_n202_n1016#
++ a_n116_386# a_28_n250# a_28_386# a_n28_n294# a_n116_n250#
+X0 a_28_386# a_n28_342# a_n116_386# w_n202_n1016# pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=0.28u
+X1 a_28_n250# a_n28_n294# a_n116_n250# w_n202_n1016# pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=0.28u
+X2 a_28_n886# a_n28_n930# a_n116_n886# w_n202_n1016# pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=0.28u
+.ends
+
+.subckt nmos_3p3_RZHRT2 a_372_217# a_52_n555# a_428_261# a_108_n511# a_52_n169# a_588_261#
++ a_n676_261# a_108_n125# a_n532_n511# a_n108_n555# a_n532_n125# a_n108_n169# a_212_n555#
++ a_212_n169# a_268_n511# a_268_n125# a_n428_217# a_n212_261# a_n372_261# a_n588_217#
++ a_n268_n555# a_n268_n169# a_372_n555# a_372_n169# a_428_n511# a_428_n125# a_108_261#
++ a_532_217# a_268_261# a_n52_n511# a_52_217# a_n428_n555# a_n52_n125# a_n428_n169#
++ a_532_n555# a_588_n511# a_532_n169# a_588_n125# a_n212_n511# a_n108_217# a_n588_n555#
++ a_n212_n125# a_n588_n169# a_n268_217# a_n676_n511# a_n532_261# a_n676_n125# a_n372_n511#
++ a_n52_261# a_n372_n125# a_212_217# VSUBS
+X0 a_n52_n125# a_n108_n169# a_n212_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X1 a_108_261# a_52_217# a_n52_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X2 a_268_261# a_212_217# a_108_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X3 a_588_n511# a_532_n555# a_428_n511# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X4 a_n372_261# a_n428_217# a_n532_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X5 a_n532_n511# a_n588_n555# a_n676_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X6 a_428_261# a_372_217# a_268_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X7 a_n372_n511# a_n428_n555# a_n532_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X8 a_n532_261# a_n588_217# a_n676_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X9 a_588_n125# a_532_n169# a_428_n125# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X10 a_108_n511# a_52_n555# a_n52_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X11 a_428_n511# a_372_n555# a_268_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X12 a_268_n511# a_212_n555# a_108_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X13 a_n532_n125# a_n588_n169# a_n676_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X14 a_n372_n125# a_n428_n169# a_n532_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X15 a_n212_n511# a_n268_n555# a_n372_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X16 a_n52_261# a_n108_217# a_n212_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X17 a_n52_n511# a_n108_n555# a_n212_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X18 a_108_n125# a_52_n169# a_n52_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X19 a_428_n125# a_372_n169# a_268_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X20 a_588_261# a_532_217# a_428_261# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X21 a_268_n125# a_212_n169# a_108_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X22 a_n212_261# a_n268_217# a_n372_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X23 a_n212_n125# a_n268_n169# a_n372_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+.ends
+
+.subckt nmos_3p3_Y4JRT2 a_n28_217# a_28_n511# a_28_n125# a_n28_n555# a_n28_n169# a_n116_n511#
++ a_n116_n125# a_n116_261# a_28_261# VSUBS
+X0 a_28_n511# a_n28_n555# a_n116_n511# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.55p ps=3.38u w=1.25u l=0.28u
+X1 a_28_261# a_n28_217# a_n116_261# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.55p ps=3.38u w=1.25u l=0.28u
+X2 a_28_n125# a_n28_n169# a_n116_n125# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.55p ps=3.38u w=1.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M6SUKR a_108_n886# a_n428_n930# a_532_n930# a_n676_n250# a_n532_n886#
++ a_n372_n250# a_212_342# a_372_342# a_268_n886# a_n588_n930# a_108_n250# a_52_n294#
++ a_n212_386# a_n372_386# a_n532_n250# a_n108_n294# a_212_n294# a_428_n886# a_268_n250#
++ a_108_386# a_268_386# a_n428_342# a_52_n930# a_n588_342# a_n52_n886# a_n268_n294#
++ a_372_n294# a_588_n886# a_n108_n930# a_212_n930# w_n762_n1016# a_428_n250# a_532_342#
++ a_n212_n886# a_52_342# a_n52_n250# a_n428_n294# a_n532_386# a_n676_n886# a_n268_n930#
++ a_532_n294# a_372_n930# a_588_n250# a_n52_386# a_n372_n886# a_n108_342# a_n212_n250#
++ a_n588_n294# a_428_386# a_n676_386# a_n268_342# a_588_386#
+X0 a_108_386# a_52_342# a_n52_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_n532_n886# a_n588_n930# a_n676_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.28u
+X2 a_268_386# a_212_342# a_108_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X3 a_n372_n886# a_n428_n930# a_n532_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X4 a_n372_386# a_n428_342# a_n532_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X5 a_108_n886# a_52_n930# a_n52_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X6 a_428_n886# a_372_n930# a_268_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X7 a_428_386# a_372_342# a_268_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X8 a_268_n886# a_212_n930# a_108_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X9 a_n532_386# a_n588_342# a_n676_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.28u
+X10 a_588_n250# a_532_n294# a_428_n250# w_n762_n1016# pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.28u
+X11 a_n212_n886# a_n268_n930# a_n372_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X12 a_n52_n886# a_n108_n930# a_n212_n886# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X13 a_n532_n250# a_n588_n294# a_n676_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.28u
+X14 a_n372_n250# a_n428_n294# a_n532_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X15 a_n52_386# a_n108_342# a_n212_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X16 a_108_n250# a_52_n294# a_n52_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X17 a_428_n250# a_372_n294# a_268_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X18 a_588_386# a_532_342# a_428_386# w_n762_n1016# pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.28u
+X19 a_268_n250# a_212_n294# a_108_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X20 a_n212_386# a_n268_342# a_n372_386# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X21 a_n212_n250# a_n268_n294# a_n372_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X22 a_n52_n250# a_n108_n294# a_n212_n250# w_n762_n1016# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X23 a_588_n886# a_532_n930# a_428_n886# w_n762_n1016# pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt Transmission_Gate_Layout_mux VSS CLKB CLK VIN VOUT VDD
+Xpmos_3p3_METUKR_0 CLK CLK CLKB VDD VDD VDD CLKB CLKB CLK VDD pmos_3p3_METUKR
+Xnmos_3p3_RZHRT2_0 CLK CLK VIN VIN CLK VOUT VOUT VIN VIN CLK VIN CLK CLK CLK VOUT
++ VOUT CLK VIN VOUT CLK CLK CLK CLK CLK VIN VIN VIN CLK VOUT VOUT CLK CLK VOUT CLK
++ CLK VOUT CLK VOUT VIN CLK CLK VIN CLK CLK VOUT VIN VOUT VOUT VOUT VOUT CLK VSS nmos_3p3_RZHRT2
+Xnmos_3p3_Y4JRT2_0 CLK CLKB CLKB CLK CLK VSS VSS VSS CLKB VSS nmos_3p3_Y4JRT2
+Xpmos_3p3_M6SUKR_1 VIN CLKB CLKB VOUT VIN VOUT CLKB CLKB VOUT CLKB VIN CLKB VIN VOUT
++ VIN CLKB CLKB VIN VOUT VIN VOUT CLKB CLKB CLKB VOUT CLKB CLKB VOUT CLKB CLKB VDD
++ VIN CLKB VIN CLKB VOUT CLKB VIN VOUT CLKB CLKB CLKB VOUT VOUT VOUT CLKB VIN CLKB
++ VIN VOUT CLKB VOUT pmos_3p3_M6SUKR
+.ends
+
+.subckt nmos_3p3_T3QPFJ a_n316_n36# a_224_n22# a_n224_n66# VSUBS
+X0 a_224_n22# a_n224_n66# a_n316_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=2.24u
+.ends
+
+.subckt pmos_3p3_HYFKQ3 w_n398_n174# a_n312_n44# a_224_n44# a_n224_n88#
+X0 a_224_n44# a_n224_n88# a_n312_n44# w_n398_n174# pfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=2.24u
+.ends
+
+.subckt Inv_16x_Layout IN OUT VSS VDD
+Xnmos_3p3_T3QPFJ_0 VSS OUT IN VSS nmos_3p3_T3QPFJ
+Xpmos_3p3_HYFKQ3_0 VDD VDD OUT IN pmos_3p3_HYFKQ3
+.ends
+
+.subckt nfet_03v3_NULYT4 a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt pmos_3p3_MNVUAR w_n202_n230# a_28_n100# a_n28_n144# a_n116_n100#
+X0 a_28_n100# a_n28_n144# a_n116_n100# w_n202_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt Inverter_Layout IN OUT VSS VDD
+Xnfet_03v3_NULYT4_0 IN VSS OUT VSS nfet_03v3_NULYT4
+Xpmos_3p3_MNVUAR_0 VDD OUT IN VDD pmos_3p3_MNVUAR
+.ends
+
+.subckt pmos_3p3_MEVUAR a_n196_n100# a_n52_n100# w_n282_n230# a_108_n100# a_52_n144#
++ a_n108_n144#
+X0 a_n52_n100# a_n108_n144# a_n196_n100# w_n282_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 a_108_n100# a_52_n144# a_n52_n100# w_n282_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt nmos_3p3_GGGST2 a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt NOR_Layout A B OUT VDD VSS SD1
+Xpmos_3p3_MEVUAR_0 SD1 OUT VDD SD1 B B pmos_3p3_MEVUAR
+Xpmos_3p3_MEVUAR_1 SD1 VDD VDD SD1 A A pmos_3p3_MEVUAR
+Xnmos_3p3_GGGST2_0 B OUT VSS VSS nmos_3p3_GGGST2
+Xnmos_3p3_GGGST2_1 A VSS OUT VSS nmos_3p3_GGGST2
+.ends
+
+.subckt Non_Ovl_CLK_Gen_Layout VIN PH1 PH2 VSS VDD
+XInv_16x_Layout_0 Inv_16x_Layout_0/IN Inverter_Layout_0/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_1 NOR_Layout_0/OUT Inv_16x_Layout_2/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_2 Inv_16x_Layout_2/IN Inv_16x_Layout_0/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_3 Inv_16x_Layout_3/IN Inverter_Layout_1/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_4 Inv_16x_Layout_4/IN Inv_16x_Layout_3/IN VSS VDD Inv_16x_Layout
+XInv_16x_Layout_5 NOR_Layout_1/OUT Inv_16x_Layout_4/IN VSS VDD Inv_16x_Layout
+XInverter_Layout_1 Inverter_Layout_1/IN PH1 VSS VDD Inverter_Layout
+XInverter_Layout_0 Inverter_Layout_0/IN PH2 VSS VDD Inverter_Layout
+XInverter_Layout_2 VIN NOR_Layout_1/A VSS VDD Inverter_Layout
+XNOR_Layout_0 VIN PH1 NOR_Layout_0/OUT VDD VSS NOR_Layout_0/SD1 NOR_Layout
+XNOR_Layout_1 NOR_Layout_1/A PH2 NOR_Layout_1/OUT VDD VSS NOR_Layout_1/SD1 NOR_Layout
+.ends
+
+.subckt MUX_8x1_Layout A1 B1 C1 VSS VDD OUT IN4 IN8 IN6 IN3 IN5 IN7 IN1 IN2 EN
+XTransmission_Gate_Layout_mux_17 VSS Transmission_Gate_Layout_mux_17/CLKB EN IN7 Transmission_Gate_Layout_mux_4/VIN
++ VDD Transmission_Gate_Layout_mux
+XNon_Ovl_CLK_Gen_Layout_2 B1 Non_Ovl_CLK_Gen_Layout_2/PH1 Non_Ovl_CLK_Gen_Layout_2/PH2
++ VSS VDD Non_Ovl_CLK_Gen_Layout
+XTransmission_Gate_Layout_mux_18 VSS Transmission_Gate_Layout_mux_18/CLKB EN IN2 Transmission_Gate_Layout_mux_7/VIN
++ VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_19 VSS Transmission_Gate_Layout_mux_19/CLKB EN Transmission_Gate_Layout_mux_19/VIN
++ IN4 VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_0 VSS Transmission_Gate_Layout_mux_0/CLKB Non_Ovl_CLK_Gen_Layout_2/PH2
++ Transmission_Gate_Layout_mux_0/VIN Transmission_Gate_Layout_mux_12/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_1 VSS Transmission_Gate_Layout_mux_1/CLKB Non_Ovl_CLK_Gen_Layout_2/PH1
++ Transmission_Gate_Layout_mux_1/VIN Transmission_Gate_Layout_mux_12/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_2 VSS Transmission_Gate_Layout_mux_2/CLKB Non_Ovl_CLK_Gen_Layout_2/PH1
++ Transmission_Gate_Layout_mux_2/VIN Transmission_Gate_Layout_mux_3/VOUT VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_3 VSS Transmission_Gate_Layout_mux_3/CLKB Non_Ovl_CLK_Gen_Layout_2/PH2
++ Transmission_Gate_Layout_mux_3/VIN Transmission_Gate_Layout_mux_3/VOUT VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_5 VSS Transmission_Gate_Layout_mux_5/CLKB Non_Ovl_CLK_Gen_Layout_1/PH1
++ Transmission_Gate_Layout_mux_5/VIN Transmission_Gate_Layout_mux_1/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_4 VSS Transmission_Gate_Layout_mux_4/CLKB Non_Ovl_CLK_Gen_Layout_1/PH2
++ Transmission_Gate_Layout_mux_4/VIN Transmission_Gate_Layout_mux_1/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_6 VSS Transmission_Gate_Layout_mux_6/CLKB Non_Ovl_CLK_Gen_Layout_1/PH2
++ Transmission_Gate_Layout_mux_6/VIN Transmission_Gate_Layout_mux_3/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_7 VSS Transmission_Gate_Layout_mux_7/CLKB Non_Ovl_CLK_Gen_Layout_1/PH1
++ Transmission_Gate_Layout_mux_7/VIN Transmission_Gate_Layout_mux_3/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_8 VSS Transmission_Gate_Layout_mux_8/CLKB Non_Ovl_CLK_Gen_Layout_1/PH1
++ Transmission_Gate_Layout_mux_8/VIN Transmission_Gate_Layout_mux_0/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_9 VSS Transmission_Gate_Layout_mux_9/CLKB Non_Ovl_CLK_Gen_Layout_1/PH2
++ Transmission_Gate_Layout_mux_9/VIN Transmission_Gate_Layout_mux_0/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_20 VSS Transmission_Gate_Layout_mux_20/CLKB EN IN8 Transmission_Gate_Layout_mux_5/VIN
++ VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_21 VSS Transmission_Gate_Layout_mux_21/CLKB EN IN6 Transmission_Gate_Layout_mux_8/VIN
++ VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_10 VSS Transmission_Gate_Layout_mux_10/CLKB Non_Ovl_CLK_Gen_Layout_1/PH2
++ Transmission_Gate_Layout_mux_10/VIN Transmission_Gate_Layout_mux_2/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_11 VSS Transmission_Gate_Layout_mux_11/CLKB Non_Ovl_CLK_Gen_Layout_1/PH1
++ IN4 Transmission_Gate_Layout_mux_2/VIN VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_12 VSS Transmission_Gate_Layout_mux_12/CLKB Non_Ovl_CLK_Gen_Layout_0/PH1
++ Transmission_Gate_Layout_mux_12/VIN OUT VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_14 VSS Transmission_Gate_Layout_mux_14/CLKB EN IN3 Transmission_Gate_Layout_mux_10/VIN
++ VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_13 VSS Transmission_Gate_Layout_mux_13/CLKB Non_Ovl_CLK_Gen_Layout_0/PH2
++ Transmission_Gate_Layout_mux_3/VOUT OUT VDD Transmission_Gate_Layout_mux
+XTransmission_Gate_Layout_mux_15 VSS Transmission_Gate_Layout_mux_15/CLKB EN IN5 Transmission_Gate_Layout_mux_9/VIN
++ VDD Transmission_Gate_Layout_mux
+XNon_Ovl_CLK_Gen_Layout_0 C1 Non_Ovl_CLK_Gen_Layout_0/PH1 Non_Ovl_CLK_Gen_Layout_0/PH2
++ VSS VDD Non_Ovl_CLK_Gen_Layout
+XTransmission_Gate_Layout_mux_16 VSS Transmission_Gate_Layout_mux_16/CLKB EN IN1 Transmission_Gate_Layout_mux_6/VIN
++ VDD Transmission_Gate_Layout_mux
+XNon_Ovl_CLK_Gen_Layout_1 A1 Non_Ovl_CLK_Gen_Layout_1/PH1 Non_Ovl_CLK_Gen_Layout_1/PH2
++ VSS VDD Non_Ovl_CLK_Gen_Layout
+.ends
+

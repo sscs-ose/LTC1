@@ -1,0 +1,60 @@
+scale 1000 1 0.5
+rnode "OUT.t1" 0 0 112 118 0
+rnode "OUT.t0" 0 0 272 488 0
+rnode "OUT.n0" 0 0 168 488 0
+rnode "OUT.n1" 0 0 220 488 0
+rnode "OUT.n2" 0 0 247 235 0
+rnode "OUT" 0 0 557 236 0
+resist "OUT" "OUT.n2" 0.606522
+resist "OUT.n2" "OUT.n1" 3.014
+resist "OUT.n1" "OUT.n0" 3.64
+resist "OUT.n1" "OUT.t0" 3.64
+resist "OUT.n2" "OUT.t1" 6.83393
+rnode "VDD.n0" 0 0 328 488 0
+rnode "VDD.t0" 0 0 300 488 0
+rnode "VDD.t3" 0 0 140 488 0
+rnode "VDD.n1" 0 0 209 744 0
+rnode "VDD.n2" 0 0 207 744 0
+rnode "VDD.n3" 0 0 209 744 0
+rnode "VDD.n4" 0 0 209 744 0
+rnode "VDD.t4" 0 0 112 488 0
+rnode "VDD" 0 0 207 744 0
+resist "VDD" "VDD.n4" 0.0012
+resist "VDD.n3" "VDD.n2" 0.129897
+resist "VDD.n3" "VDD.n1" 3.15
+resist "VDD.n4" "VDD.n3" 3.15
+resist "VDD" "VDD.t4" 6.64645
+resist "VDD.n4" "VDD.n0" 6.65905
+resist "VDD.n1" "VDD.t3" 135.294
+resist "VDD.n1" "VDD.t0" 178.431
+rnode "A.t0" 0 0 140 488 0
+rnode "A.t1" 0 0 140 118 0
+rnode "A.n0" 0 0 94 345 0
+rnode "A" 0 0 -77 347 0
+resist "A" "A.n0" 4.2052
+resist "A.n0" "A.t0" 16.2334
+resist "A.n0" "A.t1" 27.1166
+rnode "VSS.n0" 0 0 328 118 0
+rnode "VSS.n1" 0 0 216 -48 0
+rnode "VSS.t1" 0 0 300 118 0
+rnode "VSS.t0" 0 0 140 118 0
+rnode "VSS.n2" 0 0 215 -50 0
+rnode "VSS.n3" 0 0 215 -50 0
+rnode "VSS" 0 0 216 -48 0
+resist "VSS.n3" "VSS.n1" 0.0252708
+resist "VSS.n3" "VSS.n2" 2.6
+resist "VSS" "VSS.n3" 2.60092
+resist "VSS" "VSS.n0" 6.75211
+resist "VSS.n2" "VSS.t0" 601.852
+resist "VSS.n2" "VSS.t1" 682.099
+rnode "B.t1" 0 0 300 488 0
+rnode "B.t0" 0 0 300 118 0
+rnode "B.n0" 0 0 300 400 0
+rnode "B" 0 0 -96 83 0
+resist "B.n0" "B.t1" 11.4714
+resist "B" "B.n0" 23.1996
+resist "B.n0" "B.t0" 24.6375
+device msubckt pfet_03v3 272 438 273 439  "VDD.t0" "B.t1" 112 0 "OUT.t0" 100 5200,204 "VDD" 100 8800,376
+device msubckt nfet_03v3 112 68 113 69  "VSS.t0" "A.t1" 112 0 "OUT.t1" 100 8800,376 "a_168_68#" 100 5200,204
+device msubckt pfet_03v3 112 438 113 439  "VDD.t3" "A.t0" 112 0 "VDD.t4" 100 8800,376 "OUT" 100 5200,204
+device msubckt nfet_03v3 272 68 273 69  "VSS.t1" "B.t0" 112 0 "a_168_68#" 100 5200,204 "VSS" 100 8800,376

@@ -1,0 +1,31 @@
+scale 1000 1 0.5
+rnode "IM.t0" 0 0 366 3908 0
+rnode "IM.n0" 0 0 375 7911 0
+rnode "IM" 0 0 375 7911 0
+resist "IM" "IM.n0" 4.962
+resist "IM.n0" "IM.t0" 292.219
+rnode "VSS.t0" 0 0 162 3908 0
+rnode "VSS.t1" 0 0 366 3908 0
+rnode "VSS.n0" 0 0 670 7795 0
+rnode "VSS.n1" 0 0 672 7793 0
+rnode "VSS.n2" 0 0 416 3908 0
+rnode "VSS" 0 0 670 7795 0
+resist "VSS.n1" "VSS.n0" 0.164706
+resist "VSS" "VSS.n1" 2.60191
+resist "VSS" "VSS.n2" 10.903
+resist "VSS.t1" "VSS.t0" 81.862
+resist "VSS.n1" "VSS.t1" 125.393
+killnode "a_212_68#"
+rnode "a_212_68.t1" 0 1050 316 3908 0
+rnode "a_212_68.n0" 0 1050 212 3908 0
+resist "a_212_68.n0" "a_212_68.t1" 0.0853125
+rnode "OUT.t0" 0 1752.75 112 3908 0
+rnode "OUT" 0 347.253 60 7823 0
+resist "OUT" "OUT.t0" 10.8524
+rnode "IM_T.t0" 0 0 162 3908 0
+rnode "IM_T.n0" 0 0 157 7907 0
+rnode "IM_T" 0 0 157 7907 0
+resist "IM_T" "IM_T.n0" 4.518
+resist "IM_T.n0" "IM_T.t0" 291.927
+device msubckt nfet_03v3 316 68 317 69  "VSS.t1" "IM.t0" 200 0 "a_212_68.t1" 7680 399360,7784 "VSS" 7680 675840,15536
+device msubckt nfet_03v3 112 68 113 69  "VSS.t0" "IM_T.t0" 200 0 "OUT.t0" 7680 675840,15536 "a_212_68#" 7680 399360,7784

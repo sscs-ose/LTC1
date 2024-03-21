@@ -1,0 +1,78 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1695306401
+<< nwell >>
+rect 141 1953 262 2037
+<< metal1 >>
+rect 141 1953 262 2037
+rect -783 1632 -762 1650
+rect 1454 1611 1500 1655
+rect -1048 1513 -994 1568
+rect -155 1554 -29 1558
+rect -155 1499 -94 1554
+rect -41 1499 -29 1554
+rect 79 1517 125 1561
+rect 976 1510 1225 1558
+rect 2111 1514 2157 1558
+rect -155 1495 -29 1499
+rect 154 1059 275 1143
+rect 2011 505 2081 508
+rect -229 454 -183 498
+rect 893 454 939 498
+rect 2011 452 2019 505
+rect 2072 452 2081 505
+rect 2011 447 2081 452
+rect -64 6 110 308
+rect 1055 6 1229 308
+<< via1 >>
+rect -94 1499 -41 1554
+rect 2019 452 2072 505
+<< metal2 >>
+rect -806 1840 302 1899
+rect -804 1611 -746 1840
+rect 246 1630 302 1840
+rect -116 1554 -29 1565
+rect -116 1499 -94 1554
+rect -41 1499 -29 1554
+rect -116 1495 -29 1499
+rect -88 220 -29 1495
+rect 2013 508 2081 517
+rect 2011 505 2081 508
+rect 2011 452 2019 505
+rect 2072 452 2081 505
+rect 2011 447 2081 452
+rect 2013 220 2081 447
+rect -88 163 2119 220
+use mux_2x1_ibr  mux_2x1_ibr_0
+timestamp 1695127730
+transform 1 0 -1194 0 1 1056
+box 0 -1051 1135 1051
+use mux_2x1_ibr  mux_2x1_ibr_1
+timestamp 1695127730
+transform 1 0 -68 0 1 1056
+box 0 -1051 1135 1051
+use mux_2x1_ibr  mux_2x1_ibr_2
+timestamp 1695127730
+transform 1 0 1058 0 1 1056
+box 0 -1051 1135 1051
+<< labels >>
+flabel metal1 -211 476 -211 476 0 FreeSans 640 0 0 0 I0
+port 0 nsew
+flabel metal1 -1024 1539 -1024 1539 0 FreeSans 640 0 0 0 I1
+port 1 nsew
+flabel metal1 107 1536 107 1536 0 FreeSans 640 0 0 0 I3
+port 3 nsew
+flabel metal1 1479 1635 1479 1635 0 FreeSans 640 0 0 0 S1
+port 4 nsew
+flabel metal2 -772 1639 -772 1639 0 FreeSans 640 0 0 0 S0
+port 5 nsew
+flabel metal1 2133 1536 2133 1536 0 FreeSans 640 0 0 0 OUT
+port 6 nsew
+flabel metal1 198 1991 198 1991 0 FreeSans 640 0 0 0 VDD
+port 7 nsew
+flabel metal1 210 1106 210 1106 0 FreeSans 640 0 0 0 VSS
+port 8 nsew
+flabel metal1 914 479 914 479 0 FreeSans 640 0 0 0 I2
+port 2 nsew
+<< end >>

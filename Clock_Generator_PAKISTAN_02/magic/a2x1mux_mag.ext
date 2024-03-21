@@ -1,0 +1,124 @@
+timestamp 1695119997
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use Transmission_gate_mag Transmission_gate_mag_1 1 0 -315 0 1 -1243
+use Transmission_gate_mag Transmission_gate_mag_0 1 0 -314 0 -1 1007
+use inv_my_mag inv_my_mag_0 1 0 -340 0 -1 938
+port "IN2" 1 2338 -597 2338 -597 m1
+port "VOUT" 3 2346 -109 2346 -109 m1
+port "VDD" 4 113 -128 113 -124 m1
+port "IN1" 0 2338 357 2338 357 m1
+port "SEL" 2 -371 469 -371 469 v
+port "VSS" 5 15 843 15 843 m1
+node "IN2" 0 50.4342 2338 -597 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0
+node "VOUT" 2 636.242 2346 -109 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17936 624 93823 2934 0 0 0 0 0 0
+node "VDD" 0 287.734 113 -128 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133808 1472 0 0 0 0 0 0 0 0
+node "IN1" 0 50.2538 2338 357 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0
+node "m1_n81_439#" 0 54.4557 -81 439 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7950 406 0 0 0 0 0 0 0 0
+node "SEL" 2 431.435 -371 469 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5840 306 103301 3400 0 0 0 0 0 0
+node "VSS" 3 1545.66 15 843 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 217916 4148 277886 4520 0 0 0 0 0 0
+node "w_n1_n222#" 2129 286.758 -1 -222 nw 95586 1326 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VDD" "m1_n81_439#" 6.81692
+cap "SEL" "VSS" 501.97
+cap "VDD" "VSS" 27.4869
+cap "VDD" "w_n1_n222#" 70.0263
+cap "IN2" "VOUT" 11.9211
+cap "m1_n81_439#" "VSS" 25.283
+cap "VDD" "SEL" 15.9162
+cap "IN1" "VOUT" 12.2267
+cap "m1_n81_439#" "SEL" 10.9293
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/CLK" 0.00112445
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/CLK" 1.888
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/CLK" 5.60791
+cap "Transmission_gate_mag_1/VDD" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 3.64365
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_1/CLK" 3.08668
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 4.74523
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 0.000430731
+cap "Transmission_gate_mag_1/CLK" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 6.79501
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 0.0164807
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 25.4798
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/VDD" 0.766679
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_1/VDD" 14.2979
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/CLK" 3.04264
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_0/CLK" -1.13154
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/VIN" 43.6169
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_1/CLK" 38.2033
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 0.242002
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_1/VSS" 0.11781
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 5.19732
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 0.800978
+cap "Transmission_gate_mag_1/VDD" "Transmission_gate_mag_0/CLK" 17.7473
+cap "Transmission_gate_mag_1/CLK" "Transmission_gate_mag_1/VDD" 131.067
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/VDD" 3.21562
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_1/VDD" 1.61458
+cap "Transmission_gate_mag_1/CLK" "Transmission_gate_mag_0/CLK" 17.293
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/VIN" 204.759
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_1/VDD" 3.91535
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/VOUT" 0.000158127
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_0/VIN" 36.3536
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 27.9226
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/VDD" 19.1592
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 18.0282
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/VDD" 3.76896
+cap "Transmission_gate_mag_1/inv_my_mag_0/OUT" "Transmission_gate_mag_1/VIN" 0.00379681
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/VDD" 0.0534538
+cap "Transmission_gate_mag_1/inv_my_mag_0/OUT" "Transmission_gate_mag_1/VOUT" 22.9018
+cap "Transmission_gate_mag_1/inv_my_mag_0/OUT" "Transmission_gate_mag_0/VIN" 27.8875
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/VIN" 60.538
+cap "Transmission_gate_mag_1/inv_my_mag_0/OUT" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 148.898
+cap "Transmission_gate_mag_1/pmos_3p3_Q354KU_0/w_n922_n230#" "Transmission_gate_mag_1/VOUT" 10.3658
+cap "Transmission_gate_mag_0/pmos_3p3_Q354KU_0/w_n922_n230#" "Transmission_gate_mag_1/VOUT" 10.5954
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_0/VIN" 6.66542
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_1/VOUT" 28.2692
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 0.422124
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/CLK" 37.21
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/VSS" 0.11722
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 0.00701795
+cap "Transmission_gate_mag_1/VDD" "Transmission_gate_mag_1/VSS" -6.94902
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/VOUT" 0.0168201
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/CLK" 1.14637
+cap "Transmission_gate_mag_1/CLK" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 2.87178
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 19.5794
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 2.08015
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/VDD" 45.2367
+cap "Transmission_gate_mag_1/VDD" "Transmission_gate_mag_1/CLK" 29.8152
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_0/CLK" 1.11193
+cap "Transmission_gate_mag_1/VSS" "Transmission_gate_mag_1/VOUT" 0.0450525
+cap "Transmission_gate_mag_1/CLK" "Transmission_gate_mag_1/VSS" -8.17247
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/VSS" 34.761
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 1.55126
+cap "Transmission_gate_mag_1/VDD" "Transmission_gate_mag_0/inv_my_mag_0/OUT" 5.03284
+cap "Transmission_gate_mag_1/CLK" "Transmission_gate_mag_1/VOUT" 0.765741
+cap "Transmission_gate_mag_0/CLK" "Transmission_gate_mag_1/VOUT" 0.0120844
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/VIN" 0.207164
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/VDD" 0.196646
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/VDD" 7.77925
+cap "Transmission_gate_mag_1/VIN" "Transmission_gate_mag_1/VOUT" 1.60763
+cap "Transmission_gate_mag_0/VIN" "Transmission_gate_mag_1/VOUT" 25.9528
+cap "Transmission_gate_mag_0/inv_my_mag_0/OUT" "Transmission_gate_mag_1/VOUT" 6.65837
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/inv_my_mag_0/OUT" 1.72985
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_0/VIN" 21.428
+cap "Transmission_gate_mag_0/pmos_3p3_Q354KU_0/w_n922_n230#" "Transmission_gate_mag_1/VOUT" 0.159296
+cap "Transmission_gate_mag_1/VOUT" "Transmission_gate_mag_1/VIN" 0.191855
+merge "inv_my_mag_0/VSS" "Transmission_gate_mag_0/VSUBS" -670.501 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105336 -2532 0 0 0 0 0 0 0 0
+merge "Transmission_gate_mag_0/VSUBS" "Transmission_gate_mag_1/VSUBS"
+merge "Transmission_gate_mag_1/VSUBS" "VSUBS"
+merge "VSUBS" "Transmission_gate_mag_0/VSS"
+merge "Transmission_gate_mag_0/VSS" "Transmission_gate_mag_1/VSS"
+merge "Transmission_gate_mag_1/VSS" "VSS"
+merge "inv_my_mag_0/IN" "Transmission_gate_mag_1/CLK" -334.544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3750 -250 -4410 -266 0 0 0 0 0 0
+merge "Transmission_gate_mag_1/CLK" "SEL"
+merge "Transmission_gate_mag_0/VOUT" "Transmission_gate_mag_1/VOUT" -374.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10283 -782 0 0 0 0 0 0
+merge "Transmission_gate_mag_1/VOUT" "VOUT"
+merge "inv_my_mag_0/OUT" "Transmission_gate_mag_0/CLK" -289.963 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9312 -566 0 0 0 0 0 0 0 0
+merge "Transmission_gate_mag_0/CLK" "m1_n81_439#"
+merge "inv_my_mag_0/VDD" "Transmission_gate_mag_0/VDD" -760.329 -61399 -3048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -111258 -2518 0 0 0 0 0 0 0 0
+merge "Transmission_gate_mag_0/VDD" "Transmission_gate_mag_1/VDD"
+merge "Transmission_gate_mag_1/VDD" "VDD"
+merge "VDD" "w_n1_n222#"
+merge "Transmission_gate_mag_1/VIN" "IN2" -282.835 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4420 -266 0 0 0 0 0 0 0 0
+merge "Transmission_gate_mag_0/VIN" "IN1" -283.449 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0

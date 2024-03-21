@@ -1,0 +1,806 @@
+timestamp 1699521709
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use AND_3_In_Layout AND_3_In_Layout_0 1 0 777 0 1 -1713
+use AND_3_In_Layout AND_3_In_Layout_4 1 0 777 0 -1 -195
+use Inverter_Layout Inverter_Layout_0 -1 0 495 0 1 -1431
+use AND_3_In_Layout AND_3_In_Layout_2 1 0 3160 0 -1 -195
+use OR_2_In_Layout OR_2_In_Layout_0 1 0 2913 0 1 -1786
+use AND_2_In_Layout AND_2_In_Layout_0 1 0 4124 0 1 -1718
+use AND_3_In_Layout AND_3_In_Layout_3 1 0 777 0 1 307
+use Inverter_Layout Inverter_Layout_1 -1 0 495 0 1 279
+use Inverter_Layout Inverter_Layout_2 -1 0 495 0 -1 143
+use AND_3_In_Layout AND_3_In_Layout_1 1 0 3160 0 1 307
+port "VSS" 12 3014 -1964 3014 -1964 m1
+port "S1" 4 5339 -1253 5339 -1253 m1
+port "S3" 5 5339 -660 5339 -660 m1
+port "S2" 6 5339 772 5339 772 m1
+port "VDD" 11 3209 1066 3209 1066 m1
+port "C" 2 400 1206 400 1206 m1
+port "S4" 9 2776 1313 2776 1313 m1
+port "B" 1 400 1313 400 1313 m1
+port "S5" 8 2776 1420 2776 1420 m1
+port "A" 0 400 1420 400 1420 m1
+port "S6" 7 2776 1527 2776 1527 m1
+node "m1_3735_n2026#" 1 541.241 3735 -2026 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123312 2426 0 0 0 0 0 0 0 0
+node "VSS" 1 241.258 3014 -1964 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68158 1498 0 0 0 0 0 0 0 0
+node "m1_3954_n1488#" 0 100.773 3954 -1488 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11132 576 0 0 0 0 0 0 0 0
+node "S1" 0 89.7377 5339 -1253 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9200 492 0 0 0 0 0 0 0 0
+node "m1_1812_n1010#" 1 479.927 1812 -1010 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123312 2426 0 0 0 0 0 0 0 0
+node "S3" 1 183.102 5339 -660 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21436 1024 0 0 0 0 0 0 0 0
+node "m1_235_n1094#" 10 813.238 235 -1094 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82606 3386 110472 4114 149816 5434 0 0 0 0
+node "m1_237_n272#" 13 1423.67 237 -272 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65308 2734 118060 4478 252600 9184 0 0 0 0
+node "m1_2225_0#" 1 297.488 2225 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123312 2426 0 0 0 0 0 0 0 0
+node "m1_2033_n1990#" 2 488.268 2033 -1990 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5408 416 238784 4488 0 0 0 0 0 0
+node "m1_n99_n1553#" 3 1305.92 -99 -1553 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 187712 3800 203840 3864 0 0 0 0 0 0
+node "m1_237_614#" 13 2097.62 237 614 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24000 1164 148464 5512 277104 9980 0 0 0 0
+node "S2" 1 192.734 5339 772 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21436 1024 0 0 0 0 0 0 0 0
+node "VDD" 1 584.686 3209 1066 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 197792 3756 0 0 0 0 0 0 0 0
+node "m1_1611_n980#" 2 494.459 1611 -980 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5408 416 238784 4488 0 0 0 0 0 0
+node "m1_69_n700#" 3 785.504 69 -700 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144704 3032 204064 3868 0 0 0 0 0 0
+node "C" 17 1689.77 400 1206 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199670 8406 187896 6822 132408 4806 0 0 0 0
+node "S4" 5 264.884 2776 1313 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21606 1034 151224 5478 0 0 0 0 0 0
+node "B" 11 989.902 400 1313 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112114 4498 99400 3802 155851 5646 0 0 0 0
+node "S5" 5 305.356 2776 1420 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26640 1264 123776 4504 0 0 0 0 0 0
+node "A" 16 1666.65 400 1420 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106662 4582 175704 6374 235048 8478 0 0 0 0
+node "S6" 3 356.221 2776 1527 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32298 1510 49576 1854 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_69_n700#" "m1_237_614#" 70.8786
+cap "m1_1611_n980#" "m1_237_614#" 68.4702
+cap "m1_2225_0#" "C" 290.315
+cap "m1_69_n700#" "m1_237_n272#" 42.6575
+cap "B" "m1_1812_n1010#" 0.400925
+cap "m1_1611_n980#" "m1_237_n272#" 55.5822
+cap "m1_2033_n1990#" "m1_235_n1094#" 59.8922
+cap "VSS" "m1_235_n1094#" 247.771
+cap "VDD" "m1_69_n700#" 4.39552
+cap "m1_1611_n980#" "VDD" 29.2304
+cap "m1_1812_n1010#" "m1_2225_0#" 7.93816
+cap "S5" "m1_2033_n1990#" 112.714
+cap "m1_1611_n980#" "m1_235_n1094#" 26.3133
+cap "S1" "m1_237_614#" 6.34477
+cap "m1_2033_n1990#" "m1_n99_n1553#" 3.14045
+cap "m1_3735_n2026#" "m1_3954_n1488#" 23.5671
+cap "S4" "m1_237_614#" 32.4366
+cap "m1_237_n272#" "m1_237_614#" 43.4617
+cap "S4" "m1_237_n272#" 26.7075
+cap "m1_1611_n980#" "S5" 38.3944
+cap "m1_69_n700#" "m1_n99_n1553#" 509.115
+cap "m1_1611_n980#" "m1_n99_n1553#" 0.0307638
+cap "VDD" "m1_237_614#" 28.7345
+cap "B" "m1_2033_n1990#" 15.2564
+cap "VDD" "m1_237_n272#" 5.88936
+cap "S4" "VDD" 51.3174
+cap "A" "m1_3954_n1488#" 0.512663
+cap "m1_1611_n980#" "S6" 28.8093
+cap "m1_235_n1094#" "m1_237_614#" 0.160671
+cap "m1_235_n1094#" "m1_237_n272#" 1153.08
+cap "S4" "m1_235_n1094#" 55.0864
+cap "m1_2033_n1990#" "m1_2225_0#" 26.8187
+cap "B" "m1_69_n700#" 186.843
+cap "B" "m1_1611_n980#" 77.0659
+cap "VDD" "m1_235_n1094#" 0.174315
+cap "m1_3954_n1488#" "C" 0.0214984
+cap "S5" "m1_237_614#" 39.1168
+cap "S5" "m1_237_n272#" 28.5984
+cap "S4" "S5" 1079.28
+cap "A" "C" 136.268
+cap "m1_237_n272#" "m1_n99_n1553#" 6.95597
+cap "m1_1611_n980#" "m1_2225_0#" 0.312495
+cap "S1" "S3" 15.0883
+cap "S5" "VDD" 32.1753
+cap "m1_237_614#" "S6" 14.6025
+cap "S3" "m1_237_614#" 45.7011
+cap "m1_237_n272#" "S6" 0.0871088
+cap "S4" "S6" 3.56185
+cap "m1_1812_n1010#" "A" 0.935693
+cap "S5" "m1_235_n1094#" 8.52362
+cap "B" "m1_237_614#" 447.405
+cap "VDD" "S6" 60.4508
+cap "m1_235_n1094#" "m1_n99_n1553#" 33.2187
+cap "B" "m1_237_n272#" 27.7144
+cap "B" "S4" 28.564
+cap "S2" "m1_237_614#" 30.376
+cap "m1_235_n1094#" "S6" 0.00478032
+cap "B" "VDD" 1.13386
+cap "m1_1812_n1010#" "C" 53.4718
+cap "m1_2225_0#" "m1_237_614#" 1.2406
+cap "m1_2225_0#" "m1_237_n272#" 400.969
+cap "S4" "m1_2225_0#" 28.4078
+cap "m1_3735_n2026#" "VSS" 7.27843
+cap "B" "m1_235_n1094#" 3.39264
+cap "VDD" "m1_2225_0#" 4.0147
+cap "S5" "S6" 647.714
+cap "A" "m1_2033_n1990#" 58.597
+cap "m1_235_n1094#" "m1_2225_0#" 231.733
+cap "B" "S5" 34.8598
+cap "B" "m1_n99_n1553#" 11.5491
+cap "B" "S6" 0.500541
+cap "S5" "m1_2225_0#" 44.7111
+cap "A" "m1_69_n700#" 165.81
+cap "m1_1611_n980#" "A" 161.381
+cap "m1_2033_n1990#" "C" 100.667
+cap "VSS" "C" 135.235
+cap "S3" "S2" 6.77163
+cap "m1_2225_0#" "S6" 5.48061
+cap "m1_1812_n1010#" "m1_2033_n1990#" 89.4108
+cap "m1_1812_n1010#" "VSS" 2.26577
+cap "m1_69_n700#" "C" 692.676
+cap "m1_1611_n980#" "C" 39.9248
+cap "B" "m1_2225_0#" 28.7448
+cap "m1_3954_n1488#" "m1_237_614#" 0.340518
+cap "m1_3954_n1488#" "m1_237_n272#" 0.696264
+cap "A" "m1_237_614#" 205.538
+cap "A" "m1_237_n272#" 1078.71
+cap "S4" "A" 21.8277
+cap "m1_1812_n1010#" "m1_1611_n980#" 25.4985
+cap "VDD" "A" 0.319999
+cap "m1_3954_n1488#" "m1_235_n1094#" 0.0265165
+cap "m1_237_614#" "C" 77.3208
+cap "m1_237_n272#" "C" 216.973
+cap "S4" "C" 1218.67
+cap "A" "m1_235_n1094#" 80.7976
+cap "VSS" "m1_2033_n1990#" 10.0801
+cap "VDD" "C" 925.534
+cap "m1_1812_n1010#" "m1_237_614#" 0.21792
+cap "m1_1812_n1010#" "S4" 67.414
+cap "m1_1812_n1010#" "m1_237_n272#" 19.9887
+cap "S5" "A" 25.8763
+cap "m1_235_n1094#" "C" 1760.85
+cap "A" "m1_n99_n1553#" 44.2691
+cap "m1_1611_n980#" "m1_2033_n1990#" 145.661
+cap "A" "S6" 10.1524
+cap "S5" "C" 72.6904
+cap "m1_1812_n1010#" "m1_235_n1094#" 105.1
+cap "C" "m1_n99_n1553#" 38.0843
+cap "m1_1611_n980#" "m1_69_n700#" 11.4768
+cap "B" "A" 1557.51
+cap "C" "S6" 45.625
+cap "m1_1812_n1010#" "S5" 18.5676
+cap "m1_2033_n1990#" "m1_237_614#" 0.387579
+cap "A" "m1_2225_0#" 24.3157
+cap "S4" "m1_2033_n1990#" 60.4296
+cap "m1_2033_n1990#" "m1_237_n272#" 121.588
+cap "S4" "VSS" 0.446491
+cap "VSS" "m1_237_n272#" 21.3483
+cap "B" "C" 306.654
+cap "VDD" "m1_2033_n1990#" 3.1655
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/C" 3.61051
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/VSS" 0.245304
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/C" 0.00893857
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/B" 1.2186
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 1.73776
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 97.4758
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 13.844
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/A" 25.1071
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 0.0386742
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_4/B" -0.201784
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/C" 14.2288
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_4/C" 0.660276
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/VDD" 8.28607
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/A" 1.14203
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/C" 1.00208
+cap "AND_3_In_Layout_0/VSS" "Inverter_Layout_2/OUT" -0.105208
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/C" 0.274394
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/A" 0.473991
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_4/C" 0.00564811
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_4/C" 14.1117
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/A" 17.3036
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/OUT" 0.101689
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/A" 18.0983
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" 8.19011
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/C" 7.49293
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 4.55398
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 6.54779
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_4/B" 0.866427
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_4/C" 34.0974
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 31.513
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/B" 0.684925
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/VSS" 10.6383
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/C" 0.0212572
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" 0.12076
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_0/A" 0.00644552
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/A" 9.62518
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/A" 0.0318589
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_0/C" -0.0518153
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/C" 15.9082
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/OUT" 0.00214669
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 1.38852
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/B" 2.48133
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 0.109171
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/A" 20.6115
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/C" 11.7181
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 10.8476
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/C" 9.69003
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_0/B" 2.96517
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_0/C" 2.57442
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/OUT" 10.7037
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/C" 20.86
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 0.0447028
+cap "AND_3_In_Layout_0/VDD" "Inverter_Layout_1/OUT" -0.21792
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_0/B" 0.0988463
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 0.766013
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 0.491344
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 0.119578
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/VSS" 5.41877
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" 0.534408
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 0.268025
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" 5.16278
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 1.30874
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/OUT" 0.0616187
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 15.5232
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/C" 4.42156
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" 10.1294
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/C" 1.53243
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/C" 7.68234
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/B" 5.51506
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_4/C" 4.00442
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/A" 0.520883
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/OUT" 6.28812
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/VSS" 38.5395
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 0.296186
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/C" 0.0104958
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_4/C" 4.37975
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/B" 1.12969
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/C" 0.695255
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 11.1491
+cap "AND_3_In_Layout_0/OUT" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 2.33636
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/VSS" 29.5657
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" 53.653
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/A" 0.593645
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/OUT" 12.1479
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/B" 5.41137
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_0/C" 9.4043
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" 10.7449
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 52.1258
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 0.0291984
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/C" 15.002
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "OR_2_In_Layout_0/OUT" 0.0264325
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 12.3397
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 32.7594
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/C" 3.69729
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/A" 3.32057
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/OUT" 90.9055
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" 0.108128
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 29.0248
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_4/C" 4.1675
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 0.0801159
+cap "AND_3_In_Layout_0/OUT" "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" 10.9672
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 8.42651
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" 1.16983
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_0/VDD" 2.09097
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/C" 47.0737
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VSS" 61.8369
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/C" 34.7614
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 8.52631
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/C" 16.1215
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_0/VSS" 4.95901
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/B" 3.43153
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/VSS" 45.6537
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_0/C" 0.00644623
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" 0.498528
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/VDD" 84.169
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" 3.37045
+cap "AND_3_In_Layout_0/B" "OR_2_In_Layout_0/OUT" 3.39987
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_0/VSS" 24.7539
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" 0.0476287
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_0/C" 0.248169
+cap "AND_3_In_Layout_0/a_112_n8#" "AND_3_In_Layout_4/C" 0.0182613
+cap "AND_3_In_Layout_2/OUT" "AND_3_In_Layout_0/B" 0.480287
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/C" 0.0261139
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/OUT" 3.90778
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/OUT" 0.674361
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_2_In_Layout_0/OUT" 0.0428764
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "AND_3_In_Layout_0/VDD" 3.12787
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/C" 57.254
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_4/C" 0.00427689
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 0.367676
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_4/C" 2.08648
+cap "AND_3_In_Layout_0/OUT" "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" 10.7624
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 0.0202254
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" 0.389873
+cap "AND_3_In_Layout_0/B" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 0.896352
+cap "AND_3_In_Layout_0/B" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" 0.787452
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/C" 10.8929
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_4/C" 88.6835
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_28_n50#" "AND_3_In_Layout_4/C" 0.0971473
+cap "AND_3_In_Layout_0/VSS" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" 0.793057
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/C" 1.72249
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/VDD" 6.75734
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/C" 0.10269
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_2/C" 0.86085
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_4/C" 0.411946
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n276_n50#" 0.00506639
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "AND_3_In_Layout_4/C" 2.84236
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_3/B" 0.0592954
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VDD" 120.176
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/VDD" 0.211247
+cap "OR_2_In_Layout_0/OUT" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 5.85486
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_28_n50#" "AND_3_In_Layout_0/VDD" 0.0434332
+cap "AND_3_In_Layout_0/B" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 11.0704
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_4/C" 0.584454
+cap "OR_2_In_Layout_0/OUT" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" 8.47469
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/C" 2.61809
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_2/C" 0.600895
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/VSS" 2.11439
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_2/C" 0.0294447
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/C" 0.859315
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_2/a_n132_n50#" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 0.1575
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/C" 0.0786648
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 1.28206
+cap "AND_3_In_Layout_0/VDD" "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" 0.037957
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 3.16681
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VSS" 8.37233
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_28_n50#" 1.51445
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_2_In_Layout_0/B" 0.269203
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 0.297967
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/C" 2.04466
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/C" 3.53341
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_0/VDD" 21.2917
+cap "AND_3_In_Layout_0/B" "AND_2_In_Layout_0/B" 0.322558
+cap "AND_3_In_Layout_0/B" "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" 27.7822
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 2.48528
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "AND_3_In_Layout_4/C" 0.00225189
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/VDD" 1.64999
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 0.0028576
+cap "OR_2_In_Layout_0/OUT" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 4.70547
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_2/C" -0.0777631
+cap "AND_3_In_Layout_0/VSS" "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" 0.022798
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/OUT" 2.38036
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "AND_3_In_Layout_0/C" 2.86092
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 0.0319951
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "OR_2_In_Layout_0/OUT" 3.57245
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 0.729553
+cap "AND_3_In_Layout_4/C" "AND_2_In_Layout_0/B" 1.36412
+cap "AND_2_In_Layout_0/B" "OR_2_In_Layout_0/OUT" 5.2237
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/C" 0.705528
+cap "AND_3_In_Layout_2/VSS" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 0.0275431
+cap "AND_2_In_Layout_0/OUT" "AND_3_In_Layout_2/OUT" 16.2953
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "OR_2_In_Layout_0/OUT" 0.224153
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" "OR_2_In_Layout_0/OUT" 11.9118
+cap "AND_3_In_Layout_2/VDD" "AND_3_In_Layout_2/OUT" 97.3329
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 1.12038
+cap "AND_3_In_Layout_2/OUT" "OR_2_In_Layout_0/OUT" 0.379507
+cap "AND_3_In_Layout_2/OUT" "AND_3_In_Layout_2/C" 0.802002
+cap "AND_2_In_Layout_0/B" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 17.1572
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_2/B" 0.0568154
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_2_In_Layout_0/B" 3.40065
+cap "AND_3_In_Layout_2/VSS" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 0.0314765
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "AND_3_In_Layout_2/OUT" 0.729422
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/VSS" 20.7638
+cap "AND_3_In_Layout_2/VDD" "OR_2_In_Layout_0/OUT" 25.2802
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" "AND_3_In_Layout_2/VSS" 0.798558
+cap "AND_2_In_Layout_0/B" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 2.18666
+cap "AND_3_In_Layout_4/C" "OR_2_In_Layout_0/OUT" 0.0484831
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/OUT" 1.42109e-14
+cap "AND_3_In_Layout_0/C" "OR_2_In_Layout_0/OUT" 0.0133621
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_2/C" 0.138052
+cap "AND_3_In_Layout_2/VSS" "AND_3_In_Layout_2/OUT" -0.193837
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "AND_2_In_Layout_0/B" 0.507659
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" 0.329609
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" "AND_2_In_Layout_0/B" 8.43747
+cap "AND_3_In_Layout_2/VDD" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 7.44196
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "OR_2_In_Layout_0/OUT" 5.85486
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "AND_3_In_Layout_2/C" 0.357903
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/OUT" 1.49345
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/B" 0.554773
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/VDD" 3.53684
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "OR_2_In_Layout_0/OUT" 2.66339
+cap "AND_3_In_Layout_2/VSS" "OR_2_In_Layout_0/OUT" -3.34806
+cap "AND_2_In_Layout_0/OUT" "AND_2_In_Layout_0/B" 55.2317
+cap "AND_3_In_Layout_2/VSS" "AND_3_In_Layout_2/C" 0.0274141
+cap "AND_3_In_Layout_2/VDD" "AND_2_In_Layout_0/B" 45.3212
+cap "AND_3_In_Layout_0/C" "Inverter_Layout_1/OUT" 0.0578346
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/C" 0.179528
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "Inverter_Layout_2/OUT" 20.7664
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_0/VSS" 45.4149
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_4/C" 0.631107
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 0.140914
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/B" 242.471
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/VSS" -64.2925
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_0/A" 1.03194
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_4/B" 7.63274
+cap "AND_3_In_Layout_0/C" "Inverter_Layout_2/OUT" 1.2186
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_4/OUT" -0.0554608
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/VDD" 2.00031
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 0.0212732
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_0/A" 22.7398
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "Inverter_Layout_1/OUT" 4.92114
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" -13.1637
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/B" 37.0683
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 111.376
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_0/A" 15.1239
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 0.0631049
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "Inverter_Layout_1/OUT" 21.2808
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 0.109286
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/VSS" 1033.2
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_0/VDD" 62.9547
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/OUT" -0.0442057
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_0/VSS" 19.4746
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_4/B" 6.40999
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 6.58303
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" -19.8941
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/B" 31.3301
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/A" 12.0393
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_0/VSS" 20.7606
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/A" 0.63687
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_4/B" 15.8195
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/A" 1.21196
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/A" -0.0469033
+cap "Inverter_Layout_1/OUT" "Inverter_Layout_2/OUT" 0.957877
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/VDD" 13.2614
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/VDD" 17.8159
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "Inverter_Layout_2/OUT" 14.6438
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/A" 10.5198
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_0/VDD" 51.2669
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/VSS" -71.7241
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" 1.38852
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 25.6653
+cap "AND_3_In_Layout_0/A" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 1.00124
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/B" 220.619
+cap "Inverter_Layout_2/OUT" "AND_3_In_Layout_0/VDD" 75.8805
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/B" -1.09879
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/B" -0.939248
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 185.168
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/B" -0.0206966
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/A" 0.0318589
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" 0.0768098
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/OUT" 27.5847
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/VDD" 47.1198
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/VSS" -49.3238
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_4/OUT" 1.76378
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 0.0432626
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_0/C" 21.5462
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 3.98731
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" 0.80511
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 0.0393225
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/A" 3.4454
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_0/A" 1.47502
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VDD" 13.0924
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" 10.9391
+cap "AND_3_In_Layout_0/C" "Inverter_Layout_1/OUT" 8.13748
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" 4.68302
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/VSS" 14.8766
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 7.8768
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_4/C" 0.163143
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" 44.5918
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 51.079
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/nmos_3p3_JCGST2_2/a_n132_n50#" 0.0988463
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "Inverter_Layout_1/OUT" 32.71
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 0.0432626
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" 5.8597
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" 40.2693
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 0.382223
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/VSS" 1.7821
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/C" 0.136439
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" 1.6156
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/C" 7.12279
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" 0.821047
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/C" 0.869395
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/B" 2.44667
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" 13.3796
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/B" 0.068134
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/C" 0.13551
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/VDD" 8.40598
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/A" 0.268025
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" 1.5766
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 61.3097
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/C" 10.59
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_0/A" -0.0627881
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 12.2519
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" 0.232814
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/VDD" 6.58462
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 47.7966
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_4/OUT" 27.4429
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_4/OUT" 36.1951
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" 12.0227
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/B" 15.048
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/A" 31.7106
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 53.8728
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_0/A" -0.0160503
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_0/VSS" -2.18148
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_0/A" 2.02172
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" 50.3053
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 1.7821
+cap "AND_3_In_Layout_0/VSS" "Inverter_Layout_1/OUT" 5.71573
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" 0.232814
+cap "AND_3_In_Layout_3/OUT" "Inverter_Layout_1/OUT" 12.3193
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/A" 0.100981
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/B" 0.221303
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/OUT" 7.45119
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 4.57221
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/C" 21.3261
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" 0.137018
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/OUT" 0.946358
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "Inverter_Layout_1/OUT" 3.76746
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/VSS" 4.04559
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/A" 8.73803
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 0.942718
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_3/OUT" 14.3153
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/OUT" 5.24321
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/VSS" 43.4727
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_4/OUT" 1.7349
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_4/B" 0.672278
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/A" 1.6047
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/C" 3.27982
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/A" 3.63199
+cap "AND_3_In_Layout_0/VDD" "AND_3_In_Layout_0/A" 17.1146
+cap "AND_3_In_Layout_4/B" "Inverter_Layout_1/OUT" 6.93061
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VSS" 15.3181
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_0/VDD" 95.506
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/C" 0.0393225
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_0/VDD" 2.86472
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" 0.00824396
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 6.72085
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_3/nmos_3p3_JCGST2_2/a_n132_n50#" 0.137018
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/B" 5.5023
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" 7.47471
+cap "AND_3_In_Layout_0/VDD" "Inverter_Layout_1/OUT" 22.9548
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" 0.00824396
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/B" 0.0184457
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/B" 0.0318589
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/VDD" 44.5918
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/OUT" 12.4693
+cap "AND_3_In_Layout_0/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/C" 0.0715172
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/A" 0.385595
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 11.3594
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_0/B" 9.07275
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_4/C" 0.264094
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_0/B" 0.105752
+cap "AND_3_In_Layout_2/C" "AND_2_In_Layout_0/B" 0.120779
+cap "AND_3_In_Layout_0/VDD" "AND_2_In_Layout_0/B" 20.0166
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_0/C" 0.906189
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_28_n50#" "AND_3_In_Layout_0/B" 0.0469757
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_3/B" 15.6425
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 96.3971
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 227.716
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/OUT" 5.20388
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_2/C" 3.39286
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/VDD" 51.9151
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_2/C" 9.86939
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 2.72171
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/C" 0.537519
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_0/B" 0.0983424
+cap "AND_3_In_Layout_4/C" "AND_2_In_Layout_0/B" 0.00674648
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_3/B" 0.0577324
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 0.132975
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_2/C" 1.6303
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_0/VSS" 1.7821
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VSS" -19.8941
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_4/OUT" 0.043385
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_4/C" 1.08561
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 0.109222
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_0/VDD" 2.15125
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/VSS" -6.62632
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_2/C" 3.39806
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 16.4597
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_28_n50#" 0.0717873
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_28_n50#" 1.56243
+cap "AND_3_In_Layout_3/B" "AND_2_In_Layout_0/B" 7.96353
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/OUT" 7.46298
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 0.0768098
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 0.00824396
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/B" 40.2876
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_28_n50#" "AND_3_In_Layout_4/C" 1.56243
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/C" -5.02049
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_3/B" 1.47241
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_0/C" 0.12643
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 0.281418
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "AND_3_In_Layout_2/C" 4.05629
+cap "AND_3_In_Layout_1/OUT" "AND_3_In_Layout_0/C" 0.0187361
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/OUT" 0.333392
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_2/C" 2.31118
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 0.132975
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/OUT" 0.316934
+cap "OR_2_In_Layout_0/OUT" "AND_3_In_Layout_3/B" 0.175206
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/C" 0.268361
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 0.00464088
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VSS" 293.37
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 3.16646
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_2_In_Layout_0/B" 5.43426
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_4/OUT" 0.100978
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 6.72525
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_1/a_28_n50#" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 0.0717873
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_3_In_Layout_2/C" 2.84519
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_4/OUT" 0.0900755
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 0.89675
+cap "OR_2_In_Layout_0/pmos_3p3_MEVUAR_1/a_n196_n100#" "AND_3_In_Layout_4/C" 1.02704
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/C" 15.6626
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_0/VDD" 3.2891
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_2_In_Layout_0/B" 32.1455
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_0/VDD" 8.38369
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_2/C" 0.231123
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/B" 0.0750501
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" "AND_2_In_Layout_0/B" 11.198
+cap "AND_3_In_Layout_0/C" "AND_2_In_Layout_0/B" 11.4063
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/C" 0.0633885
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_0/VSS" 21.2716
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 0.307018
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/C" 93.138
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/C" 9.90676
+cap "AND_3_In_Layout_0/OUT" "AND_3_In_Layout_0/B" 0.0387597
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_2/nmos_3p3_JCGST2_2/a_n132_n50#" 1.81333
+cap "AND_3_In_Layout_0/VSS" "AND_2_In_Layout_0/B" 3.17824
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/B" 9.62062
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/OUT" 0.052515
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_0/VDD" 1.62075
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_2/C" 15.7841
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_0/VSS" -4.10792
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 13.7035
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/B" 0.397102
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_0/C" 8.91484
+cap "AND_3_In_Layout_4/nmos_3p3_JCGST2_2/a_n276_n50#" "AND_3_In_Layout_0/B" 0.0772816
+cap "AND_3_In_Layout_0/C" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 0.496372
+cap "AND_3_In_Layout_0/B" "AND_2_In_Layout_0/B" -0.50632
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_4/B" -0.162481
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_2/a_n132_n50#" "AND_3_In_Layout_2/C" 4.36622
+cap "AND_3_In_Layout_0/B" "AND_3_In_Layout_4/C" -7.26814
+cap "OR_2_In_Layout_0/nmos_3p3_GGGST2_2/a_n116_n50#" "AND_3_In_Layout_0/B" 0.573492
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_0/VSS" 21.3357
+cap "AND_3_In_Layout_0/VSS" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" -69.942
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_0/VDD" 26.6024
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" 1.7965
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/VSS" -0.24656
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" 25.6057
+cap "AND_3_In_Layout_2/VSS" "AND_3_In_Layout_0/C" 0.401418
+cap "AND_3_In_Layout_2/C" "OR_2_In_Layout_0/OUT" 2.23035
+cap "AND_3_In_Layout_2/VSS" "AND_3_In_Layout_2/OUT" -0.193837
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_2/VDD" 18.3632
+cap "AND_3_In_Layout_2/VDD" "AND_2_In_Layout_0/B" 2.0515
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" 0.240399
+cap "AND_3_In_Layout_2/B" "AND_3_In_Layout_2/VSS" 0.0568594
+cap "AND_3_In_Layout_2/C" "AND_2_In_Layout_0/B" 49.5631
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_1/B" 0.560499
+cap "AND_3_In_Layout_1/B" "AND_2_In_Layout_0/B" 2.00808
+cap "AND_3_In_Layout_4/C" "AND_2_In_Layout_0/B" 0.891371
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n132_n50#" 1.08939
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_1/OUT" 2.4577
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" 1.36529
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_1/VDD" 0.0882457
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_1/OUT" 22.0858
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_1/VDD" 15.8328
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n132_n50#" 1.08939
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "OR_2_In_Layout_0/OUT" 1.49781
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_2/VSS" 72.9805
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/VDD" 14.0847
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_2/C" 9.87631
+cap "AND_3_In_Layout_2/VSS" "AND_2_In_Layout_0/B" 40.3387
+cap "AND_3_In_Layout_2/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_2_In_Layout_0/B" 9.49753
+cap "AND_3_In_Layout_1/B" "AND_3_In_Layout_2/VSS" 0.0213031
+cap "AND_3_In_Layout_4/C" "AND_3_In_Layout_2/VSS" 0.415344
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_0/C" 0.625859
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_2/nmos_3p3_JCGST2_2/a_n132_n50#" 9.23628
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_2/OUT" 12.1634
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/OUT" 7.79788
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_2/nmos_3p3_JCGST2_2/a_n132_n50#" 3.23521
+cap "AND_3_In_Layout_2/C" "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n196_n50#" 1.94353
+cap "AND_3_In_Layout_2/C" "AND_3_In_Layout_1/nmos_3p3_JCGST2_2/a_n132_n50#" 4.31778
+cap "AND_3_In_Layout_2/B" "AND_3_In_Layout_2/C" 0.558265
+cap "AND_2_In_Layout_0/OUT" "AND_3_In_Layout_2/C" 1.05439
+cap "AND_2_In_Layout_0/B" "AND_3_In_Layout_1/nmos_3p3_JCGST2_2/a_n132_n50#" 12.5074
+cap "AND_3_In_Layout_2/B" "AND_2_In_Layout_0/B" 1.96875
+cap "AND_2_In_Layout_0/nmos_3p3_BGGST2_1/a_n52_n50#" "AND_3_In_Layout_2/C" 3.86181
+cap "AND_3_In_Layout_2/B" "AND_3_In_Layout_1/B" 0.629508
+cap "Inverter_Layout_1/OUT" "Inverter_Layout_0/VDD" 1.66591
+cap "AND_3_In_Layout_4/B" "Inverter_Layout_0/VDD" 11.7568
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_4/A" 0.0317322
+cap "AND_3_In_Layout_3/C" "Inverter_Layout_1/OUT" -0.157959
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/A" 1.35627
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_4/B" -1.10885
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/B" 0.0204416
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_4/A" 0.00528189
+cap "AND_3_In_Layout_3/C" "Inverter_Layout_0/VDD" 42.6396
+cap "AND_3_In_Layout_4/VSS" "Inverter_Layout_0/VDD" -1.79623
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "Inverter_Layout_0/VDD" 11.6551
+cap "AND_3_In_Layout_4/B" "AND_3_In_Layout_4/A" 2.89451
+cap "Inverter_Layout_2/OUT" "Inverter_Layout_0/VDD" -0.0900717
+cap "Inverter_Layout_1/OUT" "AND_3_In_Layout_4/B" 2.48786
+cap "AND_3_In_Layout_4/A" "Inverter_Layout_0/VDD" 11.5532
+cap "AND_3_In_Layout_2/B" "Inverter_Layout_0/VDD" -0.268432
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/OUT" 0.628598
+cap "Inverter_Layout_0/VDD" "Inverter_Layout_1/OUT" -2.50604
+cap "AND_3_In_Layout_2/B" "AND_3_In_Layout_3/C" -0.266757
+cap "S4" "Inverter_Layout_0/VDD" -1.35118
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 0.064682
+cap "AND_3_In_Layout_4/A" "AND_3_In_Layout_4/B" 0.040614
+cap "AND_3_In_Layout_3/C" "Inverter_Layout_1/OUT" -1.21203
+cap "S4" "AND_3_In_Layout_3/OUT" 5.22727
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_3/OUT" 92.751
+cap "AND_3_In_Layout_3/C" "Inverter_Layout_0/VDD" 374.512
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_3/OUT" 1.47713
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "S4" 0.0511551
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_4/A" 2.45239
+cap "AND_3_In_Layout_3/OUT" "AND_3_In_Layout_4/A" -0.0144452
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_4/A" 0.0286229
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "Inverter_Layout_0/VDD" 23.7936
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_4/OUT" -2.40201
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_3/OUT" 8.769
+cap "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/OUT" 1.7628
+cap "S4" "AND_3_In_Layout_4/VSS" 6.93889e-18
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_4/OUT" 0.00395649
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_3/nmos_3p3_JCGST2_1/a_n276_n50#" 0.381232
+cap "Inverter_Layout_0/VDD" "AND_3_In_Layout_4/B" 2.35516
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_4/B" -0.641503
+cap "AND_3_In_Layout_4/VSS" "Inverter_Layout_0/VDD" -3.68163
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_4/C" 0.0151479
+cap "AND_3_In_Layout_1/OUT" "AND_3_In_Layout_3/C" 0.119645
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/C" 1.29104
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/VDD" 3.16681
+cap "AND_3_In_Layout_4/OUT" "AND_3_In_Layout_3/C" 0.0176472
+cap "AND_3_In_Layout_1/C" "AND_3_In_Layout_3/C" 0.334187
+cap "AND_3_In_Layout_3/VDD" "AND_3_In_Layout_4/OUT" 0.0315547
+cap "S4" "AND_3_In_Layout_3/C" 0.0208595
+cap "S4" "AND_3_In_Layout_3/VDD" 0.0378088
+cap "AND_3_In_Layout_1/C" "AND_3_In_Layout_3/VDD" 0.107279
+cap "AND_3_In_Layout_3/C" "AND_3_In_Layout_3/OUT" 0.0150952
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_4/OUT" 0.00675705
+cap "AND_3_In_Layout_3/VDD" "AND_3_In_Layout_3/OUT" 0.0267278
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "S4" 0.00828716
+cap "AND_3_In_Layout_2/B" "AND_3_In_Layout_3/VDD" -2.72899
+cap "AND_3_In_Layout_1/nmos_3p3_JCGST2_1/a_n276_n50#" "AND_3_In_Layout_3/OUT" 0.620229
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_3/C" 0.413293
+cap "AND_3_In_Layout_3/VDD" "AND_3_In_Layout_3/C" 10.9623
+cap "AND_3_In_Layout_3/B" "AND_3_In_Layout_3/VDD" -0.249825
+merge "AND_3_In_Layout_1/VSS" "AND_2_In_Layout_0/VSS" -3480.54 0 0 0 0 0 0 -259344 -7636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -585284 -13444 0 0 0 0 0 0 0 0
+merge "AND_2_In_Layout_0/VSS" "OR_2_In_Layout_0/VSS"
+merge "OR_2_In_Layout_0/VSS" "m1_3735_n2026#"
+merge "m1_3735_n2026#" "AND_3_In_Layout_2/VSS"
+merge "AND_3_In_Layout_2/VSS" "Inverter_Layout_2/VSS"
+merge "Inverter_Layout_2/VSS" "Inverter_Layout_1/VSS"
+merge "Inverter_Layout_1/VSS" "AND_3_In_Layout_3/VSS"
+merge "AND_3_In_Layout_3/VSS" "Inverter_Layout_0/VSS"
+merge "Inverter_Layout_0/VSS" "AND_3_In_Layout_4/VSS"
+merge "AND_3_In_Layout_4/VSS" "m1_2225_0#"
+merge "m1_2225_0#" "AND_3_In_Layout_0/VSS"
+merge "AND_3_In_Layout_0/VSS" "VSUBS"
+merge "VSUBS" "VSS"
+merge "VSS" "m1_n99_n1553#"
+merge "m1_n99_n1553#" "m1_2033_n1990#"
+merge "AND_3_In_Layout_1/VDD" "Inverter_Layout_1/VDD" -3373.22 -245682 -4596 0 0 -109908 -3698 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -315600 -8262 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_1/VDD" "AND_3_In_Layout_3/VDD"
+merge "AND_3_In_Layout_3/VDD" "VDD"
+merge "VDD" "Inverter_Layout_2/VDD"
+merge "Inverter_Layout_2/VDD" "Inverter_Layout_0/VDD"
+merge "Inverter_Layout_0/VDD" "m1_69_n700#"
+merge "m1_69_n700#" "AND_2_In_Layout_0/VDD"
+merge "AND_2_In_Layout_0/VDD" "OR_2_In_Layout_0/VDD"
+merge "OR_2_In_Layout_0/VDD" "AND_3_In_Layout_2/VDD"
+merge "AND_3_In_Layout_2/VDD" "AND_3_In_Layout_4/VDD"
+merge "AND_3_In_Layout_4/VDD" "AND_3_In_Layout_0/VDD"
+merge "AND_3_In_Layout_0/VDD" "m1_1812_n1010#"
+merge "m1_1812_n1010#" "m1_1611_n980#"
+merge "AND_2_In_Layout_0/OUT" "S1" -53.3773 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2162 -186 0 0 0 0 0 0 0 0
+merge "AND_3_In_Layout_2/C" "Inverter_Layout_1/IN" -881.797 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18686 -1250 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_1/IN" "AND_3_In_Layout_3/A"
+merge "AND_3_In_Layout_3/A" "AND_3_In_Layout_4/A"
+merge "AND_3_In_Layout_4/A" "AND_3_In_Layout_0/A"
+merge "AND_3_In_Layout_0/A" "A"
+merge "AND_3_In_Layout_1/OUT" "S2" -34.9369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2162 -186 0 0 0 0 0 0 0 0
+merge "AND_3_In_Layout_1/C" "AND_2_In_Layout_0/B" -600.383 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10138 -710 0 0 0 0 0 0 0 0
+merge "AND_2_In_Layout_0/B" "Inverter_Layout_1/OUT"
+merge "Inverter_Layout_1/OUT" "m1_237_614#"
+merge "AND_3_In_Layout_2/OUT" "S3" -112.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2162 -186 0 0 0 0 0 0 0 0
+merge "AND_2_In_Layout_0/A" "OR_2_In_Layout_0/OUT" -174.358 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3542 -338 0 0 0 0 0 0 0 0
+merge "OR_2_In_Layout_0/OUT" "m1_3954_n1488#"
+merge "AND_3_In_Layout_1/B" "Inverter_Layout_2/IN" -575.836 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12684 -924 0 0 0 0 0 0 0 0
+merge "Inverter_Layout_2/IN" "AND_3_In_Layout_3/B"
+merge "AND_3_In_Layout_3/B" "AND_3_In_Layout_4/B"
+merge "AND_3_In_Layout_4/B" "B"
+merge "AND_3_In_Layout_1/A" "AND_3_In_Layout_3/C" -580.434 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22652 -1254 0 0 0 0 0 0 0 0
+merge "AND_3_In_Layout_3/C" "Inverter_Layout_0/IN"
+merge "Inverter_Layout_0/IN" "AND_3_In_Layout_0/C"
+merge "AND_3_In_Layout_0/C" "C"
+merge "AND_3_In_Layout_0/OUT" "S4" -242.806 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17230 -894 -33832 -1250 0 0 0 0 0 0
+merge "AND_3_In_Layout_4/OUT" "S5" -201.797 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4186 -274 0 0 0 0 0 0 0 0
+merge "AND_3_In_Layout_3/OUT" "S6" -156.646 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3496 -244 0 0 0 0 0 0 0 0
+merge "OR_2_In_Layout_0/A" "AND_3_In_Layout_2/B" -728.648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14338 -972 0 0 0 0 0 0 0 0
+merge "AND_3_In_Layout_2/B" "Inverter_Layout_2/OUT"
+merge "Inverter_Layout_2/OUT" "AND_3_In_Layout_0/B"
+merge "AND_3_In_Layout_0/B" "m1_237_n272#"
+merge "OR_2_In_Layout_0/B" "AND_3_In_Layout_2/A" -506.597 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14282 -962 0 0 0 0 0 0 0 0
+merge "AND_3_In_Layout_2/A" "Inverter_Layout_0/OUT"
+merge "Inverter_Layout_0/OUT" "AND_3_In_Layout_4/C"
+merge "AND_3_In_Layout_4/C" "m1_235_n1094#"

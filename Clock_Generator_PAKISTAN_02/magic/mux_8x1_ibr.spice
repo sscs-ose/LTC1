@@ -1,0 +1,49 @@
+* NGSPICE file created from mux_8x1_ibr.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8SWPS a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_5QNVWA a_n116_n44# a_28_n44# a_n28_n88# VSUBS
+X0 a_28_n44# a_n28_n88# a_n116_n44# VSUBS nfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=0.28u
+.ends
+
+.subckt nand2_ibr VDD IN2 IN1 OUT VSS
+Xpmos_3p3_M8SWPS_0 IN1 OUT VDD VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN2 VDD OUT VDD pmos_3p3_M8SWPS
+Xnmos_3p3_5QNVWA_0 VSS m1_186_70# IN2 VSS nmos_3p3_5QNVWA
+Xnmos_3p3_5QNVWA_1 m1_186_70# OUT IN1 VSS nmos_3p3_5QNVWA
+.ends
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt nverterlayout_ibr VDD VSS OUT IN
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt mux_2x1_ibr VDD VSS Sel I0 I1 OUT
+Xnand2_ibr_0 VDD I1 Sel nand2_ibr_1/IN2 VSS nand2_ibr
+Xnand2_ibr_1 VDD nand2_ibr_1/IN2 nand2_ibr_2/OUT OUT VSS nand2_ibr
+Xnand2_ibr_2 VDD nand2_ibr_2/IN2 I0 nand2_ibr_2/OUT VSS nand2_ibr
+Xnverterlayout_ibr_0 VDD VSS nand2_ibr_2/IN2 Sel nverterlayout_ibr
+.ends
+
+.subckt mux_4x1_ibr I0 I1 I2 I3 S1 S0 OUT VDD VSS
+Xmux_2x1_ibr_0 VDD VSS S0 I0 I1 mux_2x1_ibr_2/I0 mux_2x1_ibr
+Xmux_2x1_ibr_1 VDD VSS S0 I2 I3 mux_2x1_ibr_2/I1 mux_2x1_ibr
+Xmux_2x1_ibr_2 VDD VSS S1 mux_2x1_ibr_2/I0 mux_2x1_ibr_2/I1 OUT mux_2x1_ibr
+.ends
+
+.subckt mux_8x1_ibr I0 I1 I2 I3 I4 I5 I6 I7 VSS VDD OUT S0 S1 S2
+Xmux_4x1_ibr_0 I4 I5 I6 I7 S1 S0 mux_2x1_ibr_0/I1 VDD VSS mux_4x1_ibr
+Xmux_4x1_ibr_1 I0 I1 I2 I3 S1 S0 mux_2x1_ibr_0/I0 VDD VSS mux_4x1_ibr
+Xmux_2x1_ibr_0 VDD VSS S2 mux_2x1_ibr_0/I0 mux_2x1_ibr_0/I1 OUT mux_2x1_ibr
+.ends
+

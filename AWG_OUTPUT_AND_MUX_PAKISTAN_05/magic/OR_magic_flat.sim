@@ -1,0 +1,23 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x a_86_n570# VDD OUT VDD s=6184,328 d=6184,328 l=56 w=50 x=648 y=-126 pfet_03v3
+x B a_234_n257# a_86_n570# VDD s=3592,184 d=6184,328 l=56 w=50 x=346 y=-256 pfet_03v3
+x A VDD a_234_n257# VDD s=6184,328 d=3592,184 l=56 w=50 x=178 y=-256 pfet_03v3
+x VDD VDD VDD VDD d=6184,328 l=56 w=50 x=648 y=136 pfet_03v3
+x B a_234_n257# a_86_n570# VDD s=3592,184 d=6184,328 l=56 w=50 x=346 y=-126 pfet_03v3
+x A VDD a_234_n257# VDD s=6184,328 d=3592,184 l=56 w=50 x=178 y=-126 pfet_03v3
+x A VDD a_234_n257# VDD s=6184,328 d=3592,184 l=56 w=50 x=178 y=6 pfet_03v3
+x B a_234_n257# a_86_n570# VDD s=3592,184 d=6184,328 l=56 w=50 x=346 y=6 pfet_03v3
+x a_86_n570# VSS OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=648 y=-558 nfet_03v3
+x B a_234_n257# a_86_n570# VDD s=3592,184 d=6184,328 l=56 w=50 x=346 y=136 pfet_03v3
+x B VSS a_86_n570# VSS s=3592,184 d=6184,328 l=56 w=50 x=346 y=-558 nfet_03v3
+x a_86_n570# VDD OUT VDD s=6184,328 d=6184,328 l=56 w=50 x=648 y=-256 pfet_03v3
+x A a_86_n570# VSS VSS s=6184,328 d=3592,184 l=56 w=50 x=178 y=-558 nfet_03v3
+x A VDD a_234_n257# VDD s=6184,328 d=3592,184 l=56 w=50 x=178 y=136 pfet_03v3
+R OUT 59
+R B 113
+R A 143
+C VDD0 2.7
+R VDD 1328
+R VSS 112
+R a_86_n570# 229
+R a_234_n257# 119

@@ -1,0 +1,109 @@
+* NGSPICE file created from CLK_div_10_mag.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8SWPS a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_5QNVWA a_n116_n44# a_28_n44# a_n28_n88# VSUBS
+X0 a_28_n44# a_n28_n88# a_n116_n44# VSUBS nfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=0.28u
+.ends
+
+.subckt nand2_mag IN2 OUT IN1 VDD VSS
+Xpmos_3p3_M8SWPS_0 IN1 OUT VDD VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN2 VDD OUT VDD pmos_3p3_M8SWPS
+Xnmos_3p3_5QNVWA_0 VSS m1_186_70# IN2 VSS nmos_3p3_5QNVWA
+Xnmos_3p3_5QNVWA_1 m1_186_70# OUT IN1 VSS nmos_3p3_5QNVWA
+.ends
+
+.subckt nmos_3p3_VGTVWA a_n116_n66# a_28_n66# a_n28_n110# VSUBS
+X0 a_28_n66# a_n28_n110# a_n116_n66# VSUBS nfet_03v3 ad=0.29p pd=2.2u as=0.29p ps=2.2u w=0.66u l=0.28u
+.ends
+
+.subckt nand3_mag OUT VDD VSS IN3 IN2 IN1
+Xnmos_3p3_VGTVWA_0 nmos_3p3_VGTVWA_1/a_28_n66# nmos_3p3_VGTVWA_0/a_28_n66# IN2 VSS
++ nmos_3p3_VGTVWA
+Xnmos_3p3_VGTVWA_1 VSS nmos_3p3_VGTVWA_1/a_28_n66# IN3 VSS nmos_3p3_VGTVWA
+Xnmos_3p3_VGTVWA_2 nmos_3p3_VGTVWA_0/a_28_n66# OUT IN1 VSS nmos_3p3_VGTVWA
+Xpmos_3p3_M8SWPS_0 IN1 VDD OUT VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN3 VDD OUT VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_2 IN2 OUT VDD VDD pmos_3p3_M8SWPS
+.ends
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt GF_INV_MAG VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt JK_FF_mag RST K J Q Qb CLK VDD VSS
+Xnand2_mag_1 nand2_mag_1/IN2 Q Qb VDD VSS nand2_mag
+Xnand3_mag_2 nand3_mag_2/OUT VDD VSS K CLK Q nand3_mag
+Xnand2_mag_2 nand3_mag_0/OUT nand3_mag_1/IN1 nand3_mag_1/OUT VDD VSS nand2_mag
+Xnand2_mag_3 nand3_mag_1/OUT nand2_mag_4/IN2 nand2_mag_3/IN1 VDD VSS nand2_mag
+Xnand2_mag_4 nand2_mag_4/IN2 Qb Q VDD VSS nand2_mag
+XGF_INV_MAG_0 VDD VSS CLK nand2_mag_3/IN1 GF_INV_MAG
+Xnand3_mag_0 nand3_mag_0/OUT VDD VSS J CLK Qb nand3_mag
+Xnand2_mag_0 nand3_mag_1/IN1 nand2_mag_1/IN2 nand2_mag_3/IN1 VDD VSS nand2_mag
+Xnand3_mag_1 nand3_mag_1/OUT VDD VSS nand3_mag_2/OUT RST nand3_mag_1/IN1 nand3_mag
+.ends
+
+.subckt and2_mag IN2 IN1 OUT VSS VDD
+Xpmos_3p3_M8SWPS_0 IN1 GF_INV_MAG_0/IN VDD VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN2 VDD GF_INV_MAG_0/IN VDD pmos_3p3_M8SWPS
+XGF_INV_MAG_0 VDD VSS GF_INV_MAG_0/IN OUT GF_INV_MAG
+Xnmos_3p3_5QNVWA_0 VSS m1_186_70# IN2 VSS nmos_3p3_5QNVWA
+Xnmos_3p3_5QNVWA_1 m1_186_70# GF_INV_MAG_0/IN IN1 VSS nmos_3p3_5QNVWA
+.ends
+
+.subckt pmos_3p3_MW53B7 a_n188_n80# a_n100_n124# a_100_n80# w_n274_n210#
+X0 a_100_n80# a_n100_n124# a_n188_n80# w_n274_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+.ends
+
+.subckt nmos_3p3_MGBSF7 a_100_n22# a_n100_n66# a_n192_n36# VSUBS
+X0 a_100_n22# a_n100_n66# a_n192_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+.ends
+
+.subckt Inverter_delayed_mag VDD VSS IN OUT
+Xpmos_3p3_MW53B7_0 VDD IN OUT VDD pmos_3p3_MW53B7
+Xnmos_3p3_MGBSF7_0 OUT IN VSS VSS nmos_3p3_MGBSF7
+.ends
+
+.subckt Buffer_delayed_mag VDD VSS IN OUT
+Xpmos_3p3_MW53B7_0 VDD IN Inverter_delayed_mag_0/IN VDD pmos_3p3_MW53B7
+XInverter_delayed_mag_0 VDD VSS Inverter_delayed_mag_0/IN OUT Inverter_delayed_mag
+Xnmos_3p3_MGBSF7_0 Inverter_delayed_mag_0/IN IN VSS VSS nmos_3p3_MGBSF7
+.ends
+
+.subckt pmos_3p3_MYFUKR a_28_n240# a_n28_n284# a_n116_n240# w_n202_n370#
+X0 a_28_n240# a_n28_n284# a_n116_n240# w_n202_n370# pfet_03v3 ad=1.06p pd=5.68u as=1.06p ps=5.68u w=2.4u l=0.28u
+.ends
+
+.subckt nor_3_mag VSS OUT IN1 IN2 IN3 VDD
+Xnmos_3p3_DDNVWA_2 OUT VSS IN2 VSS nmos_3p3_DDNVWA
+Xpmos_3p3_MYFUKR_0 OUT IN1 pmos_3p3_MYFUKR_2/a_28_n240# VDD pmos_3p3_MYFUKR
+Xpmos_3p3_MYFUKR_1 pmos_3p3_MYFUKR_1/a_28_n240# IN3 VDD VDD pmos_3p3_MYFUKR
+Xpmos_3p3_MYFUKR_2 pmos_3p3_MYFUKR_2/a_28_n240# IN2 pmos_3p3_MYFUKR_1/a_28_n240# VDD
++ pmos_3p3_MYFUKR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN1 VSS nmos_3p3_DDNVWA
+Xnmos_3p3_DDNVWA_1 VSS OUT IN3 VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt CLK_div_10_mag CLK RST VSS VDD Q0 Q1 Q2 Q3 Vdiv10
+XJK_FF_mag_0 RST VDD JK_FF_mag_0/J Q3 JK_FF_mag_2/J Q0 VDD VSS JK_FF_mag
+XJK_FF_mag_1 RST VDD VDD Q0 JK_FF_mag_1/Qb CLK VDD VSS JK_FF_mag
+XJK_FF_mag_2 RST VDD JK_FF_mag_2/J Q1 JK_FF_mag_2/Qb Q0 VDD VSS JK_FF_mag
+XJK_FF_mag_3 RST VDD VDD Q2 JK_FF_mag_3/Qb Q1 VDD VSS JK_FF_mag
+Xand2_mag_1 Q0 Q2 and2_mag_1/OUT VSS VDD and2_mag
+Xand2_mag_0 Q1 Q2 and2_mag_0/OUT VSS VDD and2_mag
+Xand2_mag_2 Q2 Q1 JK_FF_mag_0/J VSS VDD and2_mag
+XBuffer_delayed_mag_0 VDD VSS and2_mag_1/OUT nor_3_mag_0/IN3 Buffer_delayed_mag
+Xnor_3_mag_0 VSS Vdiv10 Q3 and2_mag_0/OUT nor_3_mag_0/IN3 VDD nor_3_mag
+.ends
+

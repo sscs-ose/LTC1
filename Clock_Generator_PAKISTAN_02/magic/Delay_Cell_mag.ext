@@ -1,0 +1,351 @@
+timestamp 1695121232
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use nmos_3p3_QNHHD6 nmos_3p3_QNHHD6_0 1 0 618 0 1 -2221
+use nmos_3p3_VMHHD6 nmos_3p3_VMHHD6_1 1 0 1158 0 1 -2221
+use nmos_3p3_FSHHD6 nmos_3p3_FSHHD6_0 1 0 1590 0 1 -1681
+use nmos_3p3_QNHHD6 nmos_3p3_QNHHD6_1 1 0 2562 0 1 -2221
+use nmos_3p3_VMHHD6 nmos_3p3_VMHHD6_0 1 0 2238 0 1 -1681
+use nmos_3p3_VMHHD6 nmos_3p3_VMHHD6_2 1 0 2022 0 1 -2221
+use pmos_3p3_ZB3RD7 pmos_3p3_ZB3RD7_4 1 0 747 0 1 -568
+use pmos_3p3_ZB3RD7 pmos_3p3_ZB3RD7_5 1 0 1611 0 1 -568
+use pmos_3p3_ZB3RD7 pmos_3p3_ZB3RD7_0 1 0 2475 0 1 -568
+use pmos_3p3_ZB3RD7 pmos_3p3_ZB3RD7_1 1 0 747 0 1 21
+use pmos_3p3_ZB3RD7 pmos_3p3_ZB3RD7_2 1 0 1611 0 1 21
+use pmos_3p3_ZB3RD7 pmos_3p3_ZB3RD7_3 1 0 2475 0 1 21
+port "INB" 4 2435 -2414 2435 -2414 m1
+port "IN" 5 1556 -2415 1556 -2415 m1
+port "VCONT" 3 2658 -1482 2658 -1482 m1
+port "EN" 2 502 -1481 502 -1481 m1
+port "OUTB" 1 272 -834 272 -834 m1
+port "OUT" 0 275 -223 275 -223 m1
+port "VDD" 8 2947 -249 2947 -249 m1
+port "VSS" 6 103 -1868 103 -1868 m1
+node "m1_277_n67#" 8 320.305 277 -67 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93100 3514 214852 7102 0 0 0 0 0 0
+node "INB" 50 774.975 2435 -2414 m1 0 0 0 0 0 0 0 0 0 0 0 0 84360 1742 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11856 460 0 0 0 0 0 0 0 0
+node "IN" 50 761.431 1556 -2415 m1 0 0 0 0 0 0 0 0 0 0 0 0 84360 1742 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12312 466 0 0 0 0 0 0 0 0
+node "a_562_n2079#" 54 2577.27 562 -2079 p 0 0 0 0 0 0 0 0 0 0 0 0 22064 842 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180353 6826 273468 8362 0 0 0 0 0 0
+node "VCONT" 50 801.306 2658 -1482 m1 0 0 0 0 0 0 0 0 0 0 0 0 84360 1742 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11781 460 0 0 0 0 0 0 0 0
+node "EN" 78 1167.76 502 -1481 m1 0 0 0 0 0 0 0 0 0 0 0 0 133504 2608 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13244 498 0 0 0 0 0 0 0 0
+node "a_2095_n808#" 54 573.292 2095 -808 p 0 0 0 0 0 0 0 0 0 0 0 0 85120 1744 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66559 2648 136883 3864 0 0 0 0 0 0
+node "OUTB" 55 30.4721 272 -834 m1 0 0 0 0 0 0 0 0 0 0 0 0 91341 1874 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17941 620 0 0 0 0 0 0 0 0
+node "a_2095_n217#" 63 36.8092 2095 -217 p 0 0 0 0 0 0 0 0 0 0 0 0 108752 2166 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1015_n424#" 81 754.701 1015 -424 p 0 0 0 0 0 0 0 0 0 0 0 0 95648 2156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 162742 6842 107996 2994 0 0 0 0 0 0
+node "OUT" 127 784.809 275 -223 m1 0 0 0 0 0 0 0 0 0 0 0 0 174605 3578 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 182194 7354 119852 3306 0 0 0 0 0 0
+node "VDD" 2523 20954 2947 -249 m1 5428200 9860 0 0 929000 18000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1088702 24084 214852 7102 0 0 0 0 0 0
+substrate "VSS" 0 0 103 -1868 m1 0 0 0 0 0 0 2368800 33560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2560948 39844 0 0 0 0 0 0 0 0
+cap "OUTB" "a_562_n2079#" 2.99944
+cap "a_2095_n808#" "a_562_n2079#" 58.8204
+cap "VDD" "OUTB" 897.826
+cap "a_562_n2079#" "VCONT" 13.3089
+cap "a_562_n2079#" "a_1015_n424#" 254.808
+cap "EN" "OUTB" 10.2448
+cap "a_2095_n808#" "VDD" 1279.88
+cap "VDD" "VCONT" 31.0921
+cap "OUT" "IN" 170.346
+cap "OUT" "a_2095_n217#" 0.00601254
+cap "VDD" "a_1015_n424#" 1732.45
+cap "a_2095_n808#" "EN" 0.00147624
+cap "EN" "VCONT" 14.0723
+cap "EN" "a_1015_n424#" 5.62635
+cap "a_2095_n808#" "INB" 0.739464
+cap "INB" "VCONT" 7.69572
+cap "m1_277_n67#" "VDD" 1350.73
+cap "INB" "a_1015_n424#" 176.65
+cap "EN" "m1_277_n67#" 0.0781247
+cap "VDD" "a_562_n2079#" 59.1825
+cap "EN" "a_562_n2079#" 121.098
+cap "a_562_n2079#" "INB" 57.955
+cap "OUT" "OUTB" 100.211
+cap "a_2095_n808#" "a_2095_n217#" 21.134
+cap "IN" "a_1015_n424#" 18.1983
+cap "a_2095_n217#" "a_1015_n424#" 17.5
+cap "EN" "VDD" 49.8806
+cap "VDD" "INB" 0.369047
+cap "a_2095_n808#" "OUT" 30.6116
+cap "OUT" "VCONT" 2.4077
+cap "OUT" "a_1015_n424#" 499.292
+cap "a_2095_n217#" "m1_277_n67#" 28.1418
+cap "EN" "INB" 1.5714
+cap "OUT" "m1_277_n67#" 124.735
+cap "a_562_n2079#" "IN" 57.8881
+cap "OUT" "a_562_n2079#" 349.65
+cap "a_2095_n808#" "OUTB" 0.0321778
+cap "a_2095_n217#" "VDD" 973.121
+cap "OUTB" "a_1015_n424#" 8.35263
+cap "EN" "IN" 10.7423
+cap "OUT" "VDD" 2489.51
+cap "IN" "INB" 21.0567
+cap "a_2095_n808#" "VCONT" 65.6646
+cap "a_2095_n808#" "a_1015_n424#" 152.302
+cap "m1_277_n67#" "OUTB" 0.000877895
+cap "VCONT" "a_1015_n424#" 14.341
+cap "OUT" "EN" 31.909
+cap "OUT" "INB" 1.39036
+cap "a_2095_n808#" "m1_277_n67#" 0.128178
+cap "m1_277_n67#" "VCONT" 0.0780205
+cap "m1_277_n67#" "a_1015_n424#" 81.8375
+cap "nmos_3p3_VMHHD6_1/a_n380_n144#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 20.4939
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" -2.1059
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_QNHHD6_0/a_n56_n144#" -0.304365
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 0.191659
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 0.818907
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_2/a_n268_n100#" 8.88178e-16
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "pmos_3p3_ZB3RD7_1/a_n468_n100#" 0.00140987
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 31.1253
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 21.8873
+cap "pmos_3p3_ZB3RD7_4/a_n468_n100#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 0.00411901
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 1.43117
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 1.65236
+cap "pmos_3p3_ZB3RD7_4/a_n468_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 0.223792
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 13.6138
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" -0.0167682
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 7.68434
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 71.9097
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 23.8886
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 27.2782
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 89.2112
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 0.0035789
+cap "nmos_3p3_VMHHD6_2/a_n380_n144#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 120.977
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 40.303
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" -59.067
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 8.97285
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 119.664
+cap "nmos_3p3_VMHHD6_2/a_n380_n144#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 10.6946
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 13.9739
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 70.1735
+cap "nmos_3p3_VMHHD6_0/a_n380_n144#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 11.8556
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 4.38906
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" -0.281115
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 0.004982
+cap "nmos_3p3_VMHHD6_2/a_n380_n144#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 8.61866
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 1.93875
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 12.6395
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" -0.626272
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_0/a_n268_n100#" -0.408291
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 59.2084
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 0.010456
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 15.1392
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 1.96998
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" -0.0590233
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" -2.08253
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 16.6527
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_QNHHD6_0/a_n56_n144#" -0.59903
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 3.12144
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" -82.5724
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 2.37285
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 48.6282
+cap "nmos_3p3_VMHHD6_2/a_n380_n144#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 3.56487
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 0.0145415
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 11.5028
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 41.2658
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" -7.23721
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 60.0836
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 33.7736
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "pmos_3p3_ZB3RD7_4/a_380_n100#" -0.2923
+cap "nmos_3p3_VMHHD6_2/a_n380_n144#" "nmos_3p3_VMHHD6_1/a_n52_n100#" 1.98356
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "VSS" 5.00253
+cap "nmos_3p3_VMHHD6_2/a_n380_n144#" "VSS" 0.113154
+cap "nmos_3p3_VMHHD6_0/a_n380_n144#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 33.1696
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 2.57495
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_1/a_164_n100#" 0.00196229
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_1/a_n164_n144#" 0.00898062
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "VSS" 0.0339267
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" -0.23258
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "VSS" -0.208407
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 2.35095
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "VSS" 14.3135
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 3.94993
+cap "nmos_3p3_VMHHD6_0/a_n380_n144#" "VSS" 0.684937
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 0.241969
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "VSS" -4.63619
+cap "pmos_3p3_ZB3RD7_3/a_n268_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" -0.000592858
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_2/a_n268_n100#" -221.733
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" -1.17138
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "pmos_3p3_ZB3RD7_1/a_n468_n100#" -128.108
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" 6.67118
+cap "pmos_3p3_ZB3RD7_4/a_n468_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 0.337338
+cap "pmos_3p3_ZB3RD7_4/a_n468_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" -65.3414
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 0.348309
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "pmos_3p3_ZB3RD7_4/a_n468_n100#" -143.944
+cap "pmos_3p3_ZB3RD7_4/a_n468_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" 108.388
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "nmos_3p3_VMHHD6_2/a_n268_n100#" 0.00220981
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_1/a_n268_n100#" -382.438
+cap "pmos_3p3_ZB3RD7_4/a_n468_n100#" "pmos_3p3_ZB3RD7_1/a_n468_n100#" 1.39209
+cap "nmos_3p3_VMHHD6_1/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" 83.5642
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" -0.000593117
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 127.858
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 129.435
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 61.1559
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 0.120227
+cap "nmos_3p3_VMHHD6_0/a_n268_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 9.23689
+cap "nmos_3p3_QNHHD6_0/a_n56_n144#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 0.582761
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 1.14208
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_2/a_n268_n100#" -434.655
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 6.03006
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n164_n144#" 0.227558
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 0.263226
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_0/a_n268_n100#" -137.032
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 0.352033
+cap "nmos_3p3_VMHHD6_1/a_n380_n144#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 0.247093
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" -0.564035
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 5.29497
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_2/a_n380_n144#" 0.0695599
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 1.73725
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_QNHHD6_0/a_n56_n144#" 0.578372
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" -0.387097
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 0.341337
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "pmos_3p3_ZB3RD7_1/a_n468_n100#" -193.892
+cap "nmos_3p3_VMHHD6_0/a_n380_n144#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 0.896316
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_1/a_n268_n100#" -81.9474
+cap "nmos_3p3_FSHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_1/a_n268_n100#" 1.16158
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "pmos_3p3_ZB3RD7_1/a_n468_n100#" 125.832
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "nmos_3p3_VMHHD6_1/a_n380_n144#" 0.20657
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#" -0.154764
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "nmos_3p3_VMHHD6_1/a_164_n100#" 0.156619
+cap "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 0.00221558
+cap "VSS" "nmos_3p3_VMHHD6_0/a_n268_n100#" 0.0269229
+cap "pmos_3p3_ZB3RD7_1/a_380_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 28.5144
+cap "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" 0.122397
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "nmos_3p3_VMHHD6_0/a_n380_n144#" 0.55582
+cap "nmos_3p3_VMHHD6_2/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" -0.00343377
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#" -107.189
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "nmos_3p3_VMHHD6_1/a_n52_n100#" 0.156183
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "pmos_3p3_ZB3RD7_1/a_380_n100#" -23.9598
+cap "pmos_3p3_ZB3RD7_4/a_380_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#" 0.54918
+cap "pmos_3p3_ZB3RD7_4/a_n268_n100#" "VSS" 3.21004
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" 0.378776
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" -35.5216
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "pmos_3p3_ZB3RD7_4/a_n268_n100#" 2.5974
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "pmos_3p3_ZB3RD7_4/a_n268_n100#" 34.6871
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "pmos_3p3_ZB3RD7_4/a_n268_n100#" 96.27
+cap "pmos_3p3_ZB3RD7_0/a_268_n144#" "VSS" 1.77597
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" 90.1367
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "pmos_3p3_ZB3RD7_4/a_268_n144#" 34.6871
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" -59.9055
+cap "pmos_3p3_ZB3RD7_4/w_n554_n230#" "pmos_3p3_ZB3RD7_4/a_n268_n100#" 1.05729
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "pmos_3p3_ZB3RD7_0/a_268_n144#" 5.19481
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "pmos_3p3_ZB3RD7_4/a_n268_n100#" 2.5974
+cap "pmos_3p3_ZB3RD7_0/a_268_n144#" "pmos_3p3_ZB3RD7_4/w_n554_n230#" 43.035
+cap "pmos_3p3_ZB3RD7_1/a_n468_n100#" "pmos_3p3_ZB3RD7_0/a_268_n144#" 16.6588
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "VSS" 2.9911
+cap "pmos_3p3_ZB3RD7_1/a_380_n100#" "pmos_3p3_ZB3RD7_4/a_380_n100#" -3.75948
+cap "pmos_3p3_ZB3RD7_0/a_268_n144#" "pmos_3p3_ZB3RD7_1/a_380_n100#" 5.55294
+cap "pmos_3p3_ZB3RD7_0/a_268_n144#" "pmos_3p3_ZB3RD7_4/a_380_n100#" 34.3587
+cap "pmos_3p3_ZB3RD7_0/a_268_n144#" "VSS" 1.47033
+cap "pmos_3p3_ZB3RD7_4/a_268_n144#" "pmos_3p3_ZB3RD7_4/a_380_n100#" 0.255475
+merge "pmos_3p3_ZB3RD7_1/a_268_n144#" "pmos_3p3_ZB3RD7_1/a_52_n144#" -461.748 0 0 0 0 0 0 0 0 0 0 0 0 -17024 -2096 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22356 -1524 0 0 0 0 0 0 0 0
+merge "pmos_3p3_ZB3RD7_1/a_52_n144#" "pmos_3p3_ZB3RD7_1/a_n164_n144#"
+merge "pmos_3p3_ZB3RD7_1/a_n164_n144#" "pmos_3p3_ZB3RD7_1/a_n380_n144#"
+merge "pmos_3p3_ZB3RD7_1/a_n380_n144#" "pmos_3p3_ZB3RD7_1/a_164_n100#"
+merge "pmos_3p3_ZB3RD7_1/a_164_n100#" "pmos_3p3_ZB3RD7_1/a_n268_n100#"
+merge "pmos_3p3_ZB3RD7_1/a_n268_n100#" "pmos_3p3_ZB3RD7_5/a_268_n144#"
+merge "pmos_3p3_ZB3RD7_5/a_268_n144#" "pmos_3p3_ZB3RD7_5/a_52_n144#"
+merge "pmos_3p3_ZB3RD7_5/a_52_n144#" "pmos_3p3_ZB3RD7_5/a_n164_n144#"
+merge "pmos_3p3_ZB3RD7_5/a_n164_n144#" "pmos_3p3_ZB3RD7_5/a_n380_n144#"
+merge "pmos_3p3_ZB3RD7_5/a_n380_n144#" "pmos_3p3_ZB3RD7_4/a_164_n100#"
+merge "pmos_3p3_ZB3RD7_4/a_164_n100#" "pmos_3p3_ZB3RD7_4/a_n268_n100#"
+merge "pmos_3p3_ZB3RD7_4/a_n268_n100#" "nmos_3p3_VMHHD6_1/a_164_n100#"
+merge "nmos_3p3_VMHHD6_1/a_164_n100#" "nmos_3p3_VMHHD6_1/a_n268_n100#"
+merge "nmos_3p3_VMHHD6_1/a_n268_n100#" "OUT"
+merge "nmos_3p3_VMHHD6_2/a_268_n144#" "nmos_3p3_VMHHD6_2/a_52_n144#" -309.995 0 0 0 0 0 0 0 0 0 0 0 0 -6720 -1016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VMHHD6_2/a_52_n144#" "nmos_3p3_VMHHD6_2/a_n164_n144#"
+merge "nmos_3p3_VMHHD6_2/a_n164_n144#" "nmos_3p3_VMHHD6_2/a_n380_n144#"
+merge "nmos_3p3_VMHHD6_2/a_n380_n144#" "INB"
+merge "pmos_3p3_ZB3RD7_3/a_380_n100#" "pmos_3p3_ZB3RD7_3/a_n52_n100#" -474.261 0 0 0 0 0 0 -28800 -1088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -74382 -4062 0 0 0 0 0 0 0 0
+merge "pmos_3p3_ZB3RD7_3/a_n52_n100#" "pmos_3p3_ZB3RD7_3/a_n468_n100#"
+merge "pmos_3p3_ZB3RD7_3/a_n468_n100#" "pmos_3p3_ZB3RD7_2/a_380_n100#"
+merge "pmos_3p3_ZB3RD7_2/a_380_n100#" "pmos_3p3_ZB3RD7_2/a_n52_n100#"
+merge "pmos_3p3_ZB3RD7_2/a_n52_n100#" "pmos_3p3_ZB3RD7_2/a_n468_n100#"
+merge "pmos_3p3_ZB3RD7_2/a_n468_n100#" "pmos_3p3_ZB3RD7_1/a_380_n100#"
+merge "pmos_3p3_ZB3RD7_1/a_380_n100#" "pmos_3p3_ZB3RD7_1/a_n52_n100#"
+merge "pmos_3p3_ZB3RD7_1/a_n52_n100#" "pmos_3p3_ZB3RD7_1/a_n468_n100#"
+merge "pmos_3p3_ZB3RD7_1/a_n468_n100#" "m1_277_n67#"
+merge "pmos_3p3_ZB3RD7_3/a_268_n144#" "pmos_3p3_ZB3RD7_3/a_52_n144#" -511.105 0 0 0 0 0 0 0 0 0 0 0 0 -15680 -2296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19274 -1206 0 0 0 0 0 0 0 0
+merge "pmos_3p3_ZB3RD7_3/a_52_n144#" "pmos_3p3_ZB3RD7_3/a_n164_n144#"
+merge "pmos_3p3_ZB3RD7_3/a_n164_n144#" "pmos_3p3_ZB3RD7_3/a_n380_n144#"
+merge "pmos_3p3_ZB3RD7_3/a_n380_n144#" "pmos_3p3_ZB3RD7_0/a_268_n144#"
+merge "pmos_3p3_ZB3RD7_0/a_268_n144#" "a_2095_n217#"
+merge "a_2095_n217#" "pmos_3p3_ZB3RD7_0/a_52_n144#"
+merge "pmos_3p3_ZB3RD7_0/a_52_n144#" "pmos_3p3_ZB3RD7_0/a_n164_n144#"
+merge "pmos_3p3_ZB3RD7_0/a_n164_n144#" "pmos_3p3_ZB3RD7_0/a_n380_n144#"
+merge "pmos_3p3_ZB3RD7_0/a_n380_n144#" "pmos_3p3_ZB3RD7_0/a_164_n100#"
+merge "pmos_3p3_ZB3RD7_0/a_164_n100#" "pmos_3p3_ZB3RD7_0/a_n268_n100#"
+merge "pmos_3p3_ZB3RD7_0/a_n268_n100#" "nmos_3p3_VMHHD6_0/a_164_n100#"
+merge "nmos_3p3_VMHHD6_0/a_164_n100#" "nmos_3p3_VMHHD6_0/a_n268_n100#"
+merge "nmos_3p3_VMHHD6_0/a_n268_n100#" "a_2095_n808#"
+merge "pmos_3p3_ZB3RD7_0/a_380_n100#" "pmos_3p3_ZB3RD7_3/a_164_n100#" -10083.1 -3058080 -18816 0 0 0 0 -28800 -1088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76550 -4342 0 0 0 0 0 0 0 0
+merge "pmos_3p3_ZB3RD7_3/a_164_n100#" "pmos_3p3_ZB3RD7_3/a_n268_n100#"
+merge "pmos_3p3_ZB3RD7_3/a_n268_n100#" "pmos_3p3_ZB3RD7_3/w_n554_n230#"
+merge "pmos_3p3_ZB3RD7_3/w_n554_n230#" "pmos_3p3_ZB3RD7_2/w_n554_n230#"
+merge "pmos_3p3_ZB3RD7_2/w_n554_n230#" "pmos_3p3_ZB3RD7_1/w_n554_n230#"
+merge "pmos_3p3_ZB3RD7_1/w_n554_n230#" "pmos_3p3_ZB3RD7_0/a_n52_n100#"
+merge "pmos_3p3_ZB3RD7_0/a_n52_n100#" "pmos_3p3_ZB3RD7_0/a_n468_n100#"
+merge "pmos_3p3_ZB3RD7_0/a_n468_n100#" "pmos_3p3_ZB3RD7_0/w_n554_n230#"
+merge "pmos_3p3_ZB3RD7_0/w_n554_n230#" "pmos_3p3_ZB3RD7_5/a_380_n100#"
+merge "pmos_3p3_ZB3RD7_5/a_380_n100#" "pmos_3p3_ZB3RD7_5/a_n52_n100#"
+merge "pmos_3p3_ZB3RD7_5/a_n52_n100#" "pmos_3p3_ZB3RD7_5/a_n468_n100#"
+merge "pmos_3p3_ZB3RD7_5/a_n468_n100#" "pmos_3p3_ZB3RD7_5/w_n554_n230#"
+merge "pmos_3p3_ZB3RD7_5/w_n554_n230#" "pmos_3p3_ZB3RD7_4/a_380_n100#"
+merge "pmos_3p3_ZB3RD7_4/a_380_n100#" "pmos_3p3_ZB3RD7_4/a_n52_n100#"
+merge "pmos_3p3_ZB3RD7_4/a_n52_n100#" "pmos_3p3_ZB3RD7_4/a_n468_n100#"
+merge "pmos_3p3_ZB3RD7_4/a_n468_n100#" "pmos_3p3_ZB3RD7_4/w_n554_n230#"
+merge "pmos_3p3_ZB3RD7_4/w_n554_n230#" "VDD"
+merge "pmos_3p3_ZB3RD7_2/a_268_n144#" "pmos_3p3_ZB3RD7_2/a_52_n144#" -469.872 0 0 0 0 0 0 0 0 0 0 0 0 -17024 -2320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21574 -1490 0 0 0 0 0 0 0 0
+merge "pmos_3p3_ZB3RD7_2/a_52_n144#" "pmos_3p3_ZB3RD7_2/a_n164_n144#"
+merge "pmos_3p3_ZB3RD7_2/a_n164_n144#" "pmos_3p3_ZB3RD7_2/a_n380_n144#"
+merge "pmos_3p3_ZB3RD7_2/a_n380_n144#" "pmos_3p3_ZB3RD7_2/a_164_n100#"
+merge "pmos_3p3_ZB3RD7_2/a_164_n100#" "pmos_3p3_ZB3RD7_2/a_n268_n100#"
+merge "pmos_3p3_ZB3RD7_2/a_n268_n100#" "pmos_3p3_ZB3RD7_5/a_164_n100#"
+merge "pmos_3p3_ZB3RD7_5/a_164_n100#" "pmos_3p3_ZB3RD7_5/a_n268_n100#"
+merge "pmos_3p3_ZB3RD7_5/a_n268_n100#" "pmos_3p3_ZB3RD7_4/a_268_n144#"
+merge "pmos_3p3_ZB3RD7_4/a_268_n144#" "nmos_3p3_VMHHD6_2/a_164_n100#"
+merge "nmos_3p3_VMHHD6_2/a_164_n100#" "nmos_3p3_VMHHD6_2/a_n268_n100#"
+merge "nmos_3p3_VMHHD6_2/a_n268_n100#" "a_1015_n424#"
+merge "a_1015_n424#" "pmos_3p3_ZB3RD7_4/a_52_n144#"
+merge "pmos_3p3_ZB3RD7_4/a_52_n144#" "pmos_3p3_ZB3RD7_4/a_n164_n144#"
+merge "pmos_3p3_ZB3RD7_4/a_n164_n144#" "pmos_3p3_ZB3RD7_4/a_n380_n144#"
+merge "pmos_3p3_ZB3RD7_4/a_n380_n144#" "OUTB"
+merge "nmos_3p3_FSHHD6_0/a_52_n144#" "nmos_3p3_FSHHD6_0/a_n164_n144#" -150.707 0 0 0 0 0 0 0 0 0 0 0 0 -2688 -496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_FSHHD6_0/a_n164_n144#" "EN"
+merge "nmos_3p3_VMHHD6_1/a_268_n144#" "nmos_3p3_VMHHD6_1/a_52_n144#" -303.205 0 0 0 0 0 0 0 0 0 0 0 0 -7168 -1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VMHHD6_1/a_52_n144#" "nmos_3p3_VMHHD6_1/a_n164_n144#"
+merge "nmos_3p3_VMHHD6_1/a_n164_n144#" "nmos_3p3_VMHHD6_1/a_n380_n144#"
+merge "nmos_3p3_VMHHD6_1/a_n380_n144#" "IN"
+merge "nmos_3p3_VMHHD6_2/a_380_n100#" "nmos_3p3_VMHHD6_2/a_n52_n100#" -1228.12 0 0 0 0 -43200 -1632 0 0 0 0 0 0 -448 -456 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84962 -4706 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VMHHD6_2/a_n52_n100#" "nmos_3p3_VMHHD6_2/a_n468_n100#"
+merge "nmos_3p3_VMHHD6_2/a_n468_n100#" "nmos_3p3_QNHHD6_1/a_56_n100#"
+merge "nmos_3p3_QNHHD6_1/a_56_n100#" "nmos_3p3_QNHHD6_1/a_n144_n100#"
+merge "nmos_3p3_QNHHD6_1/a_n144_n100#" "nmos_3p3_QNHHD6_1/a_n56_n144#"
+merge "nmos_3p3_QNHHD6_1/a_n56_n144#" "nmos_3p3_FSHHD6_0/a_n52_n100#"
+merge "nmos_3p3_FSHHD6_0/a_n52_n100#" "nmos_3p3_VMHHD6_1/a_380_n100#"
+merge "nmos_3p3_VMHHD6_1/a_380_n100#" "nmos_3p3_VMHHD6_1/a_n52_n100#"
+merge "nmos_3p3_VMHHD6_1/a_n52_n100#" "nmos_3p3_VMHHD6_1/a_n468_n100#"
+merge "nmos_3p3_VMHHD6_1/a_n468_n100#" "nmos_3p3_QNHHD6_0/a_56_n100#"
+merge "nmos_3p3_QNHHD6_0/a_56_n100#" "nmos_3p3_QNHHD6_0/a_n144_n100#"
+merge "nmos_3p3_QNHHD6_0/a_n144_n100#" "nmos_3p3_QNHHD6_0/a_n56_n144#"
+merge "nmos_3p3_QNHHD6_0/a_n56_n144#" "a_562_n2079#"
+merge "pmos_3p3_ZB3RD7_3/VSUBS" "pmos_3p3_ZB3RD7_2/VSUBS" -3727.71 0 0 0 0 -14400 -544 -1232000 -18160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1242764 -19088 0 0 0 0 0 0 0 0
+merge "pmos_3p3_ZB3RD7_2/VSUBS" "pmos_3p3_ZB3RD7_1/VSUBS"
+merge "pmos_3p3_ZB3RD7_1/VSUBS" "pmos_3p3_ZB3RD7_0/VSUBS"
+merge "pmos_3p3_ZB3RD7_0/VSUBS" "pmos_3p3_ZB3RD7_5/VSUBS"
+merge "pmos_3p3_ZB3RD7_5/VSUBS" "pmos_3p3_ZB3RD7_4/VSUBS"
+merge "pmos_3p3_ZB3RD7_4/VSUBS" "nmos_3p3_VMHHD6_2/VSUBS"
+merge "nmos_3p3_VMHHD6_2/VSUBS" "nmos_3p3_VMHHD6_0/VSUBS"
+merge "nmos_3p3_VMHHD6_0/VSUBS" "nmos_3p3_VMHHD6_0/a_380_n100#"
+merge "nmos_3p3_VMHHD6_0/a_380_n100#" "nmos_3p3_VMHHD6_0/a_n52_n100#"
+merge "nmos_3p3_VMHHD6_0/a_n52_n100#" "nmos_3p3_VMHHD6_0/a_n468_n100#"
+merge "nmos_3p3_VMHHD6_0/a_n468_n100#" "nmos_3p3_QNHHD6_1/VSUBS"
+merge "nmos_3p3_QNHHD6_1/VSUBS" "nmos_3p3_FSHHD6_0/VSUBS"
+merge "nmos_3p3_FSHHD6_0/VSUBS" "nmos_3p3_FSHHD6_0/a_164_n100#"
+merge "nmos_3p3_FSHHD6_0/a_164_n100#" "nmos_3p3_FSHHD6_0/a_n252_n100#"
+merge "nmos_3p3_FSHHD6_0/a_n252_n100#" "nmos_3p3_VMHHD6_1/VSUBS"
+merge "nmos_3p3_VMHHD6_1/VSUBS" "nmos_3p3_QNHHD6_0/VSUBS"
+merge "nmos_3p3_QNHHD6_0/VSUBS" "VSS"
+merge "nmos_3p3_VMHHD6_0/a_268_n144#" "nmos_3p3_VMHHD6_0/a_52_n144#" -296.273 0 0 0 0 0 0 0 0 0 0 0 0 -5376 -992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VMHHD6_0/a_52_n144#" "nmos_3p3_VMHHD6_0/a_n164_n144#"
+merge "nmos_3p3_VMHHD6_0/a_n164_n144#" "nmos_3p3_VMHHD6_0/a_n380_n144#"
+merge "nmos_3p3_VMHHD6_0/a_n380_n144#" "VCONT"

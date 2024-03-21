@@ -1,0 +1,29 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1691809051
+<< metal1 >>
+rect 610 1297 1120 1300
+rect 0 1030 1846 1297
+rect -110 580 40 660
+rect 1778 578 1928 658
+rect 66 2 1779 204
+rect 680 0 1020 2
+use gf_inv_mag  gf_inv_mag_0
+timestamp 1691671001
+transform 1 0 -242 0 1 -143
+box 242 143 1186 1440
+use gf_inv_mag  gf_inv_mag_1
+timestamp 1691671001
+transform 1 0 658 0 1 -143
+box 242 143 1186 1440
+<< labels >>
+flabel metal1 866 103 866 103 0 FreeSans 480 0 0 0 VSS
+port 1 nsew
+flabel metal1 1866 623 1866 623 0 FreeSans 480 0 0 0 OUT
+port 2 nsew
+flabel metal1 -75 623 -75 623 0 FreeSans 480 0 0 0 IN
+port 3 nsew
+flabel metal1 781 1147 781 1147 0 FreeSans 480 0 0 0 VDD
+port 0 nsew
+<< end >>

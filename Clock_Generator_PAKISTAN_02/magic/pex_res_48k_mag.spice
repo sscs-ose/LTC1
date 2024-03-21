@@ -1,0 +1,62 @@
+* NGSPICE file created from res_48k_mag_flat.ext - technology: gf180mcuC
+
+.subckt res_48k_mag_flat A B VDD
+X0 a_n2816_2306# a_n2576_204# VDD.t5 ppolyf_u r_width=0.8u r_length=10u
+X1 a_n3776_2306# a_n4016_204# VDD.t9 ppolyf_u r_width=0.8u r_length=10u
+X2 a_n3296_2306# a_n3536_204# VDD.t1 ppolyf_u r_width=0.8u r_length=10u
+X3 A.t0 a_n4496_204# VDD.t3 ppolyf_u r_width=0.8u r_length=10u
+X4 a_n4256_2306# a_n4016_204# VDD.t6 ppolyf_u r_width=0.8u r_length=10u
+X5 a_n2816_2306# a_n3056_204# VDD.t0 ppolyf_u r_width=0.8u r_length=10u
+X6 B.t0 a_n2576_204# VDD.t2 ppolyf_u r_width=0.8u r_length=10u
+X7 a_n3296_2306# a_n3056_204# VDD.t8 ppolyf_u r_width=0.8u r_length=10u
+X8 a_n3776_2306# a_n3536_204# VDD.t7 ppolyf_u r_width=0.8u r_length=10u
+X9 a_n4256_2306# a_n4496_204# VDD.t4 ppolyf_u r_width=0.8u r_length=10u
+R0 VDD.t5 VDD.t2 87.2098
+R1 VDD.t0 VDD.t5 87.2098
+R2 VDD.t8 VDD.t0 87.2098
+R3 VDD.t1 VDD.t8 87.2098
+R4 VDD.t7 VDD.t9 87.2098
+R5 VDD.t9 VDD.t6 87.2098
+R6 VDD.t6 VDD.t4 87.2098
+R7 VDD.t4 VDD.t3 87.2098
+R8 VDD.n0 VDD.t7 66.4976
+R9 VDD.n0 VDD.t1 20.7127
+R10 VDD VDD.n2 3.15163
+R11 VDD.n2 VDD.n0 3.1505
+R12 VDD.n2 VDD.n1 0.133132
+R13 A A.t0 7.16363
+R14 B B.t0 7.16137
+C0 a_n3296_2306# VDD 0.248f
+C1 VDD a_n4496_204# 0.285f
+C2 a_n4016_204# a_n4496_204# 0.0759f
+C3 a_n3296_2306# a_n3776_2306# 0.0759f
+C4 a_n2816_2306# a_n3296_2306# 0.0759f
+C5 VDD a_n4016_204# 0.275f
+C6 B VDD 0.181f
+C7 a_n2576_204# VDD 0.285f
+C8 a_n3056_204# VDD 0.289f
+C9 VDD a_n4256_2306# 0.248f
+C10 a_n3536_204# VDD 0.353f
+C11 a_n3536_204# a_n4016_204# 0.0759f
+C12 a_n2576_204# a_n3056_204# 0.0754f
+C13 VDD a_n3776_2306# 0.248f
+C14 a_n3056_204# a_n3536_204# 0.0759f
+C15 a_n2816_2306# VDD 0.248f
+C16 a_n2816_2306# B 0.075f
+C17 a_n4256_2306# a_n3776_2306# 0.0759f
+C18 VDD A 0.181f
+C19 A a_n4256_2306# 0.0767f
+C20 B VSUBS 0.21f
+C21 A VSUBS 0.21f
+C22 VDD VSUBS 22.3f
+C23 a_n2576_204# VSUBS 0.218f
+C24 a_n2816_2306# VSUBS 0.224f
+C25 a_n3056_204# VSUBS 0.19f
+C26 a_n3296_2306# VSUBS 0.224f
+C27 a_n3536_204# VSUBS 0.16f
+C28 a_n3776_2306# VSUBS 0.224f
+C29 a_n4016_204# VSUBS 0.197f
+C30 a_n4256_2306# VSUBS 0.224f
+C31 a_n4496_204# VSUBS 0.218f
+.ends
+

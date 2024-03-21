@@ -1,0 +1,72 @@
+** sch_path: /home/shahid/GF180Projects/Divider/Xschem/counter_TB.sch
+**.subckt counter_TB
+x1 IN OUT OUT OUT OUT OUT OUT net1 GND counter_6bit_ngspice
+C1 OUT GND 50f m=1
+V2 IN GND 3.3
+.save i(v2)
+V1 net1 GND 3.3
+.save i(v1)
+**** begin user architecture code
+
+
+
+.control
+save all
+dc v2 0 3.3 0.01
+*write test_nfet_03v3.raw
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/shahid/EDA_TOOLs/xschem/xschem_library/ngspice/counter_6bit_ngspice.sym
+*+ # of pins=4
+** sym_path: /home/shahid/EDA_TOOLs/xschem/xschem_library/ngspice/counter_6bit_ngspice.sym
+** sch_path: /home/shahid/EDA_TOOLs/xschem/xschem_library/ngspice/counter_6bit_ngspice.sch
+.subckt counter_6bit_ngspice CK COUNT[5] COUNT[4] COUNT[3] COUNT[2] COUNT[1] COUNT[0] D RST
+*  l1 -  title  IS MISSING !!!!
+*  l42 -  lab_wire  IS MISSING !!!!
+*  p43 -  lab_pin  IS MISSING !!!!
+x2[5] net1[5] net4[5] net2[5] net5[5] flip_flop_ngspice
+x2[4] net1[4] net4[4] net2[4] net5[4] flip_flop_ngspice
+x2[3] net1[3] net4[3] net2[3] net5[3] flip_flop_ngspice
+x2[2] net1[2] net4[2] net2[2] net5[2] flip_flop_ngspice
+x2[1] net1[1] net4[1] net2[1] net5[1] flip_flop_ngspice
+x2[0] net1[0] net4[0] net2[0] net5[0] flip_flop_ngspice
+*  p11 -  lab_pin  IS MISSING !!!!
+*  p13 -  lab_pin  IS MISSING !!!!
+*  p14 -  lab_pin  IS MISSING !!!!
+x1[5] net2[5] net1[5] net3[5] net6[5] half_adder_ngspice
+x1[4] net2[4] net1[4] net3[4] net6[4] half_adder_ngspice
+x1[3] net2[3] net1[3] net3[3] net6[3] half_adder_ngspice
+x1[2] net2[2] net1[2] net3[2] net6[2] half_adder_ngspice
+x1[1] net2[1] net1[1] net3[1] net6[1] half_adder_ngspice
+x1[0] net2[0] net1[0] net3[0] net6[0] half_adder_ngspice
+*  p5 -  lab_pin  IS MISSING !!!!
+*  p1 -  ipin  IS MISSING !!!!
+*  p2 -  ipin  IS MISSING !!!!
+*  p4 -  opin  IS MISSING !!!!
+*  p6 -  ipin  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  flip_flop_ngspice.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Divider/Xschem/flip_flop_ngspice.sym
+** sch_path: /home/shahid/GF180Projects/Divider/Xschem/flip_flop_ngspice.sch
+.subckt flip_flop_ngspice D CLK Q RST
+.ends
+
+
+* expanding   symbol:  half_adder_ngspice.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Divider/Xschem/half_adder_ngspice.sym
+** sch_path: /home/shahid/GF180Projects/Divider/Xschem/half_adder_ngspice.sch
+.subckt half_adder_ngspice A S COUT B
+.ends
+
+.GLOBAL GND
+.end

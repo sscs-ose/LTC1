@@ -1,0 +1,64 @@
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/Transmission_Gate_TB.sch
+**.subckt Transmission_Gate_TB VOUT VOUTP
+*.opin VOUT
+*.opin VOUTP
+x2 VDD VSS CLK VOUTP VIN Transmission_Gate
+V1 VDD VSS 3
+.save i(v1)
+V2 VSS GND 0
+.save i(v2)
+V3 CLK VSS PULSE(3 0 0 1u 1u 1s 2s)
+.save i(v3)
+V4 VIN VSS 3
+.save i(v4)
+x1 VDD VSS CLK VOUT VIN Transmission_Gate_PEX
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_Transmission_Gate_Layout.spice
+.control
+set color0 = white
+set color1 = black
+save all
+**dc v2 0 3 0.1
+*plot v(VIN) v(PH1A) v(PH1) v(PH2)
+
+tran 10m 4
+plot v(CLK) v(VIN)+3.5 v(VOUT)+7 v(VOUTP)+10.5
+*plot v(S1) v(S2)+3.5 v(S3)+7 v(S4)+10.5 v(S5)+14 v(S6)+17.5
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  Transmission_Gate.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/Transmission_Gate.sym
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/Transmission_Gate.sch
+.subckt Transmission_Gate VDD VSS CLK VOUT VIN
+*.iopin VIN
+*.iopin VOUT
+*.ipin CLK
+*.iopin VDD
+*.iopin VSS
+XM1 VOUT CLK_B VIN VDD pfet_03v3 L=0.28u W=60u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 VOUT CLK VIN VSS nfet_03v3 L=0.28u W=30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 CLK_B CLK VDD VDD pfet_03v3 L=0.28u W=7.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 CLK_B CLK VSS VSS nfet_03v3 L=0.28u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

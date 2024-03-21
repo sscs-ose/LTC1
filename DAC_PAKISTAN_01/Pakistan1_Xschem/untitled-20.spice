@@ -1,0 +1,31 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/untitled-20.sch
+**.subckt untitled-20
+V2 VDD GND 3.3
+.save i(v2)
+I0 VDD ITAIL 2.5u
+R1 VDD OUT_2 1k m=1
+R2 VDD OUT_1 1k m=1
+x1 ITAIL GND OUT_1 OUT_2 VDD pex_CM_LSB
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_CM_LSB.spice
+.options savecurrents
+
+.control
+save all
+tran 10n 1u
+
+plot v(ITAIL)
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,129 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1695109904
+<< nwell >>
+rect 361 -394 362 -391
+rect 361 -401 375 -394
+rect 645 -729 650 -653
+rect 569 -896 618 -864
+<< pwell >>
+rect 324 -278 377 -196
+<< psubdiff >>
+rect 83 -28 542 26
+rect 646 -25 1035 30
+<< metal1 >>
+rect 256 729 323 817
+rect 651 715 732 814
+rect 651 662 663 715
+rect 720 713 732 715
+rect 720 662 731 713
+rect 651 654 731 662
+rect 377 606 458 609
+rect 377 554 394 606
+rect 446 603 458 606
+rect 945 604 1023 608
+rect 446 554 459 603
+rect 377 550 459 554
+rect 945 551 958 604
+rect 1010 551 1023 604
+rect 377 548 458 550
+rect 945 548 1023 551
+rect 136 450 207 515
+rect 696 502 767 515
+rect 421 448 772 502
+rect 904 453 1105 502
+rect 1003 448 1033 453
+rect 83 24 542 26
+rect 0 -28 542 24
+rect 646 -25 1035 30
+rect 0 -119 169 -28
+rect 290 -104 492 -28
+rect 951 -275 1049 -256
+rect 279 -320 361 -312
+rect 279 -324 362 -320
+rect 279 -395 292 -324
+rect 352 -331 362 -324
+rect 951 -328 975 -275
+rect 1029 -328 1049 -275
+rect 352 -394 366 -331
+rect 951 -338 1049 -328
+rect 352 -395 375 -394
+rect 279 -401 375 -395
+rect 285 -402 366 -401
+rect 430 -515 770 -458
+rect 954 -554 1022 -548
+rect 953 -604 1022 -554
+rect 954 -607 1022 -604
+rect 645 -670 729 -653
+rect 645 -723 658 -670
+rect 717 -723 729 -670
+rect 645 -729 729 -723
+rect 569 -896 618 -864
+rect 726 -993 928 -899
+<< via1 >>
+rect 663 662 720 715
+rect 394 554 446 606
+rect 958 551 1010 604
+rect 292 -395 352 -324
+rect 975 -328 1029 -275
+rect 658 -723 717 -670
+<< metal2 >>
+rect 651 715 731 724
+rect 651 662 663 715
+rect 720 662 731 715
+rect 651 654 731 662
+rect 314 606 458 609
+rect 314 554 394 606
+rect 446 554 458 606
+rect 314 548 458 554
+rect 314 -312 377 548
+rect 279 -324 377 -312
+rect 279 -395 292 -324
+rect 352 -394 377 -324
+rect 352 -395 375 -394
+rect 279 -401 375 -395
+rect 658 -653 724 654
+rect 945 604 1023 608
+rect 945 551 958 604
+rect 1010 551 1023 604
+rect 945 548 1023 551
+rect 951 -256 1019 548
+rect 951 -275 1049 -256
+rect 951 -328 975 -275
+rect 1029 -328 1049 -275
+rect 951 -338 1049 -328
+rect 645 -670 729 -653
+rect 645 -723 658 -670
+rect 717 -723 729 -670
+rect 645 -729 729 -723
+use nand2  nand2_0 ~/GF180Projects/Top_test/top/magic
+timestamp 1694691991
+transform 1 0 70 0 1 188
+box -70 -188 502 863
+use nand2  nand2_1
+timestamp 1694691991
+transform 1 0 633 0 1 188
+box -70 -188 502 863
+use nand2  nand2_2
+timestamp 1694691991
+transform 1 0 633 0 -1 -188
+box -70 -188 502 863
+use nverterlayout  nverterlayout_0
+timestamp 1695109904
+transform 1 0 255 0 -1 220
+box -88 220 316 1130
+<< labels >>
+flabel via1 326 -373 326 -373 0 FreeSans 480 0 0 0 Sel
+port 0 nsew
+flabel metal1 986 -579 986 -579 0 FreeSans 480 0 0 0 I0
+port 1 nsew
+flabel metal1 167 480 167 480 0 FreeSans 480 0 0 0 I1
+port 2 nsew
+flabel metal1 834 -939 834 -939 0 FreeSans 480 0 0 0 VDD
+port 4 nsew
+flabel metal1 1058 480 1058 480 0 FreeSans 480 0 0 0 OUT
+port 5 nsew
+flabel metal1 414 -68 414 -68 0 FreeSans 480 0 0 0 VSS
+port 6 nsew
+<< end >>

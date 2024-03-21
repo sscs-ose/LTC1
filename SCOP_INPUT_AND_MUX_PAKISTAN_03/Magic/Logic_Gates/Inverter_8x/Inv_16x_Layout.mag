@@ -1,0 +1,109 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1692335619
+<< nwell >>
+rect -58 753 738 873
+rect -57 748 738 753
+rect -58 558 -57 683
+<< psubdiff >>
+rect 16 -28 656 -15
+rect 16 -74 29 -28
+rect 75 -74 123 -28
+rect 169 -74 217 -28
+rect 263 -74 311 -28
+rect 357 -74 405 -28
+rect 451 -74 499 -28
+rect 545 -74 593 -28
+rect 639 -74 656 -28
+rect 16 -87 656 -74
+<< nsubdiff >>
+rect -21 827 709 840
+rect -21 781 -8 827
+rect 38 781 86 827
+rect 132 781 180 827
+rect 226 781 274 827
+rect 320 781 368 827
+rect 414 781 462 827
+rect 508 781 556 827
+rect 602 781 650 827
+rect 696 781 709 827
+rect -21 768 709 781
+<< psubdiffcont >>
+rect 29 -74 75 -28
+rect 123 -74 169 -28
+rect 217 -74 263 -28
+rect 311 -74 357 -28
+rect 405 -74 451 -28
+rect 499 -74 545 -28
+rect 593 -74 639 -28
+<< nsubdiffcont >>
+rect -8 781 38 827
+rect 86 781 132 827
+rect 180 781 226 827
+rect 274 781 320 827
+rect 368 781 414 827
+rect 462 781 508 827
+rect 556 781 602 827
+rect 650 781 696 827
+<< polysilicon >>
+rect 183 373 255 381
+rect 303 373 415 568
+rect 183 368 415 373
+rect 183 322 196 368
+rect 242 322 415 368
+rect 183 317 415 322
+rect 183 309 255 317
+rect 303 163 415 317
+<< polycontact >>
+rect 196 322 242 368
+<< metal1 >>
+rect -58 827 738 860
+rect -58 781 -8 827
+rect 38 781 86 827
+rect 132 781 180 827
+rect 226 781 274 827
+rect 320 781 368 827
+rect 414 781 462 827
+rect 508 781 556 827
+rect 602 781 650 827
+rect 696 781 738 827
+rect -58 748 738 781
+rect 41 610 87 748
+rect 183 368 253 379
+rect 117 322 196 368
+rect 242 322 253 368
+rect 183 315 253 322
+rect 185 311 253 315
+rect 593 368 639 584
+rect 593 322 729 368
+rect 33 5 79 120
+rect 593 91 639 322
+rect -4 -28 676 5
+rect -4 -74 29 -28
+rect 75 -74 123 -28
+rect 169 -74 217 -28
+rect 263 -74 311 -28
+rect 357 -74 405 -28
+rect 451 -74 499 -28
+rect 545 -74 593 -28
+rect 639 -74 676 -28
+rect -4 -107 676 -74
+use nmos_3p3_T3QPFJ  nmos_3p3_T3QPFJ_0
+timestamp 1692335619
+transform 1 0 336 0 1 97
+box -340 -97 340 97
+use pmos_3p3_HYFKQ3  pmos_3p3_HYFKQ3_0
+timestamp 1692335619
+transform 1 0 340 0 1 579
+box -398 -174 398 174
+<< labels >>
+flabel psubdiffcont 334 -51 334 -51 0 FreeSans 320 0 0 0 VSS
+port 4 nsew
+flabel nsubdiffcont 297 804 297 804 0 FreeSans 320 0 0 0 VDD
+port 5 nsew
+flabel metal1 143 345 143 345 0 FreeSans 320 0 0 0 IN
+port 2 nsew
+flabel metal1 651 345 651 345 0 FreeSans 320 0 0 0 OUT
+port 3 nsew
+<< end >>

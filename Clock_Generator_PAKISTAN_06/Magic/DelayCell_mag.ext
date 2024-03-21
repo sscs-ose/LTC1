@@ -1,0 +1,204 @@
+timestamp 1697518002
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use VCTRL_mag VCTRL_mag_0 1 0 2760 0 1 3772
+use NMOS_Pairs NMOS_Pairs_0 1 0 4485 0 1 -292
+port "VSS" 7 7594 -25 7594 -25 m1
+port "INB" 9 3314 -83 3314 -83 m1
+port "IN" 1 3658 1952 3658 1952 v
+port "VCTRL2" 4 9450 2273 9450 2273 m1
+port "OUT" 0 3901 2453 3901 2453 m1
+port "VCTRL" 8 4424 3829 4424 3829 m1
+port "VDD" 6 7682 4936 7686 4936 m1
+port "OUTB" 2 4491 5463 4491 5463 m1
+node "VSS" 3 1332.69 7594 -25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 265240 5774 0 0 0 0 0 0 0 0
+node "INB" 1 701.285 3314 -83 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56570 1278 55045 1228 58517 1352 0 0 0 0
+node "IN" 1 451.341 3658 1952 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31896 886 29488 802 29488 802 0 0 0 0
+node "VCTRL2" 1 350.324 9450 2273 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42224 1620 0 0 0 0 0 0 0 0
+node "m1_4218_2395#" 0 161.907 4218 2395 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34968 748 0 0 0 0 0 0 0 0
+node "OUT" 3 1280.63 3901 2453 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13843 472 153446 2686 231443 4784 0 0 0 0
+node "VCTRL" 1 416.823 4424 3829 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18753 608 71633 1930 0 0 0 0 0 0
+node "VDD" 2 1606.37 7682 4936 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 403074 6650 0 0 0 0 0 0 0 0
+node "OUTB" 7 1675.31 4491 5463 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11774 502 255584 8834 18158 610 0 0 0 0
+node "w_5819_4436#" 1000 15.987 5819 4436 nw 5329 292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "OUT" "OUTB" 32.4631
+cap "VCTRL" "m1_4218_2395#" 0.672957
+cap "VCTRL" "OUT" 12.3243
+cap "w_5819_4436#" "OUTB" 2.17447
+cap "OUT" "m1_4218_2395#" 97.284
+cap "VCTRL" "OUTB" 35.9816
+cap "VDD" "OUTB" 11.8565
+cap "m1_4218_2395#" "OUTB" 0.0940253
+cap "NMOS_Pairs_0/M9" "NMOS_Pairs_0/M8" 1.11656
+cap "NMOS_Pairs_0/GM9" "NMOS_Pairs_0/VSS" 15.501
+cap "NMOS_Pairs_0/GM9" "NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" 0.181291
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" "NMOS_Pairs_0/VSS" -1.13687e-13
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" "NMOS_Pairs_0/GM9" 0.0755173
+cap "NMOS_Pairs_0/GM9" "NMOS_Pairs_0/VSS" 0.803623
+cap "NMOS_Pairs_0/VSS" "NMOS_Pairs_0/VCTRL2" 0.693749
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" "NMOS_Pairs_0/VSS" 14.5939
+cap "NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_n868_n50#" "NMOS_Pairs_0/VCTRL2" -0.0246727
+cap "NMOS_Pairs_0/nmos_3p3_FG6HDQ_2/a_n868_n50#" "NMOS_Pairs_0/VSS" 16.9605
+cap "NMOS_Pairs_0/VSS" "NMOS_Pairs_0/VCTRL2" 1.28587
+cap "NMOS_Pairs_0/VCTRL2" "NMOS_Pairs_0/VSS" 0.000321716
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/w_1846_n1269#" 10.804
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/VCTRL" 4.18861
+cap "NMOS_Pairs_0/VSS" "NMOS_Pairs_0/M9" 5.68434e-14
+cap "NMOS_Pairs_0/GM8" "NMOS_Pairs_0/VSS" 5.24616
+cap "m1_4218_2395#" "NMOS_Pairs_0/M9" 0.148821
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/VSS" 147.024
+cap "NMOS_Pairs_0/M8" "m1_4218_2395#" 2.89861
+cap "NMOS_Pairs_0/GM8" "VCTRL_mag_0/w_1846_n1269#" 2.80921
+cap "NMOS_Pairs_0/GM8" "VCTRL_mag_0/VCTRL" 0.0298937
+cap "NMOS_Pairs_0/M8" "VCTRL_mag_0/w_1846_n1269#" 12.3524
+cap "NMOS_Pairs_0/GM8" "NMOS_Pairs_0/M9" 0.870382
+cap "NMOS_Pairs_0/M8" "VCTRL_mag_0/VCTRL" 6.99036
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/M9" 21.455
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/GM8" 80.0104
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/GM9" 0.0768995
+cap "NMOS_Pairs_0/VSS" "m1_4218_2395#" 102.366
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_0/a_84_n50#" "NMOS_Pairs_0/GM9" 0.0601365
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_8/a_84_n50#" "NMOS_Pairs_0/GM9" 0.047202
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VSS" 118.694
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/GM9" 7.60303
+cap "NMOS_Pairs_0/M9" "NMOS_Pairs_0/GM9" -1.42109e-14
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_0/a_84_n50#" "NMOS_Pairs_0/M9" 0.0381569
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/GM8" 47.3525
+cap "VCTRL_mag_0/VCTRL" "NMOS_Pairs_0/GM8" 2.54848
+cap "NMOS_Pairs_0/M9" "VCTRL_mag_0/w_1846_n1269#" 8.29926
+cap "NMOS_Pairs_0/M9" "m1_4218_2395#" 0.184145
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/VSS" 10.2465
+cap "VCTRL_mag_0/VCTRL" "NMOS_Pairs_0/GM9" 2.99224
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" "NMOS_Pairs_0/M8" 0.306814
+cap "NMOS_Pairs_0/M8" "NMOS_Pairs_0/GM9" 0.655048
+cap "NMOS_Pairs_0/M8" "VCTRL_mag_0/w_1846_n1269#" 55.7095
+cap "NMOS_Pairs_0/M8" "m1_4218_2395#" 3.45144
+cap "NMOS_Pairs_0/M9" "VCTRL_mag_0/VCTRL" 2.38166
+cap "NMOS_Pairs_0/M9" "NMOS_Pairs_0/M8" -0.0722663
+cap "NMOS_Pairs_0/GM8" "NMOS_Pairs_0/VSS" 1.42109e-14
+cap "NMOS_Pairs_0/GM8" "VCTRL_mag_0/pmos_3p3_HMKTA7_8/a_84_n50#" 0.0559858
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_0/a_84_n50#" "NMOS_Pairs_0/GM8" 0.106156
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/GM8" 30.8934
+cap "NMOS_Pairs_0/M8" "VCTRL_mag_0/VCTRL" 11.563
+cap "NMOS_Pairs_0/M9" "NMOS_Pairs_0/GM8" 0.030032
+cap "NMOS_Pairs_0/VCTRL2" "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" 11.8433
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" 0.766365
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" "NMOS_Pairs_0/VCTRL2" 1.39165
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VCTRL2" 10.4151
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" 0.180887
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VSS" 70.0549
+cap "NMOS_Pairs_0/VCTRL2" "VCTRL_mag_0/w_1846_n1269#" 53.6737
+cap "NMOS_Pairs_0/VCTRL2" "NMOS_Pairs_0/VSS" 11.3897
+cap "NMOS_Pairs_0/VCTRL2" "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" 31.2788
+cap "NMOS_Pairs_0/VCTRL2" "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" 1.51809
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/w_1846_n1269#" 52.9404
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/w_1846_n1269#" 6.14091
+cap "NMOS_Pairs_0/VSS" "NMOS_Pairs_0/VCTRL2" 218.399
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VCTRL2" 38.4483
+cap "m1_4218_2395#" "VCTRL_mag_0/M2" 0.327772
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/w_1846_n1269#" 32.7002
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/VCTRL" 2.7711
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/M4" 2.54114
+cap "m1_4218_2395#" "VCTRL_mag_0/VCTRL" 16.2233
+cap "NMOS_Pairs_0/GM8" "VCTRL_mag_0/M4" 16.443
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/VCTRL" 45.4488
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/M4" 4.98318
+cap "m1_4218_2395#" "VCTRL_mag_0/M4" -0.796928
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/VCTRL" 124.804
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/w_1846_n1269#" 7.04557
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/VCTRL" -15.5862
+cap "m1_4218_2395#" "VCTRL_mag_0/w_1846_n1269#" 12.7248
+cap "m1_4218_2395#" "VCTRL_mag_0/M2" 0.368291
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/VCTRL" 133.144
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/M4" 6.1262
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_6/a_84_n50#" "VCTRL_mag_0/VCTRL" 0.609967
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/M2" 95.431
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/VCTRL" 251.456
+cap "VCTRL_mag_0/M4" "NMOS_Pairs_0/GM8" 41.4801
+cap "VCTRL_mag_0/VCTRL" "NMOS_Pairs_0/GM8" 3.15419
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/w_1846_n1269#" 223.425
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/w_1846_n1269#" -83.8138
+cap "VCTRL_mag_0/VCTRL" "NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n84_n94#" 5.63686
+cap "VCTRL_mag_0/M4" "NMOS_Pairs_0/VSS" 11.9886
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/VCTRL" 3.15131
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_6/a_84_n50#" "VCTRL_mag_0/w_1846_n1269#" 0.37374
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/w_1846_n1269#" 383.137
+cap "NMOS_Pairs_0/GM8" "VCTRL_mag_0/w_1846_n1269#" 0.486371
+cap "NMOS_Pairs_0/nmos_3p3_AG6HDQ_3/a_n84_n94#" "VCTRL_mag_0/w_1846_n1269#" 1.12021
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/w_1846_n1269#" 101.577
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/VCTRL" -3.56634
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/M4" 0.443383
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/M2" 17.0157
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/M2" -15.6235
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/M2" -27.3072
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/M4" 13.8881
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VSS" 46.616
+cap "VCTRL_mag_0/M4" "NMOS_Pairs_0/VCTRL2" 15.4274
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/M2" 21.531
+cap "VCTRL_mag_0/M2" "NMOS_Pairs_0/VCTRL2" 8.93559
+cap "VCTRL_mag_0/M4" "NMOS_Pairs_0/nmos_3p3_FG6HDQ_3/a_n868_n50#" 0.372311
+cap "VCTRL_mag_0/M2" "NMOS_Pairs_0/nmos_3p3_FG6HDQ_3/a_n868_n50#" 1.38071
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/M4" -5.3139
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/M4" -3.46526
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/w_1846_n1269#" 36.4099
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VCTRL2" 16.1553
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" "VCTRL_mag_0/w_1846_n1269#" -1.36424e-12
+cap "NMOS_Pairs_0/nmos_3p3_FG6HDQ_3/a_n868_n50#" "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" 1.07644
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" "NMOS_Pairs_0/VSS" 11.8171
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" -0.000126557
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" "NMOS_Pairs_0/VCTRL2" 40.0768
+cap "NMOS_Pairs_0/nmos_3p3_FG6HDQ_3/a_n868_n50#" "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" 2.38225
+cap "NMOS_Pairs_0/VSS" "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" 11.5326
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" "NMOS_Pairs_0/VCTRL2" 9.55496
+cap "VCTRL_mag_0/M4" "NMOS_Pairs_0/VCTRL2" 0.327689
+cap "NMOS_Pairs_0/VCTRL2" "VCTRL_mag_0/w_1846_n1269#" 25.2591
+cap "NMOS_Pairs_0/VCTRL2" "VCTRL_mag_0/pmos_3p3_HMKTA7_20/a_n84_n94#" 0.141352
+cap "VCTRL_mag_0/M4" "NMOS_Pairs_0/VSS" 1.16121
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VSS" 3.36143
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/VCTRL" -0.67992
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/M4" 0.903146
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/w_1846_n1269#" 23.6187
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/w_1846_n1269#" 0.00251325
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/w_1846_n1269#" 379.28
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/M4" 6.07121
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n84_n94#" "VCTRL_mag_0/VCTRL" -3.93534
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/M4" -3.34716
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/VCTRL" 281.28
+cap "VCTRL_mag_0/w_1846_n1269#" "NMOS_Pairs_0/VSS" 9.53444e-05
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/VCTRL" -90.1069
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n84_n94#" 5.63103
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/VCTRL" 0.897658
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/M4" 2.48924
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/VCTRL" -3.82493
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/M2" -2.65582
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/M2" -20.0784
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/M2" 4.74161
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/pmos_3p3_HMKTA7_1/a_n172_n50#" 5.8856
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/pmos_3p3_HMKTA7_13/a_n172_n50#" 5.78336
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/w_1846_n1269#" 0.383004
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_12/a_84_n50#" "VCTRL_mag_0/w_1846_n1269#" 0.00706849
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_20/a_n84_n94#" "VCTRL_mag_0/w_1846_n1269#" 0.410934
+cap "VCTRL_mag_0/w_1846_n1269#" "OUTB" 21.4196
+cap "VCTRL_mag_0/w_1846_n1269#" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 199.128
+cap "VCTRL_mag_0/M2" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 4.02678
+cap "VCTRL_mag_0/VCTRL" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 3.36518
+cap "VCTRL_mag_0/M4" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 4.97989
+cap "VCTRL_mag_0/pmos_3p3_HVHTA7_3/a_n52_n50#" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 2.01769
+cap "VCTRL_mag_0/pmos_3p3_HMKTA7_8/a_n84_n94#" "VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 17.6551
+merge "NMOS_Pairs_0/VSS" "VSS" -1748.82 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -203816 -5730 0 0 0 0 0 0 0 0
+merge "VSS" "VCTRL_mag_0/VSUBS"
+merge "VCTRL_mag_0/VSUBS" "VSUBS"
+merge "NMOS_Pairs_0/GM8" "IN" -367.158 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7196 -384 -3612 -256 -3612 -256 0 0 0 0
+merge "VCTRL_mag_0/w_1846_n1269#" "VDD" -2011.81 -5329 -292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -284897 -6584 0 0 0 0 0 0 0 0
+merge "VDD" "w_5819_4436#"
+merge "NMOS_Pairs_0/VCTRL2" "VCTRL2" -435.982 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8344 -410 0 0 0 0 0 0 0 0
+merge "NMOS_Pairs_0/GM9" "INB" -248.973 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10197 -454 -6557 -324 -10085 -450 0 0 0 0
+merge "VCTRL_mag_0/M2" "NMOS_Pairs_0/M9" -1666.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11774 -502 -89266 -3208 -6937 -344 0 0 0 0
+merge "NMOS_Pairs_0/M9" "OUTB"
+merge "VCTRL_mag_0/VCTRL" "VCTRL" -435.646 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0
+merge "VCTRL_mag_0/M4" "NMOS_Pairs_0/M8" -946.626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7058 -342 -8281 -364 0 0 0 0
+merge "NMOS_Pairs_0/M8" "OUT"

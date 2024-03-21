@@ -1,0 +1,36 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell Inv_16x_Layout in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(6 instances)
+Flattening unmatched subcell nmos_3p3_T3QPFJ in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(6 instances)
+Flattening unmatched subcell pmos_3p3_HYFKQ3 in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(6 instances)
+Flattening unmatched subcell Inverter_Layout in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(3 instances)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(3 instances)
+Flattening unmatched subcell pmos_3p3_MNVUAR in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(3 instances)
+Flattening unmatched subcell NOR_Layout in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(2 instances)
+Flattening unmatched subcell pmos_3p3_MEVUAR in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(4 instances)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit Non_Ovl_CLK_Gen_Layout.spice (0)(4 instances)
+Flattening unmatched subcell Inverter in circuit Non_Overlapping_clk.spice (1)(3 instances)
+Flattening unmatched subcell INV_16x in circuit Non_Overlapping_clk.spice (1)(6 instances)
+Flattening unmatched subcell NOR in circuit Non_Overlapping_clk.spice (1)(2 instances)
+
+Class Non_Ovl_CLK_Gen_Layout.spice (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: Non_Ovl_CLK_Gen_Layout.spice    |Circuit 2: Non_Overlapping_clk.spice       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (13)                             |nfet_03v3 (13)                             
+pfet_03v3 (17->13)                         |pfet_03v3 (13)                             
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes Non_Ovl_CLK_Gen_Layout.spice and Non_Overlapping_clk.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

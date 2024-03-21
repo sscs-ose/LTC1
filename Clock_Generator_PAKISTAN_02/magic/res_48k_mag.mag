@@ -1,0 +1,41 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1693460400
+<< nwell >>
+rect -4680 -160 -1992 20
+<< nsubdiff >>
+rect -3466 -34 -3074 -20
+rect -3466 -89 -3434 -34
+rect -3112 -89 -3074 -34
+rect -3466 -115 -3074 -89
+<< nsubdiffcont >>
+rect -3434 -89 -3112 -34
+<< metal1 >>
+rect -4496 2306 -4336 2678
+rect -4257 2306 -3857 2409
+rect -3777 2306 -3377 2409
+rect -3297 2306 -2897 2409
+rect -2817 2306 -2417 2409
+rect -2336 2306 -2176 2678
+rect -4497 204 -4097 307
+rect -4017 204 -3617 307
+rect -3537 204 -3137 307
+rect -3057 204 -2657 307
+rect -2577 205 -2177 308
+rect -3528 -34 -2989 15
+rect -3528 -89 -3434 -34
+rect -3112 -89 -2989 -34
+rect -3528 -144 -2989 -89
+use ppolyf_u_TPG873  ppolyf_u_TPG873_0
+timestamp 1693460400
+transform 1 0 -3336 0 1 1306
+box -1344 -1286 1344 1286
+<< labels >>
+flabel metal1 -4427 2642 -4427 2642 0 FreeSans 640 0 0 0 A
+port 0 nsew
+flabel metal1 -2261 2638 -2261 2638 0 FreeSans 640 0 0 0 B
+port 1 nsew
+flabel nsubdiffcont -3275 -64 -3275 -64 0 FreeSans 640 0 0 0 VDD
+port 2 nsew
+<< end >>

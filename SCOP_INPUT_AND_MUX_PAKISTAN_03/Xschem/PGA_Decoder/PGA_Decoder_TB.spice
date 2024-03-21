@@ -1,0 +1,45 @@
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/PGA_Decoder/PGA_Decoder_TB.sch
+**.subckt PGA_Decoder_TB S1 S2 S3 S4 S5 S6
+*.opin S1
+*.opin S2
+*.opin S3
+*.opin S4
+*.opin S5
+*.opin S6
+V1 VSS GND 0
+.save i(v1)
+V2 VDD VSS 3
+.save i(v2)
+V3 A VSS PULSE(3 0 0 10p 10p 400n 800n)
+.save i(v3)
+V4 B VSS PULSE(3 0 0 10p 10p 200n 400n)
+.save i(v4)
+V5 C VSS PULSE(3 0 0 10p 10p 100n 200n)
+.save i(v5)
+x1 S2 S3 S1 VDD A S6 B S4 C VSS S5 PGA_Decoder_PEX
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_PGA_Dec_Layout.spice
+.control
+set color0 = white
+set color1 = black
+save all
+dc v2 0 3.3 0.1
+*plot v(VIN) v(PH1A) v(PH1) v(PH2)
+
+tran 100p 800n
+plot v(A)+7 v(B)+3.5 v(C)
+plot v(S1) v(S2)+3.5 v(S3)+7 v(S4)+10.5 v(S5)+14 v(S6)+17.5
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

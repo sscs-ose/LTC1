@@ -1,0 +1,75 @@
+timestamp 1694400330
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use pmos_3p3_M8LTNG pmos_3p3_M8LTNG_1 1 0 1154 0 1 550
+use pmos_3p3_M8LTNG pmos_3p3_M8LTNG_0 1 0 742 0 1 550
+use nmos_3p3_DDNVWA nmos_3p3_DDNVWA_1 1 0 1216 0 1 245
+use nmos_3p3_DDNVWA nmos_3p3_DDNVWA_0 1 0 680 0 1 245
+use Inverter Inverter_0 1 0 118 0 1 214
+port "VIN" 4 26 362 26 362 v
+port "OUT_B" 3 1299 417 1299 417 v
+port "OUT" 2 1447 643 1447 643 v
+port "VDD" 0 932 747 932 747 nsc
+port "VSS" 1 940 64 940 64 psc
+node "VIN" 53 998.205 26 362 v 0 0 0 0 0 0 0 0 0 0 0 0 18139 804 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15309 702 105287 3680 0 0 0 0 0 0
+node "a_413_228#" 63 431.716 413 228 p 0 0 0 0 0 0 0 0 0 0 0 0 22027 968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15197 670 0 0 0 0 0 0 0 0
+node "OUT_B" 13 436.221 1299 417 v 0 0 0 0 0 0 0 0 0 0 0 0 8359 374 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35138 1320 44392 1446 0 0 0 0 0 0
+node "OUT" 56 761.195 1447 643 v 0 0 0 0 0 0 0 0 0 0 0 0 22615 924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49199 1678 75803 2416 0 0 0 0 0 0
+node "VDD" 7358 707.712 932 747 nsc 93112 1874 0 0 56462 1674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132878 2838 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 940 64 psc 0 0 0 0 0 0 58596 1694 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 130038 2758 0 0 0 0 0 0 0 0
+cap "VDD" "OUT_B" 104.365
+cap "VDD" "a_413_228#" 7.38926
+cap "VDD" "OUT" 362.129
+cap "VDD" "VIN" 2.09599
+cap "OUT_B" "a_413_228#" 1.4917
+cap "OUT" "OUT_B" 250.513
+cap "OUT" "a_413_228#" 150.728
+cap "VIN" "OUT_B" 143.663
+cap "VIN" "a_413_228#" 37.0015
+cap "VIN" "OUT" 81.5311
+cap "pmos_3p3_M8LTNG_1/w_n206_n159#" "nmos_3p3_DDNVWA_0/a_n28_n66#" 10.6123
+cap "pmos_3p3_M8LTNG_1/a_n28_n66#" "nmos_3p3_DDNVWA_0/a_n28_n66#" 66.7544
+cap "nmos_3p3_DDNVWA_1/a_n120_n36#" "nmos_3p3_DDNVWA_0/a_n28_n66#" 9.25242
+cap "nmos_3p3_DDNVWA_1/a_n28_n66#" "nmos_3p3_DDNVWA_0/a_n28_n66#" 26.8946
+cap "pmos_3p3_M8LTNG_1/a_28_n22#" "nmos_3p3_DDNVWA_0/a_n28_n66#" 2.74384
+cap "pmos_3p3_M8LTNG_1/a_n28_n66#" "pmos_3p3_M8LTNG_1/w_n206_n159#" 144.764
+cap "nmos_3p3_DDNVWA_1/a_n120_n36#" "pmos_3p3_M8LTNG_1/w_n206_n159#" 18.3188
+cap "nmos_3p3_DDNVWA_1/a_n120_n36#" "pmos_3p3_M8LTNG_1/a_n28_n66#" -18.3638
+cap "nmos_3p3_DDNVWA_1/a_n28_n66#" "pmos_3p3_M8LTNG_1/w_n206_n159#" 30.8364
+cap "nmos_3p3_DDNVWA_1/a_n28_n66#" "pmos_3p3_M8LTNG_1/a_n28_n66#" 5.39934
+cap "nmos_3p3_DDNVWA_1/a_n120_n36#" "nmos_3p3_DDNVWA_1/a_n28_n66#" 85.0607
+cap "pmos_3p3_M8LTNG_1/a_28_n22#" "pmos_3p3_M8LTNG_1/w_n206_n159#" 122.37
+cap "pmos_3p3_M8LTNG_1/a_28_n22#" "pmos_3p3_M8LTNG_1/a_n28_n66#" 14.0122
+cap "nmos_3p3_DDNVWA_1/a_n120_n36#" "pmos_3p3_M8LTNG_1/a_28_n22#" -18.616
+cap "pmos_3p3_M8LTNG_1/a_28_n22#" "nmos_3p3_DDNVWA_1/a_n28_n66#" 10.0412
+cap "pmos_3p3_M8LTNG_1/a_n28_n66#" "pmos_3p3_M8LTNG_1/a_28_n22#" 0.0745813
+cap "nmos_3p3_DDNVWA_1/a_n120_n36#" "nmos_3p3_DDNVWA_1/a_n28_n66#" -0.226354
+cap "nmos_3p3_DDNVWA_1/a_n28_n66#" "pmos_3p3_M8LTNG_1/a_28_n22#" 0.444758
+cap "pmos_3p3_M8LTNG_1/a_n28_n66#" "nmos_3p3_DDNVWA_1/a_n28_n66#" 0.0842853
+cap "pmos_3p3_M8LTNG_1/a_n28_n66#" "pmos_3p3_M8LTNG_1/w_n206_n159#" 8.7112
+cap "nmos_3p3_DDNVWA_1/a_n28_n66#" "nmos_3p3_DDNVWA_0/a_n28_n66#" -0.094858
+merge "Inverter_0/VDD" "pmos_3p3_M8LTNG_0/a_28_n22#" -274.549 -7416 -2302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6256 -682 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8LTNG_0/a_28_n22#" "pmos_3p3_M8LTNG_0/w_n206_n159#"
+merge "pmos_3p3_M8LTNG_0/w_n206_n159#" "pmos_3p3_M8LTNG_1/a_n120_n36#"
+merge "pmos_3p3_M8LTNG_1/a_n120_n36#" "pmos_3p3_M8LTNG_1/w_n206_n159#"
+merge "pmos_3p3_M8LTNG_1/w_n206_n159#" "VDD"
+merge "nmos_3p3_DDNVWA_0/a_n120_n36#" "pmos_3p3_M8LTNG_0/a_n120_n36#" -332.189 0 0 0 0 0 0 0 0 0 0 0 0 -560 -132 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6256 -456 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8LTNG_0/a_n120_n36#" "pmos_3p3_M8LTNG_1/a_n28_n66#"
+merge "pmos_3p3_M8LTNG_1/a_n28_n66#" "OUT"
+merge "nmos_3p3_DDNVWA_1/a_28_n22#" "pmos_3p3_M8LTNG_0/a_n28_n66#" -267.67 0 0 0 0 0 0 0 0 0 0 0 0 0 -112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6256 -456 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8LTNG_0/a_n28_n66#" "pmos_3p3_M8LTNG_1/a_28_n22#"
+merge "pmos_3p3_M8LTNG_1/a_28_n22#" "OUT_B"
+merge "Inverter_0/OUT" "nmos_3p3_DDNVWA_0/a_n28_n66#" -173.463 0 0 0 0 0 0 0 0 0 0 0 0 0 -112 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2209 -188 0 0 0 0 0 0 0 0
+merge "nmos_3p3_DDNVWA_0/a_n28_n66#" "a_413_228#"
+merge "Inverter_0/VSS" "nmos_3p3_DDNVWA_0/VSUBS" -170.881 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6256 -682 0 0 0 0 0 0 0 0
+merge "nmos_3p3_DDNVWA_0/VSUBS" "nmos_3p3_DDNVWA_0/a_28_n22#"
+merge "nmos_3p3_DDNVWA_0/a_28_n22#" "nmos_3p3_DDNVWA_1/VSUBS"
+merge "nmos_3p3_DDNVWA_1/VSUBS" "nmos_3p3_DDNVWA_1/a_n120_n36#"
+merge "nmos_3p3_DDNVWA_1/a_n120_n36#" "pmos_3p3_M8LTNG_0/VSUBS"
+merge "pmos_3p3_M8LTNG_0/VSUBS" "pmos_3p3_M8LTNG_1/VSUBS"
+merge "pmos_3p3_M8LTNG_1/VSUBS" "VSS"
+merge "Inverter_0/IN" "nmos_3p3_DDNVWA_1/a_n28_n66#" -163.36 0 0 0 0 0 0 0 0 0 0 0 0 -504 -130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3182 -234 0 0 0 0 0 0 0 0
+merge "nmos_3p3_DDNVWA_1/a_n28_n66#" "VIN"

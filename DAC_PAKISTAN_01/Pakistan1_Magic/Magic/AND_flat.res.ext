@@ -1,0 +1,91 @@
+scale 1000 1 0.5
+rnode "A.t1" 0 0 222 467 0
+rnode "A.t0" 0 0 222 128 0
+rnode "A.n0" 0 0 194 373 0
+rnode "A.n1" 0 0 20 400 0
+rnode "A.n2" 0 0 26 399 0
+rnode "A" 0 0 20 400 0
+resist "A.n2" "A.n1" 0.503448
+resist "A" "A.n2" 4.00621
+resist "A.n0" "A.t1" 12.2536
+resist "A.n2" "A.n0" 28.7175
+resist "A.n0" "A.t0" 31.9375
+rnode "VDD.n0" 0 0 654 467 0
+rnode "VDD.n1" 0 0 706 636 0
+rnode "VDD.n2" 0 0 363 679 0
+rnode "VDD.t1" 0 0 1002 434 0
+rnode "VDD.n3" 0 0 939 563 0
+rnode "Inverter_0.VDD" 0 0 1013 606 0
+rnode "VDD.t0" 0 0 1030 434 0
+rnode "VDD.n4" 0 0 828 481 0
+rnode "VDD.t2" 0 0 626 467 0
+rnode "VDD.t5" 0 0 222 467 0
+rnode "VDD.n5" 0 0 419 688 0
+rnode "VDD.n6" 0 0 419 688 0
+rnode "VDD.n7" 0 0 419 688 0
+rnode "VDD.t6" 0 0 194 467 0
+rnode "VDD" 0 0 363 679 0
+resist "Inverter_0.VDD" "VDD.n3" 0.0348691
+resist "VDD" "VDD.n7" 0.0427119
+resist "VDD.n3" "VDD.n1" 0.145355
+resist "VDD.n7" "VDD.n1" 0.218898
+resist "VDD.n6" "VDD.n5" 3.15
+resist "VDD.n7" "VDD.n6" 3.15
+resist "VDD.n6" "VDD.n2" 4.2
+resist "VDD.n3" "VDD.t1" 6.40586
+resist "VDD.n1" "VDD.n0" 6.57065
+resist "VDD" "VDD.t6" 6.73921
+resist "VDD.n4" "VDD.t0" 116.337
+resist "VDD.n4" "Inverter_0.VDD" 315.706
+resist "VDD.n5" "VDD.t5" 421.842
+resist "VDD.t2" "VDD.n4" 432.548
+resist "VDD.n5" "VDD.t2" 443.255
+rnode "B.t1" 0 0 626 467 0
+rnode "B.t0" 0 0 626 128 0
+rnode "B.n0" 0 0 598 225 0
+rnode "B" 0 0 21 255 0
+resist "B.n0" "B.t0" 12.6446
+resist "B.n0" "B.t1" 31.5464
+resist "B" "B.n0" 33.3891
+rnode "OUT" 0 0 1240 260 0
+rnode "OUT.n0" 0 0 1058 434 0
+rnode "OUT.n1" 0 0 1058 110 0
+rnode "OUT.n2" 0 0 1150 257 0
+rnode "Inverter_0.OUT" 0 0 1218 249 0
+resist "Inverter_0.OUT" "OUT" 0.0421277
+resist "Inverter_0.OUT" "OUT.n2" 0.130213
+resist "OUT.n2" "OUT.n0" 6.48891
+resist "OUT.n2" "OUT.n1" 9.02672
+rnode "VSS.t0" 0 0 1030 110 0
+rnode "VSS.n0" 0 0 828 49 0
+rnode "VSS.n1" 0 0 1027 -84 0
+rnode "VSS.t1" 0 0 1002 110 0
+rnode "VSS.t4" 0 0 194 128 0
+rnode "VSS" 0 0 404 -88 0
+rnode "VSS.n2" 0 0 404 -88 0
+rnode "VSS.t2" 0 0 626 128 0
+rnode "VSS.t3" 0 0 222 128 0
+rnode "VSS.n3" 0 0 422 -77 0
+rnode "VSS.n4" 0 0 422 -77 0
+rnode "VSS.n5" 0 0 422 -77 0
+rnode "VSS.n6" 0 0 941 -24 0
+rnode "Inverter_0.VSS" 0 0 1027 -84 0
+resist "VSS.n5" "VSS" 0.0137288
+resist "Inverter_0.VSS" "VSS.n6" 0.0684956
+resist "VSS.n6" "VSS.n5" 0.399661
+resist "VSS.n4" "VSS.n2" 1.72603
+resist "VSS.n4" "VSS.n3" 2.6
+resist "VSS.n5" "VSS.n4" 2.6
+resist "Inverter_0.VSS" "VSS.n1" 2.6
+resist "VSS" "VSS.t4" 6.91344
+resist "VSS.n6" "VSS.t1" 8.96889
+resist "VSS.n0" "VSS.t0" 455.747
+resist "VSS.n1" "VSS.n0" 996.278
+resist "VSS.n3" "VSS.t3" 1533.02
+resist "VSS.n3" "VSS.t2" 1563.68
+device msubckt pfet_03v3 194 417 195 418  "VDD.t5" "A.t1" 112 0 "VDD.t6" 100 8800,376 "Inverter_0.IN" 100 8800,376
+device msubckt pfet_03v3 598 417 599 418  "VDD.t2" "B.t1" 112 0 "Inverter_0.IN" 100 8800,376 "VDD" 100 8800,376
+device msubckt nfet_03v3 194 78 195 79  "VSS.t3" "A.t0" 112 0 "VSS.t4" 100 8800,376 "a_250_78#" 100 8800,376
+device msubckt pfet_03v3 1002 384 1003 385  "VDD.t0" "Inverter_0.IN" 112 0 "VDD.t1" 100 8800,376 "OUT" 100 8800,376
+device msubckt nfet_03v3 598 78 599 79  "VSS.t2" "B.t0" 112 0 "a_250_78#" 100 8800,376 "Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 1002 85 1003 86  "VSS.t0" "Inverter_0.IN" 112 0 "VSS.t1" 50 6184,328 "OUT" 50 6184,328

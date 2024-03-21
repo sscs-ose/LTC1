@@ -1,0 +1,88 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1835 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2155 y=2300 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1355 y=960 nfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1835 y=960 nfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1515 y=188 nfet_03v3
+x CLK Inverter_Layout_0.OUT Inverter_Layout_0.VSS Inverter_Layout_0.VSS s=8800,376 d=8800,376 l=56 w=100 x=434 y=331 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=395 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=555 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=22000,676 d=13000,354 l=56 w=250 x=235 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1195 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1355 y=1528 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1195 y=188 nfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1675 y=188 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1035 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1995 y=1914 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=22000,676 l=56 w=250 x=1995 y=960 nfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=22000,676 d=13000,354 l=56 w=250 x=875 y=574 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2475 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=875 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1835 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2155 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2315 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1675 y=2300 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1355 y=574 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=715 y=2300 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1835 y=574 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1515 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=22000,676 l=56 w=250 x=2635 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=395 y=1528 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1035 y=960 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=22000,676 d=13000,354 l=56 w=250 x=235 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1195 y=1528 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1515 y=960 nfet_03v3
+x CLK Inverter_Layout_0.OUT Inverter_Layout_0.VDD Inverter_Layout_0.VDD s=17600,576 d=17600,576 l=56 w=200 x=434 y=703 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1035 y=1528 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=22000,676 l=56 w=250 x=1995 y=574 nfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=22000,676 d=13000,354 l=56 w=250 x=875 y=188 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=875 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1995 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=715 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1675 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1835 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2155 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1515 y=1914 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1195 y=960 nfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1355 y=188 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=555 y=2300 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1675 y=960 nfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1835 y=188 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1355 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=22000,676 l=56 w=250 x=2635 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2475 y=2300 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1035 y=574 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2315 y=2300 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1515 y=574 nfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=22000,676 l=56 w=250 x=1995 y=188 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=875 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=555 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=715 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1675 y=1528 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1355 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1515 y=1528 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1195 y=574 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=395 y=2300 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1675 y=574 nfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=22000,676 d=13000,354 l=56 w=250 x=235 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1195 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=22000,676 l=56 w=250 x=2635 y=1528 pfet_03v3
+x CLK VIN VOUT Inverter_Layout_0.VSS s=22000,676 d=13000,354 l=56 w=250 x=875 y=960 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1035 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2475 y=1914 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=1995 y=2300 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN Inverter_Layout_0.VDD s=13000,354 d=13000,354 l=56 w=250 x=2315 y=1914 pfet_03v3
+x CLK VOUT VIN Inverter_Layout_0.VSS s=13000,354 d=13000,354 l=56 w=250 x=1035 y=188 nfet_03v3
+C Inverter_Layout_0.VDD Inverter_Layout_0.OUT 4.0
+C VOUT VIN 15.9
+R VOUT 1182
+C VIN0 2.7
+R VIN 1410
+C CLK0 3.4
+R CLK 1455
+= CLK Inverter_Layout_0.IN
+C Inverter_Layout_0.OUT0 2.2
+R Inverter_Layout_0.OUT 2640
+C Inverter_Layout_0.VDD0 12.3
+R Inverter_Layout_0.VDD 3665
+R Inverter_Layout_0.VSS 33
