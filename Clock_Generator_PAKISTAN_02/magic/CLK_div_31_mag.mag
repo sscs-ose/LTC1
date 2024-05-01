@@ -1,9 +1,26 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695206022
+timestamp 1714558667
+<< error_s >>
+rect 9563 4519 9573 4556
+rect 9619 4475 9629 4519
+rect 10612 2382 10641 2402
 << nwell >>
+rect 2785 2433 3073 2794
+rect 5745 2433 5861 2435
+rect -19 2081 5861 2433
+rect 10597 2382 10612 2510
+rect 10685 2474 10686 2492
 rect 11607 2289 11692 2348
+rect -19 1969 6016 2081
+rect 2705 1604 2945 1969
+rect 5745 1613 6016 1969
+<< nsubdiff >>
+rect 10597 2474 10686 2510
+rect 10597 2473 10685 2474
+rect 10474 2428 10739 2473
+rect 10597 2382 10612 2428
 << polysilicon >>
 rect 11607 2289 11692 2348
 << metal1 >>
@@ -557,39 +574,39 @@ rect 1437 532 7568 536
 rect 1358 530 7568 532
 rect 1358 523 1451 530
 use and_5_mag  and_5_mag_0
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 6132 0 1 3071
 box 564 403 4618 1596
 use Buffer_Delayed1_mag  Buffer_Delayed1_mag_0
-timestamp 1694693600
+timestamp 1714534647
 transform 1 0 9363 0 1 97
 box -147 -111 4363 1747
 use JK_FF_mag  JK_FF_mag_0
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 278 0 1 -16
-box -390 0 2603 2148
+box -430 0 2603 2148
 use JK_FF_mag  JK_FF_mag_1
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 3320 0 1 -7
-box -390 0 2603 2148
+box -430 0 2603 2148
 use JK_FF_mag  JK_FF_mag_2
-timestamp 1695127730
+timestamp 1714558667
 transform -1 0 2411 0 -1 4415
-box -390 0 2603 2148
+box -430 0 2603 2148
 use JK_FF_mag  JK_FF_mag_3
-timestamp 1695127730
+timestamp 1714558667
 transform -1 0 5471 0 -1 4414
-box -390 0 2603 2148
+box -430 0 2603 2148
 use JK_FF_mag  JK_FF_mag_4
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 6392 0 1 -8
-box -390 0 2603 2148
+box -430 0 2603 2148
 use nand_5_mag  nand_5_mag_0
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 6695 0 -1 3475
 box 0 -1 4454 1193
 use or_2_mag  or_2_mag_0
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 10970 0 1 1407
 box 330 510 1401 1521
 << labels >>

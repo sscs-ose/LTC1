@@ -1,0 +1,1555 @@
+timestamp 1713338890
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_0 1 0 1589 0 1 1324
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_1 0 1 279 -1 0 1325
+use pn_6p0_CDNS_4066195314528 pn_6p0_CDNS_4066195314528_0 1 0 1490 0 1 1224
+use pn_6p0_CDNS_4066195314528 pn_6p0_CDNS_4066195314528_1 1 0 241 0 1 1224
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_2 1 0 1874 0 1 2735
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_3 1 0 340 0 1 2224
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_4 1 0 -54 0 1 2599
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_5 1 0 1589 0 1 2224
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_6 0 -1 415 1 0 3059
+use pn_6p0_CDNS_4066195314528 pn_6p0_CDNS_4066195314528_2 1 0 241 0 1 2124
+use pn_6p0_CDNS_4066195314528 pn_6p0_CDNS_4066195314528_3 1 0 1490 0 1 2124
+use comp018green_sigbuf comp018green_sigbuf_0 1 0 2619 0 -1 2492
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_1 1 0 4372 0 1 2048
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_0 1 0 2991 0 1 1395
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_8 1 0 3261 0 1 2870
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_7 1 0 3059 0 1 3321
+use comp018green_sigbuf comp018green_sigbuf_1 -1 0 7953 0 -1 2492
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_2 1 0 6200 0 1 2048
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_9 1 0 6197 0 1 2870
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_3 1 0 8200 0 1 1395
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_4 1 0 7581 0 1 1395
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_10 1 0 9982 0 1 2871
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_11 1 0 10052 0 1 2735
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_12 1 0 8148 0 1 2871
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_13 1 0 7529 0 1 2599
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_14 0 1 9452 -1 0 2683
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_5 1 0 9608 0 1 2651
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_6 1 0 10104 0 1 2048
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_7 0 -1 9816 1 0 2735
+use comp018green_sigbuf comp018green_sigbuf_2 1 0 7863 0 -1 2492
+use M3_M2_CDNS_69033583165577 M3_M2_CDNS_69033583165577_0 1 0 12226 0 1 3320
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_9 1 0 12821 0 1 1395
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_8 1 0 11444 0 1 2048
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_19 1 0 12226 0 1 3199
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_18 1 0 12769 0 1 2756
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_17 1 0 11392 0 1 2599
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_16 1 0 11547 0 1 2756
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_15 1 0 12627 0 1 3007
+use comp018green_sigbuf comp018green_sigbuf_3 -1 0 13197 0 -1 2492
+use comp018green_in_drv comp018green_in_drv_0 1 0 8900 0 1 3158
+use comp018green_in_cms_smt comp018green_in_cms_smt_0 1 0 1532 0 1 3158
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_20 1 0 6910 0 1 4240
+use M2_M1_CDNS_69033583165614 M2_M1_CDNS_69033583165614_0 1 0 10065 0 1 3942
+use M2_M1_CDNS_69033583165614 M2_M1_CDNS_69033583165614_1 1 0 10065 0 1 5128
+use M3_M2_CDNS_69033583165615 M3_M2_CDNS_69033583165615_0 1 0 10065 0 1 5128
+use M3_M2_CDNS_69033583165615 M3_M2_CDNS_69033583165615_1 1 0 10065 0 1 3942
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_10 1 0 13394 0 1 4380
+use M2_M1_CDNS_69033583165614 M2_M1_CDNS_69033583165614_2 1 0 13414 0 1 5128
+use M3_M2_CDNS_69033583165615 M3_M2_CDNS_69033583165615_2 1 0 13414 0 1 5128
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_21 1 0 10081 0 1 6275
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_22 1 0 9660 0 1 6275
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_23 1 0 9816 0 1 6139
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_24 1 0 10261 0 1 6139
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_11 1 0 10313 0 1 7291
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_25 1 0 12226 0 1 6488
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_12 1 0 13394 0 1 6303
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_13 1 0 12774 0 1 6303
+use comp018green_in_logic_pupd comp018green_in_logic_pupd_0 -1 0 13932 0 1 9724
+use M2_M1_CDNS_69033583165523 M2_M1_CDNS_69033583165523_26 1 0 11184 0 1 10827
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_14 1 0 12202 0 1 9734
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_15 1 0 13394 0 1 10613
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_16 1 0 10133 0 1 7781
+use comp018green_in_pupd comp018green_in_pupd_0 0 -1 2979 -1 0 14857
+port "VDD" 1 11686 5601 11686 5601 m1
+port "IE" 5 2128 1324 2128 1324 m2
+port "PD" 3 1822 2409 1822 2409 m2
+port "PU" 2 414 522 414 522 m2
+port "CS" 4 -107 526 -107 526 m2
+port "PAD" 6 6679 6191 6679 6191 m2
+node "VDD" 0 0 11686 5601 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_12783_1305#" 2 510.685 12783 1305 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 113164 3130 0 0 0 0 0 0
+node "m2_11406_1958#" 1 186.593 11406 1958 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51604 1510 0 0 0 0 0 0
+node "m2_12694_2969#" 4 869.992 12694 2969 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 256804 6910 0 0 0 0 0 0
+node "m2_13356_6384#" 5 1455.53 13356 6384 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 325964 8730 0 0 0 0 0 0
+node "m2_12136_3237#" 2 742.861 12136 3237 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 592020 6938 0 0 0 0 0 0
+node "m2_10066_1958#" 1 236.614 10066 1958 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61940 1782 0 0 0 0 0 0
+node "m2_11457_2718#" 11 1720.44 11457 2718 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 476968 15428 0 0 0 0 0 0
+node "m2_9892_2833#" 12 2126.47 9892 2833 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 657340 18922 0 0 0 0 0 0
+node "m2_10275_6101#" 2 199.648 10275 6101 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97280 2712 0 0 0 0 0 0
+node "m2_9726_2697#" 4 249.337 9726 2697 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 264480 7112 0 0 0 0 0 0
+node "m2_10095_6237#" 2 226.887 10095 6237 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 124184 3420 0 0 0 0 0 0
+node "m2_9570_2561#" 4 230.337 9570 2561 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 285152 7656 0 0 0 0 0 0
+node "m2_8162_1305#" 2 429.114 8162 1305 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 121904 3360 0 0 0 0 0 0
+node "m2_7543_1305#" 2 335.061 7543 1305 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101232 2816 0 0 0 0 0 0
+node "IE" 2 516.678 2128 1324 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 125628 3458 0 0 0 0 0 0
+node "m2_6162_1958#" 1 276.882 6162 1958 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70908 2018 0 0 0 0 0 0
+node "PD" 1 232.481 1822 2409 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66272 1896 0 0 0 0 0 0
+node "PU" 3 527.296 414 522 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199348 5398 0 0 0 0 0 0
+node "CS" 3 680.475 -107 526 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 237640 5352 0 0 0 0 0 0
+node "m2_2969_3272#" 4 1086.52 2969 3272 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 273676 7362 0 0 0 0 0 0
+node "m2_2295_3053#" 3 678.487 2295 3053 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166136 4524 0 0 0 0 0 0
+node "PAD" 1 536.161 6679 6191 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 223360 2722 0 0 0 0 0 0
+node "m2_9414_2697#" 10 2072.78 9414 2697 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 610812 16226 0 0 0 0 0 0
+node "m1_73_683#" 1 1748.91 73 683 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 979125 5996 0 0 0 0 0 0 0 0
+node "m1_73_1592#" 0 1081.28 73 1592 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 649740 4298 0 0 0 0 0 0 0 0
+node "m1_9570_2561#" 2 660.768 9570 2561 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145312 3976 0 0 0 0 0 0 0 0
+node "m1_n144_2561#" 9 2220.57 -144 2561 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 589988 15678 0 0 0 0 0 0 0 0
+node "m1_11457_2718#" 2 476.325 11457 2718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106552 2956 0 0 0 0 0 0 0 0
+node "m1_9726_2697#" 0 63.3897 9726 2697 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31616 984 0 0 0 0 0 0 0 0
+node "m1_1784_2697#" 9 1264.65 1784 2697 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 585656 15564 0 0 0 0 0 0 0 0
+node "m1_8162_2833#" 2 240.582 8162 2833 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145160 3972 0 0 0 0 0 0 0 0
+node "m1_3329_2832#" 3 319.022 3329 2832 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 221084 5970 0 0 0 0 0 0 0 0
+node "m1_377_2969#" 15 3632.4 377 2969 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 940652 24906 0 0 0 0 0 0 0 0
+node "m1_7841_3169#" 2 369.53 7841 3169 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97052 2706 0 0 0 0 0 0 0 0
+node "m1_6733_4202#" 0 135.782 6733 4202 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18156 670 0 0 0 0 0 0 0 0
+node "m1_12910_4326#" 0 276.299 12910 4326 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58986 1270 0 0 0 0 0 0 0 0
+node "m1_7991_4446#" 1 478 7991 4446 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 85652 2406 0 0 0 0 0 0 0 0
+node "m1_13168_4882#" 0 325.944 13168 4882 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103320 1404 0 0 0 0 0 0 0 0
+node "m1_8310_5571#" 1 231.16 8310 5571 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34340 1146 0 0 0 0 0 0 0 0
+node "m1_9726_6101#" 1 228.298 9726 6101 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47500 1402 0 0 0 0 0 0 0 0
+node "m1_12737_6306#" 1 330.112 12737 6306 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57942 1506 0 0 0 0 0 0 0 0
+node "m1_9570_6237#" 1 220.081 9570 6237 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45676 1354 0 0 0 0 0 0 0 0
+node "m1_10095_7691#" 0 196.358 10095 7691 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45360 864 0 0 0 0 0 0 0 0
+node "m1_12354_10602#" 1 544.656 12354 10602 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108878 2358 0 0 0 0 0 0 0 0
+node "w_9060_1211#" 7005 0 9060 1211 pw 0 0 4010160 8608 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3816_1211#" 7005 0 3816 1211 pw 0 0 4010160 8608 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_62_3075#" 36129 0 62 3075 pw 0 0 13900294 27098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_9716_6386#" 108911 0 9716 6386 pw 0 0 1833761 16146 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_7991_4446#" "m2_9414_2697#" 5.3351
+cap "m1_9726_6101#" "m1_9570_6237#" 360.557
+cap "m1_377_2969#" "m1_8162_2833#" 1547.56
+cap "m1_3329_2832#" "m1_1784_2697#" 2405.09
+cap "m1_377_2969#" "m2_10066_1958#" 1.79183
+cap "m2_10275_6101#" "m1_9570_6237#" 2.0554
+cap "m1_10095_7691#" "m2_9892_2833#" 1.07963
+cap "m2_7543_1305#" "m2_6162_1958#" 23.4197
+cap "m1_9726_6101#" "m2_10275_6101#" 33.7346
+cap "m2_9414_2697#" "m1_1784_2697#" 27.5905
+cap "m2_11457_2718#" "m1_9570_6237#" 0.0419206
+cap "m1_9726_6101#" "m2_11457_2718#" 0.0559793
+cap "m2_9414_2697#" "m1_10095_7691#" 6.264
+cap "m1_377_2969#" "m1_1784_2697#" 755.571
+cap "m1_12737_6306#" "m2_12136_3237#" 3.95038
+cap "m2_2969_3272#" "m1_3329_2832#" 44.9323
+cap "CS" "m1_73_683#" 61.9883
+cap "PD" "m1_1784_2697#" 28.023
+cap "m2_12136_3237#" "m2_11457_2718#" 231.83
+cap "m2_9570_2561#" "m2_10095_6237#" 7.11811
+cap "m1_12737_6306#" "m2_11457_2718#" 0.0527732
+cap "m2_11406_1958#" "m2_12783_1305#" 23.4891
+cap "m2_2295_3053#" "IE" 2.19526
+cap "m1_377_2969#" "m2_2969_3272#" 64.0701
+cap "CS" "m1_73_1592#" 61.176
+cap "m2_11406_1958#" "m1_9570_2561#" 35.1194
+cap "m2_8162_1305#" "m2_9570_2561#" 4.5992
+cap "m2_9726_2697#" "m2_9570_2561#" 1251.09
+cap "m1_8310_5571#" "m2_9570_2561#" 0.136107
+cap "m2_7543_1305#" "m2_8162_1305#" 104.979
+cap "m2_9892_2833#" "m1_9570_6237#" 1.20219
+cap "m2_12783_1305#" "m1_9570_2561#" 0.0548394
+cap "m2_6162_1958#" "m1_1784_2697#" 47.4818
+cap "m2_9726_2697#" "m1_8310_5571#" 0.0962498
+cap "m1_9726_6101#" "m2_9892_2833#" 7.72868
+cap "m2_9570_2561#" "m1_9726_2697#" 2.34926
+cap "m2_9570_2561#" "m1_9570_2561#" 28.8383
+cap "m1_7841_3169#" "m2_9892_2833#" 0.109587
+cap "m2_8162_1305#" "m1_9570_2561#" 0.0524209
+cap "m1_377_2969#" "m1_n144_2561#" 177.02
+cap "m1_11457_2718#" "m2_12136_3237#" 1.35566
+cap "m2_9726_2697#" "m1_9726_2697#" 22.672
+cap "m2_9726_2697#" "m1_9570_2561#" 3.86677
+cap "m2_10275_6101#" "m2_9892_2833#" 71.3348
+cap "m2_12694_2969#" "m2_12136_3237#" 305.176
+cap "PD" "m1_n144_2561#" 60.1138
+cap "m2_9414_2697#" "m1_9570_6237#" 3.10206
+cap "m1_1784_2697#" "IE" 1.20732
+cap "m1_12737_6306#" "m2_9892_2833#" 0.0533608
+cap "m2_12694_2969#" "m1_12737_6306#" 16.5976
+cap "m1_9570_2561#" "m1_9726_2697#" 337.06
+cap "m2_9414_2697#" "m1_9726_6101#" 1.12503
+cap "m1_11457_2718#" "m2_11457_2718#" 27.4083
+cap "m1_12910_4326#" "m2_12136_3237#" 0.718701
+cap "m2_11406_1958#" "m2_10066_1958#" 24.1505
+cap "m2_9414_2697#" "m1_7841_3169#" 5.46407
+cap "m2_12694_2969#" "m2_11457_2718#" 9.93436
+cap "m2_9892_2833#" "m2_11457_2718#" 759.911
+cap "m1_13168_4882#" "m2_12136_3237#" 1.68497
+cap "m1_12737_6306#" "m1_13168_4882#" 9.22725
+cap "m1_8162_2833#" "m2_9570_2561#" 27.9672
+cap "m1_73_683#" "m1_n144_2561#" 22.7626
+cap "m1_8162_2833#" "m2_8162_1305#" 27.5905
+cap "m1_12910_4326#" "m2_11457_2718#" 0.053124
+cap "m2_9726_2697#" "m1_8162_2833#" 24.4966
+cap "m2_9570_2561#" "m2_10066_1958#" 13.5236
+cap "m1_377_2969#" "m1_7841_3169#" 453.805
+cap "m1_6733_4202#" "PAD" 1.04683
+cap "m1_7991_4446#" "m2_9570_2561#" 0.373067
+cap "m2_9726_2697#" "m2_10066_1958#" 11.3119
+cap "m1_7991_4446#" "m2_8162_1305#" 0.0493629
+cap "m1_8162_2833#" "m1_9726_2697#" 280.343
+cap "m1_8162_2833#" "m1_9570_2561#" 33.9778
+cap "m2_9726_2697#" "m1_7991_4446#" 0.224465
+cap "m1_7991_4446#" "m1_8310_5571#" 19.6906
+cap "m1_377_2969#" "m2_12136_3237#" 15.6786
+cap "m2_10066_1958#" "m1_9726_2697#" 22.672
+cap "m2_10066_1958#" "m1_9570_2561#" 51.4211
+cap "m2_6162_1958#" "m1_n144_2561#" 54.6665
+cap "m1_377_2969#" "PU" 33.904
+cap "m1_10095_7691#" "m2_10095_6237#" 53.3403
+cap "m2_12136_3237#" "m2_13356_6384#" 6.08854
+cap "m1_73_1592#" "m1_n144_2561#" 121.536
+cap "m2_9570_2561#" "m1_1784_2697#" 2.34926
+cap "m1_12737_6306#" "m2_13356_6384#" 12.6519
+cap "PD" "PU" 20.5342
+cap "m2_8162_1305#" "m1_1784_2697#" 55.6902
+cap "m1_377_2969#" "m2_11457_2718#" 52.4534
+cap "IE" "m1_n144_2561#" 2.59484
+cap "m2_7543_1305#" "m1_1784_2697#" 3.86677
+cap "m2_12694_2969#" "m1_11457_2718#" 6.29104
+cap "m2_13356_6384#" "m2_11457_2718#" 70.3445
+cap "m1_1784_2697#" "m1_9726_2697#" 13.6235
+cap "m1_377_2969#" "m1_6733_4202#" 9.43043
+cap "m1_8162_2833#" "m2_10066_1958#" 0.305271
+cap "PU" "m1_73_683#" 202.098
+cap "m2_9892_2833#" "m1_12354_10602#" 0.985566
+cap "m2_12694_2969#" "m1_12910_4326#" 16.5003
+cap "m2_2295_3053#" "m1_1784_2697#" 21.0455
+cap "m2_12694_2969#" "m1_13168_4882#" 14.9572
+cap "m2_9414_2697#" "m2_9892_2833#" 57.4429
+cap "m1_12910_4326#" "m1_13168_4882#" 19.6479
+cap "m1_8162_2833#" "m1_1784_2697#" 1076
+cap "m1_377_2969#" "m1_11457_2718#" 318.449
+cap "m1_73_1592#" "PU" 199.191
+cap "m1_377_2969#" "m2_12694_2969#" 28.4119
+cap "m1_377_2969#" "m2_9892_2833#" 39.0025
+cap "PU" "IE" 3.24082
+cap "m2_8162_1305#" "m1_n144_2561#" 0.2735
+cap "m2_10095_6237#" "m1_9570_6237#" 33.676
+cap "m2_2969_3272#" "m2_2295_3053#" 112.544
+cap "m1_377_2969#" "m1_3329_2832#" 2310.77
+cap "m1_9726_6101#" "m2_10095_6237#" 3.86677
+cap "m2_7543_1305#" "m1_n144_2561#" 36.251
+cap "m2_13356_6384#" "m1_12354_10602#" 36.4244
+cap "m1_377_2969#" "m2_9414_2697#" 44.4595
+cap "m2_10275_6101#" "m2_10095_6237#" 347.182
+cap "m1_13168_4882#" "m2_13356_6384#" 0.17944
+cap "m2_9570_2561#" "m1_9570_6237#" 33.8065
+cap "m2_2295_3053#" "m1_n144_2561#" 9.02834
+cap "m2_9726_2697#" "m1_9570_6237#" 3.86677
+cap "m1_9726_6101#" "m2_9570_2561#" 2.34926
+cap "m1_7841_3169#" "m2_9570_2561#" 0.373067
+cap "m1_7841_3169#" "m2_8162_1305#" 1.27131
+cap "m2_9726_2697#" "m1_9726_6101#" 34.0005
+cap "m2_9726_2697#" "m1_7841_3169#" 0.224465
+cap "m2_11406_1958#" "m2_11457_2718#" 8.91908
+cap "m2_10275_6101#" "m2_9570_2561#" 4.12984
+cap "m1_377_2969#" "PD" 2.7458
+cap "m2_9726_2697#" "m2_10275_6101#" 6.79146
+cap "m2_2969_3272#" "m1_1784_2697#" 50.7138
+cap "CS" "m1_n144_2561#" 34.5808
+cap "m2_12783_1305#" "m2_11457_2718#" 2.69086
+cap "m2_6162_1958#" "m1_3329_2832#" 23.455
+cap "PD" "m1_73_683#" 0.00749152
+cap "m1_1784_2697#" "m1_n144_2561#" 4727.75
+cap "m1_377_2969#" "m2_6162_1958#" 3.52443
+cap "m2_9892_2833#" "m2_10095_6237#" 26.4772
+cap "m1_7991_4446#" "m1_7841_3169#" 38.335
+cap "m1_377_2969#" "IE" 0.0632115
+cap "m2_12783_1305#" "m1_11457_2718#" 36.3248
+cap "m1_73_1592#" "PD" 25.8938
+cap "CS" "PU" 268.614
+cap "m1_8162_2833#" "m2_11457_2718#" 0.150419
+cap "m2_12694_2969#" "m2_12783_1305#" 6.02375
+cap "m2_2969_3272#" "m1_n144_2561#" 60.4952
+cap "m2_9414_2697#" "m2_10095_6237#" 164.411
+cap "m2_10066_1958#" "m2_11457_2718#" 1.88314
+cap "PD" "IE" 19.304
+cap "m1_8310_5571#" "PAD" 0.0812786
+cap "m1_10095_7691#" "m1_9570_6237#" 2.25067
+cap "m2_9726_2697#" "m2_9892_2833#" 971.152
+cap "m1_11457_2718#" "m1_9726_2697#" 1.7074
+cap "m1_8310_5571#" "m2_9892_2833#" 0.0964897
+cap "m1_73_1592#" "m1_73_683#" 137.479
+cap "m1_11457_2718#" "m1_9570_2561#" 14.2648
+cap "m1_9726_6101#" "m1_10095_7691#" 4.74077
+cap "m2_9892_2833#" "m1_9726_2697#" 2.8492
+cap "PU" "m1_1784_2697#" 0.0524964
+cap "m2_9892_2833#" "m1_9570_2561#" 1.32029
+cap "m1_73_683#" "IE" 81.3323
+cap "m1_377_2969#" "m2_11406_1958#" 0.604392
+cap "m2_9414_2697#" "m2_9570_2561#" 1302.57
+cap "m2_9414_2697#" "m2_8162_1305#" 8.08159
+cap "m2_10275_6101#" "m1_10095_7691#" 4.6784
+cap "m2_9726_2697#" "m2_9414_2697#" 2.35383
+cap "m2_9414_2697#" "m1_8310_5571#" 1.47625
+cap "m1_377_2969#" "m2_9570_2561#" 32.6752
+cap "m2_2295_3053#" "m1_3329_2832#" 9.04938
+cap "m1_377_2969#" "m2_8162_1305#" 3.86677
+cap "m1_10095_7691#" "m2_11457_2718#" 0.131672
+cap "m1_377_2969#" "m2_9726_2697#" 33.2178
+cap "m1_377_2969#" "m2_7543_1305#" 0.900662
+cap "m1_73_1592#" "IE" 24.138
+cap "m1_8162_2833#" "m2_9892_2833#" 21.1142
+cap "m1_377_2969#" "m1_9570_2561#" 165.445
+cap "m1_377_2969#" "m1_9726_2697#" 15.2465
+cap "m1_7991_4446#" "m2_9892_2833#" 0.109587
+cap "m2_9414_2697#" "m1_8162_2833#" 35.3058
+cap "m1_377_2969#" "m2_2295_3053#" 144.891
+cap "PU" "m1_n144_2561#" 57.6111
+cap "comp018green_sigbuf_0/VDD" "pn_6p0_CDNS_4066195314528_2/PLUS" 54.6602
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "pn_6p0_CDNS_4066195314528_0/PLUS" 0.248893
+cap "comp018green_sigbuf_0/VDD" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" 59.0937
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" 18.1722
+cap "comp018green_sigbuf_0/VDD" "comp018green_sigbuf_0/A" 43.8001
+cap "comp018green_sigbuf_0/VDD" "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" 4.13083
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "comp018green_sigbuf_0/A" 1.11022e-16
+cap "comp018green_sigbuf_0/VDD" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" -0.352278
+cap "comp018green_sigbuf_0/VSS" "comp018green_sigbuf_0/VDD" 0.820246
+cap "m1_n144_2561#" "comp018green_sigbuf_0/VDD" -0.569065
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/Z" 0.0606087
+cap "comp018green_sigbuf_0/VSS" "comp018green_sigbuf_0/VDD" 0.181828
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/VDD" 34.0873
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_0/VDD" 7.61469
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" 11.956
+cap "comp018green_sigbuf_0/DVDD" "comp018green_sigbuf_0/Z" 3.56301
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_0/DVSS" 0.922107
+cap "comp018green_sigbuf_0/DVDD" "comp018green_sigbuf_0/ZB" 2.15097
+cap "comp018green_sigbuf_0/DVDD" "comp018green_sigbuf_0/DVSS" -3.21331
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_1/Z" 5.94882
+cap "comp018green_sigbuf_0/VDD" "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" 0.0299943
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/Z" 2.37116
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/ZB" 7.88027
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/ZB" 7.88027
+cap "comp018green_sigbuf_1/ZB" "comp018green_sigbuf_0/DVDD" 2.15097
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_1/Z" 5.94882
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_0/DVSS" 0.922107
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_0/DVDD" 3.52621
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_1/ZB" 2.37116
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_1/VDD" -3.28724
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 3.76126
+cap "comp018green_sigbuf_1/VDD" "comp018green_sigbuf_2/A" 9.00929
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 6.89669
+cap "comp018green_sigbuf_1/VDD" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 2.47743
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/A" 0.0403796
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/Z" 0.034771
+cap "comp018green_sigbuf_1/A" "comp018green_sigbuf_2/A" 8.36735
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_1/A" 8.70109
+cap "comp018green_sigbuf_1/VDD" "comp018green_sigbuf_1/A" 4.01075
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_2/A" 1.86624
+cap "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_1/VDD" 2.47743
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 6.89669
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 1.8566
+cap "comp018green_sigbuf_1/A" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 1.86624
+cap "comp018green_sigbuf_2/DVDD" "comp018green_sigbuf_2/Z" 3.52621
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_2/DVSS" 0.922107
+cap "comp018green_sigbuf_3/ZB" "comp018green_sigbuf_2/Z" 2.37116
+cap "comp018green_sigbuf_3/ZB" "comp018green_sigbuf_2/DVDD" 2.15097
+cap "comp018green_sigbuf_2/DVDD" "comp018green_sigbuf_2/ZB" 2.15097
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/Z" 0.922107
+cap "comp018green_sigbuf_3/ZB" "comp018green_sigbuf_2/ZB" 15.7605
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_2/Z" 11.8976
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/DVDD" -3.21331
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_2/DVDD" 3.52621
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_2/ZB" 2.37116
+cap "comp018green_sigbuf_3/A" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" 9.5485
+cap "comp018green_sigbuf_3/A" "comp018green_sigbuf_3/Z" 0.0410395
+cap "comp018green_sigbuf_3/A" "comp018green_sigbuf_3/VDD" 1.56461
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "comp018green_in_cms_smt_0/DVSS" 1.22292
+cap "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" "pn_6p0_CDNS_4066195314528_2/PLUS" 25.3914
+cap "pn_6p0_CDNS_4066195314528_0/PLUS" "pn_6p0_CDNS_4066195314528_2/PLUS" 0.251795
+cap "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" "comp018green_sigbuf_0/VDD" 476.737
+cap "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" "comp018green_in_cms_smt_0/DVSS" 5.49852
+cap "pn_6p0_CDNS_4066195314528_3/PLUS" "pn_6p0_CDNS_4066195314528_2/PLUS" 0.500688
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "comp018green_sigbuf_0/VDD" 213.854
+cap "comp018green_in_cms_smt_0/DVSS" "pn_6p0_CDNS_4066195314528_3/PLUS" 2.82146
+cap "comp018green_sigbuf_0/VDD" "comp018green_sigbuf_0/VSS" 56.8716
+cap "comp018green_sigbuf_0/VSS" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" 16.7843
+cap "comp018green_sigbuf_0/VDD" "pn_6p0_CDNS_4066195314528_3/PLUS" 124.62
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "comp018green_sigbuf_0/A" 1.11022e-16
+cap "pn_6p0_CDNS_4066195314528_3/PLUS" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" -3.09401
+cap "comp018green_sigbuf_0/VSS" "comp018green_sigbuf_0/A" 5.13911
+cap "pn_6p0_CDNS_4066195314528_3/PLUS" "comp018green_sigbuf_0/A" 4.32855
+cap "comp018green_sigbuf_0/VDD" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" 353.756
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "pn_6p0_CDNS_4066195314528_3/PLUS" -7.97973e-16
+cap "comp018green_sigbuf_0/VDD" "comp018green_sigbuf_0/A" 51.1731
+cap "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" "comp018green_sigbuf_0/A" -0.0219259
+cap "comp018green_sigbuf_0/VSS" "pn_6p0_CDNS_4066195314528_3/PLUS" 3.33605
+cap "comp018green_sigbuf_0/A" "comp018green_in_cms_smt_0/m2_1480_409#" 0.0348195
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/DVSS" 0.122813
+cap "comp018green_sigbuf_0/A" "m1_377_2969#" 0.164788
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_0/Z" 101.93
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" 34.8631
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/Z" 12.0809
+cap "comp018green_sigbuf_0/A" "comp018green_in_cms_smt_0/DVSS" 1.10213
+cap "comp018green_sigbuf_0/VDD" "m1_n144_2561#" -0.569065
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_0/Z" 57.2589
+cap "comp018green_sigbuf_0/VDD" "comp018green_sigbuf_0/VSS" -0.0488595
+cap "m1_n144_2561#" "comp018green_sigbuf_0/VSS" 424.296
+cap "comp018green_sigbuf_0/A" "comp018green_in_cms_smt_0/CS" 0.139809
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/VDD" 7.88349
+cap "m1_n144_2561#" "comp018green_sigbuf_0/Z" -0.176883
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "m1_n144_2561#" 20.0472
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_0/VSS" 51.4967
+cap "comp018green_sigbuf_0/A" "m1_n144_2561#" 0.124083
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_0/VSS" -0.974587
+cap "comp018green_sigbuf_0/A" "comp018green_sigbuf_0/VSS" 13.2701
+cap "pn_6p0_CDNS_4066195314528_3/PLUS" "comp018green_sigbuf_0/A" 0.398334
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_sigbuf_0/A" 0.0596449
+cap "comp018green_sigbuf_0/DVDD" "comp018green_sigbuf_0/Z" 18.0385
+cap "comp018green_sigbuf_0/DVSS" "m1_n144_2561#" 86.4316
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "m1_377_2969#" 0.367669
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314542_0/D" 0.283189
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_in_cms_smt_0/m2_1480_409#" 0.0514903
+cap "comp018green_sigbuf_1/ZB" "comp018green_sigbuf_0/Z" 0.996628
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/Z" 1.33252
+cap "comp018green_sigbuf_0/Z" "m1_n144_2561#" 0.233832
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "m1_1784_2697#" 0.746571
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_0/Z" 6.46337
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 1.388
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314537_0/S" 2.12031
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_0/Z" 44.0089
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314541_0/D" 0.158014
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "m1_n144_2561#" 1.19291
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_0/Z" 13.0416
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 0.063869
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_0/DVDD" -5.42802
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314541_0/D" 0.236712
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/ZB" 4.12524
+cap "m1_377_2969#" "comp018green_sigbuf_0/Z" 0.425629
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314529_0/a_244_n44#" "comp018green_sigbuf_0/Z" 0.027194
+cap "comp018green_sigbuf_0/DVSS" "m1_n144_2561#" 815.647
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/m2_1480_409#" 0.0133493
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_1/Z" 0.509487
+cap "comp018green_sigbuf_0/Z" "m1_1784_2697#" 0.897813
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314537_0/S" "comp018green_sigbuf_0/Z" 2.15076
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/A" 0.642979
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_0/Z" 109.214
+cap "comp018green_sigbuf_0/DVDD" "comp018green_sigbuf_0/Z" 11.0587
+cap "comp018green_sigbuf_0/pmos_6p0_CDNS_4066195314529_0/a_0_n44#" "comp018green_sigbuf_1/Z" 0.00947348
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314542_0/S" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 0.089636
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_1/S" "comp018green_sigbuf_1/Z" 0.0123958
+cap "comp018green_sigbuf_1/Z" "m1_377_2969#" 0.367669
+cap "comp018green_in_cms_smt_0/A" "comp018green_sigbuf_1/Z" 0.611633
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_1/A" 704.405
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_1/A" 8.55873
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/ZB" 4.12524
+cap "comp018green_in_drv_0/dw_n496_n83#" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 1.92334
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 14.9842
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_1/Z" 102.191
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_1/Z" 8.79309
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_1/S" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 0.0286057
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_sigbuf_1/Z" 0.0289321
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "m1_377_2969#" 0.367669
+cap "comp018green_sigbuf_1/Z" "m1_1784_2697#" 0.746571
+cap "comp018green_in_cms_smt_0/A" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 0.456976
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" "comp018green_sigbuf_1/Z" 0.342776
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/ZB" 2.13373
+cap "comp018green_sigbuf_0/DVDD" "comp018green_sigbuf_1/Z" 7.02396e-16
+cap "comp018green_sigbuf_0/ZB" "comp018green_sigbuf_1/Z" 0.365069
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 0.0340828
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "m1_1784_2697#" 0.746571
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_1/Z" 2.08381
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" 0.167255
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/A" -5.13736
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_1/ZB" 1.33252
+cap "comp018green_in_drv_0/dw_n496_n83#" "comp018green_sigbuf_1/Z" 1.86634
+cap "comp018green_sigbuf_1/A" "m1_377_2969#" 1.39727
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 59.8349
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_1/A" 404.947
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_sigbuf_1/A" 5.11285
+cap "comp018green_sigbuf_1/A" "comp018green_in_drv_0/DVSS" 2.39146
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/A" 1.39351
+cap "comp018green_sigbuf_1/VSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 126.915
+cap "comp018green_sigbuf_2/A" "m1_377_2969#" 0.0906335
+cap "comp018green_sigbuf_1/A" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 5.63651
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/Z" 1.41879
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_2/A" 162.919
+cap "comp018green_sigbuf_1/A" "comp018green_sigbuf_1/DVSS" 4.97702
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_1/VDD" -5.65205
+cap "comp018green_sigbuf_1/A" "comp018green_sigbuf_2/A" 25.8429
+cap "comp018green_sigbuf_1/VDD" "comp018green_sigbuf_1/A" 0.0795907
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" -0.974587
+cap "comp018green_sigbuf_2/A" "comp018green_in_drv_0/DVSS" 0.66004
+cap "comp018green_sigbuf_1/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_1/A" 111.195
+cap "comp018green_sigbuf_2/nmos_6p0_CDNS_4066195314531_0/S" "comp018green_sigbuf_2/A" 5.14129
+cap "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -2.04534
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" -0.478488
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/A" -1.75852
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/A" -10.0655
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 22.8239
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/DVDD" 0.054148
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/DVSS" 53.5956
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" 108.535
+cap "comp018green_in_drv_0/DVSS" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 1.29919
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 0.284196
+cap "m1_377_2969#" "comp018green_sigbuf_2/A" 0.0741547
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_2/A" 2.24129
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "comp018green_sigbuf_2/ZB" -1.79257
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/Z" 3.07272
+cap "comp018green_sigbuf_1/VSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 74.8749
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/A" 4.73825
+cap "m1_377_2969#" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 0.198485
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "comp018green_sigbuf_2/A" 2.22859
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "comp018green_sigbuf_2/DVDD" 0.0579041
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "comp018green_sigbuf_2/DVSS" 86.5934
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" -0.496099
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 20.4417
+cap "comp018green_in_drv_0/DVSS" "comp018green_sigbuf_2/A" 0.6858
+cap "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "comp018green_sigbuf_2/ZB" 6.11958
+cap "comp018green_sigbuf_2/ZB" "comp018green_sigbuf_3/ZB" 9.08757
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_3/Z" 820.739
+cap "comp018green_sigbuf_2/Z" "comp018green_sigbuf_3/Z" 14.8837
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_2/ZB" 0.82604
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/DVDD" -5.42802
+cap "comp018green_sigbuf_2/ZB" "comp018green_sigbuf_3/Z" 14.67
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/Z" 5.09206
+cap "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_2/ZB" 13.0295
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_3/Z" 0.191365
+cap "comp018green_sigbuf_3/Z" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 0.259379
+cap "comp018green_in_drv_0/a_1411_1106#" "comp018green_sigbuf_3/Z" 0.488796
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" 0.236441
+cap "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 0.169183
+cap "comp018green_sigbuf_2/DVDD" "comp018green_sigbuf_2/ZB" 0.319375
+cap "comp018green_sigbuf_2/ZB" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314529_0/a_244_n44#" 1.13038
+cap "comp018green_sigbuf_2/Z" "comp018green_sigbuf_3/ZB" 1.33252
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/ZB" 112.484
+cap "comp018green_sigbuf_2/Z" "comp018green_sigbuf_2/ZB" 22.1965
+cap "comp018green_sigbuf_2/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_3/Z" 0.569274
+cap "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -1.79257
+cap "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314550_0/D" "comp018green_sigbuf_3/Z" 0.040627
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/Z" 0.504138
+cap "comp018green_sigbuf_2/Z" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 0.367669
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_2/Z" 0.20304
+cap "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314550_0/D" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" 0.479486
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/Z" 4.76171
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_3/A" 0.294763
+cap "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314549_0/D" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" 0.0444963
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" 0.271021
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_3/A" 37.835
+cap "comp018green_sigbuf_3/Z" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 1.34077
+cap "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_3/A" 9.24496
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_3/Z" 349.213
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" 21.1156
+cap "comp018green_sigbuf_2/Z" "comp018green_sigbuf_3/Z" 1.13038
+cap "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314550_0/D" "comp018green_sigbuf_3/Z" 0.175416
+cap "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 0.367669
+cap "comp018green_sigbuf_2/DVDD" "comp018green_sigbuf_3/Z" 0.094759
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_3/ZB" 2.13373
+cap "comp018green_sigbuf_2/ZB" "comp018green_sigbuf_3/Z" 0.201497
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/A" 1.96314
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" -0.974587
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/A" 182.004
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_3/A" 1.29838
+cap "comp018green_sigbuf_3/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_sigbuf_3/A" 109.262
+cap "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314549_0/a_0_n44#" "comp018green_sigbuf_3/A" 0.363106
+cap "comp018green_sigbuf_3/A" "comp018green_sigbuf_3/DVSS" 5.01721
+cap "comp018green_sigbuf_3/A" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 0.292503
+cap "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" "comp018green_in_cms_smt_0/DVSS" 4.91931
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "pn_6p0_CDNS_4066195314528_3/PLUS" 1.11022e-16
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "comp018green_in_cms_smt_0/DVSS" 184.339
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "comp018green_in_cms_smt_0/DVDD" 0.185271
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314537_0/D" 0.460479
+cap "comp018green_in_cms_smt_0/IE" "comp018green_in_cms_smt_0/CS" 2.31448
+cap "comp018green_in_cms_smt_0/DVSS" "pn_6p0_CDNS_4066195314528_2/PLUS" 453.432
+cap "comp018green_in_cms_smt_0/DVSS" "comp018green_in_cms_smt_0/CS" 165.878
+cap "comp018green_in_cms_smt_0/DVSS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" -1.32844
+cap "comp018green_in_cms_smt_0/CS" "pn_6p0_CDNS_4066195314528_2/PLUS" -4.59343
+cap "comp018green_in_cms_smt_0/DVSS" "pn_6p0_CDNS_4066195314528_3/PLUS" 3.596
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 22.4334
+cap "pn_6p0_CDNS_4066195314528_2/PLUS" "pn_6p0_CDNS_4066195314528_3/PLUS" 2.45197
+cap "comp018green_in_cms_smt_0/CS" "pn_6p0_CDNS_4066195314528_3/PLUS" 0.656825
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 88.9238
+cap "comp018green_sigbuf_0/VSS" "comp018green_in_cms_smt_0/CS" 1.33253
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" -0.844102
+cap "comp018green_in_cms_smt_0/CS" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" 0.481503
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" 17.2132
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_sigbuf_0/DVSS" 1.42136
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/DVSS" 59.4664
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "pn_6p0_CDNS_4066195314528_3/PLUS" 1.58455
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "comp018green_sigbuf_0/Z" 0.0434347
+cap "comp018green_in_cms_smt_0/CS" "comp018green_sigbuf_0/nmos_6p0_CDNS_4066195314530_0/D" 1.52133
+cap "comp018green_in_cms_smt_0/CS" "m1_n144_2561#" 2.70288
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "m1_377_2969#" 0.20914
+cap "comp018green_sigbuf_0/Z" "comp018green_sigbuf_0/DVSS" 1.21038
+cap "comp018green_sigbuf_0/Z" "pn_6p0_CDNS_4066195314528_3/PLUS" 0.129965
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 0.342983
+cap "m1_377_2969#" "pn_6p0_CDNS_4066195314528_3/PLUS" -34.4134
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 242.203
+cap "comp018green_sigbuf_0/VSS" "comp018green_sigbuf_0/Z" 1.2775
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "comp018green_in_cms_smt_0/DVSS" -0.0362987
+cap "m1_377_2969#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 3.91193
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" "comp018green_sigbuf_0/Z" 2.06767
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314541_0/D" -4.28599
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "m1_n144_2561#" 0.089207
+cap "comp018green_in_cms_smt_0/CS" "pn_6p0_CDNS_4066195314528_3/PLUS" 132.939
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/DVDD" 0.662082
+cap "comp018green_in_cms_smt_0/CS" "comp018green_sigbuf_0/VSS" 10.2951
+cap "comp018green_in_cms_smt_0/DVSS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" -21.3206
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 43.9281
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" 9.08046
+cap "comp018green_sigbuf_0/Z" "m1_377_2969#" -9.14915
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" "comp018green_in_cms_smt_0/DVSS" -3.93907
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314541_0/D" 34.4706
+cap "m1_n144_2561#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 1.127
+cap "comp018green_in_cms_smt_0/DVSS" "comp018green_in_cms_smt_0/DVDD" -0.458983
+cap "comp018green_in_cms_smt_0/CS" "comp018green_sigbuf_0/Z" 18.2638
+cap "comp018green_in_cms_smt_0/DVSS" "comp018green_sigbuf_0/Z" 353.024
+cap "comp018green_in_cms_smt_0/CS" "comp018green_sigbuf_0/A" 3.55392
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "pn_6p0_CDNS_4066195314528_3/PLUS" 0.114234
+cap "comp018green_in_cms_smt_0/CS" "m1_377_2969#" 129.028
+cap "comp018green_in_cms_smt_0/DVSS" "m1_377_2969#" 503.08
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "comp018green_sigbuf_0/VSS" 0.0624485
+cap "comp018green_sigbuf_0/Z" "m1_n144_2561#" 0.124431
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" -2.18038
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314541_0/S" 0.300812
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "m1_1784_2697#" 5.33261
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_sigbuf_1/Z" 7.97666
+cap "comp018green_sigbuf_0/Z" "m1_n144_2561#" 0.296715
+cap "comp018green_sigbuf_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_sigbuf_0/Z" 0.300071
+cap "comp018green_sigbuf_1/Z" "comp018green_in_cms_smt_0/A" 0.944643
+cap "comp018green_sigbuf_0/Z" "comp018green_in_cms_smt_0/A" 0.642979
+cap "comp018green_in_cms_smt_0/A" "m1_1784_2697#" 0.64387
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "m1_n144_2561#" 3.79279
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_0/Z" 2.27838
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_sigbuf_0/nmos_6p0_CDNS_4066195314530_0/D" 2.5844
+cap "comp018green_sigbuf_0/Z" "m1_377_2969#" 1.06346
+cap "comp018green_in_cms_smt_0/A" "m1_n144_2561#" 0.463969
+cap "comp018green_sigbuf_0/DVSS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" 7.5329
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_sigbuf_0/ZB" 0.512344
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "m1_377_2969#" 13.1651
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314537_0/S" "m1_377_2969#" 503.08
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_0/Z" 0.637445
+cap "comp018green_sigbuf_0/Z" "m1_1784_2697#" 0.421314
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314541_0/D" 1.42109e-14
+cap "comp018green_sigbuf_0/DVSS" "comp018green_in_cms_smt_0/A" 3.5377
+cap "comp018green_sigbuf_0/ZB" "comp018green_in_cms_smt_0/A" 0.07864
+cap "comp018green_in_cms_smt_0/A" "m1_377_2969#" 1.51049
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314536_0/D" "comp018green_sigbuf_0/Z" 4.13387
+cap "m1_377_2969#" "m1_1784_2697#" -10.6725
+cap "comp018green_sigbuf_1/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 1.88292
+cap "m1_377_2969#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 13.1651
+cap "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_1/Z" 1.31895
+cap "comp018green_sigbuf_1/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 3.30514
+cap "m1_1784_2697#" "comp018green_in_cms_smt_0/A" 1.25317
+cap "m1_377_2969#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" 503.08
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" -7.10543e-15
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 2.84217e-14
+cap "comp018green_in_cms_smt_0/Z" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" -0.142227
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" "comp018green_in_cms_smt_0/A" 1.13687e-13
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/nmos_6p0_CDNS_4066195314530_0/D" 3.05206
+cap "m1_1784_2697#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 4.64699
+cap "comp018green_sigbuf_1/Z" "m1_377_2969#" 44.5119
+cap "comp018green_sigbuf_1/Z" "comp018green_sigbuf_1/A" 2.46579
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/a_5831_1444#" -0.0507969
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" -0.70212
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" "comp018green_sigbuf_1/Z" 0.13146
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" -1.42109e-14
+cap "comp018green_sigbuf_1/Z" "comp018green_in_cms_smt_0/A" 3.09276
+cap "comp018green_sigbuf_0/DVSS" "comp018green_in_cms_smt_0/A" 6.96114
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" 1.70604
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" -0.0969267
+cap "comp018green_sigbuf_1/Z" "m1_1784_2697#" 45.8294
+cap "comp018green_sigbuf_1/Z" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 20.975
+cap "comp018green_sigbuf_0/DVSS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 6.13362
+cap "comp018green_sigbuf_1/ZB" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 0.512344
+cap "comp018green_sigbuf_1/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_cms_smt_0/A" 0.456976
+cap "m1_377_2969#" "comp018green_in_cms_smt_0/A" 0.995854
+cap "comp018green_sigbuf_1/Z" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" 3.28729
+cap "comp018green_sigbuf_1/A" "comp018green_in_cms_smt_0/A" 0.882332
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_sigbuf_1/VSS" 4.43811
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/a_5831_1444#" -0.0409197
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.0395904
+cap "comp018green_in_cms_smt_0/a_5831_913#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.190423
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" 2.18759
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "m1_377_2969#" 10.982
+cap "comp018green_in_drv_0/DVDD" "comp018green_sigbuf_2/A" 0.0134342
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_sigbuf_1/nmos_6p0_CDNS_4066195314530_0/D" 0.12011
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/DVDD" -2.10599
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.0128457
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.156262
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_drv_0/DVSS" 1.18078
+cap "comp018green_sigbuf_1/VSS" "comp018green_sigbuf_2/A" 3.59176
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_drv_0/DVDD" -0.565597
+cap "comp018green_in_drv_0/A" "comp018green_in_drv_0/DVSS" 5.90124
+cap "comp018green_sigbuf_1/VSS" "comp018green_in_drv_0/DVSS" 0.311362
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.0471757
+cap "comp018green_sigbuf_2/A" "m1_377_2969#" 89.5563
+cap "comp018green_in_drv_0/DVSS" "m1_377_2969#" 361.783
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" -0.114571
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 0.243956
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 4.48221
+cap "comp018green_in_drv_0/DVSS" "comp018green_sigbuf_2/A" 16.3573
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_sigbuf_1/A" 0.0743694
+cap "comp018green_in_cms_smt_0/A" "m1_377_2969#" -2.54304
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_drv_0/DVSS" 17.7999
+cap "m1_377_2969#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -22.6519
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.508769
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_sigbuf_1/VSS" 0.11982
+cap "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 89.5563
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 10.7371
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.167207
+cap "comp018green_in_cms_smt_0/a_5831_913#" "m1_377_2969#" 0.319932
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" 1.11276
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_drv_0/DVSS" 0.970992
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_sigbuf_1/A" 6.87764
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/a_5831_913#" 0.057439
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.00809562
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/a_5831_913#" -0.0780798
+cap "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" 26.4759
+cap "comp018green_in_drv_0/A" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 1.58228
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 140.643
+cap "comp018green_sigbuf_2/DVSS" "comp018green_in_drv_0/A" 1.39002
+cap "m1_377_2969#" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" -0.0814194
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/DVDD" -0.378812
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/A" -4.22925
+cap "comp018green_sigbuf_1/VSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" -2.04878
+cap "comp018green_in_drv_0/A" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 14.1664
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" 38.4965
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_sigbuf_2/A" 2.21241
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314550_0/D" -0.494657
+cap "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" 13.148
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/A" 4.91368
+cap "comp018green_in_drv_0/DVSS" "comp018green_sigbuf_2/ZB" 12.4748
+cap "comp018green_in_drv_0/DVSS" "comp018green_sigbuf_2/A" 4.35916
+cap "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -2.15108
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "m1_377_2969#" 5.55677
+cap "comp018green_in_drv_0/A" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" 0.108767
+cap "comp018green_sigbuf_2/DVSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 1.03589
+cap "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -7.32747e-14
+cap "comp018green_in_drv_0/A" "comp018green_sigbuf_2/ZB" 0.0807
+cap "comp018green_in_drv_0/DVSS" "m1_377_2969#" 141.191
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 7.5394
+cap "comp018green_in_drv_0/A" "comp018green_sigbuf_2/A" 0.851949
+cap "m1_377_2969#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -6.46159
+cap "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" 6.94491
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 118.575
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" -0.75289
+cap "comp018green_in_drv_0/A" "m1_377_2969#" 1.36077
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_sigbuf_2/A" 6.67601
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 0.0900614
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_2/DVSS" 0.118138
+cap "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 6.12778
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_2/Z" 0.0588117
+cap "comp018green_sigbuf_2/VSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 21.9828
+cap "comp018green_sigbuf_2/VSS" "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314549_0/D" 0.513154
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_sigbuf_3/Z" 1.30405
+cap "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 1.11022e-16
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/ZB" 56.958
+cap "comp018green_sigbuf_2/VSS" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 371.728
+cap "comp018green_in_drv_0/Z" "comp018green_sigbuf_2/A" 1.25232
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 0.32323
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.0761091
+cap "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" -6.21197
+cap "comp018green_sigbuf_2/VSS" "comp018green_in_drv_0/DVSS" 3.52178
+cap "VDD" "comp018green_sigbuf_2/A" 0.134979
+cap "comp018green_sigbuf_2/ZB" "comp018green_sigbuf_3/Z" 6.20304
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_2/ZB" 25.2667
+cap "comp018green_sigbuf_2/DVSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 2.5199
+cap "comp018green_sigbuf_2/VSS" "comp018green_in_drv_0/Z" 8.00997
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_2/A" 235.893
+cap "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" -2.15108
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_3/Z" 8.88178e-16
+cap "comp018green_sigbuf_2/VSS" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 7.37172
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 7.28416
+cap "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_3/Z" 10.4126
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/A" 0.820154
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_sigbuf_3/ZB" 0.040627
+cap "comp018green_sigbuf_2/VSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 2.36183
+cap "comp018green_sigbuf_2/VSS" "comp018green_in_drv_0/A" 5.31363
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_sigbuf_2/ZB" 0.728165
+cap "comp018green_sigbuf_2/A" "comp018green_sigbuf_2/Z" 1.96319
+cap "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 1.75838
+cap "comp018green_sigbuf_2/DVSS" "comp018green_in_drv_0/Z" 2.98571
+cap "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_3/A" 43.1768
+cap "comp018green_in_drv_0/a_1411_1106#" "comp018green_sigbuf_3/A" 15.3622
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 2.86516
+cap "comp018green_in_drv_0/Z" "comp018green_sigbuf_3/VSS" 107.344
+cap "comp018green_sigbuf_3/w_1197_1281#" "comp018green_sigbuf_3/A" 0.0344863
+cap "comp018green_sigbuf_3/A" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" -2.89845
+cap "comp018green_in_drv_0/Z" "comp018green_sigbuf_3/nmos_6p0_CDNS_4066195314530_0/D" 0.479486
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/A" 129.021
+cap "comp018green_sigbuf_3/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_sigbuf_3/A" 15.9183
+cap "comp018green_sigbuf_2/ZB" "comp018green_sigbuf_3/A" 1.11022e-16
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "comp018green_sigbuf_3/A" 42.2148
+cap "comp018green_sigbuf_3/A" "M2_M1_CDNS_69033583165523_10/m1_n90_n38#" -6.32606
+cap "comp018green_sigbuf_3/VSS" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 507.03
+cap "comp018green_in_drv_0/Z" "comp018green_sigbuf_3/Z" 0.16168
+cap "comp018green_sigbuf_3/Z" "comp018green_sigbuf_3/A" 0.317453
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "comp018green_sigbuf_3/VSS" 181.968
+cap "comp018green_in_drv_0/Z" "comp018green_sigbuf_3/A" 112.961
+cap "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" "comp018green_sigbuf_3/nmos_6p0_CDNS_4066195314530_0/D" 0.545198
+cap "comp018green_sigbuf_3/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_drv_0/Z" 0.0928617
+cap "comp018green_sigbuf_3/A" "comp018green_sigbuf_3/nmos_6p0_CDNS_4066195314530_0/D" 1.6161
+cap "VDD" "comp018green_sigbuf_3/VSS" -1.95026
+cap "comp018green_sigbuf_3/w_n83_1281#" "comp018green_sigbuf_3/A" 0.0321872
+cap "VDD" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 0.279355
+cap "comp018green_sigbuf_3/A" "comp018green_in_drv_0/Z" 1.40206
+cap "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" "comp018green_in_drv_0/Z" 60.5773
+cap "comp018green_sigbuf_3/VSS" "comp018green_in_drv_0/Z" 0.415368
+cap "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" "comp018green_sigbuf_3/A" 19.9398
+cap "comp018green_sigbuf_3/VSS" "comp018green_sigbuf_3/A" 52.5301
+cap "comp018green_sigbuf_3/VSS" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 240.797
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "comp018green_sigbuf_3/A" 0.0684594
+cap "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" 104.328
+cap "comp018green_sigbuf_3/VSS" "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" 7.40716
+cap "comp018green_in_cms_smt_0/DVDD" "comp018green_in_cms_smt_0/CS" 0.30583
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_pupd_0/m1_7678_2446#" 1.21361
+cap "comp018green_in_pupd_0/w_n83_53#" "comp018green_in_cms_smt_0/CS" 1.48273
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 1.48975
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" 0.8585
+cap "m1_377_2969#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 0.0221907
+cap "M2_M1_CDNS_69033583165523_2/m1_n90_n38#" "comp018green_in_cms_smt_0/IE" 0.0518498
+cap "comp018green_in_cms_smt_0/IE" "comp018green_in_cms_smt_0/CS" 0.435552
+cap "M2_M1_CDNS_69033583165523_2/m1_n90_n38#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 0.0148142
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 0.0279769
+cap "m1_n144_2561#" "comp018green_in_cms_smt_0/IE" 0.0251144
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/CS" 1.18363
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/IE" 0.802881
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/DVSS" -0.306798
+cap "comp018green_in_cms_smt_0/IE" "comp018green_in_cms_smt_0/DVSS" -0.890133
+cap "m1_n144_2561#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 0.00717556
+cap "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314534_0/D" 5.06262e-14
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314545_0/D" 1.67633
+cap "m1_377_2969#" "comp018green_in_cms_smt_0/IE" 0.0776673
+cap "comp018green_in_cms_smt_0/IE" "M2_M1_CDNS_69033583165523_9/m1_n90_n38#" 0.0268869
+cap "m1_n144_2561#" "comp018green_in_cms_smt_0/IE" 0.0107633
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" 0.0125352
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_pupd_0/m1_7678_2446#" 7.57155
+cap "comp018green_in_cms_smt_0/A" "m1_377_2969#" 0.0712437
+cap "comp018green_in_cms_smt_0/IE" "m1_1784_2697#" 0.0222213
+cap "comp018green_in_cms_smt_0/IE" "comp018green_in_pupd_0/m1_7678_2446#" 2.11875
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" -0.671336
+cap "comp018green_in_cms_smt_0/A" "M2_M1_CDNS_69033583165523_9/m1_n90_n38#" 0.0575475
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314538_0/D" "comp018green_in_pupd_0/m1_7678_2446#" 0.598835
+cap "m1_n144_2561#" "comp018green_in_cms_smt_0/A" 0.0230373
+cap "comp018green_in_cms_smt_0/IE" "m1_377_2969#" 0.033286
+cap "comp018green_in_cms_smt_0/A" "m1_1784_2697#" 0.0475615
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" 0.451968
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_pupd_0/m1_7678_2446#" 1.38813
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_cms_smt_0/Z" 1.7053e-13
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_cms_smt_0/Z" -0.331461
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" "comp018green_in_cms_smt_0/A" 120.406
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" "comp018green_in_cms_smt_0/A" 40.9543
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_cms_smt_0/A" 111.019
+cap "M2_M1_CDNS_69033583165523_13/m1_n90_n38#" "comp018green_in_cms_smt_0/A" 0.0343671
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_pupd_0/m1_7678_2446#" 1.22532
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_pupd_0/m1_7678_2446#" 3.29947
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_cms_smt_0/A" 92.2105
+cap "comp018green_in_cms_smt_0/Z" "comp018green_in_cms_smt_0/A" 11.088
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_cms_smt_0/A" -0.117293
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" -29.1489
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" -5.0191
+cap "comp018green_in_cms_smt_0/A" "m1_377_2969#" -2.0659
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/A" 6.432
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" -11.1768
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_cms_smt_0/A" -0.0603736
+cap "comp018green_in_cms_smt_0/A" "M2_M1_CDNS_69033583165523_9/m1_n90_n38#" 0.0500003
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" 63.1849
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_pupd_0/m1_7678_2446#" 8.13945
+cap "m1_1784_2697#" "comp018green_in_cms_smt_0/A" 0.0709524
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_cms_smt_0/A" 0.4484
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.0345762
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.0318311
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_pupd_0/m1_7678_2446#" 0.316175
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_cms_smt_0/A" 41.8531
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_cms_smt_0/A" 154.181
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_pupd_0/m1_7678_2446#" 0.302015
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" 5.68434e-14
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_drv_0/DVDD" -0.357984
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_cms_smt_0/A" 0.471441
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/S" "comp018green_in_cms_smt_0/A" -1.19529
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_drv_0/DVSS" 0.527454
+cap "comp018green_in_drv_0/A" "comp018green_in_drv_0/DVDD" 45.5507
+cap "comp018green_in_drv_0/A" "comp018green_in_drv_0/DVSS" 74.864
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -0.331461
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_pupd_0/m1_7678_2446#" 1.0006
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 14.9684
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_pupd_0/m1_7678_2446#" 2.73923
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/a_5831_913#" 1.18484
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_cms_smt_0/A" 0.108906
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/a_5831_1444#" 1.00348
+cap "comp018green_in_cms_smt_0/a_5831_913#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.0256984
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_drv_0/DVSS" 2.38279
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/A" -1.93693
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" -35.5715
+cap "comp018green_in_cms_smt_0/a_5831_913#" "m1_377_2969#" 0.037213
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.00411504
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_pupd_0/m1_7678_2446#" 0.316812
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/a_5831_913#" 0.324164
+cap "comp018green_in_cms_smt_0/A" "m1_377_2969#" -2.54304
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/DVDD" -0.50187
+cap "comp018green_in_drv_0/A" "comp018green_in_pupd_0/m1_7678_2446#" 0.750345
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/S" "comp018green_in_cms_smt_0/A" 142.376
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_drv_0/DVDD" -6.59547
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.376751
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 4.95975
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_drv_0/DVSS" -7.01475
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/A" 2.66972
+cap "comp018green_in_cms_smt_0/a_5831_913#" "comp018green_in_drv_0/DVSS" 5.48267
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_drv_0/DVDD" 1.07915
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.378174
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_cms_smt_0/A" 7.70408
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_drv_0/DVSS" 2.92359
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/A" 17.367
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_20/m1_n90_n38#" 1.08356
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.731973
+cap "comp018green_in_drv_0/DVDD" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 8.09107
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 0.69853
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.0534282
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/a_5831_913#" 1.12186
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 0.730649
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 1.10331
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/DVSS" 0.336498
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "m1_377_2969#" 2.20235
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_drv_0/A" 0.061643
+cap "comp018green_in_drv_0/A" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 0.69247
+cap "comp018green_in_drv_0/DVDD" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 2.84717
+cap "comp018green_in_drv_0/VDD" "comp018green_in_drv_0/A" 0.00949979
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 102.473
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 48.7087
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.0565033
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.448887
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.377982
+cap "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_1/D" 0.505359
+cap "comp018green_in_drv_0/A" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 0.525578
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 2.532
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 51.3921
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 10.1954
+cap "comp018green_in_drv_0/DVDD" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 153.093
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 11.1338
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/DVDD" -12.5393
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" 0.089668
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_cms_smt_0/a_5831_913#" 0.310009
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/a_5831_913#" 3.78987
+cap "comp018green_in_drv_0/DVDD" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 40.2273
+cap "comp018green_in_drv_0/A" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 13.1862
+cap "comp018green_in_drv_0/A" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 36.8649
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_drv_0/A" 67.6284
+cap "comp018green_in_cms_smt_0/a_5831_1444#" "comp018green_in_drv_0/A" 0.984603
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 1.69786
+cap "comp018green_in_drv_0/DVSS" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 2.29002
+cap "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314539_0/D" 0.120192
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_drv_0/A" 0.903501
+cap "comp018green_in_drv_0/A" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 1.33755
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_drv_0/A" 101.803
+cap "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" -8.43886
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/A" 0.977378
+cap "VDD" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 298.719
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.398313
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 0.328087
+cap "comp018green_in_drv_0/DVDD" "VDD" 15.2917
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 1.90501
+cap "VDD" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 1.2075
+cap "VDD" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 10.8689
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 0.0810177
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" 6.04295
+cap "comp018green_in_pupd_0/DVSS" "VDD" 0.185946
+cap "VDD" "comp018green_in_drv_0/Z" 12.3444
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/a_0_n44#" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.273462
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 20.3326
+cap "VDD" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 8.56455
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 0.0398956
+cap "VDD" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 22.5869
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 30.1849
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 106.587
+cap "VDD" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/D" 1.20347
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 1.16137
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 7.26026
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 6.29316
+cap "VDD" "comp018green_in_drv_0/A" 3.86256
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/Z" 0.335172
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 1.1193
+cap "VDD" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" 3.79462
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 1.2578
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" 5.63726
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 0.00784884
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 2.43166
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" 0.0551724
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" 81.2111
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/DVSS" 1.07126
+cap "comp018green_in_drv_0/VSS" "VDD" 18.0397
+cap "VDD" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 39.5076
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 63.9792
+cap "VDD" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 193.351
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/Z" 308.713
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/a_0_n44#" "comp018green_in_drv_0/Z" 0.419426
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_10/m1_n90_n38#" 0.0809062
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 0.216816
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 1.18871
+cap "M2_M1_CDNS_69033583165523_10/m1_n90_n38#" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" -8.43886
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/D" "comp018green_in_drv_0/Z" 0.206469
+cap "comp018green_in_drv_0/VSS" "comp018green_in_drv_0/a_1411_1106#" 0.12154
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_2/a_0_n44#" "comp018green_in_drv_0/Z" 0.0880794
+cap "comp018green_in_drv_0/a_1411_1106#" "M2_M1_CDNS_69033583165523_10/m1_n90_n38#" 0.256586
+cap "comp018green_in_drv_0/Z" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 202.29
+cap "comp018green_in_drv_0/a_1411_1106#" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 0.0771155
+cap "comp018green_in_drv_0/Z" "comp018green_in_drv_0/a_1411_1106#" -2.84217e-14
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/S" "comp018green_in_drv_0/Z" 0.1547
+cap "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" 235.847
+cap "comp018green_in_drv_0/VSS" "VDD" 163.029
+cap "comp018green_in_drv_0/a_1411_1106#" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" 51.0596
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/a_0_n44#" "comp018green_in_drv_0/Z" 0.150993
+cap "VDD" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 1.18201
+cap "VDD" "comp018green_in_drv_0/Z" 4.54747e-13
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/D" "comp018green_in_drv_0/Z" 0.0839801
+cap "comp018green_in_logic_pupd_0/VSS" "comp018green_in_drv_0/Z" 0.166138
+cap "comp018green_in_logic_pupd_0/VSS" "VDD" -8.42479
+cap "comp018green_in_drv_0/Z" "VDD" 10.2887
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 149.526
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" -0.053124
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "comp018green_in_logic_pupd_0/VSS" 28.6621
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "comp018green_in_drv_0/Z" 4.26608
+cap "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "VDD" 84.1949
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/S" 0.00778378
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/VSS" 0.910037
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_drv_0/Z" 139.161
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "VDD" 205.962
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_2/D" 0.01989
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_2/a_0_n44#" 0.3649
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/D" 0.262555
+cap "comp018green_in_cms_smt_0/DVDD" "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_3/MINUS" 188.976
+cap "comp018green_in_cms_smt_0/DVDD" "comp018green_in_pupd_0/w_n83_53#" 9.57339
+cap "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_3/MINUS" "comp018green_in_cms_smt_0/DVDD" 301.661
+cap "comp018green_in_cms_smt_0/DVDD" "comp018green_in_pupd_0/m1_7678_2446#" 300.981
+cap "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" "comp018green_in_cms_smt_0/A" 0.0376057
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" 300.981
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_cms_smt_0/A" 7.9634
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" 118.174
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/A" 154.797
+cap "comp018green_in_pupd_0/m1_7678_2446#" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" 300.981
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_cms_smt_0/A" 0.95717
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" -8.06479
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_pupd_0/m1_7678_2446#" 300.959
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_cms_smt_0/dw_n1470_n83#" -0.0483002
+cap "comp018green_in_cms_smt_0/A" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" 7.9634
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_drv_0/A" 1.55965
+cap "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314540_0/D" "comp018green_in_pupd_0/m1_7678_2446#" 2.59852
+cap "comp018green_in_drv_0/A" "comp018green_in_drv_0/DVDD" 0.253302
+cap "M2_M1_CDNS_69033583165523_20/m1_n90_n38#" "comp018green_in_drv_0/DVDD" -0.0327181
+cap "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314547_0/D" "comp018green_in_drv_0/DVDD" -0.110634
+cap "comp018green_in_pupd_0/PD" "comp018green_in_drv_0/DVDD" 1.53804
+cap "comp018green_in_pupd_0/DVSS" "m2_9414_2697#" 4.50824
+cap "m2_9414_2697#" "comp018green_in_pupd_0/PU_B" 0.170197
+cap "m2_9414_2697#" "comp018green_in_drv_0/DVDD" 59.3128
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "m2_9414_2697#" 81.0753
+cap "comp018green_in_drv_0/DVDD" "comp018green_in_pupd_0/PU_B" 9.11999
+cap "m2_9892_2833#" "comp018green_in_drv_0/DVDD" 0.529927
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 2.532
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_pupd_0/PU_B" 73.7764
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_drv_0/DVDD" 271.174
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 5.62746
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 23.7228
+cap "comp018green_in_pupd_0/PD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/D" 0.015447
+cap "comp018green_in_pupd_0/PD" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 804.181
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "m2_9892_2833#" 28.1991
+cap "VDD" "comp018green_in_pupd_0/DVSS" 10.9247
+cap "comp018green_in_pupd_0/PD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" 0.0765152
+cap "m2_9414_2697#" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 0.0327533
+cap "m2_9892_2833#" "comp018green_in_pupd_0/PU_B" 7.69855
+cap "comp018green_in_pupd_0/PD" "m2_9892_2833#" -15.9833
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_pupd_0/PU_B" 170.321
+cap "comp018green_in_pupd_0/PD" "comp018green_in_pupd_0/DVSS" 97.5683
+cap "comp018green_in_pupd_0/w_5925_n7651#" "comp018green_in_pupd_0/PU_B" 1.16249
+cap "comp018green_in_pupd_0/pmos_6p0_CDNS_4066195314512_0/S" "comp018green_in_pupd_0/DVSS" -0.0353419
+cap "comp018green_in_drv_0/Z" "m2_9892_2833#" 7.87247
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 2.48617
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" "VDD" -0.143787
+cap "comp018green_in_pupd_0/DVSS" "m2_9414_2697#" 2.17687
+cap "m2_9892_2833#" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 87.7036
+cap "comp018green_in_pupd_0/PD" "m2_11457_2718#" 0.0104856
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "m2_9892_2833#" 0.0603684
+cap "VDD" "comp018green_in_pupd_0/PU_B" 1.28877
+cap "comp018green_in_pupd_0/PD" "VDD" 6.08348
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" -61.4101
+cap "comp018green_in_pupd_0/PD" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314539_0/D" 0.309638
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "comp018green_in_pupd_0/DVSS" 20.1913
+cap "comp018green_in_pupd_0/DVSS" "m2_9892_2833#" 4.25241
+cap "comp018green_in_pupd_0/PD" "comp018green_in_pupd_0/PU_B" 18.9421
+cap "m2_11457_2718#" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 0.172809
+cap "VDD" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 112.423
+cap "m2_9414_2697#" "comp018green_in_pupd_0/PU_B" 1.50169
+cap "comp018green_in_pupd_0/PD" "m2_9414_2697#" 1.29265
+cap "VDD" "m2_9892_2833#" 259.392
+cap "comp018green_in_pupd_0/w_5925_n7651#" "comp018green_in_pupd_0/DVSS" -0.618497
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_logic_pupd_0/VSS" 20.6611
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "m2_9892_2833#" 30.7289
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/PD_IN" 0.570419
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_0/D" "comp018green_in_logic_pupd_0/VSS" 7.43366
+cap "VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.304255
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_logic_pupd_0/PD_IN" 0.485529
+cap "comp018green_in_pupd_0/PD" "m2_9892_2833#" -23.8933
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_in_logic_pupd_0/VSS" 1.04113
+cap "VDD" "m2_9892_2833#" 74.9032
+cap "m2_9892_2833#" "comp018green_in_logic_pupd_0/VSS" 90.2849
+cap "comp018green_in_logic_pupd_0/PD_IN" "m2_9892_2833#" 0.136482
+cap "comp018green_in_logic_pupd_0/PD_IN" "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" 0.11271
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/VSS" 0.027011
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.0880794
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/PD_IN" 0.015539
+cap "comp018green_in_drv_0/Z" "m2_9892_2833#" 0.443119
+cap "comp018green_in_pupd_0/DVSS" "m2_9892_2833#" 3.50495
+cap "VDD" "m2_11457_2718#" 78.111
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "m2_11457_2718#" 1.51296
+cap "m2_11457_2718#" "comp018green_in_logic_pupd_0/VSS" 80.0284
+cap "VDD" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 0.465904
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/VSS" 1.14798
+cap "comp018green_in_logic_pupd_0/PD_IN" "m2_11457_2718#" 7.09173
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_logic_pupd_0/VSS" 0.0563065
+cap "VDD" "comp018green_in_logic_pupd_0/VSS" 205.877
+cap "comp018green_in_pupd_0/PD" "comp018green_in_logic_pupd_0/VSS" 0.0393337
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_logic_pupd_0/PD_IN" 0.0368058
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/VSS" 7.33046
+cap "comp018green_in_drv_0/a_1411_1106#" "m2_9892_2833#" 7.3198
+cap "comp018green_in_pupd_0/PD" "comp018green_in_logic_pupd_0/PD_IN" 0.0259906
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "m2_11457_2718#" 0.883536
+cap "VDD" "comp018green_in_logic_pupd_0/PD_IN" 1.33602
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_0/D" "m2_11457_2718#" 5.83395
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/VSS" 3.71955
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "m2_11457_2718#" 3.90799
+cap "VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" 0.97216
+cap "VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.333727
+cap "comp018green_in_drv_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.3649
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 0.75419
+cap "m2_9892_2833#" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 0.0571909
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_0/D" 10.0042
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/w_n83_1281#" 0.152236
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/VSS" 582.115
+cap "VDD" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 121.047
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/PD_IN" 0.685516
+cap "VDD" "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" 2.79829
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 1.33311
+cap "VDD" "comp018green_in_logic_pupd_0/VSS" 15.806
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 3.95489
+cap "m2_11457_2718#" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 0.0565843
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_in_logic_pupd_0/VSS" 1.11022e-16
+cap "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_3/MINUS" "comp018green_in_cms_smt_0/DVDD" 0.333248
+cap "comp018green_in_cms_smt_0/DVDD" "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_5/MINUS" 0.666496
+cap "comp018green_in_cms_smt_0/DVDD" "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_6/PLUS" 0.0853948
+cap "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_1/PLUS" "comp018green_in_cms_smt_0/DVDD" 0.583547
+cap "comp018green_in_pupd_0/ppolyf_u_CDNS_4066195314533_6/PLUS" "comp018green_in_cms_smt_0/DVDD" 0.585773
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/m1_2282_n2083#" 0.159825
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_logic_pupd_0/m1_2282_n2083#" 5.32691
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_pupd_0/PD" 0.166303
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_pupd_0/DVSS" 0.0322598
+cap "comp018green_in_logic_pupd_0/PD_IN" "m2_9892_2833#" 2.9342
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_logic_pupd_0/PD_IN" 64.959
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/PD_IN" 12.9302
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/DVDD" 146.618
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 0.140739
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_1/D" "comp018green_in_pupd_0/PD" 0.0214025
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.434763
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_in_pupd_0/PD" 0.0269637
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_pupd_0/PU_B" 0.0600396
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "comp018green_in_pupd_0/DVSS" 25.4947
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "comp018green_in_pupd_0/PD" 2.18613
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/S" "comp018green_in_pupd_0/PU_B" 3.53248
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 1.63092
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 0.0104279
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.0200053
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" 0.284197
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_pupd_0/PD" 22.8876
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/PD_IN" 1.10451
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/S" "comp018green_in_logic_pupd_0/PD_IN" 2.67469
+cap "comp018green_in_pupd_0/DVSS" "m2_9892_2833#" 0.0762297
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" -2.0233
+cap "comp018green_in_pupd_0/PD" "m2_9892_2833#" 0.296165
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_pupd_0/PD" 73.5333
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_pupd_0/PD" 12.7538
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_pupd_0/DVSS" 65.2467
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_pupd_0/DVDD" -4.33182
+cap "comp018green_in_pupd_0/PD" "comp018green_in_pupd_0/DVDD" 0.393458
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "m2_9892_2833#" 0.352451
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 0.0158793
+cap "comp018green_in_pupd_0/PU_B" "m2_9892_2833#" -0.0447565
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 98.7041
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_pupd_0/DVDD" -4.18214
+cap "comp018green_in_pupd_0/DVSS" "comp018green_in_logic_pupd_0/PD_IN" 10.5584
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/PD" 2.8806
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_pupd_0/DVDD" 95.5231
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" -8.47741
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -12.0081
+cap "m2_9892_2833#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 2.08181
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" -21.5033
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/DVDD" 0.72156
+cap "m2_9892_2833#" "comp018green_in_logic_pupd_0/PD_IN" 74.4243
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 203.93
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 1.63092
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/DVSS" 6.19511
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "m2_9892_2833#" 4.43578
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/a_732_n44#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 0.0346475
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 124.547
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -5.79086
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/PD" 1.31476
+cap "m2_9892_2833#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 0.600429
+cap "comp018green_in_logic_pupd_0/VSS" "comp018green_in_logic_pupd_0/PD_IN" 3.3845
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/VDD" -22.2833
+cap "m2_9892_2833#" "comp018green_in_pupd_0/DVDD" 11.2384
+cap "m2_9892_2833#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 11.1069
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_in_pupd_0/DVSS" 0.481583
+cap "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/a_976_n44#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 0.0485065
+cap "m2_9892_2833#" "comp018green_in_pupd_0/DVSS" 3.93948
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/VSS" 26.7313
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" 2.65397
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/VDD" 97.6975
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/PD_IN" 1.04918
+cap "VDD" "comp018green_in_logic_pupd_0/PD_IN" 0.113032
+cap "comp018green_in_logic_pupd_0/VSS" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -0.49958
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/VDD" -5.85917
+cap "m2_9892_2833#" "comp018green_in_pupd_0/PD" 0.798066
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" -8.76742
+cap "comp018green_in_logic_pupd_0/VSS" "m2_9892_2833#" 57.5821
+cap "comp018green_in_logic_pupd_0/VSS" "comp018green_in_pupd_0/DVSS" 25.3662
+cap "m2_9892_2833#" "comp018green_in_logic_pupd_0/VDD" 102.697
+cap "VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 1.17032
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" -1.20939
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 39.7467
+cap "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" "comp018green_in_logic_pupd_0/PD_IN" 1.49122
+cap "comp018green_in_pupd_0/PU_B" "m2_9892_2833#" 3.40292
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" 4.32051
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_in_logic_pupd_0/PD_IN" 343.419
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -2.42407
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" -4.42222
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 97.0756
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "VDD" 0.0598333
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -1.09863
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/a_1220_n44#" 0.0161688
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" -8.47741
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/VSS" 68.3675
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/a_976_n44#" 0.27487
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" 26.5224
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" 1.07558
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/VSS" -0.596752
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/VDD" 99.477
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/PD_IN" 0.0171379
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/VSS" -2.70044
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/VDD" -10.0186
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/PD_IN" -1.85043
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/D" 0.0707032
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 26.471
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" 13.9707
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "VDD" 1.92678
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 5.68434e-14
+cap "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.0338322
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/VDD" -4.63786
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/DVDD" 229.908
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" -1.77134
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/PUB_OUT" 0.300085
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" 2.73066
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/dw_2390_n6738#" 0.000362545
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/PDB_OUT" 0.044603
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" 47.0612
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/S" 4.22226
+cap "comp018green_in_pupd_0/DVDD" "comp018green_in_pupd_0/PD" -0.0485645
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/PU_B" 13.6898
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_pupd_0/DVDD" 2.34365
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/PDB_OUT" 6.41692
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_pupd_0/PU_B" 0.0151889
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 27.6064
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/M1_PSUB_CDNS_69033583165609_1/a_n45_n515#" "comp018green_in_logic_pupd_0/PD_IN" 0.0247314
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/S" 0.6183
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" -44.545
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" -37.8643
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/PUB_OUT" 8.75497
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" -1.92282
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/PD_IN" 196.977
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -3.97723
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/PUB_OUT" 327.1
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/PDB_OUT" -0.195263
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" -8.4792
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -5.08075
+cap "comp018green_in_pupd_0/DVDD" "comp018green_in_logic_pupd_0/PDB_OUT" 16.4565
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 0.970306
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/PD_IN" -24.0583
+cap "comp018green_in_pupd_0/PU_B" "comp018green_in_logic_pupd_0/PDB_OUT" 2.25626
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/PUB_OUT" 98.6285
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/PUB_OUT" 101.309
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/PDB_OUT" 101.604
+cap "comp018green_in_pupd_0/dw_2390_n6738#" "comp018green_in_logic_pupd_0/PD_IN" 0.142361
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/PDB_OUT" 198.373
+cap "comp018green_in_pupd_0/DVDD" "comp018green_in_logic_pupd_0/PD_IN" 0.305146
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 10.4827
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 2.84217e-14
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 4.97741
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_pupd_0/nmos_6p0_CDNS_4066195314530_0/D" 0.0279885
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/PUB_OUT" 3.62291
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/PUB_OUT" 46.9377
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 65.0633
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/PDB_OUT" 2.78743
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 7.23418
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/PD_IN" -40.3315
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" 97.219
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" 3.69918
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" 6.32459
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" -0.0738415
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" 144.826
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/PUB_OUT" 0.31896
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" 0.293825
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 0.232411
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -9.02672
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" -2.07893
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -0.341801
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/M1_PSUB_CDNS_69033583165609_0/a_n45_n515#" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" -0.0483002
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" -0.868362
+cap "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" -1.22327
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" -19.6796
+cap "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/Z" -0.488561
+cap "comp018green_in_pupd_0/dw_2390_n6738#" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" 0.00619623
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" 1.42109e-14
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/PDB_OUT" 8.89877
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" "comp018green_in_logic_pupd_0/PDB_OUT" 337.859
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" -33.6889
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" -0.0681027
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" 8.56634
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/PUB_OUT" 31.5639
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" -46.2691
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/PDB_OUT" 30.3574
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/PDB_OUT" 83.0689
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" 6.898
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" -53.7544
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" 110.464
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" -5.08126
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" -4.54495
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" -0.832041
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" -0.126548
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" "comp018green_in_logic_pupd_0/PDB_OUT" 1.52027
+cap "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" -2.03023
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/nmos_6p0_CDNS_4066195314511_1/D" "comp018green_in_logic_pupd_0/PDB_OUT" 9.1695
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" 0.261012
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/PUB_OUT" 0.183146
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" -3.53179
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" 25.9496
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" -8.64133
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" 127.211
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" -2.24754
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VDD" 64.2328
+cap "comp018green_in_logic_pupd_0/VDD" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" 1.02085
+cap "comp018green_in_pupd_0/dw_2390_n6738#" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" 0.000362545
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" -0.00825764
+cap "comp018green_in_logic_pupd_0/PDB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" 0.365471
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/w_n83_1292#" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" -0.979089
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" 2.21622
+cap "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/VSS" -0.00505363
+merge "comp018green_in_logic_pupd_0/VSS" "comp018green_in_drv_0/M1_PSUB_CDNS_69033583165609_0/a_n45_n515#" -980.715 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16320 -684 -19076 -730 0 0 0 0 0 0
+merge "comp018green_in_drv_0/M1_PSUB_CDNS_69033583165609_0/a_n45_n515#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S"
+merge "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/nmos_6p0_CDNS_4066195314530_3/S" "M2_M1_CDNS_69033583165523_25/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_25/m1_n90_n38#" "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314549_0/S"
+merge "comp018green_in_drv_0/nmos_6p0_CDNS_4066195314549_0/S" "M3_M2_CDNS_69033583165615_1/m2_n38_n246#"
+merge "M3_M2_CDNS_69033583165615_1/m2_n38_n246#" "M2_M1_CDNS_69033583165614_0/m1_n38_n246#"
+merge "M2_M1_CDNS_69033583165614_0/m1_n38_n246#" "comp018green_in_drv_0/VSS"
+merge "comp018green_in_drv_0/VSS" "M2_M1_CDNS_69033583165523_19/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_19/m1_n90_n38#" "M3_M2_CDNS_69033583165577_0/m2_n90_n38#"
+merge "M3_M2_CDNS_69033583165577_0/m2_n90_n38#" "m2_12136_3237#"
+merge "M2_M1_CDNS_69033583165570_14/m1_n38_n90#" "comp018green_in_logic_pupd_0/PUB_OUT" -2382.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52056 -1996 -102492 -4042 0 0 0 0 0 0
+merge "comp018green_in_logic_pupd_0/PUB_OUT" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z"
+merge "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/Z" "comp018green_sigbuf_3/A"
+merge "comp018green_sigbuf_3/A" "M2_M1_CDNS_69033583165523_18/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_18/m1_n90_n38#" "M2_M1_CDNS_69033583165570_9/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_9/m1_n38_n90#" "m2_12783_1305#"
+merge "m2_12783_1305#" "M2_M1_CDNS_69033583165523_16/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_16/m1_n90_n38#" "m2_11457_2718#"
+merge "m2_11457_2718#" "m1_11457_2718#"
+merge "M2_M1_CDNS_69033583165523_13/m1_n90_n38#" "M2_M1_CDNS_69033583165570_4/m1_n38_n90#" -2270.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -264856 -7596 -38912 -1632 0 0 0 0 0 0
+merge "M2_M1_CDNS_69033583165570_4/m1_n38_n90#" "m2_7543_1305#"
+merge "m2_7543_1305#" "comp018green_sigbuf_1/A"
+merge "comp018green_sigbuf_1/A" "M2_M1_CDNS_69033583165523_4/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_4/m1_n90_n38#" "m1_n144_2561#"
+merge "m1_n144_2561#" "pn_6p0_CDNS_4066195314528_1/PLUS"
+merge "pn_6p0_CDNS_4066195314528_1/PLUS" "M2_M1_CDNS_69033583165523_1/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_1/m1_n90_n38#" "CS"
+merge "M2_M1_CDNS_69033583165570_15/VSUBS" "M2_M1_CDNS_69033583165523_26/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "M2_M1_CDNS_69033583165523_26/VSUBS" "M2_M1_CDNS_69033583165570_14/VSUBS"
+merge "M2_M1_CDNS_69033583165570_14/VSUBS" "M2_M1_CDNS_69033583165570_16/VSUBS"
+merge "M2_M1_CDNS_69033583165570_16/VSUBS" "M2_M1_CDNS_69033583165570_11/VSUBS"
+merge "M2_M1_CDNS_69033583165570_11/VSUBS" "M2_M1_CDNS_69033583165570_13/VSUBS"
+merge "M2_M1_CDNS_69033583165570_13/VSUBS" "M2_M1_CDNS_69033583165570_12/VSUBS"
+merge "M2_M1_CDNS_69033583165570_12/VSUBS" "M2_M1_CDNS_69033583165523_25/VSUBS"
+merge "M2_M1_CDNS_69033583165523_25/VSUBS" "comp018green_in_logic_pupd_0/VSUBS"
+merge "comp018green_in_logic_pupd_0/VSUBS" "M2_M1_CDNS_69033583165523_24/VSUBS"
+merge "M2_M1_CDNS_69033583165523_24/VSUBS" "M2_M1_CDNS_69033583165523_21/VSUBS"
+merge "M2_M1_CDNS_69033583165523_21/VSUBS" "M2_M1_CDNS_69033583165523_23/VSUBS"
+merge "M2_M1_CDNS_69033583165523_23/VSUBS" "M2_M1_CDNS_69033583165523_22/VSUBS"
+merge "M2_M1_CDNS_69033583165523_22/VSUBS" "comp018green_in_pupd_0/VSUBS"
+merge "comp018green_in_pupd_0/VSUBS" "M3_M2_CDNS_69033583165615_2/VSUBS"
+merge "M3_M2_CDNS_69033583165615_2/VSUBS" "M2_M1_CDNS_69033583165614_2/VSUBS"
+merge "M2_M1_CDNS_69033583165614_2/VSUBS" "M3_M2_CDNS_69033583165615_0/VSUBS"
+merge "M3_M2_CDNS_69033583165615_0/VSUBS" "M2_M1_CDNS_69033583165614_1/VSUBS"
+merge "M2_M1_CDNS_69033583165614_1/VSUBS" "M2_M1_CDNS_69033583165570_10/VSUBS"
+merge "M2_M1_CDNS_69033583165570_10/VSUBS" "M2_M1_CDNS_69033583165523_15/VSUBS"
+merge "M2_M1_CDNS_69033583165523_15/VSUBS" "M2_M1_CDNS_69033583165523_19/VSUBS"
+merge "M2_M1_CDNS_69033583165523_19/VSUBS" "M3_M2_CDNS_69033583165577_0/VSUBS"
+merge "M3_M2_CDNS_69033583165577_0/VSUBS" "M3_M2_CDNS_69033583165615_1/VSUBS"
+merge "M3_M2_CDNS_69033583165615_1/VSUBS" "M2_M1_CDNS_69033583165614_0/VSUBS"
+merge "M2_M1_CDNS_69033583165614_0/VSUBS" "comp018green_in_drv_0/VSUBS"
+merge "comp018green_in_drv_0/VSUBS" "M2_M1_CDNS_69033583165523_20/VSUBS"
+merge "M2_M1_CDNS_69033583165523_20/VSUBS" "M2_M1_CDNS_69033583165523_7/VSUBS"
+merge "M2_M1_CDNS_69033583165523_7/VSUBS" "comp018green_in_cms_smt_0/VSUBS"
+merge "comp018green_in_cms_smt_0/VSUBS" "M2_M1_CDNS_69033583165523_6/VSUBS"
+merge "M2_M1_CDNS_69033583165523_6/VSUBS" "M2_M1_CDNS_69033583165523_18/VSUBS"
+merge "M2_M1_CDNS_69033583165523_18/VSUBS" "M2_M1_CDNS_69033583165570_9/VSUBS"
+merge "M2_M1_CDNS_69033583165570_9/VSUBS" "M2_M1_CDNS_69033583165523_16/VSUBS"
+merge "M2_M1_CDNS_69033583165523_16/VSUBS" "M2_M1_CDNS_69033583165523_17/VSUBS"
+merge "M2_M1_CDNS_69033583165523_17/VSUBS" "M2_M1_CDNS_69033583165570_8/VSUBS"
+merge "M2_M1_CDNS_69033583165570_8/VSUBS" "comp018green_sigbuf_3/VSUBS"
+merge "comp018green_sigbuf_3/VSUBS" "M2_M1_CDNS_69033583165570_6/VSUBS"
+merge "M2_M1_CDNS_69033583165570_6/VSUBS" "M2_M1_CDNS_69033583165523_11/VSUBS"
+merge "M2_M1_CDNS_69033583165523_11/VSUBS" "M2_M1_CDNS_69033583165523_10/VSUBS"
+merge "M2_M1_CDNS_69033583165523_10/VSUBS" "M2_M1_CDNS_69033583165570_7/VSUBS"
+merge "M2_M1_CDNS_69033583165570_7/VSUBS" "M2_M1_CDNS_69033583165570_5/VSUBS"
+merge "M2_M1_CDNS_69033583165570_5/VSUBS" "M2_M1_CDNS_69033583165523_14/VSUBS"
+merge "M2_M1_CDNS_69033583165523_14/VSUBS" "comp018green_sigbuf_2/VSUBS"
+merge "comp018green_sigbuf_2/VSUBS" "M2_M1_CDNS_69033583165523_13/VSUBS"
+merge "M2_M1_CDNS_69033583165523_13/VSUBS" "M2_M1_CDNS_69033583165523_12/VSUBS"
+merge "M2_M1_CDNS_69033583165523_12/VSUBS" "M2_M1_CDNS_69033583165570_4/VSUBS"
+merge "M2_M1_CDNS_69033583165570_4/VSUBS" "M2_M1_CDNS_69033583165570_3/VSUBS"
+merge "M2_M1_CDNS_69033583165570_3/VSUBS" "M2_M1_CDNS_69033583165523_9/VSUBS"
+merge "M2_M1_CDNS_69033583165523_9/VSUBS" "M2_M1_CDNS_69033583165570_2/VSUBS"
+merge "M2_M1_CDNS_69033583165570_2/VSUBS" "comp018green_sigbuf_1/VSUBS"
+merge "comp018green_sigbuf_1/VSUBS" "M2_M1_CDNS_69033583165570_1/VSUBS"
+merge "M2_M1_CDNS_69033583165570_1/VSUBS" "M2_M1_CDNS_69033583165523_8/VSUBS"
+merge "M2_M1_CDNS_69033583165523_8/VSUBS" "M2_M1_CDNS_69033583165570_0/VSUBS"
+merge "M2_M1_CDNS_69033583165570_0/VSUBS" "comp018green_sigbuf_0/VSUBS"
+merge "comp018green_sigbuf_0/VSUBS" "pn_6p0_CDNS_4066195314528_3/VSUBS"
+merge "pn_6p0_CDNS_4066195314528_3/VSUBS" "pn_6p0_CDNS_4066195314528_2/VSUBS"
+merge "pn_6p0_CDNS_4066195314528_2/VSUBS" "M2_M1_CDNS_69033583165523_5/VSUBS"
+merge "M2_M1_CDNS_69033583165523_5/VSUBS" "M2_M1_CDNS_69033583165523_4/VSUBS"
+merge "M2_M1_CDNS_69033583165523_4/VSUBS" "M2_M1_CDNS_69033583165523_3/VSUBS"
+merge "M2_M1_CDNS_69033583165523_3/VSUBS" "M2_M1_CDNS_69033583165523_2/VSUBS"
+merge "M2_M1_CDNS_69033583165523_2/VSUBS" "pn_6p0_CDNS_4066195314528_1/VSUBS"
+merge "pn_6p0_CDNS_4066195314528_1/VSUBS" "pn_6p0_CDNS_4066195314528_0/VSUBS"
+merge "pn_6p0_CDNS_4066195314528_0/VSUBS" "M2_M1_CDNS_69033583165523_1/VSUBS"
+merge "M2_M1_CDNS_69033583165523_1/VSUBS" "M2_M1_CDNS_69033583165523_0/VSUBS"
+merge "M2_M1_CDNS_69033583165523_0/VSUBS" "VSUBS"
+merge "comp018green_in_pupd_0/PD" "M2_M1_CDNS_69033583165570_11/m1_n38_n90#" -1537.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -79416 -3020 -50464 -2240 0 0 0 0 0 0
+merge "M2_M1_CDNS_69033583165570_11/m1_n38_n90#" "M2_M1_CDNS_69033583165523_24/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_24/m1_n90_n38#" "m2_10275_6101#"
+merge "m2_10275_6101#" "M2_M1_CDNS_69033583165523_23/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_23/m1_n90_n38#" "m1_9726_6101#"
+merge "m1_9726_6101#" "comp018green_sigbuf_2/ZB"
+merge "comp018green_sigbuf_2/ZB" "M2_M1_CDNS_69033583165570_6/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_6/m1_n38_n90#" "M2_M1_CDNS_69033583165523_11/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_11/m1_n90_n38#" "m2_10066_1958#"
+merge "m2_10066_1958#" "M2_M1_CDNS_69033583165570_7/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_7/m1_n38_n90#" "m2_9726_2697#"
+merge "m2_9726_2697#" "m1_9726_2697#"
+merge "comp018green_sigbuf_3/DVDD" "comp018green_sigbuf_2/DVDD" -1329.08 -331264 -3100 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_sigbuf_3/dw_1197_n83#" "comp018green_sigbuf_2/dw_1197_n83#" -883.498 0 0 -4359344 -11848 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_sigbuf_2/dw_1197_n83#" "comp018green_sigbuf_3/DVSS"
+merge "comp018green_sigbuf_3/DVSS" "comp018green_sigbuf_2/DVSS"
+merge "comp018green_sigbuf_2/DVSS" "comp018green_sigbuf_2/nmos_6p0_CDNS_4066195314531_0/S"
+merge "comp018green_sigbuf_2/nmos_6p0_CDNS_4066195314531_0/S" "w_9060_1211#"
+merge "M2_M1_CDNS_69033583165523_26/m1_n90_n38#" "comp018green_in_logic_pupd_0/PDB_OUT" -2760.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -38482 -1718 -339304 -9616 0 0 0 0 0 0
+merge "comp018green_in_logic_pupd_0/PDB_OUT" "M2_M1_CDNS_69033583165523_10/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_10/m1_n90_n38#" "m2_9892_2833#"
+merge "m2_9892_2833#" "comp018green_sigbuf_2/A"
+merge "comp018green_sigbuf_2/A" "M2_M1_CDNS_69033583165523_12/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_12/m1_n90_n38#" "m1_8162_2833#"
+merge "m1_8162_2833#" "M2_M1_CDNS_69033583165570_3/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_3/m1_n38_n90#" "m2_8162_1305#"
+merge "M2_M1_CDNS_69033583165570_10/m1_n38_n90#" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/D" -284.354 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14916 -716 0 0 0 0 0 0 0 0
+merge "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/D" "m1_12910_4326#"
+merge "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_1/D" "comp018green_in_drv_0/DVSS" -2252.4 0 0 -13900294 -29826 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -79228 -2574 0 0 0 0 0 0 0 0
+merge "comp018green_in_drv_0/DVSS" "comp018green_in_cms_smt_0/dw_n1470_n83#"
+merge "comp018green_in_cms_smt_0/dw_n1470_n83#" "m1_7841_3169#"
+merge "m1_7841_3169#" "comp018green_in_drv_0/dw_n496_n83#"
+merge "comp018green_in_drv_0/dw_n496_n83#" "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314537_0/S"
+merge "comp018green_in_cms_smt_0/nmos_6p0_CDNS_4066195314537_0/S" "comp018green_in_cms_smt_0/DVSS"
+merge "comp018green_in_cms_smt_0/DVSS" "w_62_3075#"
+merge "comp018green_in_cms_smt_0/CS" "comp018green_in_cms_smt_0/m1_495_876#" -1033.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25308 -1122 -26828 -1466 0 0 0 0 0 0
+merge "comp018green_in_cms_smt_0/m1_495_876#" "M2_M1_CDNS_69033583165523_9/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_9/m1_n90_n38#" "M2_M1_CDNS_69033583165570_2/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_2/m1_n38_n90#" "m2_6162_1958#"
+merge "m2_6162_1958#" "comp018green_sigbuf_1/Z"
+merge "comp018green_sigbuf_1/Z" "M2_M1_CDNS_69033583165523_8/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_8/m1_n90_n38#" "m2_2295_3053#"
+merge "m2_2295_3053#" "m1_3329_2832#"
+merge "comp018green_sigbuf_3/w_1197_1281#" "comp018green_sigbuf_2/w_1197_1281#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "comp018green_in_cms_smt_0/IE" "comp018green_in_cms_smt_0/m1_1508_135#" -836.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18168 -780 -11396 -642 0 0 0 0 0 0
+merge "comp018green_in_cms_smt_0/m1_1508_135#" "M2_M1_CDNS_69033583165523_7/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_7/m1_n90_n38#" "M2_M1_CDNS_69033583165570_1/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_1/m1_n38_n90#" "m2_2969_3272#"
+merge "m2_2969_3272#" "comp018green_sigbuf_0/Z"
+merge "comp018green_in_pupd_0/a_6922_n7404#" "M2_M1_CDNS_69033583165570_16/m1_n38_n90#" -1055.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -33136 -1328 -33136 -1328 0 0 0 0 0 0
+merge "M2_M1_CDNS_69033583165570_16/m1_n38_n90#" "m1_10095_7691#"
+merge "m1_10095_7691#" "M2_M1_CDNS_69033583165523_21/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_21/m1_n90_n38#" "m2_10095_6237#"
+merge "m2_10095_6237#" "M2_M1_CDNS_69033583165523_22/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_22/m1_n90_n38#" "m1_9570_6237#"
+merge "m1_9570_6237#" "comp018green_sigbuf_3/Z"
+merge "comp018green_sigbuf_3/Z" "M2_M1_CDNS_69033583165523_17/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_17/m1_n90_n38#" "M2_M1_CDNS_69033583165570_8/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_8/m1_n38_n90#" "m2_11406_1958#"
+merge "m2_11406_1958#" "M2_M1_CDNS_69033583165570_5/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_5/m1_n38_n90#" "m2_9570_2561#"
+merge "m2_9570_2561#" "m1_9570_2561#"
+merge "M2_M1_CDNS_69033583165570_0/m1_n38_n90#" "comp018green_sigbuf_0/A" -561.288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24696 -972 -27360 -1024 0 0 0 0 0 0
+merge "comp018green_sigbuf_0/A" "pn_6p0_CDNS_4066195314528_0/PLUS"
+merge "pn_6p0_CDNS_4066195314528_0/PLUS" "M2_M1_CDNS_69033583165523_0/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_0/m1_n90_n38#" "IE"
+merge "comp018green_in_pupd_0/DVSS" "comp018green_in_pupd_0/dw_2390_n6738#" -113.607 0 0 -1833761 -16146 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "comp018green_in_pupd_0/dw_2390_n6738#" "w_9716_6386#"
+merge "M2_M1_CDNS_69033583165570_15/m1_n38_n90#" "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" -4929.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -597174 -16820 -30704 -1720 0 0 0 0 0 0
+merge "comp018green_in_logic_pupd_0/comp018green_std_xor2_0/A" "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A"
+merge "comp018green_in_logic_pupd_0/comp018green_std_nand2_0/A" "m1_12354_10602#"
+merge "m1_12354_10602#" "M2_M1_CDNS_69033583165570_13/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_13/m1_n38_n90#" "M2_M1_CDNS_69033583165570_12/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_12/m1_n38_n90#" "m2_13356_6384#"
+merge "m2_13356_6384#" "m1_12737_6306#"
+merge "m1_12737_6306#" "M2_M1_CDNS_69033583165523_15/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_15/m1_n90_n38#" "m2_12694_2969#"
+merge "m2_12694_2969#" "M2_M1_CDNS_69033583165523_6/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_6/m1_n90_n38#" "m1_377_2969#"
+merge "m1_377_2969#" "pn_6p0_CDNS_4066195314528_2/PLUS"
+merge "pn_6p0_CDNS_4066195314528_2/PLUS" "M2_M1_CDNS_69033583165523_3/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_3/m1_n90_n38#" "PU"
+merge "comp018green_sigbuf_0/VDD" "pn_6p0_CDNS_4066195314528_3/MINUS" -1766.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22848 -7240 0 0 0 0 0 0 0 0
+merge "pn_6p0_CDNS_4066195314528_3/MINUS" "pn_6p0_CDNS_4066195314528_2/MINUS"
+merge "pn_6p0_CDNS_4066195314528_2/MINUS" "pn_6p0_CDNS_4066195314528_1/MINUS"
+merge "pn_6p0_CDNS_4066195314528_1/MINUS" "pn_6p0_CDNS_4066195314528_0/MINUS"
+merge "pn_6p0_CDNS_4066195314528_0/MINUS" "m1_73_683#"
+merge "m1_73_683#" "m1_73_1592#"
+merge "comp018green_in_cms_smt_0/m1_6624_2413#" "comp018green_in_drv_0/DVDD" -969.383 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4624 -408 0 0 0 0 0 0 0 0
+merge "comp018green_in_drv_0/DVDD" "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D"
+merge "comp018green_in_cms_smt_0/pmos_6p0_CDNS_4066195314544_0/D" "m1_8310_5571#"
+merge "comp018green_in_drv_0/M1_NWELL_CDNS_40661953145325_0/w_n1538_n128#" "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/S" -1918.66 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -44772 -3134 -74784 -2272 0 0 0 0 0 0
+merge "comp018green_in_drv_0/pmos_6p0_CDNS_4066195314548_0/S" "M3_M2_CDNS_69033583165615_2/m2_n38_n246#"
+merge "M3_M2_CDNS_69033583165615_2/m2_n38_n246#" "M2_M1_CDNS_69033583165614_2/m1_n38_n246#"
+merge "M2_M1_CDNS_69033583165614_2/m1_n38_n246#" "M3_M2_CDNS_69033583165615_0/m2_n38_n246#"
+merge "M3_M2_CDNS_69033583165615_0/m2_n38_n246#" "m1_13168_4882#"
+merge "m1_13168_4882#" "VDD"
+merge "VDD" "M2_M1_CDNS_69033583165614_1/m1_n38_n246#"
+merge "M2_M1_CDNS_69033583165614_1/m1_n38_n246#" "comp018green_in_drv_0/VDD"
+merge "comp018green_in_logic_pupd_0/comp018green_std_nand2_1/B" "comp018green_in_logic_pupd_0/PD_IN" -2370.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -245936 -6928 -133228 -4114 0 0 0 0 0 0
+merge "comp018green_in_logic_pupd_0/PD_IN" "comp018green_in_logic_pupd_0/m1_2282_n2083#"
+merge "comp018green_in_logic_pupd_0/m1_2282_n2083#" "M2_M1_CDNS_69033583165523_14/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_14/m1_n90_n38#" "m2_9414_2697#"
+merge "m2_9414_2697#" "pn_6p0_CDNS_4066195314528_3/PLUS"
+merge "pn_6p0_CDNS_4066195314528_3/PLUS" "M2_M1_CDNS_69033583165523_5/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_5/m1_n90_n38#" "M2_M1_CDNS_69033583165523_2/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_2/m1_n90_n38#" "PD"
+merge "PD" "m1_1784_2697#"
+merge "comp018green_in_cms_smt_0/M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" "PAD" -619.685 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12580 -642 -13208 -670 0 0 0 0 0 0
+merge "PAD" "M2_M1_CDNS_69033583165523_20/m1_n90_n38#"
+merge "M2_M1_CDNS_69033583165523_20/m1_n90_n38#" "comp018green_in_cms_smt_0/m2_5364_1052#"
+merge "comp018green_in_cms_smt_0/m2_5364_1052#" "comp018green_in_cms_smt_0/A"
+merge "comp018green_in_cms_smt_0/A" "m1_6733_4202#"
+merge "comp018green_sigbuf_1/dw_1197_n83#" "comp018green_sigbuf_0/dw_1197_n83#" -921.005 0 0 -4359344 -11848 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_sigbuf_0/dw_1197_n83#" "comp018green_sigbuf_1/DVSS"
+merge "comp018green_sigbuf_1/DVSS" "comp018green_sigbuf_0/DVSS"
+merge "comp018green_sigbuf_0/DVSS" "comp018green_sigbuf_0/nmos_6p0_CDNS_4066195314531_0/S"
+merge "comp018green_sigbuf_0/nmos_6p0_CDNS_4066195314531_0/S" "w_3816_1211#"
+merge "comp018green_sigbuf_1/w_1197_1281#" "comp018green_sigbuf_1/DVDD" -1329.08 -331264 -3100 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_sigbuf_1/DVDD" "comp018green_sigbuf_0/w_1197_1281#"
+merge "comp018green_sigbuf_0/w_1197_1281#" "comp018green_sigbuf_0/DVDD"
+merge "comp018green_sigbuf_2/VDD" "comp018green_sigbuf_1/VDD" -1330.63 -331264 -3100 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_sigbuf_2/VSS" "comp018green_sigbuf_1/VSS" -1345.08 0 0 0 0 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -97172 -3062 -31996 -918 0 0 0 0 0 0
+merge "comp018green_in_drv_0/A" "comp018green_in_cms_smt_0/Z" -338.287 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8436 -678 0 0 0 0 0 0 0 0
+merge "comp018green_in_cms_smt_0/Z" "m1_7991_4446#"
+merge "comp018green_sigbuf_2/w_n83_1281#" "comp018green_sigbuf_1/w_n83_1281#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

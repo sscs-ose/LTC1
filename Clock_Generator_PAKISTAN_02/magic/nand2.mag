@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1694691991
+timestamp 1714478708
 << nwell >>
 rect -64 708 500 863
 rect -64 682 32 708
@@ -13,14 +13,14 @@ rect 13 -151 75 -105
 rect 333 -151 402 -105
 rect 13 -167 402 -151
 << nsubdiff >>
-rect 41 774 395 826
-rect 41 728 85 774
-rect 312 728 395 774
-rect 41 710 395 728
+rect -35 792 473 837
+rect -35 746 -22 792
+rect 24 746 473 792
+rect -35 733 473 746
 << psubdiffcont >>
 rect 75 -151 333 -105
 << nsubdiffcont >>
-rect 85 728 312 774
+rect -22 746 24 792
 << polysilicon >>
 rect 311 421 391 427
 rect 112 334 166 421
@@ -40,10 +40,10 @@ rect 81 268 130 318
 rect 326 366 374 414
 << metal1 >>
 rect -64 817 500 863
-rect -64 774 499 817
-rect -64 728 85 774
-rect 312 728 499 774
-rect -64 708 499 728
+rect -64 792 499 817
+rect -64 746 -22 792
+rect 24 746 499 792
+rect -64 708 499 746
 rect 33 471 89 708
 rect 191 545 243 624
 rect 186 470 253 545
@@ -69,24 +69,22 @@ rect -70 -151 75 -105
 rect 333 -151 493 -105
 rect -70 -188 493 -151
 use nmos_3p3_5QNVWA  nmos_3p3_5QNVWA_0
-timestamp 1694669839
+timestamp 1714126980
 transform 1 0 140 0 1 112
 box -140 -112 140 112
 use nmos_3p3_5QNVWA  nmos_3p3_5QNVWA_1
-timestamp 1694669839
+timestamp 1714126980
 transform 1 0 300 0 1 112
 box -140 -112 140 112
 use pmos_3p3_M8SWPS  pmos_3p3_M8SWPS_0
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 300 0 1 545
 box -202 -210 202 210
 use pmos_3p3_M8SWPS  pmos_3p3_M8SWPS_1
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 140 0 1 545
 box -202 -210 202 210
 << labels >>
-flabel nsubdiffcont 200 749 200 749 0 FreeSans 480 0 0 0 VDD
-port 0 nsew
 flabel polycontact 101 293 101 293 0 FreeSans 480 0 0 0 IN2
 port 1 nsew
 flabel metal1 425 394 425 394 0 FreeSans 480 0 0 0 IN1
@@ -95,4 +93,6 @@ flabel metal1 374 282 374 282 0 FreeSans 480 0 0 0 OUT
 port 3 nsew
 flabel psubdiffcont 204 -128 204 -128 0 FreeSans 480 0 0 0 VSS
 port 4 nsew
+flabel nsubdiffcont 425 785 425 785 0 FreeSans 640 0 0 0 VDD
+port 5 nsew
 << end >>

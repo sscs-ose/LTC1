@@ -1,17 +1,29 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695109904
+timestamp 1714480080
 << nwell >>
 rect 361 -394 362 -391
 rect 361 -401 375 -394
-rect 645 -729 650 -653
-rect 569 -896 618 -864
+rect 167 -1051 1097 -523
 << pwell >>
+rect 509 188 641 412
 rect 324 -278 377 -196
+rect 509 -335 638 -188
 << psubdiff >>
 rect 83 -28 542 26
 rect 646 -25 1035 30
+<< nsubdiff >>
+rect 439 921 689 1025
+rect 546 -808 569 -807
+rect 455 -853 499 -840
+rect 502 -853 569 -808
+rect 455 -921 569 -853
+rect 455 -922 599 -921
+rect 455 -954 754 -922
+rect 455 -962 718 -954
+rect 455 -977 726 -962
+rect 456 -1014 726 -977
 << metal1 >>
 rect 256 729 323 817
 rect 651 715 732 814
@@ -97,20 +109,20 @@ rect 645 -670 729 -653
 rect 645 -723 658 -670
 rect 717 -723 729 -670
 rect 645 -729 729 -723
-use nand2  nand2_0 ~/GF180Projects/Top_test/top/magic
-timestamp 1694691991
+use nand2  nand2_0
+timestamp 1714478708
 transform 1 0 70 0 1 188
 box -70 -188 502 863
 use nand2  nand2_1
-timestamp 1694691991
+timestamp 1714478708
 transform 1 0 633 0 1 188
 box -70 -188 502 863
 use nand2  nand2_2
-timestamp 1694691991
+timestamp 1714478708
 transform 1 0 633 0 -1 -188
 box -70 -188 502 863
 use nverterlayout  nverterlayout_0
-timestamp 1695109904
+timestamp 1714474474
 transform 1 0 255 0 -1 220
 box -88 220 316 1130
 << labels >>

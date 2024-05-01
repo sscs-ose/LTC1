@@ -1,0 +1,39 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2032 11097 3032 71968
+<< metal2 >>
+rect 220 65000 792 69616
+rect 0 63600 1000 65000
+rect 220 50600 792 63600
+rect 0 49200 1000 50600
+rect 220 13622 792 49200
+<< metal4 >>
+rect 0 63600 1000 65000
+rect 0 49200 1000 50600
+use GF_NI_BRK5_1  GF_NI_BRK5_1_0
+timestamp 1713338890
+transform 1 0 0 0 1 0
+box -32 13097 1032 69968
+use M4_M3_CDNS_69033583165697  M4_M3_CDNS_69033583165697_0
+timestamp 1713338890
+transform 1 0 506 0 1 64300
+box -348 -596 348 596
+use M4_M3_CDNS_69033583165697  M4_M3_CDNS_69033583165697_1
+timestamp 1713338890
+transform 1 0 498 0 1 49894
+box -348 -596 348 596
+<< labels >>
+rlabel metal4 s 510 50023 510 50023 4 VSS
+port 1 nsew
+rlabel metal4 s 498 64258 498 64258 4 VSS
+port 1 nsew
+rlabel metal3 s 498 64258 498 64258 4 VSS
+port 1 nsew
+rlabel metal3 s 510 50023 510 50023 4 VSS
+port 1 nsew
+<< properties >>
+string FIXED_BBOX 0 0 1000 70000
+<< end >>

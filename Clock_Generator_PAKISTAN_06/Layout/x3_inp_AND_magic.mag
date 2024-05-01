@@ -1,0 +1,108 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1713530183
+<< checkpaint >>
+rect -1000 730 5590 751
+rect -1000 -2000 7120 730
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_0
+timestamp 1713530181
+transform 1 0 3174 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_1
+timestamp 1713530181
+transform 1 0 4092 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_2
+timestamp 1713530181
+transform 1 0 4704 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_3
+timestamp 1713530181
+transform 1 0 5010 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_4
+timestamp 1713530181
+transform 1 0 5316 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_5
+timestamp 1713530181
+transform 1 0 5622 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_9
+timestamp 1713530181
+transform 1 0 5928 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_10
+timestamp 1713530181
+transform 1 0 2562 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_11
+timestamp 1713530181
+transform 1 0 2868 0 1 -370
+box -114 -630 192 100
+use nmos_3p3_A2UGVV  Xnmos_3p3_A2UGVV_12
+timestamp 1713530181
+transform 1 0 3786 0 1 -370
+box -114 -630 192 100
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_0
+timestamp 1713530181
+transform 1 0 145 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_1
+timestamp 1713530181
+transform 1 0 451 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_2
+timestamp 1713530181
+transform 1 0 757 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_3
+timestamp 1713530181
+transform 1 0 1369 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_4
+timestamp 1713530181
+transform 1 0 1063 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_5
+timestamp 1713530181
+transform 1 0 1675 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_6
+timestamp 1713530181
+transform 1 0 1981 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_V9Y6F7  Xpmos_3p3_V9Y6F7_7
+timestamp 1713530181
+transform 1 0 2287 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_Z9Y6F7  Xpmos_3p3_Z9Y6F7_0
+timestamp 1713530182
+transform 1 0 3511 0 1 -370
+box -145 -630 161 121
+use pmos_3p3_Z9Y6F7  Xpmos_3p3_Z9Y6F7_1
+timestamp 1713530182
+transform 1 0 4429 0 1 -370
+box -145 -630 161 121
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 640 0 0 0 VSS
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 640 0 0 0 A
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 640 0 0 0 B
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 640 0 0 0 C
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 640 0 0 0 VOUT
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 640 0 0 0 VDD
+port 5 nsew
+<< end >>

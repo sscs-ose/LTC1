@@ -1,0 +1,343 @@
+* NGSPICE file created from 7b_divider_magic.ext - technology: gf180mcuD
+
+.subckt pmos_3p3_V9Y6F7 w_n230_n242# a_56_n112# a_n56_n156# a_n144_n112#
+X0 a_56_n112# a_n56_n156# a_n144_n112# w_n230_n242# pfet_03v3 ad=0.4928p pd=3.12u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt pmos_3p3_VZX6F7 a_164_n112# a_n164_n156# a_n252_n112# a_52_n156# w_n338_n242#
++ a_n52_n112#
+X0 a_164_n112# a_52_n156# a_n52_n112# w_n338_n242# pfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X1 a_n52_n112# a_n164_n156# a_n252_n112# w_n338_n242# pfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt nmos_3p3_A2UGVV a_56_n112# a_n56_n156# a_n144_n112# VSUBS
+X0 a_56_n112# a_n56_n156# a_n144_n112# VSUBS nfet_03v3 ad=0.4928p pd=3.12u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt OR_magic A B VSS VOUT VDD
+Xpmos_3p3_V9Y6F7_0 VDD VOUT a_822_n570# VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_4 VDD a_822_n570# B m1_99_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_VZX6F7_0 m1_99_40# B m1_99_40# B VDD a_822_n570# pmos_3p3_VZX6F7
+Xpmos_3p3_V9Y6F7_5 VDD m1_99_40# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_VZX6F7_1 m1_99_40# A m1_99_40# A VDD VDD pmos_3p3_VZX6F7
+Xpmos_3p3_V9Y6F7_6 VDD VOUT a_822_n570# VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_7 VDD a_822_n570# B m1_99_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_8 VDD m1_99_40# A VDD pmos_3p3_V9Y6F7
+Xnmos_3p3_A2UGVV_0 a_822_n570# B VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 VOUT a_822_n570# VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 VSS A a_822_n570# VSS nmos_3p3_A2UGVV
+.ends
+
+.subckt nmos_3p3_F2UGVV a_164_n112# a_n164_n156# a_n252_n112# a_52_n156# a_n52_n112#
++ VSUBS
+X0 a_164_n112# a_52_n156# a_n52_n112# VSUBS nfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X1 a_n52_n112# a_n164_n156# a_n252_n112# VSUBS nfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt NOR_gate VDD VSS A VOUT B
+Xpmos_3p3_VZX6F7_0 m1_114_n393# A m1_114_n393# A VDD VDD pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_1 m1_114_n393# A m1_114_n393# A VDD VDD pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_2 m1_114_n393# B m1_114_n393# B VDD VOUT pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_3 m1_114_n393# B m1_114_n393# B VDD VOUT pmos_3p3_VZX6F7
+Xnmos_3p3_F2UGVV_0 VSS A VSS B VOUT VSS nmos_3p3_F2UGVV
+.ends
+
+.subckt pmos_3p3_VH67F7 a_380_n112# a_164_n112# a_n164_n156# a_n380_n156# a_52_n156#
++ a_n268_n112# w_n554_n242# a_268_n156# a_n52_n112# a_n468_n112#
+X0 a_164_n112# a_52_n156# a_n52_n112# w_n554_n242# pfet_03v3 ad=0.2912p pd=1.64u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X1 a_380_n112# a_268_n156# a_164_n112# w_n554_n242# pfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X2 a_n268_n112# a_n380_n156# a_n468_n112# w_n554_n242# pfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+X3 a_n52_n112# a_n164_n156# a_n268_n112# w_n554_n242# pfet_03v3 ad=0.2912p pd=1.64u as=0.2912p ps=1.64u w=1.12u l=0.56u
+.ends
+
+.subckt inverter_magic VIN VDD VOUT VSS
+Xpmos_3p3_VH67F7_0 VDD VOUT VIN VIN VIN VOUT VDD VIN VDD VDD pmos_3p3_VH67F7
+Xnmos_3p3_F2UGVV_0 VSS VIN VSS VIN VOUT VSS nmos_3p3_F2UGVV
+.ends
+
+.subckt NAND_magic A VDD B VSS VOUT
+Xpmos_3p3_VZX6F7_1 VDD A VDD A VDD VOUT pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_2 VDD B VDD B VDD VOUT pmos_3p3_VZX6F7
+Xnmos_3p3_F2UGVV_0 m1_79_n355# B m1_79_n355# B VSS VSS nmos_3p3_F2UGVV
+Xnmos_3p3_F2UGVV_1 m1_79_n355# A m1_79_n355# A VOUT VSS nmos_3p3_F2UGVV
+.ends
+
+.subckt pmos_3p3_Z9Y6F7 w_n230_n242# a_56_n112# a_n56_n156# a_n144_n112#
+X0 a_56_n112# a_n56_n156# a_n144_n112# w_n230_n242# pfet_03v3 ad=0.4928p pd=3.12u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt x3_inp_AND_magic VSS A B C VOUT VDD
+Xpmos_3p3_V9Y6F7_0 VDD VOUT a_822_n86# VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_1 VDD VDD A a_822_n86# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_2 VDD a_822_n86# B VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_4 VDD VOUT a_822_n86# VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_3 VDD VDD C a_822_n86# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_5 VDD VDD C a_822_n86# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_6 VDD a_822_n86# B VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_7 VDD VDD A a_822_n86# pmos_3p3_V9Y6F7
+Xnmos_3p3_A2UGVV_10 m1_315_n1260# B m1_531_n1155# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_11 m1_531_n1155# B m1_315_n1260# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_0 m1_531_n1155# B m1_315_n1260# VSS nmos_3p3_A2UGVV
+Xpmos_3p3_Z9Y6F7_0 VDD VOUT VOUT VOUT pmos_3p3_Z9Y6F7
+Xnmos_3p3_A2UGVV_12 m1_315_n1260# A a_822_n86# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 m1_315_n1260# A a_822_n86# VSS nmos_3p3_A2UGVV
+Xpmos_3p3_Z9Y6F7_1 VDD VDD VDD VDD pmos_3p3_Z9Y6F7
+Xnmos_3p3_A2UGVV_2 VSS C m1_531_n1155# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_3 VOUT a_822_n86# VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_4 VSS C m1_531_n1155# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_5 VSS C m1_531_n1155# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_9 a_822_n86# A m1_315_n1260# VSS nmos_3p3_A2UGVV
+.ends
+
+.subckt x3_inp_NOR VDD VSS A B C VOUT
+Xpmos_3p3_V9Y6F7_15 VDD VOUT C m1_423_n1731# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_16 VDD m1_423_n1731# B m1_218_n2223# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_0 VDD VOUT C m1_423_n1731# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_17 VDD m1_218_n2223# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_1 VDD m1_218_n2223# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_2 VDD m1_423_n1731# B m1_218_n2223# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_4 VDD m1_423_n1731# B m1_218_n2223# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_3 VDD VOUT C m1_423_n1731# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_5 VDD m1_218_n2223# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_6 VDD m1_218_n2223# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_7 VDD m1_423_n1731# B m1_218_n2223# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_8 VDD VOUT C m1_423_n1731# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_9 VDD m1_218_n2223# A VDD pmos_3p3_V9Y6F7
+Xnmos_3p3_A2UGVV_0 VOUT A VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 VSS B VOUT VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 VOUT C VSS VSS nmos_3p3_A2UGVV
+Xpmos_3p3_V9Y6F7_10 VDD m1_423_n1731# B m1_218_n2223# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_12 VDD m1_218_n2223# A VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_11 VDD VOUT C m1_423_n1731# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_13 VDD m1_423_n1731# B m1_218_n2223# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_14 VDD VOUT C m1_423_n1731# pmos_3p3_V9Y6F7
+.ends
+
+.subckt pmos_3p3_VRY6F7 a_272_n112# a_56_n112# a_n272_n156# a_160_n156# a_n56_n156#
++ a_n360_n112# w_n446_n242# a_n160_n112#
+X0 a_56_n112# a_n56_n156# a_n160_n112# w_n446_n242# pfet_03v3 ad=0.2912p pd=1.64u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X1 a_272_n112# a_160_n156# a_56_n112# w_n446_n242# pfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X2 a_n160_n112# a_n272_n156# a_n360_n112# w_n446_n242# pfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt nmos_3p3_G2UGVV a_272_n112# a_56_n112# a_n272_n156# a_160_n156# a_n56_n156#
++ a_n360_n112# a_n160_n112# VSUBS
+X0 a_56_n112# a_n56_n156# a_n160_n112# VSUBS nfet_03v3 ad=0.2912p pd=1.64u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X1 a_272_n112# a_160_n156# a_56_n112# VSUBS nfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X2 a_n160_n112# a_n272_n156# a_n360_n112# VSUBS nfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+.ends
+
+.subckt tg_magic VDD VSS OUT IN CLK
+Xpmos_3p3_VRY6F7_0 OUT IN inverter_magic_0/VOUT inverter_magic_0/VOUT inverter_magic_0/VOUT
++ IN VDD OUT pmos_3p3_VRY6F7
+Xinverter_magic_0 CLK VDD inverter_magic_0/VOUT VSS inverter_magic
+Xnmos_3p3_G2UGVV_0 OUT IN CLK CLK CLK IN OUT VSS nmos_3p3_G2UGVV
+.ends
+
+.subckt DFF_magic D CLK VDD Q VSS
+Xtg_magic_2 VDD VSS tg_magic_2/OUT tg_magic_2/IN tg_magic_3/CLK tg_magic
+Xtg_magic_3 VDD VSS tg_magic_3/OUT D tg_magic_3/CLK tg_magic
+Xinverter_magic_2 tg_magic_2/OUT VDD Q VSS inverter_magic
+Xinverter_magic_3 Q VDD tg_magic_2/IN VSS inverter_magic
+Xinverter_magic_4 tg_magic_1/IN VDD tg_magic_0/IN VSS inverter_magic
+Xinverter_magic_5 CLK VDD tg_magic_3/CLK VSS inverter_magic
+Xinverter_magic_6 tg_magic_3/OUT VDD tg_magic_1/IN VSS inverter_magic
+Xtg_magic_0 VDD VSS tg_magic_3/OUT tg_magic_0/IN CLK tg_magic
+Xtg_magic_1 VDD VSS tg_magic_2/OUT tg_magic_1/IN CLK tg_magic
+.ends
+
+.subckt tspc2_magic CLK D VDD VSS Q QB
+Xpmos_3p3_V9Y6F7_0 VDD m1_467_40# D VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_1 VDD m1_467_40# D VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_2 VDD a_1434_n99# CLK VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_3 VDD a_697_n933# CLK m1_467_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_4 VDD m1_467_40# D VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_5 VDD VDD D m1_467_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_6 VDD Q QB VDD pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_7 VDD VDD a_1434_n99# QB pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_8 VDD VDD CLK a_1434_n99# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_9 VDD QB a_1434_n99# VDD pmos_3p3_V9Y6F7
+Xnmos_3p3_F2UGVV_0 m1_622_n799# a_697_n933# m1_622_n799# a_697_n933# a_1434_n99# VSS
++ nmos_3p3_F2UGVV
+Xnmos_3p3_F2UGVV_1 m1_1476_n799# CLK m1_1476_n799# CLK QB VSS nmos_3p3_F2UGVV
+Xnmos_3p3_A2UGVV_0 VSS D a_697_n933# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 m1_622_n799# CLK VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 VSS CLK m1_622_n799# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_3 m1_1476_n799# a_1434_n99# VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_4 VSS a_1434_n99# m1_1476_n799# VSS nmos_3p3_A2UGVV
+Xpmos_3p3_V9Y6F7_10 VDD a_697_n933# CLK m1_467_40# pmos_3p3_V9Y6F7
+Xnmos_3p3_A2UGVV_5 Q QB VSS VSS nmos_3p3_A2UGVV
+Xpmos_3p3_V9Y6F7_12 VDD a_697_n933# CLK m1_467_40# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_11 VDD m1_467_40# CLK a_697_n933# pmos_3p3_V9Y6F7
+Xpmos_3p3_V9Y6F7_13 VDD Q QB VDD pmos_3p3_V9Y6F7
+.ends
+
+.subckt AND2_magic OUT A B VSS VDD w_641_42#
+Xpmos_3p3_VZX6F7_0 VDD A VDD A w_641_42# a_1071_n42# pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_1 VDD B VDD B w_641_42# a_1071_n42# pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_2 VDD a_1071_n42# VDD a_1071_n42# w_641_42# OUT pmos_3p3_VZX6F7
+Xnmos_3p3_F2UGVV_0 m1_349_n207# B m1_349_n207# B VSS VSS nmos_3p3_F2UGVV
+Xnmos_3p3_A2UGVV_0 m1_349_n207# A a_1071_n42# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 a_1071_n42# A m1_349_n207# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 OUT a_1071_n42# VSS VSS nmos_3p3_A2UGVV
+.ends
+
+.subckt pmos_3p3_VRCSD7 a_n56_24# a_n272_24# a_272_n292# a_56_n292# a_160_24# a_n360_n292#
++ a_n160_68# a_n272_n336# a_n360_68# a_160_n336# a_n56_n336# a_272_68# a_56_68# w_n446_n422#
++ a_n160_n292#
+X0 a_272_68# a_160_24# a_56_68# w_n446_n422# pfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X1 a_56_n292# a_n56_n336# a_n160_n292# w_n446_n422# pfet_03v3 ad=0.2912p pd=1.64u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X2 a_272_n292# a_160_n336# a_56_n292# w_n446_n422# pfet_03v3 ad=0.4928p pd=3.12u as=0.2912p ps=1.64u w=1.12u l=0.56u
+X3 a_n160_68# a_n272_24# a_n360_68# w_n446_n422# pfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+X4 a_n160_n292# a_n272_n336# a_n360_n292# w_n446_n422# pfet_03v3 ad=0.2912p pd=1.64u as=0.4928p ps=3.12u w=1.12u l=0.56u
+X5 a_56_68# a_n56_24# a_n160_68# w_n446_n422# pfet_03v3 ad=0.2912p pd=1.64u as=0.2912p ps=1.64u w=1.12u l=0.56u
+.ends
+
+.subckt mux_magic IN1 IN2 VOUT SEL VDD VSS
+XAND2_magic_0 OR_magic_0/A AND2_magic_0/A IN1 VSS VDD VDD AND2_magic
+XAND2_magic_1 OR_magic_0/B SEL IN2 VSS VDD VDD AND2_magic
+Xpmos_3p3_VRCSD7_0 SEL SEL AND2_magic_0/A VDD SEL VDD AND2_magic_0/A SEL VDD SEL SEL
++ AND2_magic_0/A VDD VDD AND2_magic_0/A pmos_3p3_VRCSD7
+XOR_magic_0 OR_magic_0/A OR_magic_0/B VSS VOUT VDD OR_magic
+Xnmos_3p3_G2UGVV_0 AND2_magic_0/A VSS SEL SEL SEL VSS AND2_magic_0/A VSS nmos_3p3_G2UGVV
+.ends
+
+.subckt MDFF Q QB DATA D1 G-CLK CLK LD VSS VDD
+Xtspc2_magic_0 mux_magic_3/VOUT tspc2_magic_0/D VDD VSS tspc2_magic_0/Q QB tspc2_magic
+Xmux_magic_0 D1 DATA tspc2_magic_0/D LD VDD VSS mux_magic
+Xmux_magic_2 tspc2_magic_0/Q DATA Q LD VDD VSS mux_magic
+Xmux_magic_3 CLK G-CLK mux_magic_3/VOUT LD VDD VSS mux_magic
+.ends
+
+.subckt buffer_magic VDD VSS a_78_n78# m1_1191_234#
+Xpmos_3p3_VRY6F7_0 a_985_n78# VDD a_78_n78# a_78_n78# a_78_n78# VDD VDD a_985_n78#
++ pmos_3p3_VRY6F7
+Xpmos_3p3_VRY6F7_1 m1_1191_234# VDD a_985_n78# a_985_n78# a_985_n78# VDD VDD m1_1191_234#
++ pmos_3p3_VRY6F7
+Xpmos_3p3_VRY6F7_2 a_985_n78# VDD a_78_n78# a_78_n78# a_78_n78# VDD VDD a_985_n78#
++ pmos_3p3_VRY6F7
+Xpmos_3p3_VRY6F7_3 m1_1191_234# VDD a_985_n78# a_985_n78# a_985_n78# VDD VDD m1_1191_234#
++ pmos_3p3_VRY6F7
+Xnmos_3p3_G2UGVV_0 m1_1191_234# VSS a_985_n78# a_985_n78# a_985_n78# VSS m1_1191_234#
++ VSS nmos_3p3_G2UGVV
+Xnmos_3p3_G2UGVV_1 a_985_n78# VSS a_78_n78# a_78_n78# a_78_n78# VSS a_985_n78# VSS
++ nmos_3p3_G2UGVV
+.ends
+
+.subckt x7b_counter Q1 Q2 Q3 Q4 Q5 D2_5 Q6 Q7 G-CLK LD MDFF_3/LD D2_2 D2_1 D2_6 D2_4
++ D2_7 D2_3 VSS VDD
+XNOR_gate_0 VDD VSS Q6 NOR_gate_0/VOUT Q7 NOR_gate
+Xinverter_magic_0 DFF_magic_0/Q VDD LD VSS inverter_magic
+XNOR_gate_1 VDD VSS Q4 NOR_gate_1/VOUT Q5 NOR_gate
+XNAND_magic_0 DFF_magic_0/Q VDD NAND_magic_0/B VSS DFF_magic_0/D NAND_magic
+X3_inp_AND_magic_0 VSS NOR_gate_1/VOUT NOR_gate_0/VOUT 3_inp_NOR_0/VOUT NAND_magic_0/B
++ VDD x3_inp_AND_magic
+X3_inp_NOR_0 VDD VSS Q1 Q2 Q3 3_inp_NOR_0/VOUT x3_inp_NOR
+XDFF_magic_0 DFF_magic_0/D G-CLK VDD DFF_magic_0/Q VSS DFF_magic
+XMDFF_1 Q3 MDFF_1/QB D2_3 MDFF_1/QB G-CLK Q2 MDFF_7/LD VSS VDD MDFF
+XMDFF_0 Q5 MDFF_0/QB D2_5 MDFF_0/QB G-CLK Q4 MDFF_3/LD VSS VDD MDFF
+XMDFF_3 Q7 MDFF_3/QB D2_7 MDFF_3/QB G-CLK Q6 MDFF_3/LD VSS VDD MDFF
+XMDFF_4 Q6 MDFF_4/QB D2_6 MDFF_4/QB G-CLK Q5 MDFF_7/LD VSS VDD MDFF
+Xbuffer_magic_0 VDD VSS LD MDFF_7/LD buffer_magic
+XMDFF_5 Q2 MDFF_5/QB D2_2 MDFF_5/QB G-CLK Q1 MDFF_6/LD VSS VDD MDFF
+Xbuffer_magic_2 VDD VSS LD MDFF_6/LD buffer_magic
+Xbuffer_magic_1 VDD VSS LD MDFF_3/LD buffer_magic
+XMDFF_6 Q1 MDFF_6/QB D2_1 MDFF_6/QB G-CLK G-CLK MDFF_6/LD VSS VDD MDFF
+XMDFF_7 Q4 MDFF_7/QB D2_4 MDFF_7/QB G-CLK Q3 MDFF_7/LD VSS VDD MDFF
+.ends
+
+.subckt divide_by_2 CLK Q VDD VSS
+Xtg_magic_2 VDD VSS tg_magic_3/IN tg_magic_2/IN tg_magic_3/CLK tg_magic
+Xtg_magic_3 VDD VSS tg_magic_3/OUT tg_magic_3/IN tg_magic_3/CLK tg_magic
+Xinverter_magic_2 tg_magic_3/IN VDD Q VSS inverter_magic
+Xinverter_magic_3 Q VDD tg_magic_2/IN VSS inverter_magic
+Xinverter_magic_4 tg_magic_1/IN VDD tg_magic_0/IN VSS inverter_magic
+Xinverter_magic_5 CLK VDD tg_magic_3/CLK VSS inverter_magic
+Xinverter_magic_6 tg_magic_3/OUT VDD tg_magic_1/IN VSS inverter_magic
+Xtg_magic_0 VDD VSS tg_magic_3/OUT tg_magic_0/IN CLK tg_magic
+Xtg_magic_1 VDD VSS tg_magic_3/IN tg_magic_1/IN CLK tg_magic
+.ends
+
+.subckt xnor_magic VSS OUT VDD B A
+Xpmos_3p3_VZX6F7_0 m1_86_n315# B m1_86_n315# B VDD OUT pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_1 m1_78_179# inverter_magic_1/VOUT m1_78_179# inverter_magic_1/VOUT
++ VDD VDD pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_2 m1_78_179# inverter_magic_0/VOUT m1_78_179# inverter_magic_0/VOUT
++ VDD OUT pmos_3p3_VZX6F7
+Xpmos_3p3_VZX6F7_3 m1_86_n315# A m1_86_n315# A VDD VDD pmos_3p3_VZX6F7
+Xinverter_magic_0 B VDD inverter_magic_0/VOUT VSS inverter_magic
+Xinverter_magic_1 A VDD inverter_magic_1/VOUT VSS inverter_magic
+Xnmos_3p3_A2UGVV_0 m1_n144_n1158# inverter_magic_0/VOUT VSS VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_1 OUT A m1_n144_n1158# VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_2 nmos_3p3_A2UGVV_2/a_56_n112# inverter_magic_1/VOUT OUT VSS nmos_3p3_A2UGVV
+Xnmos_3p3_A2UGVV_3 VSS B nmos_3p3_A2UGVV_2/a_56_n112# VSS nmos_3p3_A2UGVV
+.ends
+
+.subckt p2_gen_magic P2 xnor_magic_1/B xnor_magic_1/A xnor_magic_3/B xnor_magic_3/A
++ DFF_magic_0/CLK xnor_magic_5/B xnor_magic_5/A xnor_magic_0/B xnor_magic_0/A xnor_magic_2/B
++ xnor_magic_2/A xnor_magic_4/B xnor_magic_4/A xnor_magic_6/B xnor_magic_6/A VDD VSS
+XAND2_magic_0 AND2_magic_0/OUT AND2_magic_0/A AND2_magic_0/B VSS VDD VDD AND2_magic
+Xxnor_magic_1 VSS AND2_magic_0/B VDD xnor_magic_1/B xnor_magic_1/A xnor_magic
+Xxnor_magic_2 VSS AND2_magic_1/A VDD xnor_magic_2/B xnor_magic_2/A xnor_magic
+XAND2_magic_1 AND2_magic_1/OUT AND2_magic_1/A AND2_magic_1/B VSS VDD VDD AND2_magic
+Xxnor_magic_3 VSS xnor_magic_3/OUT VDD xnor_magic_3/B xnor_magic_3/A xnor_magic
+Xxnor_magic_4 VSS xnor_magic_4/OUT VDD xnor_magic_4/B xnor_magic_4/A xnor_magic
+Xxnor_magic_6 VSS AND2_magic_1/B VDD xnor_magic_6/B xnor_magic_6/A xnor_magic
+Xxnor_magic_5 VSS AND2_magic_0/A VDD xnor_magic_5/B xnor_magic_5/A xnor_magic
+X3_inp_AND_magic_0 VSS 3_inp_AND_magic_0/A AND2_magic_1/OUT AND2_magic_0/OUT DFF_magic_0/D
++ VDD x3_inp_AND_magic
+X3_inp_AND_magic_1 VSS xnor_magic_0/OUT xnor_magic_4/OUT xnor_magic_3/OUT 3_inp_AND_magic_0/A
++ VDD x3_inp_AND_magic
+XDFF_magic_0 DFF_magic_0/D DFF_magic_0/CLK VDD P2 VSS DFF_magic
+Xxnor_magic_0 VSS xnor_magic_0/OUT VDD xnor_magic_0/B xnor_magic_0/A xnor_magic
+.ends
+
+.subckt neg_DFF_magic D CLK VDD Q VSS
+Xtg_magic_2 VDD VSS tg_magic_2/OUT tg_magic_2/IN CLK tg_magic
+Xtg_magic_3 VDD VSS tg_magic_3/OUT D CLK tg_magic
+Xinverter_magic_2 tg_magic_2/OUT VDD Q VSS inverter_magic
+Xinverter_magic_3 Q VDD tg_magic_2/IN VSS inverter_magic
+Xinverter_magic_4 tg_magic_1/IN VDD tg_magic_0/IN VSS inverter_magic
+Xinverter_magic_5 CLK VDD tg_magic_1/CLK VSS inverter_magic
+Xinverter_magic_6 tg_magic_3/OUT VDD tg_magic_1/IN VSS inverter_magic
+Xtg_magic_0 VDD VSS tg_magic_3/OUT tg_magic_0/IN tg_magic_1/CLK tg_magic
+Xtg_magic_1 VDD VSS tg_magic_2/OUT tg_magic_1/IN tg_magic_1/CLK tg_magic
+.ends
+
+.subckt p3_gen_magic P3 xnor_magic_1/A xnor_magic_3/B inverter_magic_0/VIN xnor_magic_5/B
++ xnor_magic_5/A xnor_magic_3/A xnor_magic_0/B xnor_magic_0/A xnor_magic_2/B xnor_magic_2/A
++ xnor_magic_4/B xnor_magic_4/A xnor_magic_6/B neg_DFF_magic_0/CLK xnor_magic_6/A
++ VDD VSS
+XAND2_magic_0 AND2_magic_0/OUT AND2_magic_0/A AND2_magic_0/B VSS VDD VDD AND2_magic
+Xxnor_magic_1 VSS AND2_magic_0/B VDD xnor_magic_1/B xnor_magic_1/A xnor_magic
+Xxnor_magic_2 VSS AND2_magic_1/A VDD xnor_magic_2/B xnor_magic_2/A xnor_magic
+XAND2_magic_1 AND2_magic_1/OUT AND2_magic_1/A AND2_magic_1/B VSS VDD VDD AND2_magic
+Xxnor_magic_3 VSS xnor_magic_3/OUT VDD xnor_magic_3/B xnor_magic_3/A xnor_magic
+Xxnor_magic_4 VSS xnor_magic_4/OUT VDD xnor_magic_4/B xnor_magic_4/A xnor_magic
+Xxnor_magic_6 VSS AND2_magic_1/B VDD xnor_magic_6/B xnor_magic_6/A xnor_magic
+Xxnor_magic_5 VSS AND2_magic_0/A VDD xnor_magic_5/B xnor_magic_5/A xnor_magic
+Xinverter_magic_0 inverter_magic_0/VIN VDD xnor_magic_1/B VSS inverter_magic
+X3_inp_AND_magic_0 VSS 3_inp_AND_magic_0/A AND2_magic_1/OUT AND2_magic_0/OUT neg_DFF_magic_0/D
++ VDD x3_inp_AND_magic
+X3_inp_AND_magic_1 VSS xnor_magic_0/OUT xnor_magic_4/OUT xnor_magic_3/OUT 3_inp_AND_magic_0/A
++ VDD x3_inp_AND_magic
+Xneg_DFF_magic_0 neg_DFF_magic_0/D neg_DFF_magic_0/CLK VDD P3 VSS neg_DFF_magic
+Xxnor_magic_0 VSS xnor_magic_0/OUT VDD xnor_magic_0/B xnor_magic_0/A xnor_magic
+.ends
+
+.subckt x7b_divider_magic P2 OUT1 VDD VSS CLK Q1 D2_1 D2_2 Q2 Q4 D2_4 Q3 D2_3 Q6 D2_6
++ Q5 D2_5 Q7 D2_7 LD
+XOR_magic_1 OR_magic_2/A P2 VSS OR_magic_1/VOUT VDD OR_magic
+XOR_magic_2 OR_magic_2/A OR_magic_2/B VSS OR_magic_2/VOUT VDD OR_magic
+X7b_counter_0 Q1 Q2 Q3 Q4 Q5 D2_5 Q6 Q7 CLK DFF_magic_0/D LD D2_2 D2_1 D2_6 D2_4 D2_7
++ D2_3 VSS VDD x7b_counter
+Xdivide_by_2_0 OR_magic_2/VOUT mux_magic_0/IN2 VDD VSS divide_by_2
+Xdivide_by_2_1 OR_magic_1/VOUT mux_magic_0/IN1 VDD VSS divide_by_2
+XDFF_magic_0 DFF_magic_0/D CLK VDD OR_magic_2/A VSS DFF_magic
+Xp2_gen_magic_0 P2 D2_1 Q7 D2_4 Q3 CLK D2_7 Q6 D2_2 Q1 D2_5 Q4 D2_3 Q2 D2_6 Q5 VDD
++ VSS p2_gen_magic
+Xp3_gen_magic_0 OR_magic_2/B Q7 D2_4 D2_1 D2_7 Q6 Q3 D2_2 Q1 D2_5 Q4 D2_3 Q2 D2_6
++ CLK Q5 VDD VSS p3_gen_magic
+Xmux_magic_0 mux_magic_0/IN1 mux_magic_0/IN2 OUT1 D2_1 VDD VSS mux_magic
+.ends
+

@@ -1,4 +1,4 @@
-timestamp 1695109904
+timestamp 1714474474
 version 8.3
 tech gf180mcuC
 style ngspice()
@@ -16,18 +16,18 @@ node "w_64_612#" 6333 1.539 64 612 nw 513 132 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "w_4_724#" 4000 41.772 4 724 nw 13924 590 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "VDD" 2529 479.046 116 1065 nsc 65410 1132 0 0 25632 856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79682 1618 0 0 0 0 0 0 0 0
 substrate "VSS" 0 0 113 283 psc 0 0 0 0 0 0 28598 882 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56690 1338 0 0 0 0 0 0 0 0
+cap "VDD" "w_4_724#" 10.2007
+cap "IN" "w_64_612#" 1.41934
+cap "IN" "w_4_724#" 0.667824
 cap "VDD" "OUT" 85.9117
+cap "OUT" "IN" 103.412
 cap "VDD" "IN" 14.5905
-cap "w_4_724#" "IN" 0.667824
-cap "w_4_724#" "VDD" 10.2007
-cap "IN" "OUT" 103.412
-cap "w_64_612#" "IN" 1.41934
-cap "pmos_3p3_MQGBLR_0/w_n202_n210#" "nmos_3p3_DDNVWA_0/a_n120_n36#" 13.0807
-cap "pmos_3p3_MQGBLR_0/a_28_n80#" "nmos_3p3_DDNVWA_0/a_n120_n36#" -11.3496
-cap "pmos_3p3_MQGBLR_0/a_28_n80#" "pmos_3p3_MQGBLR_0/w_n202_n210#" -31.6505
-cap "pmos_3p3_MQGBLR_0/a_n28_n124#" "nmos_3p3_DDNVWA_0/a_n120_n36#" 13.1689
-cap "pmos_3p3_MQGBLR_0/w_n202_n210#" "pmos_3p3_MQGBLR_0/a_n28_n124#" 68.5238
-cap "pmos_3p3_MQGBLR_0/a_28_n80#" "pmos_3p3_MQGBLR_0/a_n28_n124#" 10.1528
+cap "nmos_3p3_DDNVWA_0/a_n120_n36#" "nmos_3p3_DDNVWA_0/a_28_n22#" -11.3496
+cap "pmos_3p3_MQGBLR_0/a_n116_n80#" "nmos_3p3_DDNVWA_0/a_n28_n66#" 68.5238
+cap "nmos_3p3_DDNVWA_0/a_n28_n66#" "nmos_3p3_DDNVWA_0/a_n120_n36#" 13.1689
+cap "nmos_3p3_DDNVWA_0/a_n28_n66#" "nmos_3p3_DDNVWA_0/a_28_n22#" 10.1528
+cap "pmos_3p3_MQGBLR_0/a_n116_n80#" "nmos_3p3_DDNVWA_0/a_n120_n36#" 13.0807
+cap "pmos_3p3_MQGBLR_0/a_n116_n80#" "nmos_3p3_DDNVWA_0/a_28_n22#" -31.6505
 merge "nmos_3p3_DDNVWA_0/a_n28_n66#" "pmos_3p3_MQGBLR_0/a_n28_n124#" -118.343 0 0 0 0 0 0 0 0 0 0 0 0 -336 -236 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "pmos_3p3_MQGBLR_0/a_n28_n124#" "IN"
 merge "nmos_3p3_DDNVWA_0/VSUBS" "nmos_3p3_DDNVWA_0/a_n120_n36#" -60.4919 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2714 -210 0 0 0 0 0 0 0 0

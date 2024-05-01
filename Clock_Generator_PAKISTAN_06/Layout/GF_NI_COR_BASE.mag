@@ -1,0 +1,171 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect 11436 11361 72889 72890
+<< isosubstrate >>
+rect 13458 69312 69613 70630
+rect 13458 56958 70557 69312
+rect 13436 56517 70557 56958
+rect 13436 44853 56957 56517
+tri 13436 13361 44928 44853 ne
+rect 44928 13361 56957 44853
+use ESD_CLAMP_COR  ESD_CLAMP_COR_0
+timestamp 1713338890
+transform 1 0 13500 0 1 13500
+box 0 0 57389 57390
+use M1_PSUB_CDNS_69033583165342  M1_PSUB_CDNS_69033583165342_0
+timestamp 1713338890
+transform 1 0 64839 0 1 69743
+box -4662 -786 4662 786
+use moscap_corner  moscap_corner_0
+timestamp 1713338890
+transform 1 0 35638 0 1 28703
+box 32 32 10576 12320
+use moscap_corner  moscap_corner_1
+timestamp 1713338890
+transform 1 0 45978 0 1 28703
+box 32 32 10576 12320
+use moscap_corner_1  moscap_corner_1_0
+timestamp 1713338890
+transform 1 0 10870 0 1 43133
+box 4904 32 10576 12320
+use moscap_corner_2  moscap_corner_2_0
+timestamp 1713338890
+transform 1 0 25298 0 1 28703
+box 32 32 10576 12320
+use moscap_corner  moscap_corner_2
+timestamp 1713338890
+transform 1 0 45978 0 1 16351
+box 32 32 10576 12320
+use moscap_corner_3  moscap_corner_3_0
+timestamp 1713338890
+transform 1 0 35370 0 1 16351
+box 2285 32 10576 12320
+use moscap_corner  moscap_corner_3
+timestamp 1713338890
+transform 1 0 21210 0 1 43133
+box 32 32 10576 12320
+use moscap_corner  moscap_corner_4
+timestamp 1713338890
+transform 1 0 31550 0 1 43133
+box 32 32 10576 12320
+use moscap_corner  moscap_corner_5
+timestamp 1713338890
+transform 1 0 41890 0 1 43133
+box 32 32 10576 12320
+use moscap_corner  moscap_corner_6
+timestamp 1713338890
+transform 1 0 59877 0 1 56727
+box 32 32 10576 12320
+use moscap_routing  moscap_routing_0
+timestamp 1713338890
+transform 1 0 60556 0 1 68904
+box -47022 -55377 9837 76
+<< labels >>
+rlabel metal3 s 23995 70220 23995 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 28105 70220 28105 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 31320 70220 31320 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 34434 70220 34434 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 37670 70220 37670 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 41892 70220 41892 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 44307 70220 44307 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 53080 70220 53080 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 54701 70220 54701 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 56336 70220 56336 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 59520 70220 59520 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 67492 70220 67492 70220 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 67411 70454 67411 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 59576 70454 59576 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 56376 70454 56376 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 54611 70454 54611 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 53176 70454 53176 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 44321 70454 44321 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 37912 70454 37912 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 41930 70454 41930 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 24237 70454 24237 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 28347 70454 28347 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 31562 70454 31562 4 DVDD
+port 1 nsew
+rlabel metal3 s 70454 34676 70454 34676 4 DVDD
+port 1 nsew
+rlabel metal3 s 51508 70220 51508 70220 4 VDD
+port 2 nsew
+rlabel metal3 s 62726 70220 62726 70220 4 VDD
+port 2 nsew
+rlabel metal3 s 70454 62776 70454 62776 4 VDD
+port 2 nsew
+rlabel metal3 s 70560 51411 70560 51411 4 VDD
+port 2 nsew
+rlabel metal3 s 15463 70198 15463 70198 4 DVSS
+port 3 nsew
+rlabel metal3 s 18632 70151 18632 70151 4 DVSS
+port 3 nsew
+rlabel metal3 s 21618 70220 21618 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 25811 70220 25811 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 40350 70220 40350 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 47534 70220 47534 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 57943 70220 57943 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 61134 70220 61134 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 65901 70220 65901 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 69036 70220 69036 70220 4 DVSS
+port 3 nsew
+rlabel metal3 s 70385 18874 70385 18874 4 DVSS
+port 3 nsew
+rlabel metal3 s 70432 15703 70432 15703 4 DVSS
+port 3 nsew
+rlabel metal3 s 70453 69002 70453 69002 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 65976 70454 65976 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 61011 70454 61011 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 57811 70454 57811 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 47548 70454 47548 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 21860 70454 21860 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 40295 70454 40295 4 DVSS
+port 3 nsew
+rlabel metal3 s 70454 26053 70454 26053 4 DVSS
+port 3 nsew
+rlabel metal3 s 49860 70220 49860 70220 4 VSS
+port 4 nsew
+rlabel metal3 s 64336 70220 64336 70220 4 VSS
+port 4 nsew
+rlabel metal3 s 70455 64211 70455 64211 4 VSS
+port 4 nsew
+rlabel metal3 s 70561 49976 70561 49976 4 VSS
+port 4 nsew
+<< end >>

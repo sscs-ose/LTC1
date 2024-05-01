@@ -1,17 +1,30 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695127730
+timestamp 1714558529
 << nwell >>
 rect 361 -394 362 -391
 rect 361 -401 375 -394
 rect 645 -729 650 -653
-rect 569 -896 618 -864
+rect 569 -886 618 -864
+rect 547 -887 690 -886
+rect 167 -924 690 -887
+rect 167 -1051 619 -924
 << pwell >>
+rect 509 188 640 412
 rect 324 -278 377 -196
+rect 509 -335 638 -188
 << psubdiff >>
 rect 83 -28 542 26
 rect 646 -25 1035 30
+<< nsubdiff >>
+rect 427 992 768 1014
+rect 382 962 768 992
+rect 382 924 722 962
+rect 445 -845 547 -844
+rect 422 -924 547 -845
+rect 422 -930 718 -924
+rect 422 -1013 1028 -930
 << metal1 >>
 rect 502 897 667 1046
 rect 256 729 323 817
@@ -60,8 +73,11 @@ rect 645 -670 729 -653
 rect 645 -723 658 -670
 rect 717 -723 729 -670
 rect 645 -729 729 -723
-rect 569 -896 618 -864
-rect 726 -993 928 -899
+rect 569 -887 689 -864
+rect 167 -896 689 -887
+rect 167 -899 881 -896
+rect 167 -993 928 -899
+rect 167 -1051 881 -993
 << via1 >>
 rect 663 662 720 715
 rect 394 554 446 606
@@ -99,21 +115,21 @@ rect 645 -723 658 -670
 rect 717 -723 729 -670
 rect 645 -729 729 -723
 use nand2_ibr  nand2_ibr_0
-timestamp 1694669839
+timestamp 1714456178
 transform 1 0 70 0 1 188
 box -70 -188 502 863
 use nand2_ibr  nand2_ibr_1
-timestamp 1694669839
+timestamp 1714456178
 transform 1 0 633 0 1 188
 box -70 -188 502 863
 use nand2_ibr  nand2_ibr_2
-timestamp 1694669839
+timestamp 1714456178
 transform 1 0 633 0 -1 -188
 box -70 -188 502 863
 use nverterlayout_ibr  nverterlayout_ibr_0
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 255 0 -1 220
-box -88 220 316 1130
+box -88 220 316 1149
 << labels >>
 flabel metal1 572 976 572 976 0 FreeSans 480 0 0 0 VDD
 port 0 nsew

@@ -1,0 +1,44 @@
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/pex_pll_1_top_TB.sch
+**.subckt pex_pll_1_top_TB
+VCNTL1 Vref GND pulse(3.3 0 0 100p 100p 250n 500n)
+.save i(vcntl1)
+V4 VDD_VCO GND PWL( 0 0 100n 0 100.001n 3.3)
+.save i(v4)
+V6 VDD VSS 3.3
+.save i(v6)
+V7 VSS GND 0
+.save i(v7)
+V8 RST_DIV VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v8)
+V11 S2 VSS 3.3
+.save i(v11)
+I2 IPD_ VSS 20u
+I3 VDD IPD+ 20u
+V1 EN VSS 3.3
+.save i(v1)
+x1 VDD EN VCO_op_bar Vref VSS Vco_op S2 VDD_VCO RST_DIV LP_ext IPD_ IPD+ pex_pll_1_mag
+**** begin user architecture code
+
+
+.include pex_pll_1_mag.spice
+.control
+save all
+tran 10n 50u
+plot v(VCO_op) v(VCO_op_bar)+4
+**write pll_4.raw
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

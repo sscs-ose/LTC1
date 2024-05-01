@@ -1,4 +1,4 @@
-timestamp 1694693600
+timestamp 1714534647
 version 8.3
 tech gf180mcuC
 style ngspice()
@@ -7,24 +7,24 @@ resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 6000
 use Inverter_delayed_mag Inverter_delayed_mag_1 1 0 150 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_2 1 0 698 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_8 -1 0 314 0 -1 1436
-use Inverter_delayed_mag Inverter_delayed_mag_9 -1 0 862 0 -1 1417
 use Inverter_delayed_mag Inverter_delayed_mag_0 1 0 1246 0 1 175
+use Inverter_delayed_mag Inverter_delayed_mag_9 -1 0 862 0 -1 1417
 use Inverter_delayed_mag Inverter_delayed_mag_3 1 0 1794 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_10 -1 0 1410 0 -1 1437
 use Inverter_delayed_mag Inverter_delayed_mag_4 1 0 2342 0 1 175
-use Inverter_delayed_mag Inverter_delayed_mag_5 1 0 2889 0 1 175
-use Inverter_delayed_mag Inverter_delayed_mag_6 1 0 3437 0 1 175
-use Inverter_delayed_mag Inverter_delayed_mag_7 1 0 3985 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_11 -1 0 1958 0 -1 1489
+use Inverter_delayed_mag Inverter_delayed_mag_5 1 0 2889 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_12 -1 0 2501 0 -1 1492
+use Inverter_delayed_mag Inverter_delayed_mag_6 1 0 3437 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_13 -1 0 3049 0 -1 1491
+use Inverter_delayed_mag Inverter_delayed_mag_7 1 0 3985 0 1 175
 use Inverter_delayed_mag Inverter_delayed_mag_14 -1 0 3597 0 -1 1491
 use Inverter_delayed_mag Inverter_delayed_mag_15 -1 0 4145 0 -1 1491
 port "OUT" 1 4276 341 4276 341 m1
 port "VDD" 3 2125 813 2125 813 m1
 port "IN" 0 4314 1326 4314 1326 m1
 port "VSS" 2 2058 -18 2058 -18 m1
-node "OUT" 0 43.22 4276 341 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5841 316 0 0 0 0 0 0 0 0
+node "OUT" 0 43.1885 4276 341 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5841 316 0 0 0 0 0 0 0 0
 node "m1_3657_303#" 0 73.901 3657 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20304 708 0 0 0 0 0 0 0 0
 node "m1_3117_303#" 0 72.1782 3117 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20304 708 0 0 0 0 0 0 0 0
 node "m1_2565_303#" 0 74.8021 2565 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21168 732 0 0 0 0 0 0 0 0
@@ -32,8 +32,8 @@ node "m1_2031_303#" 0 70.6736 2031 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "m1_1465_303#" 0 73.163 1465 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20520 714 0 0 0 0 0 0 0 0
 node "m1_929_303#" 0 73.3266 929 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20160 704 0 0 0 0 0 0 0 0
 node "m1_375_306#" 0 60.3682 375 306 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14036 600 0 0 0 0 0 0 0 0
-node "VDD" 2 1000.31 2125 813 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 730150 8930 0 0 0 0 0 0 0 0
-node "IN" 0 63.3127 4314 1326 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11664 468 0 0 0 0 0 0 0 0
+node "VDD" 2 997.307 2125 813 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 730150 8930 0 0 0 0 0 0 0 0
+node "IN" 0 62.4854 4314 1326 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11664 468 0 0 0 0 0 0 0 0
 node "m1_3643_1291#" 0 79.6339 3643 1291 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22824 778 0 0 0 0 0 0 0 0
 node "m1_3115_1302#" 0 61.7064 3115 1302 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14732 624 0 0 0 0 0 0 0 0
 node "m1_2589_1302#" 0 57.8034 2589 1302 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13456 580 0 0 0 0 0 0 0 0
@@ -43,300 +43,302 @@ node "m1_908_1217#" 0 83.3653 908 1217 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "m1_360_1236#" 0 79.9748 360 1236 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22176 760 0 0 0 0 0 0 0 0
 node "m1_n147_303#" 2 514.671 -147 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82306 2860 0 0 0 0 0 0 0 0
 node "VSS" 6 4603.52 2058 -18 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1865644 17988 158758 3760 0 0 0 0 0 0
-node "w_n68_754#" 20568 2821.29 -68 754 nw 940430 9192 0 0 46417 2232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n68_754#" 20929 2852.57 -68 754 nw 950857 9310 0 0 632898 8990 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "OUT" "w_n68_754#" 0.997049
-cap "m1_3643_1291#" "w_n68_754#" 3.17593
 cap "m1_3115_1302#" "VDD" 24.6173
-cap "VSS" "m1_375_306#" 85.533
-cap "w_n68_754#" "m1_3115_1302#" 2.46482
-cap "m1_1975_1303#" "m1_2589_1302#" 7.54635
-cap "m1_2565_303#" "m1_3117_303#" 11.7615
-cap "m1_3117_303#" "VDD" 35.8131
-cap "m1_n147_303#" "m1_360_1236#" 9.91547
-cap "m1_3657_303#" "VDD" 35.8131
-cap "m1_360_1236#" "VDD" 35.448
-cap "m1_908_1217#" "m1_1455_1237#" 9.57556
-cap "m1_1975_1303#" "VDD" 28.8128
-cap "m1_2031_303#" "m1_1465_303#" 10.7633
-cap "m1_1455_1237#" "VSS" 61.8408
-cap "m1_360_1236#" "w_n68_754#" 3.62354
-cap "m1_1975_1303#" "w_n68_754#" 2.88343
-cap "m1_1465_303#" "VDD" 36.1941
-cap "VDD" "m1_2589_1302#" 22.4851
-cap "m1_2565_303#" "m1_2031_303#" 11.621
-cap "m1_908_1217#" "VSS" 57.9179
-cap "m1_2031_303#" "VDD" 34.6701
-cap "IN" "VDD" 9.45612
-cap "w_n68_754#" "m1_2589_1302#" 2.25133
-cap "m1_2565_303#" "VDD" 37.3371
-cap "m1_n147_303#" "VDD" 140.257
-cap "IN" "w_n68_754#" 1.94883
-cap "m1_n147_303#" "w_n68_754#" 13.4793
-cap "m1_929_303#" "m1_1465_303#" 11.8572
-cap "w_n68_754#" "VDD" 586.692
-cap "VSS" "m1_3643_1291#" 82.3225
-cap "OUT" "VSS" 12.861
-cap "m1_929_303#" "m1_n147_303#" 0.697624
-cap "m1_929_303#" "VDD" 35.5591
+cap "m1_1465_303#" "m1_929_303#" 11.8572
 cap "VSS" "m1_3115_1302#" 64.7173
-cap "m1_1455_1237#" "m1_360_1236#" 0.990641
-cap "m1_1455_1237#" "m1_1975_1303#" 1.266
+cap "m1_3643_1291#" "m1_1975_1303#" 0.0297882
+cap "m1_3643_1291#" "w_n68_754#" 3.26019
+cap "m1_1975_1303#" "w_n68_754#" 2.95895
+cap "m1_2565_303#" "VDD" 37.3371
+cap "m1_2565_303#" "m1_2031_303#" 11.621
+cap "IN" "OUT" 1.54795
+cap "VSS" "m1_2565_303#" 64.0351
+cap "m1_n147_303#" "m1_929_303#" 0.697624
+cap "VDD" "m1_929_303#" 35.5591
+cap "VSS" "m1_929_303#" 62.7547
+cap "m1_3117_303#" "m1_3657_303#" 11.7615
+cap "VDD" "OUT" 7.88075
+cap "VSS" "OUT" 12.861
+cap "IN" "m1_3643_1291#" 13.7588
+cap "IN" "w_n68_754#" 2.80395
+cap "m1_2589_1302#" "VDD" 22.4851
 cap "m1_n147_303#" "m1_375_306#" 9.07219
 cap "m1_375_306#" "VDD" 29.7088
-cap "VSS" "m1_3117_303#" 61.4214
-cap "VSS" "m1_3657_303#" 61.4214
-cap "m1_908_1217#" "m1_360_1236#" 9.33537
-cap "m1_1455_1237#" "m1_2589_1302#" 0.050263
-cap "VSS" "m1_360_1236#" 100.258
-cap "m1_1975_1303#" "VSS" 76.538
-cap "m1_3643_1291#" "m1_3115_1302#" 8.90036
-cap "m1_929_303#" "m1_375_306#" 7.78045
-cap "VSS" "m1_1465_303#" 62.5197
-cap "m1_1455_1237#" "VDD" 36.4952
+cap "m1_2589_1302#" "m1_1455_1237#" 0.050263
+cap "m1_360_1236#" "w_n68_754#" 3.62354
 cap "VSS" "m1_2589_1302#" 59.1118
-cap "VSS" "m1_2031_303#" 59.5316
-cap "IN" "VSS" 31.1631
-cap "m1_1455_1237#" "w_n68_754#" 3.73026
-cap "OUT" "m1_3657_303#" 9.05382
-cap "m1_908_1217#" "m1_n147_303#" 0.779866
-cap "m1_2565_303#" "VSS" 64.0351
-cap "VSS" "m1_n147_303#" 46.8809
-cap "m1_908_1217#" "VDD" 38.5655
-cap "m1_1975_1303#" "m1_3643_1291#" 0.0297882
-cap "VSS" "VDD" 390.635
-cap "m1_908_1217#" "w_n68_754#" 3.94213
-cap "VSS" "w_n68_754#" 25.5638
-cap "IN" "m1_3643_1291#" 13.7588
-cap "OUT" "IN" 1.54795
-cap "m1_3657_303#" "m1_3117_303#" 11.7615
-cap "m1_3115_1302#" "m1_2589_1302#" 8.27358
-cap "m1_929_303#" "VSS" 62.7547
+cap "VSS" "m1_375_306#" 85.533
+cap "VDD" "m1_3657_303#" 35.8131
+cap "VSS" "m1_3657_303#" 61.4214
 cap "m1_3643_1291#" "VDD" 31.5536
-cap "OUT" "VDD" 7.88075
-cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_1/VSS" 0.478535
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_1/VSS" 4.49833
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_11/IN" 0.00716263
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_0/OUT" 0.863304
-cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_1/VSS" 66.4441
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_1/IN" 20.4115
-cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_1/IN" 12.0622
+cap "m1_1975_1303#" "VDD" 28.8128
+cap "m1_2589_1302#" "m1_3115_1302#" 8.27358
+cap "m1_n147_303#" "w_n68_754#" 13.4805
+cap "VDD" "w_n68_754#" 608.474
+cap "m1_1975_1303#" "m1_1455_1237#" 1.266
+cap "w_n68_754#" "m1_1455_1237#" 3.77083
+cap "VSS" "m1_1975_1303#" 76.538
+cap "m1_3643_1291#" "VSS" 82.3225
+cap "VSS" "w_n68_754#" 25.7101
+cap "w_n68_754#" "m1_908_1217#" 3.94213
+cap "m1_375_306#" "m1_929_303#" 7.78045
+cap "m1_3643_1291#" "m1_3115_1302#" 8.90036
+cap "m1_3115_1302#" "w_n68_754#" 2.52944
+cap "m1_3117_303#" "VDD" 35.8131
+cap "IN" "VDD" 9.45612
+cap "m1_3117_303#" "VSS" 61.4214
+cap "IN" "VSS" 31.1631
+cap "m1_360_1236#" "VDD" 35.448
+cap "m1_360_1236#" "m1_n147_303#" 9.91547
+cap "m1_1465_303#" "VDD" 36.1941
+cap "OUT" "m1_3657_303#" 9.05382
+cap "m1_360_1236#" "m1_1455_1237#" 0.990641
+cap "m1_1465_303#" "m1_2031_303#" 10.7633
+cap "m1_360_1236#" "VSS" 100.258
+cap "VSS" "m1_1465_303#" 62.5197
+cap "m1_360_1236#" "m1_908_1217#" 9.33537
+cap "w_n68_754#" "OUT" 1.05128
+cap "m1_n147_303#" "VDD" 140.257
+cap "m1_2031_303#" "VDD" 34.6701
+cap "VDD" "m1_1455_1237#" 36.4952
+cap "VSS" "VDD" 390.635
+cap "VSS" "m1_n147_303#" 46.8809
+cap "m1_3117_303#" "m1_2565_303#" 11.7615
+cap "VSS" "m1_2031_303#" 59.5316
+cap "VSS" "m1_1455_1237#" 61.8408
+cap "m1_2589_1302#" "w_n68_754#" 2.31035
+cap "m1_2589_1302#" "m1_1975_1303#" 7.54635
+cap "VDD" "m1_908_1217#" 38.5655
+cap "m1_n147_303#" "m1_908_1217#" 0.779866
+cap "m1_1455_1237#" "m1_908_1217#" 9.57556
+cap "VSS" "m1_908_1217#" 57.9179
 cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_1/VDD" 1.48192
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_1/VDD" 67.8698
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_10/IN" 1.83477
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/VSS" 14.6519
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_1/VSS" 5.3086
-cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_1/VDD" 78.7433
-cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_1/IN" 154.231
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/OUT" 6.67685
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/IN" -0.71244
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_1/IN" -0.697624
-cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_2/OUT" 18.3234
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_8/IN" 0.118997
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_2/OUT" -0.697624
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_1/VSS" 20.4115
 cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/VSS" 32.1649
-cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_8/IN" 1.01952
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/IN" 10.0253
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VSS" 1.62138
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/VDD" 66.7646
+cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_1/IN" 12.0622
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_2/OUT" 59.1101
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_1/VSS" 69.6766
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/OUT" 1.01952
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_9/IN" -0.71244
+cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_1/VDD" 76.752
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_9/IN" 5.37973
+cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_1/VSS" 4.49833
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_9/IN" 65.1459
+cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_2/OUT" 0.863304
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_2/OUT" 5.3086
 cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_1/VSS" 4.02599
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_1/VDD" 59.0239
+cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_9/IN" 1.83477
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/IN" 10.0253
+cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_2/OUT" 18.3234
+cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_1/VSS" 0.478535
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VSS" 1.62138
+cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_1/VSS" 66.4066
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_1/IN" 163.084
 cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_2/OUT" 1.01774
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/VDD" 67.6517
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_8/IN" 5.37973
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_0/OUT" -4.25795
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_1/VSS" 0.110638
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_11/IN" 0.0769755
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_10/IN" 0.165812
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_1/VDD" 1.48192
-cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_10/IN" 0.898874
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_10/IN" 0.0239511
-cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_1/VDD" 77.4907
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_11/IN" 0.15076
-cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_11/IN" 5.16511
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_11/IN" 7.98838
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_11/IN" 12.7386
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_3/OUT" -3.21722
-cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_4/OUT" 6.80623
-cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_3/OUT" 15.3405
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_3/OUT" 5.2897
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_13/IN" 2.11875
-cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_1/VDD" 24.1815
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_1/IN" 0.000849879
-cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_11/IN" 0.74382
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_11/IN" 0.0133133
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_4/OUT" -6.76201
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_8/IN" 0.153985
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_4/OUT" 0.33505
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_14/IN" 0.000355607
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_1/VDD" 16.7919
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_11/IN" 0.0226282
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_1/VDD" -78.9313
-cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_1/VDD" 77.4601
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_1/VDD" 44.6428
-cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_10/IN" 67.511
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_1/VSS" 4.42783
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_9/IN" 0.00155596
-cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_0/OUT" 13.3833
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/VDD" 65.7503
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_9/IN" 14.6519
+cap "Inverter_delayed_mag_1/OUT" "Inverter_delayed_mag_9/IN" 6.67685
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_9/IN" 0.00716263
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_10/IN" 0.118997
 cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_4/OUT" 9.27264
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_9/IN" 4.05512
-cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_11/IN" 68.8253
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_4/OUT" 0.33505
+cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_11/IN" 12.7386
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_4/OUT" -6.76201
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_11/IN" 67.3842
+cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_12/IN" 0.00155596
+cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_10/IN" 0.898874
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_11/IN" 0.0226282
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_3/OUT" 5.2897
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_13/IN" 1.48192
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_14/IN" 0.000355607
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_0/OUT" 75.4556
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_3/OUT" -3.21722
+cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_0/OUT" 13.3833
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_12/IN" 0.110638
+cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_11/IN" 0.0769755
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_10/IN" 66.7022
 cap "Inverter_delayed_mag_2/OUT" "Inverter_delayed_mag_10/IN" 6.17483
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_5/OUT" 77.8204
-cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_6/OUT" 2.2196
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_3/OUT" 1.56865
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_14/IN" 0.113212
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_13/IN" 68.396
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_12/IN" 9.7153
-cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_4/OUT" 5.23615
-cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_6/OUT" 0.70029
-cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_13/IN" 0.70029
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_15/IN" 11.0802
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_6/OUT" -6.95726
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_3/OUT" 1.48836
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_4/OUT" 0.392809
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_14/IN" 65.6741
-cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_14/IN" 5.27155
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" -69.7346
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_14/IN" 11.8988
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_5/OUT" -3.61454
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_6/OUT" 63.4645
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_4/OUT" 52.0018
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_12/IN" 3.75897
-cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_15/IN" 4.3013
-cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_12/IN" 0.350145
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_13/IN" 0.113212
-cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_7/OUT" 2.26498
+cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_11/IN" 0.74382
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_11/IN" 7.98838
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_10/IN" 0.000849879
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_10/IN" 0.153985
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_2/OUT" 14.7164
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_11/IN" 0.15076
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_13/IN" 2.11875
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_4/OUT" 24.2218
+cap "Inverter_delayed_mag_3/OUT" "Inverter_delayed_mag_0/OUT" 15.3405
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_0/OUT" -4.25795
+cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_10/IN" 4.05512
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_10/IN" 0.0239511
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_12/IN" 42.5687
+cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_4/OUT" 6.80623
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_10/IN" 0.165812
+cap "Inverter_delayed_mag_0/OUT" "Inverter_delayed_mag_11/IN" 5.16511
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_3/OUT" 75.4855
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_13/IN" 0.0133133
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_1/VSS" -78.9277
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_2/OUT" 4.42783
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_5/OUT" 5.27155
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_0/VSS" 0.113212
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_0/VDD" 64.2689
 cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_6/OUT" 14.3423
-cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_5/OUT" 7.56472
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_0/VSS" 0.113212
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_15/IN" 4.3013
+cap "Inverter_delayed_mag_0/VDD" "Inverter_delayed_mag_6/OUT" 63.018
+cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_6/OUT" -6.95726
+cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_6/OUT" 2.2196
+cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_0/VDD" 75.8155
+cap "Inverter_delayed_mag_5/OUT" "Inverter_delayed_mag_0/VSS" -3.61454
+cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_3/OUT" 5.23615
+cap "Inverter_delayed_mag_0/VDD" "Inverter_delayed_mag_0/VSS" -69.7292
+cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_0/VDD" 9.94605
+cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_6/OUT" 2.26498
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_4/OUT" 0.350145
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_4/OUT" 5.27155
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_12/IN" 9.7153
+cap "Inverter_delayed_mag_0/VDD" "Inverter_delayed_mag_3/OUT" 1.48836
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_11/IN" 3.75897
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_14/IN" 11.8988
 cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_11/IN" 0.0143465
-cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_13/IN" 5.27155
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_12/IN" 26.5144
-cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_4/VDD" 7.56088
-cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_4/VDD" 6.32637
-cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_4/VSS" -11.8602
+cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_3/OUT" 1.56865
+cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_5/OUT" 7.56472
+cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_0/VDD" 49.9565
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_5/OUT" 0.70029
+cap "Inverter_delayed_mag_4/OUT" "Inverter_delayed_mag_0/VSS" 0.392809
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_6/OUT" 0.70029
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_0/VDD" 27.1416
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_0/VDD" 66.9493
 cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_4/VSS" 0.113212
-cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_4/VSS" 1.50661
-cap "Inverter_delayed_mag_4/VDD" "Inverter_delayed_mag_4/VSS" -15.4611
-cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_15/IN" 0.350145
-cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_6/OUT" 2.71925
 cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_15/IN" 3.05195
-cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_4/VDD" -0.603339
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_9/IN" 9.75694
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/VDD" 0.13563
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/IN" 0.0357287
+cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_4/VSS" -11.8602
+cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_7/OUT" 2.71925
+cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_4/VDD" 8.24805
+cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_4/VDD" 1.7949
+cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_4/VSS" 1.50661
+cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_7/OUT" -0.423829
+cap "Inverter_delayed_mag_4/VSS" "Inverter_delayed_mag_4/VDD" -15.4611
+cap "Inverter_delayed_mag_6/OUT" "Inverter_delayed_mag_4/VDD" 4.76783
+cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_9/IN" 4.65871
+cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_8/IN" -0.257327
 cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_1/VSS" 4.00832
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_11/IN" 0.12526
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_10/IN" -0.257327
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/VSS" 8.0963
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_1/VDD" -19.7828
-cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_1/VSS" -8.40348
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VSS" 1.12425
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_10/IN" 4.65871
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_9/IN" 0.13563
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_8/IN" 1.38778e-17
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_1/VSS" -19.795
 cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_1/VSS" 18.703
-cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/IN" 3.75713
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_10/IN" 0.00603974
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_1/VSS" 1.56175
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_12/IN" 3.19225
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_1/VDD" -29.7712
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_14/IN" 0.000384675
-cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_8/IN" -0.219718
-cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_10/IN" 30.8458
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_9/IN" 9.75694
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_1/VSS" 8.0963
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_9/IN" 0.12526
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_9/IN" 0.0357287
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_1/VSS" -8.40348
+cap "Inverter_delayed_mag_1/IN" "Inverter_delayed_mag_8/IN" 3.75713
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VSS" 1.12425
 cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_8/IN" 0.01329
 cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VSS" 27.0176
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_10/IN" 4.6451
-cap "Inverter_delayed_mag_9/IN" "Inverter_delayed_mag_11/IN" 0.208
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_13/IN" 0.00707334
-cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_10/IN" -4.6023
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_1/VSS" 21.1506
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VDD" 9.31875
 cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_10/IN" 8.47829
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_14/IN" -0.0148941
+cap "Inverter_delayed_mag_8/IN" "Inverter_delayed_mag_10/IN" -0.219718
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_10/IN" 30.8458
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_9/IN" 0.208
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_14/IN" 0.000384675
+cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_9/IN" 4.6451
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_1/VDD" 5.15411
 cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_13/IN" 3.05461
 cap "Inverter_delayed_mag_10/IN" "Inverter_delayed_mag_1/IN" 0.000553752
-cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_1/VDD" 5.16276
-cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_15/IN" 1.33988
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_12/IN" 20.9066
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_14/IN" 20.1768
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_13/IN" 14.4107
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_15/IN" 4.56013
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_12/IN" 10.4355
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_11/IN" 0.00817898
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_14/IN" 10.3614
-cap "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_15/IN" 1.56146
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" -26.2228
-cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_11/IN" -0.0148941
-cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_12/IN" 3.03328
-cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_14/IN" 4.87506
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_14/IN" -0.0148941
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_1/VDD" 9.2045
+cap "Inverter_delayed_mag_11/IN" "Inverter_delayed_mag_13/IN" 0.00707334
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_11/IN" 3.19225
+cap "Inverter_delayed_mag_1/VSS" "Inverter_delayed_mag_1/VDD" -29.8354
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_1/VSS" 21.1506
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_1/VSS" 1.56175
+cap "Inverter_delayed_mag_1/VDD" "Inverter_delayed_mag_10/IN" -4.60293
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_10/IN" 0.00603974
 cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_12/IN" 2.41542
-cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_13/IN" 34.8418
-cap "Inverter_delayed_mag_4/VDD" "Inverter_delayed_mag_15/IN" 6.16567
-cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_15/IN" -6.8794
-cap "Inverter_delayed_mag_4/VDD" "Inverter_delayed_mag_4/VSS" -6.10147
-cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_4/VSS" -2.7149
+cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_0/VDD" -26.2997
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_11/IN" -0.0148941
+cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_15/IN" 4.56013
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_0/VSS" 20.1768
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_11/IN" 0.00817898
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_0/VSS" 34.8418
+cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_0/VDD" 1.56146
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_0/VDD" 10.2604
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_15/IN" 1.33988
+cap "Inverter_delayed_mag_13/IN" "Inverter_delayed_mag_0/VDD" 14.3099
+cap "Inverter_delayed_mag_12/IN" "Inverter_delayed_mag_11/IN" 3.03328
+cap "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_12/IN" 20.9066
+cap "Inverter_delayed_mag_14/IN" "Inverter_delayed_mag_13/IN" 4.87506
+cap "Inverter_delayed_mag_0/VDD" "Inverter_delayed_mag_12/IN" 10.349
+cap "Inverter_delayed_mag_7/OUT" "Inverter_delayed_mag_15/IN" -0.773974
+cap "Inverter_delayed_mag_15/IN" "Inverter_delayed_mag_14/IN" -6.8794
+cap "Inverter_delayed_mag_4/VSS" "Inverter_delayed_mag_15/IN" -2.7149
+cap "Inverter_delayed_mag_4/VDD" "Inverter_delayed_mag_4/VSS" -6.11637
+cap "Inverter_delayed_mag_4/VDD" "Inverter_delayed_mag_15/IN" 6.48188
 merge "Inverter_delayed_mag_15/VSS" "Inverter_delayed_mag_14/VSS" -3810.86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -685374 -16976 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_14/VSS" "Inverter_delayed_mag_7/VSS"
 merge "Inverter_delayed_mag_7/VSS" "Inverter_delayed_mag_6/VSS"
 merge "Inverter_delayed_mag_6/VSS" "Inverter_delayed_mag_13/VSS"
 merge "Inverter_delayed_mag_13/VSS" "Inverter_delayed_mag_12/VSS"
-merge "Inverter_delayed_mag_12/VSS" "Inverter_delayed_mag_11/VSS"
-merge "Inverter_delayed_mag_11/VSS" "Inverter_delayed_mag_5/VSS"
-merge "Inverter_delayed_mag_5/VSS" "Inverter_delayed_mag_4/VSS"
+merge "Inverter_delayed_mag_12/VSS" "Inverter_delayed_mag_5/VSS"
+merge "Inverter_delayed_mag_5/VSS" "Inverter_delayed_mag_11/VSS"
+merge "Inverter_delayed_mag_11/VSS" "Inverter_delayed_mag_4/VSS"
 merge "Inverter_delayed_mag_4/VSS" "Inverter_delayed_mag_10/VSS"
 merge "Inverter_delayed_mag_10/VSS" "Inverter_delayed_mag_3/VSS"
-merge "Inverter_delayed_mag_3/VSS" "Inverter_delayed_mag_0/VSS"
-merge "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_9/VSS"
-merge "Inverter_delayed_mag_9/VSS" "Inverter_delayed_mag_8/VSS"
+merge "Inverter_delayed_mag_3/VSS" "Inverter_delayed_mag_9/VSS"
+merge "Inverter_delayed_mag_9/VSS" "Inverter_delayed_mag_0/VSS"
+merge "Inverter_delayed_mag_0/VSS" "Inverter_delayed_mag_8/VSS"
 merge "Inverter_delayed_mag_8/VSS" "Inverter_delayed_mag_2/VSS"
 merge "Inverter_delayed_mag_2/VSS" "Inverter_delayed_mag_1/VSS"
 merge "Inverter_delayed_mag_1/VSS" "VSUBS"
 merge "VSUBS" "VSS"
-merge "Inverter_delayed_mag_14/OUT" "Inverter_delayed_mag_13/IN" -204.767 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6380 -452 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_14/OUT" "Inverter_delayed_mag_13/IN" -202.725 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6380 -452 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_13/IN" "m1_3115_1302#"
-merge "Inverter_delayed_mag_7/IN" "Inverter_delayed_mag_6/OUT" -194.191 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9320 -564 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_7/IN" "Inverter_delayed_mag_6/OUT" -192.148 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9320 -564 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_6/OUT" "m1_3657_303#"
-merge "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_15/VDD" -5646.25 -693890 -30928 0 0 -6449 -3910 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -453696 -15280 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_9/pmos_3p3_MW53B7_0/w_n274_n210#" "Inverter_delayed_mag_15/VDD" -6496.38 -909603 -32268 0 0 -232656 -9720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -517638 -16772 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_15/VDD" "Inverter_delayed_mag_14/VDD"
 merge "Inverter_delayed_mag_14/VDD" "Inverter_delayed_mag_7/VDD"
 merge "Inverter_delayed_mag_7/VDD" "Inverter_delayed_mag_6/VDD"
 merge "Inverter_delayed_mag_6/VDD" "Inverter_delayed_mag_13/VDD"
 merge "Inverter_delayed_mag_13/VDD" "Inverter_delayed_mag_12/VDD"
-merge "Inverter_delayed_mag_12/VDD" "Inverter_delayed_mag_11/VDD"
-merge "Inverter_delayed_mag_11/VDD" "Inverter_delayed_mag_5/VDD"
-merge "Inverter_delayed_mag_5/VDD" "Inverter_delayed_mag_4/VDD"
+merge "Inverter_delayed_mag_12/VDD" "Inverter_delayed_mag_5/VDD"
+merge "Inverter_delayed_mag_5/VDD" "Inverter_delayed_mag_11/VDD"
+merge "Inverter_delayed_mag_11/VDD" "Inverter_delayed_mag_4/VDD"
 merge "Inverter_delayed_mag_4/VDD" "Inverter_delayed_mag_10/VDD"
 merge "Inverter_delayed_mag_10/VDD" "Inverter_delayed_mag_3/VDD"
-merge "Inverter_delayed_mag_3/VDD" "Inverter_delayed_mag_0/VDD"
-merge "Inverter_delayed_mag_0/VDD" "Inverter_delayed_mag_9/VDD"
-merge "Inverter_delayed_mag_9/VDD" "Inverter_delayed_mag_8/VDD"
+merge "Inverter_delayed_mag_3/VDD" "Inverter_delayed_mag_9/VDD"
+merge "Inverter_delayed_mag_9/VDD" "Inverter_delayed_mag_0/VDD"
+merge "Inverter_delayed_mag_0/VDD" "Inverter_delayed_mag_8/VDD"
 merge "Inverter_delayed_mag_8/VDD" "Inverter_delayed_mag_2/VDD"
 merge "Inverter_delayed_mag_2/VDD" "Inverter_delayed_mag_1/VDD"
 merge "Inverter_delayed_mag_1/VDD" "VDD"
 merge "VDD" "w_n68_754#"
-merge "Inverter_delayed_mag_12/OUT" "Inverter_delayed_mag_11/IN" -214.643 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9222 -550 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_12/OUT" "Inverter_delayed_mag_11/IN" -212.601 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9222 -550 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_11/IN" "m1_1975_1303#"
-merge "Inverter_delayed_mag_9/OUT" "Inverter_delayed_mag_8/IN" -197.741 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10840 -616 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_9/OUT" "Inverter_delayed_mag_8/IN" -195.699 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10840 -616 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_8/IN" "m1_360_1236#"
-merge "Inverter_delayed_mag_8/OUT" "Inverter_delayed_mag_1/IN" -287.377 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8692 -524 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_8/OUT" "Inverter_delayed_mag_1/IN" -285.335 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8692 -524 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_1/IN" "m1_n147_303#"
-merge "Inverter_delayed_mag_15/IN" "IN" -86.0208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5832 -306 0 0 0 0 0 0 0 0
-merge "Inverter_delayed_mag_4/IN" "Inverter_delayed_mag_3/OUT" -210.366 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8672 -546 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_15/IN" "IN" -84.0729 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5832 -306 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_4/IN" "Inverter_delayed_mag_3/OUT" -208.324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8672 -546 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_3/OUT" "m1_2031_303#"
-merge "Inverter_delayed_mag_10/OUT" "Inverter_delayed_mag_9/IN" -274.319 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11092 -807 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_10/OUT" "Inverter_delayed_mag_9/IN" -272.277 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11092 -807 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_9/IN" "m1_908_1217#"
-merge "Inverter_delayed_mag_13/OUT" "Inverter_delayed_mag_12/IN" -200.542 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5104 -408 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_13/OUT" "Inverter_delayed_mag_12/IN" -198.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5104 -408 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_12/IN" "m1_2589_1302#"
-merge "Inverter_delayed_mag_0/IN" "Inverter_delayed_mag_2/OUT" -212.793 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9176 -560 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_0/IN" "Inverter_delayed_mag_2/OUT" -210.751 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9176 -560 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_2/OUT" "m1_929_303#"
-merge "Inverter_delayed_mag_6/IN" "Inverter_delayed_mag_5/OUT" -211.839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9320 -564 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_6/IN" "Inverter_delayed_mag_5/OUT" -209.797 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9320 -564 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_5/OUT" "m1_3117_303#"
-merge "Inverter_delayed_mag_2/IN" "Inverter_delayed_mag_1/OUT" -194.129 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5684 -428 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_2/IN" "Inverter_delayed_mag_1/OUT" -192.087 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5684 -428 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_1/OUT" "m1_375_306#"
-merge "Inverter_delayed_mag_5/IN" "Inverter_delayed_mag_4/OUT" -214.589 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10256 -590 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_5/IN" "Inverter_delayed_mag_4/OUT" -212.547 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10256 -590 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_4/OUT" "m1_2565_303#"
-merge "Inverter_delayed_mag_11/OUT" "Inverter_delayed_mag_10/IN" -225.337 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9756 -636 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_11/OUT" "Inverter_delayed_mag_10/IN" -223.295 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9756 -636 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_10/IN" "m1_1455_1237#"
-merge "Inverter_delayed_mag_15/OUT" "Inverter_delayed_mag_14/IN" -209.471 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11840 -634 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_15/OUT" "Inverter_delayed_mag_14/IN" -207.429 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11840 -634 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_14/IN" "m1_3643_1291#"
-merge "Inverter_delayed_mag_7/OUT" "OUT" -47.4646 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3378 -234 0 0 0 0 0 0 0 0
-merge "Inverter_delayed_mag_3/IN" "Inverter_delayed_mag_0/OUT" -212.725 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9536 -570 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_7/OUT" "OUT" -47.4331 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3378 -234 0 0 0 0 0 0 0 0
+merge "Inverter_delayed_mag_3/IN" "Inverter_delayed_mag_0/OUT" -210.683 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9536 -570 0 0 0 0 0 0 0 0
 merge "Inverter_delayed_mag_0/OUT" "m1_1465_303#"

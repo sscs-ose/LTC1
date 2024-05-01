@@ -1,4 +1,4 @@
-timestamp 1691809051
+timestamp 1714130736
 version 8.3
 tech gf180mcuC
 style ngspice()
@@ -15,26 +15,26 @@ node "OUT" 0 93.0539 1866 623 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "IN" 0 95.7421 -75 623 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 460 0 0 0 0 0 0 0 0
 node "VDD" 1 1102.3 781 1147 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 494412 4232 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VDD" "IN" 4.50133
-cap "VDD" "VSS" 84.9958
-cap "OUT" "VSS" 0.111297
+cap "VSS" "VDD" 84.9958
 cap "OUT" "VDD" 7.60999
-cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/IN" 14.8062
-cap "gf_inv_mag_0/IN" "gf_inv_mag_1/VDD" 4.11167
-cap "gf_inv_mag_1/OUT" "gf_inv_mag_1/VDD" 5.30457
-cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/VDD" -60.7376
-cap "gf_inv_mag_1/IN" "gf_inv_mag_1/VDD" 8.30524
-cap "gf_inv_mag_1/OUT" "gf_inv_mag_0/IN" 2.30168
+cap "IN" "VDD" 4.50133
+cap "OUT" "VSS" 0.111297
+cap "gf_inv_mag_1/IN" "gf_inv_mag_1/OUT" 21.8647
+cap "gf_inv_mag_1/VDD" "gf_inv_mag_0/IN" 4.11167
+cap "gf_inv_mag_1/VDD" "gf_inv_mag_1/VSS" -60.7376
 cap "gf_inv_mag_1/VSS" "gf_inv_mag_0/IN" 1.18613
-cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/OUT" 2.50603
 cap "gf_inv_mag_1/IN" "gf_inv_mag_0/IN" 18.0842
-cap "gf_inv_mag_1/OUT" "gf_inv_mag_1/IN" 21.8647
-cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/VDD" -24.2278
+cap "gf_inv_mag_1/VDD" "gf_inv_mag_1/IN" 8.30524
+cap "gf_inv_mag_0/IN" "gf_inv_mag_1/OUT" 2.30168
+cap "gf_inv_mag_1/VDD" "gf_inv_mag_1/OUT" 5.30457
+cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/IN" 14.8062
+cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/OUT" 2.50603
 cap "gf_inv_mag_1/OUT" "gf_inv_mag_1/VDD" -2.67328
-cap "gf_inv_mag_1/OUT" "gf_inv_mag_1/VSS" 2.53669
-cap "gf_inv_mag_1/IN" "gf_inv_mag_1/VDD" 0.974692
-cap "gf_inv_mag_1/IN" "gf_inv_mag_1/VSS" 0.483804
+cap "gf_inv_mag_1/VDD" "gf_inv_mag_1/IN" 0.974692
+cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/VDD" -24.2278
 cap "gf_inv_mag_1/OUT" "gf_inv_mag_1/IN" 1.78766
+cap "gf_inv_mag_1/OUT" "gf_inv_mag_1/VSS" 2.53669
+cap "gf_inv_mag_1/VSS" "gf_inv_mag_1/IN" 0.483804
 merge "gf_inv_mag_0/VSS" "gf_inv_mag_1/VSS" -1047.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -326189 -4102 0 0 0 0 0 0 0 0
 merge "gf_inv_mag_1/VSS" "VSUBS"
 merge "VSUBS" "VSS"

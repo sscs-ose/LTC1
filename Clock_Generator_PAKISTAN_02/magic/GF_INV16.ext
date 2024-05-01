@@ -1,4 +1,4 @@
-timestamp 1693477706
+timestamp 1714491929
 version 8.3
 tech gf180mcuC
 style ngspice()
@@ -8,23 +8,23 @@ use pmos_3p3_MD4UPK pmos_3p3_MD4UPK_0 1 0 410 0 1 562
 use nmos_3p3_S7UZWU nmos_3p3_S7UZWU_0 1 0 410 0 1 -78
 port "OUT" 2 736 167 736 167 m1
 port "IN" 1 30 173 30 173 m1
-port "VDD" 0 277 937 277 937 m1
+port "VDD" 0 277 987 277 987 m1
 port "VSS" 4 403 -309 403 -309 m1
-node "OUT" 2 330.259 736 167 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44850 2042 0 0 0 0 0 0 0 0
-node "IN" 120 738.926 30 173 m1 0 0 0 0 0 0 0 0 0 0 0 0 62022 2144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8830 418 0 0 0 0 0 0 0 0
-node "VDD" 5540 1116.1 277 937 m1 161852 2226 0 0 64896 1820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76074 2306 0 0 0 0 0 0 0 0
-substrate "VSS" 0 0 403 -309 m1 0 0 0 0 0 0 609930 10852 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 627732 11626 0 0 0 0 0 0 0 0
-cap "OUT" "VDD" 33.1453
-cap "OUT" "IN" 131.658
-cap "VDD" "IN" 12.9359
-cap "pmos_3p3_MD4UPK_0/w_n470_n410#" "pmos_3p3_MD4UPK_0/a_n226_n280#" 145.203
-cap "nmos_3p3_S7UZWU_0/a_n384_n140#" "pmos_3p3_MD4UPK_0/a_n296_n324#" 94.2934
-cap "pmos_3p3_MD4UPK_0/a_n296_n324#" "pmos_3p3_MD4UPK_0/a_n226_n280#" 90.1137
-cap "nmos_3p3_S7UZWU_0/a_n384_n140#" "pmos_3p3_MD4UPK_0/a_n226_n280#" 69.2899
-cap "pmos_3p3_MD4UPK_0/a_n296_n324#" "pmos_3p3_MD4UPK_0/w_n470_n410#" 362.301
-cap "nmos_3p3_S7UZWU_0/a_n384_n140#" "pmos_3p3_MD4UPK_0/w_n470_n410#" 374.393
-cap "nmos_3p3_S7UZWU_0/a_n384_n140#" "pmos_3p3_MD4UPK_0/w_n470_n410#" 9.1871
-merge "nmos_3p3_S7UZWU_0/a_226_n184#" "nmos_3p3_S7UZWU_0/a_52_n184#" -587.211 0 0 0 0 0 0 0 0 0 0 0 0 -3360 -1216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "OUT" 2 331.834 736 167 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44850 2042 0 0 0 0 0 0 0 0
+node "IN" 120 739.658 30 173 m1 0 0 0 0 0 0 0 0 0 0 0 0 62022 2144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8830 418 0 0 0 0 0 0 0 0
+node "VDD" 9332 1206.5 277 987 m1 118952 2326 0 0 64896 1820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82974 2606 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 403 -309 m1 0 0 0 0 0 0 116181 2220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 591160 11586 0 0 0 0 0 0 0 0
+cap "IN" "VDD" 11.5067
+cap "VDD" "OUT" 31.2188
+cap "IN" "OUT" 131.658
+cap "nmos_3p3_S7UZWU_0/a_122_n140#" "nmos_3p3_S7UZWU_0/a_296_n140#" 69.3034
+cap "pmos_3p3_MD4UPK_0/a_296_n280#" "nmos_3p3_S7UZWU_0/a_296_n140#" 375.44
+cap "nmos_3p3_S7UZWU_0/a_226_n184#" "nmos_3p3_S7UZWU_0/a_296_n140#" 94.0113
+cap "pmos_3p3_MD4UPK_0/a_296_n280#" "nmos_3p3_S7UZWU_0/a_122_n140#" 116.927
+cap "nmos_3p3_S7UZWU_0/a_226_n184#" "nmos_3p3_S7UZWU_0/a_122_n140#" 90.1137
+cap "nmos_3p3_S7UZWU_0/a_226_n184#" "pmos_3p3_MD4UPK_0/a_296_n280#" 353.265
+cap "pmos_3p3_MD4UPK_0/a_296_n280#" "nmos_3p3_S7UZWU_0/a_296_n140#" 9.55567
+merge "nmos_3p3_S7UZWU_0/a_226_n184#" "nmos_3p3_S7UZWU_0/a_52_n184#" -588.409 0 0 0 0 0 0 0 0 0 0 0 0 -3360 -1216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "nmos_3p3_S7UZWU_0/a_52_n184#" "nmos_3p3_S7UZWU_0/a_n122_n184#"
 merge "nmos_3p3_S7UZWU_0/a_n122_n184#" "nmos_3p3_S7UZWU_0/a_n296_n184#"
 merge "nmos_3p3_S7UZWU_0/a_n296_n184#" "pmos_3p3_MD4UPK_0/a_226_n324#"
@@ -32,16 +32,16 @@ merge "pmos_3p3_MD4UPK_0/a_226_n324#" "pmos_3p3_MD4UPK_0/a_52_n324#"
 merge "pmos_3p3_MD4UPK_0/a_52_n324#" "pmos_3p3_MD4UPK_0/a_n122_n324#"
 merge "pmos_3p3_MD4UPK_0/a_n122_n324#" "pmos_3p3_MD4UPK_0/a_n296_n324#"
 merge "pmos_3p3_MD4UPK_0/a_n296_n324#" "IN"
-merge "pmos_3p3_MD4UPK_0/a_296_n280#" "pmos_3p3_MD4UPK_0/a_n52_n280#" -621.498 -60160 -2008 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1794 -354 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MD4UPK_0/a_296_n280#" "pmos_3p3_MD4UPK_0/a_n52_n280#" -512.734 -17260 -2108 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1794 -354 0 0 0 0 0 0 0 0
 merge "pmos_3p3_MD4UPK_0/a_n52_n280#" "pmos_3p3_MD4UPK_0/a_n384_n280#"
 merge "pmos_3p3_MD4UPK_0/a_n384_n280#" "pmos_3p3_MD4UPK_0/w_n470_n410#"
 merge "pmos_3p3_MD4UPK_0/w_n470_n410#" "VDD"
-merge "nmos_3p3_S7UZWU_0/VSUBS" "nmos_3p3_S7UZWU_0/a_296_n140#" -456.653 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3312 -420 0 0 0 0 0 0 0 0
+merge "nmos_3p3_S7UZWU_0/VSUBS" "nmos_3p3_S7UZWU_0/a_296_n140#" -458.802 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3312 -420 0 0 0 0 0 0 0 0
 merge "nmos_3p3_S7UZWU_0/a_296_n140#" "nmos_3p3_S7UZWU_0/a_n52_n140#"
 merge "nmos_3p3_S7UZWU_0/a_n52_n140#" "nmos_3p3_S7UZWU_0/a_n384_n140#"
 merge "nmos_3p3_S7UZWU_0/a_n384_n140#" "pmos_3p3_MD4UPK_0/VSUBS"
 merge "pmos_3p3_MD4UPK_0/VSUBS" "VSS"
-merge "nmos_3p3_S7UZWU_0/a_122_n140#" "nmos_3p3_S7UZWU_0/a_n226_n140#" -233.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3036 -500 0 0 0 0 0 0 0 0
+merge "nmos_3p3_S7UZWU_0/a_122_n140#" "nmos_3p3_S7UZWU_0/a_n226_n140#" -235.357 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3036 -500 0 0 0 0 0 0 0 0
 merge "nmos_3p3_S7UZWU_0/a_n226_n140#" "pmos_3p3_MD4UPK_0/a_122_n280#"
 merge "pmos_3p3_MD4UPK_0/a_122_n280#" "pmos_3p3_MD4UPK_0/a_n226_n280#"
 merge "pmos_3p3_MD4UPK_0/a_n226_n280#" "OUT"

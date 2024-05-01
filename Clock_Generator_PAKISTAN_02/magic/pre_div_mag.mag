@@ -1,10 +1,17 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695206022
+timestamp 1714558796
 << nwell >>
-rect -127 -1195 709 -667
+rect -127 -796 709 -667
+rect -127 -809 209 -796
+rect 322 -809 709 -796
+rect -127 -1195 709 -809
 rect 580 -2292 1412 -1764
+rect 4649 -1914 4661 -1906
+rect 4141 -1968 4163 -1939
+rect 4546 -1967 4581 -1942
+rect 4527 -1992 4608 -1967
 rect -140 -3533 670 -3005
 rect 2752 -3533 3687 -3005
 rect 331 -4630 1216 -4102
@@ -13,6 +20,8 @@ rect 1 -5855 856 -5327
 rect 3262 -5854 4444 -5326
 rect 975 -6578 1130 -6424
 rect 3966 -6951 4761 -6423
+<< nsubdiff >>
+rect 214 -796 319 -704
 << metal1 >>
 rect 1635 742 3048 768
 rect 1635 690 2959 742
@@ -21,8 +30,10 @@ rect 1635 653 3048 690
 rect 7760 732 8311 756
 rect 7760 680 8227 732
 rect 8280 680 8311 732
-rect 1635 588 2590 653
+rect 1635 627 2698 653
 rect 7760 645 8311 680
+rect 1635 588 2590 627
+rect 2598 513 2698 627
 rect -638 191 745 217
 rect 2597 196 2801 210
 rect -638 119 1710 191
@@ -369,29 +380,29 @@ rect -130 -6930 92 -6870
 rect -200 -6932 92 -6930
 rect -200 -6970 20 -6932
 use Buffer_delayed_mag  Buffer_delayed_mag_0
-timestamp 1694693600
+timestamp 1714534647
 transform 1 0 1756 0 1 -9
-box -218 -175 878 631
+box -218 -175 878 669
 use CLK_div_2_mag  CLK_div_2_mag_0
-timestamp 1695206022
+timestamp 1714558667
 transform 1 0 -169 0 1 -2895
 box -206 12 3133 2241
 use CLK_div_3_mag  CLK_div_3_mag_0
-timestamp 1695206022
+timestamp 1714558796
 transform 1 0 -263 0 1 -5153
-box -34 -1 6461 3249
+box -40 -1 6461 3249
 use CLK_div_4_mag  CLK_div_4_mag_0
-timestamp 1695206022
+timestamp 1714558667
 transform 1 0 -274 0 1 -7543
 box -44 -35 6589 2252
 use dec_2x4_ibr_mag  dec_2x4_ibr_mag_0
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 3556 0 1 -285
-box -396 -5 4275 1052
+box -396 -5 4275 1071
 use mux_4x1  mux_4x1_0
-timestamp 1695109904
+timestamp 1714480907
 transform 1 0 7809 0 1 -2792
-box -1194 5 2193 2107
+box -1194 5 2229 2107
 << labels >>
 flabel metal1 4085 -626 4085 -626 0 FreeSans 1600 0 0 0 OPA0
 port 0 nsew

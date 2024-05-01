@@ -1,0 +1,140 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713185578
+<< checkpaint >>
+rect -2072 -3005 3136 2668
+<< nwell >>
+rect 15 538 1123 668
+rect 438 16 485 62
+<< pwell >>
+rect 18 -823 1129 -463
+<< psubdiff >>
+rect 474 -935 749 -911
+rect 474 -981 565 -935
+rect 611 -981 749 -935
+rect 474 -1005 749 -981
+<< nsubdiff >>
+rect 439 631 624 644
+rect 439 585 507 631
+rect 553 585 624 631
+rect 439 572 624 585
+<< psubdiffcont >>
+rect 565 -981 611 -935
+<< nsubdiffcont >>
+rect 507 585 553 631
+<< polysilicon >>
+rect 189 433 517 470
+rect 621 432 949 469
+rect 189 -34 301 146
+rect 405 -33 517 147
+rect 621 -33 733 147
+rect 837 61 949 146
+rect 837 15 865 61
+rect 911 15 949 61
+rect 837 -34 949 15
+rect 405 -426 517 -314
+rect 176 -446 517 -426
+rect 174 -457 517 -446
+rect 174 -503 189 -457
+rect 235 -503 517 -457
+rect 621 -495 733 -315
+rect 174 -511 517 -503
+rect 174 -516 249 -511
+<< polycontact >>
+rect 865 15 911 61
+rect 189 -503 235 -457
+<< metal1 >>
+rect 439 643 624 644
+rect 102 631 1072 643
+rect 102 585 507 631
+rect 553 585 1072 631
+rect 102 572 1072 585
+rect -11 66 66 78
+rect -72 65 66 66
+rect -72 14 1 65
+rect -11 13 1 14
+rect 53 13 66 65
+rect -11 1 66 13
+rect 114 -347 160 406
+rect 330 -298 376 572
+rect 662 469 1026 515
+rect 546 -186 592 406
+rect 662 -186 708 469
+rect 980 406 1026 469
+rect 428 -232 708 -186
+rect 428 -347 474 -232
+rect 546 -298 592 -232
+rect 762 -246 808 406
+rect 978 229 1026 406
+rect 854 64 930 79
+rect 854 12 861 64
+rect 913 12 930 64
+rect 854 -2 930 12
+rect 762 -298 811 -246
+rect 978 -298 1024 229
+rect 114 -393 474 -347
+rect 765 -418 811 -298
+rect 174 -452 249 -446
+rect 78 -457 249 -452
+rect 78 -503 189 -457
+rect 235 -503 249 -457
+rect 78 -506 249 -503
+rect 174 -516 249 -506
+rect 546 -464 1066 -418
+rect 330 -911 376 -533
+rect 546 -753 592 -464
+rect 764 -911 810 -535
+rect 42 -935 1136 -911
+rect 42 -981 565 -935
+rect 611 -981 1136 -935
+rect 42 -1005 1136 -981
+<< via1 >>
+rect 1 13 53 65
+rect 861 61 913 64
+rect 861 15 865 61
+rect 865 15 911 61
+rect 911 15 913 61
+rect 861 12 913 15
+<< metal2 >>
+rect -11 67 66 78
+rect 845 67 930 79
+rect -11 65 930 67
+rect -11 13 1 65
+rect 53 64 930 65
+rect 53 13 861 64
+rect -11 12 861 13
+rect 913 12 930 64
+rect -11 11 930 12
+rect -11 1 66 11
+rect 845 -2 930 11
+use nmos_3p3_F2UGVV  nmos_3p3_F2UGVV_0
+timestamp 1713185578
+transform 1 0 569 0 1 -643
+box -276 -180 276 180
+use pmos_3p3_VZX6F7  pmos_3p3_VZX6F7_0
+timestamp 1713185578
+transform 1 0 353 0 1 -188
+box -338 -242 338 242
+use pmos_3p3_VZX6F7  pmos_3p3_VZX6F7_1
+timestamp 1713185578
+transform 1 0 353 0 1 296
+box -338 -242 338 242
+use pmos_3p3_VZX6F7  pmos_3p3_VZX6F7_2
+timestamp 1713185578
+transform 1 0 785 0 1 296
+box -338 -242 338 242
+use pmos_3p3_VZX6F7  pmos_3p3_VZX6F7_3
+timestamp 1713185578
+transform 1 0 785 0 1 -188
+box -338 -242 338 242
+<< labels >>
+flabel nsubdiffcont 531 608 531 608 0 FreeSans 750 0 0 0 VDD
+flabel psubdiffcont 588 -958 588 -958 0 FreeSans 750 0 0 0 VSS
+flabel metal1 s 96 -478 96 -478 0 FreeSans 750 0 0 0 A
+port 1 nsew
+flabel metal1 s 1042 -443 1042 -443 0 FreeSans 750 0 0 0 VOUT
+port 2 nsew
+flabel metal1 s -60 38 -60 38 0 FreeSans 750 0 0 0 B
+port 3 nsew
+<< end >>

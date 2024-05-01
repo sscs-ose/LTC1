@@ -1,7 +1,10 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1694427317
+timestamp 1714138925
+<< nwell >>
+rect 1133 811 1353 1134
+rect 2376 813 2571 1134
 << psubdiff >>
 rect -280 1977 3975 1994
 rect -280 1911 -167 1977
@@ -563,16 +566,16 @@ rect 3640 -438 3731 -349
 rect 3378 -440 3731 -438
 rect 3822 -440 3845 -349
 rect 3378 -452 3845 -440
-use INV_2  INV_2_0 ~/GF180Projects/Layout/Magic/VCO1/INV_2
-timestamp 1693141036
+use INV_2  INV_2_0
+timestamp 1714126980
 transform 1 0 1311 0 1 486
 box 21 -485 1081 648
-use Tr_Gate  Tr_Gate_0 ~/GF180Projects/Layout/Magic/VCO1/Tr_Gate
-timestamp 1692985371
+use Tr_Gate  Tr_Gate_0
+timestamp 1714138925
 transform -1 0 1154 0 1 1233
 box -53 -1233 1187 569
 use Tr_Gate  Tr_Gate_1
-timestamp 1692985371
+timestamp 1714138925
 transform 1 0 2558 0 1 1235
 box -53 -1233 1187 569
 << labels >>

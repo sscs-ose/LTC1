@@ -1,8 +1,9 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695206022
+timestamp 1714558796
 << nwell >>
+rect 11105 2501 11505 2534
 rect 15928 2099 16126 2153
 << psubdiff >>
 rect 824 -34 1235 9
@@ -41,6 +42,9 @@ rect 13198 -27 13609 16
 rect 13198 -190 13250 -27
 rect 13561 -190 13609 -27
 rect 13198 -219 13609 -190
+<< nsubdiff >>
+rect 9986 4631 10189 4723
+rect 10885 2538 11395 2630
 << psubdiffcont >>
 rect 876 -197 1187 -34
 rect 1895 -192 2206 -29
@@ -243,11 +247,11 @@ rect -451 2257 -105 2275
 rect 11505 490 11562 2409
 rect 11505 433 17697 490
 use CLK_div_3_mag  CLK_div_3_mag_0
-timestamp 1695206022
+timestamp 1714558796
 transform 1 0 14554 0 1 -4
-box -34 -1 6461 3249
+box -40 -1 6461 3249
 use CLK_div_31_mag  CLK_div_31_mag_0
-timestamp 1695206022
+timestamp 1714558667
 transform 1 0 459 0 1 156
 box -459 -156 13910 4667
 << labels >>

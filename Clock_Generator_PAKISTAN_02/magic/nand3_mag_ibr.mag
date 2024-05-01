@@ -1,17 +1,19 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1694669839
+timestamp 1714489921
 << nwell >>
 rect -61 708 662 863
 rect -61 682 500 708
+rect 485 418 528 421
 rect 295 365 304 418
 rect 345 366 354 417
 rect 386 361 388 418
-rect 485 417 528 421
-rect 436 414 484 417
+rect 436 417 537 418
+rect 435 414 484 417
 rect 485 414 529 417
-rect 436 365 447 414
+rect 435 365 447 414
+rect 435 360 436 365
 rect 485 364 528 414
 << psubdiff >>
 rect 13 -105 402 -91
@@ -19,14 +21,14 @@ rect 13 -151 75 -105
 rect 333 -151 402 -105
 rect 13 -167 402 -151
 << nsubdiff >>
-rect 41 774 395 826
-rect 41 728 85 774
-rect 312 728 395 774
-rect 41 710 395 728
+rect 41 812 395 826
+rect 41 766 85 812
+rect 312 766 395 812
+rect 41 744 395 766
 << psubdiffcont >>
 rect 75 -151 333 -105
 << nsubdiffcont >>
-rect 85 728 312 774
+rect 85 766 312 812
 << polysilicon >>
 rect 289 421 369 427
 rect 112 334 166 421
@@ -51,10 +53,10 @@ rect 81 268 130 318
 rect 300 366 348 414
 rect 447 366 495 414
 << metal1 >>
-rect -61 774 662 863
-rect -61 728 85 774
-rect 312 728 662 774
-rect -61 708 662 728
+rect -61 812 662 863
+rect -61 766 85 812
+rect 312 766 662 812
+rect -61 708 662 766
 rect 32 471 89 708
 rect 186 470 253 545
 rect 354 473 411 708
@@ -66,11 +68,11 @@ rect 130 268 144 318
 rect 63 254 144 268
 rect 191 291 243 470
 rect 515 465 634 630
-rect 289 414 388 418
+rect 289 414 388 419
 rect 289 366 300 414
 rect 348 366 388 414
 rect 289 361 388 366
-rect 436 414 537 417
+rect 436 414 537 418
 rect 436 366 447 414
 rect 495 366 537 414
 rect 289 360 369 361
@@ -84,27 +86,27 @@ rect -28 -151 75 -105
 rect 333 -151 493 -105
 rect -28 -188 493 -151
 use nmos_3p3_VGTVWA  nmos_3p3_VGTVWA_0
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 300 0 1 90
 box -140 -134 140 134
 use nmos_3p3_VGTVWA  nmos_3p3_VGTVWA_1
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 140 0 1 90
 box -140 -134 140 134
 use nmos_3p3_VGTVWA  nmos_3p3_VGTVWA_2
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 460 0 1 90
 box -140 -134 140 134
 use pmos_3p3_M8SWPS  pmos_3p3_M8SWPS_0
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 460 0 1 545
 box -202 -210 202 210
 use pmos_3p3_M8SWPS  pmos_3p3_M8SWPS_1
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 140 0 1 545
 box -202 -210 202 210
 use pmos_3p3_M8SWPS  pmos_3p3_M8SWPS_2
-timestamp 1694669839
+timestamp 1714137641
 transform 1 0 300 0 1 545
 box -202 -210 202 210
 << labels >>
@@ -114,10 +116,10 @@ flabel metal1 380 380 380 380 0 FreeSans 320 0 0 0 IN2
 port 1 nsew
 flabel metal1 530 390 530 390 0 FreeSans 320 0 0 0 IN1
 port 2 nsew
-flabel nsubdiffcont 200 750 200 750 0 FreeSans 320 0 0 0 VDD
-port 3 nsew
 flabel psubdiffcont 200 -130 200 -130 0 FreeSans 320 0 0 0 VSS
 port 4 nsew
 flabel metal1 620 290 620 290 0 FreeSans 320 0 0 0 OUT
 port 5 nsew
+flabel nsubdiffcont 200 788 200 788 0 FreeSans 320 0 0 0 VDD
+port 3 nsew
 << end >>

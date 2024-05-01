@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1692985371
+timestamp 1714138925
 << nwell >>
 rect 0 428 1060 569
 rect 815 342 870 380
@@ -9,8 +9,8 @@ rect 397 -180 398 -151
 rect 145 -341 916 -337
 << pwell >>
 rect 205 -475 206 -466
-rect 217 -480 269 -434
-rect 609 -1130 620 -442
+rect 217 -480 269 -442
+rect 609 -1050 620 -442
 << pmos >>
 rect 662 -180 663 -151
 << psubdiff >>
@@ -31,26 +31,14 @@ rect 658 -1210 673 -1160
 rect 768 -1210 787 -1160
 rect 658 -1223 787 -1210
 << nsubdiff >>
-rect 58 529 176 545
+rect 58 529 1016 545
 rect 58 483 78 529
-rect 147 483 176 529
-rect 58 469 176 483
-rect 258 529 376 545
-rect 258 483 278 529
-rect 347 483 376 529
-rect 258 469 376 483
-rect 478 529 596 545
-rect 478 483 498 529
-rect 567 483 596 529
-rect 478 469 596 483
-rect 698 529 816 545
-rect 698 483 718 529
-rect 787 483 816 529
-rect 698 469 816 483
-rect 898 529 1016 545
-rect 898 483 918 529
+rect 147 483 278 529
+rect 347 483 498 529
+rect 567 483 718 529
+rect 787 483 918 529
 rect 987 483 1016 529
-rect 898 469 1016 483
+rect 58 469 1016 483
 << psubdiffcont >>
 rect 73 -1210 168 -1160
 rect 273 -1210 368 -1160
@@ -262,59 +250,59 @@ rect 731 -1214 743 -1133
 rect 850 -1214 867 -1133
 rect 731 -1223 867 -1214
 use nmos_3p3_UKFAHE  nmos_3p3_UKFAHE_0
-timestamp 1691656227
+timestamp 1714126980
 transform 1 0 243 0 1 -898
 box -162 -152 162 152
 use nmos_3p3_UKFAHE  nmos_3p3_UKFAHE_1
-timestamp 1691656227
+timestamp 1714126980
 transform 1 0 447 0 1 -898
 box -162 -152 162 152
 use nmos_3p3_UKFAHE  nmos_3p3_UKFAHE_2
-timestamp 1691656227
+timestamp 1714126980
 transform 1 0 782 0 1 -594
 box -162 -152 162 152
 use nmos_3p3_UKFAHE  nmos_3p3_UKFAHE_3
-timestamp 1691656227
+timestamp 1714126980
 transform 1 0 782 0 1 -898
 box -162 -152 162 152
 use nmos_3p3_UKFAHE  nmos_3p3_UKFAHE_4
-timestamp 1691656227
+timestamp 1714126980
 transform 1 0 447 0 1 -594
 box -162 -152 162 152
 use nmos_3p3_UKFAHE  nmos_3p3_UKFAHE_5
-timestamp 1691656227
+timestamp 1714126980
 transform 1 0 243 0 1 -594
 box -162 -152 162 152
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_0
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 428 0 1 -208
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_1
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 632 0 1 -208
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_2
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 836 0 1 -208
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_3
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 224 0 1 -208
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_4
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 836 0 1 214
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_5
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 632 0 1 214
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_6
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 428 0 1 214
 box -224 -214 224 214
 use pmos_3p3_YMKZL5  pmos_3p3_YMKZL5_7
-timestamp 1691652503
+timestamp 1714126980
 transform 1 0 224 0 1 214
 box -224 -214 224 214
 << labels >>

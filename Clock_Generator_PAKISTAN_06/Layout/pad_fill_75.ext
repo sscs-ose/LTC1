@@ -1,0 +1,62 @@
+timestamp 1713338890
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use gf180mcu_fd_io__fill5 gf180mcu_fd_io__fill5_0[0:14:1000][0:0:70000] 1 0 0 0 1 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_io__fill5_0[14]/VSUBS" "gf180mcu_fd_io__fill5_0[13]/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_io__fill5_0[13]/VSUBS" "gf180mcu_fd_io__fill5_0[12]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[12]/VSUBS" "gf180mcu_fd_io__fill5_0[11]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[11]/VSUBS" "gf180mcu_fd_io__fill5_0[10]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[10]/VSUBS" "gf180mcu_fd_io__fill5_0[9]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[9]/VSUBS" "gf180mcu_fd_io__fill5_0[8]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[8]/VSUBS" "gf180mcu_fd_io__fill5_0[7]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[7]/VSUBS" "gf180mcu_fd_io__fill5_0[6]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[6]/VSUBS" "gf180mcu_fd_io__fill5_0[5]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[5]/VSUBS" "gf180mcu_fd_io__fill5_0[4]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[4]/VSUBS" "gf180mcu_fd_io__fill5_0[3]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[3]/VSUBS" "gf180mcu_fd_io__fill5_0[2]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[2]/VSUBS" "gf180mcu_fd_io__fill5_0[1]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[1]/VSUBS" "gf180mcu_fd_io__fill5_0[0]/VSUBS"
+merge "gf180mcu_fd_io__fill5_0[0]/VSUBS" "VSUBS"
+cap "gf180mcu_fd_io__fill5_0[0:13]/DVDD" "gf180mcu_fd_io__fill5_0[0:13]/DVSS" -8.65839e-10
+cap "gf180mcu_fd_io__fill5_0[0:13]/VDD" "gf180mcu_fd_io__fill5_0[0:13]/DVDD" 3.21636
+cap "gf180mcu_fd_io__fill5_0[0:13]/VDD" "gf180mcu_fd_io__fill5_0[0:13]/DVSS" 5.11126
+cap "gf180mcu_fd_io__fill5_0[0:13]/DVDD" "gf180mcu_fd_io__fill5_0[0:13]/VSS" 1037.4
+cap "gf180mcu_fd_io__fill5_0[0:13]/VSS" "gf180mcu_fd_io__fill5_0[0:13]/DVSS" 846.978
+cap "gf180mcu_fd_io__fill5_0[0:13]/VDD" "gf180mcu_fd_io__fill5_0[0:13]/VSS" 402.733
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 17.1298
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/DVSS" 347.489
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 17.1298
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 744.619
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVDD" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 153.701
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/DVSS" 347.489
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 7.99392
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 744.619
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVDD" "gf180mcu_fd_io__fill5_0[2:14]/DVDD" 6155.52
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 7.28159
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/DVSS" 744.619
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 7.99392
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVDD" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 141.607
+cap "gf180mcu_fd_io__fill5_0[0:12]/VDD" "gf180mcu_fd_io__fill5_0[2:14]/VDD" 694.978
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 7.99392
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 744.619
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 347.489
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[0:12]/DVSS" 125.651
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 7.99392
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 17.1298
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 7.99392
+cap "gf180mcu_fd_io__fill5_0[2:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:12]/DVSS" 317.208
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/VDD" 34.092
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 347.489
+cap "gf180mcu_fd_io__fill5_0[0:12]/VDD" "gf180mcu_fd_io__fill5_0[0:12]/VSS" 37.0065
+cap "gf180mcu_fd_io__fill5_0[0:12]/DVSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 347.489
+cap "gf180mcu_fd_io__fill5_0[0:12]/VSS" "gf180mcu_fd_io__fill5_0[2:14]/DVSS" 17.1298
+merge "gf180mcu_fd_io__fill5_0[2]/VSUBS" "gf180mcu_fd_io__fill5_0[1]/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_io__fill5_0[1]/VSUBS" "VSUBS"
+merge "gf180mcu_fd_io__fill5_0[1:14]/VDD" "gf180mcu_fd_io__fill5_0[0:13]/VDD" -2978.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5600 0 -5600 0 -5600
+merge "gf180mcu_fd_io__fill5_0[1:14]/DVDD" "gf180mcu_fd_io__fill5_0[0:13]/DVDD" -21612.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49600 0 -49600 0 -49600
+merge "gf180mcu_fd_io__fill5_0[1:14]/DVSS" "gf180mcu_fd_io__fill5_0[0:13]/DVSS" -17671.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40556 0 -40556 0 -40556
+merge "gf180mcu_fd_io__fill5_0[1:14]/VSS" "gf180mcu_fd_io__fill5_0[0:13]/VSS" -45662 0 0 0 0 0 0 0 -113742 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3638336 -113826 0 -5600 0 -5600 0 -5600 0 -5600

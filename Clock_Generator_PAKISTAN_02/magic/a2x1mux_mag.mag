@@ -1,10 +1,15 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695119997
+timestamp 1714554054
 << nwell >>
 rect -1 -222 405 13
 rect 397 -244 405 -222
+<< pwell >>
+rect -248 524 110 718
+rect 153 524 545 718
+<< psubdiff >>
+rect -55 782 70 858
 << metal1 >>
 rect -615 882 -435 905
 rect -615 879 405 882
@@ -62,15 +67,15 @@ rect -615 -1113 -588 -995
 rect -475 -1113 -448 -995
 rect -615 -1137 -448 -1113
 use inv_my_mag  inv_my_mag_0
-timestamp 1695119997
+timestamp 1714554054
 transform 1 0 -340 0 -1 938
 box -61 58 345 1028
 use Transmission_gate_mag  Transmission_gate_mag_0
-timestamp 1695119997
+timestamp 1714554054
 transform 1 0 -314 0 -1 1007
 box 285 83 2690 1097
 use Transmission_gate_mag  Transmission_gate_mag_1
-timestamp 1695119997
+timestamp 1714554054
 transform 1 0 -315 0 1 -1243
 box 285 83 2690 1097
 << labels >>

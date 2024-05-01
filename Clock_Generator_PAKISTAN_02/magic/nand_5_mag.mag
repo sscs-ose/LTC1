@@ -1,7 +1,17 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695127730
+timestamp 1714558667
+<< nwell >>
+rect 2123 1077 2856 1093
+<< pwell >>
+rect 3887 380 4021 574
+<< nsubdiff >>
+rect 2123 1077 3047 1093
+rect 2824 1001 3047 1077
+rect 3779 1046 4012 1073
+rect 3779 1028 4001 1046
+rect 3779 1001 4012 1028
 << metal1 >>
 rect 3930 966 4347 1193
 rect 6 831 108 926
@@ -12,13 +22,13 @@ rect 2 429 122 503
 rect 1 294 132 373
 rect 3900 -1 4351 371
 use and_5_mag  and_5_mag_0
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 -564 0 1 -403
 box 564 403 4618 1596
 use GF_INV_MAG  GF_INV_MAG_0
-timestamp 1695119997
+timestamp 1714558667
 transform 1 0 4065 0 1 440
-box -118 -175 286 631
+box -118 -175 286 666
 << labels >>
 flabel metal1 4084 1134 4084 1134 0 FreeSans 480 0 0 0 VDD
 port 0 nsew

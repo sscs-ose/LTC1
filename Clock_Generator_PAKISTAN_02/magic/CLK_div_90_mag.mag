@@ -1,7 +1,10 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695206022
+timestamp 1714558796
+<< nwell >>
+rect 10728 7714 12115 8165
+rect 11259 7525 11738 7714
 << metal1 >>
 rect 3441 11130 15727 11389
 rect 3167 10828 3337 10885
@@ -83,17 +86,17 @@ rect 3323 10710 3337 10725
 rect 3167 10699 3337 10710
 rect 6366 5054 6443 10725
 use CLK_div_3_mag  CLK_div_3_mag_0
-timestamp 1695206022
+timestamp 1714558796
 transform -1 0 9601 0 -1 11239
-box -34 -1 6461 3249
+box -40 -1 6461 3249
 use CLK_div_3_mag  CLK_div_3_mag_1
-timestamp 1695206022
+timestamp 1714558796
 transform -1 0 15970 0 -1 11239
-box -34 -1 6461 3249
+box -40 -1 6461 3249
 use CLK_div_10_mag  CLK_div_10_mag_0
-timestamp 1695206022
+timestamp 1714558667
 transform 1 0 3386 0 1 4505
-box -34 0 12197 3533
+box -40 0 12197 3533
 << labels >>
 flabel metal1 15535 7087 15535 7087 0 FreeSans 640 0 0 0 Vdiv90
 port 0 nsew

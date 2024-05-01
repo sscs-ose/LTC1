@@ -1,8 +1,9 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695109904
+timestamp 1714558529
 << nwell >>
+rect 3848 1021 3895 1033
 rect 1912 890 2133 892
 rect 3801 890 3944 891
 rect 1912 888 3944 890
@@ -52,14 +53,18 @@ rect 1417 551 1505 564
 rect 3245 556 3462 566
 rect 3245 542 3359 556
 << pwell >>
-rect 3822 482 3852 490
-rect 3822 433 3837 482
-rect 4091 395 4190 409
-rect 4074 394 4190 395
+rect 3811 476 3966 477
+rect -64 387 706 476
+rect 910 466 3788 476
+rect 3796 466 4179 476
+rect 910 409 4179 466
+rect 910 402 4190 409
+rect -50 282 75 387
+rect 95 282 706 387
 rect 836 330 888 382
-rect 4072 374 4190 394
-rect 4071 331 4190 374
-rect 4071 316 4189 331
+rect 913 331 4190 402
+rect 913 316 4189 331
+rect 913 282 4179 316
 << ndiff >>
 rect 836 330 888 382
 << pdiff >>
@@ -68,8 +73,11 @@ rect 2051 700 2107 759
 << psubdiff >>
 rect 3851 163 3892 242
 << nsubdiff >>
-rect 3848 949 3895 1021
+rect 3848 1014 3895 1033
+rect -86 990 4249 1014
+rect -372 928 4251 990
 << metal1 >>
+rect 3848 1021 3895 1033
 rect 1870 920 2080 1020
 rect 928 835 1020 842
 rect 3835 835 3912 842
@@ -387,45 +395,29 @@ rect 2036 700 2051 716
 rect 2107 700 2127 759
 rect 2036 685 2127 700
 use and_2_ibr  and_2_ibr_0
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 -257 0 1 -996
-box 257 996 1231 2047
+box 257 996 1231 2066
 use and_2_ibr  and_2_ibr_1
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 709 0 1 -995
-box 257 996 1231 2047
+box 257 996 1231 2066
 use and_2_ibr  and_2_ibr_2
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 1675 0 1 -995
-box 257 996 1231 2047
+box 257 996 1231 2066
 use and_2_ibr  and_2_ibr_3
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 2641 0 1 -995
-box 257 996 1231 2047
-use nand2  nand2_0 ~/GF180Projects/Top_test/top/magic
-timestamp 1694691991
-transform 1 0 70 0 1 188
-box -70 -188 502 863
-use nand2  nand2_1
-timestamp 1694691991
-transform 1 0 1036 0 1 189
-box -70 -188 502 863
-use nand2  nand2_2
-timestamp 1694691991
-transform 1 0 2002 0 1 189
-box -70 -188 502 863
-use nand2  nand2_3
-timestamp 1694691991
-transform 1 0 2968 0 1 189
-box -70 -188 502 863
-use nverterlayout_ibr  nverterlayout_ibr_0 ~/GF180Projects/Top_test/top/magic
-timestamp 1695109904
+box 257 996 1231 2066
+use nverterlayout_ibr  nverterlayout_ibr_0
+timestamp 1714558529
 transform 1 0 -308 0 1 -79
-box -88 220 316 1130
+box -88 220 316 1149
 use nverterlayout_ibr  nverterlayout_ibr_1
-timestamp 1695109904
+timestamp 1714558529
 transform 1 0 3959 0 1 -78
-box -88 220 316 1130
+box -88 220 316 1149
 << labels >>
 flabel via1 -331 38 -331 38 0 FreeSans 480 0 0 0 IN1
 port 1 nsew

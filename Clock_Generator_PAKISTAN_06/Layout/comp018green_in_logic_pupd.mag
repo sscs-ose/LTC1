@@ -1,0 +1,66 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -1572 -5277 5307 4142
+<< metal1 >>
+rect 1818 809 2608 971
+rect 2900 -2007 2976 -477
+rect 2282 -2083 2976 -2007
+<< metal2 >>
+rect 1206 1153 1894 1229
+rect 1206 -967 1282 1153
+rect 1148 -1043 1282 -967
+rect 1148 -1426 1224 -1043
+rect 1502 -1145 1578 980
+rect 1818 791 1894 1153
+rect 2784 -477 2860 981
+rect 2784 -553 2913 -477
+rect 1314 -1221 1578 -1145
+rect 1148 -1493 1339 -1426
+rect 1263 -1611 1339 -1493
+use comp018green_std_nand2  comp018green_std_nand2_0
+timestamp 1713338890
+transform 1 0 1202 0 -1 2153
+box -83 11 1139 2586
+use comp018green_std_nand2  comp018green_std_nand2_1
+timestamp 1713338890
+transform 1 0 2168 0 -1 2153
+box -83 11 1139 2586
+use comp018green_std_xor2  comp018green_std_xor2_0
+timestamp 1713338890
+transform 1 0 511 0 1 -3277
+box -83 0 2361 2575
+use M2_M1_CDNS_69033583165570  M2_M1_CDNS_69033583165570_0
+timestamp 1713338890
+transform 1 0 1337 0 1 -1235
+box -38 -90 38 90
+use M2_M1_CDNS_69033583165570  M2_M1_CDNS_69033583165570_1
+timestamp 1713338890
+transform 1 0 2938 0 1 -567
+box -38 -90 38 90
+use M2_M1_CDNS_69033583165570  M2_M1_CDNS_69033583165570_2
+timestamp 1713338890
+transform 1 0 2822 0 -1 890
+box -38 -90 38 90
+use M2_M1_CDNS_69033583165570  M2_M1_CDNS_69033583165570_3
+timestamp 1713338890
+transform 1 0 1856 0 -1 881
+box -38 -90 38 90
+use M2_M1_CDNS_69033583165570  M2_M1_CDNS_69033583165570_4
+timestamp 1713338890
+transform 0 1 1488 1 0 930
+box -38 -90 38 90
+<< labels >>
+rlabel metal1 s 755 -3232 755 -3232 4 VSS
+port 1 nsew
+rlabel metal1 s 781 -825 781 -825 4 VDD
+port 2 nsew
+rlabel metal1 s 2840 1095 2840 1095 4 PDB_OUT
+port 3 nsew
+rlabel metal1 s 1861 1095 1861 1095 4 PUB_OUT
+port 4 nsew
+rlabel metal2 s 2185 -2041 2185 -2041 4 PD_IN
+port 5 nsew
+<< end >>

@@ -1,9 +1,19 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695306401
+timestamp 1714558529
 << nwell >>
+rect -166 1954 44 2070
 rect 141 1953 262 2037
+rect -66 146 141 533
+rect 1061 146 1257 533
+<< pwell >>
+rect -123 1244 13 1468
+rect 1002 1244 1138 1468
+rect -132 721 164 868
+rect 1000 721 1289 868
+<< nsubdiff >>
+rect -166 1980 1279 2070
 << metal1 >>
 rect 141 1953 262 2037
 rect -783 1632 -762 1650
@@ -45,15 +55,15 @@ rect 2011 447 2081 452
 rect 2013 220 2081 447
 rect -88 163 2119 220
 use mux_2x1_ibr  mux_2x1_ibr_0
-timestamp 1695127730
+timestamp 1714558529
 transform 1 0 -1194 0 1 1056
 box 0 -1051 1135 1051
 use mux_2x1_ibr  mux_2x1_ibr_1
-timestamp 1695127730
+timestamp 1714558529
 transform 1 0 -68 0 1 1056
 box 0 -1051 1135 1051
 use mux_2x1_ibr  mux_2x1_ibr_2
-timestamp 1695127730
+timestamp 1714558529
 transform 1 0 1058 0 1 1056
 box 0 -1051 1135 1051
 << labels >>

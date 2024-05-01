@@ -1,12 +1,12 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1691670594
+timestamp 1714130772
 << nwell >>
 rect -64 794 1692 1032
 rect 804 340 1688 794
 << pwell >>
-rect 864 0 1624 236
+rect 524 0 1624 236
 << nmos >>
 rect 976 68 1032 168
 rect 1136 68 1192 168
@@ -211,11 +211,11 @@ rect -56 -141 706 -55
 rect 813 -141 1693 -55
 rect -56 -176 1693 -141
 use nmos_3p3_5GGST2  nmos_3p3_5GGST2_0
-timestamp 1691575691
+timestamp 1714126980
 transform 1 0 380 0 1 118
 box -380 -118 380 118
 use pmos_3p3_MWXUAR  pmos_3p3_MWXUAR_0
-timestamp 1691575691
+timestamp 1714126980
 transform 1 0 382 0 1 570
 box -442 -230 442 230
 << labels >>

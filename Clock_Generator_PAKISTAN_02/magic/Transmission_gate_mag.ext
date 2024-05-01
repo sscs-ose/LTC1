@@ -1,4 +1,4 @@
-timestamp 1695119997
+timestamp 1714554054
 version 8.3
 tech gf180mcuC
 style ngspice()
@@ -20,49 +20,51 @@ node "CLK" 265 1678.61 323 537 v 0 0 0 0 0 0 0 0 0 0 0 0 115556 4188 0 0 0 0 0 0
 node "a_659_516#" 41 322.781 659 516 p 0 0 0 0 0 0 0 0 0 0 0 0 24572 878 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11436 430 0 0 0 0 0 0 0 0
 node "a_892_915#" 327 1448.55 892 915 p 0 0 0 0 0 0 0 0 0 0 0 0 140336 5124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "CLK" "VSS" 93.5548
-cap "VDD" "a_659_516#" 14.0062
-cap "VIN" "a_659_516#" 96.0785
-cap "a_659_516#" "a_892_915#" 2.41879
+cap "VOUT" "CLK" 298.772
 cap "VOUT" "a_659_516#" 8.8165
-cap "VSS" "VDD" 12.1236
-cap "CLK" "VDD" 17.1587
-cap "VSS" "VOUT" 10.2562
-cap "CLK" "VIN" 98.0021
-cap "CLK" "a_892_915#" 20.7904
-cap "CLK" "VOUT" 298.772
-cap "VSS" "a_659_516#" 15.6329
-cap "CLK" "a_659_516#" 27.5995
-cap "VDD" "VIN" 30.7891
-cap "VDD" "a_892_915#" 11.8451
-cap "VIN" "a_892_915#" 187.461
 cap "VOUT" "VIN" 3730.76
+cap "a_659_516#" "CLK" 27.5995
+cap "CLK" "VIN" 98.0021
+cap "VOUT" "VSS" 10.2562
+cap "VSS" "CLK" 93.5548
+cap "a_659_516#" "VIN" 96.0785
+cap "a_659_516#" "VSS" 15.6329
+cap "VDD" "CLK" 17.1587
 cap "VOUT" "a_892_915#" 15.2531
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "pmos_3p3_Q354KU_0/a_n692_n100#" 59.8486
-cap "inv_my_mag_0/VSS" "pmos_3p3_Q354KU_0/a_n836_n100#" 13.6916
-cap "nmos_3p3_W9BEG7_0/a_n748_n144#" "inv_my_mag_0/VSS" 12.3951
-cap "nmos_3p3_W9BEG7_0/a_n748_n144#" "pmos_3p3_Q354KU_0/a_n836_n100#" 60.9461
-cap "pmos_3p3_Q354KU_0/a_n692_n100#" "pmos_3p3_Q354KU_0/w_n922_n230#" 34.9455
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "inv_my_mag_0/VSS" -14.195
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "pmos_3p3_Q354KU_0/a_n836_n100#" 191.166
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "nmos_3p3_W9BEG7_0/a_n748_n144#" 47.2151
-cap "inv_my_mag_0/VSS" "pmos_3p3_Q354KU_0/w_n922_n230#" -12.7755
-cap "pmos_3p3_Q354KU_0/a_n836_n100#" "pmos_3p3_Q354KU_0/w_n922_n230#" 118.808
-cap "nmos_3p3_W9BEG7_0/a_n748_n144#" "pmos_3p3_Q354KU_0/w_n922_n230#" 38.2149
-cap "pmos_3p3_Q354KU_0/a_n692_n100#" "inv_my_mag_0/VSS" 0.733618
-cap "pmos_3p3_Q354KU_0/a_n692_n100#" "pmos_3p3_Q354KU_0/a_n836_n100#" -799.137
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "pmos_3p3_Q354KU_0/w_n922_n230#" 399.741
-cap "pmos_3p3_Q354KU_0/a_n692_n100#" "nmos_3p3_W9BEG7_0/a_n748_n144#" 106.284
-cap "pmos_3p3_Q354KU_0/w_n922_n230#" "pmos_3p3_Q354KU_0/a_n692_n100#" 35.1968
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "pmos_3p3_Q354KU_0/a_n836_n100#" 107.795
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "nmos_3p3_W9BEG7_0/a_n748_n144#" 20.8182
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "pmos_3p3_Q354KU_0/w_n922_n230#" 237.49
-cap "pmos_3p3_Q354KU_0/a_n748_n144#" "pmos_3p3_Q354KU_0/a_n692_n100#" 47.6195
-cap "pmos_3p3_Q354KU_0/a_n836_n100#" "nmos_3p3_W9BEG7_0/a_n748_n144#" 55.6225
-cap "pmos_3p3_Q354KU_0/a_n836_n100#" "pmos_3p3_Q354KU_0/a_n692_n100#" -651.164
-cap "pmos_3p3_Q354KU_0/a_n836_n100#" "pmos_3p3_Q354KU_0/w_n922_n230#" 110.022
-cap "pmos_3p3_Q354KU_0/w_n922_n230#" "nmos_3p3_W9BEG7_0/a_n748_n144#" 30.8787
-cap "nmos_3p3_W9BEG7_0/a_n748_n144#" "pmos_3p3_Q354KU_0/a_n692_n100#" 84.6949
+cap "VDD" "a_659_516#" 14.0062
+cap "CLK" "a_892_915#" 20.7904
+cap "VDD" "VIN" 30.7891
+cap "VDD" "VSS" 12.1236
+cap "a_659_516#" "a_892_915#" 2.41879
+cap "VIN" "a_892_915#" 187.461
+cap "VDD" "a_892_915#" 11.8451
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "inv_my_mag_0/OUT" 59.8486
+cap "inv_my_mag_0/VSS" "inv_my_mag_0/IN" 12.3951
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "inv_my_mag_0/w_n60_831#" 34.9455
+cap "inv_my_mag_0/IN" "nmos_3p3_W9BEG7_0/a_748_n100#" 60.9461
+cap "inv_my_mag_0/VSS" "nmos_3p3_W9BEG7_0/a_748_n100#" 13.6916
+cap "inv_my_mag_0/w_n60_831#" "inv_my_mag_0/OUT" 399.741
+cap "inv_my_mag_0/IN" "nmos_3p3_W9BEG7_0/a_588_n100#" 106.284
+cap "inv_my_mag_0/VSS" "nmos_3p3_W9BEG7_0/a_588_n100#" 0.733618
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "nmos_3p3_W9BEG7_0/a_748_n100#" -799.137
+cap "inv_my_mag_0/IN" "inv_my_mag_0/OUT" 47.2151
+cap "inv_my_mag_0/VSS" "inv_my_mag_0/OUT" -14.195
+cap "inv_my_mag_0/IN" "inv_my_mag_0/w_n60_831#" 38.2149
+cap "inv_my_mag_0/VSS" "inv_my_mag_0/w_n60_831#" -12.7755
+cap "inv_my_mag_0/OUT" "nmos_3p3_W9BEG7_0/a_748_n100#" 191.166
+cap "inv_my_mag_0/w_n60_831#" "nmos_3p3_W9BEG7_0/a_748_n100#" 118.808
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "nmos_3p3_W9BEG7_0/a_748_n100#" -651.164
+cap "inv_my_mag_0/w_n60_831#" "nmos_3p3_W9BEG7_0/a_748_n100#" 110.022
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "inv_my_mag_0/w_n60_831#" 35.1968
+cap "inv_my_mag_0/OUT" "nmos_3p3_W9BEG7_0/a_748_n100#" 107.795
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "inv_my_mag_0/OUT" 47.6195
+cap "inv_my_mag_0/w_n60_831#" "inv_my_mag_0/OUT" 237.49
+cap "nmos_3p3_W9BEG7_0/a_748_n100#" "inv_my_mag_0/IN" 55.6225
+cap "nmos_3p3_W9BEG7_0/a_588_n100#" "inv_my_mag_0/IN" 84.6949
+cap "inv_my_mag_0/w_n60_831#" "inv_my_mag_0/IN" 30.8787
+cap "inv_my_mag_0/OUT" "inv_my_mag_0/IN" 20.8182
+merge "inv_my_mag_0/w_n60_831#" "VDD" -264.65 -880 -924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -69255 -1152 0 0 0 0 0 0 0 0
+merge "VDD" "pmos_3p3_Q354KU_0/w_n922_n230#"
 merge "inv_my_mag_0/IN" "nmos_3p3_W9BEG7_0/a_692_n144#" -516.123 0 0 0 0 0 0 0 0 0 0 0 0 -56 -1122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5200 -308 0 0 0 0 0 0 0 0
 merge "nmos_3p3_W9BEG7_0/a_692_n144#" "nmos_3p3_W9BEG7_0/a_532_n144#"
 merge "nmos_3p3_W9BEG7_0/a_532_n144#" "nmos_3p3_W9BEG7_0/a_372_n144#"
@@ -100,8 +102,6 @@ merge "pmos_3p3_Q354KU_0/a_108_n100#" "pmos_3p3_Q354KU_0/a_n212_n100#"
 merge "pmos_3p3_Q354KU_0/a_n212_n100#" "pmos_3p3_Q354KU_0/a_n532_n100#"
 merge "pmos_3p3_Q354KU_0/a_n532_n100#" "pmos_3p3_Q354KU_0/a_n836_n100#"
 merge "pmos_3p3_Q354KU_0/a_n836_n100#" "VIN"
-merge "inv_my_mag_0/VDD" "VDD" -264.65 -880 -924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -69255 -1152 0 0 0 0 0 0 0 0
-merge "VDD" "pmos_3p3_Q354KU_0/w_n922_n230#"
 merge "inv_my_mag_0/OUT" "pmos_3p3_Q354KU_0/a_692_n144#" -1142.79 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -1310 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4944 -388 0 0 0 0 0 0 0 0
 merge "pmos_3p3_Q354KU_0/a_692_n144#" "a_659_516#"
 merge "a_659_516#" "pmos_3p3_Q354KU_0/a_532_n144#"

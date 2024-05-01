@@ -1,0 +1,33 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2000 -2000 6804 2160
+<< polysilicon >>
+rect 0 103 102 160
+rect 0 57 13 103
+rect 59 57 102 103
+rect 0 0 102 57
+rect 4702 103 4804 160
+rect 4702 57 4745 103
+rect 4791 57 4804 103
+rect 4702 0 4804 57
+<< polycontact >>
+rect 13 57 59 103
+rect 4745 57 4791 103
+<< ppolyres >>
+rect 102 0 4702 160
+<< metal1 >>
+rect 2 103 70 158
+rect 2 57 13 103
+rect 59 57 70 103
+rect 2 2 70 57
+rect 4734 103 4802 158
+rect 4734 57 4745 103
+rect 4791 57 4802 103
+rect 4734 2 4802 57
+<< labels >>
+rlabel polycontact 4768 80 4768 80 4 MINUS
+rlabel polycontact 36 80 36 80 4 PLUS
+<< end >>

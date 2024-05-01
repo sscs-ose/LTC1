@@ -1,0 +1,70 @@
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/pex_pll_5.sch
+**.subckt pex_pll_5
+VCNTL1 Vref GND pulse(3.3 0 0 100p 100p 250n 500n)
+.save i(vcntl1)
+V4 VDD_VCO GND PWL( 0 0 100n 0 100.001n 3.3)
+.save i(v4)
+V6 VDD VSS 3.3
+.save i(v6)
+V7 VSS GND 0
+.save i(v7)
+V8 RST_DIV VSS PWL( 0 0 10n 0 10.001n 3)
+.save i(v8)
+V9 F1 VSS 3.3
+.save i(v9)
+V10 F0 VSS 3.3
+.save i(v10)
+V11 S2 VSS 3.3
+.save i(v11)
+V12 OPA0 VSS 3.3
+.save i(v12)
+V13 OPA1 VSS 3.3
+.save i(v13)
+V14 OPB0 VSS 3.3
+.save i(v14)
+V15 OPB1 VSS 0
+.save i(v15)
+I2 IPD_ VSS 20u
+I3 VDD IPD+ 20u
+x8 VSS Vref Vdiv PU PD VDD PFD_pex
+x9 VSS VDD RST_DIV Vdiv VCO_op pex_CLK_div_110_mag
+x11 IPD+ IPD_ PU PD VCNTL VSS VDD_VCO pex_CP_mag
+C1 net2 VSS 80.14p m=1
+C2 net1 VSS 3.77p m=1
+R1 net1 net2 48.84k m=1
+x4 net1 VDD VCNTL S2 VSS net3 pex_a2x1mux_mag
+x1 net3 VDD VSS pex_LF_mag
+x2 VDD_VCO VDD VCO_op VCO_op_bar VCNTL VSS VCO_PEX
+**** begin user architecture code
+
+
+.include pex_PFD_layout.spice
+.include pex_CP_mag.spice
+.include pex_a2x1mux_mag.spice
+.include pex_LF_mag.spice
+.include pex_CLK_div_110_mag.spice
+.include VCO_PEX.spice
+.control
+save all
+tran 10n 50u
+plot v(VCO_op) v(VCO_op_bar)+4
+plot v(vcntl)
+plot v(Vdiv)
+plot v(vref)
+**write pll_4.raw
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

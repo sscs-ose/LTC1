@@ -1,7 +1,11 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695206022
+timestamp 1714558667
+<< nwell >>
+rect -70 1700 860 2228
+<< nsubdiff >>
+rect -32 2099 477 2193
 << metal1 >>
 rect -70 2063 2901 2241
 rect -206 1666 76 1738
@@ -80,9 +84,9 @@ rect 1473 626 1502 692
 rect -31 620 1502 626
 rect -31 595 84 620
 use JK_FF_mag  JK_FF_mag_0
-timestamp 1695127730
+timestamp 1714558667
 transform 1 0 320 0 1 80
-box -390 0 2603 2148
+box -430 0 2603 2148
 << labels >>
 flabel metal1 925 105 925 105 0 FreeSans 640 0 0 0 VSS
 port 0 nsew

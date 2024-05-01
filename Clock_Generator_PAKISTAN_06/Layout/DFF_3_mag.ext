@@ -1,0 +1,540 @@
+timestamp 1713185578
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use Tr_Gate Tr_Gate_3 -1 0 -2663 0 1 1322
+use Tr_Gate Tr_Gate_2 -1 0 -2663 0 -1 2470
+use Tr_Gate Tr_Gate_1 1 0 -817 0 -1 2509
+use Tr_Gate Tr_Gate_0 1 0 -817 0 1 1343
+use INV_2 INV_2_5 -1 0 -1216 0 -1 960
+use INV_2 INV_2_4 -1 0 1677 0 -1 968
+use INV_2 INV_2_3 1 0 575 0 1 1938
+use INV_2 INV_2_2 1 0 575 0 -1 3234
+use INV_2 INV_2_1 1 0 -2318 0 1 1930
+use INV_2 INV_2_0 -1 0 -1216 0 -1 3226
+port "VDD" 6 -3762 2064 -3762 2064 m1
+port "Q-" 4 1835 3254 1835 3254 m1
+port "D" 1 -3700 3207 -3699 3208 m1
+port "Q" 3 1813 1916 1813 1916 m1
+port "VSS" 5 324 3679 324 3679 m1
+port "CLK" 2 -1178 3898 -1178 3898 m1
+node "m1_138_580#" 2 338.929 138 580 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40248 1838 0 0 0 0 0 0 0 0
+node "m1_n3722_n11#" 6 1651.28 -3722 -11 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140576 6204 0 0 0 0 0 0 0 0
+node "m1_273_1091#" 2 753.557 273 1091 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 186161 4170 0 0 0 0 0 0 0 0
+node "m1_n3723_1885#" 5 393.836 -3723 1885 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22260 2162 0 0 0 0 0 0 0 0
+node "m1_n2666_2389#" 5 883.642 -2666 2389 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42863 1728 151228 4738 0 0 0 0 0 0
+node "m1_n1754_2549#" 13 3445.52 -1754 2549 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 252052 6476 218864 5006 744495 15288 0 0 0 0
+node "VDD" 3 1070.72 -3762 2064 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73909 1634 71869 1594 251849 4998 0 0 0 0
+node "m1_n3945_1070#" 5 1713.88 -3945 1070 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177313 4046 103214 3632 0 0 0 0 0 0
+node "m1_n1293_1886#" 5 980.054 -1293 1886 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118338 4634 34940 1208 0 0 0 0 0 0
+node "Q-" 1 138.134 1835 3254 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12420 632 0 0 0 0 0 0 0 0
+node "m1_n2652_3224#" 1 131.006 -2652 3224 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19274 930 0 0 0 0 0 0 0 0
+node "D" 0 58.4749 -3700 3207 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4738 298 0 0 0 0 0 0 0 0
+node "Q" 6 1750.66 1813 1916 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 109396 3414 199210 5690 0 0 0 0 0 0
+node "m1_1249_3594#" 1 150.906 1249 3594 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7114 550 6970 334 8010 360 0 0 0 0
+node "m1_1049_3594#" 1 112.306 1049 3594 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7114 550 6970 334 8010 360 0 0 0 0
+node "VSS" 1 257.759 324 3679 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31860 1198 0 0 0 0 0 0 0 0
+node "m1_n1299_3642#" 1 206.427 -1299 3642 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31860 1198 0 0 0 0 0 0 0 0
+node "m1_n3198_89#" 17 5396.9 -3198 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 250623 6274 256515 6338 1313066 25068 0 0 0 0
+node "m1_n2780_3609#" 1 219.691 -2780 3609 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31860 1198 0 0 0 0 0 0 0 0
+node "m1_n2895_3617#" 0 121.79 -2895 3617 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3304 230 6970 334 6970 334 0 0 0 0
+node "CLK" 8 1786.89 -1178 3898 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99378 3514 226968 7742 0 0 0 0 0 0
+node "w_n3723_1885#" 50476 66.78 -3723 1885 nw 22260 2162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n817_1905#" 28045 124.656 -817 1905 nw 41552 2236 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_n4178_n205#" 0 0 -4178 -205 ppd 0 0 0 0 0 0 1863000 41400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2541681 41336 0 0 0 0 0 0 0 0
+cap "m1_n3723_1885#" "w_n3723_1885#" 16.3077
+cap "m1_n3722_n11#" "m1_n3723_1885#" 3.31752
+cap "CLK" "m1_n2652_3224#" 31.5307
+cap "m1_n2652_3224#" "m1_n3945_1070#" 0.116317
+cap "m1_n3722_n11#" "m1_n2666_2389#" 3.5287
+cap "CLK" "m1_n3945_1070#" 125.901
+cap "CLK" "m1_n1299_3642#" 157.917
+cap "m1_273_1091#" "m1_138_580#" 50.2788
+cap "Q-" "m1_n3198_89#" 1.12168
+cap "m1_n2652_3224#" "m1_n3198_89#" 2.73408
+cap "m1_273_1091#" "m1_n3198_89#" 21.1921
+cap "CLK" "m1_n3198_89#" 287.011
+cap "w_n817_1905#" "m1_n1754_2549#" 30.441
+cap "m1_n3945_1070#" "m1_n3198_89#" 8.26509
+cap "m1_n1299_3642#" "m1_n3198_89#" 6.59343
+cap "m1_138_580#" "m1_n3198_89#" 6.01187
+cap "Q" "VSS" 20.6457
+cap "m1_273_1091#" "m1_n1293_1886#" 44.2374
+cap "CLK" "m1_n1293_1886#" 33.826
+cap "m1_n3945_1070#" "m1_n1293_1886#" 4.05809
+cap "m1_n1754_2549#" "m1_273_1091#" 389.24
+cap "CLK" "m1_n1754_2549#" 12.5693
+cap "m1_n1299_3642#" "m1_n1293_1886#" 0.677034
+cap "VDD" "m1_n2652_3224#" 12.9138
+cap "CLK" "VDD" 126.78
+cap "m1_n1293_1886#" "m1_138_580#" 0.563449
+cap "m1_n1754_2549#" "m1_n3945_1070#" 0.668099
+cap "m1_n1754_2549#" "m1_138_580#" 52.2163
+cap "VDD" "m1_n3945_1070#" 254.821
+cap "m1_n1293_1886#" "m1_n3198_89#" 15.112
+cap "m1_n1754_2549#" "m1_n3198_89#" 1235.92
+cap "m1_1049_3594#" "m1_n3198_89#" 128.846
+cap "VDD" "m1_n3198_89#" 81.685
+cap "CLK" "m1_n3723_1885#" 5.6442
+cap "m1_n1754_2549#" "m1_n1293_1886#" 103.18
+cap "m1_n3945_1070#" "m1_n3723_1885#" 64.2861
+cap "Q" "m1_1249_3594#" 4.38781
+cap "VDD" "m1_n1293_1886#" 1.52268
+cap "m1_n2652_3224#" "m1_n2666_2389#" 15.2222
+cap "CLK" "m1_n2895_3617#" 10.9822
+cap "m1_273_1091#" "m1_n2666_2389#" 4.80678
+cap "CLK" "m1_n2666_2389#" 114.807
+cap "VDD" "m1_n1754_2549#" 23.4011
+cap "m1_n3723_1885#" "m1_n3198_89#" 0.852155
+cap "m1_n3945_1070#" "m1_n2666_2389#" 41.182
+cap "m1_n1299_3642#" "m1_n2895_3617#" 0.111178
+cap "m1_n1299_3642#" "m1_n2666_2389#" 0.0495338
+cap "m1_n2895_3617#" "m1_n3198_89#" 5.59885
+cap "m1_n2666_2389#" "m1_n3198_89#" 125.613
+cap "CLK" "VSS" 0.283929
+cap "m1_273_1091#" "VSS" 4.4808
+cap "m1_n2652_3224#" "D" 0.381389
+cap "VDD" "m1_n3723_1885#" 72.706
+cap "CLK" "D" 0.112932
+cap "m1_n2666_2389#" "m1_n1293_1886#" 152.257
+cap "m1_n1299_3642#" "VSS" 2.55004
+cap "m1_n1754_2549#" "m1_n2666_2389#" 220.276
+cap "VDD" "m1_n2895_3617#" 6.07163
+cap "VDD" "m1_n2666_2389#" 55.4933
+cap "m1_n3198_89#" "VSS" 44.5539
+cap "m1_n2652_3224#" "m1_n2780_3609#" 50.7324
+cap "CLK" "m1_n2780_3609#" 44.3597
+cap "Q" "w_n817_1905#" 1.09749e-17
+cap "m1_1049_3594#" "VSS" 0.355381
+cap "m1_n2780_3609#" "m1_n3198_89#" 20.5709
+cap "m1_n1754_2549#" "VSS" 0.304006
+cap "m1_n3723_1885#" "m1_n2666_2389#" 0.256947
+cap "VDD" "D" 4.92462
+cap "Q" "Q-" 11.696
+cap "Q" "m1_273_1091#" 45.3
+cap "Q" "CLK" 2.29593
+cap "CLK" "m1_n3722_n11#" 9.91332
+cap "m1_n3945_1070#" "m1_n3722_n11#" 4.7013
+cap "Q" "m1_138_580#" 0.986006
+cap "VDD" "m1_n2780_3609#" 1.87002
+cap "Q" "m1_n3198_89#" 158.605
+cap "m1_n3722_n11#" "m1_n3198_89#" 432.859
+cap "m1_1249_3594#" "m1_1049_3594#" 90.2917
+cap "Q" "m1_n1293_1886#" 3.46603
+cap "m1_n3722_n11#" "m1_n1293_1886#" 0.710004
+cap "Q" "m1_n1754_2549#" 148.439
+cap "Q" "m1_1049_3594#" 4.38781
+cap "m1_n1754_2549#" "m1_n3722_n11#" 6.44044
+cap "VDD" "m1_n3722_n11#" 0.459681
+cap "m1_n2780_3609#" "m1_n2895_3617#" 58.0923
+cap "m1_n2666_2389#" "m1_n2780_3609#" 0.502928
+cap "INV_2_5/IN" "Tr_Gate_3/VSS" 2.34111
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_1/IN" 9.69518
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_5/IN" 3.18516
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "Tr_Gate_3/VSS" 9.08251
+cap "INV_2_5/IN" "Tr_Gate_3/CLK" 0.455298
+cap "INV_2_1/IN" "Tr_Gate_2/VDD" -0.402977
+cap "Tr_Gate_3/VSS" "Tr_Gate_3/CLK" 30.165
+cap "INV_2_5/OUT" "INV_2_1/IN" 9.33124
+cap "Tr_Gate_3/VSS" "Tr_Gate_2/VDD" 9.14222
+cap "INV_2_5/OUT" "Tr_Gate_3/VSS" 571.327
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "Tr_Gate_2/VDD" -0.0433802
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_5/OUT" 0.746648
+cap "Tr_Gate_3/CLK" "Tr_Gate_2/VDD" 3.86582
+cap "INV_2_5/OUT" "Tr_Gate_3/CLK" 6.35024
+cap "INV_2_5/OUT" "Tr_Gate_2/VDD" 0.591444
+cap "Tr_Gate_3/VSS" "INV_2_1/IN" 84.6915
+cap "INV_2_1/IN" "INV_2_5/OUT" 0.149844
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_1/IN" 1.2676
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_5/OUT" 6.99807
+cap "INV_2_5/OUT" "Tr_Gate_3/CLK" 251.95
+cap "Tr_Gate_0/CLK" "Tr_Gate_1/VDD" 10.4122
+cap "INV_2_1/OUT" "INV_2_5/OUT" 7.1966
+cap "INV_2_1/OUT" "INV_2_1/IN" 3.359
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_1/OUT" 8.09955
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/VSS" 0.7663
+cap "INV_2_1/OUT" "Tr_Gate_3/CLK" 2.9309
+cap "INV_2_1/IN" "Tr_Gate_1/VDD" 7.08228
+cap "INV_2_1/OUT" "Tr_Gate_0/IN" 0.643948
+cap "INV_2_5/OUT" "Tr_Gate_1/VDD" 172.616
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "Tr_Gate_1/VDD" 8.25925
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/VDD" 1.5955
+cap "INV_2_1/IN" "Tr_Gate_0/VSS" 5.94897
+cap "INV_2_1/OUT" "Tr_Gate_1/VDD" 66.6831
+cap "INV_2_5/OUT" "Tr_Gate_0/VSS" 134.989
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/IN" 3.00187
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "Tr_Gate_0/VSS" 8.28483
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/VSS" 26.2711
+cap "INV_2_1/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.990989
+cap "INV_2_1/OUT" "Tr_Gate_0/VSS" 59.219
+cap "Tr_Gate_0/IN" "Tr_Gate_0/VSS" 0.225317
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 6.52697
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/VSS" 181.249
+cap "INV_2_1/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_0/a_n138_n84#" 0.514774
+cap "Tr_Gate_0/CLK" "INV_2_5/OUT" 2.88178
+cap "INV_2_1/OUT" "Tr_Gate_0/CLK" 1.31183
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/nmos_3p3_UKFAHE_0/a_n138_n84#" 3.27624
+cap "INV_2_1/OUT" "INV_2_4/VSS" 11.1271
+cap "INV_2_4/IN" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.150766
+cap "INV_2_1/OUT" "INV_2_5/OUT" 3.63481
+cap "INV_2_4/IN" "Tr_Gate_0/OUT" 5.46198
+cap "INV_2_2/VDD" "INV_2_4/VSS" 22.3538
+cap "Tr_Gate_0/IN" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0632745
+cap "Tr_Gate_0/IN" "Tr_Gate_0/OUT" 4.13288
+cap "Tr_Gate_0/CLK" "INV_2_4/VSS" 53.6806
+cap "INV_2_4/IN" "INV_2_4/VSS" 0.463936
+cap "INV_2_5/OUT" "Tr_Gate_0/CLK" 2.99951
+cap "Tr_Gate_0/IN" "INV_2_4/VSS" 23.7545
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 0.0265244
+cap "INV_2_1/OUT" "INV_2_2/VDD" 0.105145
+cap "INV_2_1/OUT" "Tr_Gate_0/CLK" 38.1899
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_4/VSS" 14.2949
+cap "Tr_Gate_0/OUT" "INV_2_4/VSS" 115.119
+cap "Tr_Gate_0/IN" "INV_2_1/OUT" -0.281725
+cap "INV_2_5/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 2.40169
+cap "Tr_Gate_0/CLK" "INV_2_2/VDD" 78.8785
+cap "Tr_Gate_1/CLK" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0938577
+cap "Tr_Gate_0/IN" "INV_2_2/VDD" 1.19136
+cap "Tr_Gate_1/pmos_3p3_YMKZL5_0/a_50_n84#" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0105899
+cap "INV_2_4/IN" "Tr_Gate_0/CLK" 0.0205709
+cap "INV_2_1/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 11.6011
+cap "INV_2_1/OUT" "Tr_Gate_0/OUT" -0.31606
+cap "INV_2_5/OUT" "INV_2_4/VSS" 0.594325
+cap "Tr_Gate_0/IN" "Tr_Gate_0/CLK" 0.0603849
+cap "Tr_Gate_1/CLK" "INV_2_4/VSS" 0.145287
+cap "Tr_Gate_1/a_174_n81#" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0380103
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VDD" 18.5876
+cap "Tr_Gate_0/OUT" "INV_2_2/VDD" 13.2806
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/IN" 1.38945
+cap "Tr_Gate_0/CLK" "INV_2_2/VDD" 12.7749
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/IN" 0.0410812
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VDD" 5.71443
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_4/VSS" 0.859154
+cap "Tr_Gate_0/CLK" "INV_2_4/VSS" 1.40698
+cap "Tr_Gate_0/OUT" "INV_2_3/OUT" 6.43704
+cap "INV_2_1/OUT" "Tr_Gate_0/OUT" -1.30539
+cap "INV_2_3/OUT" "Tr_Gate_0/IN" 7.7776
+cap "INV_2_3/OUT" "INV_2_2/VDD" 12.1386
+cap "INV_2_1/OUT" "Tr_Gate_0/IN" -0.281725
+cap "Tr_Gate_0/OUT" "Tr_Gate_0/IN" 12.6685
+cap "Tr_Gate_0/OUT" "INV_2_2/VDD" 10.2239
+cap "INV_2_2/VDD" "Tr_Gate_0/IN" 116.15
+cap "INV_2_3/OUT" "INV_2_4/VSS" 50.7439
+cap "Tr_Gate_0/OUT" "INV_2_4/VSS" 8.17413
+cap "INV_2_2/VDD" "INV_2_4/VSS" 149.253
+cap "Tr_Gate_0/IN" "INV_2_4/VSS" 42.1074
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_3/OUT" 1.05673
+cap "Tr_Gate_0/CLK" "INV_2_3/OUT" 0.924839
+cap "INV_2_2/VDD" "INV_2_3/OUT" 2.75351
+cap "INV_2_4/VSS" "INV_2_2/VDD" 101.249
+cap "Tr_Gate_0/OUT" "INV_2_3/OUT" -1.3432
+cap "INV_2_4/VSS" "INV_2_3/OUT" 7.85992
+cap "Tr_Gate_0/IN" "INV_2_3/OUT" 3.67538
+cap "INV_2_4/VSS" "Tr_Gate_0/IN" -2.94062
+cap "Tr_Gate_2/VDD" "INV_2_1/IN" 480.193
+cap "Tr_Gate_2/VSS" "INV_2_0/OUT" 0.598201
+cap "INV_2_0/OUT" "INV_2_1/IN" 17.5382
+cap "Tr_Gate_2/VSS" "Tr_Gate_2/a_174_n81#" 1.23962
+cap "Tr_Gate_3/CLK" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 4.40832
+cap "Tr_Gate_2/a_174_n81#" "INV_2_1/IN" 63.8675
+cap "Tr_Gate_2/VDD" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 6.11855
+cap "Tr_Gate_2/VDD" "Tr_Gate_3/CLK" 46.1284
+cap "INV_2_0/OUT" "Tr_Gate_3/CLK" 23.3966
+cap "Tr_Gate_2/VDD" "INV_2_0/OUT" 77.5059
+cap "INV_2_5/OUT" "INV_2_1/IN" 5.23927
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_3/CLK" 18.4443
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_2/VDD" 78.8084
+cap "INV_2_1/OUT" "Tr_Gate_3/CLK" 0.0564399
+cap "INV_2_1/OUT" "Tr_Gate_2/VDD" 0.0720783
+cap "Tr_Gate_2/IN" "INV_2_1/IN" 1.61244
+cap "Tr_Gate_2/a_174_n81#" "INV_2_0/OUT" 2.71312
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_5/OUT" 0.410256
+cap "INV_2_5/IN" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 1.94707
+cap "Tr_Gate_3/CLK" "INV_2_5/OUT" 0.0135566
+cap "INV_2_1/OUT" "INV_2_0/OUT" 0.000956609
+cap "Tr_Gate_2/VDD" "INV_2_5/OUT" 1.21917
+cap "Tr_Gate_2/VSS" "INV_2_1/IN" 2.87508
+cap "Tr_Gate_2/VDD" "Tr_Gate_2/IN" 0.978512
+cap "Tr_Gate_2/VSS" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 11.0844
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "INV_2_1/IN" 73.087
+cap "Tr_Gate_2/VSS" "Tr_Gate_3/CLK" 1.21815
+cap "Tr_Gate_2/VSS" "Tr_Gate_2/VDD" 0.363368
+cap "Tr_Gate_3/CLK" "INV_2_1/IN" 12.5521
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_1/IN" 0.0256711
+cap "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "Tr_Gate_1/VDD" 0.0302771
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_1/VDD" 0.074161
+cap "INV_2_1/OUT" "Tr_Gate_1/VSS" 84.9442
+cap "INV_2_1/OUT" "INV_2_1/IN" 24.8628
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_1/VDD" 3.05265
+cap "INV_2_5/OUT" "Tr_Gate_1/VDD" 2.16168
+cap "INV_2_1/OUT" "Tr_Gate_3/CLK" 8.02937
+cap "INV_2_1/OUT" "Tr_Gate_0/CLK" 78.369
+cap "Tr_Gate_2/IN" "INV_2_1/IN" 0.329471
+cap "Tr_Gate_1/VSS" "Tr_Gate_1/VDD" 169.608
+cap "INV_2_1/IN" "Tr_Gate_1/VDD" 166.705
+cap "Tr_Gate_1/VSS" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 7.4507
+cap "INV_2_1/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.322106
+cap "INV_2_1/IN" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 1.2743
+cap "Tr_Gate_1/VSS" "Tr_Gate_2/a_174_n81#" 2.91672
+cap "Tr_Gate_2/a_174_n81#" "INV_2_1/IN" 1.24302
+cap "INV_2_1/IN" "INV_2_5/OUT" -0.0901989
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/VDD" 201.162
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/CLK" 355.938
+cap "Tr_Gate_1/VSS" "INV_2_5/OUT" 14.1601
+cap "Tr_Gate_3/CLK" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 2.1875
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_1/IN" 0.107558
+cap "Tr_Gate_3/CLK" "Tr_Gate_2/a_174_n81#" 19.6288
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_0/CLK" 1.84464
+cap "Tr_Gate_3/CLK" "INV_2_5/OUT" -0.864221
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_0/a_n138_n84#" "Tr_Gate_1/VDD" 0.891698
+cap "INV_2_5/OUT" "Tr_Gate_0/CLK" 1.46916
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/IN" 0.508431
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_1/VDD" 5.37075
+cap "Tr_Gate_1/VSS" "INV_2_1/IN" 83.0514
+cap "Tr_Gate_3/CLK" "INV_2_1/IN" 21.4669
+cap "Tr_Gate_1/VSS" "Tr_Gate_3/CLK" 112.996
+cap "INV_2_1/IN" "Tr_Gate_0/CLK" 87.1634
+cap "INV_2_1/OUT" "Tr_Gate_1/VDD" 39.8622
+cap "Tr_Gate_1/VSS" "Tr_Gate_0/CLK" 16.1351
+cap "Tr_Gate_1/VDD" "Tr_Gate_1/nmos_3p3_UKFAHE_0/a_n138_n84#" 0.156279
+cap "INV_2_1/OUT" "Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 0.346813
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/CLK" 24.8957
+cap "Tr_Gate_0/IN" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.120712
+cap "Tr_Gate_0/CLK" "INV_2_1/IN" 14.98
+cap "INV_2_2/VDD" "INV_2_3/nmos_3p3_6FEA4B_0/a_n256_n50#" 0.299815
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 32.7954
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_1/OUT" 5.78388
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" -1.09903
+cap "INV_2_1/OUT" "INV_2_1/IN" 1.89516
+cap "Tr_Gate_3/CLK" "INV_2_1/IN" 0.952316
+cap "INV_2_1/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 4.54436
+cap "INV_2_2/VDD" "INV_2_2/VSS" 11.0303
+cap "Tr_Gate_0/CLK" "INV_2_1/OUT" 35.3659
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/CLK" 24.2047
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 4.79945
+cap "INV_2_2/VDD" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 66.3234
+cap "INV_2_5/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.359416
+cap "Tr_Gate_3/CLK" "INV_2_1/OUT" 28.9865
+cap "INV_2_2/VDD" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 48.2021
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 4.01031
+cap "INV_2_2/VDD" "Tr_Gate_0/IN" 3.89114
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/OUT" -1.89423
+cap "INV_2_2/VDD" "Tr_Gate_0/CLK" 188.432
+cap "INV_2_2/VSS" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.368844
+cap "INV_2_2/VDD" "INV_2_1/OUT" 282.126
+cap "INV_2_2/VDD" "Tr_Gate_3/CLK" 72.1962
+cap "INV_2_1/OUT" "Tr_Gate_0/OUT" -17.6864
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/OUT" 0.819606
+cap "INV_2_2/VSS" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 6.95555
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_1/IN" 3.16931
+cap "INV_2_4/IN" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.540186
+cap "INV_2_2/VSS" "Tr_Gate_0/CLK" 23.9633
+cap "INV_2_2/VDD" "Tr_Gate_0/OUT" 14.7062
+cap "INV_2_2/VSS" "INV_2_1/OUT" 178.16
+cap "INV_2_2/VSS" "Tr_Gate_3/CLK" 0.0871031
+cap "INV_2_3/OUT" "INV_2_2/VDD" 0.94381
+cap "INV_2_2/VDD" "Tr_Gate_0/IN" 1.57884
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/OUT" 0.515033
+cap "Tr_Gate_0/CLK" "INV_2_2/VSS" 2.11602
+cap "INV_2_1/OUT" "INV_2_2/VDD" 4.29281
+cap "INV_2_0/IN" "Tr_Gate_0/CLK" 1.74914
+cap "INV_2_3/OUT" "Tr_Gate_0/CLK" 0.0706894
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 29.0822
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VSS" 0.690484
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 32.2581
+cap "INV_2_2/VSS" "Tr_Gate_0/OUT" 189.78
+cap "INV_2_0/IN" "Tr_Gate_0/OUT" 5.05783
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VSS" 2.95586
+cap "INV_2_0/IN" "INV_2_2/VSS" 0.00228525
+cap "INV_2_3/OUT" "Tr_Gate_0/OUT" 27.82
+cap "INV_2_3/OUT" "INV_2_2/VSS" 91.9224
+cap "INV_2_3/OUT" "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.706674
+cap "Tr_Gate_0/CLK" "INV_2_2/VDD" 12.5108
+cap "Tr_Gate_0/IN" "Tr_Gate_0/OUT" 7.13287
+cap "INV_2_2/VSS" "Tr_Gate_0/IN" 13.496
+cap "INV_2_2/VSS" "INV_2_2/OUT" 0.0584041
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/IN" 0.0215995
+cap "INV_2_1/OUT" "Tr_Gate_0/OUT" -17.6402
+cap "INV_2_2/VDD" "Tr_Gate_0/OUT" 441.277
+cap "INV_2_2/VDD" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 20.5541
+cap "INV_2_2/VDD" "INV_2_2/VSS" 116.574
+cap "Tr_Gate_0/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VDD" 9.398
+cap "INV_2_0/IN" "INV_2_2/VDD" 20.8567
+cap "INV_2_2/VDD" "INV_2_3/OUT" 55.947
+cap "INV_2_2/VSS" "Tr_Gate_0/OUT" -0.0779045
+cap "INV_2_2/VSS" "INV_2_3/OUT" 214.896
+cap "INV_2_3/OUT" "Tr_Gate_0/OUT" 21.8006
+cap "INV_2_3/OUT" "INV_2_2/OUT" -0.884817
+cap "INV_2_3/OUT" "Tr_Gate_1/VDD" 0.471761
+cap "INV_2_2/VSS" "INV_2_2/VDD" 66.0202
+cap "INV_2_2/VDD" "Tr_Gate_0/OUT" 3.78772
+cap "Tr_Gate_2/VSS" "Tr_Gate_2/a_174_n81#" 1.90073
+cap "Tr_Gate_2/VDD" "Tr_Gate_2/a_174_n81#" 103.055
+cap "Tr_Gate_3/CLK" "INV_2_1/IN" -0.0720171
+cap "INV_2_0/OUT" "Tr_Gate_2/VSS" 12.7578
+cap "Tr_Gate_2/VDD" "INV_2_0/OUT" 16.3659
+cap "Tr_Gate_2/IN" "INV_2_1/IN" 10.2083
+cap "Tr_Gate_2/IN" "Tr_Gate_3/CLK" -0.0199161
+cap "Tr_Gate_2/VDD" "Tr_Gate_2/VSS" 11.0571
+cap "Tr_Gate_3/CLK" "Tr_Gate_2/a_174_n81#" 9.56397
+cap "Tr_Gate_2/a_174_n81#" "INV_2_1/IN" 9.38114
+cap "INV_2_0/OUT" "INV_2_1/IN" 5.68434e-14
+cap "Tr_Gate_3/CLK" "INV_2_0/OUT" 1.77065
+cap "Tr_Gate_3/CLK" "Tr_Gate_2/VSS" 11.9407
+cap "Tr_Gate_2/VSS" "INV_2_1/IN" 31.0068
+cap "Tr_Gate_2/VDD" "INV_2_1/IN" 87.7046
+cap "Tr_Gate_2/IN" "INV_2_0/OUT" 0.189804
+cap "Tr_Gate_2/IN" "Tr_Gate_2/VSS" 67.7571
+cap "Tr_Gate_2/IN" "Tr_Gate_2/VDD" 15.9639
+cap "INV_2_0/OUT" "Tr_Gate_2/a_174_n81#" 5.68434e-14
+cap "INV_2_1/OUT" "Tr_Gate_1/VSS" 1.30262
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_1/VSS" 5.2193
+cap "Tr_Gate_1/VDD" "Tr_Gate_0/CLK" 102.348
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/CLK" 81.5263
+cap "INV_2_1/OUT" "Tr_Gate_1/VDD" -0.383098
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_1/VDD" 6.88259
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_3/CLK" 65.9814
+cap "Tr_Gate_1/VSS" "Tr_Gate_2/IN" 3.72792
+cap "Tr_Gate_3/CLK" "INV_2_1/OUT" 0.238589
+cap "Tr_Gate_1/VDD" "Tr_Gate_2/IN" 2.40592
+cap "Tr_Gate_3/CLK" "Tr_Gate_2/IN" 5.39814
+cap "Tr_Gate_2/a_174_n81#" "Tr_Gate_0/CLK" 2.84217e-14
+cap "Tr_Gate_1/VSS" "Tr_Gate_1/nmos_3p3_UKFAHE_0/a_n138_n84#" 0.806804
+cap "Tr_Gate_2/IN" "Tr_Gate_0/CLK" -0.190695
+cap "INV_2_1/IN" "Tr_Gate_1/VSS" 6.62352
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/nmos_3p3_UKFAHE_0/a_n138_n84#" 0.5719
+cap "INV_2_1/IN" "Tr_Gate_1/VDD" -0.939028
+cap "Tr_Gate_3/CLK" "INV_2_1/IN" 29.2539
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_1/VSS" 2.44728
+cap "Tr_Gate_1/VDD" "Tr_Gate_1/VSS" 67.585
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/VSS" 201.19
+cap "Tr_Gate_1/VDD" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0337809
+cap "Tr_Gate_2/a_174_n81#" "INV_2_1/IN" 1.14598
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/VDD" 129.697
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.712974
+cap "Tr_Gate_1/VSS" "Tr_Gate_0/CLK" 142.988
+cap "Tr_Gate_3/CLK" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 6.25391
+cap "INV_2_1/OUT" "Tr_Gate_3/CLK" 90.2279
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/OUT" 10.88
+cap "INV_2_2/VSS" "Tr_Gate_0/CLK" 0.54967
+cap "INV_2_2/VDD" "Tr_Gate_3/CLK" 61.3377
+cap "INV_2_2/IN" "INV_2_2/VSS" 1.79425
+cap "Tr_Gate_3/CLK" "Tr_Gate_0/CLK" 9.76409
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 0.32225
+cap "INV_2_1/OUT" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 68.1485
+cap "INV_2_2/VSS" "Tr_Gate_3/CLK" 153.459
+cap "INV_2_1/OUT" "Tr_Gate_0/OUT" 0.743443
+cap "INV_2_2/IN" "Tr_Gate_3/CLK" -0.854539
+cap "INV_2_2/VDD" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 17.9577
+cap "INV_2_2/VDD" "Tr_Gate_0/OUT" 3.1132
+cap "Tr_Gate_0/pmos_3p3_YMKZL5_3/a_n138_n84#" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0105899
+cap "INV_2_2/VDD" "INV_2_1/OUT" 103.381
+cap "Tr_Gate_0/pmos_3p3_YMKZL5_3/a_n138_n84#" "INV_2_1/OUT" 0.15291
+cap "Tr_Gate_0/CLK" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 1.70115
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/OUT" 0.739464
+cap "INV_2_1/OUT" "Tr_Gate_0/CLK" 0.239745
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/pmos_3p3_YMKZL5_3/a_n50_n128#" 0.0380103
+cap "INV_2_2/VSS" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.65256
+cap "Tr_Gate_0/pmos_3p3_YMKZL5_3/a_n50_n128#" "Tr_Gate_0/OUT" 1.08487
+cap "INV_2_2/IN" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 2.16848
+cap "INV_2_2/VSS" "Tr_Gate_0/OUT" 5.13276
+cap "INV_2_2/VSS" "INV_2_1/OUT" -3.23343
+cap "INV_2_2/IN" "INV_2_1/OUT" -1.72327
+cap "INV_2_2/IN" "Tr_Gate_0/OUT" 13.5772
+cap "INV_2_2/VDD" "INV_2_2/VSS" 0.393785
+cap "INV_2_2/pmos_3p3_KYEELV_0/a_n256_68#" "Tr_Gate_3/CLK" 0.00777302
+cap "Tr_Gate_0/pmos_3p3_YMKZL5_3/a_n50_n128#" "Tr_Gate_0/OUT" 0.247295
+cap "INV_2_1/OUT" "Tr_Gate_0/OUT" 4.0618
+cap "INV_2_3/OUT" "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 5.84417
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VSS" 5.16227
+cap "Tr_Gate_0/CLK" "Tr_Gate_0/OUT" 0.639468
+cap "INV_2_3/OUT" "INV_2_2/VSS" 84.8542
+cap "INV_2_2/OUT" "INV_2_3/OUT" 23.7179
+cap "INV_2_2/OUT" "INV_2_2/VSS" 66.5199
+cap "Tr_Gate_0/pmos_3p3_YMKZL5_3/a_n138_n84#" "Tr_Gate_0/OUT" 0.0461724
+cap "INV_2_3/OUT" "INV_2_1/OUT" 17.3597
+cap "INV_2_2/VSS" "INV_2_1/OUT" 23.4388
+cap "INV_2_2/VDD" "INV_2_0/IN" 1.028
+cap "INV_2_2/OUT" "INV_2_1/OUT" 7.32692
+cap "INV_2_2/VDD" "Tr_Gate_0/OUT" 55.0455
+cap "INV_2_3/OUT" "INV_2_4/OUT" 0.420502
+cap "INV_2_3/OUT" "INV_2_4/pmos_3p3_KYEELV_0/w_n530_n298#" 0.158264
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "INV_2_2/VDD" 2.11245
+cap "INV_2_3/OUT" "INV_2_2/VDD" 362.17
+cap "INV_2_2/VSS" "INV_2_2/VDD" 84.0105
+cap "Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "Tr_Gate_0/OUT" 3.49424
+cap "INV_2_3/OUT" "INV_2_0/IN" 5.58927
+cap "INV_2_2/VSS" "INV_2_0/IN" 6.01336
+cap "INV_2_2/VDD" "INV_2_1/OUT" 35.0491
+cap "INV_2_3/OUT" "Tr_Gate_0/OUT" 77.558
+cap "INV_2_2/VSS" "Tr_Gate_0/OUT" 12.6222
+cap "INV_2_2/OUT" "INV_2_0/IN" 0.0141323
+cap "INV_2_3/OUT" "INV_2_4/pmos_3p3_KYEELV_0/w_n530_n298#" 0.0367662
+cap "INV_2_2/VSS" "INV_2_2/VDD" 77.4372
+cap "Tr_Gate_0/OUT" "INV_2_3/OUT" 7.2558
+cap "INV_2_3/OUT" "INV_2_2/VSS" 3.35449
+cap "INV_2_3/OUT" "INV_2_2/VDD" 101.81
+cap "INV_2_3/OUT" "Tr_Gate_1/VDD" 0.0152983
+cap "INV_2_2/VSS" "INV_2_2/OUT" 3.17535
+cap "INV_2_2/VDD" "INV_2_2/OUT" 2.34628
+cap "INV_2_3/OUT" "INV_2_2/OUT" 0.012401
+cap "Tr_Gate_0/OUT" "INV_2_2/VSS" -2.42595
+merge "INV_2_2/OUT" "Q-" -59.9563 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2668 -208 0 0 0 0 0 0 0 0
+merge "INV_2_2/VDD" "INV_2_4/VDD" -7567.56 -23532 -14922 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -190994 -19893 0 0 0 0 0 0 0 0
+merge "INV_2_4/VDD" "INV_2_3/VDD"
+merge "INV_2_3/VDD" "Tr_Gate_1/VDD"
+merge "Tr_Gate_1/VDD" "Tr_Gate_0/VDD"
+merge "Tr_Gate_0/VDD" "w_n817_1905#"
+merge "w_n817_1905#" "Tr_Gate_2/VDD"
+merge "Tr_Gate_2/VDD" "Tr_Gate_3/VDD"
+merge "Tr_Gate_3/VDD" "m1_n3723_1885#"
+merge "m1_n3723_1885#" "w_n3723_1885#"
+merge "w_n3723_1885#" "INV_2_0/VDD"
+merge "INV_2_0/VDD" "INV_2_5/VDD"
+merge "INV_2_5/VDD" "INV_2_1/VDD"
+merge "INV_2_1/VDD" "m1_n1754_2549#"
+merge "m1_n1754_2549#" "VDD"
+merge "INV_2_2/VSS" "m1_1249_3594#" -6263.47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -284718 -13120 0 0 0 0 0 0 0 0
+merge "m1_1249_3594#" "m1_1049_3594#"
+merge "m1_1049_3594#" "VSS"
+merge "VSS" "m1_n2895_3617#"
+merge "m1_n2895_3617#" "m1_n1299_3642#"
+merge "m1_n1299_3642#" "m1_n2780_3609#"
+merge "m1_n2780_3609#" "INV_2_4/VSS"
+merge "INV_2_4/VSS" "INV_2_3/VSS"
+merge "INV_2_3/VSS" "Tr_Gate_1/VSS"
+merge "Tr_Gate_1/VSS" "Tr_Gate_0/VSS"
+merge "Tr_Gate_0/VSS" "Tr_Gate_2/VSS"
+merge "Tr_Gate_2/VSS" "INV_2_0/VSS"
+merge "INV_2_0/VSS" "Tr_Gate_3/VSS"
+merge "Tr_Gate_3/VSS" "INV_2_5/VSS"
+merge "INV_2_5/VSS" "INV_2_1/VSS"
+merge "INV_2_1/VSS" "a_n4178_n205#"
+merge "a_n4178_n205#" "m1_n3198_89#"
+merge "INV_2_2/IN" "INV_2_4/IN" -839.341 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14428 -814 0 0 0 0 0 0 0 0
+merge "INV_2_4/IN" "INV_2_3/OUT"
+merge "INV_2_3/OUT" "Q"
+merge "Tr_Gate_1/IN" "Tr_Gate_1/pmos_3p3_YMKZL5_3/a_n138_n84#" -669.474 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7498 -602 0 0 0 0 0 0 0 0
+merge "Tr_Gate_1/pmos_3p3_YMKZL5_3/a_n138_n84#" "INV_2_5/IN"
+merge "INV_2_5/IN" "INV_2_1/OUT"
+merge "INV_2_1/OUT" "m1_n1293_1886#"
+merge "Tr_Gate_0/CLK" "INV_2_0/OUT" -968.549 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9917 -806 0 0 0 0 0 0 0 0
+merge "INV_2_0/OUT" "m1_n2652_3224#"
+merge "m1_n2652_3224#" "Tr_Gate_2/CLK"
+merge "Tr_Gate_2/CLK" "m1_n2666_2389#"
+merge "INV_2_4/OUT" "Tr_Gate_0/IN" -255.801 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2530 -294 0 0 0 0 0 0 0 0
+merge "Tr_Gate_0/IN" "m1_138_580#"
+merge "Tr_Gate_1/CLK" "INV_2_0/IN" -1226.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11287 -738 0 0 0 0 0 0 0 0
+merge "INV_2_0/IN" "Tr_Gate_3/CLK"
+merge "Tr_Gate_3/CLK" "CLK"
+merge "Tr_Gate_1/OUT" "INV_2_3/IN" -848.619 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19487 -974 0 0 0 0 0 0 0 0
+merge "INV_2_3/IN" "Tr_Gate_0/OUT"
+merge "Tr_Gate_0/OUT" "m1_273_1091#"
+merge "Tr_Gate_3/IN" "INV_2_5/OUT" -536.144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3220 -324 0 0 0 0 0 0 0 0
+merge "INV_2_5/OUT" "m1_n3722_n11#"
+merge "Tr_Gate_2/IN" "D" -102.272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2116 -184 0 0 0 0 0 0 0 0
+merge "Tr_Gate_2/OUT" "Tr_Gate_3/OUT" -1000.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11979 -796 0 0 0 0 0 0 0 0
+merge "Tr_Gate_3/OUT" "INV_2_1/IN"
+merge "INV_2_1/IN" "m1_n3945_1070#"

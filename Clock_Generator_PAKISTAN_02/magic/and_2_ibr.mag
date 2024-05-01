@@ -1,9 +1,12 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1695109904
+timestamp 1714558529
 << nwell >>
 rect 823 1889 833 2007
+<< pwell >>
+rect 663 1396 891 1472
+rect 762 1278 890 1396
 << metal1 >>
 rect 430 1910 630 1970
 rect 823 1889 833 2007
@@ -14,14 +17,14 @@ rect 727 1450 984 1497
 rect 819 1159 828 1256
 rect 460 1020 620 1080
 rect 819 996 883 1159
-use nand2_ibr  nand2_ibr_0 ~/GF180Projects/Top_test/top/magic
-timestamp 1694669839
+use nand2_ibr  nand2_ibr_0
+timestamp 1714456178
 transform 1 0 327 0 1 1184
 box -70 -188 502 863
-use nverterlayout_ibr  nverterlayout_ibr_0 ~/GF180Projects/Top_test/top/magic
-timestamp 1695109904
+use nverterlayout_ibr  nverterlayout_ibr_0
+timestamp 1714558529
 transform 1 0 915 0 1 917
-box -88 220 316 1130
+box -88 220 316 1149
 << labels >>
 flabel metal1 535 1056 535 1056 0 FreeSans 480 0 0 0 VSS
 port 0 nsew
