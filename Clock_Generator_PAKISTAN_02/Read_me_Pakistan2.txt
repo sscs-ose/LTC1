@@ -40,7 +40,7 @@ Dividers:
 inside magic folder Top magic file for  
 From this file can go to down hierarchy  and each and every layout can be seen.
 
-Top Magic File:         "PLL_FINAL_MAG.mag" 
+Top Magic File:         "pll_4_mag.mag" 
 
 Here are the some of the major blocks file 
 
@@ -50,11 +50,11 @@ Muxes:
                     mux_4x1_ibr.mag
                     mux_8x1_ibr.mag
 Phase Detector:     PFD_layout.mag
-Charge Pump:        CP_mag.mag
+Charge Pump:        CP_mag_P2.mag
 Loof Filter:        LF_mag.mag
 Analog Muxes: 
                     a2x1_mux_mag.mag
-                    A_MUX_mag
+                    A_MUX_mag_P2
 
 VCO:                VCO_mag
 Dividers:

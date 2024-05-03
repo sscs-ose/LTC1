@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1714562775
+timestamp 1714651141
 << nwell >>
 rect -55208 23853 56994 26259
 rect 42596 16872 42621 16920
@@ -11699,19 +11699,19 @@ use a2x1mux_mag  a2x1mux_mag_0
 timestamp 1714554054
 transform 1 0 11521 0 1 -22420
 box -615 -1160 2414 924
-use A_MUX_mag  A_MUX_mag_0
-timestamp 1714138925
+use A_MUX_mag_P2  A_MUX_mag_P2_0
+timestamp 1714650590
 transform 1 0 10363 0 1 -20243
 box -285 -452 3979 2227
-use A_MUX_mag  A_MUX_mag_1
-timestamp 1714138925
+use A_MUX_mag_P2  A_MUX_mag_P2_1
+timestamp 1714650590
 transform 1 0 27205 0 1 -19948
 box -285 -452 3979 2227
-use CP_mag  CP_mag_0
+use CP_mag_P2  CP_mag_P2_0
 timestamp 1714559806
 transform 1 0 8022 0 1 -22735
 box 76 665 2629 1839
-use Current_Mirror_Top  Current_Mirror_Top_0
+use Current_Mirror_Top_P2  Current_Mirror_Top_P2_0
 timestamp 1714139039
 transform 1 0 51904 0 -1 -9894
 box -1992 -209 4486 7070
@@ -11771,17 +11771,17 @@ use pre_div_mag  pre_div_mag_0
 timestamp 1714558796
 transform 1 0 -6164 0 1 -8963
 box -638 -7578 10327 786
-use Tappered_Buffer  Tappered_Buffer_0
+use Tappered_Buffer_P2  Tappered_Buffer_P2_0
 timestamp 1714490790
 transform 1 0 50329 0 1 -1131
 box -161 -3147 5956 950
-use Tappered_Buffer  Tappered_Buffer_1
-timestamp 1714490790
-transform 1 0 -5513 0 1 -26185
-box -161 -3147 5956 950
-use Tappered_Buffer  Tappered_Buffer_2
+use Tappered_Buffer_P2  Tappered_Buffer_P2_1
 timestamp 1714490790
 transform 1 0 50366 0 1 -5883
+box -161 -3147 5956 950
+use Tappered_Buffer_P2  Tappered_Buffer_P2_2
+timestamp 1714490790
+transform 1 0 -5513 0 1 -26185
 box -161 -3147 5956 950
 use VCO_mag  VCO_mag_0
 timestamp 1714543819
