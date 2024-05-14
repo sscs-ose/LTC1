@@ -4,5 +4,5 @@ Team Leaders: Hafiz Azeem Abbas
 
     -  In this Folder you will find GDS file of Complete Chip of PAKISTAN Projects. 
     -  Including PAD RING, PAKISTAN2, PAKISTAN6 GDS files and TOP Level connections. 
-    -  DRC verified in KLAYOUT. 
+    -  DRC verified in KLAYOUT and MAGIC. 
      
