@@ -1,0 +1,136 @@
+* NGSPICE file created from TG_Layout.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_GGGST2 a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt pmos_3p3_MNVUAR w_n202_n230# a_28_n100# a_n28_n144# a_n116_n100#
+X0 a_28_n100# a_n28_n144# a_n116_n100# w_n202_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt Inverter_Layout IN OUT VSS VDD
+Xnmos_3p3_GGGST2_0 IN VSS OUT VSS nmos_3p3_GGGST2
+Xpmos_3p3_MNVUAR_0 VDD OUT IN VDD pmos_3p3_MNVUAR
+.ends
+
+.subckt pmos_3p3_QKQ23Q a_372_217# a_n748_n555# a_n748_n169# a_852_217# a_428_261#
++ a_52_n555# a_852_n555# a_852_n169# a_52_n169# a_108_n511# a_588_261# a_908_261#
++ a_108_n125# a_1068_261# a_908_n511# a_908_n125# a_n532_n511# a_n108_n555# a_n532_n125#
++ a_n108_n169# a_212_n555# a_n908_n555# a_212_n169# a_n908_n169# a_n1068_n555# a_n1068_n169#
++ a_268_n511# a_268_n125# a_1012_n555# a_n428_217# a_1012_n169# a_n212_261# a_1068_n511#
++ a_1068_n125# a_n588_217# a_n908_217# a_n372_261# a_n692_n511# a_n692_n125# a_n268_n555#
++ a_n1068_217# a_n268_n169# a_n852_261# a_372_n555# a_372_n169# a_n1228_n555# a_1172_n555#
++ a_n1228_n169# a_1172_n169# a_428_n511# a_532_217# a_428_n125# a_108_261# a_1012_217#
++ a_692_217# a_268_261# a_n1316_n511# a_1228_n511# a_1172_217# a_n1316_n125# a_1228_n125#
++ a_52_217# a_n52_n511# a_748_261# a_n852_n511# a_n52_n125# a_n852_n125# a_n428_n555#
++ a_n1316_261# a_1228_261# a_n428_n169# w_n1402_n641# a_532_n555# a_n1012_n511# a_532_n169#
++ a_n1012_n125# a_588_n511# a_588_n125# a_n212_n511# a_n108_217# a_n212_n125# a_n588_n555#
++ a_n588_n169# a_n268_217# a_692_n555# a_n1172_n511# a_692_n169# a_n748_217# a_n1172_n125#
++ a_n532_261# a_n1228_217# a_n692_261# a_748_n511# a_n1012_261# a_748_n125# a_n1172_261#
++ a_n372_n511# a_n52_261# a_212_217# a_n372_n125#
+X0 a_n52_n125# a_n108_n169# a_n212_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X1 a_1228_261# a_1172_217# a_1068_261# w_n1402_n641# pfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X2 a_n1012_n125# a_n1068_n169# a_n1172_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X3 a_n852_n125# a_n908_n169# a_n1012_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X4 a_n692_n511# a_n748_n555# a_n852_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X5 a_108_261# a_52_217# a_n52_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X6 a_908_n125# a_852_n169# a_748_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X7 a_748_n511# a_692_n555# a_588_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X8 a_268_261# a_212_217# a_108_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X9 a_588_n511# a_532_n555# a_428_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X10 a_n372_261# a_n428_217# a_n532_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X11 a_n852_261# a_n908_217# a_n1012_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X12 a_n692_n125# a_n748_n169# a_n852_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X13 a_n532_n511# a_n588_n555# a_n692_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X14 a_428_261# a_372_217# a_268_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X15 a_n372_n511# a_n428_n555# a_n532_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X16 a_908_261# a_852_217# a_748_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X17 a_n1012_261# a_n1068_217# a_n1172_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X18 a_748_n125# a_692_n169# a_588_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X19 a_n532_261# a_n588_217# a_n692_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X20 a_588_n125# a_532_n169# a_428_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X21 a_n1172_n511# a_n1228_n555# a_n1316_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X22 a_108_n511# a_52_n555# a_n52_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X23 a_428_n511# a_372_n555# a_268_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X24 a_268_n511# a_212_n555# a_108_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X25 a_1228_n511# a_1172_n555# a_1068_n511# w_n1402_n641# pfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X26 a_1068_n511# a_1012_n555# a_908_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X27 a_n532_n125# a_n588_n169# a_n692_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X28 a_n372_n125# a_n428_n169# a_n532_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X29 a_n212_n511# a_n268_n555# a_n372_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X30 a_n52_261# a_n108_217# a_n212_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X31 a_n52_n511# a_n108_n555# a_n212_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X32 a_n852_n511# a_n908_n555# a_n1012_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X33 a_n1172_n125# a_n1228_n169# a_n1316_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X34 a_108_n125# a_52_n169# a_n52_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X35 a_428_n125# a_372_n169# a_268_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X36 a_n1012_n511# a_n1068_n555# a_n1172_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X37 a_588_261# a_532_217# a_428_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X38 a_268_n125# a_212_n169# a_108_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X39 a_1228_n125# a_1172_n169# a_1068_n125# w_n1402_n641# pfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X40 a_n1172_261# a_n1228_217# a_n1316_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X41 a_1068_n125# a_1012_n169# a_908_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X42 a_908_n511# a_852_n555# a_748_n511# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X43 a_n692_261# a_n748_217# a_n852_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X44 a_n212_261# a_n268_217# a_n372_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X45 a_1068_261# a_1012_217# a_908_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X46 a_748_261# a_692_217# a_588_261# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X47 a_n212_n125# a_n268_n169# a_n372_n125# w_n1402_n641# pfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+.ends
+
+.subckt nmos_3p3_RZHRT2 a_372_217# a_52_n555# a_428_261# a_108_n511# a_52_n169# a_588_261#
++ a_n676_261# a_108_n125# a_n532_n511# a_n108_n555# a_n532_n125# a_n108_n169# a_212_n555#
++ a_212_n169# a_268_n511# a_268_n125# a_n428_217# a_n212_261# a_n372_261# a_n588_217#
++ a_n268_n555# a_n268_n169# a_372_n555# a_372_n169# a_428_n511# a_428_n125# a_108_261#
++ a_532_217# a_268_261# a_n52_n511# a_52_217# a_n428_n555# a_n52_n125# a_n428_n169#
++ a_532_n555# a_588_n511# a_532_n169# a_588_n125# a_n212_n511# a_n108_217# a_n588_n555#
++ a_n212_n125# a_n588_n169# a_n268_217# a_n676_n511# a_n532_261# a_n676_n125# a_n372_n511#
++ a_n52_261# a_n372_n125# a_212_217# VSUBS
+X0 a_108_261# a_52_217# a_n52_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X1 a_268_261# a_212_217# a_108_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X2 a_588_n511# a_532_n555# a_428_n511# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X3 a_n372_261# a_n428_217# a_n532_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X4 a_n532_n511# a_n588_n555# a_n676_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X5 a_428_261# a_372_217# a_268_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X6 a_n372_n511# a_n428_n555# a_n532_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X7 a_n532_261# a_n588_217# a_n676_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X8 a_588_n125# a_532_n169# a_428_n125# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X9 a_108_n511# a_52_n555# a_n52_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X10 a_428_n511# a_372_n555# a_268_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X11 a_268_n511# a_212_n555# a_108_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X12 a_n532_n125# a_n588_n169# a_n676_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.28u
+X13 a_n372_n125# a_n428_n169# a_n532_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X14 a_n212_n511# a_n268_n555# a_n372_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X15 a_n52_n511# a_n108_n555# a_n212_n511# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X16 a_n52_261# a_n108_217# a_n212_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X17 a_108_n125# a_52_n169# a_n52_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X18 a_428_n125# a_372_n169# a_268_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X19 a_588_261# a_532_217# a_428_261# VSUBS nfet_03v3 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.28u
+X20 a_268_n125# a_212_n169# a_108_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X21 a_n212_261# a_n268_217# a_n372_261# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X22 a_n212_n125# a_n268_n169# a_n372_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+X23 a_n52_n125# a_n108_n169# a_n212_n125# VSUBS nfet_03v3 ad=0.325p pd=1.77u as=0.325p ps=1.77u w=1.25u l=0.28u
+.ends
+
+.subckt TG_Layout CLK VIN VOUT VDD VSS
+XInverter_Layout_0 CLK Inverter_Layout_0/OUT VSS VDD Inverter_Layout
+Xpmos_3p3_QKQ23Q_0 Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT
++ Inverter_Layout_0/OUT VOUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT
++ Inverter_Layout_0/OUT VOUT VIN VIN VOUT VOUT VIN VIN VOUT Inverter_Layout_0/OUT
++ VOUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT
++ Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT VIN VIN Inverter_Layout_0/OUT
++ Inverter_Layout_0/OUT Inverter_Layout_0/OUT VOUT VOUT VOUT Inverter_Layout_0/OUT
++ Inverter_Layout_0/OUT VIN VIN VIN Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT
++ VOUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT
++ Inverter_Layout_0/OUT Inverter_Layout_0/OUT VOUT Inverter_Layout_0/OUT VOUT VOUT
++ Inverter_Layout_0/OUT Inverter_Layout_0/OUT VIN VIN VIN Inverter_Layout_0/OUT VIN
++ VIN Inverter_Layout_0/OUT VIN VOUT VOUT VIN VOUT Inverter_Layout_0/OUT VIN VIN Inverter_Layout_0/OUT
++ VDD Inverter_Layout_0/OUT VIN Inverter_Layout_0/OUT VIN VIN VIN VOUT Inverter_Layout_0/OUT
++ VOUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT
++ VOUT Inverter_Layout_0/OUT Inverter_Layout_0/OUT VOUT VOUT Inverter_Layout_0/OUT
++ VIN VOUT VIN VOUT VOUT VIN VIN Inverter_Layout_0/OUT VIN pmos_3p3_QKQ23Q
+Xnmos_3p3_RZHRT2_0 CLK CLK VOUT VOUT CLK VIN VIN VOUT VOUT CLK VOUT CLK CLK CLK VIN
++ VIN CLK VOUT VIN CLK CLK CLK CLK CLK VOUT VOUT VOUT CLK VIN VIN CLK CLK VIN CLK
++ CLK VIN CLK VIN VOUT CLK CLK VOUT CLK CLK VIN VOUT VIN VIN VIN VIN CLK VSS nmos_3p3_RZHRT2
+.ends
+

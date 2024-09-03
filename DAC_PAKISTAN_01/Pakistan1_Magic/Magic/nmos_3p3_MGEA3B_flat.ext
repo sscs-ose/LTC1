@@ -1,0 +1,980 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "B6" 9 1006 -5871 1006 -5871 m1
+port "B5" 8 -590 -5894 -590 -5894 m1
+port "B4" 7 -2211 -5869 -2211 -5869 m1
+port "B3" 6 -2324 -5010 -2324 -5010 m1
+port "B2" 5 -2331 -4136 -2331 -4136 m1
+port "B1" 4 -2277 -3266 -2277 -3266 m1
+port "OUT+" 15 3830 2291 3830 2291 m1
+port "OUT-" 14 4832 2302 4832 2302 m1
+port "ITAIL" 10 78 -55 78 -55 m1
+port "VDD" 3 -1936 -2934 -1936 -2934 m1
+port "VSS" 13 249 -2054 249 -2054 psc
+node "m1_n558_n5402#" 0 57.2378 -558 -5402 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6480 322 0 0 0 0 0 0 0 0
+node "Balance_Inverter_5.Inverter_0.OUT" 99 551.693 1313 -6056 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "Balance_Inverter_5.Inverter_0.IN" 150 1370.94 1198 -5906 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36977 1222 105287 3680 0 0 0 0 0 0
+equiv "Balance_Inverter_5.Inverter_0.IN" "Balance_Inverter_5.VIN"
+equiv "Balance_Inverter_5.Inverter_0.IN" "B6"
+node "Balance_Inverter_4.Inverter_0.OUT" 99 552.607 -296 -6056 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "Balance_Inverter_4.Inverter_0.IN" 150 1344.08 -411 -5906 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38733 1202 105287 3680 0 0 0 0 0 0
+equiv "Balance_Inverter_4.Inverter_0.IN" "Balance_Inverter_4.VIN"
+equiv "Balance_Inverter_4.Inverter_0.IN" "B5"
+node "Balance_Inverter_0.Inverter_0.OUT" 99 563.607 -1914 -6056 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "Balance_Inverter_0.Inverter_0.IN" 150 1489.5 -2029 -5906 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37379 1260 105287 3680 0 0 0 0 0 0
+equiv "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_0.VIN"
+equiv "Balance_Inverter_0.Inverter_0.IN" "B4"
+node "Balance_Inverter_1.Inverter_0.OUT" 99 549.995 -1914 -5188 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "Balance_Inverter_1.Inverter_0.IN" 150 1227.11 -2029 -5038 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41103 1366 105287 3680 0 0 0 0 0 0
+equiv "Balance_Inverter_1.Inverter_0.IN" "Balance_Inverter_1.VIN"
+equiv "Balance_Inverter_1.Inverter_0.IN" "B3"
+node "Balance_Inverter_2.Inverter_0.OUT" 99 549.488 -1914 -4329 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "Balance_Inverter_2.Inverter_0.IN" 150 1221.96 -2029 -4179 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43538 1384 105287 3680 0 0 0 0 0 0
+equiv "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_2.VIN"
+equiv "Balance_Inverter_2.Inverter_0.IN" "B2"
+node "Balance_Inverter_3.Inverter_0.OUT" 99 550.836 -1914 -3461 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "Balance_Inverter_3.Inverter_0.IN" 150 1124.01 -2029 -3311 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39488 1284 105287 3680 0 0 0 0 0 0
+equiv "Balance_Inverter_3.Inverter_0.IN" "Balance_Inverter_3.VIN"
+equiv "Balance_Inverter_3.Inverter_0.IN" "B1"
+node "Balance_Inverter_4.OUT" 988 6551.7 34 -6069 ndif 0 0 0 0 6064 328 6064 328 0 0 0 0 972928 22686 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136531 5164 202492 6882 112177 3560 0 0 0 0
+node "Balance_Inverter_4.OUT_B" 1028 7474.8 165 -4701 p 0 0 0 0 6064 328 6064 328 0 0 0 0 1126988 24976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103764 4230 52892 1816 116735 3594 0 0 0 0
+node "Balance_Inverter_5.OUT" 50 14060.3 1643 -6069 ndif 0 0 0 0 6064 328 6064 328 0 0 0 0 2029497 46488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98356 3660 488214 14256 253306 7892 0 0 0 0
+node "Balance_Inverter_5.OUT_B" 44 14184.7 1786 -5892 p 0 0 0 0 6064 328 6064 328 0 0 0 0 2033225 48194 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77880 3184 443679 13458 0 0 0 0 0 0
+node "Balance_Inverter_0.OUT" 838 5482.68 -1584 -6069 ndif 0 0 0 0 6064 328 6064 328 0 0 0 0 622255 16584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70681 2678 435132 13944 395871 12300 0 0 0 0
+node "a_228_68#" 7 52.901 228 68 ndif 0 0 0 0 12480 448 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5967 336 0 0 0 0 0 0 0 0
+node "a_n292_n258#" 94 1073.81 -292 -258 ndif 0 0 0 0 42240 1664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58715 2468 69025 2534 0 0 0 0 0 0
+node "a_n640_n258#" 93 565.715 -640 -258 ndif 0 0 0 0 49920 1792 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53730 2128 115498 4196 0 0 0 0 0 0
+node "a_n1584_n258#" 200 996.047 -1584 -258 ndif 0 0 0 0 99840 3584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103123 4200 229950 8274 0 0 0 0 0 0
+node "a_n1772_n258#" 418 2089.59 -1772 -258 ndif 0 0 0 0 184320 6912 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 359127 14272 271192 9636 116837 3404 0 0 0 0
+node "Balance_Inverter_0.OUT_B" 1112 8235.44 -1441 -5892 p 0 0 0 0 6064 328 6064 328 0 0 0 0 869445 22698 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52251 1988 304560 10246 402616 13656 0 0 0 0
+node "a_n104_68#" 100 1017.56 -104 68 ndif 0 0 0 0 46080 1728 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 139514 5324 50410 1984 177507 6412 0 0 0 0
+node "a_n828_n258#" 208 1486.92 -828 -258 ndif 0 0 0 0 92160 3456 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 151720 5908 394482 14112 25833 1008 0 0 0 0
+node "Balance_Inverter_2.OUT_B" 170 1763.2 -1441 -4165 p 0 0 0 0 6064 328 6064 328 0 0 0 0 119939 3062 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70104 2434 62708 2212 727153 21174 0 0 0 0
+node "Balance_Inverter_2.OUT" 295 2982.1 -1584 -4342 ndif 0 0 0 0 6064 328 6064 328 0 0 0 0 171892 5002 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87553 3032 222653 7300 552727 16710 0 0 0 0
+node "a_n1197_n1050#" 415 5405.14 -1197 -1050 ndif 0 0 0 0 199680 7168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 553551 20794 173256 6274 0 0 0 0 0 0
+node "a_40_68#" 46 896.441 40 68 ndif 0 0 0 0 23040 864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25900 1188 229183 8370 37399 1430 0 0 0 0
+node "a_n1772_n1050#" 1040 3765.09 -1772 -1050 ndif 0 0 0 0 401280 14848 0 0 0 0 0 0 122900 3258 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 769934 31158 430186 15500 149706 5398 0 0 0 0
+node "Balance_Inverter_1.OUT_B" 264 5145.29 -1441 -5024 p 0 0 0 0 6064 328 6064 328 0 0 0 0 239927 5440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61194 2240 60032 2154 1084737 34990 0 0 0 0
+node "Balance_Inverter_1.OUT" 397 3953.53 -1584 -5201 ndif 0 0 0 0 6064 328 6064 328 0 0 0 0 305961 7756 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70993 2478 90036 3092 978826 32180 0 0 0 0
+node "OUT+" 1426 18704.7 3830 2291 m1 0 0 0 0 1710816 66800 0 0 0 0 0 0 1206893 30354 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3029592 115168 1060802 38076 287708 10298 0 0 0 0
+node "Balance_Inverter_3.OUT_B" 169 1798.09 -1441 -3297 p 0 0 0 0 6064 328 6064 328 0 0 0 0 85004 2568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65067 2298 60405 2162 711517 21036 0 0 0 0
+node "OUT-" 1443 20587.2 4832 2302 m1 0 0 0 0 1612704 63536 0 0 0 0 0 0 1196099 30420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3244058 123102 1245913 45194 96169 3582 0 0 0 0
+node "a_n1197_n1791#" 832 6052.54 -1197 -1791 ndif 0 0 0 0 399360 14336 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 965160 38306 0 0 0 0 0 0 0 0
+node "Balance_Inverter_3.OUT" 188 2092.37 -1584 -3474 ndif 0 0 0 0 6064 328 6064 328 0 0 0 0 99510 2980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79202 2518 105806 3256 887388 20550 0 0 0 0
+node "a_n1480_n399#" 31 21894.2 -1480 -399 p 0 0 0 0 12480 448 0 0 0 0 0 0 2557797 73332 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214353 7242 0 0 0 0 0 0 0 0
+node "a_n1772_n1791#" 1992 6689.2 -1772 -1791 ndif 0 0 0 0 802560 29696 0 0 0 0 0 0 215000 5100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1170095 45810 790977 28316 186744 6756 0 0 0 0
+node "ITAIL" 27 19275.2 78 -55 m1 0 0 0 0 10560 416 0 0 0 0 0 0 2549169 71436 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74992 2310 0 0 0 0 0 0 0 0
+node "Balance_Inverter_3.Inverter_0.VDD" 49436 18224.2 -2144 -5906 nw 3132552 25092 0 0 487692 14568 125568 6192 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1293953 27662 234204 5814 0 0 0 0 0 0
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_3.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_2.Inverter_0.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_2.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.Inverter_0.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_5.Inverter_0.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_5.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_4.Inverter_0.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_4.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.Inverter_0.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.VDD"
+equiv "Balance_Inverter_3.Inverter_0.VDD" "VDD"
+substrate "Balance_Inverter_3.Inverter_0.VSS" 0 0 -2118 -6264 ppd 0 0 0 0 543792 21776 5307695 115984 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8538491 159690 478556 15860 0 0 0 0 0 0
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.Inverter_0.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.Inverter_0.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.Inverter_0.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.Inverter_0.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.Inverter_0.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.VSS"
+equiv "Balance_Inverter_3.Inverter_0.VSS" "VSS"
+cap "a_n1772_n258#" "Balance_Inverter_0.OUT_B" 220.379
+cap "a_n1197_n1791#" "a_n1772_n1791#" 3744.5
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_4.Inverter_0.IN" 0.1575
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_2.OUT" 11.8783
+cap "a_n640_n258#" "a_n1772_n1791#" 3.75447
+cap "a_n1772_n1050#" "Balance_Inverter_0.OUT" 0.63504
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_2.OUT" 615.724
+cap "a_n1772_n258#" "OUT-" 808.908
+cap "a_n828_n258#" "a_40_68#" 132.316
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_0.Inverter_0.OUT" 219.358
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_1.OUT_B" 6479.4
+cap "a_n1772_n1791#" "OUT+" 5079.43
+cap "Balance_Inverter_3.OUT_B" "Balance_Inverter_1.OUT_B" 1.18059
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.Inverter_0.OUT" 140.095
+cap "Balance_Inverter_2.Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.VDD" 153.515
+cap "a_228_68#" "a_n1480_n399#" 43.5915
+cap "Balance_Inverter_2.Inverter_0.IN" "OUT+" 6.90202
+cap "a_n1772_n258#" "Balance_Inverter_1.OUT" 13.7837
+cap "a_n1772_n258#" "Balance_Inverter_3.OUT_B" 51.079
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_1.Inverter_0.IN" 1.48516
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_4.OUT_B" 7.53077
+cap "Balance_Inverter_1.Inverter_0.IN" "Balance_Inverter_1.Inverter_0.OUT" 157.652
+cap "a_n1197_n1791#" "OUT-" 0.115683
+cap "a_n1772_n258#" "a_n104_68#" 848.997
+cap "a_n1197_n1050#" "a_n1772_n1791#" 45.807
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_3.Inverter_0.IN" 32.5211
+cap "Balance_Inverter_0.OUT_B" "OUT+" 1115.51
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_1.OUT_B" 0.729595
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_3.Inverter_0.VDD" 345.085
+cap "m1_n558_n5402#" "Balance_Inverter_0.OUT" 0.129998
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_5.Inverter_0.OUT" 0.347841
+cap "a_n828_n258#" "Balance_Inverter_1.OUT_B" 111.237
+cap "m1_n558_n5402#" "Balance_Inverter_3.Inverter_0.VDD" 56.8035
+cap "OUT-" "OUT+" 15873.3
+cap "a_n1197_n1791#" "Balance_Inverter_3.OUT_B" 144.049
+cap "a_n1197_n1791#" "Balance_Inverter_1.OUT" 87.0077
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_4.Inverter_0.IN" 158.866
+cap "a_n640_n258#" "Balance_Inverter_3.OUT_B" 8.51335
+cap "a_n1772_n1791#" "Balance_Inverter_3.OUT" 216.608
+cap "a_n1197_n1791#" "a_n104_68#" 0.0401138
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_0.OUT_B" 201.37
+cap "Balance_Inverter_5.OUT_B" "a_n1772_n1791#" 1370.81
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_3.OUT" 0.739442
+cap "a_n1772_n258#" "a_n828_n258#" 955.716
+cap "a_n1197_n1050#" "Balance_Inverter_0.OUT_B" 1.3366
+cap "a_228_68#" "a_40_68#" 36.9862
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_5.Inverter_0.IN" 46.3843
+cap "Balance_Inverter_1.OUT_B" "Balance_Inverter_1.Inverter_0.IN" 333.059
+cap "a_n640_n258#" "a_n104_68#" 281.562
+cap "a_n1772_n1791#" "Balance_Inverter_4.OUT" 7.60094
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.VDD" 1220.08
+cap "a_n292_n258#" "a_n1772_n1791#" 2.52223
+cap "Balance_Inverter_1.OUT" "OUT+" 366.888
+cap "Balance_Inverter_3.OUT_B" "OUT+" 270.352
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_4.OUT" 0.482443
+cap "OUT-" "Balance_Inverter_3.Inverter_0.IN" 0.335018
+cap "Balance_Inverter_4.OUT_B" "a_n1480_n399#" 29.7966
+cap "a_40_68#" "a_n1480_n399#" 84.7812
+cap "a_n1197_n1050#" "OUT-" 5.12724
+cap "Balance_Inverter_5.Inverter_0.OUT" "Balance_Inverter_5.Inverter_0.IN" 157.652
+cap "a_n104_68#" "OUT+" 791.121
+cap "Balance_Inverter_4.Inverter_0.IN" "Balance_Inverter_5.Inverter_0.IN" 37.4797
+cap "Balance_Inverter_5.OUT" "a_n1772_n1791#" 1332.81
+cap "Balance_Inverter_5.OUT_B" "Balance_Inverter_0.OUT_B" 216.569
+cap "ITAIL" "a_n1772_n1791#" 842.796
+cap "Balance_Inverter_3.OUT_B" "Balance_Inverter_3.Inverter_0.IN" 188.549
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_3.Inverter_0.IN" 74.7664
+cap "Balance_Inverter_1.OUT" "a_n1197_n1050#" 1.78045
+cap "a_n1197_n1050#" "Balance_Inverter_3.OUT_B" 34.3061
+cap "Balance_Inverter_4.OUT" "Balance_Inverter_0.OUT_B" 154.054
+cap "a_n640_n258#" "a_n828_n258#" 373.328
+cap "OUT-" "Balance_Inverter_3.OUT" 227.899
+cap "Balance_Inverter_5.OUT_B" "OUT-" 2619.93
+cap "a_n104_68#" "a_n1197_n1050#" 113.518
+cap "Balance_Inverter_4.OUT" "OUT-" 2154.48
+cap "a_n1772_n1791#" "Balance_Inverter_2.OUT" 53.2958
+cap "Balance_Inverter_1.OUT_B" "a_n1480_n399#" 0.454696
+cap "a_n828_n258#" "OUT+" 1392.92
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_2.OUT" 76.7913
+cap "a_n1772_n1050#" "a_n1772_n1791#" 1777.34
+cap "a_n1772_n1050#" "Balance_Inverter_2.Inverter_0.IN" 0.194439
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_0.OUT_B" 192.055
+cap "ITAIL" "Balance_Inverter_0.OUT_B" 2.09862
+cap "Balance_Inverter_3.OUT_B" "Balance_Inverter_3.OUT" 3363.01
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_3.OUT" 1662.19
+cap "a_n1772_n258#" "a_n1480_n399#" 538.434
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_2.Inverter_0.OUT" 157.652
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.IN" 157.652
+cap "Balance_Inverter_5.OUT" "OUT-" 3422.18
+cap "ITAIL" "OUT-" 5.38931
+cap "a_n1772_n1791#" "a_n1584_n258#" 25.9659
+cap "Balance_Inverter_4.Inverter_0.OUT" "OUT+" 0.0319904
+cap "Balance_Inverter_3.OUT_B" "a_n292_n258#" 0.333844
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_4.OUT" 0.027905
+cap "a_n828_n258#" "a_n1197_n1050#" 394.617
+cap "Balance_Inverter_2.OUT" "Balance_Inverter_0.OUT_B" 60.0508
+cap "a_n1772_n1050#" "Balance_Inverter_0.OUT_B" 8.4819
+cap "a_n104_68#" "a_n292_n258#" 160.792
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_5.Inverter_0.OUT" 13.2126
+cap "ITAIL" "Balance_Inverter_3.OUT_B" 95.1681
+cap "Balance_Inverter_2.OUT_B" "a_n1772_n1791#" 253.077
+cap "Balance_Inverter_0.OUT_B" "Balance_Inverter_0.Inverter_0.OUT" 5.16951
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_1.Inverter_0.IN" 32.5152
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_4.Inverter_0.IN" 169.044
+cap "Balance_Inverter_2.OUT" "OUT-" 454.592
+cap "Balance_Inverter_1.OUT" "ITAIL" 31.7552
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_3.OUT" 219.581
+cap "a_n1772_n1050#" "OUT-" 2127.96
+cap "a_n1197_n1791#" "a_n1480_n399#" 1131.38
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_4.Inverter_0.OUT" 1.21845
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_2.Inverter_0.IN" 188.603
+cap "a_n104_68#" "ITAIL" 155.944
+cap "a_n828_n258#" "Balance_Inverter_3.OUT" 2.24038
+cap "a_n640_n258#" "a_n1480_n399#" 161.937
+cap "Balance_Inverter_1.OUT_B" "a_40_68#" 1.25332
+cap "Balance_Inverter_5.Inverter_0.IN" "OUT+" 0.152714
+cap "Balance_Inverter_5.Inverter_0.OUT" "Balance_Inverter_4.Inverter_0.IN" 1.23824
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_1.OUT_B" 15.5206
+cap "Balance_Inverter_1.OUT_B" "Balance_Inverter_1.Inverter_0.OUT" 26.7351
+cap "a_n828_n258#" "a_n292_n258#" 400.939
+cap "a_n1584_n258#" "OUT-" 1.35429
+cap "OUT+" "a_n1480_n399#" 57.182
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_2.OUT" 70.8847
+cap "Balance_Inverter_3.OUT_B" "Balance_Inverter_2.OUT" 60.5659
+cap "a_n1772_n1050#" "Balance_Inverter_3.OUT_B" 86.3963
+cap "a_n1772_n1050#" "Balance_Inverter_1.OUT" 36.7705
+cap "a_n1772_n258#" "a_40_68#" 1024.26
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_0.OUT_B" 32.9996
+cap "Balance_Inverter_0.OUT" "a_n1772_n1791#" 192.23
+cap "a_n104_68#" "Balance_Inverter_2.OUT" 945.633
+cap "a_n104_68#" "a_n1772_n1050#" 22.3754
+cap "Balance_Inverter_3.Inverter_0.VDD" "a_n1772_n1791#" 16.8687
+cap "Balance_Inverter_4.OUT" "Balance_Inverter_1.Inverter_0.IN" 0.107292
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_2.Inverter_0.OUT" 18.0522
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_3.Inverter_0.VDD" 374.589
+cap "m1_n558_n5402#" "Balance_Inverter_0.OUT_B" 17.4674
+cap "a_n828_n258#" "ITAIL" 148.428
+cap "Balance_Inverter_3.OUT_B" "a_n1584_n258#" 56.023
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_4.OUT" 219.358
+cap "Balance_Inverter_2.OUT_B" "OUT-" 410.017
+cap "Balance_Inverter_1.OUT" "a_n1584_n258#" 5.24498
+cap "a_n1480_n399#" "Balance_Inverter_3.Inverter_0.IN" 0.00932657
+cap "a_n1197_n1050#" "a_n1480_n399#" 1119.42
+cap "a_n104_68#" "a_n1584_n258#" 366.574
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_2.OUT" 3.0149
+cap "a_n1197_n1791#" "a_40_68#" 0.223725
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_0.OUT_B" 4867.8
+cap "a_n828_n258#" "Balance_Inverter_2.OUT" 97.1887
+cap "a_n1772_n1050#" "a_n828_n258#" 179.645
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_1.OUT" 73.5626
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_3.OUT_B" 1488.08
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.OUT_B" 433.506
+cap "a_n640_n258#" "a_40_68#" 3.68175
+cap "Balance_Inverter_5.OUT_B" "Balance_Inverter_5.Inverter_0.IN" 209.101
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_2.Inverter_0.OUT" 4.36927
+cap "Balance_Inverter_0.OUT" "OUT-" 1527.51
+cap "a_n104_68#" "Balance_Inverter_2.OUT_B" 78.4967
+cap "a_n1480_n399#" "Balance_Inverter_3.OUT" 70.585
+cap "Balance_Inverter_1.OUT" "m1_n558_n5402#" 5.86707
+cap "Balance_Inverter_4.OUT" "Balance_Inverter_5.Inverter_0.IN" 13.3972
+cap "Balance_Inverter_3.Inverter_0.VDD" "OUT-" 8.56901
+cap "Balance_Inverter_5.OUT_B" "a_n1480_n399#" 0.0427725
+cap "a_40_68#" "OUT+" 184.777
+cap "Balance_Inverter_4.OUT_B" "OUT+" 1387.31
+cap "a_n828_n258#" "a_n1584_n258#" 182.059
+cap "a_n292_n258#" "a_n1480_n399#" 97.9495
+cap "Balance_Inverter_2.Inverter_0.OUT" "Balance_Inverter_1.Inverter_0.IN" 0.0545263
+cap "Balance_Inverter_5.Inverter_0.OUT" "OUT+" 0.0039298
+cap "Balance_Inverter_0.Inverter_0.OUT" "Balance_Inverter_1.Inverter_0.IN" 2.98803
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_5.Inverter_0.IN" 74.1591
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_0.OUT" 1.42433
+cap "a_n1197_n1791#" "Balance_Inverter_1.OUT_B" 21.3234
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_0.Inverter_0.OUT" 0.345665
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_2.OUT_B" 0.916134
+cap "ITAIL" "a_228_68#" 9.92455
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_3.Inverter_0.VDD" 803.699
+cap "Balance_Inverter_3.OUT_B" "Balance_Inverter_3.Inverter_0.VDD" 340.77
+cap "a_n1197_n1050#" "a_40_68#" 172.971
+cap "a_n104_68#" "Balance_Inverter_0.OUT" 5.77274
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_3.Inverter_0.IN" 1.45603
+cap "Balance_Inverter_2.OUT_B" "a_n828_n258#" 51.2643
+cap "ITAIL" "a_n1480_n399#" 5263.07
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_1.Inverter_0.OUT" 0.0536719
+cap "a_n1772_n258#" "a_n1197_n1791#" 3.09298
+cap "a_228_68#" "Balance_Inverter_2.OUT" 1.22355
+cap "Balance_Inverter_1.OUT_B" "OUT+" 289.078
+cap "a_n640_n258#" "a_n1772_n258#" 3.48345
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_4.Inverter_0.IN" 33.1006
+cap "Balance_Inverter_2.OUT" "a_n1480_n399#" 104.909
+cap "a_n1772_n1050#" "a_n1480_n399#" 675.762
+cap "a_40_68#" "Balance_Inverter_3.OUT" 31.8853
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.VDD" 154.436
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_3.OUT" 0.0868937
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_5.OUT_B" 4.79113
+cap "a_n828_n258#" "Balance_Inverter_0.OUT" 99.1411
+cap "a_n1772_n258#" "OUT+" 843.748
+cap "a_228_68#" "a_n1584_n258#" 17.4756
+cap "a_n292_n258#" "a_40_68#" 4.62397
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_4.OUT" 1924.88
+cap "a_n1197_n1050#" "Balance_Inverter_1.OUT_B" 0.295847
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_1.OUT_B" 6.07197
+cap "Balance_Inverter_1.OUT_B" "Balance_Inverter_3.Inverter_0.IN" 22.5128
+cap "a_n1584_n258#" "a_n1480_n399#" 245.293
+cap "Balance_Inverter_5.Inverter_0.OUT" "Balance_Inverter_5.OUT_B" 4.4514
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_1.Inverter_0.IN" 138.459
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_0.OUT" 8.97054
+cap "Balance_Inverter_5.Inverter_0.OUT" "Balance_Inverter_4.OUT" 5.36696
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.Inverter_0.IN" 390.245
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.VDD" 140.244
+cap "a_n1772_n258#" "a_n1197_n1050#" 355.649
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_4.OUT_B" 1.89771
+cap "ITAIL" "a_40_68#" 145.872
+cap "a_n1197_n1791#" "OUT+" 11.9992
+cap "Balance_Inverter_4.Inverter_0.IN" "Balance_Inverter_4.OUT" 87.3959
+cap "Balance_Inverter_2.OUT_B" "a_n1480_n399#" 81.5617
+cap "Balance_Inverter_1.OUT_B" "Balance_Inverter_3.OUT" 1.68572
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_5.Inverter_0.OUT" 219.962
+cap "a_n1772_n1791#" "Balance_Inverter_0.OUT_B" 244.215
+cap "Balance_Inverter_4.OUT" "Balance_Inverter_1.OUT_B" 0.452322
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_2.OUT" 17.3477
+cap "Balance_Inverter_2.OUT" "a_40_68#" 80.2403
+cap "a_n1772_n258#" "Balance_Inverter_5.OUT_B" 1.10303
+cap "a_n1772_n258#" "Balance_Inverter_3.OUT" 76.3907
+cap "a_n1772_n1050#" "a_40_68#" 22.7374
+cap "a_n1197_n1791#" "a_n1197_n1050#" 1378.34
+cap "a_n1772_n1050#" "Balance_Inverter_4.OUT_B" 1581.36
+cap "a_n1772_n1791#" "OUT-" 6409.13
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_5.Inverter_0.IN" 48.9931
+cap "a_n1772_n258#" "a_n292_n258#" 2.29384
+cap "Balance_Inverter_2.Inverter_0.IN" "OUT-" 0.0101029
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_5.Inverter_0.IN" 284.36
+cap "a_n640_n258#" "a_n1197_n1050#" 4.47055
+cap "Balance_Inverter_0.Inverter_0.OUT" "Balance_Inverter_1.Inverter_0.OUT" 4.36927
+cap "Balance_Inverter_2.Inverter_0.OUT" "Balance_Inverter_1.Inverter_0.OUT" 4.42365
+cap "Balance_Inverter_0.OUT" "a_n1480_n399#" 0.152801
+cap "ITAIL" "Balance_Inverter_1.OUT_B" 4.66179
+cap "a_n1584_n258#" "a_40_68#" 548.277
+cap "a_n1772_n1050#" "Balance_Inverter_5.Inverter_0.OUT" 0.070862
+cap "Balance_Inverter_3.Inverter_0.VDD" "a_n1480_n399#" 1.30106
+cap "a_n1197_n1050#" "OUT+" 9.88109
+cap "a_n1197_n1791#" "Balance_Inverter_3.OUT" 130.554
+cap "Balance_Inverter_3.OUT_B" "a_n1772_n1791#" 197.155
+cap "a_n1772_n258#" "ITAIL" 476.338
+cap "Balance_Inverter_1.OUT" "a_n1772_n1791#" 190.321
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_2.Inverter_0.IN" 243.753
+cap "Balance_Inverter_4.Inverter_0.IN" "Balance_Inverter_0.Inverter_0.OUT" 0.809374
+cap "OUT-" "Balance_Inverter_0.OUT_B" 1319.46
+cap "a_n640_n258#" "Balance_Inverter_3.OUT" 0.427859
+cap "Balance_Inverter_2.OUT" "Balance_Inverter_1.OUT_B" 3.25267
+cap "a_n104_68#" "a_n1772_n1791#" 0.0159052
+cap "Balance_Inverter_2.OUT_B" "a_40_68#" 110.872
+cap "a_n1772_n1050#" "Balance_Inverter_1.OUT_B" 0.386641
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_4.OUT_B" 11.6863
+cap "a_n640_n258#" "a_n292_n258#" 461.034
+cap "OUT+" "Balance_Inverter_3.OUT" 62.6051
+cap "Balance_Inverter_1.OUT_B" "Balance_Inverter_0.Inverter_0.OUT" 3.78391
+cap "m1_n558_n5402#" "Balance_Inverter_4.OUT_B" 0.0268367
+cap "a_n1772_n258#" "Balance_Inverter_2.OUT" 148.518
+cap "Balance_Inverter_2.Inverter_0.OUT" "Balance_Inverter_1.OUT_B" 0.852721
+cap "Balance_Inverter_5.OUT_B" "OUT+" 2514.97
+cap "a_n1772_n258#" "a_n1772_n1050#" 862.366
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_0.OUT_B" 98.3147
+cap "Balance_Inverter_3.OUT_B" "Balance_Inverter_0.OUT_B" 1.20864
+cap "Balance_Inverter_4.OUT" "OUT+" 1341.28
+cap "a_n1197_n1791#" "ITAIL" 1388.98
+cap "Balance_Inverter_3.Inverter_0.OUT" "a_n1772_n1791#" 0.451854
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_2.Inverter_0.IN" 0.0536719
+cap "a_n640_n258#" "ITAIL" 124.11
+cap "a_n104_68#" "Balance_Inverter_0.OUT_B" 106.551
+cap "a_n828_n258#" "a_n1772_n1791#" 4.05345
+cap "Balance_Inverter_3.OUT_B" "OUT-" 207.629
+cap "Balance_Inverter_1.OUT" "OUT-" 431.36
+cap "a_n1772_n258#" "a_n1584_n258#" 1046.96
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_4.OUT_B" 44.0732
+cap "Balance_Inverter_3.OUT" "Balance_Inverter_3.Inverter_0.IN" 82.6337
+cap "a_n1197_n1050#" "Balance_Inverter_3.OUT" 22.078
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_1.Inverter_0.OUT" 2.54759
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_3.Inverter_0.VDD" 379.965
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.Inverter_0.OUT" 152.862
+cap "Balance_Inverter_5.OUT" "OUT+" 2795.8
+cap "ITAIL" "OUT+" 14.5725
+cap "a_n104_68#" "OUT-" 441.627
+cap "a_n1197_n1791#" "Balance_Inverter_2.OUT" 34.6013
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_1.OUT_B" 10.3645
+cap "a_n1197_n1791#" "a_n1772_n1050#" 2569.92
+cap "a_n1197_n1050#" "a_n292_n258#" 2.40085
+cap "a_n640_n258#" "Balance_Inverter_2.OUT" 44.111
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_5.Inverter_0.OUT" 8.31962
+cap "a_n640_n258#" "a_n1772_n1050#" 0.140681
+cap "m1_n558_n5402#" "Balance_Inverter_1.OUT_B" 1.33748
+cap "Balance_Inverter_5.Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.VDD" 140.278
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_1.Inverter_0.IN" 33.0454
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_3.OUT_B" 63.8948
+cap "a_n1772_n258#" "Balance_Inverter_2.OUT_B" 40.494
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_4.Inverter_0.IN" 55.8325
+cap "a_n828_n258#" "Balance_Inverter_0.OUT_B" 57.3928
+cap "Balance_Inverter_4.Inverter_0.IN" "Balance_Inverter_3.Inverter_0.VDD" 281.895
+cap "a_n104_68#" "Balance_Inverter_3.OUT_B" 0.755778
+cap "Balance_Inverter_2.OUT" "OUT+" 715.684
+cap "a_n1197_n1791#" "a_n1584_n258#" 0.154641
+cap "Balance_Inverter_3.Inverter_0.OUT" "OUT-" 0.00425801
+cap "a_n104_68#" "Balance_Inverter_1.OUT" 0.0420383
+cap "a_n1772_n1050#" "OUT+" 1541.63
+cap "a_n1197_n1050#" "ITAIL" 799.595
+cap "a_n292_n258#" "Balance_Inverter_3.OUT" 0.219836
+cap "a_n640_n258#" "a_n1584_n258#" 309.736
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_1.OUT_B" 17.7145
+cap "a_n828_n258#" "OUT-" 633.378
+cap "Balance_Inverter_5.OUT_B" "Balance_Inverter_4.OUT" 48.1806
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.OUT_B" 526.407
+cap "Balance_Inverter_0.OUT_B" "Balance_Inverter_1.Inverter_0.IN" 14.3505
+cap "Balance_Inverter_2.Inverter_0.OUT" "OUT+" 0.00309365
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_0.OUT_B" 12.8854
+cap "a_n1197_n1791#" "Balance_Inverter_2.OUT_B" 70.3896
+cap "a_n1584_n258#" "OUT+" 0.931435
+cap "Balance_Inverter_2.OUT" "Balance_Inverter_3.Inverter_0.IN" 160.107
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_1.OUT" 11.1003
+cap "Balance_Inverter_3.Inverter_0.OUT" "Balance_Inverter_3.OUT_B" 4.96607
+cap "a_n1197_n1050#" "Balance_Inverter_2.OUT" 133.563
+cap "a_n1772_n1791#" "Balance_Inverter_5.Inverter_0.IN" 0.214573
+cap "OUT-" "Balance_Inverter_1.Inverter_0.IN" 0.122546
+cap "a_n1772_n258#" "Balance_Inverter_0.OUT" 281.574
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_5.OUT_B" 3113.65
+cap "a_n1772_n1050#" "a_n1197_n1050#" 2136.68
+cap "ITAIL" "Balance_Inverter_3.OUT" 109.112
+cap "a_n640_n258#" "Balance_Inverter_2.OUT_B" 50.8333
+cap "Balance_Inverter_4.Inverter_0.OUT" "OUT-" 1.35971
+cap "a_n828_n258#" "Balance_Inverter_1.OUT" 128.662
+cap "a_n828_n258#" "Balance_Inverter_3.OUT_B" 28.2534
+cap "a_n1772_n1791#" "a_n1480_n399#" 584.638
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_4.OUT" 11.1802
+cap "Balance_Inverter_2.Inverter_0.OUT" "Balance_Inverter_3.Inverter_0.IN" 2.98803
+cap "a_n104_68#" "a_n828_n258#" 150.751
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_0.Inverter_0.OUT" 157.652
+cap "ITAIL" "a_n292_n258#" 65.572
+cap "Balance_Inverter_2.OUT_B" "OUT+" 354.441
+cap "a_n1197_n1050#" "a_n1584_n258#" 26.3541
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_1.Inverter_0.IN" 89.8391
+cap "Balance_Inverter_2.OUT" "Balance_Inverter_3.OUT" 40.9788
+cap "Balance_Inverter_5.Inverter_0.IN" "Balance_Inverter_0.OUT_B" 0.0933577
+cap "a_n1197_n1791#" "Balance_Inverter_3.Inverter_0.VDD" 5.462
+cap "a_n1772_n1050#" "Balance_Inverter_3.OUT" 121.4
+cap "Balance_Inverter_0.OUT_B" "a_n1480_n399#" 0.300652
+cap "a_n292_n258#" "Balance_Inverter_2.OUT" 42.519
+cap "Balance_Inverter_4.OUT" "Balance_Inverter_2.OUT" 5.35211
+cap "a_n1772_n1050#" "a_n292_n258#" 0.172683
+cap "Balance_Inverter_5.Inverter_0.IN" "OUT-" 1.32176
+cap "a_n1772_n1050#" "Balance_Inverter_4.OUT" 1479.89
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_3.Inverter_0.IN" 4.32971
+cap "Balance_Inverter_2.OUT_B" "a_n1197_n1050#" 70.2237
+cap "a_n1584_n258#" "Balance_Inverter_3.OUT" 77.9995
+cap "OUT-" "a_n1480_n399#" 51.0014
+cap "Balance_Inverter_0.OUT" "OUT+" 1297.38
+cap "Balance_Inverter_3.Inverter_0.VDD" "OUT+" 4.48246
+cap "ITAIL" "Balance_Inverter_2.OUT" 68.126
+cap "a_n292_n258#" "a_n1584_n258#" 44.2023
+cap "a_n1772_n1050#" "ITAIL" 867.594
+cap "Balance_Inverter_4.OUT_B" "a_n1772_n1791#" 12.431
+cap "a_n1772_n1791#" "a_40_68#" 6.43505
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_1.Inverter_0.OUT" 3.0706
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_4.OUT_B" 0.00651741
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_3.OUT" 10.1124
+cap "Balance_Inverter_1.OUT" "a_n1480_n399#" 7.99025
+cap "Balance_Inverter_3.OUT_B" "a_n1480_n399#" 118.293
+cap "a_n104_68#" "a_228_68#" 2.34458
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_0.OUT" 68.7857
+cap "Balance_Inverter_0.OUT" "a_n1197_n1050#" 1.61124
+cap "ITAIL" "a_n1584_n258#" 267.388
+cap "Balance_Inverter_0.Inverter_0.IN" "Balance_Inverter_3.Inverter_0.VDD" 289.571
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_3.Inverter_0.IN" 410.569
+cap "Balance_Inverter_2.OUT_B" "a_n292_n258#" 3.29922
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_4.OUT" 4.044
+cap "a_n1772_n1050#" "Balance_Inverter_2.OUT" 303.995
+cap "a_n104_68#" "a_n1480_n399#" 87.1535
+cap "m1_n558_n5402#" "Balance_Inverter_4.OUT" 0.0126701
+cap "a_40_68#" "Balance_Inverter_0.OUT_B" 0.962517
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_0.OUT_B" 109.643
+cap "Balance_Inverter_2.Inverter_0.OUT" "Balance_Inverter_2.OUT" 219.358
+cap "Balance_Inverter_0.OUT_B" "Balance_Inverter_1.Inverter_0.OUT" 0.107331
+cap "Balance_Inverter_2.OUT_B" "ITAIL" 86.7521
+cap "Balance_Inverter_2.OUT" "a_n1584_n258#" 41.3306
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_5.OUT_B" 281.072
+cap "a_n1772_n1050#" "a_n1584_n258#" 40.9647
+cap "a_40_68#" "OUT-" 259.305
+cap "a_n1772_n1791#" "Balance_Inverter_1.OUT_B" 33.8954
+cap "Balance_Inverter_5.OUT_B" "Balance_Inverter_3.Inverter_0.VDD" 315.959
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_3.OUT" 672.885
+cap "Balance_Inverter_2.Inverter_0.IN" "Balance_Inverter_1.OUT_B" 21.4826
+cap "Balance_Inverter_4.OUT_B" "OUT-" 1250.87
+cap "Balance_Inverter_5.Inverter_0.OUT" "Balance_Inverter_0.OUT_B" 0.127198
+cap "Balance_Inverter_0.OUT" "Balance_Inverter_4.OUT" 473.262
+cap "a_n828_n258#" "a_n1480_n399#" 159.649
+cap "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_4.OUT" 753.791
+cap "Balance_Inverter_4.Inverter_0.IN" "Balance_Inverter_0.OUT_B" 99.7723
+cap "a_n1772_n258#" "a_n1772_n1791#" 122.633
+cap "Balance_Inverter_5.Inverter_0.OUT" "OUT-" 0.236481
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_2.OUT" 2727.86
+cap "Balance_Inverter_2.OUT_B" "a_n1772_n1050#" 471.763
+cap "Balance_Inverter_4.Inverter_0.OUT" "Balance_Inverter_5.Inverter_0.IN" 0.82406
+cap "Balance_Inverter_1.OUT" "a_40_68#" 1.76826
+cap "Balance_Inverter_4.Inverter_0.IN" "OUT-" 0.0265431
+cap "Balance_Inverter_4.OUT_B" "Balance_Inverter_3.OUT_B" 0.33636
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_0.OUT" 755.009
+cap "Balance_Inverter_3.OUT_B" "a_40_68#" 37.4039
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_4.OUT_B" 9.72729
+cap "Balance_Inverter_1.OUT" "Balance_Inverter_1.Inverter_0.OUT" 226.574
+cap "Balance_Inverter_1.OUT_B" "Balance_Inverter_0.OUT_B" 53.4253
+cap "ITAIL" "Balance_Inverter_3.Inverter_0.VDD" 0.525771
+cap "Balance_Inverter_5.OUT" "Balance_Inverter_3.Inverter_0.VDD" 566.73
+cap "Balance_Inverter_2.OUT_B" "Balance_Inverter_2.Inverter_0.OUT" 5.08303
+cap "a_n104_68#" "a_40_68#" 208.711
+cap "Balance_Inverter_2.OUT_B" "a_n1584_n258#" 35.5807
+cap "Balance_Inverter_1.OUT_B" "OUT-" 249.541
+device msubckt nfet_03v3 5961 -6183 5962 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 5757 -6183 5758 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5425 -6183 5426 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 5221 -6183 5222 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 5017 -6183 5018 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -6183 4814 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4609 -6183 4610 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -6183 4406 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4201 -6183 4202 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -6183 3998 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3793 -6183 3794 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -6183 3590 -6182 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 2271 -6055 2272 -6054 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328 "Balance_Inverter_5.OUT_B" 44 6064,328
+device msubckt nfet_03v3 1735 -6055 1736 -6054 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.Inverter_0.OUT" 112 0 "Balance_Inverter_5.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 1257 -6056 1258 -6055 l=56 w=50 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 50 6184,328 "Balance_Inverter_5.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 662 -6055 663 -6054 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328 "Balance_Inverter_4.OUT_B" 44 6064,328
+device msubckt nfet_03v3 126 -6055 127 -6054 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.Inverter_0.OUT" 112 0 "Balance_Inverter_4.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 -352 -6056 -351 -6055 l=56 w=50 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 50 6184,328 "Balance_Inverter_4.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 -956 -6055 -955 -6054 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328 "Balance_Inverter_0.OUT_B" 44 6064,328
+device msubckt nfet_03v3 -1492 -6055 -1491 -6054 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.Inverter_0.OUT" 112 0 "Balance_Inverter_0.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 -1970 -6056 -1969 -6055 l=56 w=50 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 50 6184,328 "Balance_Inverter_0.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 5961 -5798 5962 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 5757 -5798 5758 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5425 -5798 5426 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 5221 -5798 5222 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 5017 -5798 5018 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -5798 4814 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4609 -5798 4610 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -5798 4406 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4201 -5798 4202 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -5798 3998 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3793 -5798 3794 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -5798 3590 -5797 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt pfet_03v3 2209 -5750 2210 -5749 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_5.OUT" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328 "Balance_Inverter_5.OUT_B" 44 6064,328
+device msubckt pfet_03v3 1797 -5750 1798 -5749 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_5.OUT_B" 112 0 "Balance_Inverter_5.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 1257 -5757 1258 -5756 l=56 w=100 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_5.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 100 8800,376 "Balance_Inverter_5.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 600 -5750 601 -5749 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_4.OUT" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328 "Balance_Inverter_4.OUT_B" 44 6064,328
+device msubckt pfet_03v3 188 -5750 189 -5749 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_4.OUT_B" 112 0 "Balance_Inverter_4.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 -352 -5757 -351 -5756 l=56 w=100 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_4.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 100 8800,376 "Balance_Inverter_4.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 -1018 -5750 -1017 -5749 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.OUT" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328 "Balance_Inverter_0.OUT_B" 44 6064,328
+device msubckt pfet_03v3 -1430 -5750 -1429 -5749 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.OUT_B" 112 0 "Balance_Inverter_0.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 -1970 -5757 -1969 -5756 l=56 w=100 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_0.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 100 8800,376 "Balance_Inverter_0.Inverter_0.OUT" 100 8800,376
+device msubckt nfet_03v3 5961 -5503 5962 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 5757 -5503 5758 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5425 -5503 5426 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 5221 -5503 5222 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 5017 -5503 5018 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -5503 4814 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4609 -5503 4610 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -5503 4406 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4201 -5503 4202 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -5503 3998 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3793 -5503 3794 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -5503 3590 -5502 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5961 -5114 5962 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 5757 -5114 5758 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5425 -5114 5426 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 5221 -5114 5222 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 5017 -5114 5018 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -5114 4814 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4609 -5114 4610 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -5114 4406 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4201 -5114 4202 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -5114 3998 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3793 -5114 3794 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -5114 3590 -5113 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5961 -4787 5962 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 5757 -4787 5758 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5425 -4787 5426 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 5221 -4787 5222 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 5017 -4787 5018 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -4787 4814 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4609 -4787 4610 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -4787 4406 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4201 -4787 4202 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -4787 3998 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3793 -4787 3794 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -4787 3590 -4786 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5961 -4402 5962 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 5757 -4402 5758 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5425 -4402 5426 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 5221 -4402 5222 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 5017 -4402 5018 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -4402 4814 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4609 -4402 4610 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -4402 4406 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4201 -4402 4202 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -4402 3998 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3793 -4402 3794 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -4402 3590 -4401 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5961 -4107 5962 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 5757 -4107 5758 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5425 -4107 5426 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 5221 -4107 5222 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 5017 -4107 5018 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -4107 4814 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4609 -4107 4610 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -4107 4406 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4201 -4107 4202 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -4107 3998 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3793 -4107 3794 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -4107 3590 -4106 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5961 -3718 5962 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 5757 -3718 5758 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5425 -3718 5426 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 5221 -3718 5222 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 5017 -3718 5018 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4813 -3718 4814 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4609 -3718 4610 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 4405 -3718 4406 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 4201 -3718 4202 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3997 -3718 3998 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "a_n1772_n1791#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3793 -3718 3794 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 3589 -3718 3590 -3717 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5937 -3084 5938 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 5733 -3084 5734 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5401 -3084 5402 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 5197 -3084 5198 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 4865 -3084 4866 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 4661 -3084 4662 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 4329 -3084 4330 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 4125 -3084 4126 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 3793 -3084 3794 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 3589 -3084 3590 -3083 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5937 -2700 5938 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 5733 -2700 5734 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5401 -2700 5402 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 5197 -2700 5198 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 4865 -2700 4866 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 4661 -2700 4662 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 4329 -2700 4330 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 4125 -2700 4126 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 3793 -2700 3794 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 3589 -2700 3590 -2699 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 -956 -5187 -955 -5186 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328 "Balance_Inverter_1.OUT_B" 44 6064,328
+device msubckt nfet_03v3 -1492 -5187 -1491 -5186 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.Inverter_0.OUT" 112 0 "Balance_Inverter_1.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 -1970 -5188 -1969 -5187 l=56 w=50 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 50 6184,328 "Balance_Inverter_1.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 2393 -4894 2394 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 2189 -4894 2190 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 1857 -4894 1858 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 1653 -4894 1654 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 1449 -4894 1450 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 1245 -4894 1246 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 1041 -4894 1042 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 837 -4894 838 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 633 -4894 634 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 429 -4894 430 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 225 -4894 226 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 21 -4894 22 -4893 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt pfet_03v3 -1018 -4882 -1017 -4881 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.OUT" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328 "Balance_Inverter_1.OUT_B" 44 6064,328
+device msubckt pfet_03v3 -1430 -4882 -1429 -4881 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.OUT_B" 112 0 "Balance_Inverter_1.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 -1970 -4889 -1969 -4888 l=56 w=100 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_1.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 100 8800,376 "Balance_Inverter_1.Inverter_0.OUT" 100 8800,376
+device msubckt nfet_03v3 2393 -4509 2394 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 2189 -4509 2190 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 1857 -4509 1858 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 1653 -4509 1654 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 1449 -4509 1450 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 1245 -4509 1246 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 1041 -4509 1042 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 837 -4509 838 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 633 -4509 634 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 429 -4509 430 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 225 -4509 226 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 21 -4509 22 -4508 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 -956 -4328 -955 -4327 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328 "Balance_Inverter_2.OUT_B" 44 6064,328
+device msubckt nfet_03v3 2393 -4214 2394 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 2189 -4214 2190 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 1857 -4214 1858 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 1653 -4214 1654 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 1449 -4214 1450 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 1245 -4214 1246 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 1041 -4214 1042 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 837 -4214 838 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 633 -4214 634 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 429 -4214 430 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 225 -4214 226 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 21 -4214 22 -4213 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 -1492 -4328 -1491 -4327 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.Inverter_0.OUT" 112 0 "Balance_Inverter_2.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 -1970 -4329 -1969 -4328 l=56 w=50 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 50 6184,328 "Balance_Inverter_2.Inverter_0.OUT" 50 6184,328
+device msubckt pfet_03v3 -1018 -4023 -1017 -4022 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_2.OUT" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328 "Balance_Inverter_2.OUT_B" 44 6064,328
+device msubckt pfet_03v3 -1430 -4023 -1429 -4022 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_2.OUT_B" 112 0 "Balance_Inverter_2.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 -1970 -4030 -1969 -4029 l=56 w=100 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_2.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 100 8800,376 "Balance_Inverter_2.Inverter_0.OUT" 100 8800,376
+device msubckt nfet_03v3 2393 -3825 2394 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 2189 -3825 2190 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 1857 -3825 1858 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 1653 -3825 1654 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 1449 -3825 1450 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 1245 -3825 1246 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 1041 -3825 1042 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 837 -3825 838 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 633 -3825 634 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 429 -3825 430 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "a_n1772_n1050#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 225 -3825 226 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 21 -3825 22 -3824 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 -956 -3460 -955 -3459 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328 "Balance_Inverter_3.OUT_B" 44 6064,328
+device msubckt nfet_03v3 -1492 -3460 -1491 -3459 l=56 w=44 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.Inverter_0.OUT" 112 0 "Balance_Inverter_3.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 -1970 -3461 -1969 -3460 l=56 w=50 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VSS" 50 6184,328 "Balance_Inverter_3.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 2369 -3293 2370 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 2165 -3293 2166 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 1833 -3293 1834 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 1629 -3293 1630 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 1297 -3293 1298 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 1093 -3293 1094 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 761 -3293 762 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 557 -3293 558 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 225 -3293 226 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 21 -3293 22 -3292 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt pfet_03v3 -1018 -3155 -1017 -3154 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_3.OUT" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328 "Balance_Inverter_3.OUT_B" 44 6064,328
+device msubckt nfet_03v3 2369 -3009 2370 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 2165 -3009 2166 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 1833 -3009 1834 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 1629 -3009 1630 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 1297 -3009 1298 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 1093 -3009 1094 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 761 -3009 762 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 557 -3009 558 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 225 -3009 226 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_4.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 21 -3009 22 -3008 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt pfet_03v3 -1430 -3155 -1429 -3154 l=56 w=44 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_3.OUT_B" 112 0 "Balance_Inverter_3.OUT" 44 6064,328 "Balance_Inverter_3.Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 -1970 -3162 -1969 -3161 l=56 w=100 "Balance_Inverter_3.Inverter_0.VDD" "Balance_Inverter_3.Inverter_0.IN" 112 0 "Balance_Inverter_3.Inverter_0.VDD" 100 8800,376 "Balance_Inverter_3.Inverter_0.OUT" 100 8800,376
+device msubckt nfet_03v3 5937 -2410 5938 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 240 6240,224
+device msubckt nfet_03v3 5733 -2410 5734 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5401 -2410 5402 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 5197 -2410 5198 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 4865 -2410 4866 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 4661 -2410 4662 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 4329 -2410 4330 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 4125 -2410 4126 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 3793 -2410 3794 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 3589 -2410 3590 -2409 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 5937 -2026 5938 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 240 6240,224
+device msubckt nfet_03v3 5733 -2026 5734 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5401 -2026 5402 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 5197 -2026 5198 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 4865 -2026 4866 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 4661 -2026 4662 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 4329 -2026 4330 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 4125 -2026 4126 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 3793 -2026 3794 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_5.OUT_B" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 3589 -2026 3590 -2025 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 2144 -1791 2145 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0
+device msubckt nfet_03v3 1763 -1791 1764 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 10560,416
+device msubckt nfet_03v3 1559 -1791 1560 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 1355 -1791 1356 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1151 -1791 1152 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 947 -1791 948 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 743 -1791 744 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 539 -1791 540 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 335 -1791 336 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 131 -1791 132 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -73 -1791 -72 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -277 -1791 -276 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -481 -1791 -480 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -685 -1791 -684 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -889 -1791 -888 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1093 -1791 -1092 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1297 -1791 -1296 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 10560,416 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1684 -1791 -1683 -1790 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0
+device msubckt nfet_03v3 2144 -1481 2145 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 0 0 "a_n1772_n1791#" 240 10560,416
+device msubckt nfet_03v3 1763 -1481 1764 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 10560,416
+device msubckt nfet_03v3 1559 -1481 1560 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 1355 -1481 1356 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1151 -1481 1152 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 947 -1481 948 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 743 -1481 744 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 539 -1481 540 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 335 -1481 336 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 131 -1481 132 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -73 -1481 -72 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -277 -1481 -276 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -481 -1481 -480 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -685 -1481 -684 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -889 -1481 -888 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1093 -1481 -1092 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1297 -1481 -1296 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 10560,416 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1684 -1481 -1683 -1480 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0
+device msubckt nfet_03v3 5612 -853 5613 -852 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 120 3792,184
+device msubckt nfet_03v3 5400 -853 5401 -852 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 5060 -853 5061 -852 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 3792,184 "OUT-" 0 0
+device msubckt nfet_03v3 4848 -853 4849 -852 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 4058 -1021 4059 -1020 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 3854 -1021 3855 -1020 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "a_n1772_n258#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3650 -1021 3651 -1020 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3446 -1021 3447 -1020 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "a_n1772_n258#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3242 -1021 3243 -1020 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3038 -1021 3039 -1020 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 4508 -853 4509 -852 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 0 0 "OUT+" 120 6384,328
+device msubckt nfet_03v3 2144 -1050 2145 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1050#" 200 0 "a_n1772_n1050#" 240 10560,416 "a_n1772_n1050#" 0 0
+device msubckt nfet_03v3 1763 -1050 1764 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 10560,416
+device msubckt nfet_03v3 1559 -1050 1560 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 1355 -1050 1356 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1151 -1050 1152 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 947 -1050 948 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 743 -1050 744 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 539 -1050 540 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 335 -1050 336 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 131 -1050 132 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 -73 -1050 -72 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -277 -1050 -276 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -481 -1050 -480 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -685 -1050 -684 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 -889 -1050 -888 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -1093 -1050 -1092 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1297 -1050 -1296 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 10560,416 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -1684 -1050 -1683 -1049 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1050#" 200 0 "a_n1772_n1050#" 240 10560,416 "a_n1772_n1050#" 0 0
+device msubckt nfet_03v3 5612 -528 5613 -527 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 120 3792,184
+device msubckt nfet_03v3 5400 -528 5401 -527 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 5060 -528 5061 -527 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 120 3792,184 "OUT+" 0 0
+device msubckt nfet_03v3 4848 -528 4849 -527 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 4508 -528 4509 -527 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 4058 -643 4059 -642 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 3854 -643 3855 -642 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "a_n1772_n258#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3650 -643 3651 -642 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3446 -643 3447 -642 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "a_n1772_n258#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3242 -643 3243 -642 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3038 -643 3039 -642 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5612 -278 5613 -277 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 120 3792,184
+device msubckt nfet_03v3 5400 -278 5401 -277 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 5060 -278 5061 -277 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 120 3792,184 "OUT+" 0 0
+device msubckt nfet_03v3 4848 -278 4849 -277 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 4508 -278 4509 -277 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 4058 -364 4059 -363 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 3854 -364 3855 -363 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "a_n1772_n258#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3650 -364 3651 -363 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3446 -364 3447 -363 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "a_n1772_n258#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3242 -364 3243 -363 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3038 -364 3039 -363 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5613 38 5614 39 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 120 3792,184
+device msubckt nfet_03v3 5401 38 5402 39 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 5061 38 5062 39 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 3792,184 "OUT-" 0 0
+device msubckt nfet_03v3 4849 38 4850 39 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 2144 -258 2145 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1584_n258#" 120 6240,224 "a_n1772_n258#" 120 10560,416
+device msubckt nfet_03v3 1940 -258 1941 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 1736 -258 1737 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1584_n258#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1532 -258 1533 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n258#" 120 10560,416 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 1200 -258 1201 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n640_n258#" 120 6240,224 "a_n828_n258#" 120 10560,416
+device msubckt nfet_03v3 996 -258 997 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416 "a_n640_n258#" 120 6240,224
+device msubckt nfet_03v3 664 -258 665 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416 "a_n292_n258#" 120 10560,416
+device msubckt nfet_03v3 332 -258 333 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1480_n399#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416
+device msubckt nfet_03v3 128 -258 129 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "ITAIL" 120 10560,416 "a_n1480_n399#" 120 6240,224
+device msubckt nfet_03v3 -204 -258 -203 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n292_n258#" 120 10560,416 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416
+device msubckt nfet_03v3 -536 -258 -535 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n640_n258#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416
+device msubckt nfet_03v3 -740 -258 -739 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n828_n258#" 120 10560,416 "a_n640_n258#" 120 6240,224
+device msubckt nfet_03v3 -1072 -258 -1071 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1584_n258#" 120 6240,224 "a_n1772_n258#" 120 10560,416
+device msubckt nfet_03v3 -1276 -258 -1275 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 -1480 -258 -1479 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1584_n258#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1684 -258 -1683 -257 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n258#" 120 10560,416 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 4509 38 4510 39 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT+" 0 0 "OUT+" 120 6384,328
+device msubckt nfet_03v3 4058 14 4059 15 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 3854 14 3855 15 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "a_n1772_n258#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3650 14 3651 15 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "OUT+" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3446 14 3447 15 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT" 200 0 "a_n1772_n258#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 3242 14 3243 15 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_0.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n1772_n258#" 120 6240,224
+device msubckt nfet_03v3 3038 14 3039 15 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 10560,416 "OUT-" 0 0
+device msubckt nfet_03v3 2144 68 2145 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1584_n258#" 120 6240,224 "a_n1772_n258#" 120 10560,416
+device msubckt nfet_03v3 1940 68 1941 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 1736 68 1737 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1584_n258#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1532 68 1533 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n258#" 120 10560,416 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 1200 68 1201 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n640_n258#" 120 6240,224 "a_n828_n258#" 120 10560,416
+device msubckt nfet_03v3 996 68 997 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416 "a_n640_n258#" 120 6240,224
+device msubckt nfet_03v3 664 68 665 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n104_68#" 120 10560,416 "a_n292_n258#" 120 10560,416
+device msubckt nfet_03v3 332 68 333 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_228_68#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416
+device msubckt nfet_03v3 128 68 129 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_40_68#" 120 10560,416 "a_228_68#" 120 6240,224
+device msubckt nfet_03v3 -204 68 -203 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n292_n258#" 120 10560,416 "a_n104_68#" 120 10560,416
+device msubckt nfet_03v3 -536 68 -535 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n640_n258#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 10560,416
+device msubckt nfet_03v3 -740 68 -739 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n828_n258#" 120 10560,416 "a_n640_n258#" 120 6240,224
+device msubckt nfet_03v3 -1072 68 -1071 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1584_n258#" 120 6240,224 "a_n1772_n258#" 120 10560,416
+device msubckt nfet_03v3 -1276 68 -1275 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 -1480 68 -1479 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1584_n258#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1684 68 -1683 69 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n258#" 120 10560,416 "a_n1584_n258#" 120 6240,224
+device msubckt nfet_03v3 5753 556 5754 557 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "a_n828_n258#" 120 6240,224 "OUT+" 120 10560,416
+device msubckt nfet_03v3 5549 556 5550 557 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n828_n258#" 120 6240,224
+device msubckt nfet_03v3 5345 556 5346 557 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "a_n828_n258#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 5141 556 5142 557 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "OUT+" 120 6240,224 "a_n828_n258#" 120 6240,224
+device msubckt nfet_03v3 4937 556 4938 557 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 4422 538 4423 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 4218 538 4219 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT" 200 0 "a_n104_68#" 120 6240,224 "OUT+" 120 6240,224
+device msubckt nfet_03v3 4014 538 4015 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n104_68#" 120 6240,224
+device msubckt nfet_03v3 3810 538 3811 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT_B" 200 0 "a_n104_68#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3606 538 3607 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT" 200 0 "OUT+" 120 6240,224 "a_n104_68#" 120 6240,224
+device msubckt nfet_03v3 3402 538 3403 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 6240,224 "OUT+" 0 0
+device msubckt nfet_03v3 3198 538 3199 539 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5753 858 5754 859 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "a_n828_n258#" 120 6240,224 "OUT+" 120 10560,416
+device msubckt nfet_03v3 5549 858 5550 859 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "OUT-" 120 6240,224 "a_n828_n258#" 120 6240,224
+device msubckt nfet_03v3 5345 858 5346 859 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "a_n828_n258#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 5141 858 5142 859 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "OUT+" 120 6240,224 "a_n828_n258#" 120 6240,224
+device msubckt nfet_03v3 4937 858 4938 859 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 4352 876 4353 877 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 5899 1196 5900 1197 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "OUT-" 0 0 "OUT-" 120 6384,328
+device msubckt nfet_03v3 4012 876 4013 877 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT_B" 200 0 "OUT+" 120 3792,184 "OUT+" 0 0
+device msubckt nfet_03v3 3800 876 3801 877 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 3460 876 3461 877 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_2.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 2144 744 2145 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1050#" 200 0 "a_n1772_n1050#" 240 10560,416 "a_n1772_n1050#" 0 0
+device msubckt nfet_03v3 1763 744 1764 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 10560,416
+device msubckt nfet_03v3 1559 744 1560 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 1355 744 1356 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1151 744 1152 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 947 744 948 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 743 744 744 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 539 744 540 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 335 744 336 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 131 744 132 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 -73 744 -72 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -277 744 -276 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -481 744 -480 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -685 744 -684 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1050#" 120 6240,224 "a_n1772_n1050#" 120 6240,224
+device msubckt nfet_03v3 -889 744 -888 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -1093 744 -1092 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1050#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1297 744 -1296 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1050#" 120 10560,416 "a_n1197_n1050#" 120 6240,224
+device msubckt nfet_03v3 -1684 744 -1683 745 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1050#" 200 0 "a_n1772_n1050#" 240 10560,416 "a_n1772_n1050#" 0 0
+device msubckt nfet_03v3 3120 876 3121 877 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 0 0 "OUT-" 120 6384,328
+device msubckt nfet_03v3 5559 1196 5560 1197 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "OUT+" 0 0 "OUT+" 120 3792,184
+device msubckt nfet_03v3 5347 1196 5348 1197 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 5899 1438 5900 1439 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "OUT-" 0 0 "OUT-" 120 6384,328
+device msubckt nfet_03v3 5007 1196 5008 1197 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "OUT-" 120 3792,184 "OUT-" 0 0
+device msubckt nfet_03v3 4795 1196 4796 1197 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 5559 1438 5560 1439 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "OUT+" 120 3792,184 "OUT+" 0 0
+device msubckt nfet_03v3 5347 1438 5348 1439 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 4272 1184 4273 1185 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 4068 1184 4069 1185 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 3864 1184 3865 1185 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 240 6240,224 "OUT-" 0 0
+device msubckt nfet_03v3 3660 1184 3661 1185 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.OUT_B" 200 0 "a_40_68#" 120 6240,224 "OUT-" 120 6240,224
+device msubckt nfet_03v3 3456 1184 3457 1185 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.OUT" 200 0 "OUT+" 120 10560,416 "a_40_68#" 120 6240,224
+device msubckt nfet_03v3 3124 1184 3125 1185 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 240 10560,416 "OUT+" 0 0
+device msubckt nfet_03v3 5007 1438 5008 1439 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_1.OUT" 200 0 "OUT-" 0 0 "OUT-" 120 3792,184
+device msubckt nfet_03v3 4795 1438 4796 1439 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 2144 1183 2145 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0
+device msubckt nfet_03v3 1763 1183 1764 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 10560,416
+device msubckt nfet_03v3 1559 1183 1560 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 1355 1183 1356 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1151 1183 1152 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 947 1183 948 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 743 1183 744 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 539 1183 540 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 335 1183 336 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 131 1183 132 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -73 1183 -72 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -277 1183 -276 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -481 1183 -480 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -685 1183 -684 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -889 1183 -888 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1093 1183 -1092 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1297 1183 -1296 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 10560,416 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1684 1183 -1683 1184 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0
+device msubckt nfet_03v3 4224 1504 4225 1505 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 0 0 "OUT+" 120 3792,184
+device msubckt nfet_03v3 4012 1504 4013 1505 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT+" 200 0 "OUT+" 120 3792,184 "OUT+" 0 0
+device msubckt nfet_03v3 3800 1504 3801 1505 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.OUT_B" 200 0 "OUT+" 120 6384,328 "OUT+" 0 0
+device msubckt nfet_03v3 3460 1504 3461 1505 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "Balance_Inverter_3.OUT" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 3120 1504 3121 1505 l=100 w=60 "Balance_Inverter_3.Inverter_0.VSS" "OUT-" 200 0 "OUT-" 120 6384,328 "OUT-" 0 0
+device msubckt nfet_03v3 2144 1486 2145 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0
+device msubckt nfet_03v3 1763 1486 1764 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 10560,416
+device msubckt nfet_03v3 1559 1486 1560 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 1355 1486 1356 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 1151 1486 1152 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 947 1486 948 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 743 1486 744 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 539 1486 540 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 335 1486 336 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 131 1486 132 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -73 1486 -72 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -277 1486 -276 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -481 1486 -480 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -685 1486 -684 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1197_n1791#" 120 6240,224 "a_n1772_n1791#" 120 6240,224
+device msubckt nfet_03v3 -889 1486 -888 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1093 1486 -1092 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1480_n399#" 200 0 "a_n1197_n1791#" 120 6240,224 "Balance_Inverter_3.Inverter_0.VSS" 120 6240,224
+device msubckt nfet_03v3 -1297 1486 -1296 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "ITAIL" 200 0 "a_n1772_n1791#" 120 10560,416 "a_n1197_n1791#" 120 6240,224
+device msubckt nfet_03v3 -1684 1486 -1683 1487 l=100 w=120 "Balance_Inverter_3.Inverter_0.VSS" "a_n1772_n1791#" 200 0 "a_n1772_n1791#" 240 10560,416 "a_n1772_n1791#" 0 0

@@ -1,0 +1,116 @@
+* NGSPICE file created from PFD_layout.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt inv_my_mag VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt pmos_3p3_M8SWPS a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_5QNVWA a_n116_n44# a_28_n44# a_n28_n88# VSUBS
+X0 a_28_n44# a_n28_n88# a_n116_n44# VSUBS nfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=0.28u
+.ends
+
+.subckt nand2 VDD IN2 IN1 OUT VSS
+Xpmos_3p3_M8SWPS_0 IN1 OUT VDD VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN2 VDD OUT VDD pmos_3p3_M8SWPS
+Xnmos_3p3_5QNVWA_0 VSS m1_186_70# IN2 VSS nmos_3p3_5QNVWA
+Xnmos_3p3_5QNVWA_1 m1_186_70# OUT IN1 VSS nmos_3p3_5QNVWA
+.ends
+
+.subckt inv VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt DFF_ D RST CLK Q QB nand2_4/IN2 VDD VSS
+Xnand2_6 VDD Q nand2_7/IN1 QB VSS nand2
+Xnand2_7 VDD D nand2_7/IN1 nand2_7/OUT VSS nand2
+Xinv_my_mag_0 VDD VSS inv_0/IN inv_0/OUT inv_my_mag
+Xinv_0 VDD VSS inv_0/IN inv_0/OUT inv
+Xnand2_0 VDD CLK RST nand2_5/IN2 VSS nand2
+Xnand2_1 VDD inv_0/OUT nand2_5/IN2 nand2_4/IN2 VSS nand2
+Xnand2_2 VDD nand2_4/IN2 nand2_7/OUT nand2_3/IN2 VSS nand2
+Xnand2_3 VDD nand2_3/IN2 RST inv_0/IN VSS nand2
+Xnand2_4 VDD nand2_4/IN2 QB Q VSS nand2
+Xnand2_5 VDD nand2_5/IN2 inv_0/IN nand2_7/IN1 VSS nand2
+.ends
+
+.subckt nmos_3p3_5GGST2 a_n52_n50# a_n212_n50# a_52_n94# a_108_n50# a_n356_n50# a_268_n50#
++ a_n108_n94# a_n268_n94# a_212_n94# VSUBS
+X0 a_108_n50# a_52_n94# a_n52_n50# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X1 a_268_n50# a_212_n94# a_108_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+X2 a_n52_n50# a_n108_n94# a_n212_n50# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X3 a_n212_n50# a_n268_n94# a_n356_n50# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt pmos_3p3_MWXUAR a_212_n144# a_268_n100# a_n268_n144# a_n356_n100# a_n52_n100#
++ a_n212_n100# w_n442_n230# a_108_n100# a_52_n144# a_n108_n144#
+X0 a_n52_n100# a_n108_n144# a_n212_n100# w_n442_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 a_n212_n100# a_n268_n144# a_n356_n100# w_n442_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X2 a_108_n100# a_52_n144# a_n52_n100# w_n442_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X3 a_268_n100# a_212_n144# a_108_n100# w_n442_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt buffer_loading_mag VDD VSS OUT IN
+Xnmos_3p3_5GGST2_0 VSS a_876_227# IN a_876_227# VSS VSS IN IN IN VSS nmos_3p3_5GGST2
+Xpmos_3p3_MWXUAR_0 IN VDD IN VDD VDD a_876_227# VDD a_876_227# IN IN pmos_3p3_MWXUAR
+X0 OUT a_876_227# VDD VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 OUT a_876_227# VSS VSS nfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+X2 OUT a_876_227# VDD VDD pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X3 VSS a_876_227# OUT VSS nfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+X4 VDD a_876_227# OUT VDD pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 OUT a_876_227# VSS VSS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X6 VSS a_876_227# OUT VSS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X7 VDD a_876_227# OUT VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt nmos_3p3_EA23U2 a_122_n100# a_n52_n100# a_n122_n144# a_296_n100# a_n226_n100#
++ a_n296_n144# a_n384_n100# a_52_n144# a_226_n144# VSUBS
+X0 a_296_n100# a_226_n144# a_122_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.35u
+X1 a_n226_n100# a_n296_n144# a_n384_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.35u
+X2 a_n52_n100# a_n122_n144# a_n226_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.35u
+X3 a_122_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.35u
+.ends
+
+.subckt pmos_3p3_M6H3WS a_n52_n50# a_n384_n50# a_296_n50# a_226_n94# a_n296_n94# w_n470_n180#
++ a_52_n94# a_n226_n50# a_122_n50# a_n122_n94#
+X0 a_n52_n50# a_n122_n94# a_n226_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.35u
+X1 a_122_n50# a_52_n94# a_n52_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.35u
+X2 a_296_n50# a_226_n94# a_122_n50# w_n470_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.35u
+X3 a_n226_n50# a_n296_n94# a_n384_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.35u
+.ends
+
+.subckt gf_inv_mag VDD VSS OUT IN
+Xnmos_3p3_EA23U2_0 OUT VSS IN VSS OUT IN VSS IN IN VSS nmos_3p3_EA23U2
+Xpmos_3p3_M6H3WS_0 VDD VDD VDD IN IN VDD IN OUT OUT IN pmos_3p3_M6H3WS
+.ends
+
+.subckt buffer_mag VDD OUT IN VSS
+Xgf_inv_mag_0 VDD VSS gf_inv_mag_1/IN IN gf_inv_mag
+Xgf_inv_mag_1 VDD VSS OUT gf_inv_mag_1/IN gf_inv_mag
+.ends
+
+.subckt PFD_layout PD PU VDD VSS VREF VDIV
+Xinv_my_mag_0 VDD VSS VREF inv_0/OUT inv_my_mag
+Xinv_my_mag_1 VDD VSS VDIV inv_1/OUT inv_my_mag
+XDFF__0 VDD DFF__1/RST inv_1/OUT DFF__0/Q DFF__0/QB DFF__0/nand2_4/IN2 VDD VSS DFF_
+XDFF__1 VDD DFF__1/RST inv_0/OUT DFF__1/Q DFF__1/QB DFF__1/nand2_4/IN2 VDD VSS DFF_
+Xbuffer_loading_mag_0 VDD VSS PU DFF__1/Q buffer_loading_mag
+Xbuffer_loading_mag_1 VDD VSS PD DFF__0/Q buffer_loading_mag
+Xinv_0 VDD VSS VREF inv_0/OUT inv
+Xinv_1 VDD VSS VDIV inv_1/OUT inv
+Xbuffer_mag_0 VDD DFF__1/RST nand2_0/OUT VSS buffer_mag
+Xnand2_0 VDD DFF__0/Q DFF__1/Q nand2_0/OUT VSS nand2
+.ends
+

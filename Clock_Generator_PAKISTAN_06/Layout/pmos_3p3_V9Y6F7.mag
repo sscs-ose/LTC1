@@ -1,0 +1,31 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713185578
+<< checkpaint >>
+rect -2230 -2242 2230 2242
+<< nwell >>
+rect -230 -242 230 242
+<< pmos >>
+rect -56 -112 56 112
+<< pdiff >>
+rect -144 70 -56 112
+rect -144 -70 -131 70
+rect -85 -70 -56 70
+rect -144 -112 -56 -70
+rect 56 70 144 112
+rect 56 -70 85 70
+rect 131 -70 144 70
+rect 56 -112 144 -70
+<< pdiffc >>
+rect -131 -70 -85 70
+rect 85 -70 131 70
+<< polysilicon >>
+rect -56 112 56 156
+rect -56 -156 56 -112
+<< metal1 >>
+rect -131 70 -85 110
+rect -131 -110 -85 -70
+rect 85 70 131 110
+rect 85 -110 131 -70
+<< end >>

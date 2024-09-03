@@ -1,0 +1,90 @@
+* NGSPICE file created from PGA_DECODER_magic.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MGRCNG a_n204_n36# a_56_n69# a_112_n25# a_n112_n69# w_n290_n161#
++ a_n56_n25#
+X0 a_n56_n25# a_n112_n69# a_n204_n36# w_n290_n161# pfet_03v3 ad=89.8f pd=0.92u as=0.155p ps=1.64u w=0.25u l=0.28u
+X1 a_112_n25# a_56_n69# a_n56_n25# w_n290_n161# pfet_03v3 ad=0.155p pd=1.64u as=89.8f ps=0.92u w=0.25u l=0.28u
+.ends
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt INVERTER_magic IN OUT VDD VSS
+Xpmos_3p3_MGRCNG_0 OUT IN OUT IN VDD VDD pmos_3p3_MGRCNG
+Xnmos_3p3_H9QVWA_0 VSS OUT IN VSS nmos_3p3_H9QVWA
+Xnmos_3p3_H9QVWA_1 VSS VSS VSS VSS nmos_3p3_H9QVWA
+.ends
+
+.subckt nmos_3p3_49QVWA a_n204_n36# a_56_n69# a_112_n25# a_n112_n69# a_n56_n25# VSUBS
+X0 a_n56_n25# a_n112_n69# a_n204_n36# VSUBS nfet_03v3 ad=89.8f pd=0.92u as=0.155p ps=1.64u w=0.25u l=0.28u
+X1 a_112_n25# a_56_n69# a_n56_n25# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=89.8f ps=0.92u w=0.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8RWPS a_n28_n94# w_n202_n180# a_n116_n50# a_28_n50#
+X0 a_28_n50# a_n28_n94# a_n116_n50# w_n202_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt AND A B OUT VDD VSS
+Xnmos_3p3_H9QVWA_0 VSS OUT a_571_376# VSS nmos_3p3_H9QVWA
+Xnmos_3p3_49QVWA_0 m1_41_62# B m1_41_62# B VSS VSS nmos_3p3_49QVWA
+Xnmos_3p3_49QVWA_1 m1_41_62# A m1_41_62# A a_571_376# VSS nmos_3p3_49QVWA
+Xpmos_3p3_M8RWPS_0 a_571_376# VDD VDD OUT pmos_3p3_M8RWPS
+Xpmos_3p3_M8RWPS_1 A VDD VDD a_571_376# pmos_3p3_M8RWPS
+Xpmos_3p3_M8RWPS_2 B VDD a_571_376# VDD pmos_3p3_M8RWPS
+.ends
+
+.subckt pmos_3p3_M8RCNG a_n120_n36# w_n206_n161# a_28_n25# a_n28_n69#
+X0 a_28_n25# a_n28_n69# a_n120_n36# w_n206_n161# pfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt OR_magic A B OUT VDD VSS
+Xnmos_3p3_H9QVWA_0 a_607_n374# VSS A VSS nmos_3p3_H9QVWA
+Xnmos_3p3_H9QVWA_1 VSS a_607_n374# B VSS nmos_3p3_H9QVWA
+Xnmos_3p3_H9QVWA_2 VSS OUT a_607_n374# VSS nmos_3p3_H9QVWA
+Xpmos_3p3_M8RCNG_11 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_10 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_0 VDD VDD OUT a_607_n374# pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_1 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_2 VDD VDD OUT a_607_n374# pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_3 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_4 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_6 VDD VDD VDD VDD pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_7 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_8 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_9 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+.ends
+
+.subckt nmos_3p3_F9QVWA a_140_n69# a_28_n25# a_n28_n69# a_n140_n25# a_n288_n36# a_196_n25#
++ a_n196_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n140_n25# VSUBS nfet_03v3 ad=89.8f pd=0.92u as=89.8f ps=0.92u w=0.25u l=0.28u
+X1 a_196_n25# a_140_n69# a_28_n25# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=89.8f ps=0.92u w=0.25u l=0.28u
+X2 a_n140_n25# a_n196_n69# a_n288_n36# VSUBS nfet_03v3 ad=89.8f pd=0.92u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt AND_3_magic B C OUT VDD VSS A
+Xpmos_3p3_MGRCNG_0 VDD A VDD A VDD a_1469_n10# pmos_3p3_MGRCNG
+Xpmos_3p3_MGRCNG_1 VDD a_1469_n10# VDD a_1469_n10# VDD OUT pmos_3p3_MGRCNG
+Xnmos_3p3_H9QVWA_0 VSS OUT a_1469_n10# VSS nmos_3p3_H9QVWA
+Xpmos_3p3_MGRCNG_2 VDD B VDD B VDD a_1469_n10# pmos_3p3_MGRCNG
+Xpmos_3p3_MGRCNG_4 VDD C VDD C VDD a_1469_n10# pmos_3p3_MGRCNG
+Xpmos_3p3_M8RCNG_0 VDD VDD VDD VDD pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_1 VDD VDD VDD VDD pmos_3p3_M8RCNG
+Xnmos_3p3_F9QVWA_0 B m1_603_n148# B m1_771_n286# m1_603_n148# m1_771_n286# B VSS nmos_3p3_F9QVWA
+Xnmos_3p3_F9QVWA_2 C m1_771_n286# C VSS m1_771_n286# VSS C VSS nmos_3p3_F9QVWA
+Xnmos_3p3_F9QVWA_1 A a_1469_n10# A m1_603_n148# a_1469_n10# m1_603_n148# A VSS nmos_3p3_F9QVWA
+.ends
+
+.subckt PGA_DECODER_magic A B C VDD VSS S1 S2 S3 S4 S5 S6
+XINVERTER_magic_0 A AND_3_magic_3/A VDD VSS INVERTER_magic
+XAND_1 AND_1/A A S6 VDD VSS AND
+XINVERTER_magic_1 C AND_3_magic_5/C VDD VSS INVERTER_magic
+XINVERTER_magic_2 B AND_3_magic_5/B VDD VSS INVERTER_magic
+XOR_magic_1 B C AND_1/A VDD VSS OR_magic
+XAND_3_magic_0 AND_3_magic_5/B C S2 VDD VSS AND_3_magic_3/A AND_3_magic
+XAND_3_magic_1 AND_3_magic_5/B AND_3_magic_5/C S1 VDD VSS AND_3_magic_3/A AND_3_magic
+XAND_3_magic_2 B C S4 VDD VSS AND_3_magic_3/A AND_3_magic
+XAND_3_magic_3 B AND_3_magic_5/C S3 VDD VSS AND_3_magic_3/A AND_3_magic
+XAND_3_magic_5 AND_3_magic_5/B AND_3_magic_5/C S5 VDD VSS A AND_3_magic
+.ends
+

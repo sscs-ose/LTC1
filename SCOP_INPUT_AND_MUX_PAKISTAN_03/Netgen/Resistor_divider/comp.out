@@ -1,0 +1,24 @@
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Equate elements:  no current cell.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell ppolyf_u_W5AMT6 in circuit resistor_PGA_new.spice (1)(4 instances)
+
+Class resis_PGA.spice (0):  Merged 8 parallel devices.
+Class resis_PGA.spice (0):  Merged 86 series devices.
+Class resistor_PGA_new.spice (1):  Merged 8 parallel devices.
+Class resistor_PGA_new.spice (1):  Merged 86 series devices.
+Subcircuit summary:
+Circuit 1: resis_PGA.spice                 |Circuit 2: resistor_PGA_new.spice          
+-------------------------------------------|-------------------------------------------
+ppolyf_u (104->10)                         |ppolyf_u (104->10)                         
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes resis_PGA.spice and resistor_PGA_new.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

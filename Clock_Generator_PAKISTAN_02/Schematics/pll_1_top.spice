@@ -1,0 +1,736 @@
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/pll_1_top.sch
+**.subckt pll_1_top VSS VDD Vco_op S2 Vref Vco_op_bar VDD_VCO RST_DIV IPD+ IPD_ EN LP_ext
+*.iopin VSS
+*.iopin VDD
+*.opin Vco_op
+*.ipin S2
+*.ipin Vref
+*.opin Vco_op_bar
+*.iopin VDD_VCO
+*.ipin RST_DIV
+*.iopin IPD+
+*.iopin IPD_
+*.ipin EN
+*.iopin LP_ext
+x3 VSS Vref Vdiv PU PD VDD PFD
+x5 IPD+ IPD_ PU PD VCNTL VSS VDD CP
+x1 LF_ext VDD VCNTL S2 VSS net1 a2x1mux
+x4 net1 VDD VSS LF
+x6 VSS VDD RST_DIV Vdiv VCO_op CLK_div_110
+x2 VDD_VCO EN VCO_op VCO_op_bar VCNTL VSS VCO
+**.ends
+
+* expanding   symbol:  PFD.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/PFD.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/PFD.sch
+.subckt PFD VSS VREF VDIV PU PD VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin VREF
+*.ipin VDIV
+*.opin PU
+*.opin PD
+x1 VSS VDD net6 net2 net7 net1 VDD DFF
+x2 VSS VDD net6 net5 net4 net3 VDD DFF
+x3 net4 VSS VDD net8 net7 NAND
+x4 VSS VDD PU net4 buffer_loading
+x8 VSS VDD PD net7 buffer_loading
+x6 VSS VDIV net2 VDD inv_PFD
+x7 VSS VREF net5 VDD inv_PFD
+x5 VSS net8 net6 VDD buffer_PFD
+.ends
+
+
+* expanding   symbol:  CP.sym # of pins=7
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/CP.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/CP.sch
+.subckt CP IPD+ IPD_ PU PD VCNTL VSS VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin PU
+*.opin VCNTL
+*.ipin PD
+*.ipin IPD+
+*.ipin IPD_
+XM4 VCNTL PD net1 VSS nfet_03v3 L=0.56u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VSS PU net3 VDD inv_my
+XM5 net1 IPD+ VSS VSS nfet_03v3 L=0.56u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 IPD+ IPD+ VSS VSS nfet_03v3 L=0.56u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 VCNTL net3 net2 VDD pfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net2 IPD_ VDD VDD pfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 IPD_ IPD_ VDD VDD pfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  a2x1mux.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/a2x1mux.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/a2x1mux.sch
+.subckt a2x1mux IN1 VDD VOUT SEL VSS IN2
+*.iopin VDD
+*.iopin VSS
+*.ipin SEL
+*.ipin IN1
+*.ipin IN2
+*.opin VOUT
+x2 VDD VSS VOUT IN1 SEL_B Transmission_Gate
+x3 VDD VSS VOUT IN2 SEL Transmission_Gate
+x1 VSS SEL SEL_B VDD inv_my
+.ends
+
+
+* expanding   symbol:  LF.sym # of pins=3
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/LF.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/LF.sch
+.subckt LF VCNTL VDD VSS
+*.iopin VSS
+*.iopin VCNTL
+*.iopin VDD
+x1 VCNTL net1 VDD res_sch
+x2 VSS net1 cap80p
+x3 VSS VCNTL cap3p
+.ends
+
+
+* expanding   symbol:  CLK_div_110.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/CLK_div_110.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/CLK_div_110.sch
+.subckt CLK_div_110 VSS VDD RST Vdiv110 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.ipin RST
+*.opin Vdiv110
+x2 VSS VDD net2 net3 RST Vdiv110 net4 net5 net1 CLK_div_10
+x1 VSS VDD net6 net7 RST net1 net8 net9 CLK CLK_div_11_new
+.ends
+
+
+* expanding   symbol:  VCO.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/VCO.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/VCO.sch
+.subckt VCO VDD EN OUT OUTB VCONT VSS
+*.opin OUT
+*.opin OUTB
+*.ipin VDD
+*.ipin VCONT
+*.ipin EN
+*.ipin VSS
+x5 VSS VDD net3 net1 GF_INV_1
+x6 VSS VDD net4 net2 GF_INV_1
+x7 VSS VDD net5 net3 GF_INV_4
+x8 VSS VDD net6 net4 GF_INV_4
+x9 VSS VDD OUT net5 GF_INV_16
+x10 VSS VDD OUTB net6 GF_INV_16
+x3 VSS VDD net8 net12 GF_INV_STAGE
+x4 VSS VDD net7 net9 GF_INV_STAGE
+x1 VDD VSS VCONT net14 net13 net12 net9 EN Delay_Cell
+x2 VDD VSS VCONT net7 net8 net10 net11 EN Delay_Cell
+x11 VDD VSS VCONT net2 net1 net13 net14 EN Delay_Cell
+x12 VDD VSS VCONT net11 net10 net1 net2 EN Delay_Cell
+.ends
+
+
+* expanding   symbol:  DFF.sym # of pins=7
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/DFF.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/DFF.sch
+.subckt DFF VSS D RST CLK Q QB VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin D
+*.ipin RST
+*.ipin CLK
+*.opin Q
+*.opin QB
+x1 RST VSS VDD net6 CLK NAND_pfd
+x2 net1 VSS VDD net2 D NAND_pfd
+x3 net2 VSS VDD net4 net3 NAND_pfd
+x4 RST VSS VDD net5 net4 NAND_pfd
+x5 net6 VSS VDD net3 net7 NAND_pfd
+x6 net5 VSS VDD net1 net6 NAND_pfd
+x7 net1 VSS VDD QB Q NAND_pfd
+x8 QB VSS VDD Q net3 NAND_pfd
+x9 VSS net5 net7 VDD inv_DFF
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/NAND.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/NAND.sch
+.subckt NAND IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  buffer_loading.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/buffer_loading.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/buffer_loading.sch
+.subckt buffer_loading VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 net1 IN VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT net1 VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT net1 VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inv_PFD.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_PFD.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_PFD.sch
+.subckt inv_PFD VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=1.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  buffer_PFD.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/buffer_PFD.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/buffer_PFD.sch
+.subckt buffer_PFD VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x1 VSS VDD net1 IN GF_INV_PFD
+x2 VSS VDD OUT net1 GF_INV_PFD
+.ends
+
+
+* expanding   symbol:  inv_my.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_my.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_my.sch
+.subckt inv_my VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Transmission_Gate.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/Transmission_Gate.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/Transmission_Gate.sch
+.subckt Transmission_Gate VDD VSS VOUT VIN CLK
+*.iopin VDD
+*.iopin VSS
+*.ipin VIN
+*.opin VOUT
+*.ipin CLK
+XM1 VOUT net1 VIN VDD pfet_03v3 L=0.28u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 VOUT CLK VIN VSS nfet_03v3 L=0.28u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VSS CLK net1 VDD inv_my
+.ends
+
+
+* expanding   symbol:  res_sch.sym # of pins=3
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/res_sch.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/res_sch.sch
+.subckt res_sch A B VDD
+*.iopin VDD
+*.iopin A
+*.iopin B
+XR1 B A VDD ppolyf_u r_width=0.8e-6 r_length=100e-6 m=1
+.ends
+
+
+* expanding   symbol:  cap80p.sym # of pins=2
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/cap80p.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/cap80p.sch
+.subckt cap80p N P
+*.iopin P
+*.iopin N
+XC1 P N cap_mim_2f0_m4m5_noshield c_width=25e-6 c_length=25e-6 m=64
+.ends
+
+
+* expanding   symbol:  cap3p.sym # of pins=2
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/cap3p.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/cap3p.sch
+.subckt cap3p Nn Pp
+*.iopin Pp
+*.iopin Nn
+XC1 Pp Nn cap_mim_2f0_m4m5_noshield c_width=42.5e-6 c_length=42.5e-6 m=1
+.ends
+
+
+* expanding   symbol:  CLK_div_10.sym # of pins=9
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/CLK_div_10.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/CLK_div_10.sch
+.subckt CLK_div_10 VSS VDD Q0 Q1 RST Vdiv10 Q2 Q3 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.ipin RST
+*.opin Vdiv10
+*.opin Q2
+*.opin Q3
+x9 Q3 VSS VDD Vdiv10 net8 net2 nor_3
+x6 Q2 VSS VDD net1 Q0 and_2
+x7 Q2 VSS VDD net2 Q1 and_2
+x10 CLK VSS VDD Q0 VDD net5 RST VDD JK_flipflop
+x11 Q0 VSS VDD Q1 net4 net6 RST VDD JK_flipflop
+x12 Q1 VSS VDD Q2 VDD net7 RST VDD JK_flipflop
+x13 Q0 VSS VDD Q3 net3 net4 RST VDD JK_flipflop
+x14 Q1 VSS VDD net3 Q2 and_2
+x1 VSS net1 net8 VDD Buffer_Delayed
+.ends
+
+
+* expanding   symbol:  CLK_div_11_new.sym # of pins=9
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/CLK_div_11_new.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/CLK_div_11_new.sch
+.subckt CLK_div_11_new VSS VDD Q0 Q1 RST Vdiv11 Q2 Q3 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.ipin RST
+*.opin Vdiv11
+*.opin Q2
+*.opin Q3
+x1 CLK VSS VDD Q3 net1 net10 RST net1 JK_flipflop
+x2 CLK VSS VDD Q2 net2 net17 RST net2 JK_flipflop
+x3 CLK VSS VDD Q1 net3 net9 RST net3 JK_flipflop
+x4 CLK VSS VDD Q0 net4 net18 RST net4 JK_flipflop
+x5 net5 VSS VDD net1 net6 or_2
+x7 VSS VDD net6 net7 GF_INV
+x8 Q2 VSS VDD net7 Q1 Q0 nand_3
+x10 net9 VSS VDD net4 net10 or_2
+x11 net8 VSS VDD net3 Q0 or_2
+x13 VSS VDD net14 net11 GF_INV
+x14 CLK VSS VDD net11 net12 Q0 nand_3
+x17 Q3 VSS VDD net15 net16 net13 nor_3
+x18 VSS VDD Vdiv11 net15 GF_INV
+x6 Q3 VSS VDD net5 Q1 and_2
+x12 Q3 VSS VDD net8 Q1 and_2
+x15 net12 VSS VDD net13 Q1 and_2
+x9 Q1 VSS VDD net2 Q0 and_2
+x16 VSS net14 net16 VDD Buffer_Delayed
+x19 VSS Q2 net12 VDD Buffer_Delayed
+.ends
+
+
+* expanding   symbol:  GF_INV_1.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_1.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_1.sch
+.subckt GF_INV_1 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=700n nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=350n nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_4.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_4.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_4.sch
+.subckt GF_INV_4 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=1.4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=2.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_16.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_16.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_16.sch
+.subckt GF_INV_16 VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=5.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=11.2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_STAGE.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_STAGE.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_STAGE.sch
+.subckt GF_INV_STAGE VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Delay_Cell.sym # of pins=8
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/Delay_Cell.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/Delay_Cell.sch
+.subckt Delay_Cell VDD VSS VCONT IN INB OUT OUTB EN
+*.iopin VDD
+*.iopin VSS
+*.iopin VCONT
+*.iopin IN
+*.iopin INB
+*.iopin OUT
+*.iopin OUTB
+*.iopin EN
+XM1 OUTB OUT VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net3 net1 VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT OUTB VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 OUTB OUTB net3 VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT OUT net3 VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 OUT IN net2 VSS nfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 OUTB INB net2 VSS nfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 net1 VDD VDD pfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM10 net1 VCONT VSS VSS nfet_03v3 L=0.56u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net2 EN VSS VSS nfet_03v3 L=0.56u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM11 net2 net2 net2 VSS nfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM12 net2 net2 net2 VSS nfet_03v3 L=0.56u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  NAND_pfd.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/NAND_pfd.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/NAND_pfd.sch
+.subckt NAND_pfd IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inv_DFF.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_DFF.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_DFF.sch
+.subckt inv_DFF VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=1.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_PFD.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_PFD.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV_PFD.sch
+.subckt GF_INV_PFD VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.35u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.35u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nor_3.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/nor_3.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/nor_3.sch
+.subckt nor_3 IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 OUT IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT IN1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 OUT IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net1 IN2 net2 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM9 net2 IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM10 OUT IN1 net1 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+.ends
+
+
+* expanding   symbol:  and_2.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/and_2.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/and_2.sch
+.subckt and_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM7 OUT net1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT net1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 net1 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 net2 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  JK_flipflop.sym # of pins=8
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/JK_flipflop.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/JK_flipflop.sch
+.subckt JK_flipflop CLK VSS VDD Q J Qb RST K
+*.ipin K
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q
+*.ipin J
+*.opin Qb
+*.ipin RST
+x1 Qb VSS VDD net6 J CLK nand_3
+x2 Q VSS VDD net5 K CLK nand_3
+x4 net2 VSS VDD net1 net5 RST nand_3
+x9 VSS VDD CLK_b CLK GF_INV
+x3 net1 VSS VDD net2 net6 NAND
+x5 CLK_b VSS VDD net4 net1 NAND
+x6 CLK_b VSS VDD net3 net2 NAND
+x7 Qb VSS VDD Q net3 NAND
+x8 Q VSS VDD Qb net4 NAND
+.ends
+
+
+* expanding   symbol:  Buffer_Delayed.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/Buffer_Delayed.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/Buffer_Delayed.sch
+.subckt Buffer_Delayed VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x2 VSS VDD net1 IN Inverter_Delayed
+x3 VSS VDD OUT net1 Inverter_Delayed
+.ends
+
+
+* expanding   symbol:  or_2.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/or_2.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/or_2.sch
+.subckt or_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM4 net1 IN1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 net2 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM7 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net2 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+x1 VSS VDD OUT net1 GF_INV
+.ends
+
+
+* expanding   symbol:  GF_INV.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/GF_INV.sch
+.subckt GF_INV VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nand_3.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/nand_3.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/nand_3.sch
+.subckt nand_3 IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 net1 IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM4 OUT IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM1 OUT IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net2 IN2 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM8 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Inverter_Delayed.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/Inverter_Delayed.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/Inverter_Delayed.sch
+.subckt Inverter_Delayed VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=1u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=1u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

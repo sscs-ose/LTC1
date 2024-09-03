@@ -1,0 +1,252 @@
+timestamp 1713277963
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use pmos_3p3_VRCSD7 pmos_3p3_VRCSD7_0 1 0 -1158 0 1 1031
+use OR_magic OR_magic_0 1 0 828 0 1 925
+use nmos_3p3_G2UGVV nmos_3p3_G2UGVV_0 1 0 -1158 0 1 411
+use AND2_magic AND2_magic_1 1 0 -747 0 1 -204
+use AND2_magic AND2_magic_0 1 0 -747 0 1 990
+port "IN2" 2 -701 -588 -701 -588 m1
+port "VOUT" 3 2142 436 2142 436 m1
+port "IN1" 1 -701 611 -701 611 m1
+port "SEL" 4 -1530 626 -1530 626 m1
+port "VDD" 5 -1001 1478 -1001 1478 m1
+node "IN2" 0 94.8004 -701 -588 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7644 410 0 0 0 0 0 0 0 0
+node "m1_768_n185#" 0 136.044 768 -185 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18886 742 0 0 0 0 0 0 0 0
+node "VOUT" 1 133.983 2142 436 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12831 640 0 0 0 0 0 0 0 0
+node "m1_641_n787#" 3 577.906 641 -787 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37787 1470 89732 2714 0 0 0 0 0 0
+node "m1_392_n788#" 2 368.52 392 -788 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7980 508 90000 2708 0 0 0 0 0 0
+node "IN1" 0 60.5781 -701 611 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8134 430 0 0 0 0 0 0 0 0
+node "m1_729_1006#" 1 129.724 729 1006 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12760 708 0 0 0 0 0 0 0 0
+node "m1_n1289_301#" 5 795.033 -1289 301 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119440 5148 0 0 0 0 0 0 0 0
+node "m1_692_1446#" 0 116.695 692 1446 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13250 630 0 0 0 0 0 0 0 0
+node "a_n998_200#" 11 754.881 -998 200 p 0 0 0 0 0 0 0 0 0 0 0 0 9968 402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43567 1806 0 0 0 0 0 0 0 0
+node "SEL" 81 578.64 -1530 626 m1 0 0 0 0 0 0 0 0 0 0 0 0 35888 1374 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21119 776 0 0 0 0 0 0 0 0
+node "a_n1430_1007#" 83 347.662 -1430 1007 p 0 0 0 0 0 0 0 0 0 0 0 0 26112 1184 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 10293 1368.54 -1001 1478 m1 80116 1990 0 0 23606 786 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140743 5140 90301 2704 0 0 0 0 0 0
+substrate "VSS" 0 0 -1229 50 ppd 0 0 0 0 0 0 12445 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173325 5506 0 0 0 0 0 0 0 0
+cap "a_n998_200#" "IN2" 17.0006
+cap "VDD" "a_n998_200#" 9.83276
+cap "m1_392_n788#" "IN2" 0.240555
+cap "m1_729_1006#" "m1_768_n185#" 4.42425
+cap "VDD" "m1_392_n788#" 11.5726
+cap "VDD" "SEL" 38.4078
+cap "VDD" "IN2" 0.844337
+cap "m1_641_n787#" "a_n998_200#" 0.332954
+cap "m1_768_n185#" "a_n998_200#" 5.49567
+cap "m1_n1289_301#" "m1_729_1006#" 1.98781
+cap "m1_392_n788#" "m1_641_n787#" 288.843
+cap "m1_392_n788#" "m1_768_n185#" 1.40597
+cap "m1_692_1446#" "m1_729_1006#" 14.8878
+cap "m1_n1289_301#" "a_n998_200#" 65.108
+cap "m1_641_n787#" "IN2" 1.38949
+cap "IN1" "a_n998_200#" 9.24526
+cap "VDD" "m1_641_n787#" 0.085827
+cap "a_n1430_1007#" "SEL" 17.6071
+cap "m1_392_n788#" "m1_n1289_301#" 2.02439
+cap "m1_n1289_301#" "SEL" 144.192
+cap "VOUT" "m1_392_n788#" 0.000579405
+cap "IN1" "SEL" 0.593052
+cap "VDD" "a_n1430_1007#" 34.2284
+cap "VDD" "m1_n1289_301#" 567.473
+cap "VDD" "IN1" 32.5191
+cap "m1_641_n787#" "m1_768_n185#" 27.8743
+cap "VDD" "m1_692_1446#" 1.85871
+cap "m1_641_n787#" "m1_n1289_301#" 0.0892321
+cap "VOUT" "m1_641_n787#" 1.74853
+cap "m1_641_n787#" "m1_692_1446#" 0.829463
+cap "a_n1430_1007#" "m1_n1289_301#" 26.6841
+cap "m1_692_1446#" "m1_768_n185#" 1.93592
+cap "IN1" "m1_n1289_301#" 27.8301
+cap "VDD" "m1_729_1006#" 0.305429
+cap "m1_392_n788#" "a_n998_200#" 1.2899
+cap "SEL" "a_n998_200#" 5.38256
+cap "AND2_magic_1/VDD" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.149751
+cap "AND2_magic_0/A" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.521719
+cap "AND2_magic_1/A" "AND2_magic_0/B" -2.04461
+cap "AND2_magic_1/A" "AND2_magic_0/VSS" 42.7625
+cap "AND2_magic_0/A" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.37187
+cap "AND2_magic_1/B" "AND2_magic_0/VSS" 4.33303
+cap "AND2_magic_0/B" "AND2_magic_1/VDD" -1.83001
+cap "AND2_magic_1/A" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 10.2848
+cap "AND2_magic_1/VDD" "AND2_magic_0/VSS" 279.539
+cap "AND2_magic_1/B" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 16.7575
+cap "OR_magic_0/A" "AND2_magic_1/VDD" 0.1744
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/VSS" -2.10287
+cap "AND2_magic_1/VDD" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.73904
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 3.71767
+cap "AND2_magic_1/A" "OR_magic_0/B" -2.74784
+cap "AND2_magic_1/VDD" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 3.33067e-15
+cap "AND2_magic_1/A" "AND2_magic_0/A" 29.6078
+cap "AND2_magic_0/B" "AND2_magic_0/VSS" 15.6432
+cap "AND2_magic_0/A" "AND2_magic_1/VDD" 30.295
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/VSS" 33.6453
+cap "AND2_magic_1/A" "AND2_magic_1/B" -3.15206
+cap "AND2_magic_0/B" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.798021
+cap "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/VSS" 0.9599
+cap "AND2_magic_1/VDD" "AND2_magic_1/B" -0.709621
+cap "AND2_magic_1/A" "AND2_magic_1/VDD" 231.346
+cap "AND2_magic_1/A" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.143709
+cap "AND2_magic_0/B" "AND2_magic_0/A" 0.519639
+cap "AND2_magic_0/A" "AND2_magic_0/VSS" -140.008
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/A" 0.635883
+cap "AND2_magic_1/VDD" "OR_magic_0/B" 84.475
+cap "AND2_magic_0/A" "AND2_magic_1/B" 11.5472
+cap "AND2_magic_0/A" "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.00701904
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 6.76761
+cap "AND2_magic_0/VSS" "OR_magic_0/A" 18.6469
+cap "OR_magic_0/B" "AND2_magic_0/VSS" 129.639
+cap "AND2_magic_1/VDD" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" -3.55271e-15
+cap "AND2_magic_0/B" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 1.20695
+cap "AND2_magic_1/VDD" "AND2_magic_1/A" -8.88178e-15
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/A" 1.985
+cap "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/VSS" 15.3254
+cap "OR_magic_0/VOUT" "AND2_magic_0/VSS" 0.659382
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "OR_magic_0/A" -0.0407976
+cap "AND2_magic_1/A" "AND2_magic_0/VSS" 21.1792
+cap "OR_magic_0/B" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 3.85986
+cap "OR_magic_0/B" "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 106.13
+cap "AND2_magic_0/A" "OR_magic_0/A" 1.08097
+cap "AND2_magic_1/VDD" "AND2_magic_0/VSS" 820.27
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" -1.05307
+cap "AND2_magic_0/VSS" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 3.03722
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/VOUT" 0.0757317
+cap "AND2_magic_0/A" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.661839
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 2.78679
+cap "AND2_magic_0/A" "AND2_magic_1/A" 1.02618
+cap "AND2_magic_0/A" "OR_magic_0/VOUT" 0.00256705
+cap "AND2_magic_1/VDD" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 3.10639
+cap "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "AND2_magic_0/VSS" 3.50993
+cap "AND2_magic_1/VDD" "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" -0.586305
+cap "AND2_magic_1/VDD" "AND2_magic_1/B" -1.13687e-13
+cap "OR_magic_0/B" "OR_magic_0/A" 7.41071
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/VSS" 102.928
+cap "AND2_magic_1/B" "AND2_magic_0/VSS" 22.2181
+cap "AND2_magic_1/VDD" "AND2_magic_0/A" 29.5009
+cap "AND2_magic_0/VSS" "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 26.6539
+cap "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "OR_magic_0/A" 0.177344
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0750518
+cap "AND2_magic_0/A" "AND2_magic_0/VSS" 2.68613
+cap "OR_magic_0/B" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" -0.565015
+cap "OR_magic_0/B" "AND2_magic_1/A" -2.74784
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.52867
+cap "AND2_magic_0/A" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0104547
+cap "AND2_magic_1/VDD" "OR_magic_0/A" 16.8815
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "OR_magic_0/B" 2.27995
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "AND2_magic_0/VDD" 0.62946
+cap "OR_magic_0/VOUT" "AND2_magic_0/VSS" -0.78462
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "AND2_magic_1/VDD" 2.57318
+cap "AND2_magic_0/VDD" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 1.77636e-15
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "AND2_magic_0/VSS" 0.0348256
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "OR_magic_0/VOUT" 0.905408
+cap "AND2_magic_1/A" "AND2_magic_1/VDD" 410.307
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 1.48047
+cap "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "AND2_magic_1/VDD" 0.197979
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_1/A" 0.252263
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/VSS" 1.42109e-14
+cap "AND2_magic_0/VSS" "AND2_magic_1/VDD" 3.43443
+cap "AND2_magic_1/VDD" "AND2_magic_0/B" 19.4129
+cap "AND2_magic_0/A" "AND2_magic_1/A" 110.649
+cap "OR_magic_0/A" "AND2_magic_1/VDD" 2.04392
+cap "AND2_magic_0/VSS" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" -1.44686
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/B" 16.7575
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/VDD" 31.1729
+cap "AND2_magic_0/A" "AND2_magic_0/VSS" 4.26062
+cap "AND2_magic_0/A" "AND2_magic_0/B" 14.0811
+cap "AND2_magic_0/A" "OR_magic_0/A" -0.993906
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/B" 0.326046
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" -2.2822
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_1/VDD" 75.9219
+cap "AND2_magic_1/A" "AND2_magic_0/B" 0.0417161
+cap "AND2_magic_0/VSS" "AND2_magic_1/A" 3.08642
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/A" -0.0701986
+cap "AND2_magic_0/A" "AND2_magic_1/VDD" -113.794
+cap "OR_magic_0/A" "AND2_magic_1/A" 0.0109723
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 3.55015
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/A" 2.38698
+cap "AND2_magic_0/A" "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 65.9683
+cap "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" 1.60255
+cap "OR_magic_0/B" "AND2_magic_1/VDD" -0.842989
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/VSS" 0.167237
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_1/VDD" 34.6793
+cap "OR_magic_0/A" "AND2_magic_0/VSS" -0.501809
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "OR_magic_0/A" 0.361946
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/B" 0.192729
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "OR_magic_0/A" -0.114799
+cap "OR_magic_0/VOUT" "AND2_magic_0/A" 0.00621497
+cap "OR_magic_0/A" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 103.277
+cap "AND2_magic_1/VDD" "AND2_magic_0/VSS" 13.5875
+cap "AND2_magic_0/A" "AND2_magic_0/VSS" 1.17615
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/VDD" 13.3669
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "AND2_magic_1/VDD" -0.0508565
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/A" -0.00193026
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/VOUT" 0.0162546
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/B" 3.63805
+cap "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "AND2_magic_0/A" 0.0169935
+cap "OR_magic_0/A" "AND2_magic_1/VDD" 88.4502
+cap "OR_magic_0/A" "AND2_magic_0/A" -0.993906
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 2.78679
+cap "AND2_magic_1/VDD" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 35.072
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/VSS" 0.356302
+cap "AND2_magic_0/A" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0253115
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" -0.0648461
+cap "OR_magic_0/B" "OR_magic_0/A" 1.74542
+cap "AND2_magic_0/B" "AND2_magic_1/VDD" 3.95922
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0753894
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/A" 6.89808
+cap "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_1/A" 0.680973
+cap "AND2_magic_1/VDD" "AND2_magic_0/A" 4.2621
+cap "AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 2.00324
+cap "AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" 6.59949
+cap "OR_magic_0/A" "AND2_magic_0/VDD" 2.84217e-14
+cap "OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "AND2_magic_0/VDD" -2.27374e-13
+cap "OR_magic_0/B" "AND2_magic_0/VDD" 1.13687e-13
+merge "AND2_magic_1/A" "nmos_3p3_G2UGVV_0/a_160_n156#" -1094.9 0 0 0 0 0 0 0 0 0 0 0 0 -5488 -2562 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9384 -412 0 0 0 0 0 0 0 0
+merge "nmos_3p3_G2UGVV_0/a_160_n156#" "a_n998_200#"
+merge "a_n998_200#" "nmos_3p3_G2UGVV_0/a_n56_n156#"
+merge "nmos_3p3_G2UGVV_0/a_n56_n156#" "nmos_3p3_G2UGVV_0/a_n272_n156#"
+merge "nmos_3p3_G2UGVV_0/a_n272_n156#" "pmos_3p3_VRCSD7_0/a_160_n336#"
+merge "pmos_3p3_VRCSD7_0/a_160_n336#" "SEL"
+merge "SEL" "pmos_3p3_VRCSD7_0/a_n56_n336#"
+merge "pmos_3p3_VRCSD7_0/a_n56_n336#" "pmos_3p3_VRCSD7_0/a_n272_n336#"
+merge "pmos_3p3_VRCSD7_0/a_n272_n336#" "pmos_3p3_VRCSD7_0/a_160_24#"
+merge "pmos_3p3_VRCSD7_0/a_160_24#" "pmos_3p3_VRCSD7_0/a_n56_24#"
+merge "pmos_3p3_VRCSD7_0/a_n56_24#" "pmos_3p3_VRCSD7_0/a_n272_24#"
+merge "pmos_3p3_VRCSD7_0/a_n272_24#" "a_n1430_1007#"
+merge "AND2_magic_0/VDD" "AND2_magic_0/w_641_42#" -2028.67 -6080 -4778 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54351 -3064 0 0 0 0 0 0 0 0
+merge "AND2_magic_0/w_641_42#" "AND2_magic_1/w_641_42#"
+merge "AND2_magic_1/w_641_42#" "OR_magic_0/VDD"
+merge "OR_magic_0/VDD" "m1_692_1446#"
+merge "m1_692_1446#" "AND2_magic_1/VDD"
+merge "AND2_magic_1/VDD" "pmos_3p3_VRCSD7_0/a_56_n292#"
+merge "pmos_3p3_VRCSD7_0/a_56_n292#" "pmos_3p3_VRCSD7_0/a_n360_n292#"
+merge "pmos_3p3_VRCSD7_0/a_n360_n292#" "pmos_3p3_VRCSD7_0/a_56_68#"
+merge "pmos_3p3_VRCSD7_0/a_56_68#" "pmos_3p3_VRCSD7_0/a_n360_68#"
+merge "pmos_3p3_VRCSD7_0/a_n360_68#" "pmos_3p3_VRCSD7_0/w_n446_n422#"
+merge "pmos_3p3_VRCSD7_0/w_n446_n422#" "VDD"
+merge "AND2_magic_0/A" "nmos_3p3_G2UGVV_0/a_272_n112#" -797.541 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -61060 -3338 0 0 0 0 0 0 0 0
+merge "nmos_3p3_G2UGVV_0/a_272_n112#" "nmos_3p3_G2UGVV_0/a_n160_n112#"
+merge "nmos_3p3_G2UGVV_0/a_n160_n112#" "pmos_3p3_VRCSD7_0/a_272_n292#"
+merge "pmos_3p3_VRCSD7_0/a_272_n292#" "pmos_3p3_VRCSD7_0/a_n160_n292#"
+merge "pmos_3p3_VRCSD7_0/a_n160_n292#" "pmos_3p3_VRCSD7_0/a_272_68#"
+merge "pmos_3p3_VRCSD7_0/a_272_68#" "pmos_3p3_VRCSD7_0/a_n160_68#"
+merge "pmos_3p3_VRCSD7_0/a_n160_68#" "m1_n1289_301#"
+merge "AND2_magic_0/VSS" "AND2_magic_1/VSS" -1164.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41487 -2490 0 0 0 0 0 0 0 0
+merge "AND2_magic_1/VSS" "m1_392_n788#"
+merge "m1_392_n788#" "nmos_3p3_G2UGVV_0/VSUBS"
+merge "nmos_3p3_G2UGVV_0/VSUBS" "nmos_3p3_G2UGVV_0/a_56_n112#"
+merge "nmos_3p3_G2UGVV_0/a_56_n112#" "nmos_3p3_G2UGVV_0/a_n360_n112#"
+merge "nmos_3p3_G2UGVV_0/a_n360_n112#" "OR_magic_0/VSS"
+merge "OR_magic_0/VSS" "m1_641_n787#"
+merge "m1_641_n787#" "pmos_3p3_VRCSD7_0/VSUBS"
+merge "pmos_3p3_VRCSD7_0/VSUBS" "VSS"
+merge "AND2_magic_0/OUT" "OR_magic_0/A" -232.648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -665 -298 0 0 0 0 0 0 0 0
+merge "OR_magic_0/A" "m1_729_1006#"
+merge "AND2_magic_1/OUT" "OR_magic_0/B" -178.591 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -230 -282 0 0 0 0 0 0 0 0
+merge "OR_magic_0/B" "m1_768_n185#"
+merge "OR_magic_0/VOUT" "VOUT" -38.3736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2350 -194 0 0 0 0 0 0 0 0
+merge "AND2_magic_0/B" "IN1" -49.0014 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2009 -180 0 0 0 0 0 0 0 0
+merge "AND2_magic_1/B" "IN2" -50.3312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1960 -178 0 0 0 0 0 0 0 0

@@ -1,0 +1,68 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1693893072
+<< nwell >>
+rect -118 486 286 599
+rect -42 305 28 486
+rect 1 239 86 245
+rect -118 158 86 239
+<< psubdiff >>
+rect -92 -136 256 -123
+rect -92 -185 -73 -136
+rect 236 -185 256 -136
+rect -92 -200 256 -185
+<< nsubdiff >>
+rect -78 555 214 572
+rect -78 504 -58 555
+rect 192 504 214 555
+rect -78 487 214 504
+<< psubdiffcont >>
+rect -73 -185 236 -136
+<< nsubdiffcont >>
+rect -58 504 192 555
+<< polysilicon >>
+rect 56 245 112 263
+rect -3 231 112 245
+rect -3 172 11 231
+rect 74 172 112 231
+rect -3 158 112 172
+rect 56 102 112 158
+<< polycontact >>
+rect 11 172 74 231
+<< metal1 >>
+rect -118 555 286 599
+rect -118 504 -58 555
+rect 192 504 286 555
+rect -118 486 286 504
+rect -42 305 28 486
+rect -118 231 86 239
+rect -118 172 11 231
+rect 74 172 86 231
+rect -118 158 86 172
+rect 140 204 204 407
+rect 140 157 286 204
+rect -45 -101 36 61
+rect 140 9 204 157
+rect -118 -136 286 -101
+rect -118 -185 -73 -136
+rect 236 -185 286 -136
+rect -118 -214 286 -185
+use nmos_3p3_H9QVWA  nmos_3p3_H9QVWA_0
+timestamp 1692705520
+transform 1 0 84 0 1 33
+box -144 -99 144 99
+use pmos_3p3_M8RWPS  pmos_3p3_M8RWPS_0 ~/GF180Projects/GF_INV/Magic
+timestamp 1692705520
+transform 1 0 84 0 1 357
+box -202 -180 202 180
+<< labels >>
+flabel nsubdiffcont 67 530 67 530 0 FreeSans 640 0 0 0 VDD
+port 1 nsew
+flabel psubdiffcont 81 -162 81 -162 0 FreeSans 640 0 0 0 VSS
+port 2 nsew
+flabel metal1 -95 199 -95 199 0 FreeSans 640 0 0 0 IN
+port 3 nsew
+flabel metal1 272 172 272 172 0 FreeSans 640 0 0 0 OUT
+port 5 nsew
+<< end >>

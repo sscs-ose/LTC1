@@ -1,0 +1,38 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2120 -2120 2720 12120
+<< nwell >>
+rect -120 -120 720 10120
+<< mvpdiode >>
+rect 0 9958 600 10000
+rect 0 42 13 9958
+rect 59 42 119 9958
+rect 165 42 225 9958
+rect 271 42 331 9958
+rect 377 42 436 9958
+rect 482 42 541 9958
+rect 587 42 600 9958
+rect 0 0 600 42
+<< mvpdiodec >>
+rect 13 42 59 9958
+rect 119 42 165 9958
+rect 225 42 271 9958
+rect 331 42 377 9958
+rect 436 42 482 9958
+rect 541 42 587 9958
+<< metal1 >>
+rect 0 9958 600 10000
+rect 0 42 13 9958
+rect 59 42 119 9958
+rect 165 42 225 9958
+rect 271 42 331 9958
+rect 377 42 436 9958
+rect 482 42 541 9958
+rect 587 42 600 9958
+rect 0 0 600 42
+<< labels >>
+rlabel metal1 300 5000 300 5000 4 PLUS
+<< end >>

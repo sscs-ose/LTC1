@@ -1,0 +1,94 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1714554054
+<< nwell >>
+rect -1 -222 405 13
+rect 397 -244 405 -222
+<< pwell >>
+rect -248 524 110 718
+rect 153 524 545 718
+<< psubdiff >>
+rect -55 782 70 858
+<< metal1 >>
+rect -615 882 -435 905
+rect -615 879 405 882
+rect -615 770 -597 879
+rect -461 770 405 879
+rect -615 766 405 770
+rect -615 745 -435 766
+rect -406 496 -326 509
+rect -406 443 -393 496
+rect -338 443 -326 496
+rect -406 436 -326 443
+rect -81 439 69 492
+rect 2309 327 2375 395
+rect -1 12 405 13
+rect -1 -222 406 12
+rect 2178 -81 2414 -71
+rect 2178 -137 2190 -81
+rect 2243 -137 2414 -81
+rect 2178 -147 2414 -137
+rect 0 -316 406 -222
+rect 2309 -631 2375 -563
+rect -615 -995 -448 -971
+rect -615 -1113 -588 -995
+rect -475 -1002 -448 -995
+rect -475 -1113 113 -1002
+rect -615 -1116 113 -1113
+rect -615 -1137 -448 -1116
+<< via1 >>
+rect -597 770 -461 879
+rect -393 443 -338 496
+rect 2190 -137 2243 -81
+rect -588 -1113 -475 -995
+<< metal2 >>
+rect -615 879 -435 905
+rect -615 770 -597 879
+rect -461 770 -435 879
+rect -615 745 -435 770
+rect -602 -971 -473 745
+rect -406 496 -326 509
+rect -406 443 -393 496
+rect -338 443 -326 496
+rect -406 436 -326 443
+rect 2178 475 2250 525
+rect 2178 456 2303 475
+rect -397 -674 -334 436
+rect 2178 -81 2250 456
+rect 2178 -137 2190 -81
+rect 2243 -137 2250 -81
+rect -397 -737 40 -674
+rect 2178 -692 2250 -137
+rect 2178 -696 2306 -692
+rect 2178 -761 2250 -696
+rect -615 -995 -448 -971
+rect -615 -1113 -588 -995
+rect -475 -1113 -448 -995
+rect -615 -1137 -448 -1113
+use inv_my_mag  inv_my_mag_0
+timestamp 1714554054
+transform 1 0 -340 0 -1 938
+box -61 58 345 1028
+use Transmission_gate_mag  Transmission_gate_mag_0
+timestamp 1714554054
+transform 1 0 -314 0 -1 1007
+box 285 83 2690 1097
+use Transmission_gate_mag  Transmission_gate_mag_1
+timestamp 1714554054
+transform 1 0 -315 0 1 -1243
+box 285 83 2690 1097
+<< labels >>
+flabel metal1 2338 357 2338 357 0 FreeSans 480 0 0 0 IN1
+port 0 nsew
+flabel metal1 2338 -597 2338 -597 0 FreeSans 480 0 0 0 IN2
+port 1 nsew
+flabel via1 -371 469 -371 469 0 FreeSans 480 0 0 0 SEL
+port 2 nsew
+flabel metal1 2346 -109 2346 -109 0 FreeSans 480 0 0 0 VOUT
+port 3 nsew
+flabel metal1 113 -128 113 -124 0 FreeSans 480 0 0 0 VDD
+port 4 nsew
+flabel metal1 15 843 15 843 0 FreeSans 480 0 0 0 VSS
+port 5 nsew
+<< end >>

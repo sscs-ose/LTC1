@@ -1,0 +1,137 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "OUT" 5 2907 383 2907 383 m1
+port "A" 0 -113 548 -113 548 m1
+port "B" 1 -89 1523 -89 1523 v
+port "SEL" 4 -97 1358 -97 1358 m1
+port "VDD" 2 274 1774 274 1774 m1
+port "VSS" 3 804 8 804 8 m1
+node "a_268_215#" 38 213.85 268 215 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "OR_0.Inverter_0.OUT" 20 187.929 2685 201 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32469 1222 0 0 0 0 0 0 0 0
+equiv "OR_0.Inverter_0.OUT" "OR_0.OUT"
+equiv "OR_0.Inverter_0.OUT" "OUT"
+node "OR_0.Inverter_0.IN" 118 761.719 1717 203 ndif 0 0 0 0 12368 656 10400 408 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79980 3242 0 0 0 0 0 0 0 0
+node "a_1557_553#" 72 132.269 1557 553 pdif 0 0 0 0 0 0 28000 1160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42348 1958 31148 1182 0 0 0 0 0 0
+node "AND_1.Inverter_0.IN" 117 448.166 268 554 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "AND_1.Inverter_0.OUT" 149 610.872 1076 222 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 53252 2044 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55046 2124 0 0 0 0 0 0 0 0
+equiv "AND_1.Inverter_0.OUT" "AND_1.OUT"
+equiv "AND_1.Inverter_0.OUT" "OR_0.B"
+node "AND_1.A" 111 358.742 0 492 p 0 0 0 0 0 0 0 0 0 0 0 0 41683 1692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15481 644 0 0 0 0 0 0 0 0
+equiv "AND_1.A" "A"
+node "a_672_1152#" 38 188.4 672 1152 ndif 0 0 0 0 17600 752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17940 872 0 0 0 0 0 0 0 0
+node "AND_0.Inverter_0.OUT" 151 768.51 1480 1159 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 54049 2052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79411 3172 75116 2766 0 0 0 0 0 0
+equiv "AND_0.Inverter_0.OUT" "AND_0.OUT"
+equiv "AND_0.Inverter_0.OUT" "OR_0.A"
+node "AND_0.Inverter_0.IN" 117 407.675 672 1491 pdif 0 0 0 0 8800 376 17600 752 0 0 0 0 32405 1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61972 2546 0 0 0 0 0 0 0 0
+node "AND_0.B" 131 535.554 230 1159 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 41917 1696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56119 2162 0 0 0 0 0 0 0 0
+equiv "AND_0.B" "Inverter_0.OUT"
+node "AND_0.A" 112 418.027 404 1429 p 0 0 0 0 0 0 0 0 0 0 0 0 41683 1692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14143 672 40405 1506 0 0 0 0 0 0
+equiv "AND_0.A" "B"
+node "AND_1.B" 195 1137.26 115 1309 p 0 0 0 0 0 0 0 0 0 0 0 0 74322 2900 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54458 2016 60434 2244 0 0 0 0 0 0
+equiv "AND_1.B" "Inverter_0.IN"
+equiv "AND_1.B" "SEL"
+node "AND_0.Inverter_0.VDD" 14075 9461.01 0 1309 nw 2106576 11430 0 0 304168 8610 88000 3760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 880293 16208 0 0 0 0 0 0 0 0
+equiv "AND_0.Inverter_0.VDD" "AND_0.VDD"
+equiv "AND_0.Inverter_0.VDD" "AND_1.Inverter_0.VDD"
+equiv "AND_0.Inverter_0.VDD" "AND_1.VDD"
+equiv "AND_0.Inverter_0.VDD" "Inverter_0.VDD"
+equiv "AND_0.Inverter_0.VDD" "OR_0.Inverter_0.VDD"
+equiv "AND_0.Inverter_0.VDD" "OR_0.VDD"
+equiv "AND_0.Inverter_0.VDD" "VDD"
+substrate "AND_0.Inverter_0.VSS" 0 0 26 951 ppd 0 0 0 0 54704 2720 304990 8894 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 631259 12176 71816 2320 0 0 0 0 0 0
+equiv "AND_0.Inverter_0.VSS" "AND_0.VSS"
+equiv "AND_0.Inverter_0.VSS" "AND_1.Inverter_0.VSS"
+equiv "AND_0.Inverter_0.VSS" "AND_1.VSS"
+equiv "AND_0.Inverter_0.VSS" "Inverter_0.VSS"
+equiv "AND_0.Inverter_0.VSS" "OR_0.Inverter_0.VSS"
+equiv "AND_0.Inverter_0.VSS" "OR_0.VSS"
+equiv "AND_0.Inverter_0.VSS" "VSS"
+cap "AND_1.Inverter_0.IN" "AND_0.Inverter_0.OUT" 4.46583
+cap "AND_0.Inverter_0.VDD" "AND_1.A" 250.888
+cap "AND_1.A" "a_268_215#" 0.863606
+cap "AND_1.Inverter_0.OUT" "AND_1.A" 0.0156831
+cap "AND_0.Inverter_0.VDD" "AND_1.B" 547.214
+cap "a_268_215#" "AND_1.B" 155.368
+cap "OR_0.Inverter_0.IN" "OR_0.Inverter_0.OUT" 115.782
+cap "AND_1.Inverter_0.OUT" "AND_1.B" 1.18342
+cap "AND_1.B" "AND_0.Inverter_0.IN" 1.62418
+cap "AND_0.Inverter_0.OUT" "a_672_1152#" 3.3669
+cap "AND_0.Inverter_0.VDD" "a_1557_553#" 899.293
+cap "OR_0.Inverter_0.IN" "AND_0.Inverter_0.OUT" 261.301
+cap "AND_1.Inverter_0.OUT" "a_1557_553#" 24.2506
+cap "AND_1.Inverter_0.IN" "AND_0.A" 0.691469
+cap "AND_0.Inverter_0.OUT" "AND_0.B" 6.6443
+cap "a_672_1152#" "AND_0.A" 0.863606
+cap "AND_0.A" "AND_0.B" 190.876
+cap "AND_0.Inverter_0.VDD" "a_268_215#" 2.53352
+cap "AND_0.Inverter_0.VDD" "AND_1.Inverter_0.OUT" 418.143
+cap "AND_1.Inverter_0.OUT" "a_268_215#" 0.0407023
+cap "AND_0.Inverter_0.VDD" "AND_0.Inverter_0.IN" 582.097
+cap "AND_1.Inverter_0.OUT" "AND_0.Inverter_0.IN" 0.0769259
+cap "AND_1.A" "AND_1.Inverter_0.IN" 9.79271
+cap "AND_1.Inverter_0.IN" "AND_1.B" 127.676
+cap "AND_0.Inverter_0.OUT" "OR_0.Inverter_0.OUT" 0.324001
+cap "AND_1.Inverter_0.IN" "a_1557_553#" 0.0788269
+cap "AND_1.B" "a_672_1152#" 1.63842
+cap "AND_1.A" "AND_0.B" 0.111738
+cap "OR_0.Inverter_0.IN" "AND_1.B" 0.00022306
+cap "AND_1.B" "AND_0.B" 108.026
+cap "OR_0.Inverter_0.IN" "a_1557_553#" 162.324
+cap "AND_0.Inverter_0.OUT" "AND_0.A" 1.42167
+cap "AND_0.Inverter_0.VDD" "AND_1.Inverter_0.IN" 581.798
+cap "AND_1.Inverter_0.IN" "a_268_215#" 60.8117
+cap "AND_1.Inverter_0.OUT" "AND_1.Inverter_0.IN" 119.852
+cap "AND_0.Inverter_0.VDD" "a_672_1152#" 2.53352
+cap "OR_0.Inverter_0.IN" "AND_0.Inverter_0.VDD" 305.255
+cap "OR_0.Inverter_0.IN" "AND_1.Inverter_0.OUT" 44.0585
+cap "AND_0.Inverter_0.IN" "a_672_1152#" 60.8117
+cap "AND_0.Inverter_0.VDD" "AND_0.B" 373.675
+cap "AND_0.Inverter_0.IN" "AND_0.B" 129.472
+cap "AND_1.A" "AND_0.Inverter_0.OUT" 0.011557
+cap "AND_0.Inverter_0.OUT" "AND_1.B" 15.0059
+cap "AND_0.Inverter_0.OUT" "a_1557_553#" 200.081
+cap "AND_1.A" "AND_0.A" 2.36367
+cap "AND_1.B" "AND_0.A" 96.4747
+cap "AND_0.Inverter_0.VDD" "OR_0.Inverter_0.OUT" 124.91
+cap "AND_1.Inverter_0.IN" "a_672_1152#" 0.05442
+cap "OR_0.Inverter_0.IN" "AND_1.Inverter_0.IN" 0.129914
+cap "AND_1.Inverter_0.IN" "AND_0.B" 2.39858
+cap "AND_0.Inverter_0.VDD" "AND_0.Inverter_0.OUT" 937.533
+cap "AND_1.Inverter_0.OUT" "AND_0.Inverter_0.OUT" 334.584
+cap "AND_0.Inverter_0.OUT" "AND_0.Inverter_0.IN" 161.759
+cap "a_672_1152#" "AND_0.B" 155.414
+cap "AND_1.A" "AND_1.B" 147.855
+cap "AND_0.Inverter_0.VDD" "AND_0.A" 443.212
+cap "a_268_215#" "AND_0.A" 0.255809
+cap "AND_0.Inverter_0.IN" "AND_0.A" 12.5761
+cap "AND_1.A" "a_1557_553#" 0.00522256
+device msubckt nfet_03v3 2629 201 2630 202 l=56 w=50 "AND_0.Inverter_0.VSS" "OR_0.Inverter_0.IN" 112 0 "AND_0.Inverter_0.VSS" 50 6184,328 "OR_0.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 2065 203 2066 204 l=56 w=50 "AND_0.Inverter_0.VSS" "AND_0.Inverter_0.OUT" 112 0 "AND_0.Inverter_0.VSS" 50 6184,328 "OR_0.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 1661 203 1662 204 l=56 w=50 "AND_0.Inverter_0.VSS" "AND_1.Inverter_0.OUT" 112 0 "AND_0.Inverter_0.VSS" 50 6184,328 "OR_0.Inverter_0.IN" 50 6184,328
+device msubckt nfet_03v3 1020 222 1021 223 l=56 w=50 "AND_0.Inverter_0.VSS" "AND_1.Inverter_0.IN" 112 0 "AND_0.Inverter_0.VSS" 50 6184,328 "AND_1.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 616 215 617 216 l=56 w=100 "AND_0.Inverter_0.VSS" "AND_1.B" 112 0 "a_268_215#" 100 8800,376 "AND_1.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 212 215 213 216 l=56 w=100 "AND_0.Inverter_0.VSS" "AND_1.A" 112 0 "AND_0.Inverter_0.VSS" 100 8800,376 "a_268_215#" 100 8800,376
+device msubckt pfet_03v3 2629 500 2630 501 l=56 w=100 "AND_0.Inverter_0.VDD" "OR_0.Inverter_0.IN" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "OR_0.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 2225 553 2226 554 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_0.Inverter_0.OUT" 112 0 "OR_0.Inverter_0.IN" 100 5200,204 "a_1557_553#" 100 8800,376
+device msubckt pfet_03v3 2065 553 2066 554 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_0.Inverter_0.OUT" 112 0 "a_1557_553#" 100 8800,376 "OR_0.Inverter_0.IN" 100 5200,204
+device msubckt pfet_03v3 1661 553 1662 554 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_1.Inverter_0.OUT" 112 0 "a_1557_553#" 100 5200,204 "AND_0.Inverter_0.VDD" 100 8800,376
+device msubckt pfet_03v3 1501 553 1502 554 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_1.Inverter_0.OUT" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "a_1557_553#" 100 5200,204
+device msubckt pfet_03v3 1020 521 1021 522 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_1.Inverter_0.IN" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "AND_1.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 616 554 617 555 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_1.B" 112 0 "AND_1.Inverter_0.IN" 100 8800,376 "AND_0.Inverter_0.VDD" 100 8800,376
+device msubckt pfet_03v3 212 554 213 555 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_1.A" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "AND_1.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 1424 1159 1425 1160 l=56 w=50 "AND_0.Inverter_0.VSS" "AND_0.Inverter_0.IN" 112 0 "AND_0.Inverter_0.VSS" 50 6184,328 "AND_0.Inverter_0.OUT" 50 6184,328
+device msubckt nfet_03v3 1020 1152 1021 1153 l=56 w=100 "AND_0.Inverter_0.VSS" "AND_0.B" 112 0 "a_672_1152#" 100 8800,376 "AND_0.Inverter_0.IN" 100 8800,376
+device msubckt nfet_03v3 616 1152 617 1153 l=56 w=100 "AND_0.Inverter_0.VSS" "AND_0.A" 112 0 "AND_0.Inverter_0.VSS" 100 8800,376 "a_672_1152#" 100 8800,376
+device msubckt nfet_03v3 174 1159 175 1160 l=56 w=50 "AND_0.Inverter_0.VSS" "AND_1.B" 112 0 "AND_0.Inverter_0.VSS" 50 6184,328 "AND_0.B" 50 6184,328
+device msubckt pfet_03v3 1424 1458 1425 1459 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_0.Inverter_0.IN" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "AND_0.Inverter_0.OUT" 100 8800,376
+device msubckt pfet_03v3 1020 1491 1021 1492 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_0.B" 112 0 "AND_0.Inverter_0.IN" 100 8800,376 "AND_0.Inverter_0.VDD" 100 8800,376
+device msubckt pfet_03v3 616 1491 617 1492 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_0.A" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "AND_0.Inverter_0.IN" 100 8800,376
+device msubckt pfet_03v3 174 1458 175 1459 l=56 w=100 "AND_0.Inverter_0.VDD" "AND_1.B" 112 0 "AND_0.Inverter_0.VDD" 100 8800,376 "AND_0.B" 100 8800,376

@@ -1,0 +1,26 @@
+** sch_path: /home/shahid/OSPDKs/gf180mcuC/libs.tech/xschem/tests/test_ppolyf_u.sch
+**.subckt test_ppolyf_u
+XR1 M P B ppolyf_u r_width=1.2e-6 r_length=1e-6 m=1
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+vp p 0 0
+vm m 0 0
+vb b 0 3.3
+
+.control
+save all
+dc vp 0 3.3 0.01
+write test_ppolyf_u.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.end

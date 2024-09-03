@@ -1,0 +1,93 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1691566796
+<< error_p >>
+rect -578 -48 -532 48
+rect -404 -48 -358 48
+rect -266 -48 -220 48
+rect -92 -48 -46 48
+rect 46 -48 92 48
+rect 220 -48 266 48
+rect 358 -48 404 48
+rect 532 -48 578 48
+<< nwell >>
+rect -677 -180 677 180
+<< pmos >>
+rect -503 -50 -433 50
+rect -191 -50 -121 50
+rect 121 -50 191 50
+rect 433 -50 503 50
+<< pdiff >>
+rect -591 37 -503 50
+rect -591 -37 -578 37
+rect -532 -37 -503 37
+rect -591 -50 -503 -37
+rect -433 37 -345 50
+rect -433 -37 -404 37
+rect -358 -37 -345 37
+rect -433 -50 -345 -37
+rect -279 37 -191 50
+rect -279 -37 -266 37
+rect -220 -37 -191 37
+rect -279 -50 -191 -37
+rect -121 37 -33 50
+rect -121 -37 -92 37
+rect -46 -37 -33 37
+rect -121 -50 -33 -37
+rect 33 37 121 50
+rect 33 -37 46 37
+rect 92 -37 121 37
+rect 33 -50 121 -37
+rect 191 37 279 50
+rect 191 -37 220 37
+rect 266 -37 279 37
+rect 191 -50 279 -37
+rect 345 37 433 50
+rect 345 -37 358 37
+rect 404 -37 433 37
+rect 345 -50 433 -37
+rect 503 37 591 50
+rect 503 -37 532 37
+rect 578 -37 591 37
+rect 503 -50 591 -37
+<< pdiffc >>
+rect -578 -37 -532 37
+rect -404 -37 -358 37
+rect -266 -37 -220 37
+rect -92 -37 -46 37
+rect 46 -37 92 37
+rect 220 -37 266 37
+rect 358 -37 404 37
+rect 532 -37 578 37
+<< polysilicon >>
+rect -503 50 -433 94
+rect -191 50 -121 94
+rect 121 50 191 94
+rect 433 50 503 94
+rect -503 -94 -433 -50
+rect -191 -94 -121 -50
+rect 121 -94 191 -50
+rect 433 -94 503 -50
+<< metal1 >>
+rect -578 37 -532 48
+rect -578 -48 -532 -37
+rect -404 37 -358 48
+rect -404 -48 -358 -37
+rect -266 37 -220 48
+rect -266 -48 -220 -37
+rect -92 37 -46 48
+rect -92 -48 -46 -37
+rect 46 37 92 48
+rect 46 -48 92 -37
+rect 220 37 266 48
+rect 220 -48 266 -37
+rect 358 37 404 48
+rect 358 -48 404 -37
+rect 532 37 578 48
+rect 532 -48 578 -37
+<< properties >>
+string gencell pmos_3p3
+string library gf180mcu
+string parameters w .5 l 0.350 m 1 nf 4 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 0 lmin 0.28 wmin 0.22 full_metal 0 compatible {pmos_3p3 pmos_6p0}
+<< end >>

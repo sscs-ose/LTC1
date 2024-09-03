@@ -1,0 +1,116 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694585703
+<< nwell >>
+rect 20 636 828 754
+rect 68 355 108 391
+<< pwell >>
+rect 362 10 486 246
+rect 493 207 653 216
+<< psubdiff >>
+rect 46 -54 873 -40
+rect 46 -100 69 -54
+rect 776 -100 873 -54
+rect 46 -113 873 -100
+rect 797 -116 873 -113
+<< nsubdiff >>
+rect 49 714 790 729
+rect 49 662 70 714
+rect 769 662 790 714
+rect 49 645 790 662
+<< psubdiffcont >>
+rect 69 -100 776 -54
+<< nsubdiffcont >>
+rect 70 662 769 714
+<< polysilicon >>
+rect -18 429 71 442
+rect -18 370 -5 429
+rect 58 391 71 429
+rect 58 386 205 391
+rect 58 370 250 386
+rect -18 355 250 370
+rect 194 222 250 355
+rect 383 281 472 294
+rect 383 222 396 281
+rect 459 244 472 281
+rect 598 244 654 373
+rect 459 222 654 244
+rect 383 207 653 222
+<< polycontact >>
+rect -5 370 58 429
+rect 396 222 459 281
+<< metal1 >>
+rect 20 714 1232 754
+rect 20 662 70 714
+rect 769 676 1232 714
+rect 769 662 828 676
+rect 20 636 828 662
+rect -18 429 71 442
+rect -18 370 -5 429
+rect 58 370 71 429
+rect 119 419 165 636
+rect 279 495 325 515
+rect 523 495 569 515
+rect 279 449 569 495
+rect 279 419 325 449
+rect -18 355 71 370
+rect 523 363 569 449
+rect 683 419 729 636
+rect 523 317 729 363
+rect 383 285 472 294
+rect -18 281 472 285
+rect -18 239 396 281
+rect 383 222 396 239
+rect 459 222 472 281
+rect 383 207 472 222
+rect 683 291 729 317
+rect 683 245 853 291
+rect 119 -19 165 176
+rect 279 153 325 176
+rect 523 153 569 176
+rect 279 107 569 153
+rect 279 80 325 107
+rect 523 80 569 107
+rect 683 80 729 245
+rect 1185 234 1263 281
+rect 20 -54 828 -19
+rect 20 -100 69 -54
+rect 776 -100 828 -54
+rect 20 -137 828 -100
+use Inverter  Inverter_0
+timestamp 1693893072
+transform 1 0 946 0 1 77
+box -118 -214 286 599
+use nmos_3p3_HZS5UA  nmos_3p3_HZS5UA_0
+timestamp 1690264421
+transform 1 0 222 0 1 128
+box -140 -118 140 118
+use nmos_3p3_HZS5UA  nmos_3p3_HZS5UA_1
+timestamp 1690264421
+transform 1 0 626 0 1 128
+box -140 -118 140 118
+use pmos_3p3_M8RWPS  pmos_3p3_M8RWPS_0
+timestamp 1692705520
+transform 1 0 626 0 1 467
+box -202 -180 202 180
+use pmos_3p3_M8RWPS  pmos_3p3_M8RWPS_1
+timestamp 1692705520
+transform 1 0 222 0 1 467
+box -202 -180 202 180
+<< labels >>
+flabel nsubdiffcont 417 690 417 690 0 FreeSans 480 0 0 0 VDD
+port 0 nsew
+flabel psubdiffcont 422 -73 422 -73 0 FreeSans 480 0 0 0 VSS
+port 1 nsew
+flabel metal1 1245 259 1245 259 0 FreeSans 480 0 0 0 OUT
+port 2 nsew
+flabel polycontact 25 398 25 398 0 FreeSans 480 0 0 0 A
+port 3 nsew
+flabel metal1 15 252 15 252 0 FreeSans 480 0 0 0 B
+port 4 nsew
+flabel metal1 300 130 300 130 0 FreeSans 480 0 0 0 SD1
+port 5 nsew
+flabel metal1 540 470 540 470 0 FreeSans 480 0 0 0 SD2
+port 6 nsew
+<< end >>

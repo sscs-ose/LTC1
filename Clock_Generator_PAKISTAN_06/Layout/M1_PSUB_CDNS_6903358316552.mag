@@ -1,0 +1,19 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -7121 -2045 7121 2045
+<< psubdiff >>
+rect -5121 23 5121 45
+rect -5121 -23 -5099 23
+rect 5099 -23 5121 23
+rect -5121 -45 5121 -23
+<< psubdiffcont >>
+rect -5099 -23 5099 23
+<< metal1 >>
+rect -5110 23 5110 34
+rect -5110 -23 -5099 23
+rect 5099 -23 5110 23
+rect -5110 -34 5110 -23
+<< end >>

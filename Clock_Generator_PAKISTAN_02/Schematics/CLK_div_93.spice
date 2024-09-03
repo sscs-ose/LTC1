@@ -1,0 +1,286 @@
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/CLK_div_93.sch
+**.subckt CLK_div_93 CLK VSS VDD Vdiv93 RST
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Vdiv93
+*.ipin RST
+x1 VSS VDD net2 net3 net4 net5 net6 net1 RST CLK CLK_div_31
+x2 VSS VDD net7 net8 RST Vdiv93 net1 CLK_div_3
+**.ends
+
+* expanding   symbol:  CLK_div_31.sym # of pins=10
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/CLK_div_31.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/CLK_div_31.sch
+.subckt CLK_div_31 VSS VDD Q0 Q1 Q2 Q3 Q4 Vdiv31 RST CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.opin Q2
+*.opin Q3
+*.opin Q4
+*.opin Vdiv31
+*.ipin RST
+x1 CLK VSS VDD Q0 VDD net3 RST VDD JK_flipflop
+x2 Q0 VSS VDD Q1 VDD net4 RST VDD JK_flipflop
+x3 Q1 VSS VDD Q2 VDD net5 RST VDD JK_flipflop
+x4 Q2 VSS VDD Q3 VDD net6 RST VDD JK_flipflop
+x5 Q3 VSS VDD Q4 VDD net7 RST VDD JK_flipflop
+x6 VSS VDD Q4 RST Q3 Q2 Q1 Q0 nand_5
+x10 net2 VSS VDD Vdiv31 Q4 or_2
+x7 VSS VDD Q1 net1 Q2 Q3 CLK Q0 and_5
+x8 VSS net1 net2 VDD Buffer_Delayed1
+.ends
+
+
+* expanding   symbol:  CLK_div_3.sym # of pins=7
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/CLK_div_3.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/CLK_div_3.sch
+.subckt CLK_div_3 VSS VDD Q0 Q1 RST Vdiv3 CLK
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q0
+*.opin Q1
+*.ipin RST
+*.opin Vdiv3
+x1 CLK VSS VDD Q1 net1 net3 RST VDD JK_flipflop
+x2 CLK VSS VDD Q0 Q1 net1 RST VDD JK_flipflop
+x4 Q0 VSS VDD Vdiv3 net2 or_2
+x3 Q1 VSS VDD net2 CLK and_2
+.ends
+
+
+* expanding   symbol:  JK_flipflop.sym # of pins=8
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/JK_flipflop.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/JK_flipflop.sch
+.subckt JK_flipflop CLK VSS VDD Q J Qb RST K
+*.ipin K
+*.ipin CLK
+*.iopin VSS
+*.iopin VDD
+*.opin Q
+*.ipin J
+*.opin Qb
+*.ipin RST
+x1 Qb VSS VDD net6 J CLK nand_3
+x2 Q VSS VDD net5 K CLK nand_3
+x4 net2 VSS VDD net1 net5 RST nand_3
+x9 VSS VDD CLK_b CLK GF_INV
+x3 net1 VSS VDD net2 net6 NAND
+x5 CLK_b VSS VDD net4 net1 NAND
+x6 CLK_b VSS VDD net3 net2 NAND
+x7 Qb VSS VDD Q net3 NAND
+x8 Q VSS VDD Qb net4 NAND
+.ends
+
+
+* expanding   symbol:  nand_5.sym # of pins=8
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/nand_5.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/nand_5.sch
+.subckt nand_5 VSS VDD A VOUT D C E B
+*.ipin B
+*.iopin VSS
+*.iopin VDD
+*.ipin A
+*.opin VOUT
+*.ipin D
+*.ipin C
+*.ipin E
+x5 VSS VDD VOUT net1 GF_INV
+x1 VSS VDD A net1 D C E B and_5
+.ends
+
+
+* expanding   symbol:  or_2.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/or_2.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/or_2.sch
+.subckt or_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM4 net1 IN1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 net2 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM7 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net2 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+x1 VSS VDD OUT net1 GF_INV
+.ends
+
+
+* expanding   symbol:  and_5.sym # of pins=8
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/and_5.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/and_5.sch
+.subckt and_5 VSS VDD A VOUT D C E B
+*.ipin B
+*.iopin VSS
+*.iopin VDD
+*.ipin A
+*.opin VOUT
+*.ipin D
+*.ipin C
+*.ipin E
+x1 A VSS VDD net1 B and_2
+x2 C VSS VDD net2 net1 and_2
+x3 D VSS VDD net3 net2 and_2
+x4 E VSS VDD VOUT net3 and_2
+.ends
+
+
+* expanding   symbol:  Buffer_Delayed1.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/Buffer_Delayed1.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/Buffer_Delayed1.sch
+.subckt Buffer_Delayed1 VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x2 VSS VDD net2 IN Inverter_Delayed
+x3 VSS VDD net1 net2 Inverter_Delayed
+x1 VSS VDD net4 net1 Inverter_Delayed
+x4 VSS VDD net3 net4 Inverter_Delayed
+x5 VSS VDD net6 net3 Inverter_Delayed
+x6 VSS VDD net5 net6 Inverter_Delayed
+x7 VSS VDD net8 net5 Inverter_Delayed
+x8 VSS VDD net7 net8 Inverter_Delayed
+x9 VSS VDD net10 net7 Inverter_Delayed
+x10 VSS VDD net9 net10 Inverter_Delayed
+x11 VSS VDD net12 net9 Inverter_Delayed
+x12 VSS VDD net11 net12 Inverter_Delayed
+x13 VSS VDD net13 net11 Inverter_Delayed
+x14 VSS VDD net15 net13 Inverter_Delayed
+x15 VSS VDD net14 net15 Inverter_Delayed
+x16 VSS VDD OUT net14 Inverter_Delayed
+.ends
+
+
+* expanding   symbol:  and_2.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/and_2.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/and_2.sch
+.subckt and_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM7 OUT net1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT net1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 net1 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net1 IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 net2 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  nand_3.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/nand_3.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/nand_3.sch
+.subckt nand_3 IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 net1 IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM4 OUT IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM1 OUT IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net2 IN2 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM8 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/GF_INV.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/GF_INV.sch
+.subckt GF_INV VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/NAND.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/NAND.sch
+.subckt NAND IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  Inverter_Delayed.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/Inverter_Delayed.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/Inverter_Delayed.sch
+.subckt Inverter_Delayed VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=1u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=1u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

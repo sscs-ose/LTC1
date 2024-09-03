@@ -1,0 +1,135 @@
+** sch_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/mux_1x8_PEX.sch
+**.subckt mux_1x8_PEX
+V4 VSS GND 0
+.save i(v4)
+V5 VDD VSS 3.3
+.save i(v5)
+V2 A0 VSS 50m
+.save i(v2)
+V3 A1 VSS 100m
+.save i(v3)
+V6 A2 VSS 200m
+.save i(v6)
+V7 A3 VSS 300m
+.save i(v7)
+V8 A4 VSS 400m
+.save i(v8)
+V9 A5 VSS 500m
+.save i(v9)
+V10 A6 VSS 600m
+.save i(v10)
+V11 A7 VSS 700m
+.save i(v11)
+V12 S0 VSS (pulse(0 3.3 0 10p 10p 4u 8u))
+.save i(v12)
+V13 S1 VSS (pulse(0 3.3 0 10p 10p 2u 4u))
+.save i(v13)
+V14 S2 VSS (pulse(0 3.3 0 10p 10p 1u 2u))
+.save i(v14)
+C1 Vout VSS 10p m=1
+x1 VDD Vout VSS A0 A1 A2 A3 A4 A5 A6 A7 S0 S1 S2 pex_MUX_1x8
+x2 VDD V1 VSS A0 A1 A2 A3 A4 A5 A6 A7 S0 S1 S2 mux_1
+C2 V1 VSS 10p m=1
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_MUX_1x8.spice
+.control
+*set color0=white
+*set color1=black
+save all
+
+tran 1u 16u
+plot v(S0) v(S1) v(S2)
+plot v(A0) v(A1) v(A2)
+Plot v(Vout) v(V1)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  mux_1.sym # of pins=14
+** sym_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/mux_1.sym
+** sch_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/mux_1.sch
+.subckt mux_1 VDD Vout VSS A0 A1 A2 A3 A4 A5 A6 A7 S0 S1 S2
+*.iopin VDD
+*.iopin VSS
+*.iopin A0
+*.iopin A1
+*.iopin A2
+*.iopin A3
+*.iopin A4
+*.iopin A5
+*.iopin A6
+*.iopin A7
+*.ipin S0
+*.ipin S1
+*.ipin S2
+*.iopin Vout
+x1 VSS VDD S0B S0 GF_INV
+x3 VSS VDD S1B S1 GF_INV
+x4 VSS VDD S2B S2 GF_INV
+x2 VDD net1 S0B A0 VSS TGate
+x5 VDD net1 S0 A4 VSS TGate
+x6 VDD net2 S0B A2 VSS TGate
+x7 VDD net2 S0 A6 VSS TGate
+x8 VDD net3 S0B A1 VSS TGate
+x9 VDD net3 S0 A5 VSS TGate
+x10 VDD net4 S0B A3 VSS TGate
+x11 VDD net4 S0 A7 VSS TGate
+x12 VDD net6 S1B net1 VSS TGate
+x13 VDD net6 S1 net2 VSS TGate
+x14 VDD net5 S1B net3 VSS TGate
+x15 VDD net5 S1 net4 VSS TGate
+x16 VDD Vout S2B net6 VSS TGate
+x17 VDD Vout S2 net5 VSS TGate
+.ends
+
+
+* expanding   symbol:  GF_INV.sym # of pins=4
+** sym_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/GF_INV.sym
+** sch_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/GF_INV.sch
+.subckt GF_INV VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  TGate.sym # of pins=5
+** sym_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/TGate.sym
+** sch_path: /home/shahid/Music/AWG_MUX/mux/1x8_MUX/xschem/TGate.sch
+.subckt TGate VDD B CLK A VSS
+*.iopin VDD
+*.iopin VSS
+*.opin B
+*.ipin CLK
+*.ipin A
+XM4 CLKB CLK VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 CLKB CLK VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 B CLK A VSS nfet_03v3 L=0.28u W=12u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 B CLKB A VDD pfet_03v3 L=0.28u W=24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

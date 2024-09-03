@@ -1,0 +1,80 @@
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Non_OvL_CLK_Gen/Non_Overlapping_clk.sch
+**.subckt Non_Overlapping_clk VDD VSS VIN PH1 PH2 PH1A
+*.iopin VDD
+*.iopin VSS
+*.ipin VIN
+*.opin PH1
+*.opin PH2
+*.opin PH1A
+x1 VDD net1 VIN VSS Inverter
+x10 VDD PH1 net7 VSS Inverter
+x11 VDD PH2 net5 VSS Inverter
+x3 VDD net8 PH1A VSS INV_16x
+x4 VDD net6 net8 VSS INV_16x
+x6 VDD net7 net6 VSS INV_16x
+x7 VDD net3 net2 VSS INV_16x
+x8 VDD net4 net3 VSS INV_16x
+x9 VDD net5 net4 VSS INV_16x
+x2 VDD VSS PH1A net1 PH2 NOR
+x5 VDD VSS net2 VIN PH1 NOR
+**.ends
+
+* expanding   symbol:  /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/Inverter.sym # of
+*+ pins=4
+** sym_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/Inverter.sym
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/Inverter.sch
+.subckt Inverter VDD OUT IN VSS
+*.ipin IN
+*.opin OUT
+*.iopin VDD
+*.iopin VSS
+XM1 OUT IN VDD VDD pfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/INV_16x.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/INV_16x.sym
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/INV_16x.sch
+.subckt INV_16x VDD OUT IN VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=2.24u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=2.24u W=0.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/NOR.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/NOR.sym
+** sch_path: /home/shahid/GF180Projects/Tapeout/Xschem/Logic_Gates/NOR.sch
+.subckt NOR VDD VSS OUT A B
+*.iopin VDD
+*.iopin VSS
+*.opin OUT
+*.ipin A
+*.ipin B
+XM2 OUT B VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT A VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net1 A VDD VDD pfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 OUT B net1 VDD pfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

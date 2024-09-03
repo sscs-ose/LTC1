@@ -1,0 +1,20 @@
+* NGSPICE file created from nand3_mag_ibr.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_VGTVWA a_n116_n66# a_28_n66# a_n28_n110# VSUBS
+X0 a_28_n66# a_n28_n110# a_n116_n66# VSUBS nfet_03v3 ad=0.29p pd=2.2u as=0.29p ps=2.2u w=0.66u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8SWPS a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nand3_mag_ibr IN3 IN2 IN1 VDD VSS OUT
+Xnmos_3p3_VGTVWA_0 nmos_3p3_VGTVWA_1/a_28_n66# nmos_3p3_VGTVWA_0/a_28_n66# IN2 VSS
++ nmos_3p3_VGTVWA
+Xnmos_3p3_VGTVWA_1 VSS nmos_3p3_VGTVWA_1/a_28_n66# IN3 VSS nmos_3p3_VGTVWA
+Xnmos_3p3_VGTVWA_2 nmos_3p3_VGTVWA_0/a_28_n66# OUT IN1 VSS nmos_3p3_VGTVWA
+Xpmos_3p3_M8SWPS_0 IN1 VDD OUT VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN3 VDD OUT VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_2 IN2 OUT VDD VDD pmos_3p3_M8SWPS
+.ends
+

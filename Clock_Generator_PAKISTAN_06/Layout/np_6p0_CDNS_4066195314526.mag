@@ -1,0 +1,24 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2000 -2000 2200 6000
+<< mvndiode >>
+rect 0 3950 200 4000
+rect 0 50 13 3950
+rect 59 50 141 3950
+rect 187 50 200 3950
+rect 0 0 200 50
+<< mvndiodec >>
+rect 13 50 59 3950
+rect 141 50 187 3950
+<< metal1 >>
+rect 0 3950 200 4000
+rect 0 50 13 3950
+rect 59 50 141 3950
+rect 187 50 200 3950
+rect 0 0 200 50
+<< labels >>
+rlabel metal1 100 2000 100 2000 4 MINUS
+<< end >>

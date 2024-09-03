@@ -1,0 +1,34 @@
+** sch_path: /home/shahid/GF180Projects/PGA_Decoder/Resis_cap/xschem/resis_TB.sch
+**.subckt resis_TB
+V1 VDD GND 3.3
+.save i(v1)
+V2 r1 GND 3.3
+.save i(v2)
+R1 r2 GND 1k m=1
+x1 r1 r2 VDD pex_resis_magic
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+.include pex_resis_magic.spice
+.control
+save all
+dc v2 0 3.3 0.01
+let vrd = v(r1)-v(r2)
+let ird = v(r2)/1e3
+let resis = vrd/ird
+plot resis
+plot v(r2)
+*write test_ppolyf_u.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

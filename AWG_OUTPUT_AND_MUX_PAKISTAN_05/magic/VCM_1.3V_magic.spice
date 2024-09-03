@@ -1,0 +1,19 @@
+* NGSPICE file created from VCM_1.3V_magic.ext - technology: gf180mcuC
+
+.subckt ppolyf_u_3VY3SR w_n1124_n1136# a_460_850# a_n380_850# a_180_n952# a_n100_850#
++ a_460_n952# a_740_n952# a_n100_n952# a_740_850# a_n380_n952# a_n660_850# a_n660_n952#
++ a_180_850# a_n940_n952# a_n940_850#
+X0 a_460_850# a_460_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+X1 a_180_850# a_180_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+X2 a_n940_850# a_n940_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+X3 a_n660_850# a_n660_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+X4 a_n100_850# a_n100_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+X5 a_n380_850# a_n380_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+X6 a_740_850# a_740_n952# w_n1124_n1136# ppolyf_u r_width=1u r_length=8.5u
+.ends
+
+.subckt VCM_1.3V_magic VDD VSS VCM_1.3
+Xppolyf_u_3VY3SR_0 VDD m1_905_2023# m1_626_1599# VCM_1.3 m1_905_2023# VCM_1.3 VDD
++ m1_345_n120# VDD VSS VDD m1_345_n120# m1_626_1599# VDD VDD ppolyf_u_3VY3SR
+.ends
+

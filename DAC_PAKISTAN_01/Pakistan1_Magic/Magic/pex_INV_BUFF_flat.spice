@@ -1,0 +1,26 @@
+* NGSPICE file created from INV_BUFF_flat_flat.ext - technology: gf180mcuC
+
+.subckt INV_BUFF_flat_flat
+X0 Inverter_0.OUT Inverter_0.IN Inverter_0.VDD Inverter_0.VDD pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+X1 Inverter_0.VDD a_703_386# a_560_209# Inverter_0.VDD pfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X2 a_703_386# a_560_209# Inverter_0.VDD Inverter_0.VDD pfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X3 a_703_386# Inverter_0.IN Inverter_0.VSS Inverter_0.VSS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X4 Inverter_0.OUT Inverter_0.IN Inverter_0.VSS Inverter_0.VSS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+X5 Inverter_0.VSS Inverter_0.OUT a_560_209# Inverter_0.VSS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+C0 a_560_209# a_703_386# 0.268f
+C1 Inverter_0.IN a_560_209# 0.087f
+C2 Inverter_0.OUT a_560_209# 0.219f
+C3 Inverter_0.VDD a_560_209# 0.602f
+C4 Inverter_0.IN a_703_386# 0.156f
+C5 Inverter_0.OUT a_703_386# 0.00424f
+C6 Inverter_0.VDD a_703_386# 0.313f
+C7 Inverter_0.IN Inverter_0.OUT 0.158f
+C8 Inverter_0.VDD Inverter_0.IN 0.268f
+C9 Inverter_0.VDD Inverter_0.OUT 0.14f
+C10 a_703_386# Inverter_0.VSS 0.295f
+C11 Inverter_0.OUT Inverter_0.VSS 0.565f
+C12 a_560_209# Inverter_0.VSS 0.556f
+C13 Inverter_0.IN Inverter_0.VSS 1.36f
+C14 Inverter_0.VDD Inverter_0.VSS 1.98f
+.ends
+

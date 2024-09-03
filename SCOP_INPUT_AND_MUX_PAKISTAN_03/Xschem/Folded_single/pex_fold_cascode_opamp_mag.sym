@@ -1,0 +1,47 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -80 0 -80 60 {}
+L 4 -80 60 90 60 {}
+L 4 90 -50 90 60 {}
+L 4 -80 -50 90 -50 {}
+L 4 -80 -50 -80 0 {}
+L 7 90 0 110 0 {}
+L 7 -10 -70 -10 -50 {}
+L 7 10 -70 10 -50 {}
+L 7 -100 10 -80 10 {}
+L 7 -100 -10 -80 -10 {}
+L 7 20 60 20 80 {}
+L 7 -30 60 -30 80 {}
+L 7 -10 60 -10 80 {}
+L 7 -50 60 -50 80 {}
+L 7 90 20 110 20 {}
+B 5 107.5 -2.5 112.5 2.5 {name=OUT dir=inout}
+B 5 -12.5 -72.5 -7.5 -67.5 {name=VDD dir=inout}
+B 5 7.5 -72.5 12.5 -67.5 {name=VSS dir=inout}
+B 5 -102.5 7.5 -97.5 12.5 {name=VINN dir=inout}
+B 5 -102.5 -12.5 -97.5 -7.5 {name=VINP dir=inout}
+B 5 17.5 77.5 22.5 82.5 {name=IBIAS dir=inout}
+B 5 -32.5 77.5 -27.5 82.5 {name=VBS2 dir=inout}
+B 5 -12.5 77.5 -7.5 82.5 {name=VBS3 dir=inout}
+B 5 -52.5 77.5 -47.5 82.5 {name=VBIASN dir=inout}
+B 5 107.5 17.5 112.5 22.5 {name=OUTo dir=inout}
+T {@symname} -46.5 -16 0 0 0.3 0.3 {}
+T {@name} 45 38 0 0 0.2 0.2 {}
+T {OUT} 85 -4 0 1 0.2 0.2 {}
+T {VDD} -14 -45 3 1 0.2 0.2 {}
+T {VSS} 6 -45 3 1 0.2 0.2 {}
+T {VINN} -75 14 2 1 0.2 0.2 {}
+T {VINP} -75 -6 2 1 0.2 0.2 {}
+T {IBIAS} 24 55 1 1 0.2 0.2 {}
+T {VBS2} -26 55 1 1 0.2 0.2 {}
+T {VBS3} -6 55 1 1 0.2 0.2 {}
+T {VBIASN} -46 55 1 1 0.2 0.2 {}
+T {OUTo} 85 16 0 1 0.2 0.2 {}

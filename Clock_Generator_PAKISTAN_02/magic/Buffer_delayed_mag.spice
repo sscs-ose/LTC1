@@ -1,0 +1,21 @@
+* NGSPICE file created from Buffer_delayed_mag.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MW53B7 a_n188_n80# a_n100_n124# a_100_n80# w_n274_n210#
+X0 a_100_n80# a_n100_n124# a_n188_n80# w_n274_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+.ends
+
+.subckt nmos_3p3_MGBSF7 a_100_n22# a_n100_n66# a_n192_n36# VSUBS
+X0 a_100_n22# a_n100_n66# a_n192_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+.ends
+
+.subckt Inverter_delayed_mag VDD VSS IN OUT
+Xpmos_3p3_MW53B7_0 VDD IN OUT VDD pmos_3p3_MW53B7
+Xnmos_3p3_MGBSF7_0 OUT IN VSS VSS nmos_3p3_MGBSF7
+.ends
+
+.subckt Buffer_delayed_mag IN OUT VDD VSS
+Xpmos_3p3_MW53B7_0 VDD IN Inverter_delayed_mag_0/IN VDD pmos_3p3_MW53B7
+XInverter_delayed_mag_0 VDD VSS Inverter_delayed_mag_0/IN OUT Inverter_delayed_mag
+Xnmos_3p3_MGBSF7_0 Inverter_delayed_mag_0/IN IN VSS VSS nmos_3p3_MGBSF7
+.ends
+

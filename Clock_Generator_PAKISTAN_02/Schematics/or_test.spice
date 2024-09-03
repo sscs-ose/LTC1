@@ -1,0 +1,77 @@
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/or_test.sch
+**.subckt or_test
+V1 VDD VSS 3.3
+.save i(v1)
+V2 VSS GND 0
+.save i(v2)
+V3 IN1 VSS pulse(0 3.3 0 100p 100p 100n 200n)
+.save i(v3)
+V4 IN2 VSS pulse(0 3.3 0 100p 100p 200n 400n)
+.save i(v4)
+x1 IN1 VSS VDD OUT IN2 or_2
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+
+.control
+save all
+tran 50p 1u
+plot v(IN1)
+plot V(IN2)
+plot v(OUT)
+
+
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  or_2.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/or_2.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/or_2.sch
+.subckt or_2 IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM4 net1 IN1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 net1 IN1 net2 VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM7 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 net2 IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+x1 VSS VDD OUT net1 GF_INV
+.ends
+
+
+* expanding   symbol:  GF_INV.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/GF_INV.sym
+** sch_path: /home/shahid/GF180Projects/Dividers/pre_Umra_final/pre_Umra/Xschem/GF_INV.sch
+.subckt GF_INV VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

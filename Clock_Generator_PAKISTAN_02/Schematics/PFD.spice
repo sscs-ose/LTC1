@@ -1,0 +1,160 @@
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/PFD.sch
+**.subckt PFD VSS VREF VDIV PU PD VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin VREF
+*.ipin VDIV
+*.opin PU
+*.opin PD
+x1 VSS VDD net6 net2 net7 net1 VDD DFF
+x2 VSS VDD net6 net5 net4 net3 VDD DFF
+x3 net4 VSS VDD net8 net7 NAND
+* noconn #net1
+* noconn #net3
+x4 VSS VDD PU net4 buffer_loading
+x8 VSS VDD PD net7 buffer_loading
+x6 VSS VDIV net2 VDD inv_PFD
+x7 VSS VREF net5 VDD inv_PFD
+x5 VSS net8 net6 VDD buffer_PFD
+**.ends
+
+* expanding   symbol:  DFF.sym # of pins=7
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/DFF.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/DFF.sch
+.subckt DFF VSS D RST CLK Q QB VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin D
+*.ipin RST
+*.ipin CLK
+*.opin Q
+*.opin QB
+x1 RST VSS VDD net6 CLK NAND_pfd
+x2 net1 VSS VDD net2 D NAND_pfd
+x3 net2 VSS VDD net4 net3 NAND_pfd
+x4 RST VSS VDD net5 net4 NAND_pfd
+x5 net6 VSS VDD net3 net7 NAND_pfd
+x6 net5 VSS VDD net1 net6 NAND_pfd
+x7 net1 VSS VDD QB Q NAND_pfd
+x8 QB VSS VDD Q net3 NAND_pfd
+x9 VSS net5 net7 VDD inv_DFF
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/NAND.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/NAND.sch
+.subckt NAND IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  buffer_loading.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/buffer_loading.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/buffer_loading.sch
+.subckt buffer_loading VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 net1 IN VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 net1 IN VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM3 OUT net1 VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 OUT net1 VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inv_PFD.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/inv_PFD.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/inv_PFD.sch
+.subckt inv_PFD VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  buffer_PFD.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/buffer_PFD.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/buffer_PFD.sch
+.subckt buffer_PFD VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+x1 VSS VDD net1 IN GF_INV_PFD
+x2 VSS VDD OUT net1 GF_INV_PFD
+.ends
+
+
+* expanding   symbol:  NAND_pfd.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/NAND_pfd.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/NAND_pfd.sch
+.subckt NAND_pfd IN1 VSS VDD OUT IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM3 net1 IN2 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 OUT IN1 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM5 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  inv_DFF.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/inv_DFF.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/inv_DFF.sch
+.subckt inv_DFF VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  GF_INV_PFD.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/GF_INV_PFD.sym
+** sch_path: /home/shahid/GF180Projects/PLL_pakistan2/top_drc_updated/xschem/GF_INV_PFD.sch
+.subckt GF_INV_PFD VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.35u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.35u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

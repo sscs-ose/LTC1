@@ -1,0 +1,81 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1695189568
+<< nwell >>
+rect -704 -906 704 906
+<< nsubdiff >>
+rect -680 810 680 882
+rect -680 -810 -608 810
+rect 608 -810 680 810
+rect -680 -882 680 -810
+<< polysilicon >>
+rect -520 709 -320 722
+rect -520 663 -507 709
+rect -333 663 -320 709
+rect -520 620 -320 663
+rect -520 -663 -320 -620
+rect -520 -709 -507 -663
+rect -333 -709 -320 -663
+rect -520 -722 -320 -709
+rect -240 709 -40 722
+rect -240 663 -227 709
+rect -53 663 -40 709
+rect -240 620 -40 663
+rect -240 -663 -40 -620
+rect -240 -709 -227 -663
+rect -53 -709 -40 -663
+rect -240 -722 -40 -709
+rect 40 709 240 722
+rect 40 663 53 709
+rect 227 663 240 709
+rect 40 620 240 663
+rect 40 -663 240 -620
+rect 40 -709 53 -663
+rect 227 -709 240 -663
+rect 40 -722 240 -709
+rect 320 709 520 722
+rect 320 663 333 709
+rect 507 663 520 709
+rect 320 620 520 663
+rect 320 -663 520 -620
+rect 320 -709 333 -663
+rect 507 -709 520 -663
+rect 320 -722 520 -709
+<< polycontact >>
+rect -507 663 -333 709
+rect -507 -709 -333 -663
+rect -227 663 -53 709
+rect -227 -709 -53 -663
+rect 53 663 227 709
+rect 53 -709 227 -663
+rect 333 663 507 709
+rect 333 -709 507 -663
+<< ppolyres >>
+rect -520 -620 -320 620
+rect -240 -620 -40 620
+rect 40 -620 240 620
+rect 320 -620 520 620
+<< metal1 >>
+rect -518 663 -507 709
+rect -333 663 -322 709
+rect -238 663 -227 709
+rect -53 663 -42 709
+rect 42 663 53 709
+rect 227 663 238 709
+rect 322 663 333 709
+rect 507 663 518 709
+rect -518 -709 -507 -663
+rect -333 -709 -322 -663
+rect -238 -709 -227 -663
+rect -53 -709 -42 -663
+rect 42 -709 53 -663
+rect 227 -709 238 -663
+rect 322 -709 333 -663
+rect 507 -709 518 -663
+<< properties >>
+string FIXED_BBOX -644 -846 644 846
+string gencell ppolyf_u
+string library gf180mcu
+string parameters w 1.0 l 6.2 m 1 nx 4 wmin 0.80 lmin 1.00 rho 315 val 2.1k dummy 0 dw 0.07 term 0.0 sterm 0.0 caplen 0.4 snake 0 glc 0 grc 0 gtc 0 gbc 0 roverlap 0 endcov 100 full_metal 0
+<< end >>

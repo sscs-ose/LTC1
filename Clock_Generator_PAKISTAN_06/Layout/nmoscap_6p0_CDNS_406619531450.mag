@@ -1,0 +1,61 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2218 -2350 5218 5092
+<< pwell >>
+rect -88 0 3088 3000
+<< mvndiff >>
+rect -88 2933 0 3000
+rect -88 67 -75 2933
+rect -29 67 0 2933
+rect -88 0 0 67
+rect 3000 2933 3088 3000
+rect 3000 67 3029 2933
+rect 3075 67 3088 2933
+rect 3000 0 3088 67
+<< mvndiffc >>
+rect -75 67 -29 2933
+rect 3029 67 3075 2933
+<< mvnmoscap >>
+rect 0 0 3000 3000
+<< polysilicon >>
+rect 0 3079 3000 3092
+rect 0 3033 67 3079
+rect 2933 3033 3000 3079
+rect 0 3000 3000 3033
+rect 0 -33 3000 0
+rect 0 -79 67 -33
+rect 2933 -79 3000 -33
+rect 0 -92 3000 -79
+<< polycontact >>
+rect 67 3033 2933 3079
+rect 67 -79 2933 -33
+<< metal1 >>
+rect 42 3079 2958 3090
+rect 42 3033 67 3079
+rect 2933 3033 2958 3079
+rect 42 3022 2958 3033
+rect -218 2933 -18 3000
+rect -218 67 -75 2933
+rect -29 67 -18 2933
+rect -218 -150 -18 67
+rect 42 -22 1042 3022
+rect 1958 -22 2958 3022
+rect 42 -33 2958 -22
+rect 42 -79 67 -33
+rect 2933 -79 2958 -33
+rect 42 -90 2958 -79
+rect 3018 2933 3218 3000
+rect 3018 67 3029 2933
+rect 3075 67 3218 2933
+rect 3018 -150 3218 67
+rect -218 -350 3218 -150
+<< labels >>
+rlabel metal1 1500 -250 1500 -250 4 D
+rlabel metal1 3118 1325 3118 1325 4 D
+rlabel metal1 -118 1325 -118 1325 4 D
+rlabel polycontact 1500 3056 1500 3056 4 G
+rlabel polycontact 1500 -56 1500 -56 4 G
+<< end >>

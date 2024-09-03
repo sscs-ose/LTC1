@@ -1,0 +1,43 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell AND_3_In_Layout in circuit PGA_Dec_Layout.spice (0)(5 instances)
+Flattening unmatched subcell nmos_3p3_JCGST2 in circuit PGA_Dec_Layout.spice (0)(15 instances)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit PGA_Dec_Layout.spice (0)(5 instances)
+Flattening unmatched subcell pmos_3p3_MNVUAR in circuit PGA_Dec_Layout.spice (0)(20 instances)
+Flattening unmatched subcell AND_2_In_Layout in circuit PGA_Dec_Layout.spice (0)(1 instance)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit PGA_Dec_Layout.spice (0)(1 instance)
+Flattening unmatched subcell pmos_3p3_MNVUAR in circuit PGA_Dec_Layout.spice (0)(3 instances)
+Flattening unmatched subcell nmos_3p3_BGGST2 in circuit PGA_Dec_Layout.spice (0)(2 instances)
+Flattening unmatched subcell OR_2_In_Layout in circuit PGA_Dec_Layout.spice (0)(1 instance)
+Flattening unmatched subcell pmos_3p3_MEVUAR in circuit PGA_Dec_Layout.spice (0)(2 instances)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit PGA_Dec_Layout.spice (0)(3 instances)
+Flattening unmatched subcell pmos_3p3_MNVUAR in circuit PGA_Dec_Layout.spice (0)(1 instance)
+Flattening unmatched subcell Inverter_Layout in circuit PGA_Dec_Layout.spice (0)(3 instances)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit PGA_Dec_Layout.spice (0)(3 instances)
+Flattening unmatched subcell pmos_3p3_MNVUAR in circuit PGA_Dec_Layout.spice (0)(3 instances)
+Flattening unmatched subcell AND_2_Input in circuit PGA_Decoder.spice (1)(1 instance)
+Flattening unmatched subcell AND_3_Input in circuit PGA_Decoder.spice (1)(5 instances)
+Flattening unmatched subcell Inverter in circuit PGA_Decoder.spice (1)(3 instances)
+Flattening unmatched subcell OR_2_Input in circuit PGA_Decoder.spice (1)(1 instance)
+
+Class PGA_Dec_Layout.spice (0):  Merged 34 parallel devices.
+Subcircuit summary:
+Circuit 1: PGA_Dec_Layout.spice            |Circuit 2: PGA_Decoder.spice               
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (61->29)                         |nfet_03v3 (29)                             
+pfet_03v3 (31->29)                         |pfet_03v3 (29)                             
+Number of devices: 58                      |Number of devices: 58                      
+Number of nets: 34                         |Number of nets: 34                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes PGA_Dec_Layout.spice and PGA_Decoder.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

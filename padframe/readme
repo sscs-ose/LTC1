@@ -1,4 +1,19 @@
-Please put the common padframe in this folder.
-Requisites :
-    - Document your custom padframe as describe in our weekly chipathon
-    - Add a simulation folder where test benches are available to simulate your padring
+
+------------------------------------------------------------------------------------------------------------------------------
+
+In this folder you will find PAD Frame Ring for PAKISTAN Chip LTC1 along with wiring of control pins of programmable PADS.
+
+  Total PADS = 72
+  Programmable PADS Used as INPUT  = 09
+  Programmable PADS Used as OUTPUT = 06
+  Digital Input PADs = 18
+  Analog PADs =  18
+  VDD PADs =  08
+  VSS PADs =  13
+  
+  
+ There is also a PDF file in this folder showing PADRING PIN details. Pin names in Black belongs to PAKISTAN_6 Project. 
+ And Pin names in RED belongs to Pakistan_2 Projects.
+ Some PINs are Sharing in both Projects. 
+ 
+ -------------------------------------------------------------------------------------------------------------------------------

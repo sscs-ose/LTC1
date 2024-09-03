@@ -1,0 +1,67 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1699963945
+<< nwell >>
+rect -274 -1166 274 1166
+<< pmos >>
+rect -100 436 100 1036
+rect -100 -300 100 300
+rect -100 -1036 100 -436
+<< pdiff >>
+rect -188 1023 -100 1036
+rect -188 449 -175 1023
+rect -129 449 -100 1023
+rect -188 436 -100 449
+rect 100 1023 188 1036
+rect 100 449 129 1023
+rect 175 449 188 1023
+rect 100 436 188 449
+rect -188 287 -100 300
+rect -188 -287 -175 287
+rect -129 -287 -100 287
+rect -188 -300 -100 -287
+rect 100 287 188 300
+rect 100 -287 129 287
+rect 175 -287 188 287
+rect 100 -300 188 -287
+rect -188 -449 -100 -436
+rect -188 -1023 -175 -449
+rect -129 -1023 -100 -449
+rect -188 -1036 -100 -1023
+rect 100 -449 188 -436
+rect 100 -1023 129 -449
+rect 175 -1023 188 -449
+rect 100 -1036 188 -1023
+<< pdiffc >>
+rect -175 449 -129 1023
+rect 129 449 175 1023
+rect -175 -287 -129 287
+rect 129 -287 175 287
+rect -175 -1023 -129 -449
+rect 129 -1023 175 -449
+<< polysilicon >>
+rect -100 1036 100 1080
+rect -100 392 100 436
+rect -100 300 100 344
+rect -100 -344 100 -300
+rect -100 -436 100 -392
+rect -100 -1080 100 -1036
+<< metal1 >>
+rect -175 1023 -129 1034
+rect -175 438 -129 449
+rect 129 1023 175 1034
+rect 129 438 175 449
+rect -175 287 -129 298
+rect -175 -298 -129 -287
+rect 129 287 175 298
+rect 129 -298 175 -287
+rect -175 -449 -129 -438
+rect -175 -1034 -129 -1023
+rect 129 -449 175 -438
+rect 129 -1034 175 -1023
+<< properties >>
+string gencell pfet_03v3
+string library gf180mcu
+string parameters w 3 l 1 m 3 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 full_metal 0 compatible {pfet_03v3 pfet_06v0}
+<< end >>

@@ -1,0 +1,101 @@
+** sch_path: /home/shahid/Videos/opamp_xschem/Folded_Cascode_Amplifier/FILTER_OPAMPBLOCK_CHECK.sch
+**.subckt FILTER_OPAMPBLOCK_CHECK VDD VSS VOUT_N VOUT_P VIN_N VIN_P IBIAS VCM
+*.iopin VDD
+*.iopin VSS
+*.opin VOUT_N
+*.opin VOUT_P
+*.ipin VIN_N
+*.ipin VIN_P
+*.ipin IBIAS
+*.ipin VCM
+V3 VIN_P GND 0.5 AC 1u
+.save i(v3)
+V4 VSS GND 0
+.save i(v4)
+V5 VDD GND 3.3
+.save i(v5)
+V6 VIN_N GND 0.5 AC 1u 180
+.save i(v6)
+I1 IBIAS VSS 20u
+V1 VCM GND 1.6
+.save i(v1)
+x2 VDD VOUT_N VOUT_OPAMP_N VOUT_OPAMP_P VOUT_P VIN_N VIN_P pex_filter_res_magic
+x1 VDD VSS VOUT_OPAMP_N VOUT_OPAMP_P IBIAS VCM VOUT_N VOUT_P Folded_Cascode_Diff_PEX
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+
+
+
+.include pex_Folded_Diff_Op_Amp_Layout.spice
+.include pex_filter_res_magic.spice
+.control
+set color0=white
+set color1=black
+save all
+
+*.options savecurrents
+save @m.x1.xm23.m0[vds] @m.x1.xm24.m0[vds]
+*@m.xm4.m0[vds]
+*save @m.xm8.m0[vds]
+*save @m.xm10.m0[vds]
+*save @m.xm12.m0[vds]
+*-@m.xm1.m0[vdsat]
+*dc V6 0 0.1 0.01m
+
+*tran 150p 300n
+*let gain = (maximum(outp)-minimum(outn))/2e-3
+*print gain
+
+
+*plot v(outp) v(outn)
+*plot v(in1) v(in2)
+*plot v(buff_in1) v(buff_in2)
+
+ac dec 50 1 1e9
+let tf = VOUT_N/VIN_P
+let gain = db(tf)
+let phase = (180/pi)*ph(tf)
+
+*let tf1 = OUTp/IN1
+*let gain1 = db(tf1)
+*let phase1 = (180/pi)*ph(tf1)
+
+plot gain
+plot phase
+
+*plot gain1
+*plot phase1
+*let myval=mean(out1)
+
+*print myval
+*let my_vect = [123 23 42 12 45 76]
+*write pmos_nmos.raw
+*let vdiff = @m.xm1.m0[vdsat]+vds
+*plot @m.xm1.m0[vdsat]
+*tran 100p 100n
+
+
+*plot v(i1)
+*plot vdiff
+let m1vds = minimum(@m.x1.xm23.m0[vds])
+let m2vds = minimum(@m.x1.xm24.m0[vds])
+*let m4vds = minimum(@m.xm4.m0[vds])
+*let m8vds = maximum(@m.xm8.m0[vds])
+*let m10vds = maximum(@m.xm10.m0[vds])
+*let m12vds = minimum(@m.xm12.m0[vds])
+*print m1vds m2vds
+*m4vds m8vds m10vds m12vds
+*display all
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,84 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -720 420 -720 430 {
+lab=VSS}
+N -720 340 -720 360 {
+lab=VDD}
+N -640 340 -640 360 {
+lab=VSS}
+N -640 420 -640 440 {
+lab=GND}
+N -900 270 -900 280 {
+lab=VSS}
+N -900 200 -900 210 {
+lab=S0}
+N -1050 360 -1050 370 {
+lab=VSS}
+N -1050 280 -1050 300 {
+lab=I0}
+N -970 320 -970 330 {
+lab=VSS}
+N -970 240 -970 260 {
+lab=I1}
+N -530 250 -530 260 {
+lab=S0}
+N -580 310 -560 310 {
+lab=I0}
+N -510 250 -510 270 {
+lab=VDD}
+N -510 370 -510 380 {
+lab=VSS}
+N -480 320 -460 320 {
+lab=OUT}
+N -580 330 -560 330 {
+lab=I1}
+C {devices/vsource.sym} -720 390 0 0 {name=V1 value=3.3}
+C {devices/vsource.sym} -640 390 0 0 {name=V2 value=0}
+C {devices/vsource.sym} -900 240 0 0 {name=V4 value="pulse(3.3 0 0 100p 100p 350n 700n)"}
+C {devices/lab_wire.sym} -640 340 0 0 {name=p1 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -720 430 0 0 {name=p3 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} -720 340 0 0 {name=p4 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -900 200 0 0 {name=p12 sig_type=std_logic lab=S0
+}
+C {devices/lab_wire.sym} -900 280 0 0 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/gnd.sym} -640 440 0 0 {name=l1 lab=GND}
+C {devices/code_shown.sym} -370 150 0 0 {name=MODELS only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+"}
+C {devices/code_shown.sym} 110 260 0 1 {name=NGSPICE1 only_toplevel=true
+value="
+.include "pex_mux_2x1_ibr.spice"
+.control
+save all
+tran 50p 800n 
+plot v(S0)  v(I0)+5 v(I1)+10 v(OUT)+15
+
+
+*write test_nfet_03v3.raw
+.endc
+"}
+C {devices/vsource.sym} -1050 330 0 0 {name=V6 value="pulse(0 3.3 0 100p 100p 200n 400n)"3.3}
+C {devices/lab_wire.sym} -1050 370 0 0 {name=p24 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} -1050 280 0 0 {name=p25 sig_type=std_logic lab=I0}
+C {devices/vsource.sym} -970 290 0 0 {name=V7 value="pulse(0 3.3 0 100p 100p 100n 200n)"}
+C {devices/lab_wire.sym} -970 330 0 0 {name=p26 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} -970 240 0 0 {name=p27 sig_type=std_logic lab=I1}
+C {devices/lab_wire.sym} -580 310 0 0 {name=p2 sig_type=std_logic lab=I0}
+C {devices/lab_wire.sym} -580 330 0 0 {name=p5 sig_type=std_logic lab=I1}
+C {devices/lab_wire.sym} -510 250 0 1 {name=p6 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -510 380 2 0 {name=p7 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} -530 250 0 0 {name=p8 sig_type=std_logic lab=S0}
+C {devices/lab_wire.sym} -460 320 0 1 {name=p9 sig_type=std_logic lab=OUT}
+C {pex_mux_2x1_ibr.sym} -760 440 0 0 {name=x1}

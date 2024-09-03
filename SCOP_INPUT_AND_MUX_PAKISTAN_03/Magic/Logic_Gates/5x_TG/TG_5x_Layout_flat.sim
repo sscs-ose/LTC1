@@ -1,0 +1,24 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x CLK VIN VOUT VSS s=5200,204 d=5200,204 l=56 w=100 x=942 y=165 nfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN VDD s=17600,576 d=10400,304 l=56 w=200 x=462 y=537 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT VDD s=10400,304 d=10400,304 l=56 w=200 x=942 y=537 pfet_03v3
+x CLK VIN VOUT VSS s=5200,204 d=5200,204 l=56 w=100 x=622 y=165 nfet_03v3
+x CLK Inverter_Layout_0.OUT VSS VSS s=8800,376 d=8800,376 l=56 w=100 x=67 y=165 nfet_03v3
+x CLK VOUT VIN VSS s=5200,204 d=5200,204 l=56 w=100 x=1102 y=165 nfet_03v3
+x CLK VOUT VIN VSS s=5200,204 d=5200,204 l=56 w=100 x=782 y=165 nfet_03v3
+x CLK VIN VOUT VSS s=5200,204 d=8800,376 l=56 w=100 x=1262 y=165 nfet_03v3
+x CLK Inverter_Layout_0.OUT VDD VDD s=17600,576 d=17600,576 l=56 w=200 x=67 y=537 pfet_03v3
+x Inverter_Layout_0.OUT VIN VOUT VDD s=10400,304 d=10400,304 l=56 w=200 x=622 y=537 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN VDD s=10400,304 d=17600,576 l=56 w=200 x=1102 y=537 pfet_03v3
+x Inverter_Layout_0.OUT VOUT VIN VDD s=10400,304 d=10400,304 l=56 w=200 x=782 y=537 pfet_03v3
+x CLK VOUT VIN VSS s=8800,376 d=5200,204 l=56 w=100 x=462 y=165 nfet_03v3
+R VIN 148
+R VOUT 175
+R Inverter_Layout_0.OUT 345
+R CLK 403
+= CLK Inverter_Layout_0.IN
+C VDD0 2.5
+R VDD 2683
+= VDD Inverter_Layout_0.VDD
+R VSS 33
+= VSS Inverter_Layout_0.VSS

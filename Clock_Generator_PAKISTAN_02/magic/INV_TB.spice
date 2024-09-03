@@ -1,0 +1,52 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/INV_TB.sch
+**.subckt INV_TB OUT OUT1
+*.opin OUT
+*.opin OUT1
+V4 IN GND pulse( 3.3 0 0 100p 100p 100n 200n)
+.save i(v4)
+VCNTL1 VSS GND 0
+.save i(vcntl1)
+VCNTL2 VDD GND 3.3
+.save i(vcntl2)
+x1 VSS VDD OUT1 IN GF_INV_STAGE
+x2 VSS VDD OUT IN GF_INV_STAGE_PEX
+**** begin user architecture code
+
+
+.include GF_INV_STAGE_PEX.spice
+.control
+set color0=white
+set color1=black
+
+save all
+tran 10p 600n
+plot v(OUT) v(OUT) +4
+write INV_TB.raw
+.endc
+
+
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  GF_INV_STAGE.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/GF_INV_STAGE.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/GF_INV_STAGE.sch
+.subckt GF_INV_STAGE VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=350n W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=350n W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

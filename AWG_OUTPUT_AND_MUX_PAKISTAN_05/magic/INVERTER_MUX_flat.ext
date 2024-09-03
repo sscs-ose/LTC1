@@ -1,0 +1,37 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "OUT" 5 851 -11 851 -11 m1
+port "IN" 3 27 -17 27 -17 m1
+port "VDD" 0 434 863 434 863 nsc
+port "VSS" 1 425 -618 428 -615 psc
+node "OUT" 203 891.686 851 -11 m1 0 0 0 0 41600 1632 83200 2432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127328 5628 0 0 0 0 0 0 0 0
+node "IN" 694 1410.63 27 -17 m1 0 0 0 0 0 0 0 0 0 0 0 0 288086 10572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11863 566 0 0 0 0 0 0 0 0
+node "VDD" 1298 2935.85 434 863 nsc 826540 3638 0 0 73350 1810 112000 3520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214508 6030 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 425 -618 psc 0 0 0 0 56000 2320 74165 1812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180008 4530 0 0 0 0 0 0 0 0
+cap "IN" "VDD" 852.128
+cap "IN" "OUT" 307.333
+cap "VDD" "OUT" 1020.89
+device msubckt nfet_03v3 654 -455 655 -454 l=56 w=100 "VSS" "IN" 112 0 "OUT" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 494 -455 495 -454 l=56 w=100 "VSS" "IN" 112 0 "VSS" 100 5200,204 "OUT" 100 5200,204
+device msubckt nfet_03v3 334 -455 335 -454 l=56 w=100 "VSS" "IN" 112 0 "OUT" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 174 -455 175 -454 l=56 w=100 "VSS" "IN" 112 0 "VSS" 100 8800,376 "OUT" 100 5200,204
+device msubckt nfet_03v3 654 -219 655 -218 l=56 w=100 "VSS" "IN" 112 0 "OUT" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 494 -219 495 -218 l=56 w=100 "VSS" "IN" 112 0 "VSS" 100 5200,204 "OUT" 100 5200,204
+device msubckt nfet_03v3 334 -219 335 -218 l=56 w=100 "VSS" "IN" 112 0 "OUT" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 174 -219 175 -218 l=56 w=100 "VSS" "IN" 112 0 "VSS" 100 8800,376 "OUT" 100 5200,204
+device msubckt pfet_03v3 654 130 655 131 l=56 w=200 "VDD" "IN" 112 0 "OUT" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 494 130 495 131 l=56 w=200 "VDD" "IN" 112 0 "VDD" 200 10400,304 "OUT" 200 10400,304
+device msubckt pfet_03v3 334 130 335 131 l=56 w=200 "VDD" "IN" 112 0 "OUT" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 174 130 175 131 l=56 w=200 "VDD" "IN" 112 0 "VDD" 200 17600,576 "OUT" 200 10400,304
+device msubckt pfet_03v3 654 466 655 467 l=56 w=200 "VDD" "IN" 112 0 "OUT" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 494 466 495 467 l=56 w=200 "VDD" "IN" 112 0 "VDD" 200 10400,304 "OUT" 200 10400,304
+device msubckt pfet_03v3 334 466 335 467 l=56 w=200 "VDD" "IN" 112 0 "OUT" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 174 466 175 467 l=56 w=200 "VDD" "IN" 112 0 "VDD" 200 17600,576 "OUT" 200 10400,304

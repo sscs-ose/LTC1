@@ -1,0 +1,115 @@
+** sch_path: /home/shahid/Documents/resistor_pga/xschem/res_pga1.sch
+**.subckt res_pga1 VDD A B C D E F G H
+*.iopin VDD
+*.iopin A
+*.iopin B
+*.iopin C
+*.iopin D
+*.iopin E
+*.iopin F
+*.iopin G
+*.iopin H
+XR1 net1 A VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR2 net2 net1 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR3 net2 net2 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR4 net2 net2 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR5 net6 net2 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR6 net3 net6 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR7 net4 net3 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR8 net7 net4 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR9 net5 net7 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR10 net78 net5 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR11 net8 net78 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR12 B net8 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR13 net9 B VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR14 net14 net9 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR15 net10 net14 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR16 net11 net10 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR17 net15 net11 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR18 net12 net15 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR19 net13 net12 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR20 C net13 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR25 net16 C VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR26 net22 net16 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR27 net17 net22 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR28 net18 net17 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR29 net23 net18 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR30 net19 net23 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR31 net20 net19 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR32 net24 net20 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR33 net21 net24 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR34 net79 net21 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR35 net25 net79 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR36 D net25 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR37 net26 D VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR38 net32 net26 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR39 net27 net32 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR40 net28 net27 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR41 net33 net28 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR42 net29 net33 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR43 net30 net29 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR44 net34 net30 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR45 net31 net34 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR46 net77 net31 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR47 net35 net77 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR48 net73 net35 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR49 net36 E VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR50 net36 net36 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR51 net37 net36 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR52 net38 net37 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR53 net42 net38 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR54 net39 net42 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR55 net40 net39 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR56 net43 net40 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR57 net41 net43 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR58 net80 net41 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR59 net44 net80 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR60 net70 net44 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR61 net45 F VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR62 net51 net45 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR63 net46 net51 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR64 net47 net46 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR65 net52 net47 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR66 net48 net52 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR67 net49 net48 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR68 net53 net49 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR69 net50 net53 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR70 net81 net50 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR71 net54 net81 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR72 G net54 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR73 G G VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR74 G G VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR75 net55 G VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR76 net56 net55 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR77 net60 net56 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR78 net57 net60 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR79 net58 net57 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR80 net61 net58 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR81 net59 net61 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR82 net82 net59 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR83 net62 net82 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR84 net83 net62 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR85 net63 net83 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR86 net68 net63 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR87 net64 net68 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR88 net65 net64 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR89 net69 net65 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR90 net66 net69 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR91 net67 net66 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR92 H net67 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR99 net71 net70 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR100 net72 net71 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR101 net76 net72 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR105 net74 net73 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR106 net75 net74 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR107 E net75 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR21 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR22 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR23 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR24 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR93 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR94 VDD VDD VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR201 F net76 VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR202 E E VDD ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+**.ends
+.end

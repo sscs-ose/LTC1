@@ -1,0 +1,34 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1714558667
+<< metal1 >>
+rect 134 2052 6355 2252
+rect -44 1602 59 1784
+rect 3248 1574 3339 1727
+rect 3267 1567 3339 1574
+rect 6413 1473 6589 1614
+rect 127 548 285 743
+rect 375 -35 6349 178
+<< metal3 >>
+rect 1471 608 3512 684
+use CLK_div_2_mag  CLK_div_2_mag_0
+timestamp 1714558667
+transform 1 0 206 0 1 -12
+box -206 12 3133 2241
+use CLK_div_2_mag  CLK_div_2_mag_1
+timestamp 1714558667
+transform 1 0 3454 0 1 -11
+box -206 12 3133 2241
+<< labels >>
+flabel metal1 6541 1576 6541 1576 0 FreeSans 640 0 0 0 Vdiv4
+port 0 nsew
+flabel metal1 5436 2215 5436 2215 0 FreeSans 640 0 0 0 VDD
+port 1 nsew
+flabel metal1 3316 77 3316 77 0 FreeSans 640 0 0 0 VSS
+port 2 nsew
+flabel metal1 156 708 156 708 0 FreeSans 640 0 0 0 RST
+port 3 nsew
+flabel metal1 5 1761 5 1761 0 FreeSans 640 0 0 0 CLK
+port 4 nsew
+<< end >>

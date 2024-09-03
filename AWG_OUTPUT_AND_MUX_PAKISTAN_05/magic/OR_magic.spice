@@ -1,0 +1,27 @@
+* NGSPICE file created from OR_magic.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8RCNG a_n120_n36# w_n206_n161# a_28_n25# a_n28_n69#
+X0 a_28_n25# a_n28_n69# a_n120_n36# w_n206_n161# pfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt OR_magic A B OUT VDD VSS
+Xnmos_3p3_H9QVWA_0 a_607_n374# VSS A VSS nmos_3p3_H9QVWA
+Xnmos_3p3_H9QVWA_1 VSS a_607_n374# B VSS nmos_3p3_H9QVWA
+Xnmos_3p3_H9QVWA_2 VSS OUT a_607_n374# VSS nmos_3p3_H9QVWA
+Xpmos_3p3_M8RCNG_11 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_10 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_0 VDD VDD OUT a_607_n374# pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_1 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_2 VDD VDD OUT a_607_n374# pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_3 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_4 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_6 VDD VDD VDD VDD pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_7 VDD VDD m1_267_n209# A pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_8 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_9 m1_267_n209# VDD a_607_n374# B pmos_3p3_M8RCNG
+.ends
+

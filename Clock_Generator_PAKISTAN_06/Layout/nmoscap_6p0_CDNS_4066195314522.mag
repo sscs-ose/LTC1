@@ -1,0 +1,82 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2218 -2350 2818 2692
+<< pwell >>
+rect -88 0 688 600
+<< mvndiff >>
+rect -88 558 0 600
+rect -88 42 -75 558
+rect -29 42 0 558
+rect -88 0 0 42
+rect 600 558 688 600
+rect 600 42 629 558
+rect 675 42 688 558
+rect 600 0 688 42
+<< mvndiffc >>
+rect -75 42 -29 558
+rect 629 42 675 558
+<< mvnmoscap >>
+rect 0 0 600 600
+<< polysilicon >>
+rect 0 679 600 692
+rect 0 633 53 679
+rect 99 633 165 679
+rect 211 633 277 679
+rect 323 633 389 679
+rect 435 633 501 679
+rect 547 633 600 679
+rect 0 600 600 633
+rect 0 -33 600 0
+rect 0 -79 53 -33
+rect 99 -79 165 -33
+rect 211 -79 277 -33
+rect 323 -79 389 -33
+rect 435 -79 501 -33
+rect 547 -79 600 -33
+rect 0 -92 600 -79
+<< polycontact >>
+rect 53 633 99 679
+rect 165 633 211 679
+rect 277 633 323 679
+rect 389 633 435 679
+rect 501 633 547 679
+rect 53 -79 99 -33
+rect 165 -79 211 -33
+rect 277 -79 323 -33
+rect 389 -79 435 -33
+rect 501 -79 547 -33
+<< metal1 >>
+rect 42 679 558 690
+rect 42 633 53 679
+rect 99 633 165 679
+rect 211 633 277 679
+rect 323 633 389 679
+rect 435 633 501 679
+rect 547 633 558 679
+rect -218 558 -18 600
+rect -218 42 -75 558
+rect -29 42 -18 558
+rect -218 -150 -18 42
+rect 42 -33 558 633
+rect 42 -79 53 -33
+rect 99 -79 165 -33
+rect 211 -79 277 -33
+rect 323 -79 389 -33
+rect 435 -79 501 -33
+rect 547 -79 558 -33
+rect 42 -90 558 -79
+rect 618 558 818 600
+rect 618 42 629 558
+rect 675 42 818 558
+rect 618 -150 818 42
+rect -218 -350 818 -150
+<< labels >>
+rlabel metal1 300 -250 300 -250 4 D
+rlabel metal1 718 125 718 125 4 D
+rlabel metal1 -118 125 -118 125 4 D
+rlabel polycontact 300 656 300 656 4 G
+rlabel polycontact 300 -56 300 -56 4 G
+<< end >>

@@ -1,0 +1,14 @@
+* NGSPICE file created from cap_11p_flat.ext - technology: gf180mcuC
+
+.subckt cap_11p_pex P M
+X0 P M cap_mim_2f0_m4m5_noshield c_width=30u c_length=30u
+X1 P M cap_mim_2f0_m4m5_noshield c_width=30u c_length=30u
+X2 P M cap_mim_2f0_m4m5_noshield c_width=30u c_length=30u
+X3 P M cap_mim_2f0_m4m5_noshield c_width=30u c_length=30u
+X4 P M cap_mim_2f0_m4m5_noshield c_width=30u c_length=30u
+X5 P M cap_mim_2f0_m4m5_noshield c_width=30u c_length=30u
+C0 P M 32f
+C1 M VSUBS 59.6f
+C2 P VSUBS 90.1f
+.ends
+

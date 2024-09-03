@@ -1,0 +1,73 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2088 -2044 2472 2344
+<< mvnmos >>
+rect 0 0 140 300
+rect 244 0 384 300
+<< mvndiff >>
+rect -88 287 0 300
+rect -88 241 -75 287
+rect -29 241 0 287
+rect -88 173 0 241
+rect -88 127 -75 173
+rect -29 127 0 173
+rect -88 59 0 127
+rect -88 13 -75 59
+rect -29 13 0 59
+rect -88 0 0 13
+rect 140 287 244 300
+rect 140 241 169 287
+rect 215 241 244 287
+rect 140 173 244 241
+rect 140 127 169 173
+rect 215 127 244 173
+rect 140 59 244 127
+rect 140 13 169 59
+rect 215 13 244 59
+rect 140 0 244 13
+rect 384 287 472 300
+rect 384 241 413 287
+rect 459 241 472 287
+rect 384 173 472 241
+rect 384 127 413 173
+rect 459 127 472 173
+rect 384 59 472 127
+rect 384 13 413 59
+rect 459 13 472 59
+rect 384 0 472 13
+<< mvndiffc >>
+rect -75 241 -29 287
+rect -75 127 -29 173
+rect -75 13 -29 59
+rect 169 241 215 287
+rect 169 127 215 173
+rect 169 13 215 59
+rect 413 241 459 287
+rect 413 127 459 173
+rect 413 13 459 59
+<< polysilicon >>
+rect 0 300 140 344
+rect 244 300 384 344
+rect 0 -44 140 0
+rect 244 -44 384 0
+<< metal1 >>
+rect -75 287 -29 300
+rect -75 173 -29 241
+rect -75 59 -29 127
+rect -75 0 -29 13
+rect 169 287 215 300
+rect 169 173 215 241
+rect 169 59 215 127
+rect 169 0 215 13
+rect 413 287 459 300
+rect 413 173 459 241
+rect 413 59 459 127
+rect 413 0 459 13
+<< labels >>
+rlabel mvndiffc 192 150 192 150 4 D
+rlabel mvndiffc 436 150 436 150 4 S
+rlabel mvndiffc -52 150 -52 150 4 S
+<< end >>

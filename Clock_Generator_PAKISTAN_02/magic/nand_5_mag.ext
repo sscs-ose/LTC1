@@ -1,0 +1,87 @@
+timestamp 1714558667
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use and_5_mag and_5_mag_0 1 0 -564 0 1 -403
+use GF_INV_MAG GF_INV_MAG_0 1 0 4065 0 1 440
+port "VSS" 1 4118 203 4118 203 m1
+port "D" 5 51 336 51 336 m1
+port "C" 3 51 473 51 473 m1
+port "OUT" 7 4370 595 4370 595 m1
+port "B" 4 38 569 38 569 m1
+port "A" 2 34 693 34 693 m1
+port "E" 6 51 888 51 888 m1
+port "VDD" 0 4084 1134 4084 1134 m1
+node "VSS" 0 415.959 4118 203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 167772 1646 0 0 0 0 0 0 0 0
+node "D" 0 69.0652 51 336 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10349 420 0 0 0 0 0 0 0 0
+node "C" 0 44.2941 51 473 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8880 388 0 0 0 0 0 0 0 0
+node "OUT" 0 63.2179 4370 595 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7076 360 0 0 0 0 0 0 0 0
+node "B" 0 23.5805 38 569 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3431 240 0 0 0 0 0 0 0 0
+node "A" 0 48.4149 34 693 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8633 372 0 0 0 0 0 0 0 0
+node "E" 0 68.8882 51 888 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 394 0 0 0 0 0 0 0 0
+node "VDD" 0 285.264 4084 1134 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94659 1288 0 0 0 0 0 0 0 0
+node "a_3779_1001#" 24 0 3779 1001 nnd 0 0 0 0 16578 632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2123_1077#" 46005 35.184 2123 1077 nw 11728 1498 0 0 31732 2032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "E" "C" 1.40136
+cap "VSS" "VDD" 25.1382
+cap "D" "A" 0.154626
+cap "B" "A" 77.8257
+cap "C" "D" 105.683
+cap "OUT" "VSS" 12.3668
+cap "VSS" "a_3779_1001#" 0.177863
+cap "C" "B" 79.9291
+cap "w_2123_1077#" "VDD" 1.04618
+cap "E" "A" 42.3746
+cap "OUT" "VDD" 6.69006
+cap "a_3779_1001#" "VDD" 8.64467
+cap "C" "A" 6.752
+cap "and_5_mag_0/B" "and_5_mag_0/C" -79.9291
+cap "and_5_mag_0/B" "and_5_mag_0/A" -77.8257
+cap "and_5_mag_0/C" "and_5_mag_0/D" -105.683
+cap "and_5_mag_0/C" "and_5_mag_0/A" -6.752
+cap "and_5_mag_0/D" "and_5_mag_0/A" -0.154626
+cap "and_5_mag_0/C" "and_5_mag_0/E" -1.40136
+cap "and_5_mag_0/A" "and_5_mag_0/E" -42.3746
+cap "and_5_mag_0/D" "and_5_mag_0/VOUT" 0.00617763
+cap "and_5_mag_0/VSS" "and_5_mag_0/D" 0.116061
+cap "and_5_mag_0/VDD" "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/IN" -1.13687e-13
+cap "GF_INV_MAG_0/OUT" "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/IN" 0.00305632
+cap "and_5_mag_0/and2_mag_1/VSS" "and_5_mag_0/and2_mag_3/GF_INV_MAG_0/IN" 0.875062
+cap "and_5_mag_0/and2_mag_3/IN1" "and_5_mag_0/VOUT" 1.11962
+cap "and_5_mag_0/and2_mag_1/VDD" "and_5_mag_0/and2_mag_3/IN1" 4.04996
+cap "and_5_mag_0/and2_mag_1/VSS" "and_5_mag_0/VOUT" 13.966
+cap "and_5_mag_0/and2_mag_1/VSS" "and_5_mag_0/and2_mag_1/VDD" -18.8757
+cap "GF_INV_MAG_0/OUT" "and_5_mag_0/and2_mag_3/IN1" 0.828065
+cap "and_5_mag_0/and2_mag_1/VSS" "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/IN" 0.00510619
+cap "and_5_mag_0/VOUT" "and_5_mag_0/and2_mag_3/GF_INV_MAG_0/IN" 11.3601
+cap "and_5_mag_0/and2_mag_1/VDD" "and_5_mag_0/and2_mag_3/GF_INV_MAG_0/IN" 6.94107
+cap "and_5_mag_0/and2_mag_1/VDD" "and_5_mag_0/VOUT" 57.0208
+cap "and_5_mag_0/and2_mag_1/VSS" "and_5_mag_0/and2_mag_3/IN1" 0.386647
+cap "GF_INV_MAG_0/OUT" "and_5_mag_0/VOUT" 10.4463
+cap "and_5_mag_0/and2_mag_1/VDD" "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/IN" 0.041298
+cap "GF_INV_MAG_0/OUT" "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/VSS" -12.3668
+cap "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/VSS" "and_5_mag_0/and2_mag_3/VDD" -6.44037
+cap "GF_INV_MAG_0/OUT" "and_5_mag_0/VOUT" 9.91654
+cap "GF_INV_MAG_0/OUT" "and_5_mag_0/and2_mag_3/VDD" -5.14692
+merge "and_5_mag_0/and2_mag_2/GF_INV_MAG_0/VSS" "and_5_mag_0/and2_mag_1/VSS" -403.401 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60017 -1864 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/and2_mag_1/VSS" "GF_INV_MAG_0/VSS"
+merge "GF_INV_MAG_0/VSS" "and_5_mag_0/VSUBS"
+merge "and_5_mag_0/VSUBS" "VSUBS"
+merge "VSUBS" "and_5_mag_0/VSS"
+merge "and_5_mag_0/VSS" "VSS"
+merge "and_5_mag_0/and2_mag_3/VDD" "and_5_mag_0/and2_mag_1/VDD" -388.058 -13744 -2514 0 0 -24559 -2612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -47806 -1518 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/and2_mag_1/VDD" "GF_INV_MAG_0/w_n118_526#"
+merge "GF_INV_MAG_0/w_n118_526#" "and_5_mag_0/VDD"
+merge "and_5_mag_0/VDD" "VDD"
+merge "VDD" "a_3779_1001#"
+merge "a_3779_1001#" "w_2123_1077#"
+merge "GF_INV_MAG_0/IN" "and_5_mag_0/VOUT" -148.785 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6148 -328 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/A" "A" -48.4149 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8633 -372 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/B" "B" -23.5805 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3431 -240 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/C" "C" -44.2941 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8880 -388 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/D" "D" -69.3324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10349 -420 0 0 0 0 0 0 0 0
+merge "GF_INV_MAG_0/OUT" "OUT" -52.7094 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3364 -232 0 0 0 0 0 0 0 0
+merge "and_5_mag_0/E" "E" -68.8882 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9690 -394 0 0 0 0 0 0 0 0

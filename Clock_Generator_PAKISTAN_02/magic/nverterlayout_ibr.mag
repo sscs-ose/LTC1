@@ -1,0 +1,70 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1714558529
+<< nwell >>
+rect -88 1000 316 1149
+rect -88 968 315 1000
+rect 4 724 63 960
+rect 64 612 121 621
+<< pwell >>
+rect 64 534 121 540
+rect 54 532 121 534
+<< psubdiff >>
+rect -67 305 295 320
+rect -67 258 -46 305
+rect 275 258 295 305
+rect -67 241 295 258
+<< nsubdiff >>
+rect -64 1086 292 1111
+rect -64 1040 -48 1086
+rect 279 1040 292 1086
+rect -64 1027 292 1040
+<< psubdiffcont >>
+rect -46 258 275 305
+<< nsubdiffcont >>
+rect -48 1040 279 1086
+<< polysilicon >>
+rect 86 621 142 672
+rect 54 606 142 621
+rect 54 546 70 606
+rect 118 546 142 606
+rect 54 532 142 546
+rect 86 524 142 532
+<< polycontact >>
+rect 70 546 118 606
+<< metal1 >>
+rect -88 1086 315 1130
+rect -88 1040 -48 1086
+rect 279 1040 315 1086
+rect -88 968 315 1040
+rect 4 724 63 968
+rect 54 606 121 621
+rect 54 596 70 606
+rect 53 546 70 596
+rect 118 546 121 606
+rect 53 532 121 546
+rect -1 339 58 485
+rect 168 429 224 867
+rect -88 305 316 339
+rect -88 258 -46 305
+rect 275 258 316 305
+rect -88 220 316 258
+use nmos_3p3_DDNVWA  nmos_3p3_DDNVWA_0
+timestamp 1714126980
+transform 1 0 114 0 1 458
+box -144 -97 144 97
+use pmos_3p3_MQGBLR  pmos_3p3_MQGBLR_0
+timestamp 1714474474
+transform 1 0 114 0 1 790
+box -202 -210 202 210
+<< labels >>
+flabel nsubdiffcont 116 1065 116 1065 0 FreeSans 480 0 0 0 VDD
+port 0 nsew
+flabel psubdiffcont 113 283 113 283 0 FreeSans 480 0 0 0 VSS
+port 1 nsew
+flabel metal1 194 631 194 631 0 FreeSans 480 0 0 0 OUT
+port 2 nsew
+flabel polycontact 92 575 92 575 0 FreeSans 480 0 0 0 IN
+port 3 nsew
+<< end >>

@@ -1,0 +1,20 @@
+* NGSPICE file created from nor_3_mag.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt pmos_3p3_MYFUKR a_28_n240# a_n28_n284# a_n116_n240# w_n202_n370#
+X0 a_28_n240# a_n28_n284# a_n116_n240# w_n202_n370# pfet_03v3 ad=1.06p pd=5.68u as=1.06p ps=5.68u w=2.4u l=0.28u
+.ends
+
+**.subckt nor_3_mag VDD VSS OUT IN1 IN2 IN3
+Xnmos_3p3_DDNVWA_2 OUT VSS IN2 VSS nmos_3p3_DDNVWA
+Xpmos_3p3_MYFUKR_0 OUT IN1 pmos_3p3_MYFUKR_2/a_28_n240# VDD pmos_3p3_MYFUKR
+Xpmos_3p3_MYFUKR_1 pmos_3p3_MYFUKR_1/a_28_n240# IN3 VDD VDD pmos_3p3_MYFUKR
+Xpmos_3p3_MYFUKR_2 pmos_3p3_MYFUKR_2/a_28_n240# IN2 pmos_3p3_MYFUKR_1/a_28_n240# VDD
++ pmos_3p3_MYFUKR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN1 VSS nmos_3p3_DDNVWA
+Xnmos_3p3_DDNVWA_1 VSS OUT IN3 VSS nmos_3p3_DDNVWA
+.ends
+

@@ -1,0 +1,728 @@
+timestamp 1713338890
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use nmos_4T_metal_stack nmos_4T_metal_stack_0 1 0 603 0 1 812
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_1 0 1 915 1 0 1082
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_0 0 1 915 1 0 8954
+use comp018green_out_drv_nleg_4T comp018green_out_drv_nleg_4T_0 1 0 597 0 1 680
+use nmos_4T_metal_stack nmos_4T_metal_stack_1 1 0 2951 0 1 812
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_5 0 1 3263 1 0 1082
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_4 0 1 2789 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_3 0 1 3263 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_2 0 1 2789 1 0 1082
+use comp018green_out_drv_nleg_4T comp018green_out_drv_nleg_4T_1 1 0 2945 0 1 680
+use nmos_4T_metal_stack nmos_4T_metal_stack_2 1 0 5299 0 1 812
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_7 0 1 5137 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_6 0 1 5137 1 0 1082
+use comp018green_out_drv_nleg_4T comp018green_out_drv_nleg_4T_2 1 0 5293 0 1 680
+use nmos_4T_metal_stack nmos_4T_metal_stack_3 1 0 7647 0 1 812
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_11 0 1 5611 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_10 0 1 7485 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_9 0 1 5611 1 0 1082
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_8 0 1 7485 1 0 1082
+use comp018green_out_drv_nleg_4T comp018green_out_drv_nleg_4T_3 1 0 7641 0 1 680
+use nmos_4T_metal_stack nmos_4T_metal_stack_4 -1 0 10151 0 1 812
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_15 0 1 9837 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_14 0 1 7964 1 0 8954
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_13 0 1 7964 1 0 1082
+use M1_POLY2_CDNS_69033583165610 M1_POLY2_CDNS_69033583165610_12 0 1 9837 1 0 1082
+use GR_NMOS_4T GR_NMOS_4T_0 1 0 363 0 1 436
+node "m1_9756_8920#" 16 3791.36 9756 8920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 503086 18730 0 0 0 0 0 0 0 0
+node "m1_7941_1079#" 15 2701.23 7941 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360962 15786 0 0 0 0 0 0 0 0
+node "m1_7462_1079#" 15 2701.24 7462 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360962 15786 0 0 0 0 0 0 0 0
+node "m1_5588_1079#" 15 2695.65 5588 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360962 15786 0 0 0 0 0 0 0 0
+node "m1_5114_1079#" 15 2695.72 5114 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360962 15786 0 0 0 0 0 0 0 0
+node "m1_3242_1079#" 15 2691.2 3242 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360962 15786 0 0 0 0 0 0 0 0
+node "m1_2772_1079#" 15 2691.17 2772 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360962 15786 0 0 0 0 0 0 0 0
+node "m1_7883_8988#" 3 764.741 7883 8988 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 344604 6978 0 0 0 0 0 0 0 0
+node "m1_7404_8988#" 3 659.017 7404 8988 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 418424 8256 0 0 0 0 0 0 0 0
+node "m1_5532_8988#" 5 2197.12 5532 8988 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 676728 12336 0 0 0 0 0 0 0 0
+node "m1_n440_8920#" 16 3794.94 -440 8920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 504286 18754 0 0 0 0 0 0 0 0
+node "m1_n440_9080#" 3 766.225 -440 9080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 345904 7004 0 0 0 0 0 0 0 0
+node "m1_n440_9240#" 3 658.984 -440 9240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 419224 8272 0 0 0 0 0 0 0 0
+node "m1_n440_9400#" 5 2200.44 -440 9400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 677808 12356 0 0 0 0 0 0 0 0
+node "a_9721_1028#" 17 226.437 9721 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7847_1028#" 17 220.94 7847 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7373_1028#" 17 220.94 7373 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5499_1028#" 17 220.94 5499 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5025_1028#" 17 220.94 5025 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3151_1028#" 17 220.94 3151 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2677_1028#" 17 220.94 2677 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_803_1028#" 17 226.437 803 1028 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_9721_8900#" 17 226.437 9721 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7847_8900#" 17 220.94 7847 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7373_8900#" 17 220.94 7373 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5499_8900#" 17 220.94 5499 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5025_8900#" 17 220.94 5025 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3151_8900#" 17 220.94 3151 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2677_8900#" 17 220.94 2677 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_803_8900#" 17 226.437 803 8900 p 0 0 0 0 0 0 0 0 0 0 0 0 22080 652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_7883_8988#" "m1_7404_8988#" 2696.7
+cap "a_5025_8900#" "m1_5532_8988#" 0.0684816
+cap "a_5025_1028#" "a_5499_1028#" 4.55303
+cap "a_7373_8900#" "m1_5532_8988#" 1.4828
+cap "a_5499_1028#" "m1_5588_1079#" 14.1373
+cap "a_7847_1028#" "m1_7941_1079#" 14.1379
+cap "a_5025_1028#" "m1_5588_1079#" 0.682767
+cap "m1_7883_8988#" "m1_9756_8920#" 1153.78
+cap "a_5499_8900#" "a_5025_8900#" 4.55303
+cap "a_7373_8900#" "m1_7941_1079#" 0.386338
+cap "a_7847_1028#" "a_7373_1028#" 4.55303
+cap "a_2677_1028#" "m1_3242_1079#" 0.641628
+cap "m1_n440_9080#" "m1_n440_8920#" 1163.5
+cap "m1_7462_1079#" "m1_7941_1079#" 751.531
+cap "m1_n440_9400#" "m1_5532_8988#" 69.2968
+cap "a_7847_8900#" "m1_5532_8988#" 1.12486
+cap "m1_5588_1079#" "m1_5532_8988#" 35.8375
+cap "a_7373_1028#" "m1_7462_1079#" 14.1373
+cap "a_803_8900#" "m1_n440_8920#" 38.3454
+cap "a_5499_8900#" "m1_n440_9400#" 0.0604843
+cap "a_7847_8900#" "m1_7941_1079#" 10.8744
+cap "a_5499_8900#" "m1_5588_1079#" 10.8741
+cap "m1_n440_9080#" "m1_2772_1079#" 35.8375
+cap "a_3151_8900#" "m1_2772_1079#" 0.38078
+cap "m1_2772_1079#" "m1_3242_1079#" 767.869
+cap "m1_n440_9400#" "m1_n440_9240#" 3065.95
+cap "a_7373_8900#" "m1_7404_8988#" 22.4712
+cap "a_2677_8900#" "m1_2772_1079#" 10.8741
+cap "a_5499_8900#" "m1_5532_8988#" 23.2705
+cap "m1_7462_1079#" "m1_7404_8988#" 35.8375
+cap "a_3151_1028#" "m1_3242_1079#" 14.1382
+cap "a_7373_8900#" "m1_7883_8988#" 0.0675195
+cap "a_3151_8900#" "m1_n440_9400#" 1.55208
+cap "a_9721_8900#" "m1_5532_8988#" 1.12486
+cap "a_2677_8900#" "m1_n440_9400#" 1.12486
+cap "a_803_8900#" "m1_n440_9400#" 1.12486
+cap "a_7847_8900#" "m1_7404_8988#" 2.96682
+cap "a_7373_1028#" "m1_7941_1079#" 0.668662
+cap "a_2677_1028#" "m1_2772_1079#" 14.1373
+cap "a_7847_8900#" "m1_7883_8988#" 20.7835
+cap "m1_5532_8988#" "m1_7404_8988#" 3059.47
+cap "a_5025_8900#" "m1_5114_1079#" 10.8741
+cap "a_2677_1028#" "a_3151_1028#" 4.55303
+cap "a_9721_1028#" "m1_9756_8920#" 14.1382
+cap "a_5499_1028#" "m1_5114_1079#" 0.630984
+cap "m1_n440_9240#" "m1_n440_9080#" 2707.65
+cap "a_7847_1028#" "m1_7462_1079#" 0.660128
+cap "a_3151_8900#" "m1_n440_9240#" 22.2801
+cap "a_9721_8900#" "m1_7404_8988#" 2.08069
+cap "m1_n440_9400#" "m1_5114_1079#" 35.8375
+cap "m1_n440_9240#" "m1_3242_1079#" 35.8375
+cap "a_5025_1028#" "m1_5114_1079#" 14.1373
+cap "m1_7883_8988#" "m1_7941_1079#" 35.8375
+cap "a_2677_8900#" "m1_n440_9240#" 2.99322
+cap "m1_5114_1079#" "m1_5588_1079#" 760.521
+cap "a_7373_8900#" "m1_7462_1079#" 10.8741
+cap "a_803_8900#" "m1_n440_9240#" 2.08069
+cap "a_3151_1028#" "m1_2772_1079#" 0.659043
+cap "a_9721_8900#" "m1_9756_8920#" 38.4656
+cap "a_3151_8900#" "m1_n440_9080#" 0.0570784
+cap "a_9721_8900#" "m1_7883_8988#" 6.36286
+cap "a_803_1028#" "m1_n440_8920#" 14.1379
+cap "a_3151_8900#" "m1_3242_1079#" 10.8746
+cap "a_5025_8900#" "m1_n440_9400#" 23.2047
+cap "a_2677_8900#" "m1_n440_9080#" 20.713
+cap "a_3151_8900#" "a_2677_8900#" 4.55303
+cap "a_2677_8900#" "m1_3242_1079#" 0.370718
+cap "a_803_8900#" "m1_n440_9080#" 6.46367
+cap "a_5025_8900#" "m1_5588_1079#" 0.394487
+cap "a_7373_8900#" "a_7847_8900#" 4.55303
+cap "a_7847_8900#" "m1_7462_1079#" 0.381407
+cap "a_5499_8900#" "m1_5114_1079#" 0.364569
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 44.3802
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 24.7112
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 5.16069
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 24.641
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 6.92322
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 55.251
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" -8.12369
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 5.70732
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 54.5742
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 138.042
+cap "GR_NMOS_4T_0/w_n1730_n583#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 2.61394
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" -0.76279
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_206_444#" -3.06943
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 22.9029
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 2.5755
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 10.5126
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 24.3283
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" -0.104727
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 21.5312
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" -0.10477
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 2.58041
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 3.85388
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 24.7497
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 27.1358
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 11.2791
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 4.23003
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 94.5453
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" -8.88648
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 9.20352
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" -0.76279
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 14.7465
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 14.4415
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 1.23994
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 32.1064
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 24.4746
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" 25.766
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 19.3474
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 24.9541
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" 3.85388
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 2.2453
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 27.1358
+cap "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 8.29757
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 87.8773
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 5.9187
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -4.44078
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 4.23003
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" 32.1064
+cap "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 23.588
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 13.708
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 12.7591
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" -0.10477
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 1.60858
+cap "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 24.3283
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -4.4457
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 144.699
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" -0.76279
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 22.5697
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 5.88474
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "nmos_4T_metal_stack_4/m1_430_401#" 6.16167
+cap "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" "nmos_4T_metal_stack_4/m1_430_401#" 25.5289
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" 32.1064
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" 3.85388
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" 8.31357
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 5.9187
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" 3.85388
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "nmos_4T_metal_stack_4/m1_430_401#" -8.12369
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 27.1358
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 23.588
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 37.7232
+cap "GR_NMOS_4T_0/a_n458_32#" "nmos_4T_metal_stack_4/m1_430_401#" 39.4984
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" 25.766
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 4.23003
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" 23.8012
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" 32.1064
+cap "nmos_4T_metal_stack_4/m1_430_401#" "comp018green_out_drv_nleg_4T_3/a_48_532#" -0.76279
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -4.4457
+cap "GR_NMOS_4T_0/a_n458_32#" "nmos_4T_metal_stack_4/m1_430_401#" 142.924
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" 15.4939
+cap "nmos_4T_metal_stack_4/m1_430_401#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" 24.7497
+cap "GR_NMOS_4T_0/w_n1730_n583#" "nmos_4T_metal_stack_4/m1_430_401#" 22.2928
+cap "nmos_4T_metal_stack_4/m1_430_401#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" -0.104761
+cap "GR_NMOS_4T_0/w_n1730_n583#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" 1.87667
+cap "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 37.029
+cap "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" "GR_NMOS_4T_0/w_n1730_n583#" 3.62332
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "GR_NMOS_4T_0/a_n458_32#" 45.2231
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "GR_NMOS_4T_0/w_n1730_n583#" 5.07287
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -4.44078
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" 24.4746
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 861.567
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 1036.35
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 929.139
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 73.894
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -283.169
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 358.967
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" -68.4986
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 854.288
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 91.4747
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "GR_NMOS_4T_0/a_n458_32#" 3.00015
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" -68.4986
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 921.053
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 175.847
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 869.035
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 578.389
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" -308.534
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" 2.92973
+cap "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 890.645
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -154.267
+cap "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" -135.686
+cap "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 900.937
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 2.92973
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 3.00015
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 292.687
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 937.445
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" -25.3653
+cap "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 854.288
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -154.267
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" -134.082
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 900.937
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "nmos_4T_metal_stack_4/m1_430_401#" -283.169
+cap "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 898.025
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 292.687
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 3.00015
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145373_0/w_n5578_n284#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 2.92973
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 890.645
+cap "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" "nmos_4T_metal_stack_4/m1_430_401#" 892.642
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -154.267
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "nmos_4T_metal_stack_4/m1_430_401#" -25.3653
+cap "nmos_4T_metal_stack_4/m1_430_401#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" 869.035
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "nmos_4T_metal_stack_4/m1_430_401#" -154.267
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "GR_NMOS_4T_0/w_n1730_n583#" 67.4688
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "GR_NMOS_4T_0/a_n458_32#" 710.421
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" 921.053
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 861.567
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 48.6593
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -283.169
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 908.364
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 978.459
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 91.4747
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" -68.4986
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 854.288
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" 358.967
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 869.035
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" -25.3653
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_206_444#" -68.4986
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 127.821
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" -308.534
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 900.283
+cap "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 557.658
+cap "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" -135.686
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" 916.664
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" 869.95
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" 900.937
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 244.661
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -154.267
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -154.267
+cap "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 854.288
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "nmos_4T_metal_stack_4/m1_430_401#" -283.169
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" 877.273
+cap "nmos_4T_metal_stack_4/m1_430_401#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" 892.642
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 869.95
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" -134.082
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 244.661
+cap "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 900.937
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "nmos_4T_metal_stack_4/m1_430_401#" -154.267
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "nmos_4T_metal_stack_4/m1_430_401#" -25.3653
+cap "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" "nmos_4T_metal_stack_4/m1_430_401#" 869.035
+cap "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" "nmos_4T_metal_stack_4/m1_n44_400#" 900.283
+cap "GR_NMOS_4T_0/w_n1730_n583#" "nmos_4T_metal_stack_4/m1_n44_400#" 44.1845
+cap "GR_NMOS_4T_0/a_n458_32#" "nmos_4T_metal_stack_4/m1_n44_400#" 656.3
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -154.267
+cap "m1_n440_8920#" "nmos_4T_metal_stack_0/m1_430_401#" 714.213
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "nmos_4T_metal_stack_0/m1_430_401#" -283.169
+cap "m1_n440_8920#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 266.748
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 173.74
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "m1_n440_8920#" 762.837
+cap "nmos_4T_metal_stack_0/m1_430_401#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 147.354
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "GR_NMOS_4T_0/a_n458_32#" 1053
+cap "GR_NMOS_4T_0/w_n1730_n583#" "nmos_4T_metal_stack_0/m1_n44_400#" 78.9496
+cap "nmos_4T_metal_stack_1/m1_n44_400#" "m1_2772_1079#" 358.967
+cap "nmos_4T_metal_stack_0/m1_430_401#" "nmos_4T_metal_stack_1/m1_n44_400#" 91.4747
+cap "nmos_4T_metal_stack_0/m1_430_401#" "nmos_4T_metal_stack_0/m1_n44_400#" -25.3653
+cap "comp018green_out_drv_nleg_4T_0/a_2080_444#" "m1_2772_1079#" 266.731
+cap "nmos_4T_metal_stack_0/m1_430_401#" "m1_2772_1079#" 706.057
+cap "m1_2772_1079#" "m1_3242_1079#" -68.4986
+cap "nmos_4T_metal_stack_0/m1_430_401#" "comp018green_out_drv_nleg_4T_0/a_2080_444#" 148.231
+cap "m1_3242_1079#" "nmos_4T_metal_stack_1/m1_n44_400#" 753.854
+cap "m1_2772_1079#" "m1_3242_1079#" -68.4986
+cap "m1_3242_1079#" "nmos_4T_metal_stack_1/m1_430_401#" 722.562
+cap "nmos_4T_metal_stack_1/m1_n44_400#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 174.634
+cap "comp018green_out_drv_nleg_4T_0/a_2080_444#" "nmos_4T_metal_stack_1/m1_n44_400#" 172.797
+cap "nmos_4T_metal_stack_1/m1_430_401#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 146.474
+cap "m1_3242_1079#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 266.758
+cap "m1_2772_1079#" "nmos_4T_metal_stack_1/m1_n44_400#" 413.013
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "nmos_4T_metal_stack_1/m1_n44_400#" 193.041
+cap "nmos_4T_metal_stack_1/m1_430_401#" "nmos_4T_metal_stack_1/m1_n44_400#" -308.534
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "nmos_4T_metal_stack_1/m1_430_401#" -25.3653
+cap "m1_5114_1079#" "m1_5588_1079#" -135.686
+cap "m1_5114_1079#" "nmos_4T_metal_stack_1/m1_430_401#" 758.019
+cap "m1_5588_1079#" "comp018green_out_drv_nleg_4T_2/a_206_444#" 170.346
+cap "comp018green_out_drv_nleg_4T_1/a_2080_444#" "nmos_4T_metal_stack_2/m1_n44_400#" 178.128
+cap "m1_5114_1079#" "comp018green_out_drv_nleg_4T_1/a_2080_444#" 266.731
+cap "nmos_4T_metal_stack_1/m1_430_401#" "comp018green_out_drv_nleg_4T_1/a_2080_444#" 142.918
+cap "nmos_4T_metal_stack_2/m1_430_401#" "nmos_4T_metal_stack_2/m1_n44_400#" -154.267
+cap "m1_5114_1079#" "nmos_4T_metal_stack_2/m1_n44_400#" 719.925
+cap "nmos_4T_metal_stack_1/m1_430_401#" "nmos_4T_metal_stack_2/m1_n44_400#" 309.881
+cap "comp018green_out_drv_nleg_4T_2/a_206_444#" "nmos_4T_metal_stack_2/m1_n44_400#" 172.843
+cap "m1_5588_1079#" "nmos_4T_metal_stack_2/m1_n44_400#" 772.041
+cap "nmos_4T_metal_stack_2/m1_430_401#" "m1_5588_1079#" 706.057
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "nmos_4T_metal_stack_2/m1_430_401#" -154.267
+cap "comp018green_out_drv_nleg_4T_2/a_206_444#" "nmos_4T_metal_stack_2/m1_430_401#" 148.231
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "nmos_4T_metal_stack_2/m1_430_401#" -25.3653
+cap "comp018green_out_drv_nleg_4T_2/a_206_444#" "m1_5588_1079#" 96.3847
+cap "comp018green_out_drv_nleg_4T_2/a_2080_444#" "nmos_4T_metal_stack_2/m1_430_401#" 142.918
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "nmos_4T_metal_stack_2/m1_430_401#" 309.881
+cap "m1_7941_1079#" "comp018green_out_drv_nleg_4T_3/a_206_444#" 266.748
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "nmos_4T_metal_stack_4/m1_430_401#" -283.169
+cap "m1_7941_1079#" "nmos_4T_metal_stack_4/m1_430_401#" 748.83
+cap "m1_7462_1079#" "comp018green_out_drv_nleg_4T_2/a_2080_444#" 266.731
+cap "m1_7462_1079#" "nmos_4T_metal_stack_3/m1_n44_400#" 719.925
+cap "comp018green_out_drv_nleg_4T_3/a_206_444#" "nmos_4T_metal_stack_4/m1_430_401#" 143.812
+cap "m1_7462_1079#" "m1_7941_1079#" -134.082
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "comp018green_out_drv_nleg_4T_2/a_2080_444#" 178.128
+cap "m1_7941_1079#" "nmos_4T_metal_stack_3/m1_n44_400#" 728.16
+cap "m1_7462_1079#" "nmos_4T_metal_stack_2/m1_430_401#" 758.019
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "comp018green_out_drv_nleg_4T_3/a_206_444#" 177.294
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_3/m1_n44_400#" -25.3653
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -154.267
+cap "nmos_4T_metal_stack_4/m1_430_401#" "m1_9756_8920#" 722.562
+cap "nmos_4T_metal_stack_4/m1_430_401#" "comp018green_out_drv_nleg_4T_3/a_2080_444#" 146.474
+cap "comp018green_out_drv_nleg_4T_3/a_2080_444#" "m1_9756_8920#" 127.053
+cap "GR_NMOS_4T_0/a_n458_32#" "nmos_4T_metal_stack_4/m1_n44_400#" 725.722
+cap "m1_9756_8920#" "nmos_4T_metal_stack_4/m1_n44_400#" 753.854
+cap "GR_NMOS_4T_0/w_n1730_n583#" "nmos_4T_metal_stack_4/m1_n44_400#" 71.8262
+cap "m1_9756_8920#" "comp018green_out_drv_nleg_4T_3/a_2080_444#" 139.705
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -154.267
+cap "comp018green_out_drv_nleg_4T_3/a_2080_444#" "nmos_4T_metal_stack_4/m1_n44_400#" 174.634
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 153.111
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "m1_n440_8920#" 753.182
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "GR_NMOS_4T_0/w_n1730_n583#" 46.4355
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "nmos_4T_metal_stack_0/m1_430_401#" 147.354
+cap "m1_n440_8920#" "nmos_4T_metal_stack_0/m1_430_401#" 714.213
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "nmos_4T_metal_stack_0/m1_430_401#" -283.169
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "m1_n440_8920#" 266.748
+cap "nmos_4T_metal_stack_0/m1_n44_400#" "GR_NMOS_4T_0/a_n458_32#" 972.987
+cap "m1_2772_1079#" "m1_3242_1079#" -68.4986
+cap "nmos_4T_metal_stack_0/m1_430_401#" "nmos_4T_metal_stack_0/m1_n44_400#" -25.3653
+cap "m1_2772_1079#" "comp018green_out_drv_nleg_4T_0/a_2080_444#" 266.731
+cap "nmos_4T_metal_stack_0/m1_430_401#" "nmos_4T_metal_stack_1/m1_n44_400#" 91.4747
+cap "m1_2772_1079#" "nmos_4T_metal_stack_0/m1_430_401#" 706.057
+cap "nmos_4T_metal_stack_0/m1_430_401#" "comp018green_out_drv_nleg_4T_0/a_2080_444#" 148.231
+cap "m1_2772_1079#" "nmos_4T_metal_stack_1/m1_n44_400#" 358.967
+cap "m1_2772_1079#" "nmos_4T_metal_stack_1/m1_n44_400#" 403.39
+cap "nmos_4T_metal_stack_1/m1_n44_400#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 154.002
+cap "m1_2772_1079#" "m1_3242_1079#" -68.4986
+cap "nmos_4T_metal_stack_1/m1_n44_400#" "comp018green_out_drv_nleg_4T_0/a_2080_444#" 152.201
+cap "m1_3242_1079#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 266.758
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "nmos_4T_metal_stack_1/m1_430_401#" -25.3653
+cap "m1_3242_1079#" "nmos_4T_metal_stack_1/m1_n44_400#" 744.21
+cap "nmos_4T_metal_stack_1/m1_430_401#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 146.474
+cap "nmos_4T_metal_stack_1/m1_n44_400#" "nmos_4T_metal_stack_1/m1_430_401#" -308.534
+cap "nmos_4T_metal_stack_1/m1_n44_400#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 123.033
+cap "m1_3242_1079#" "nmos_4T_metal_stack_1/m1_430_401#" 722.562
+cap "comp018green_out_drv_nleg_4T_2/a_206_444#" "m1_5588_1079#" 170.346
+cap "comp018green_out_drv_nleg_4T_1/a_2080_444#" "m1_5114_1079#" 266.731
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "nmos_4T_metal_stack_1/m1_430_401#" 239.873
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "comp018green_out_drv_nleg_4T_2/a_206_444#" 152.216
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "comp018green_out_drv_nleg_4T_1/a_2080_444#" 157.521
+cap "m1_5114_1079#" "m1_5588_1079#" -135.686
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "m1_5114_1079#" 710.366
+cap "nmos_4T_metal_stack_1/m1_430_401#" "comp018green_out_drv_nleg_4T_1/a_2080_444#" 142.918
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "nmos_4T_metal_stack_2/m1_430_401#" -154.267
+cap "nmos_4T_metal_stack_1/m1_430_401#" "m1_5114_1079#" 758.019
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "m1_5588_1079#" 762.376
+cap "comp018green_out_drv_nleg_4T_2/a_206_444#" "nmos_4T_metal_stack_2/m1_430_401#" 148.231
+cap "m1_5588_1079#" "nmos_4T_metal_stack_2/m1_430_401#" 706.057
+cap "nmos_4T_metal_stack_2/m1_430_401#" "nmos_4T_metal_stack_3/m1_n44_400#" -25.3653
+cap "m1_5588_1079#" "comp018green_out_drv_nleg_4T_2/a_206_444#" 96.3847
+cap "nmos_4T_metal_stack_2/m1_n44_400#" "nmos_4T_metal_stack_2/m1_430_401#" -154.267
+cap "m1_7462_1079#" "m1_7941_1079#" -134.082
+cap "comp018green_out_drv_nleg_4T_2/a_2080_444#" "m1_7462_1079#" 266.731
+cap "nmos_4T_metal_stack_2/m1_430_401#" "m1_7462_1079#" 758.019
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "m1_7462_1079#" 710.366
+cap "nmos_4T_metal_stack_4/m1_430_401#" "m1_7941_1079#" 748.83
+cap "comp018green_out_drv_nleg_4T_3/a_206_444#" "m1_7941_1079#" 266.748
+cap "comp018green_out_drv_nleg_4T_3/a_206_444#" "nmos_4T_metal_stack_4/m1_430_401#" 143.812
+cap "nmos_4T_metal_stack_2/m1_430_401#" "comp018green_out_drv_nleg_4T_2/a_2080_444#" 142.918
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "m1_7941_1079#" 718.547
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_3/m1_n44_400#" -283.169
+cap "comp018green_out_drv_nleg_4T_3/a_206_444#" "nmos_4T_metal_stack_3/m1_n44_400#" 156.657
+cap "comp018green_out_drv_nleg_4T_2/a_2080_444#" "nmos_4T_metal_stack_3/m1_n44_400#" 157.521
+cap "nmos_4T_metal_stack_2/m1_430_401#" "nmos_4T_metal_stack_3/m1_n44_400#" 239.873
+cap "nmos_4T_metal_stack_4/m1_430_401#" "comp018green_out_drv_nleg_4T_3/a_2080_444#" 146.474
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -154.267
+cap "nmos_4T_metal_stack_3/m1_n44_400#" "nmos_4T_metal_stack_4/m1_430_401#" -25.3653
+cap "comp018green_out_drv_nleg_4T_3/a_2080_444#" "m1_9756_8920#" 127.053
+cap "nmos_4T_metal_stack_4/m1_430_401#" "m1_9756_8920#" 722.562
+cap "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_4/m1_n44_400#" -154.267
+cap "m1_9756_8920#" "comp018green_out_drv_nleg_4T_3/a_2080_444#" 139.705
+cap "m1_9756_8920#" "nmos_4T_metal_stack_4/m1_n44_400#" 744.21
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "comp018green_out_drv_nleg_4T_3/a_2080_444#" 154.002
+cap "GR_NMOS_4T_0/a_n458_32#" "nmos_4T_metal_stack_4/m1_n44_400#" 651.203
+cap "nmos_4T_metal_stack_4/m1_n44_400#" "GR_NMOS_4T_0/w_n1730_n583#" 42.1551
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 78.9496
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -283.169
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "GR_NMOS_4T_0/a_n458_32#" 1053
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 861.567
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 936.577
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" -68.4986
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 854.288
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 91.4747
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 358.967
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" -68.4986
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 928.488
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 585.81
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 869.035
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 193.041
+cap "comp018green_out_drv_nleg_4T_1/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" -308.534
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -154.267
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 898.054
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 309.881
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 944.884
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 900.937
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" -135.686
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" -25.3653
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 854.288
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_2/a_48_532#" -154.267
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 900.937
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" 905.454
+cap "comp018green_out_drv_nleg_4T_3/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" -283.169
+cap "comp018green_out_drv_nleg_4T_3/a_1192_532#" "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" 892.642
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 309.881
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" 898.054
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" -134.082
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" -25.3653
+cap "comp018green_out_drv_nleg_4T_3/a_1192_532#" "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" 869.035
+cap "comp018green_out_drv_nleg_4T_3/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" -154.267
+cap "comp018green_out_drv_nleg_4T_3/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" -154.267
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" 725.722
+cap "comp018green_out_drv_nleg_4T_3/a_2366_532#" "GR_NMOS_4T_0/w_n1730_n583#" 71.8262
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" 928.488
+cap "m1_n440_9240#" "GR_NMOS_4T_0/w_n1730_n583#" 54.4653
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9400#" 114.297
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 73.6561
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 170.084
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/w_n1730_n583#" -2.45012
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_n440_9080#" 6.15585
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9080#" 54.4653
+cap "m1_n440_9240#" "GR_NMOS_4T_0/a_n458_32#" 6.15585
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_n440_9400#" 17.3909
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 404.199
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 3.86632
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "m1_n440_9400#" 2.52866
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "m1_n440_9400#" 2.46732
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "GR_NMOS_4T_0/w_n1730_n583#" 3.46653
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 22.7693
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_n440_9400#" 190.213
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 344.012
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/w_n1730_n583#" -8.78649
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 476.915
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "m1_n440_9240#" 4.02253
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 246.031
+cap "m1_n440_9240#" "comp018green_out_drv_nleg_4T_0/a_48_532#" 3.5865
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 70.8203
+cap "m1_n440_9240#" "GR_NMOS_4T_0/a_n458_32#" 61.6993
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9400#" 72.5319
+cap "comp018green_out_drv_nleg_4T_0/a_48_532#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 6.41429
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 32.9932
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_0/a_206_444#" 4.82376
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -113.081
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "GR_NMOS_4T_0/a_n458_32#" 13.6862
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "GR_NMOS_4T_0/w_n1730_n583#" 1.58379
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "m1_n440_9400#" 7.86413
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 143.33
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 561.256
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 26.8658
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9400#" 72.5319
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_n440_9400#" 190.213
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "GR_NMOS_4T_0/w_n1730_n583#" 10.7809
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 36.5093
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 42.564
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_206_444#" -26.4431
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" 12.5101
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "GR_NMOS_4T_0/a_n458_32#" 60.6946
+cap "comp018green_out_drv_nleg_4T_0/a_206_444#" "comp018green_out_drv_nleg_4T_0/a_1192_532#" -0.100392
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_0/a_48_532#" -10.1433
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 0.710026
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 222.102
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 7.38371
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" 236.07
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 65.0023
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 2.76893
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 2.46732
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" 0.751284
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" 72.5319
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 55.872
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 346.893
+cap "comp018green_out_drv_nleg_4T_1/a_206_444#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 386.143
+cap "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_206_444#" -9.91468
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 62.8471
+cap "comp018green_out_drv_nleg_4T_0/a_1192_532#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 52.2521
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 2.33507
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" -10.1433
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_206_444#" 1.37461
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_48_532#" 14.0849
+cap "comp018green_out_drv_nleg_4T_1/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" -123.224
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 346.795
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 98.9046
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" 243.963
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 58.4213
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" 6.63985
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" -37.9968
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" 53.3665
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 6.86373
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 33.2955
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "comp018green_out_drv_nleg_4T_1/a_1192_532#" 420.249
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 365.449
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" 43.9516
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -61.6119
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 7.53953
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 96.1885
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -0.100392
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 73.5066
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 440.645
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 11.3009
+cap "comp018green_out_drv_nleg_4T_2/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -61.6119
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" -10.1433
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 296.917
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 2.94655
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "GR_NMOS_4T_0/a_n458_32#" 25.0798
+cap "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 419.449
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" -113.081
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" 25.9799
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 3.58006
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 72.5319
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 209.35
+cap "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 349.72
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" -35.2799
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 374.029
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 3.08521
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 12.1807
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 2.25051
+cap "comp018green_out_drv_nleg_4T_2/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 98.9046
+cap "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 2.33507
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 2.76893
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "comp018green_out_drv_nleg_4T_2/a_1192_532#" 359.731
+cap "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 10.5544
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "GR_NMOS_4T_0/a_n458_32#" 14.0849
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 2.33507
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_48_532#" 2.46732
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 78.329
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" 1.1517
+cap "GR_NMOS_4T_0/w_n1730_n583#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 11.1622
+cap "m1_5532_8988#" "GR_NMOS_4T_0/a_n458_32#" 190.213
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 12.9526
+cap "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 227.941
+cap "m1_5532_8988#" "GR_NMOS_4T_0/w_n1730_n583#" 72.5319
+cap "m1_5532_8988#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 8.14228
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "GR_NMOS_4T_0/w_n1730_n583#" 1.13708
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 44.0695
+cap "comp018green_out_drv_nleg_4T_3/a_2366_532#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" -61.6119
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" 346.893
+cap "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 60.6946
+cap "GR_NMOS_4T_0/a_n458_32#" "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" 26.8658
+cap "comp018green_out_drv_nleg_4T_3/a_48_532#" "comp018green_out_drv_nleg_4T_3/a_1192_532#" -10.1433
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" 3.65733
+cap "comp018green_out_drv_nleg_4T_3/a_2366_532#" "m1_7404_8988#" 3.5865
+cap "m1_7883_8988#" "GR_NMOS_4T_0/w_n1730_n583#" 47.1175
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_5532_8988#" 144.834
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "m1_7883_8988#" 1.23457e-13
+cap "comp018green_out_drv_nleg_4T_3/a_2366_532#" "m1_7883_8988#" 6.41429
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "GR_NMOS_4T_0/w_n1730_n583#" 161.373
+cap "comp018green_out_drv_nleg_4T_3/a_2366_532#" "GR_NMOS_4T_0/w_n1730_n583#" 20.9326
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" 473.688
+cap "m1_5532_8988#" "GR_NMOS_4T_0/w_n1730_n583#" 145.47
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_7404_8988#" 48.0629
+cap "m1_5532_8988#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" 2.46732
+cap "GR_NMOS_4T_0/a_n458_32#" "m1_7883_8988#" 31.7285
+cap "comp018green_out_drv_nleg_4T_3/a_1192_532#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" -61.6119
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/w_n1730_n583#" -11.2555
+cap "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "GR_NMOS_4T_0/a_n458_32#" 327.69
+cap "m1_7404_8988#" "GR_NMOS_4T_0/w_n1730_n583#" 47.1175
+cap "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" 275.448
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9400#" 4.65609
+cap "GR_NMOS_4T_0/w_n1730_n583#" "GR_NMOS_4T_0/a_n458_32#" -6.90565
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9400#" 55.7139
+cap "GR_NMOS_4T_0/w_n1730_n583#" "GR_NMOS_4T_0/a_n458_32#" -48.2155
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/w_n1730_n583#" -37.4609
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_n440_9400#" 55.7139
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" 55.7139
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" -37.4609
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "GR_NMOS_4T_0/a_n458_32#" -29.059
+cap "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 39.5588
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "comp018green_out_drv_nleg_4T_2/a_48_532#" 4.10163
+cap "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" 4.36082
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 55.7139
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" -37.4609
+cap "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" 55.7139
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/M1_NWELL_CDNS_40661953145374_0/w_n5578_n492#" -37.4609
+cap "GR_NMOS_4T_0/a_n458_32#" "GR_NMOS_4T_0/w_n1730_n583#" -37.4609
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_5532_8988#" 55.7139
+cap "GR_NMOS_4T_0/w_n1730_n583#" "m1_5532_8988#" 41.8253
+cap "GR_NMOS_4T_0/w_n1730_n583#" "GR_NMOS_4T_0/a_n458_32#" -43.3636
+merge "M1_POLY2_CDNS_69033583165610_14/a_n42_n89#" "m1_7883_8988#" -3799.23 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -265478 -8988 0 0 0 0 0 0 0 0
+merge "m1_7883_8988#" "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_13/a_n42_n89#" "a_7847_8900#"
+merge "a_7847_8900#" "m1_7941_1079#"
+merge "m1_7941_1079#" "comp018green_out_drv_nleg_4T_3/a_206_444#"
+merge "comp018green_out_drv_nleg_4T_3/a_206_444#" "a_7847_1028#"
+merge "M1_POLY2_CDNS_69033583165610_11/a_n42_n89#" "m1_5532_8988#" -5086.41 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -427454 -11792 0 0 0 0 0 0 0 0
+merge "m1_5532_8988#" "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_9/a_n42_n89#" "a_5499_8900#"
+merge "a_5499_8900#" "m1_5588_1079#"
+merge "m1_5588_1079#" "comp018green_out_drv_nleg_4T_2/a_206_444#"
+merge "comp018green_out_drv_nleg_4T_2/a_206_444#" "a_5499_1028#"
+merge "M1_POLY2_CDNS_69033583165610_15/VSUBS" "M1_POLY2_CDNS_69033583165610_14/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "M1_POLY2_CDNS_69033583165610_14/VSUBS" "M1_POLY2_CDNS_69033583165610_10/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_10/VSUBS" "M1_POLY2_CDNS_69033583165610_11/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_11/VSUBS" "M1_POLY2_CDNS_69033583165610_7/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_7/VSUBS" "M1_POLY2_CDNS_69033583165610_3/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_3/VSUBS" "M1_POLY2_CDNS_69033583165610_4/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_4/VSUBS" "M1_POLY2_CDNS_69033583165610_0/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_0/VSUBS" "M1_POLY2_CDNS_69033583165610_12/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_12/VSUBS" "M1_POLY2_CDNS_69033583165610_13/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_13/VSUBS" "nmos_4T_metal_stack_4/VSUBS"
+merge "nmos_4T_metal_stack_4/VSUBS" "comp018green_out_drv_nleg_4T_3/VSUBS"
+merge "comp018green_out_drv_nleg_4T_3/VSUBS" "M1_POLY2_CDNS_69033583165610_8/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_8/VSUBS" "nmos_4T_metal_stack_3/VSUBS"
+merge "nmos_4T_metal_stack_3/VSUBS" "M1_POLY2_CDNS_69033583165610_9/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_9/VSUBS" "comp018green_out_drv_nleg_4T_2/VSUBS"
+merge "comp018green_out_drv_nleg_4T_2/VSUBS" "M1_POLY2_CDNS_69033583165610_6/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_6/VSUBS" "nmos_4T_metal_stack_2/VSUBS"
+merge "nmos_4T_metal_stack_2/VSUBS" "M1_POLY2_CDNS_69033583165610_5/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_5/VSUBS" "comp018green_out_drv_nleg_4T_1/VSUBS"
+merge "comp018green_out_drv_nleg_4T_1/VSUBS" "M1_POLY2_CDNS_69033583165610_2/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_2/VSUBS" "nmos_4T_metal_stack_1/VSUBS"
+merge "nmos_4T_metal_stack_1/VSUBS" "GR_NMOS_4T_0/a_n458_32#"
+merge "GR_NMOS_4T_0/a_n458_32#" "comp018green_out_drv_nleg_4T_0/VSUBS"
+merge "comp018green_out_drv_nleg_4T_0/VSUBS" "M1_POLY2_CDNS_69033583165610_1/VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_1/VSUBS" "nmos_4T_metal_stack_0/VSUBS"
+merge "nmos_4T_metal_stack_0/VSUBS" "VSUBS"
+merge "M1_POLY2_CDNS_69033583165610_15/a_n42_n89#" "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" -4298.19 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -141518 -6226 0 0 0 0 0 0 0 0
+merge "M1_POLY2_CDNS_69033583165610_12/a_n42_n89#" "a_9721_8900#"
+merge "a_9721_8900#" "m1_9756_8920#"
+merge "m1_9756_8920#" "comp018green_out_drv_nleg_4T_3/a_2080_444#"
+merge "comp018green_out_drv_nleg_4T_3/a_2080_444#" "a_9721_1028#"
+merge "M1_POLY2_CDNS_69033583165610_4/a_n42_n89#" "m1_n440_9080#" -3689.54 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -130778 -6194 0 0 0 0 0 0 0 0
+merge "m1_n440_9080#" "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_2/a_n42_n89#" "a_2677_8900#"
+merge "a_2677_8900#" "m1_2772_1079#"
+merge "m1_2772_1079#" "comp018green_out_drv_nleg_4T_0/a_2080_444#"
+merge "comp018green_out_drv_nleg_4T_0/a_2080_444#" "a_2677_1028#"
+merge "M1_POLY2_CDNS_69033583165610_7/a_n42_n89#" "m1_n440_9400#" -4974.23 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281978 -8994 0 0 0 0 0 0 0 0
+merge "m1_n440_9400#" "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_6/a_n42_n89#" "a_5025_8900#"
+merge "a_5025_8900#" "m1_5114_1079#"
+merge "m1_5114_1079#" "comp018green_out_drv_nleg_4T_1/a_2080_444#"
+merge "comp018green_out_drv_nleg_4T_1/a_2080_444#" "a_5025_1028#"
+merge "comp018green_out_drv_nleg_4T_3/a_48_532#" "nmos_4T_metal_stack_3/m1_n44_400#" -11521.6 0 0 0 0 0 0 0 0 -547200 -15344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -699200 -30584 0 0 0 0 0 0 0 0
+merge "nmos_4T_metal_stack_3/m1_n44_400#" "comp018green_out_drv_nleg_4T_2/a_2366_532#"
+merge "M1_POLY2_CDNS_69033583165610_3/a_n42_n89#" "m1_n440_9240#" -3627.9 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -130778 -6194 0 0 0 0 0 0 0 0
+merge "m1_n440_9240#" "a_3151_8900#"
+merge "a_3151_8900#" "comp018green_out_drv_nleg_4T_1/a_206_444#"
+merge "comp018green_out_drv_nleg_4T_1/a_206_444#" "M1_POLY2_CDNS_69033583165610_5/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_5/a_n42_n89#" "m1_3242_1079#"
+merge "m1_3242_1079#" "a_3151_1028#"
+merge "nmos_4T_metal_stack_4/m1_n44_400#" "comp018green_out_drv_nleg_4T_3/a_2366_532#" -5291.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259486 -11328 0 0 0 0 0 0 0 0
+merge "comp018green_out_drv_nleg_4T_3/a_1192_532#" "nmos_4T_metal_stack_4/m1_430_401#" -24757.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9531600 -24250 -9272160 -12924 0 0 0 0 0 0
+merge "nmos_4T_metal_stack_4/m1_430_401#" "nmos_4T_metal_stack_3/m1_430_401#"
+merge "comp018green_out_drv_nleg_4T_2/a_48_532#" "nmos_4T_metal_stack_2/m1_n44_400#" -11521 0 0 0 0 0 0 0 0 -547200 -15344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -699200 -30584 0 0 0 0 0 0 0 0
+merge "nmos_4T_metal_stack_2/m1_n44_400#" "comp018green_out_drv_nleg_4T_1/a_2366_532#"
+merge "comp018green_out_drv_nleg_4T_2/a_1192_532#" "nmos_4T_metal_stack_2/m1_430_401#" -14697.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259440 -11326 0 0 0 0 0 0 0 0
+merge "comp018green_out_drv_nleg_4T_1/a_48_532#" "nmos_4T_metal_stack_1/m1_n44_400#" -11521.6 0 0 0 0 0 0 0 0 -547200 -15344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -699200 -30584 0 0 0 0 0 0 0 0
+merge "nmos_4T_metal_stack_1/m1_n44_400#" "comp018green_out_drv_nleg_4T_0/a_2366_532#"
+merge "comp018green_out_drv_nleg_4T_1/a_1192_532#" "nmos_4T_metal_stack_1/m1_430_401#" -14697.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259440 -11326 0 0 0 0 0 0 0 0
+merge "comp018green_out_drv_nleg_4T_0/a_1192_532#" "nmos_4T_metal_stack_0/m1_430_401#" -14697.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259440 -11326 0 0 0 0 0 0 0 0
+merge "comp018green_out_drv_nleg_4T_0/a_48_532#" "nmos_4T_metal_stack_0/m1_n44_400#" -5422.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259486 -11328 0 0 0 0 0 0 0 0
+merge "M1_POLY2_CDNS_69033583165610_10/a_n42_n89#" "m1_7404_8988#" -3723.26 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -265478 -8988 0 0 0 0 0 0 0 0
+merge "m1_7404_8988#" "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_8/a_n42_n89#" "a_7373_8900#"
+merge "a_7373_8900#" "m1_7462_1079#"
+merge "m1_7462_1079#" "comp018green_out_drv_nleg_4T_2/a_2080_444#"
+merge "comp018green_out_drv_nleg_4T_2/a_2080_444#" "a_7373_1028#"
+merge "M1_POLY2_CDNS_69033583165610_0/a_n42_n89#" "a_803_8900#" -4312.07 0 0 0 0 0 0 0 0 0 0 0 0 -29904 -1968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -141518 -6226 0 0 0 0 0 0 0 0
+merge "a_803_8900#" "comp018green_out_drv_nleg_4T_0/a_206_444#"
+merge "comp018green_out_drv_nleg_4T_0/a_206_444#" "M1_POLY2_CDNS_69033583165610_1/a_n42_n89#"
+merge "M1_POLY2_CDNS_69033583165610_1/a_n42_n89#" "m1_n440_8920#"
+merge "m1_n440_8920#" "a_803_1028#"

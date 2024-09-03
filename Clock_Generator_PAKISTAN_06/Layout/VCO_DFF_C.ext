@@ -1,0 +1,357 @@
+timestamp 1713971361
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use VCO_C VCO_C_0 1 0 1330 0 1 36
+use DFF_3_mag DFF_3_mag_0 1 0 21146 0 1 418
+port "VDD" 4 15330 802 15330 802 m1
+port "OUT" 1 23729 2805 23729 2805 m1
+port "OUTB" 2 23891 3883 23891 3883 m1
+port "VSS" 3 16348 4249 16348 4249 m1
+port "VCTRL" 6 6120 5786 6120 5786 m1
+port "VCTRL2" 5 7087 7018 7087 7018 m1
+node "m1_20889_224#" 0 151.574 20889 224 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32395 872 0 0 0 0 0 0 0 0
+node "m1_20589_224#" 0 151.574 20589 224 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32395 872 0 0 0 0 0 0 0 0
+node "m1_16150_592#" 0 476.087 16150 592 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173204 2058 0 0 0 0 0 0 0 0
+node "m1_16154_1430#" 0 429.752 16154 1430 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173204 2058 0 0 0 0 0 0 0 0
+node "VDD" 4 3823.88 15330 802 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 342903 3820 1391859 15532 0 0 0 0 0 0
+node "m1_16150_2324#" 0 441.626 16150 2324 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173204 2058 0 0 0 0 0 0 0 0
+node "OUT" 3 921.714 23729 2805 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104424 2664 103704 2500 0 0 0 0 0 0
+node "m1_16145_3288#" 0 439.135 16145 3288 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173204 2058 0 0 0 0 0 0 0 0
+node "OUTB" 8 4251.46 23891 3883 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146421 3148 1338580 20786 0 0 0 0 0 0
+node "m1_22731_4022#" 0 189.203 22731 4022 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38784 1000 0 0 0 0 0 0 0 0
+node "m1_22540_4053#" 0 180.153 22540 4053 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41382 954 0 0 0 0 0 0 0 0
+node "m1_21896_3994#" 0 239.123 21896 3994 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64636 1190 0 0 0 0 0 0 0 0
+node "m1_20697_4055#" 0 199.116 20697 4055 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38220 938 0 0 0 0 0 0 0 0
+node "m1_17810_4016#" 0 224.799 17810 4016 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43155 1032 0 0 0 0 0 0 0 0
+node "VSS" 0 472.143 16348 4249 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173204 2058 0 0 0 0 0 0 0 0
+node "m1_19018_4795#" 11 7070.24 19018 4795 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78000 2500 452672 3664 3492192 37326 0 0 0 0
+node "VCTRL" 0 171.404 6120 5786 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25670 774 0 0 0 0 0 0 0 0
+node "VCTRL2" 1 510.568 7087 7018 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103792 2204 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "OUTB" "OUT" 63.6266
+cap "VDD" "m1_20889_224#" 1.43047
+cap "m1_22731_4022#" "m1_22540_4053#" 39.3027
+cap "VDD" "m1_16150_592#" 44.8342
+cap "m1_22731_4022#" "OUT" 0.0924493
+cap "VDD" "m1_16154_1430#" 22.7486
+cap "m1_17810_4016#" "VSS" 10.3601
+cap "m1_16150_2324#" "m1_16150_592#" 0.107317
+cap "m1_16150_2324#" "m1_16154_1430#" 49.0123
+cap "m1_16150_2324#" "VSS" 0.127557
+cap "OUTB" "m1_21896_3994#" 4.37666
+cap "m1_16145_3288#" "m1_19018_4795#" 67.4799
+cap "m1_20697_4055#" "m1_21896_3994#" 13.6037
+cap "m1_22731_4022#" "m1_21896_3994#" 1.84145
+cap "m1_16150_592#" "m1_16154_1430#" 53.4679
+cap "OUTB" "m1_20697_4055#" 2.06614
+cap "OUTB" "m1_22731_4022#" 53.0622
+cap "OUTB" "m1_19018_4795#" 684.613
+cap "m1_19018_4795#" "m1_20697_4055#" 2.38696
+cap "m1_16145_3288#" "m1_16150_2324#" 44.3339
+cap "m1_20589_224#" "VDD" 6.19742
+cap "OUTB" "m1_17810_4016#" 8.11411
+cap "VDD" "m1_19018_4795#" 436.733
+cap "m1_16145_3288#" "VSS" 52.4578
+cap "m1_19018_4795#" "m1_17810_4016#" 11.4656
+cap "m1_20589_224#" "m1_20889_224#" 70.8441
+cap "m1_16150_2324#" "m1_19018_4795#" 66.5307
+cap "OUTB" "VSS" 22.4573
+cap "m1_21896_3994#" "m1_22540_4053#" 29.9508
+cap "m1_16150_592#" "m1_19018_4795#" 85.1232
+cap "m1_16154_1430#" "m1_19018_4795#" 69.0665
+cap "OUTB" "m1_22540_4053#" 5.78833
+cap "m1_19018_4795#" "VSS" 72.5043
+cap "VCO_C_0/OUTB" "VCO_C_0/DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" 0.12274
+cap "VCO_C_0/DelayCell_mag_0/NMOS_Pairs_0/nmos_3p3_AG6HDQ_1/a_84_n50#" "VCO_C_0/OUTB" 0.249492
+cap "VCO_C_0/OUTB" "VCO_C_0/INV_2_1/VDD" 2.43731
+cap "VCO_C_0/INV_2_1/VSS" "VCO_C_0/OUTB" 36.0614
+cap "VCO_C_0/INV_2_1/VSS" "VCO_C_0/OUTB" 91.0126
+cap "VCO_C_0/OUTB" "VCO_C_0/DelayCell_mag_1/VCTRL" 0.373715
+cap "VCO_C_0/OUTB" "VCO_C_0/INV_2_3/IN" 0.386201
+cap "VCO_C_0/OUTB" "VCO_C_0/INV_2_3/OUT" 29.2005
+cap "VCO_C_0/OUTB" "VCO_C_0/INV_2_1/VDD" 93.7277
+cap "VCO_C_0/INV_2_1/VSS" "m1_19018_4795#" 86.7243
+cap "VCO_C_0/INV_2_3/IN" "m1_19018_4795#" 30.2437
+cap "VCO_C_0/INV_2_3/OUT" "m1_19018_4795#" 7.88997
+cap "VCO_C_0/INV_2_1/VDD" "m1_19018_4795#" 62.0015
+cap "VCO_C_0/DelayCell_mag_1/VCTRL" "m1_19018_4795#" 1.37491
+cap "m1_19018_4795#" "VCO_C_0/INV_2_3/IN" 81.1461
+cap "m1_19018_4795#" "VCO_C_0/INV_2_2/VSS" 79.7904
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/M2" 1.05842
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_3/a_n52_n50#" 0.263753
+cap "m1_19018_4795#" "VCO_C_0/INV_2_3/VDD" 92.22
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/VCTRL" 1.80387
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/M4" "VCO_C_0/INV_2_2/VSS" -0.589063
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL" 0.317737
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/M4" 8.95819
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_9/a_n84_n94#" 7.93478
+cap "VCO_C_0/DelayCell_mag_1/VDD" "m1_19018_4795#" 43.0081
+cap "VCO_C_0/DelayCell_mag_1/OUTB" "m1_19018_4795#" 80.1462
+cap "VCO_C_0/DelayCell_mag_1/OUTB" "VCO_C_0/VSS" -4.28463
+cap "VCO_C_0/VSS" "m1_19018_4795#" 79.7904
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/M4" "m1_19018_4795#" 2.09359
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" 98.6491
+cap "m1_19018_4795#" "VCO_C_0/VSS" 79.7904
+cap "VCO_C_0/VSS" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_19/a_n172_n50#" -8.12803
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_18/a_n172_n50#" "m1_19018_4795#" 4.38121
+cap "VCO_C_0/VDD" "m1_19018_4795#" 37.521
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_n52_n50#" "VCO_C_0/VSS" -2.89706
+cap "VCO_C_0/VDD" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_n52_n50#" 2.58994
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_n52_n50#" 35.1613
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "VCO_C_0/VSS" -0.00298356
+cap "VCO_C_0/VDD" "VCO_C_0/VSS" -2.34159
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "VCO_C_0/VDD" 2.86373
+cap "m1_19018_4795#" "VCO_C_0/VSS" 79.7904
+cap "VCO_C_0/VDD" "m1_19018_4795#" 47.9605
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "m1_19018_4795#" 1.53968
+cap "DFF_3_mag_0/Tr_Gate_3/IN" "VCO_C_0/VDD" 0.154983
+cap "DFF_3_mag_0/Tr_Gate_3/VSS" "m1_19018_4795#" 107.802
+cap "DFF_3_mag_0/Tr_Gate_3/VSS" "VCO_C_0/VDD" 425.005
+cap "m1_19018_4795#" "VCO_C_0/VDD" -0.521692
+cap "DFF_3_mag_0/VDD" "VCO_C_0/VDD" 0.034077
+cap "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "VCO_C_0/VDD" 0.0430497
+cap "DFF_3_mag_0/INV_2_5/OUT" "m1_19018_4795#" 8.78474
+cap "DFF_3_mag_0/Tr_Gate_3/VSS" "VCO_C_0/VDD" 240.006
+cap "DFF_3_mag_0/Tr_Gate_3/VSS" "DFF_3_mag_0/INV_2_1/IN" 0.0870609
+cap "DFF_3_mag_0/Tr_Gate_3/CLK" "VCO_C_0/VDD" 2.21899
+cap "DFF_3_mag_0/INV_2_1/IN" "m1_19018_4795#" 3.73545
+cap "VCO_C_0/VDD" "DFF_3_mag_0/VDD" 0.678553
+cap "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "m1_19018_4795#" 1.19805
+cap "DFF_3_mag_0/INV_2_5/OUT" "VCO_C_0/VDD" 12.9933
+cap "DFF_3_mag_0/Tr_Gate_3/VSS" "m1_19018_4795#" 69.4372
+cap "DFF_3_mag_0/Tr_Gate_3/VSS" "DFF_3_mag_0/Tr_Gate_3/CLK" 0.95076
+cap "DFF_3_mag_0/Tr_Gate_3/CLK" "m1_19018_4795#" 5.84124
+cap "DFF_3_mag_0/INV_2_1/IN" "VCO_C_0/VDD" 16.8719
+cap "m1_19018_4795#" "DFF_3_mag_0/VDD" 0.988085
+cap "DFF_3_mag_0/INV_2_5/OUT" "DFF_3_mag_0/Tr_Gate_0/CLK" -0.552795
+cap "DFF_3_mag_0/Tr_Gate_0/VSS" "DFF_3_mag_0/Tr_Gate_1/VDD" 307.135
+cap "DFF_3_mag_0/INV_2_1/IN" "DFF_3_mag_0/Tr_Gate_1/VDD" 2.42376
+cap "DFF_3_mag_0/INV_2_5/OUT" "DFF_3_mag_0/Tr_Gate_1/VDD" 14.4077
+cap "DFF_3_mag_0/VDD" "DFF_3_mag_0/Tr_Gate_1/VDD" 1.04961
+cap "DFF_3_mag_0/Tr_Gate_0/VSS" "DFF_3_mag_0/INV_2_5/OUT" -0.126363
+cap "DFF_3_mag_0/Tr_Gate_3/CLK" "DFF_3_mag_0/Tr_Gate_1/VDD" 3.28818
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_0/VSS" 0.0458092
+cap "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "DFF_3_mag_0/Tr_Gate_1/VDD" 1.22357
+cap "DFF_3_mag_0/INV_2_1/OUT" "DFF_3_mag_0/Tr_Gate_1/VDD" 11.6253
+cap "DFF_3_mag_0/Tr_Gate_0/CLK" "DFF_3_mag_0/INV_2_5/OUT" -0.552795
+cap "DFF_3_mag_0/Tr_Gate_1/VDD" "DFF_3_mag_0/INV_2_5/OUT" 3.10821
+cap "DFF_3_mag_0/Tr_Gate_3/CLK" "DFF_3_mag_0/Tr_Gate_1/VDD" 0.373822
+cap "DFF_3_mag_0/INV_2_4/VSS" "DFF_3_mag_0/Tr_Gate_0/CLK" 2.49469
+cap "DFF_3_mag_0/Tr_Gate_1/VDD" "DFF_3_mag_0/Tr_Gate_3/nmos_3p3_UKFAHE_0/a_50_n84#" 0.0236994
+cap "DFF_3_mag_0/INV_2_4/VSS" "DFF_3_mag_0/Tr_Gate_1/VDD" 379.563
+cap "DFF_3_mag_0/Tr_Gate_0/CLK" "DFF_3_mag_0/Tr_Gate_1/VDD" 14.3664
+cap "DFF_3_mag_0/INV_2_4/VSS" "DFF_3_mag_0/Tr_Gate_0/IN" -0.00251906
+cap "DFF_3_mag_0/Tr_Gate_1/VDD" "DFF_3_mag_0/Tr_Gate_0/IN" 1.18414
+cap "DFF_3_mag_0/INV_2_4/VSS" "DFF_3_mag_0/INV_2_1/OUT" -0.376506
+cap "DFF_3_mag_0/INV_2_1/OUT" "DFF_3_mag_0/Tr_Gate_1/VDD" 3.26739
+cap "DFF_3_mag_0/Tr_Gate_1/VDD" "DFF_3_mag_0/INV_2_4/VSS" 2.45643
+cap "DFF_3_mag_0/INV_2_4/VSS" "DFF_3_mag_0/Tr_Gate_0/CLK" 1.68825
+cap "VCO_C_0/OUTB" "VCO_C_0/DelayCell_mag_1/VCTRL" 0.449263
+cap "VCO_C_0/DelayCell_mag_1/VCTRL" "m1_19018_4795#" 1.33695
+cap "VCO_C_0/DelayCell_mag_1/OUTB" "VCO_C_0/VSS" -2.85067
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VDD" 0.241619
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/M4" 0.228005
+cap "m1_19018_4795#" "VCO_C_0/DelayCell_mag_1/OUTB" 19.7251
+cap "VCO_C_0/DelayCell_mag_1/NMOS_Pairs_0/M9" "m1_19018_4795#" 0.301322
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HMKTA7_18/a_n172_n50#" "m1_19018_4795#" 0.688642
+cap "m1_19018_4795#" "VCO_C_0/VDD" 0.236642
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "VCO_C_0/VDD" 9.67177
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_52_n94#" "VCO_C_0/DelayCell_mag_1/NMOS_Pairs_0/VSS" -0.0187368
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_n52_n50#" "VCO_C_0/VDD" 2.25295
+cap "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_8/a_n52_n50#" "m1_19018_4795#" 0.216461
+cap "VCO_C_0/DelayCell_mag_1/NMOS_Pairs_0/VSS" "VCO_C_0/VDD" -1.93627
+cap "VCO_C_0/VDD" "DFF_3_mag_0/Tr_Gate_2/VSS" 40.7376
+cap "VCO_C_0/VDD" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/pmos_3p3_HVHTA7_7/a_n52_n50#" 0.0182326
+cap "DFF_3_mag_0/VDD" "VCO_C_0/VDD" 0.123916
+cap "VCO_C_0/VDD" "m1_19018_4795#" 1.73859
+cap "VCO_C_0/VDD" "DFF_3_mag_0/Tr_Gate_3/OUT" 2.02498
+cap "VCO_C_0/VDD" "VCO_C_0/DelayCell_mag_1/VCTRL_mag_0/M4" 3.77249
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_2/VSS" 34.6575
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/INV_2_1/IN" 5.61706
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" 0.165235
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "m1_19018_4795#" 47.9449
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/INV_2_5/OUT" 1.77636e-15
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "VCO_C_0/VDD" -0.00700521
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 8.55257
+cap "VCO_C_0/VDD" "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 0.072106
+cap "m1_19018_4795#" "DFF_3_mag_0/INV_2_0/OUT" 0.267602
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" 0.862663
+cap "DFF_3_mag_0/VDD" "m1_19018_4795#" 57.4842
+cap "DFF_3_mag_0/VDD" "DFF_3_mag_0/INV_2_5/OUT" -7.10543e-15
+cap "DFF_3_mag_0/Tr_Gate_3/CLK" "m1_19018_4795#" 5.30595
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/INV_2_0/OUT" 0.470907
+cap "DFF_3_mag_0/VDD" "DFF_3_mag_0/D" 0.223162
+cap "DFF_3_mag_0/INV_2_1/IN" "m1_19018_4795#" 23.7005
+cap "DFF_3_mag_0/INV_2_1/IN" "VCO_C_0/VDD" 5.87802
+cap "DFF_3_mag_0/D" "DFF_3_mag_0/INV_2_1/IN" 2.94634
+cap "m1_19018_4795#" "DFF_3_mag_0/INV_2_5/OUT" 1.9483
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/VDD" 6.84212
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/Tr_Gate_3/CLK" 0.108439
+cap "DFF_3_mag_0/Tr_Gate_3/pmos_3p3_YMKZL5_2/a_n50_n128#" "DFF_3_mag_0/VDD" 0.0240353
+cap "m1_19018_4795#" "DFF_3_mag_0/CLK" 0.0597727
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/VDD" 0.000620974
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/Tr_Gate_0/CLK" 1.03582
+cap "DFF_3_mag_0/Tr_Gate_0/CLK" "DFF_3_mag_0/VSS" -0.132096
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/INV_2_1/OUT" 0.763439
+cap "DFF_3_mag_0/INV_2_1/OUT" "DFF_3_mag_0/VSS" -0.437346
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "DFF_3_mag_0/INV_2_2/VDD" 2.27374e-13
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/Q" 0.109046
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q" 0.682589
+cap "DFF_3_mag_0/Q" "DFF_3_mag_0/INV_2_2/VDD" 102.458
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/INV_2_2/VDD" -45.1562
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "DFF_3_mag_0/Q" 2.66862
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q" 130.937
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/Q" -1.70305
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "DFF_3_mag_0/VSS" -0.175192
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "VCO_C_0/DelayCell_mag_1/NMOS_Pairs_0/VSS" 0.403273
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "m1_19018_4795#" 0.80371
+cap "VCO_C_0/VDD" "m1_19018_4795#" 0.844871
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "m1_19018_4795#" 37.1201
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "m1_19018_4795#" 0.751042
+cap "DFF_3_mag_0/VDD" "m1_19018_4795#" 38.7113
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/Tr_Gate_3/CLK" 0.179378
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/D" 284.948
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" 4.59148
+cap "DFF_3_mag_0/Tr_Gate_3/CLK" "DFF_3_mag_0/D" 1.03487
+cap "DFF_3_mag_0/INV_2_0/OUT" "m1_19018_4795#" 7.10911
+cap "DFF_3_mag_0/INV_2_1/IN" "m1_19018_4795#" 14.2573
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "m1_19018_4795#" 59.1825
+cap "m1_19018_4795#" "DFF_3_mag_0/D" 1.60408
+cap "DFF_3_mag_0/VDD" "DFF_3_mag_0/Tr_Gate_2/VSS" 0.98436
+cap "DFF_3_mag_0/Tr_Gate_2/VSS" "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" 0.133225
+cap "DFF_3_mag_0/VDD" "DFF_3_mag_0/D" 1.58484
+cap "DFF_3_mag_0/INV_2_0/OUT" "DFF_3_mag_0/Tr_Gate_2/VSS" 3.50601
+cap "DFF_3_mag_0/INV_2_1/IN" "DFF_3_mag_0/Tr_Gate_2/VSS" 3.498
+cap "DFF_3_mag_0/INV_2_0/OUT" "DFF_3_mag_0/D" 4.7231
+cap "DFF_3_mag_0/INV_2_1/IN" "DFF_3_mag_0/D" 46.262
+cap "DFF_3_mag_0/Tr_Gate_1/VSS" "DFF_3_mag_0/D" 2.32026
+cap "DFF_3_mag_0/D" "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" 0.38969
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/VDD" 19.34
+cap "DFF_3_mag_0/INV_2_1/IN" "DFF_3_mag_0/D" 3.37806
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/Tr_Gate_0/CLK" 0.506199
+cap "DFF_3_mag_0/Tr_Gate_0/CLK" "DFF_3_mag_0/D" 0.224052
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/D" 1.57388
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/Tr_Gate_1/VSS" 35.3042
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" 0.0919971
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/INV_2_1/IN" 0.941934
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/CLK" 4.11353
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "OUTB" 9.0982
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/CLK" 9.22038
+cap "DFF_3_mag_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "OUTB" 0.399689
+cap "DFF_3_mag_0/INV_2_1/OUT" "DFF_3_mag_0/VSS" -0.00951989
+cap "OUTB" "DFF_3_mag_0/CLK" 0.75796
+cap "DFF_3_mag_0/INV_2_1/OUT" "DFF_3_mag_0/CLK" 0.401422
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "DFF_3_mag_0/VSS" 3.16966
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/Q" 0.0585619
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "DFF_3_mag_0/INV_2_2/VDD" -1.13687e-13
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/CLK" 0.32921
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q" 3.72346
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q-" 17.7325
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/Q" 4.864
+cap "DFF_3_mag_0/Tr_Gate_0/OUT" "DFF_3_mag_0/Q-" 2.3368
+cap "DFF_3_mag_0/Q" "DFF_3_mag_0/Tr_Gate_0/OUT" 1.51148
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/VSS" -13.0114
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/Q" 23.9697
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q" 149.004
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/INV_2_2/VDD" 9.91949
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/VSS" 223.311
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/Q" 23.9475
+cap "VCO_C_0/INV_2_5/IN" "VCO_C_0/VCTRL" 1.67021
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "m1_19018_4795#" 0.884672
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "VCO_C_0/VSS" 1.78888
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "m1_19018_4795#" 0.704463
+cap "m1_19018_4795#" "VCO_C_0/VSS" 22.2075
+cap "VCO_C_0/VSS" "DFF_3_mag_0/D" 1.8324
+cap "VCO_C_0/DelayCell_mag_1/VCTRL2" "VCO_C_0/VSS" 4.44089e-16
+cap "VCO_C_0/VSS" "DFF_3_mag_0/CLK" 0.557543
+cap "VCO_C_0/VSS" "DFF_3_mag_0/D" 148.947
+cap "DFF_3_mag_0/Tr_Gate_2/OUT" "DFF_3_mag_0/D" 6.4763
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_2/w_145_n341#" 1.42748
+cap "DFF_3_mag_0/INV_2_0/OUT" "DFF_3_mag_0/D" 0.463283
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/D" 0.767806
+cap "m1_19018_4795#" "DFF_3_mag_0/INV_2_0/VDD" 11.0345
+cap "DFF_3_mag_0/Tr_Gate_2/w_145_n341#" "VCO_C_0/VSS" -0.0100522
+cap "m1_19018_4795#" "VCO_C_0/VSS" 84.2891
+cap "m1_19018_4795#" "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" 1.92177
+cap "DFF_3_mag_0/Tr_Gate_2/OUT" "m1_19018_4795#" 4.7646
+cap "m1_19018_4795#" "DFF_3_mag_0/INV_2_0/OUT" 4.25593
+cap "m1_19018_4795#" "DFF_3_mag_0/D" 5.75626
+cap "DFF_3_mag_0/Tr_Gate_2/OUT" "VCO_C_0/VSS" -3.69057
+cap "DFF_3_mag_0/Tr_Gate_1/VSS" "DFF_3_mag_0/CLK" 235.509
+cap "DFF_3_mag_0/CLK" "DFF_3_mag_0/D" 20.9197
+cap "DFF_3_mag_0/Tr_Gate_2/w_145_n341#" "DFF_3_mag_0/CLK" 0.691884
+cap "DFF_3_mag_0/Tr_Gate_1/VSS" "DFF_3_mag_0/D" 17.3271
+cap "DFF_3_mag_0/INV_2_0/OUT" "DFF_3_mag_0/CLK" 6.49674
+cap "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" "DFF_3_mag_0/CLK" 1.0411
+cap "DFF_3_mag_0/INV_2_0/VDD" "DFF_3_mag_0/CLK" 23.7409
+cap "DFF_3_mag_0/Tr_Gate_2/OUT" "DFF_3_mag_0/CLK" 1.02822
+cap "DFF_3_mag_0/INV_2_0/OUT" "DFF_3_mag_0/D" 1.00881
+cap "DFF_3_mag_0/Tr_Gate_2/a_174_n81#" "DFF_3_mag_0/D" 0.390787
+cap "DFF_3_mag_0/Tr_Gate_2/OUT" "DFF_3_mag_0/D" 3.44464
+cap "DFF_3_mag_0/Tr_Gate_1/IN" "DFF_3_mag_0/CLK" 0.328256
+cap "OUTB" "DFF_3_mag_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.400838
+cap "OUTB" "DFF_3_mag_0/Tr_Gate_1/IN" 0.484204
+cap "OUTB" "DFF_3_mag_0/CLK" 1.97349
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/CLK" 228.084
+cap "DFF_3_mag_0/INV_2_0/VDD" "DFF_3_mag_0/CLK" 9.35141
+cap "DFF_3_mag_0/INV_2_0/OUT" "DFF_3_mag_0/CLK" 1.54613
+cap "OUTB" "DFF_3_mag_0/VSS" 15.5898
+cap "OUTB" "DFF_3_mag_0/Tr_Gate_1/OUT" 9.3517
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q-" 34.9081
+cap "DFF_3_mag_0/Tr_Gate_1/IN" "DFF_3_mag_0/Q-" 0.707408
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/CLK" 0.053371
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/Q-" 0.679806
+cap "DFF_3_mag_0/INV_2_2/IN" "DFF_3_mag_0/Q-" 2.61008
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/Tr_Gate_1/OUT" 2.58743
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/Q-" 1.30386
+cap "DFF_3_mag_0/VSS" "DFF_3_mag_0/Q-" 68.2915
+cap "DFF_3_mag_0/Q-" "DFF_3_mag_0/INV_2_2/IN" 2.68623
+cap "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/VSS" -0.00298068
+cap "VCO_C_0/VCTRL" "VCO_C_0/INV_2_5/IN" 4.49123
+cap "VCO_C_0/VSS" "VCO_C_0/VCTRL" 17.1018
+cap "VCO_C_0/VSS" "VCO_C_0/INV_2_5/IN" -0.154479
+cap "VCO_C_0/VCTRL2" "VCO_C_0/VCTRL" 2.40285
+cap "VCO_C_0/DelayCell_mag_0/w_5819_4436#" "VCO_C_0/VCTRL" 0.0654009
+cap "VCO_C_0/INV_2_5/IN" "VCO_C_0/VCTRL2" 0.472553
+cap "VCO_C_0/VCTRL" "VCO_C_0/INV_2_5/IN" 0.0456678
+cap "VCO_C_0/VCTRL2" "VCO_C_0/VSS" 57.2572
+cap "VCO_C_0/VCTRL2" "VCO_C_0/VSS" -0.0664131
+merge "DFF_3_mag_0/INV_2_2/VSS" "DFF_3_mag_0/VSS" -2815.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -130000 -9436 0 0 0 0 0 0 0 0
+merge "DFF_3_mag_0/VSS" "m1_22731_4022#"
+merge "m1_22731_4022#" "m1_22540_4053#"
+merge "m1_22540_4053#" "m1_21896_3994#"
+merge "m1_21896_3994#" "DFF_3_mag_0/Tr_Gate_1/VSS"
+merge "DFF_3_mag_0/Tr_Gate_1/VSS" "m1_20697_4055#"
+merge "m1_20697_4055#" "DFF_3_mag_0/Tr_Gate_2/VSS"
+merge "DFF_3_mag_0/Tr_Gate_2/VSS" "m1_17810_4016#"
+merge "m1_17810_4016#" "VCO_C_0/DelayCell_mag_1/NMOS_Pairs_0/VSS"
+merge "VCO_C_0/DelayCell_mag_1/NMOS_Pairs_0/VSS" "m1_16145_3288#"
+merge "m1_16145_3288#" "VSS"
+merge "VSS" "DFF_3_mag_0/INV_2_4/VSS"
+merge "DFF_3_mag_0/INV_2_4/VSS" "DFF_3_mag_0/Tr_Gate_0/VSS"
+merge "DFF_3_mag_0/Tr_Gate_0/VSS" "m1_20889_224#"
+merge "m1_20889_224#" "m1_20589_224#"
+merge "m1_20589_224#" "DFF_3_mag_0/a_n4178_n205#"
+merge "DFF_3_mag_0/a_n4178_n205#" "DFF_3_mag_0/Tr_Gate_3/VSS"
+merge "DFF_3_mag_0/Tr_Gate_3/VSS" "VCO_C_0/VSS"
+merge "VCO_C_0/VSS" "m1_16150_592#"
+merge "m1_16150_592#" "m1_16154_1430#"
+merge "m1_16154_1430#" "m1_16150_2324#"
+merge "m1_16150_2324#" "VSUBS"
+merge "DFF_3_mag_0/Q-" "DFF_3_mag_0/D" -1234.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11868 -700 -184800 -2800 0 0 0 0 0 0
+merge "DFF_3_mag_0/D" "OUTB"
+merge "VCO_C_0/VCTRL2" "VCTRL2" -258.572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31142 -1107 0 0 0 0 0 0 0 0
+merge "DFF_3_mag_0/INV_2_2/VDD" "DFF_3_mag_0/VDD" -1429.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43112 -2128 -2187 -504 0 0 0 0 0 0
+merge "DFF_3_mag_0/VDD" "DFF_3_mag_0/Tr_Gate_1/VDD"
+merge "DFF_3_mag_0/Tr_Gate_1/VDD" "VCO_C_0/VDD"
+merge "VCO_C_0/VDD" "VDD"
+merge "DFF_3_mag_0/INV_2_2/IN" "DFF_3_mag_0/Q" -512.824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13976 -540 -28898 -956 0 0 0 0 0 0
+merge "DFF_3_mag_0/Q" "OUT"
+merge "DFF_3_mag_0/CLK" "VCO_C_0/OUTB" -5053.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15631 -544 -2180872 -24274 0 0 0 0
+merge "VCO_C_0/OUTB" "m1_19018_4795#"
+merge "VCO_C_0/VCTRL" "VCO_C_0/DelayCell_mag_1/VCTRL" -85.2983 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6800 -330 0 0 0 0 0 0 0 0
+merge "VCO_C_0/DelayCell_mag_1/VCTRL" "VCO_C_0/DelayCell_mag_0/VCTRL"
+merge "VCO_C_0/DelayCell_mag_0/VCTRL" "VCTRL"

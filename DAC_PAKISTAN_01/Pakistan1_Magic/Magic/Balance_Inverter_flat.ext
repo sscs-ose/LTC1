@@ -1,0 +1,40 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "OUT_B" 3 1299 417 1299 417 v
+port "OUT" 2 1447 643 1447 643 v
+port "VIN" 4 26 362 26 362 v
+port "VDD" 0 932 747 932 747 nsc
+port "VSS" 1 940 64 940 64 psc
+node "OUT_B" 58 295.095 1299 417 v 0 0 0 0 6064 328 6064 328 0 0 0 0 15751 638 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35138 1320 44392 1446 0 0 0 0 0 0
+node "Inverter_0.OUT" 99 565.261 230 222 ndif 0 0 0 0 6184 328 8800 376 0 0 0 0 29419 1232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42590 1582 0 0 0 0 0 0 0 0
+node "OUT" 97 555.802 1447 643 v 0 0 0 0 6064 328 6064 328 0 0 0 0 29447 1168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49199 1678 75803 2416 0 0 0 0 0 0
+node "Inverter_0.IN" 150 1361.37 115 372 p 0 0 0 0 0 0 0 0 0 0 0 0 57432 2254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28651 1038 105287 3680 0 0 0 0 0 0
+equiv "Inverter_0.IN" "VIN"
+node "Inverter_0.VDD" 6391 1983.7 0 372 nw 522092 4182 0 0 81282 2428 20928 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 191200 4008 0 0 0 0 0 0 0 0
+equiv "Inverter_0.VDD" "VDD"
+substrate "Inverter_0.VSS" 0 0 26 14 ppd 0 0 0 0 18312 984 85392 2544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 188812 3890 0 0 0 0 0 0 0 0
+equiv "Inverter_0.VSS" "VSS"
+cap "Inverter_0.OUT" "Inverter_0.VDD" 140.095
+cap "Inverter_0.IN" "Inverter_0.OUT" 157.652
+cap "Inverter_0.OUT" "OUT" 219.358
+cap "Inverter_0.IN" "Inverter_0.VDD" 267.85
+cap "Inverter_0.VDD" "OUT" 601.665
+cap "Inverter_0.IN" "OUT" 87.0147
+cap "Inverter_0.OUT" "OUT_B" 4.23553
+cap "Inverter_0.VDD" "OUT_B" 312.796
+cap "Inverter_0.IN" "OUT_B" 156.024
+cap "OUT" "OUT_B" 268.35
+device msubckt nfet_03v3 1188 223 1189 224 l=56 w=44 "Inverter_0.VSS" "Inverter_0.IN" 112 0 "Inverter_0.VSS" 44 6064,328 "OUT_B" 44 6064,328
+device msubckt nfet_03v3 652 223 653 224 l=56 w=44 "Inverter_0.VSS" "Inverter_0.OUT" 112 0 "OUT" 44 6064,328 "Inverter_0.VSS" 44 6064,328
+device msubckt nfet_03v3 174 222 175 223 l=56 w=50 "Inverter_0.VSS" "Inverter_0.IN" 112 0 "Inverter_0.VSS" 50 6184,328 "Inverter_0.OUT" 50 6184,328
+device msubckt pfet_03v3 1126 528 1127 529 l=56 w=44 "Inverter_0.VDD" "OUT" 112 0 "Inverter_0.VDD" 44 6064,328 "OUT_B" 44 6064,328
+device msubckt pfet_03v3 714 528 715 529 l=56 w=44 "Inverter_0.VDD" "OUT_B" 112 0 "OUT" 44 6064,328 "Inverter_0.VDD" 44 6064,328
+device msubckt pfet_03v3 174 521 175 522 l=56 w=100 "Inverter_0.VDD" "Inverter_0.IN" 112 0 "Inverter_0.VDD" 100 8800,376 "Inverter_0.OUT" 100 8800,376

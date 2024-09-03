@@ -1,0 +1,2665 @@
+* NGSPICE file created from Output_Div_Mag_flat.ext - technology: gf180mcuC
+
+.subckt Output_Div_Mag_flat OPA1 CLK Vdiv RST OPA0 VSS VDD
+X0 Vdiv mux_4x1_0.mux_2x1_1.nand2_1.IN2 VDD.t82 VDD.t81 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X1 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK.t0 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 a_4622_n7262# VSS.t144 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X3 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1119_n1462# VSS.t161 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X4 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X5 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 VDD.t43 VDD.t42 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X6 a_1249_n4941# RST.t0 a_1089_n4941# VSS.t151 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X7 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_1273_n2603# VSS.t154 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X8 a_1837_n2559# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT VSS.t160 VSS.t159 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X9 a_1784_n6122# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 VSS.t117 VSS.t116 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X10 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X11 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.QB dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X12 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.QB mux_4x1_0.I1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X13 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X14 a_3542_n4941# CLK.t1 a_3382_n4941# VSS.t109 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X15 CLK_div_4_mag_0.VDD dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN VSS.t121 VSS.t120 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X16 a_5240_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 VSS.t168 VSS.t167 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X17 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X18 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X19 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X20 mux_4x1_0.mux_2x1_1.nand2_2.OUT mux_4x1_0.mux_2x1_2.OUT a_9668_n2080# VSS.t14 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X21 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.Q1 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X22 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X23 a_1813_n4897# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT VSS.t22 VSS.t21 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X24 a_3794_n29# dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 VSS.t132 VSS.t131 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X25 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X26 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN CLK.t2 VSS.t108 VSS.t107 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X27 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_4112_n3800# VSS.t40 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X28 a_5726_n28# dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 VSS.t130 VSS.t129 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X29 VDD mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_1.I1 VDD.t28 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X30 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 a_5186_n7218# VSS.t141 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X31 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X32 a_531_n3844# CLK.t3 a_371_n3844# VSS.t106 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X33 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN OPA1.t0 a_6692_n28# VSS.t33 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X34 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_2_mag_0.JK_FF_mag_0.QB a_555_n1506# VSS.t11 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X35 mux_4x1_0.mux_2x1_2.nand2_2.OUT mux_4x1_0.I0 a_7416_n2080# VSS.t194 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X36 a_7416_n1480# mux_4x1_0.mux_2x1_2.nand2_1.IN2 VSS.t5 VSS.t4 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X37 dec_2x4_ibr_mag_0.D2 RST.t1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X38 a_490_n7263# CLK_div_4_mag_0.VDD VSS.t180 VSS.t179 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X39 VDD mux_4x1_0.mux_2x1_2.OUT mux_4x1_0.mux_2x1_1.nand2_2.OUT VDD.t6 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X40 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X41 VDD OPA1.t1 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN VDD.t9 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X42 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 OPA1.t2 VDD.t5 VDD.t4 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X43 a_9105_n1480# mux_4x1_0.mux_2x1_1.I1 VSS.t156 VSS.t155 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X44 dec_2x4_ibr_mag_0.D1 CLK.t4 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X45 dec_2x4_ibr_mag_0.D2 CLK.t5 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X46 a_2401_n2559# CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 VSS.t3 VSS.t2 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X47 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X48 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.K.t3 a_3548_n3844# VSS.t19 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X49 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_4266_n4941# VSS.t78 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X50 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN OPA0.t0 VDD.t68 VDD.t67 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X51 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X52 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X53 VDD mux_4x1_0.I0 mux_4x1_0.mux_2x1_2.nand2_2.OUT VDD.t72 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X54 VDD dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN VDD.t58 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X55 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN VDD.t37 VDD.t36 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X56 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X57 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X58 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.K.t4 CLK_div_3_mag_0.Q0 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X59 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_4830_n4897# VSS.t35 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X60 a_4622_n7262# RST.t2 a_4462_n7262# VSS.t149 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X61 a_3904_n6165# CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_3744_n6165# VSS.t86 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X62 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK.t6 VSS.t105 VSS.t104 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X63 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X64 a_1119_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT VSS.t189 VSS.t188 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X65 mux_4x1_0.mux_2x1_0.nand2_1.IN2 CLK_div_4_mag_0.Vdiv4 VDD.t54 VDD.t53 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X66 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X67 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 a_3794_n29# VSS.t182 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X68 a_656_n6166# CLK.t7 a_496_n6166# VSS.t103 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X69 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN VDD.t17 VDD.t16 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X70 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN VSS.t137 VSS.t136 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X71 dec_2x4_ibr_mag_0.D2 CLK.t8 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X72 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X73 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X74 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X75 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.Q0 CLK_div_3_mag_0.JK_FF_mag_1.K.t0 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X76 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X77 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X78 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X79 a_4676_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 VSS.t77 VSS.t76 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X80 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X81 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X82 a_389_n2603# dec_2x4_ibr_mag_0.D1 VSS.t148 VSS.t147 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X83 a_4112_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT VSS.t42 VSS.t41 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X84 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1938_n7219# VSS.t80 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X85 mux_4x1_0.mux_2x1_1.I1 mux_4x1_0.mux_2x1_0.nand2_1.IN2 VDD.t62 VDD.t61 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X86 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.K.t5 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X87 CLK_div_4_mag_0.VDD RST.t3 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X88 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X89 a_7416_n2080# mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT VSS.t69 VSS.t4 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X90 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.Vdiv4 a_3898_n7262# VSS.t172 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X91 VDD OPA0.t1 mux_4x1_0.mux_2x1_2.nand2_1.IN2 VDD.t69 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X92 a_555_n1506# CLK.t9 a_395_n1506# VSS.t102 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X93 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.Vdiv4 a_5750_n7218# VSS.t171 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X94 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK.t10 VSS.t101 VSS.t100 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X95 a_365_n4941# dec_2x4_ibr_mag_0.D2 VSS.t28 VSS.t27 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X96 CLK_div_4_mag_0.VDD CLK.t11 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X97 VDD dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN VDD.t55 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X98 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X99 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.or_2_mag_0.IN2 VSS.t158 VSS.t157 nfet_03v3 ad=86.8f pd=0.92u as=0.152p ps=1.64u w=0.22u l=0.28u
+X100 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB a_2348_n6122# VSS.t32 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X101 mux_4x1_0.I0 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN VSS.t119 VSS.t118 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X102 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK_div_3_mag_0.Q1 a_3824_n2701# VSS.t63 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X103 mux_4x1_0.I2 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN VSS.t30 VSS.t29 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X104 a_3548_n3844# CLK.t12 a_3388_n3844# VSS.t99 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X105 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_650_n7263# VSS.t85 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X106 mux_4x1_0.mux_2x1_2.nand2_2.OUT mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT VDD.t24 VDD.t23 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X107 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 a_1659_n3800# VSS.t58 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X108 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.Q1 a_2377_n4897# VSS.t62 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X109 CLK_div_3_mag_0.Q0 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X110 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT a_4468_n6121# VSS.t66 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X111 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X112 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.Q0 a_4797_n2465# dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.704p pd=4.08u as=0.416p ps=2.12u w=1.6u l=0.28u
+X113 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT a_1095_n3800# VSS.t20 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X114 a_1374_n7263# RST.t4 a_1214_n7263# VSS.t150 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X115 a_4830_n4897# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT VSS.t39 VSS.t38 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X116 a_9668_n1480# mux_4x1_0.mux_2x1_1.nand2_1.IN2 VSS.t205 VSS.t36 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X117 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X118 a_3744_n6165# CLK_div_4_mag_0.VDD VSS.t178 VSS.t177 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X119 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK.t13 VSS.t98 VSS.t97 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X120 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 OPA1.t3 VSS.t9 VSS.t8 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X121 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X122 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X123 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X124 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 OPA0.t2 VDD.t66 VDD.t65 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X125 VDD mux_4x1_0.mux_2x1_1.nand2_2.OUT Vdiv.t1 VDD.t18 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X126 a_1683_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 VSS.t153 VSS.t152 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X127 a_496_n6166# CLK_div_4_mag_0.VDD VSS.t176 VSS.t175 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X128 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 OPA0.t3 VSS.t191 VSS.t190 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X129 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X130 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X131 VDD mux_4x1_0.mux_2x1_2.nand2_2.OUT mux_4x1_0.mux_2x1_2.OUT VDD.t78 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X132 CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB a_5596_n6121# VSS.t198 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X133 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1784_n6122# VSS.t79 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X134 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_2_mag_0.JK_FF_mag_0.QB dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X135 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X136 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_1.QB a_2223_n3800# VSS.t202 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X137 VDD OPA1.t4 mux_4x1_0.mux_2x1_1.nand2_1.IN2 VDD.t75 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X138 CLK_div_4_mag_0.VDD RST.t5 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X139 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 a_5032_n6121# VSS.t140 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X140 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X141 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN OPA1.t5 a_5726_n28# VSS.t199 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X142 mux_4x1_0.mux_2x1_1.I1 mux_4x1_0.mux_2x1_0.nand2_2.OUT a_8542_n1480# VSS.t87 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X143 dec_2x4_ibr_mag_0.D1 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.QB dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X144 dec_2x4_ibr_mag_0.D2 CLK.t14 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X145 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_2502_n7219# VSS.t84 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X146 a_5394_n4897# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 VSS.t193 VSS.t192 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X147 mux_4x1_0.mux_2x1_2.nand2_1.IN2 mux_4x1_0.I1 VDD.t22 VDD.t21 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X148 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT OPA0.t4 VSS.t207 VSS.t206 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X149 a_5750_n7218# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 VSS.t75 VSS.t74 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X150 mux_4x1_0.I0 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.D0 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X151 a_4760_n28# OPA0.t5 VSS.t209 VSS.t208 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X152 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT mux_4x1_0.I1 a_549_n2603# VSS.t56 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X153 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X154 VDD OPA0.t6 mux_4x1_0.mux_2x1_0.nand2_1.IN2 VDD.t48 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X155 a_2348_n6122# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 VSS.t16 VSS.t15 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X156 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN OPA0.t7 VDD.t52 VDD.t51 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X157 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK.t15 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X158 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK.t16 VSS.t96 VSS.t95 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X159 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.Q1 a_525_n4941# VSS.t61 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X160 a_1089_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT VSS.t196 VSS.t195 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X161 CLK_div_4_mag_0.VDD dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN VDD.t35 VDD.t34 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X162 a_1273_n2603# RST.t6 a_1113_n2603# VSS.t6 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X163 a_3824_n2701# CLK.t17 VSS.t94 VSS.t93 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X164 a_650_n7263# CLK.t18 a_490_n7263# VSS.t92 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X165 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X166 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1220_n6122# VSS.t112 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X167 a_3382_n4941# dec_2x4_ibr_mag_0.D2 VSS.t26 VSS.t25 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X168 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X169 a_4797_n2465# CLK_div_3_mag_0.or_2_mag_0.IN2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.416p pd=2.12u as=0.704p ps=4.08u w=1.6u l=0.28u
+X170 CLK_div_3_mag_0.or_2_mag_0.IN2 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN VSS.t211 VSS.t210 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X171 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X172 a_9668_n2080# mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT VSS.t37 VSS.t36 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X173 a_1938_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT VSS.t111 VSS.t110 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X174 a_1214_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT VSS.t13 VSS.t12 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X175 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X176 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X177 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X178 a_3898_n7262# CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_3738_n7262# VSS.t83 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X179 a_5186_n7218# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT VSS.t65 VSS.t64 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X180 a_7979_n1480# CLK_div_4_mag_0.Vdiv4 VSS.t170 VSS.t169 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X181 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X182 a_371_n3844# CLK_div_3_mag_0.JK_FF_mag_1.K.t6 VSS.t18 VSS.t17 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X183 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.Q1 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X184 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X185 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_1.QB dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X186 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT OPA0.t8 VDD.t15 VDD.t14 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X187 mux_4x1_0.mux_2x1_1.nand2_2.OUT mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT VDD.t13 VDD.t12 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X188 CLK_div_4_mag_0.VDD CLK.t19 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X189 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB a_656_n6166# VSS.t31 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X190 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X191 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X192 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X193 mux_4x1_0.mux_2x1_2.OUT mux_4x1_0.mux_2x1_2.nand2_1.IN2 VDD.t3 VDD.t2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X194 a_5596_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 VSS.t187 VSS.t186 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X195 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 a_4760_n28# VSS.t181 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X196 a_2223_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 VSS.t73 VSS.t72 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X197 a_4266_n4941# RST.t7 a_4106_n4941# VSS.t7 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X198 dec_2x4_ibr_mag_0.D1 CLK.t20 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X199 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.I2 a_8542_n2080# VSS.t87 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X200 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT OPA1.t6 VSS.t71 VSS.t70 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X201 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X202 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X203 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 VDD.t41 VDD.t40 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X204 mux_4x1_0.mux_2x1_1.nand2_1.IN2 mux_4x1_0.mux_2x1_1.I1 VDD.t47 VDD.t46 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X205 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X206 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X207 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK.t21 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X208 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X209 a_8542_n1480# mux_4x1_0.mux_2x1_0.nand2_1.IN2 VSS.t184 VSS.t183 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X210 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X211 CLK_div_3_mag_0.or_2_mag_0.IN2 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X212 mux_4x1_0.I2 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X213 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_4676_n3800# VSS.t34 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X214 VDD OPA1.t7 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN VDD.t25 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X215 a_2502_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 VSS.t204 VSS.t203 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X216 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X217 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X218 mux_4x1_0.mux_2x1_2.nand2_1.IN2 OPA0.t9 a_6853_n1480# VSS.t50 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X219 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK.t22 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X220 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X221 a_549_n2603# CLK.t23 a_389_n2603# VSS.t91 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X222 VSS CLK_div_3_mag_0.Q0 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN VSS.t47 nfet_03v3 ad=0.152p pd=1.64u as=86.8f ps=0.92u w=0.22u l=0.28u
+X223 a_4462_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT VSS.t68 VSS.t67 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X224 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.QB a_2247_n1462# VSS.t10 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X225 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT OPA0.t10 VSS.t1 VSS.t0 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X226 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 VSS.t82 VSS.t81 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X227 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN VSS.t52 VSS.t51 nfet_03v3 ad=0.168p pd=1.77u as=0.152p ps=1.64u w=0.22u l=0.28u
+X228 VDD mux_4x1_0.I2 mux_4x1_0.mux_2x1_0.nand2_2.OUT VDD.t31 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X229 a_525_n4941# CLK.t24 a_365_n4941# VSS.t90 nfet_03v3 ad=0.172p pd=1.18u as=0.172p ps=1.18u w=0.66u l=0.28u
+X230 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X231 a_1113_n2603# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT VSS.t24 VSS.t23 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X232 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X233 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.K.t7 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X234 dec_2x4_ibr_mag_0.D2 RST.t8 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X235 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X236 a_1220_n6122# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT VSS.t125 VSS.t124 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X237 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 a_1249_n4941# VSS.t166 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X238 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1837_n2559# VSS.t114 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X239 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X240 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X241 a_5032_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 VSS.t143 VSS.t142 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X242 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.Q1 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X243 CLK_div_3_mag_0.Q0 CLK_div_3_mag_0.JK_FF_mag_1.K.t8 a_5240_n3800# VSS.t200 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X244 a_3738_n7262# CLK_div_4_mag_0.VDD VSS.t174 VSS.t173 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X245 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.Q0 a_3542_n4941# VSS.t46 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X246 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X247 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X248 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 a_1813_n4897# VSS.t57 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X249 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK.t25 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X250 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_1374_n7263# VSS.t115 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X251 a_395_n1506# dec_2x4_ibr_mag_0.D1 VSS.t146 VSS.t145 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X252 Vdiv mux_4x1_0.mux_2x1_1.nand2_2.OUT a_9668_n1480# VSS.t14 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X253 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT OPA1.t8 VDD.t39 VDD.t38 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X254 dec_2x4_ibr_mag_0.D2 CLK.t26 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X255 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB a_3904_n6165# VSS.t197 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X256 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.QB a_531_n3844# VSS.t201 nfet_03v3 ad=0.29p pd=2.2u as=0.172p ps=1.18u w=0.66u l=0.28u
+X257 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1683_n1462# VSS.t113 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X258 mux_4x1_0.mux_2x1_2.OUT mux_4x1_0.mux_2x1_2.nand2_2.OUT a_7416_n1480# VSS.t194 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X259 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X260 a_3388_n3844# CLK_div_3_mag_0.Q1 VSS.t60 VSS.t59 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X261 a_4106_n4941# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT VSS.t163 VSS.t162 nfet_03v3 ad=0.172p pd=1.18u as=0.29p ps=2.2u w=0.66u l=0.28u
+X262 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN CLK.t27 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.D0 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X263 a_8542_n2080# mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT VSS.t185 VSS.t183 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X264 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT OPA0.t11 VDD.t1 VDD.t0 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X265 CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X266 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN VSS.t123 VSS.t122 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+X267 mux_4x1_0.mux_2x1_1.nand2_1.IN2 OPA1.t9 a_9105_n1480# VSS.t128 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X268 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT mux_4x1_0.I1 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X269 a_1659_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 VSS.t165 VSS.t164 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X270 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.Q0 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D2 pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X271 a_2377_n4897# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 VSS.t89 VSS.t88 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X272 CLK_div_2_mag_0.JK_FF_mag_0.QB mux_4x1_0.I1 a_2401_n2559# VSS.t55 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X273 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT VSS.t44 VSS.t43 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X274 a_6692_n28# OPA0.t12 VSS.t134 VSS.t133 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X275 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+X276 a_6853_n1480# mux_4x1_0.I1 VSS.t54 VSS.t53 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X277 a_1095_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT VSS.t139 VSS.t138 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X278 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X279 dec_2x4_ibr_mag_0.D1 RST.t9 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT dec_2x4_ibr_mag_0.D1 pfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.28u
+X280 a_2247_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 VSS.t127 VSS.t126 nfet_03v3 ad=0.114p pd=0.96u as=0.194p ps=1.76u w=0.44u l=0.28u
+X281 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.VDD CLK_div_4_mag_0.VDD pfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.28u
+X282 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.Q0 a_5394_n4897# VSS.t45 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X283 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN VDD.t45 VDD.t44 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X284 mux_4x1_0.mux_2x1_0.nand2_1.IN2 OPA0.t13 a_7979_n1480# VSS.t135 nfet_03v3 ad=0.194p pd=1.76u as=0.114p ps=0.96u w=0.44u l=0.28u
+X285 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT VDD.t64 VDD.t63 pfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.28u
+R0 VDD.t67 VDD.n84 882.577
+R1 VDD.t75 VDD.t81 763.259
+R2 VDD.t28 VDD.t46 763.259
+R3 VDD.t61 VDD.t48 763.259
+R4 VDD.t78 VDD.t53 763.259
+R5 VDD.t69 VDD.t2 763.259
+R6 VDD.t51 VDD.n88 763.259
+R7 VDD.t40 VDD.n86 763.259
+R8 VDD.t42 VDD.n80 763.259
+R9 VDD.t44 VDD.t9 761.365
+R10 VDD.t36 VDD.t55 761.365
+R11 VDD.n82 VDD.t58 759.471
+R12 VDD.t34 VDD.t25 746.062
+R13 VDD.n26 VDD.t12 386.348
+R14 VDD.n35 VDD.t63 386.348
+R15 VDD.n41 VDD.t23 386.348
+R16 VDD.n84 VDD.n83 376.894
+R17 VDD.n26 VDD.t38 362.409
+R18 VDD.n35 VDD.t0 362.409
+R19 VDD.n41 VDD.t14 362.409
+R20 VDD.n42 VDD.n41 319.75
+R21 VDD.n36 VDD.n35 319.75
+R22 VDD.n27 VDD.n26 319.75
+R23 VDD.n11 VDD.t18 193.183
+R24 VDD.n12 VDD.t75 193.183
+R25 VDD.n14 VDD.t28 193.183
+R26 VDD.t48 VDD.n2 193.183
+R27 VDD.n4 VDD.t78 193.183
+R28 VDD.n47 VDD.t69 193.183
+R29 VDD.n25 VDD.t6 193.183
+R30 VDD.n34 VDD.t31 193.183
+R31 VDD.n40 VDD.t72 193.183
+R32 VDD.t25 VDD.n89 193.183
+R33 VDD.t9 VDD.n87 193.183
+R34 VDD.t55 VDD.n85 193.183
+R35 VDD.t58 VDD.n81 193.183
+R36 VDD.t81 VDD.n11 109.849
+R37 VDD.t46 VDD.n12 109.849
+R38 VDD.n14 VDD.t61 109.849
+R39 VDD.t53 VDD.n2 109.849
+R40 VDD.t2 VDD.n4 109.849
+R41 VDD.n47 VDD.t21 109.849
+R42 VDD.t12 VDD.n25 109.849
+R43 VDD.t63 VDD.n34 109.849
+R44 VDD.t23 VDD.n40 109.849
+R45 VDD.n89 VDD.t51 109.849
+R46 VDD.n87 VDD.t40 109.849
+R47 VDD.n85 VDD.t67 109.849
+R48 VDD.n81 VDD.t42 109.849
+R49 VDD.n23 VDD 11.7877
+R50 VDD.n40 VDD.n39 6.3005
+R51 VDD.n34 VDD.n33 6.3005
+R52 VDD.n25 VDD.n24 6.3005
+R53 VDD.n48 VDD.n47 6.3005
+R54 VDD.n51 VDD.n4 6.3005
+R55 VDD.n54 VDD.n2 6.3005
+R56 VDD.n15 VDD.n14 6.3005
+R57 VDD.n18 VDD.n12 6.3005
+R58 VDD.n11 VDD.n9 6.3005
+R59 VDD.n80 VDD.n79 6.3005
+R60 VDD.n81 VDD 6.3005
+R61 VDD.n83 VDD.n74 6.3005
+R62 VDD.n85 VDD 6.3005
+R63 VDD.n86 VDD.n69 6.3005
+R64 VDD.n87 VDD 6.3005
+R65 VDD.n88 VDD.n64 6.3005
+R66 VDD.n89 VDD 6.3005
+R67 VDD VDD.n56 5.91861
+R68 VDD VDD.n8 5.23855
+R69 VDD VDD.n7 5.23796
+R70 VDD.n48 VDD.t22 5.21701
+R71 VDD.n42 VDD.t15 5.19258
+R72 VDD.n79 VDD.t66 5.19258
+R73 VDD.n37 VDD.t1 5.14703
+R74 VDD.n28 VDD.t39 5.14703
+R75 VDD.n76 VDD.t17 5.14703
+R76 VDD.n71 VDD.t37 5.14703
+R77 VDD.n66 VDD.t45 5.14703
+R78 VDD.n60 VDD.t35 5.14703
+R79 VDD.n59 VDD.t5 5.14703
+R80 VDD.n53 VDD.t54 5.13746
+R81 VDD.n17 VDD.t47 5.13746
+R82 VDD.n78 VDD.t43 5.13746
+R83 VDD.n73 VDD.t68 5.13746
+R84 VDD.n68 VDD.t41 5.13746
+R85 VDD.n63 VDD.t52 5.13746
+R86 VDD.n49 VDD.n46 5.13287
+R87 VDD.n52 VDD.n3 5.13287
+R88 VDD.n55 VDD.n1 5.13287
+R89 VDD.n16 VDD.n13 5.13287
+R90 VDD.n19 VDD.n10 5.13287
+R91 VDD.n38 VDD.n5 5.13287
+R92 VDD.n29 VDD.n6 5.13287
+R93 VDD.n77 VDD.n75 5.13287
+R94 VDD.n72 VDD.n70 5.13287
+R95 VDD.n67 VDD.n65 5.13287
+R96 VDD.n62 VDD.n61 5.13287
+R97 VDD.n57 VDD.t4 4.96868
+R98 VDD.n45 VDD.t3 3.91303
+R99 VDD.n30 VDD.t62 3.91303
+R100 VDD.n21 VDD.t82 3.91303
+R101 VDD.n45 VDD.n44 3.87623
+R102 VDD.n31 VDD.n30 3.87623
+R103 VDD.n22 VDD.n21 3.87523
+R104 VDD.n22 VDD.t13 3.51093
+R105 VDD.n44 VDD.t24 3.51093
+R106 VDD.n31 VDD.t64 3.51093
+R107 VDD.n58 VDD.n57 3.1505
+R108 VDD.n92 VDD.n91 3.1505
+R109 VDD.n91 VDD.n90 3.1505
+R110 VDD.n88 VDD.t44 1.89444
+R111 VDD.n86 VDD.t36 1.89444
+R112 VDD.n83 VDD.t16 1.89444
+R113 VDD.t16 VDD.n82 1.89444
+R114 VDD.n80 VDD.t65 1.89444
+R115 VDD.n90 VDD.t34 1.81868
+R116 VDD.n29 VDD.n28 0.852084
+R117 VDD VDD.n73 0.5425
+R118 VDD.n43 VDD 0.31523
+R119 VDD.n32 VDD 0.31523
+R120 VDD.n44 VDD.n43 0.272927
+R121 VDD.n32 VDD.n31 0.272927
+R122 VDD.n23 VDD.n22 0.272927
+R123 VDD.n50 VDD.n45 0.22389
+R124 VDD.n30 VDD.n0 0.22389
+R125 VDD.n21 VDD.n20 0.22389
+R126 VDD.n38 VDD.n37 0.197419
+R127 VDD VDD.n78 0.183056
+R128 VDD VDD.n63 0.183056
+R129 VDD VDD.n59 0.178278
+R130 VDD.n20 VDD.n19 0.141016
+R131 VDD.n17 VDD.n16 0.141016
+R132 VDD.n53 VDD.n52 0.141016
+R133 VDD.n50 VDD.n49 0.141016
+R134 VDD.n77 VDD.n76 0.136194
+R135 VDD.n72 VDD.n71 0.136194
+R136 VDD.n67 VDD.n66 0.136194
+R137 VDD.n62 VDD.n60 0.136194
+R138 VDD.n19 VDD 0.106177
+R139 VDD.n16 VDD 0.106177
+R140 VDD.n55 VDD 0.106177
+R141 VDD.n52 VDD 0.106177
+R142 VDD.n49 VDD 0.106177
+R143 VDD VDD.n77 0.106177
+R144 VDD VDD.n72 0.106177
+R145 VDD VDD.n67 0.106177
+R146 VDD VDD.n62 0.106177
+R147 VDD VDD.n38 0.105597
+R148 VDD VDD.n29 0.105597
+R149 VDD.n56 VDD.n0 0.105597
+R150 VDD.n43 VDD.n39 0.0800484
+R151 VDD.n33 VDD.n32 0.0800484
+R152 VDD.n24 VDD.n23 0.0800484
+R153 VDD.n20 VDD.n9 0.0800484
+R154 VDD.n18 VDD.n17 0.0800484
+R155 VDD.n15 VDD.n0 0.0800484
+R156 VDD.n51 VDD.n50 0.0800484
+R157 VDD.n78 VDD 0.0800484
+R158 VDD.n73 VDD 0.0800484
+R159 VDD.n68 VDD 0.0800484
+R160 VDD.n63 VDD 0.0800484
+R161 VDD VDD.n53 0.0788871
+R162 VDD VDD.n68 0.0498548
+R163 VDD.n37 VDD.n36 0.0460556
+R164 VDD.n28 VDD.n27 0.0460556
+R165 VDD.n76 VDD.n74 0.0460556
+R166 VDD.n71 VDD.n69 0.0460556
+R167 VDD.n66 VDD.n64 0.0460556
+R168 VDD.n59 VDD.n58 0.0460556
+R169 VDD.n92 VDD.n60 0.0460556
+R170 VDD.n56 VDD.n55 0.0359194
+R171 VDD.n39 VDD 0.00166129
+R172 VDD.n33 VDD 0.00166129
+R173 VDD.n24 VDD 0.00166129
+R174 VDD.n9 VDD 0.00166129
+R175 VDD VDD.n18 0.00166129
+R176 VDD VDD.n15 0.00166129
+R177 VDD VDD.n54 0.00166129
+R178 VDD.n54 VDD 0.00166129
+R179 VDD VDD.n51 0.00166129
+R180 VDD VDD.n48 0.00166129
+R181 VDD VDD.n42 0.00105556
+R182 VDD.n36 VDD 0.00105556
+R183 VDD.n27 VDD 0.00105556
+R184 VDD.n79 VDD 0.00105556
+R185 VDD.n74 VDD 0.00105556
+R186 VDD.n69 VDD 0.00105556
+R187 VDD.n64 VDD 0.00105556
+R188 VDD.n58 VDD 0.00105556
+R189 VDD VDD.n92 0.00105556
+R190 Vdiv Vdiv.n2 7.15141
+R191 Vdiv.n3 Vdiv.n1 3.2163
+R192 Vdiv.n1 Vdiv.t1 2.2755
+R193 Vdiv.n1 Vdiv.n0 2.2755
+R194 Vdiv Vdiv.n3 0.035398
+R195 Vdiv.n3 Vdiv 0.0119545
+R196 CLK.n27 CLK.t7 36.935
+R197 CLK.n21 CLK.t18 36.935
+R198 CLK.n45 CLK.t3 36.935
+R199 CLK.n39 CLK.t24 36.935
+R200 CLK.n60 CLK.t12 36.935
+R201 CLK.n53 CLK.t1 36.935
+R202 CLK.n9 CLK.t9 36.935
+R203 CLK.n3 CLK.t23 36.935
+R204 CLK.n49 CLK.t25 30.6315
+R205 CLK.n32 CLK.t21 25.5364
+R206 CLK.n65 CLK.t0 25.5364
+R207 CLK.n73 CLK.t22 25.5361
+R208 CLK.n14 CLK.t15 25.5361
+R209 CLK.n49 CLK.t17 21.7275
+R210 CLK.n27 CLK.t11 18.1962
+R211 CLK.n21 CLK.t19 18.1962
+R212 CLK.n45 CLK.t8 18.1962
+R213 CLK.n39 CLK.t26 18.1962
+R214 CLK.n60 CLK.t14 18.1962
+R215 CLK.n53 CLK.t5 18.1962
+R216 CLK.n9 CLK.t20 18.1962
+R217 CLK.n3 CLK.t4 18.1962
+R218 CLK.n32 CLK.t13 14.0749
+R219 CLK.n65 CLK.t16 14.0749
+R220 CLK.n73 CLK.t10 14.0734
+R221 CLK.n14 CLK.t6 14.0734
+R222 CLK.n78 CLK.t27 7.483
+R223 CLK.n57 CLK.n50 7.41537
+R224 CLK.n71 CLK.n70 5.37352
+R225 CLK.n78 CLK.t2 4.636
+R226 CLK.n23 CLK.n20 4.5005
+R227 CLK.n23 CLK.n22 4.5005
+R228 CLK.n26 CLK.n25 4.5005
+R229 CLK.n28 CLK.n25 4.5005
+R230 CLK.n34 CLK.n33 4.5005
+R231 CLK.n35 CLK.n34 4.5005
+R232 CLK.n41 CLK.n38 4.5005
+R233 CLK.n41 CLK.n40 4.5005
+R234 CLK.n44 CLK.n43 4.5005
+R235 CLK.n46 CLK.n43 4.5005
+R236 CLK.n55 CLK.n52 4.5005
+R237 CLK.n55 CLK.n54 4.5005
+R238 CLK.n59 CLK.n58 4.5005
+R239 CLK.n61 CLK.n58 4.5005
+R240 CLK.n66 CLK.n64 4.5005
+R241 CLK.n67 CLK.n64 4.5005
+R242 CLK.n75 CLK.n74 4.5005
+R243 CLK.n76 CLK.n75 4.5005
+R244 CLK.n5 CLK.n2 4.5005
+R245 CLK.n5 CLK.n4 4.5005
+R246 CLK.n8 CLK.n7 4.5005
+R247 CLK.n10 CLK.n7 4.5005
+R248 CLK.n16 CLK.n15 4.5005
+R249 CLK.n17 CLK.n16 4.5005
+R250 CLK CLK.n78 4.17425
+R251 CLK.n30 CLK.n29 2.25107
+R252 CLK.n48 CLK.n47 2.25107
+R253 CLK.n63 CLK.n62 2.25107
+R254 CLK.n12 CLK.n11 2.25107
+R255 CLK.n69 CLK.n68 2.24385
+R256 CLK.n72 CLK.n36 2.24385
+R257 CLK.n31 CLK.n18 2.24235
+R258 CLK.n13 CLK.n0 2.24235
+R259 CLK.n77 CLK 2.20924
+R260 CLK.n22 CLK.n21 2.12175
+R261 CLK.n40 CLK.n39 2.12175
+R262 CLK.n54 CLK.n53 2.12175
+R263 CLK.n4 CLK.n3 2.12175
+R264 CLK.n28 CLK.n27 2.12075
+R265 CLK.n46 CLK.n45 2.12075
+R266 CLK.n61 CLK.n60 2.12075
+R267 CLK.n10 CLK.n9 2.12075
+R268 CLK.n79 CLK.n77 1.91906
+R269 CLK.n50 CLK.n49 1.80477
+R270 CLK.n25 CLK.n24 1.74297
+R271 CLK.n43 CLK.n42 1.74297
+R272 CLK.n7 CLK.n6 1.74297
+R273 CLK.n57 CLK.n56 1.62464
+R274 CLK.n24 CLK.n19 1.49778
+R275 CLK.n42 CLK.n37 1.49778
+R276 CLK.n56 CLK.n51 1.49778
+R277 CLK.n6 CLK.n1 1.49778
+R278 CLK.n74 CLK.n73 1.42775
+R279 CLK.n15 CLK.n14 1.42775
+R280 CLK.n33 CLK.n32 1.42706
+R281 CLK.n66 CLK.n65 1.42706
+R282 CLK.n79 CLK 1.10213
+R283 CLK.n31 CLK.n30 0.97145
+R284 CLK.n13 CLK.n12 0.97145
+R285 CLK.n71 CLK.n48 0.882596
+R286 CLK.n70 CLK.n63 0.882596
+R287 CLK.n77 CLK 0.290404
+R288 CLK CLK.n79 0.213096
+R289 CLK CLK.n35 0.1605
+R290 CLK.n67 CLK 0.1605
+R291 CLK CLK.n17 0.160107
+R292 CLK.n58 CLK.n57 0.118826
+R293 CLK.n50 CLK 0.105737
+R294 CLK.n70 CLK.n69 0.0726935
+R295 CLK.n72 CLK.n71 0.0726935
+R296 CLK CLK.n76 0.05925
+R297 CLK.n26 CLK 0.0473512
+R298 CLK.n20 CLK 0.0473512
+R299 CLK.n44 CLK 0.0473512
+R300 CLK.n38 CLK 0.0473512
+R301 CLK.n59 CLK 0.0473512
+R302 CLK.n52 CLK 0.0473512
+R303 CLK.n8 CLK 0.0473512
+R304 CLK.n2 CLK 0.0473512
+R305 CLK.n29 CLK.n26 0.0361897
+R306 CLK.n20 CLK.n19 0.0361897
+R307 CLK.n47 CLK.n44 0.0361897
+R308 CLK.n38 CLK.n37 0.0361897
+R309 CLK.n62 CLK.n59 0.0361897
+R310 CLK.n52 CLK.n51 0.0361897
+R311 CLK.n11 CLK.n8 0.0361897
+R312 CLK.n2 CLK.n1 0.0361897
+R313 CLK.n35 CLK.n18 0.03175
+R314 CLK.n68 CLK.n67 0.03175
+R315 CLK.n76 CLK.n36 0.03175
+R316 CLK.n17 CLK.n0 0.03175
+R317 CLK.n34 CLK.n31 0.0246174
+R318 CLK.n16 CLK.n13 0.0246174
+R319 CLK.n69 CLK.n64 0.0205196
+R320 CLK.n75 CLK.n72 0.0205196
+R321 CLK.n24 CLK.n23 0.0131772
+R322 CLK.n42 CLK.n41 0.0131772
+R323 CLK.n56 CLK.n55 0.0131772
+R324 CLK.n6 CLK.n5 0.0131772
+R325 CLK.n30 CLK.n25 0.0122182
+R326 CLK.n48 CLK.n43 0.0122182
+R327 CLK.n63 CLK.n58 0.0122182
+R328 CLK.n12 CLK.n7 0.0122182
+R329 CLK.n29 CLK.n28 0.00515517
+R330 CLK.n22 CLK.n19 0.00515517
+R331 CLK.n47 CLK.n46 0.00515517
+R332 CLK.n40 CLK.n37 0.00515517
+R333 CLK.n62 CLK.n61 0.00515517
+R334 CLK.n54 CLK.n51 0.00515517
+R335 CLK.n11 CLK.n10 0.00515517
+R336 CLK.n4 CLK.n1 0.00515517
+R337 CLK.n33 CLK.n18 0.00175
+R338 CLK.n68 CLK.n66 0.00175
+R339 CLK.n74 CLK.n36 0.00175
+R340 CLK.n15 CLK.n0 0.00175
+R341 VSS.n162 VSS.n161 1.29679e+07
+R342 VSS.n116 VSS.n115 1.11066e+07
+R343 VSS.n108 VSS.n59 1.07048e+07
+R344 VSS.n115 VSS.n114 5.31015e+06
+R345 VSS.t179 VSS.n108 5.28329e+06
+R346 VSS.n59 VSS.n58 5.27926e+06
+R347 VSS.n117 VSS.n116 5.27898e+06
+R348 VSS.n13 VSS.n12 61889.4
+R349 VSS.t10 VSS.n14 42422.6
+R350 VSS.n230 VSS.n229 10062.5
+R351 VSS.t104 VSS.n13 9057.12
+R352 VSS.n7 VSS.n6 6621.66
+R353 VSS.t32 VSS.n96 4726.23
+R354 VSS.t200 VSS.n192 4146.75
+R355 VSS.n209 VSS.n208 3893.61
+R356 VSS.n159 VSS.t93 3109.77
+R357 VSS.t45 VSS.n125 3030.53
+R358 VSS.t210 VSS.t157 2781.65
+R359 VSS.n122 VSS.n121 2738.99
+R360 VSS.n46 VSS.n45 2564.59
+R361 VSS.n192 VSS.n44 2541.12
+R362 VSS.n159 VSS.n158 2329.24
+R363 VSS.t140 VSS.t186 2311.62
+R364 VSS.t197 VSS.t43 2311.62
+R365 VSS.t177 VSS.t81 2311.62
+R366 VSS.t79 VSS.t15 2311.62
+R367 VSS.t124 VSS.t31 2311.62
+R368 VSS.t175 VSS.t97 2311.62
+R369 VSS.t34 VSS.t167 2307.56
+R370 VSS.t76 VSS.t40 2307.56
+R371 VSS.t41 VSS.t19 2307.56
+R372 VSS.t95 VSS.t59 2307.56
+R373 VSS.t72 VSS.t58 2307.56
+R374 VSS.t20 VSS.t164 2307.56
+R375 VSS.t138 VSS.t201 2307.56
+R376 VSS.t100 VSS.t17 2307.56
+R377 VSS.t126 VSS.t113 2307.56
+R378 VSS.t161 VSS.t152 2307.56
+R379 VSS.t188 VSS.t11 2307.56
+R380 VSS.t141 VSS.t74 2097.44
+R381 VSS.t172 VSS.t67 2097.44
+R382 VSS.t80 VSS.t203 2097.44
+R383 VSS.t12 VSS.t85 2097.44
+R384 VSS.n10 VSS.t118 2092.41
+R385 VSS.n125 VSS.n124 2091.61
+R386 VSS.n116 VSS.t142 2014.08
+R387 VSS.t25 VSS.n209 1975.22
+R388 VSS.n209 VSS.t62 1970.55
+R389 VSS.n191 VSS.n47 1944.82
+R390 VSS.n189 VSS.n188 1921.63
+R391 VSS.t162 VSS.t46 1886.49
+R392 VSS.t57 VSS.t88 1886.49
+R393 VSS.t61 VSS.t195 1886.49
+R394 VSS.n108 VSS.t116 1842.43
+R395 VSS.t2 VSS.t114 1841.51
+R396 VSS.t56 VSS.t23 1841.51
+R397 VSS.n207 VSS.t202 1707.82
+R398 VSS.n123 VSS.n122 1625
+R399 VSS.n208 VSS.n207 1570.74
+R400 VSS.n6 VSS.t51 1538.1
+R401 VSS.t87 VSS.t155 1483.3
+R402 VSS.t183 VSS.t135 1483.3
+R403 VSS.t194 VSS.t169 1483.3
+R404 VSS.t4 VSS.t50 1483.3
+R405 VSS.n160 VSS.n159 1462.02
+R406 VSS.n190 VSS.n187 1403.17
+R407 VSS.t36 VSS.t128 1367.44
+R408 VSS.t122 VSS.t129 1212.37
+R409 VSS.n26 VSS.t145 1199.47
+R410 VSS.n189 VSS.t136 1152.35
+R411 VSS.t14 VSS.n166 1130.98
+R412 VSS.n13 VSS.t107 1089.96
+R413 VSS.n231 VSS.n230 1062.39
+R414 VSS.n58 VSS.n57 1058.1
+R415 VSS.t86 VSS.t197 915.494
+R416 VSS.t31 VSS.t103 915.494
+R417 VSS.t19 VSS.t99 913.885
+R418 VSS.t201 VSS.t106 913.885
+R419 VSS.t11 VSS.t102 913.885
+R420 VSS.n161 VSS.n160 858.188
+R421 VSS.t136 VSS.n3 843.26
+R422 VSS.n121 VSS.n120 838.114
+R423 VSS.t83 VSS.t172 830.672
+R424 VSS.t150 VSS.t115 830.672
+R425 VSS.t85 VSS.t92 830.672
+R426 VSS.n139 VSS.t47 776.83
+R427 VSS.n120 VSS.n119 763.828
+R428 VSS.t7 VSS.t78 747.126
+R429 VSS.t46 VSS.t109 747.126
+R430 VSS.t90 VSS.t61 747.126
+R431 VSS.t6 VSS.t154 729.313
+R432 VSS.t91 VSS.t56 729.313
+R433 VSS.t8 VSS.n162 727.827
+R434 VSS.t149 VSS.n59 700.88
+R435 VSS.n123 VSS.n118 641.388
+R436 VSS.n27 VSS.t104 633.649
+R437 VSS.t190 VSS.t131 618.756
+R438 VSS.t157 VSS.n139 554.879
+R439 VSS.n62 VSS.t198 549.297
+R440 VSS.n63 VSS.t140 549.297
+R441 VSS.n68 VSS.t66 549.297
+R442 VSS.n69 VSS.t86 549.297
+R443 VSS.n97 VSS.t32 549.297
+R444 VSS.n100 VSS.t79 549.297
+R445 VSS.t112 VSS.n107 549.297
+R446 VSS.t103 VSS.n106 549.297
+R447 VSS.n195 VSS.t200 548.331
+R448 VSS.n196 VSS.t34 548.331
+R449 VSS.n204 VSS.t99 548.331
+R450 VSS.n37 VSS.t58 548.331
+R451 VSS.n38 VSS.t20 548.331
+R452 VSS.n228 VSS.t106 548.331
+R453 VSS.n15 VSS.t10 548.331
+R454 VSS.n20 VSS.t113 548.331
+R455 VSS.n21 VSS.t161 548.331
+R456 VSS.n25 VSS.t102 548.331
+R457 VSS.n158 VSS.t55 546.986
+R458 VSS.n145 VSS.t63 546.41
+R459 VSS.n190 VSS.n189 523.611
+R460 VSS.n74 VSS.t171 498.404
+R461 VSS.n75 VSS.t141 498.404
+R462 VSS.n80 VSS.t149 498.404
+R463 VSS.n81 VSS.t83 498.404
+R464 VSS.n84 VSS.t84 498.404
+R465 VSS.n85 VSS.t80 498.404
+R466 VSS.n86 VSS.t150 498.404
+R467 VSS.n109 VSS.t92 498.404
+R468 VSS.n188 VSS.t122 489.151
+R469 VSS.n108 VSS.t112 469.19
+R470 VSS.n125 VSS.n123 466.954
+R471 VSS.n187 VSS.t53 464.872
+R472 VSS.n7 VSS.t208 460.433
+R473 VSS.n126 VSS.t45 448.276
+R474 VSS.n127 VSS.t35 448.276
+R475 VSS.n128 VSS.t7 448.276
+R476 VSS.n210 VSS.t109 448.276
+R477 VSS.n216 VSS.t62 448.276
+R478 VSS.n217 VSS.t57 448.276
+R479 VSS.n221 VSS.t151 448.276
+R480 VSS.n222 VSS.t90 448.276
+R481 VSS.t55 VSS.n157 437.589
+R482 VSS.t114 VSS.n156 437.589
+R483 VSS.n148 VSS.t6 437.589
+R484 VSS.n149 VSS.t91 437.589
+R485 VSS.n192 VSS.n46 434.096
+R486 VSS.n115 VSS.t151 424.928
+R487 VSS.n3 VSS.t133 395.007
+R488 VSS.t186 VSS.n62 366.197
+R489 VSS.n63 VSS.t142 366.197
+R490 VSS.t43 VSS.n68 366.197
+R491 VSS.n69 VSS.t177 366.197
+R492 VSS.n100 VSS.t116 366.197
+R493 VSS.n107 VSS.t124 366.197
+R494 VSS.n106 VSS.t175 366.197
+R495 VSS.t167 VSS.n195 365.555
+R496 VSS.n196 VSS.t76 365.555
+R497 VSS.n199 VSS.t41 365.555
+R498 VSS.t59 VSS.n204 365.555
+R499 VSS.n32 VSS.t72 365.555
+R500 VSS.t164 VSS.n37 365.555
+R501 VSS.n38 VSS.t138 365.555
+R502 VSS.t17 VSS.n228 365.555
+R503 VSS.n15 VSS.t126 365.555
+R504 VSS.t152 VSS.n20 365.555
+R505 VSS.n21 VSS.t188 365.555
+R506 VSS.t145 VSS.n25 365.555
+R507 VSS.t93 VSS.n145 364.274
+R508 VSS.n188 VSS.t181 359.774
+R509 VSS.t182 VSS.n7 352.262
+R510 VSS.n174 VSS.n173 349.661
+R511 VSS.n181 VSS.n180 349.661
+R512 VSS.n2 VSS.n1 338.692
+R513 VSS.t74 VSS.n74 332.269
+R514 VSS.n75 VSS.t64 332.269
+R515 VSS.t67 VSS.n80 332.269
+R516 VSS.n81 VSS.t173 332.269
+R517 VSS.t203 VSS.n84 332.269
+R518 VSS.n85 VSS.t110 332.269
+R519 VSS.n86 VSS.t12 332.269
+R520 VSS.n109 VSS.t179 332.269
+R521 VSS.n115 VSS.t166 322.199
+R522 VSS.n118 VSS.n117 319.651
+R523 VSS.n160 VSS.t190 304.784
+R524 VSS.n126 VSS.t192 298.851
+R525 VSS.n127 VSS.t38 298.851
+R526 VSS.n128 VSS.t162 298.851
+R527 VSS.n210 VSS.t25 298.851
+R528 VSS.t88 VSS.n216 298.851
+R529 VSS.n217 VSS.t21 298.851
+R530 VSS.t195 VSS.n221 298.851
+R531 VSS.n222 VSS.t27 298.851
+R532 VSS.n167 VSS.t14 298.279
+R533 VSS.n116 VSS.t66 297.536
+R534 VSS.n157 VSS.t2 291.726
+R535 VSS.n156 VSS.t159 291.726
+R536 VSS.t23 VSS.n148 291.726
+R537 VSS.n149 VSS.t147 291.726
+R538 VSS.t155 VSS.n172 235.561
+R539 VSS.n174 VSS.t183 235.561
+R540 VSS.t169 VSS.n179 235.561
+R541 VSS.n181 VSS.t4 235.561
+R542 VSS.t53 VSS.n186 235.561
+R543 VSS.t133 VSS.n2 230.6
+R544 VSS.n167 VSS.t36 198.853
+R545 VSS.t129 VSS.n4 192.06
+R546 VSS.n8 VSS.t182 147.031
+R547 VSS.t181 VSS.n5 144.512
+R548 VSS.n59 VSS.t144 129.792
+R549 VSS.n208 VSS.n206 119.948
+R550 VSS.t131 VSS.n8 98.0212
+R551 VSS.t208 VSS.n5 96.3414
+R552 VSS.t118 VSS.n9 87.5158
+R553 VSS.t107 VSS.n10 87.5158
+R554 VSS.n191 VSS.n190 66.5534
+R555 VSS.n189 VSS.t199 54.0171
+R556 VSS.n134 VSS.t29 47.5615
+R557 VSS.n163 VSS.n53 35.7094
+R558 VSS.n96 VSS.t81 34.3315
+R559 VSS.n114 VSS.t97 34.3315
+R560 VSS.n206 VSS.t95 34.2711
+R561 VSS.n231 VSS.t100 34.2711
+R562 VSS.n140 VSS.t210 34.1511
+R563 VSS.n192 VSS.n191 30.0931
+R564 VSS.n125 VSS.n46 30.0931
+R565 VSS.n27 VSS.n26 20.4408
+R566 VSS.n238 VSS.t119 17.9697
+R567 VSS.n236 VSS.t108 11.3789
+R568 VSS.n28 VSS.t105 9.3736
+R569 VSS.n95 VSS.t82 9.3736
+R570 VSS.n205 VSS.t96 9.3736
+R571 VSS.n142 VSS.t211 9.36521
+R572 VSS.n164 VSS.t9 9.34566
+R573 VSS.n252 VSS.t121 9.34566
+R574 VSS.n249 VSS.t137 9.34566
+R575 VSS.n246 VSS.t123 9.34566
+R576 VSS.n243 VSS.t52 9.34566
+R577 VSS.n184 VSS.t207 9.34566
+R578 VSS.n177 VSS.t1 9.34566
+R579 VSS.n170 VSS.t71 9.34566
+R580 VSS.n240 VSS.t191 9.34566
+R581 VSS.n137 VSS.n55 9.3221
+R582 VSS.n54 VSS.t158 9.3221
+R583 VSS.n233 VSS.t101 9.30652
+R584 VSS.n136 VSS.t30 9.30652
+R585 VSS.n31 VSS.t98 9.29981
+R586 VSS VSS.t94 7.30633
+R587 VSS VSS.t54 7.24801
+R588 VSS.n1 VSS.t33 7.20671
+R589 VSS.n251 VSS.t134 7.19156
+R590 VSS.n248 VSS.t130 7.19156
+R591 VSS.n245 VSS.t209 7.19156
+R592 VSS.n242 VSS.t132 7.19156
+R593 VSS.n147 VSS.t3 7.19156
+R594 VSS.n154 VSS.t160 7.19156
+R595 VSS.n182 VSS.t5 7.19156
+R596 VSS.n182 VSS.t69 7.19156
+R597 VSS.n49 VSS.t170 7.19156
+R598 VSS.n175 VSS.t184 7.19156
+R599 VSS.n175 VSS.t185 7.19156
+R600 VSS.n51 VSS.t156 7.19156
+R601 VSS.n168 VSS.t205 7.19156
+R602 VSS.n168 VSS.t37 7.19156
+R603 VSS.n72 VSS.t75 7.19156
+R604 VSS.n77 VSS.t65 7.19156
+R605 VSS.n60 VSS.t187 7.19156
+R606 VSS.n65 VSS.t143 7.19156
+R607 VSS.n66 VSS.t44 7.19156
+R608 VSS.n99 VSS.t16 7.19156
+R609 VSS.n102 VSS.t117 7.19156
+R610 VSS.n104 VSS.t125 7.19156
+R611 VSS.n132 VSS.t193 7.19156
+R612 VSS.n130 VSS.t39 7.19156
+R613 VSS.n193 VSS.t168 7.19156
+R614 VSS.n198 VSS.t77 7.19156
+R615 VSS.n201 VSS.t42 7.19156
+R616 VSS.n214 VSS.t89 7.19156
+R617 VSS.n219 VSS.t22 7.19156
+R618 VSS.n34 VSS.t73 7.19156
+R619 VSS.n35 VSS.t165 7.19156
+R620 VSS.n40 VSS.t139 7.19156
+R621 VSS.n17 VSS.t127 7.19156
+R622 VSS.n18 VSS.t153 7.19156
+R623 VSS.n23 VSS.t189 7.19156
+R624 VSS.n91 VSS.t204 7.18989
+R625 VSS.n89 VSS.t111 7.18989
+R626 VSS.n236 VSS.n235 6.06332
+R627 VSS.n152 VSS.t24 5.91399
+R628 VSS.n150 VSS.t148 5.91399
+R629 VSS.n78 VSS.t68 5.91399
+R630 VSS.n83 VSS.t174 5.91399
+R631 VSS.n71 VSS.t178 5.91399
+R632 VSS.n56 VSS.t176 5.91399
+R633 VSS.n43 VSS.t163 5.91399
+R634 VSS.n212 VSS.t26 5.91399
+R635 VSS.n202 VSS.t60 5.91399
+R636 VSS.n41 VSS.t196 5.91399
+R637 VSS.n224 VSS.t28 5.91399
+R638 VSS.n226 VSS.t18 5.91399
+R639 VSS.n11 VSS.t146 5.91399
+R640 VSS.n87 VSS.t13 5.91232
+R641 VSS.n111 VSS.t180 5.91232
+R642 VSS.n28 VSS.n27 5.2005
+R643 VSS.n82 VSS.n81 5.2005
+R644 VSS.n80 VSS.n79 5.2005
+R645 VSS.n76 VSS.n75 5.2005
+R646 VSS.n74 VSS.n73 5.2005
+R647 VSS.n92 VSS.n84 5.2005
+R648 VSS.n90 VSS.n85 5.2005
+R649 VSS.n88 VSS.n86 5.2005
+R650 VSS.n110 VSS.n109 5.2005
+R651 VSS.n106 VSS.n105 5.2005
+R652 VSS.n107 VSS.n103 5.2005
+R653 VSS.n101 VSS.n100 5.2005
+R654 VSS.n98 VSS.n97 5.2005
+R655 VSS.n62 VSS.n61 5.2005
+R656 VSS.n64 VSS.n63 5.2005
+R657 VSS.n68 VSS.n67 5.2005
+R658 VSS.n70 VSS.n69 5.2005
+R659 VSS.n96 VSS.n95 5.2005
+R660 VSS.n114 VSS.n113 5.2005
+R661 VSS.n223 VSS.n222 5.2005
+R662 VSS.n221 VSS.n220 5.2005
+R663 VSS.n218 VSS.n217 5.2005
+R664 VSS.n216 VSS.n215 5.2005
+R665 VSS.n211 VSS.n210 5.2005
+R666 VSS.n129 VSS.n128 5.2005
+R667 VSS.n131 VSS.n127 5.2005
+R668 VSS.n133 VSS.n126 5.2005
+R669 VSS.n145 VSS.n144 5.2005
+R670 VSS.n141 VSS.n140 5.2005
+R671 VSS.n139 VSS.n138 5.2005
+R672 VSS.n135 VSS.n134 5.2005
+R673 VSS.n228 VSS.n227 5.2005
+R674 VSS.n39 VSS.n38 5.2005
+R675 VSS.n37 VSS.n36 5.2005
+R676 VSS.n33 VSS.n32 5.2005
+R677 VSS.n195 VSS.n194 5.2005
+R678 VSS.n197 VSS.n196 5.2005
+R679 VSS.n200 VSS.n199 5.2005
+R680 VSS.n204 VSS.n203 5.2005
+R681 VSS.n206 VSS.n205 5.2005
+R682 VSS.n232 VSS.n231 5.2005
+R683 VSS.n16 VSS.n15 5.2005
+R684 VSS.n20 VSS.n19 5.2005
+R685 VSS.n22 VSS.n21 5.2005
+R686 VSS.n25 VSS.n24 5.2005
+R687 VSS.n157 VSS.n146 5.2005
+R688 VSS.n156 VSS.n155 5.2005
+R689 VSS.n153 VSS.n148 5.2005
+R690 VSS.n151 VSS.n149 5.2005
+R691 VSS.n239 VSS.n9 5.2005
+R692 VSS.n237 VSS.n10 5.2005
+R693 VSS.n241 VSS.t190 5.2005
+R694 VSS VSS.n8 5.2005
+R695 VSS.n244 VSS.n6 5.2005
+R696 VSS VSS.n5 5.2005
+R697 VSS.n247 VSS.t122 5.2005
+R698 VSS VSS.n4 5.2005
+R699 VSS.n250 VSS.t136 5.2005
+R700 VSS VSS.n2 5.2005
+R701 VSS.n234 VSS.n31 4.53466
+R702 VSS.t128 VSS.t70 3.68113
+R703 VSS.n173 VSS.t87 3.68113
+R704 VSS.t135 VSS.t0 3.68113
+R705 VSS.n180 VSS.t194 3.68113
+R706 VSS.t50 VSS.t206 3.68113
+R707 VSS.n185 VSS.n48 3.37613
+R708 VSS.n178 VSS.n50 3.37613
+R709 VSS.n171 VSS.n52 3.37613
+R710 VSS.n235 VSS.n30 2.60654
+R711 VSS VSS.n167 2.6035
+R712 VSS VSS.n174 2.6035
+R713 VSS VSS.n181 2.6035
+R714 VSS.n169 VSS.n52 2.6005
+R715 VSS.t70 VSS.n52 2.6005
+R716 VSS.n176 VSS.n50 2.6005
+R717 VSS.t0 VSS.n50 2.6005
+R718 VSS.n171 VSS 2.6005
+R719 VSS.n172 VSS.n171 2.6005
+R720 VSS.n178 VSS 2.6005
+R721 VSS.n179 VSS.n178 2.6005
+R722 VSS.n185 VSS 2.6005
+R723 VSS.n186 VSS.n185 2.6005
+R724 VSS.n183 VSS.n48 2.6005
+R725 VSS.t206 VSS.n48 2.6005
+R726 VSS.n165 VSS.n163 2.6005
+R727 VSS.n163 VSS.t8 2.6005
+R728 VSS.n53 VSS.n0 2.6005
+R729 VSS.n53 VSS.t120 2.6005
+R730 VSS.n234 VSS.n233 2.45682
+R731 VSS.n225 VSS.n224 1.03335
+R732 VSS.n112 VSS.n111 0.941004
+R733 VSS.n235 VSS.n234 0.869085
+R734 VSS.n94 VSS.n93 0.845914
+R735 VSS.n213 VSS.n42 0.845914
+R736 VSS.n30 VSS.n29 0.845914
+R737 VSS.n240 VSS 0.59389
+R738 VSS.n130 VSS.n129 0.480225
+R739 VSS.n211 VSS.n43 0.480225
+R740 VSS.n220 VSS.n219 0.480225
+R741 VSS.n223 VSS.n41 0.480225
+R742 VSS.n243 VSS 0.375997
+R743 VSS.n246 VSS 0.375997
+R744 VSS.n252 VSS 0.375997
+R745 VSS.n60 VSS 0.343161
+R746 VSS VSS.n65 0.343161
+R747 VSS VSS.n99 0.343161
+R748 VSS VSS.n102 0.343161
+R749 VSS.n193 VSS 0.343161
+R750 VSS VSS.n198 0.343161
+R751 VSS VSS.n34 0.343161
+R752 VSS.n35 VSS 0.343161
+R753 VSS.n132 VSS 0.343161
+R754 VSS.n214 VSS 0.343161
+R755 VSS VSS.n17 0.343161
+R756 VSS.n18 VSS 0.343161
+R757 VSS.n248 VSS.n247 0.341085
+R758 VSS.n251 VSS.n250 0.338168
+R759 VSS.n242 VSS.n241 0.312136
+R760 VSS.n245 VSS.n244 0.310702
+R761 VSS.n143 VSS.n54 0.309418
+R762 VSS.n154 VSS.n153 0.295924
+R763 VSS.n70 VSS 0.289491
+R764 VSS.n105 VSS 0.289491
+R765 VSS.n203 VSS 0.289491
+R766 VSS.n227 VSS 0.289491
+R767 VSS.n24 VSS 0.289491
+R768 VSS.n144 VSS.n143 0.255008
+R769 VSS.n79 VSS.n77 0.245993
+R770 VSS.n89 VSS.n88 0.245993
+R771 VSS.n164 VSS.n0 0.240248
+R772 VSS VSS.n165 0.220454
+R773 VSS VSS.n147 0.211517
+R774 VSS.n66 VSS 0.191234
+R775 VSS VSS.n104 0.191234
+R776 VSS VSS.n201 0.191234
+R777 VSS VSS.n40 0.191234
+R778 VSS VSS.n23 0.191234
+R779 VSS.n249 VSS 0.189392
+R780 VSS.n213 VSS.n212 0.187931
+R781 VSS VSS.n213 0.183803
+R782 VSS.n72 VSS 0.175852
+R783 VSS.n91 VSS 0.175852
+R784 VSS VSS.n49 0.171522
+R785 VSS VSS.n51 0.171522
+R786 VSS VSS.n151 0.168805
+R787 VSS.n137 VSS.n136 0.168119
+R788 VSS.n93 VSS 0.153458
+R789 VSS.n143 VSS.n142 0.141461
+R790 VSS.n82 VSS 0.140359
+R791 VSS.n110 VSS 0.140359
+R792 VSS.n29 VSS 0.137685
+R793 VSS VSS.n94 0.137685
+R794 VSS VSS.n112 0.137685
+R795 VSS VSS.n42 0.137685
+R796 VSS.n225 VSS 0.137685
+R797 VSS.n138 VSS.n137 0.136634
+R798 VSS.n152 VSS 0.127619
+R799 VSS.n61 VSS.n60 0.118573
+R800 VSS.n65 VSS.n64 0.118573
+R801 VSS.n67 VSS.n66 0.118573
+R802 VSS.n99 VSS.n98 0.118573
+R803 VSS.n102 VSS.n101 0.118573
+R804 VSS.n104 VSS.n103 0.118573
+R805 VSS.n194 VSS.n193 0.118573
+R806 VSS.n198 VSS.n197 0.118573
+R807 VSS.n201 VSS.n200 0.118573
+R808 VSS.n34 VSS.n33 0.118573
+R809 VSS.n36 VSS.n35 0.118573
+R810 VSS.n40 VSS.n39 0.118573
+R811 VSS.n133 VSS.n132 0.118573
+R812 VSS.n131 VSS.n130 0.118573
+R813 VSS.n215 VSS.n214 0.118573
+R814 VSS.n219 VSS.n218 0.118573
+R815 VSS.n17 VSS.n16 0.118573
+R816 VSS.n19 VSS.n18 0.118573
+R817 VSS.n23 VSS.n22 0.118573
+R818 VSS VSS.n242 0.118573
+R819 VSS VSS.n245 0.118573
+R820 VSS VSS.n248 0.118573
+R821 VSS VSS.n251 0.118573
+R822 VSS.n150 VSS.n30 0.115924
+R823 VSS VSS.n54 0.115458
+R824 VSS.n71 VSS 0.115271
+R825 VSS VSS.n56 0.115271
+R826 VSS VSS.n202 0.115271
+R827 VSS VSS.n226 0.115271
+R828 VSS VSS.n43 0.115271
+R829 VSS.n212 VSS 0.115271
+R830 VSS VSS.n41 0.115271
+R831 VSS.n224 VSS 0.115271
+R832 VSS VSS.n11 0.115271
+R833 VSS VSS.n182 0.113253
+R834 VSS VSS.n175 0.113253
+R835 VSS VSS.n168 0.113253
+R836 VSS.n78 VSS 0.106134
+R837 VSS.n87 VSS 0.106134
+R838 VSS.n94 VSS.n71 0.10206
+R839 VSS.n112 VSS.n56 0.10206
+R840 VSS.n202 VSS.n42 0.10206
+R841 VSS.n226 VSS.n225 0.10206
+R842 VSS.n29 VSS.n11 0.10206
+R843 VSS.n93 VSS.n83 0.0964155
+R844 VSS.n238 VSS 0.0747817
+R845 VSS.n147 VSS.n146 0.0732119
+R846 VSS.n155 VSS.n154 0.0732119
+R847 VSS VSS.n152 0.071178
+R848 VSS VSS.n150 0.071178
+R849 VSS.n233 VSS.n232 0.0675755
+R850 VSS.n113 VSS.n31 0.0662751
+R851 VSS VSS.n240 0.0647857
+R852 VSS VSS.n243 0.0647857
+R853 VSS VSS.n246 0.0647857
+R854 VSS VSS.n249 0.0647857
+R855 VSS VSS.n164 0.0647857
+R856 VSS VSS.n252 0.0647857
+R857 VSS.n239 VSS.n238 0.0646408
+R858 VSS.n73 VSS.n72 0.0609225
+R859 VSS.n77 VSS.n76 0.0609225
+R860 VSS.n92 VSS.n91 0.0609225
+R861 VSS.n90 VSS.n89 0.0609225
+R862 VSS.n182 VSS 0.0595367
+R863 VSS.n175 VSS 0.0595367
+R864 VSS.n168 VSS 0.0595367
+R865 VSS VSS.n78 0.0592324
+R866 VSS.n83 VSS 0.0592324
+R867 VSS VSS.n87 0.0592324
+R868 VSS.n111 VSS 0.0592324
+R869 VSS.n142 VSS.n141 0.0589274
+R870 VSS VSS.n49 0.0569474
+R871 VSS VSS.n51 0.0569474
+R872 VSS.n136 VSS.n135 0.0564843
+R873 VSS.n237 VSS.n236 0.0387218
+R874 VSS.n184 VSS 0.0340526
+R875 VSS.n177 VSS 0.0340526
+R876 VSS.n170 VSS 0.0340526
+R877 VSS.n183 VSS 0.0182632
+R878 VSS.n176 VSS 0.0182632
+R879 VSS.n169 VSS 0.0182632
+R880 VSS.n61 VSS 0.00545413
+R881 VSS.n64 VSS 0.00545413
+R882 VSS.n67 VSS 0.00545413
+R883 VSS.n98 VSS 0.00545413
+R884 VSS.n101 VSS 0.00545413
+R885 VSS.n103 VSS 0.00545413
+R886 VSS.n194 VSS 0.00545413
+R887 VSS.n197 VSS 0.00545413
+R888 VSS.n200 VSS 0.00545413
+R889 VSS.n33 VSS 0.00545413
+R890 VSS.n36 VSS 0.00545413
+R891 VSS.n39 VSS 0.00545413
+R892 VSS VSS.n133 0.00545413
+R893 VSS VSS.n131 0.00545413
+R894 VSS.n215 VSS 0.00545413
+R895 VSS.n218 VSS 0.00545413
+R896 VSS.n16 VSS 0.00545413
+R897 VSS.n19 VSS 0.00545413
+R898 VSS.n22 VSS 0.00545413
+R899 VSS VSS.n184 0.00405263
+R900 VSS VSS.n170 0.00405263
+R901 VSS VSS.n70 0.00380275
+R902 VSS.n105 VSS 0.00380275
+R903 VSS.n203 VSS 0.00380275
+R904 VSS.n227 VSS 0.00380275
+R905 VSS.n129 VSS 0.00380275
+R906 VSS VSS.n211 0.00380275
+R907 VSS.n220 VSS 0.00380275
+R908 VSS VSS.n223 0.00380275
+R909 VSS.n144 VSS 0.00380275
+R910 VSS.n24 VSS 0.00380275
+R911 VSS.n146 VSS 0.00355085
+R912 VSS.n155 VSS 0.00355085
+R913 VSS.n138 VSS 0.00352521
+R914 VSS.n73 VSS 0.00303521
+R915 VSS.n76 VSS 0.00303521
+R916 VSS VSS.n92 0.00303521
+R917 VSS VSS.n90 0.00303521
+R918 VSS.n153 VSS 0.0025339
+R919 VSS.n151 VSS 0.0025339
+R920 VSS VSS.n177 0.00247368
+R921 VSS VSS.n28 0.00219811
+R922 VSS.n95 VSS 0.00219811
+R923 VSS.n113 VSS 0.00219811
+R924 VSS.n205 VSS 0.00219811
+R925 VSS.n232 VSS 0.00219811
+R926 VSS.n141 VSS 0.00219811
+R927 VSS.n79 VSS 0.00219014
+R928 VSS VSS.n82 0.00219014
+R929 VSS.n88 VSS 0.00219014
+R930 VSS VSS.n110 0.00219014
+R931 VSS.n135 VSS 0.00191732
+R932 VSS.n241 VSS 0.0012563
+R933 VSS.n244 VSS 0.0012563
+R934 VSS.n247 VSS 0.0012563
+R935 VSS.n250 VSS 0.0012563
+R936 VSS.n165 VSS 0.0012563
+R937 VSS VSS.n0 0.0012563
+R938 VSS VSS.n239 0.00100704
+R939 VSS VSS.n237 0.00100704
+R940 VSS VSS.n183 0.000894737
+R941 VSS VSS.n176 0.000894737
+R942 VSS VSS.n169 0.000894737
+R943 RST.n31 RST.t7 37.1991
+R944 RST.n3 RST.t4 36.935
+R945 RST.n10 RST.t2 36.935
+R946 RST.n23 RST.t6 36.935
+R947 RST.n37 RST.t0 36.935
+R948 RST.n3 RST.t5 18.1962
+R949 RST.n10 RST.t3 18.1962
+R950 RST.n23 RST.t9 18.1962
+R951 RST.n37 RST.t1 18.1962
+R952 RST.n31 RST.t8 17.66
+R953 RST.n35 RST.n34 9.41517
+R954 RST.n14 RST.n13 4.51464
+R955 RST.n21 RST.n19 4.51464
+R956 RST.n11 RST.n8 4.5005
+R957 RST.n25 RST.n24 4.5005
+R958 RST.n35 RST.n27 4.5005
+R959 RST.n43 RST 2.45461
+R960 RST.n45 RST.n43 2.3833
+R961 RST.n15 RST.n14 2.27507
+R962 RST.n26 RST.n19 2.27507
+R963 RST.n45 RST.n44 2.25443
+R964 RST.n44 RST.n0 2.2505
+R965 RST.n47 RST.n46 2.2505
+R966 RST.n48 RST.n47 2.2505
+R967 RST.n41 RST.n40 2.24211
+R968 RST.n34 RST.n33 2.24157
+R969 RST.n24 RST.n23 2.12207
+R970 RST.n4 RST.n3 2.12188
+R971 RST.n11 RST.n10 2.12188
+R972 RST.n38 RST.n37 2.12175
+R973 RST.n16 RST 2.10367
+R974 RST.n46 RST.n18 1.99783
+R975 RST RST.n15 1.6362
+R976 RST RST.n26 1.6362
+R977 RST.n43 RST.n42 1.5297
+R978 RST.n12 RST.n9 1.5005
+R979 RST.n6 RST.n5 1.5005
+R980 RST.n22 RST.n20 1.5005
+R981 RST.n32 RST.n31 1.41552
+R982 RST.n18 RST.n7 1.12901
+R983 RST.n15 RST.n8 1.12901
+R984 RST.n26 RST.n25 1.12901
+R985 RST.n42 RST.n41 1.12252
+R986 RST.n0 RST 0.0678913
+R987 RST.n40 RST 0.0593097
+R988 RST RST.n45 0.0516475
+R989 RST.n30 RST 0.0410354
+R990 RST.n2 RST 0.0379319
+R991 RST.n13 RST 0.0379319
+R992 RST.n21 RST 0.0379319
+R993 RST.n5 RST.n2 0.0361897
+R994 RST.n13 RST.n12 0.0361897
+R995 RST.n22 RST.n21 0.0361897
+R996 RST.n33 RST.n30 0.0361897
+R997 RST.n17 RST.n16 0.0348421
+R998 RST.n41 RST.n28 0.0305
+R999 RST RST.n36 0.0293
+R1000 RST.n6 RST.n1 0.0277368
+R1001 RST RST.n48 0.0270217
+R1002 RST.n34 RST.n29 0.0230258
+R1003 RST.n18 RST.n17 0.021041
+R1004 RST.n40 RST.n39 0.0187743
+R1005 RST.n14 RST.n9 0.0145153
+R1006 RST.n20 RST.n19 0.0145153
+R1007 RST.n42 RST.n27 0.00863394
+R1008 RST.n5 RST.n4 0.0067069
+R1009 RST.n12 RST.n11 0.0067069
+R1010 RST.n24 RST.n22 0.0067069
+R1011 RST.n7 RST.n6 0.00523684
+R1012 RST.n9 RST.n8 0.00523684
+R1013 RST.n25 RST.n20 0.00523684
+R1014 RST.n39 RST.n38 0.00515517
+R1015 RST.n33 RST.n32 0.00515517
+R1016 RST.n36 RST.n35 0.0029
+R1017 RST.n48 RST.n0 0.00223913
+R1018 RST.n41 RST 0.0017
+R1019 RST.n46 RST 0.000991803
+R1020 OPA1.n0 OPA1.t0 31.528
+R1021 OPA1.n1 OPA1.t5 31.528
+R1022 OPA1.n9 OPA1.t9 31.528
+R1023 OPA1.n3 OPA1.t2 25.7638
+R1024 OPA1.n13 OPA1.t8 25.7638
+R1025 OPA1.n0 OPA1.t7 15.3826
+R1026 OPA1.n1 OPA1.t1 15.3826
+R1027 OPA1.n9 OPA1.t4 15.3826
+R1028 OPA1.n3 OPA1.t3 13.2969
+R1029 OPA1.n13 OPA1.t6 13.2969
+R1030 OPA1 OPA1.n1 8.85842
+R1031 OPA1 OPA1.n0 8.85606
+R1032 OPA1.n10 OPA1.n9 7.62076
+R1033 OPA1.n2 OPA1 6.02672
+R1034 OPA1 OPA1.n12 4.52833
+R1035 OPA1.n8 OPA1.n7 4.5005
+R1036 OPA1.n7 OPA1 4.4388
+R1037 OPA1 OPA1.n6 3.2724
+R1038 OPA1.n2 OPA1 2.58284
+R1039 OPA1.n4 OPA1.n3 2.12228
+R1040 OPA1.n14 OPA1.n13 2.11815
+R1041 OPA1.n12 OPA1.n11 1.33848
+R1042 OPA1.n5 OPA1.n4 1.13447
+R1043 OPA1.n15 OPA1.n14 1.1266
+R1044 OPA1.n11 OPA1.n10 1.12145
+R1045 OPA1.n6 OPA1.n5 1.09227
+R1046 OPA1.n5 OPA1.n2 0.907343
+R1047 OPA1.n8 OPA1 0.0780197
+R1048 OPA1.n11 OPA1.n7 0.0469946
+R1049 OPA1 OPA1.n8 0.0359098
+R1050 OPA1.n15 OPA1.n12 0.0344967
+R1051 OPA1 OPA1.n15 0.0125466
+R1052 OPA1.n6 OPA1 0.00391772
+R1053 OPA1.n10 OPA1 0.00197541
+R1054 OPA1.n14 OPA1 0.00142783
+R1055 OPA1.n4 OPA1 0.00125099
+R1056 CLK_div_3_mag_0.JK_FF_mag_1.K.n4 CLK_div_3_mag_0.JK_FF_mag_1.K.t3 37.1986
+R1057 CLK_div_3_mag_0.JK_FF_mag_1.K.n3 CLK_div_3_mag_0.JK_FF_mag_1.K.t8 31.528
+R1058 CLK_div_3_mag_0.JK_FF_mag_1.K.n2 CLK_div_3_mag_0.JK_FF_mag_1.K.t7 30.5184
+R1059 CLK_div_3_mag_0.JK_FF_mag_1.K.n2 CLK_div_3_mag_0.JK_FF_mag_1.K.t6 24.7029
+R1060 CLK_div_3_mag_0.JK_FF_mag_1.K.n4 CLK_div_3_mag_0.JK_FF_mag_1.K.t5 17.6614
+R1061 CLK_div_3_mag_0.JK_FF_mag_1.K.n3 CLK_div_3_mag_0.JK_FF_mag_1.K.t4 15.3826
+R1062 CLK_div_3_mag_0.JK_FF_mag_1.K.n0 CLK_div_3_mag_0.JK_FF_mag_1.K 12.0843
+R1063 CLK_div_3_mag_0.JK_FF_mag_1.K.n0 CLK_div_3_mag_0.JK_FF_mag_1.K.n3 9.86691
+R1064 CLK_div_3_mag_0.JK_FF_mag_1.K.n5 CLK_div_3_mag_0.JK_FF_mag_1.K 6.09789
+R1065 CLK_div_3_mag_0.JK_FF_mag_1.K.n1 CLK_div_3_mag_0.JK_FF_mag_1.K.n7 2.99416
+R1066 CLK_div_3_mag_0.JK_FF_mag_1.K.n7 CLK_div_3_mag_0.JK_FF_mag_1.K.t0 2.2755
+R1067 CLK_div_3_mag_0.JK_FF_mag_1.K.n7 CLK_div_3_mag_0.JK_FF_mag_1.K.n6 2.2755
+R1068 CLK_div_3_mag_0.JK_FF_mag_1.K.n1 CLK_div_3_mag_0.JK_FF_mag_1.K.n5 2.2505
+R1069 CLK_div_3_mag_0.JK_FF_mag_1.K.n0 CLK_div_3_mag_0.JK_FF_mag_1.K 2.24173
+R1070 CLK_div_3_mag_0.JK_FF_mag_1.K.n5 CLK_div_3_mag_0.JK_FF_mag_1.K.n0 1.93723
+R1071 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.K.n2 1.81225
+R1072 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.K.n4 1.43709
+R1073 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.K.n1 0.281955
+R1074 OPA0.n5 OPA0.t13 31.528
+R1075 OPA0.n22 OPA0.t9 31.528
+R1076 OPA0.n12 OPA0.t0 30.9379
+R1077 OPA0.n13 OPA0.t7 30.9379
+R1078 OPA0.n17 OPA0.t2 25.7638
+R1079 OPA0.n8 OPA0.t11 25.7638
+R1080 OPA0.n1 OPA0.t8 25.7638
+R1081 OPA0.n12 OPA0.t5 21.6422
+R1082 OPA0.n13 OPA0.t12 21.6422
+R1083 OPA0.n5 OPA0.t6 15.3826
+R1084 OPA0.n22 OPA0.t1 15.3826
+R1085 OPA0.n17 OPA0.t3 13.2969
+R1086 OPA0.n8 OPA0.t10 13.2969
+R1087 OPA0.n1 OPA0.t4 13.2969
+R1088 OPA0.n16 OPA0.n15 7.96122
+R1089 OPA0.n6 OPA0.n5 7.6289
+R1090 OPA0.n23 OPA0.n22 7.62076
+R1091 OPA0.n19 OPA0 6.19898
+R1092 OPA0.n18 OPA0.n16 5.39718
+R1093 OPA0.n10 OPA0 4.52833
+R1094 OPA0.n3 OPA0 4.52833
+R1095 OPA0.n15 OPA0 4.52412
+R1096 OPA0 OPA0.n12 4.00388
+R1097 OPA0 OPA0.n17 4.00252
+R1098 OPA0.n16 OPA0 2.96831
+R1099 OPA0.n14 OPA0.n13 2.8805
+R1100 OPA0.n18 OPA0 2.373
+R1101 OPA0.n9 OPA0.n8 2.11815
+R1102 OPA0.n2 OPA0.n1 2.11815
+R1103 OPA0.n24 OPA0.n23 1.5005
+R1104 OPA0.n4 OPA0.n3 1.31042
+R1105 OPA0.n11 OPA0.n10 1.28387
+R1106 OPA0.n20 OPA0.n19 1.2712
+R1107 OPA0.n15 OPA0.n14 1.16475
+R1108 OPA0.n9 OPA0.n7 1.1266
+R1109 OPA0.n2 OPA0.n0 1.1266
+R1110 OPA0.n11 OPA0.n6 0.948428
+R1111 OPA0.n19 OPA0.n11 0.789765
+R1112 OPA0 OPA0.n18 0.640964
+R1113 OPA0.n6 OPA0 0.108522
+R1114 OPA0.n21 OPA0 0.0780742
+R1115 OPA0.n23 OPA0.n21 0.0373852
+R1116 OPA0.n20 OPA0.n4 0.0359098
+R1117 OPA0.n10 OPA0.n7 0.0344967
+R1118 OPA0.n3 OPA0.n0 0.0344967
+R1119 OPA0.n7 OPA0 0.0125466
+R1120 OPA0.n0 OPA0 0.0125466
+R1121 OPA0 OPA0.n14 0.003875
+R1122 OPA0 OPA0.n24 0.00345082
+R1123 OPA0.n24 OPA0.n20 0.00197541
+R1124 OPA0 OPA0.n9 0.00142783
+R1125 OPA0 OPA0.n2 0.00142783
+C0 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 2.1e-19
+C1 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 0.307f
+C2 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 mux_4x1_0.mux_2x1_2.nand2_2.OUT 4.87e-20
+C3 VDD mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.634f
+C4 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00233f
+C5 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.911f
+C6 CLK a_2401_n2559# 3.88e-20
+C7 OPA0 CLK_div_3_mag_0.or_2_mag_0.IN2 2.59e-20
+C8 RST a_371_n3844# 0.00258f
+C9 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.0635f
+C10 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_389_n2603# 0.0202f
+C11 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.28f
+C12 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.QB 8.63e-21
+C13 CLK_div_4_mag_0.VDD OPA0 1.03f
+C14 dec_2x4_ibr_mag_0.D0 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 0.51f
+C15 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 4.08e-20
+C16 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1837_n2559# 0.0036f
+C17 mux_4x1_0.I1 a_6692_n28# 1.91e-20
+C18 RST a_1659_n3800# 3.62e-19
+C19 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 7.08e-20
+C20 a_9668_n2080# mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.0964f
+C21 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00224f
+C22 RST a_2377_n4897# 0.00114f
+C23 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 CLK_div_4_mag_0.VDD 0.385f
+C24 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 3.42e-20
+C25 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_2401_n2559# 0.00372f
+C26 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 9.23e-20
+C27 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.00212f
+C28 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.Vdiv4 0.0635f
+C29 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_549_n2603# 1.46e-19
+C30 a_650_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.46e-19
+C31 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.109f
+C32 a_7979_n1480# mux_4x1_0.mux_2x1_2.OUT 0.00211f
+C33 VDD a_7416_n2080# 0.00444f
+C34 CLK_div_3_mag_0.JK_FF_mag_1.K a_4676_n3800# 2.96e-19
+C35 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 0.199f
+C36 a_3898_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 1.46e-19
+C37 a_1813_n4897# RST 5.68e-19
+C38 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.758f
+C39 dec_2x4_ibr_mag_0.D2 CLK 2.44f
+C40 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_2.OUT 0.016f
+C41 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0343f
+C42 a_5240_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 4.52e-20
+C43 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 2.6e-20
+C44 mux_4x1_0.I0 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00436f
+C45 a_9668_n1480# mux_4x1_0.mux_2x1_2.OUT 2.44e-19
+C46 RST a_1095_n3800# 5.17e-19
+C47 CLK a_549_n2603# 0.00164f
+C48 dec_2x4_ibr_mag_0.D2 a_6853_n1480# 1.23e-20
+C49 mux_4x1_0.I1 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 2.91e-20
+C50 mux_4x1_0.I1 CLK_div_4_mag_0.Vdiv4 9.63e-19
+C51 dec_2x4_ibr_mag_0.D2 a_5726_n28# 8.5e-19
+C52 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN OPA0 0.146f
+C53 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.36f
+C54 a_4760_n28# VDD 3.14e-19
+C55 CLK_div_4_mag_0.VDD a_490_n7263# 0.00108f
+C56 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_1837_n2559# 0.069f
+C57 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 1.3e-20
+C58 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 1.96f
+C59 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 1.72e-19
+C60 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.121f
+C61 a_3904_n6165# a_3744_n6165# 0.0504f
+C62 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.00178f
+C63 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.Q0 0.338f
+C64 RST a_3744_n6165# 0.00134f
+C65 a_7416_n1480# mux_4x1_0.mux_2x1_2.OUT 0.069f
+C66 CLK_div_3_mag_0.JK_FF_mag_1.K a_4112_n3800# 1.75e-19
+C67 a_1249_n4941# RST 0.00185f
+C68 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN 0.377f
+C69 a_2223_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.00118f
+C70 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 0.647f
+C71 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 a_4760_n28# 0.00375f
+C72 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK 2.09e-19
+C73 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_4830_n4897# 0.0036f
+C74 RST a_531_n3844# 0.00191f
+C75 a_9105_n1480# mux_4x1_0.mux_2x1_2.OUT 1.04e-19
+C76 a_4676_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.0059f
+C77 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.Q0 2.37f
+C78 a_1683_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.069f
+C79 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK 0.235f
+C80 CLK a_389_n2603# 0.00117f
+C81 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 8.67e-21
+C82 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_650_n7263# 0.00789f
+C83 CLK CLK_div_3_mag_0.Q1 1.03f
+C84 VDD mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.402f
+C85 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.398f
+C86 a_656_n6166# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00119f
+C87 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0894f
+C88 RST a_4112_n3800# 1.9e-19
+C89 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.267f
+C90 a_3382_n4941# a_3542_n4941# 0.0504f
+C91 RST a_2348_n6122# 8.76e-19
+C92 dec_2x4_ibr_mag_0.D1 a_4760_n28# 8.39e-19
+C93 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 8.16e-20
+C94 CLK CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.00481f
+C95 a_1089_n4941# RST 0.00191f
+C96 CLK_div_3_mag_0.JK_FF_mag_1.K a_3548_n3844# 0.00392f
+C97 CLK_div_2_mag_0.JK_FF_mag_0.QB a_1273_n2603# 0.00696f
+C98 a_1659_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.011f
+C99 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0029f
+C100 RST CLK_div_3_mag_0.Q0 0.0447f
+C101 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.Q1 2.6e-20
+C102 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_3_mag_0.Q0 0.00124f
+C103 a_4112_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.0697f
+C104 dec_2x4_ibr_mag_0.D0 VDD 0.224f
+C105 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_490_n7263# 0.00335f
+C106 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 0.00183f
+C107 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 a_2247_n1462# 0.00372f
+C108 mux_4x1_0.mux_2x1_1.nand2_1.IN2 mux_4x1_0.mux_2x1_2.OUT 0.00155f
+C109 CLK_div_4_mag_0.VDD a_496_n6166# 0.00492f
+C110 mux_4x1_0.I0 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.002f
+C111 CLK_div_2_mag_0.JK_FF_mag_0.QB a_2401_n2559# 0.0811f
+C112 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.Q1 7.24e-19
+C113 a_2502_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.00372f
+C114 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_3_mag_0.Q0 0.00335f
+C115 a_7979_n1480# mux_4x1_0.I2 2.67e-19
+C116 a_1813_n4897# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.0036f
+C117 RST a_3548_n3844# 6.43e-19
+C118 RST a_1784_n6122# 6.04e-19
+C119 mux_4x1_0.I1 OPA0 0.153f
+C120 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.I2 0.27f
+C121 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.QB 0.00135f
+C122 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 0.0783f
+C123 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.0622f
+C124 a_525_n4941# RST 0.00291f
+C125 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.0576f
+C126 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.Q1 1.12e-19
+C127 CLK_div_2_mag_0.JK_FF_mag_0.QB a_1113_n2603# 0.00695f
+C128 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1784_n6122# 4.52e-20
+C129 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.QB 0.175f
+C130 a_1095_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 1.43e-19
+C131 CLK_div_4_mag_0.VDD a_4462_n7262# 2.21e-19
+C132 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_4266_n4941# 2.88e-20
+C133 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.0147f
+C134 OPA1 mux_4x1_0.mux_2x1_2.nand2_2.OUT 7.95e-19
+C135 mux_4x1_0.I0 mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.00407f
+C136 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_656_n6166# 2.79e-20
+C137 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 mux_4x1_0.I1 1.22e-19
+C138 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 6.38e-20
+C139 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 5e-21
+C140 CLK_div_3_mag_0.or_2_mag_0.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 4.52e-20
+C141 CLK_div_2_mag_0.JK_FF_mag_0.QB a_1837_n2559# 0.00964f
+C142 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00146f
+C143 mux_4x1_0.mux_2x1_2.nand2_1.IN2 mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.053f
+C144 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT a_7416_n2080# 0.00372f
+C145 CLK_div_3_mag_0.Q1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 5.15e-20
+C146 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00255f
+C147 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.D1 0.0621f
+C148 CLK_div_3_mag_0.JK_FF_mag_1.K a_4266_n4941# 0.00696f
+C149 a_1938_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.069f
+C150 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.QB 0.0203f
+C151 mux_4x1_0.I0 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 0.0276f
+C152 a_6692_n28# VDD 3.14e-19
+C153 RST a_3388_n3844# 7.78e-19
+C154 a_5240_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.00372f
+C155 RST a_1220_n6122# 4.97e-19
+C156 mux_4x1_0.mux_2x1_0.nand2_1.IN2 a_8542_n1480# 0.00372f
+C157 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.103f
+C158 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.Q0 1.16e-19
+C159 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.00371f
+C160 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 1.67e-19
+C161 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.K 1.06e-19
+C162 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1220_n6122# 0.0202f
+C163 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.16f
+C164 a_531_n3844# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.00119f
+C165 CLK_div_4_mag_0.VDD OPA1 0.128f
+C166 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN OPA0 0.00287f
+C167 a_525_n4941# a_365_n4941# 0.0504f
+C168 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.Q0 0.209f
+C169 mux_4x1_0.mux_2x1_0.nand2_1.IN2 VDD 0.461f
+C170 RST CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.254f
+C171 CLK_div_4_mag_0.VDD dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 1.82e-20
+C172 a_2502_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.0811f
+C173 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK 1.48e-20
+C174 a_3904_n6165# CLK_div_4_mag_0.Vdiv4 2.79e-20
+C175 CLK_div_4_mag_0.VDD mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.00696f
+C176 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.Q0 0.00453f
+C177 a_5032_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 4.52e-20
+C178 RST CLK_div_4_mag_0.Vdiv4 0.0428f
+C179 a_4106_n4941# CLK_div_3_mag_0.Q0 0.0102f
+C180 a_650_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.0731f
+C181 a_8542_n1480# CLK_div_4_mag_0.Vdiv4 0.00281f
+C182 RST a_4266_n4941# 0.00103f
+C183 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.Vdiv4 0.00335f
+C184 a_3904_n6165# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 0.00392f
+C185 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN a_5726_n28# 3.72e-22
+C186 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK_div_3_mag_0.or_2_mag_0.IN2 0.124f
+C187 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.QB 0.0592f
+C188 mux_4x1_0.I0 a_4797_n2465# 0.00723f
+C189 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB RST 0.0997f
+C190 VDD dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.403f
+C191 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 0.0386f
+C192 VDD CLK_div_4_mag_0.Vdiv4 0.395f
+C193 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_4266_n4941# 8.64e-19
+C194 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00165f
+C195 CLK_div_4_mag_0.VDD a_3738_n7262# 0.00108f
+C196 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.Q1 7.75e-20
+C197 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.0192f
+C198 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 3.67e-20
+C199 a_1938_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00964f
+C200 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.122f
+C201 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.0202f
+C202 a_3542_n4941# CLK_div_3_mag_0.Q0 0.00789f
+C203 a_490_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.0202f
+C204 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 4.41e-20
+C205 mux_4x1_0.mux_2x1_0.nand2_1.IN2 mux_4x1_0.mux_2x1_1.I1 0.109f
+C206 a_9668_n2080# CLK_div_4_mag_0.Vdiv4 8.64e-19
+C207 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00118f
+C208 a_525_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 1.46e-19
+C209 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN a_3794_n29# 0.0691f
+C210 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 7.49e-19
+C211 CLK_div_3_mag_0.or_2_mag_0.IN2 a_4797_n2465# 8.64e-19
+C212 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_3898_n7262# 0.00202f
+C213 CLK_div_4_mag_0.VDD a_4797_n2465# 3.31e-19
+C214 a_371_n3844# a_531_n3844# 0.0504f
+C215 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.995f
+C216 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.QB 3.28e-19
+C217 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 1.96e-21
+C218 CLK CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.235f
+C219 a_1374_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00696f
+C220 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_4797_n2465# 1.4e-19
+C221 mux_4x1_0.mux_2x1_1.I1 CLK_div_4_mag_0.Vdiv4 0.0307f
+C222 a_3382_n4941# CLK_div_3_mag_0.Q0 0.00335f
+C223 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 6.55e-20
+C224 a_3904_n6165# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 9.82e-21
+C225 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.233f
+C226 a_5186_n7218# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.00378f
+C227 mux_4x1_0.mux_2x1_0.nand2_2.OUT a_9105_n1480# 9.43e-19
+C228 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_3738_n7262# 0.00165f
+C229 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.216f
+C230 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.Vdiv4 0.107f
+C231 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 6.44e-21
+C232 CLK_div_3_mag_0.JK_FF_mag_1.K a_5394_n4897# 0.0811f
+C233 a_4106_n4941# a_4266_n4941# 0.0504f
+C234 dec_2x4_ibr_mag_0.D2 mux_4x1_0.I0 0.3f
+C235 RST CLK_div_3_mag_0.JK_FF_mag_1.QB 0.654f
+C236 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.25f
+C237 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 4.23e-20
+C238 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00125f
+C239 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_1784_n6122# 0.0059f
+C240 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.00118f
+C241 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 5.12e-20
+C242 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 0.0592f
+C243 a_1214_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00695f
+C244 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00133f
+C245 CLK CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 2.62e-19
+C246 OPA0 VDD 4.24f
+C247 a_1683_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.0059f
+C248 a_650_n7263# RST 0.00188f
+C249 a_650_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 1.5e-20
+C250 a_3904_n6165# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.0732f
+C251 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.or_2_mag_0.IN2 0.49f
+C252 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 VDD 1.74f
+C253 CLK_div_3_mag_0.JK_FF_mag_1.K a_4830_n4897# 0.00964f
+C254 dec_2x4_ibr_mag_0.D0 a_4760_n28# 0.00173f
+C255 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00183f
+C256 mux_4x1_0.I1 OPA1 0.00164f
+C257 RST CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.00635f
+C258 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 OPA0 0.348f
+C259 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.VDD 0.952f
+C260 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.122f
+C261 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.0106f
+C262 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 mux_4x1_0.I0 0.00415f
+C263 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK 0.43f
+C264 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 8.16e-20
+C265 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_1220_n6122# 0.0697f
+C266 a_9668_n1480# mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.00372f
+C267 a_1683_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.011f
+C268 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.132f
+C269 mux_4x1_0.I1 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 4.5e-20
+C270 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 1.46e-19
+C271 mux_4x1_0.I1 mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.0979f
+C272 mux_4x1_0.I0 CLK_div_3_mag_0.Q1 0.0373f
+C273 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.08f
+C274 a_1119_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.0697f
+C275 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.352f
+C276 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.00134f
+C277 mux_4x1_0.I0 mux_4x1_0.mux_2x1_2.OUT 0.0445f
+C278 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 0.699f
+C279 a_490_n7263# RST 0.00188f
+C280 mux_4x1_0.I1 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 6.69e-19
+C281 a_1683_n1462# CLK 2.86e-20
+C282 a_490_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 1.17e-20
+C283 mux_4x1_0.mux_2x1_2.nand2_2.OUT mux_4x1_0.mux_2x1_2.OUT 0.629f
+C284 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.QB 3.02e-19
+C285 CLK_div_4_mag_0.Vdiv4 mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.00779f
+C286 dec_2x4_ibr_mag_0.D1 OPA0 0.538f
+C287 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.321f
+C288 a_1089_n4941# a_1249_n4941# 0.0504f
+C289 mux_4x1_0.mux_2x1_1.I1 OPA0 0.011f
+C290 OPA0 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 6.57e-21
+C291 a_1119_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.43e-19
+C292 a_9105_n1480# mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.069f
+C293 a_5240_n3800# mux_4x1_0.I0 2.59e-19
+C294 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.D1 0.0462f
+C295 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT 0.00305f
+C296 CLK CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 4.67e-20
+C297 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.or_2_mag_0.IN2 0.0138f
+C298 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_2247_n1462# 0.00118f
+C299 RST CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00412f
+C300 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.Q1 0.00463f
+C301 a_1659_n3800# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 6.87e-21
+C302 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 8.89e-20
+C303 a_656_n6166# RST 0.00177f
+C304 CLK_div_4_mag_0.VDD mux_4x1_0.mux_2x1_2.OUT 0.0063f
+C305 CLK_div_3_mag_0.Q1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 9.39e-20
+C306 CLK CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 0.298f
+C307 a_1119_n1462# CLK 6.43e-21
+C308 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.Q1 0.104f
+C309 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 0.0363f
+C310 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.122f
+C311 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.21f
+C312 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.00212f
+C313 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.103f
+C314 CLK_div_4_mag_0.Vdiv4 a_7416_n2080# 9.32e-20
+C315 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.16f
+C316 a_5596_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.00118f
+C317 RST a_4622_n7262# 0.00153f
+C318 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 3.23e-20
+C319 a_4622_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 8.64e-19
+C320 CLK CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 7.81e-19
+C321 a_555_n1506# CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00119f
+C322 mux_4x1_0.I1 a_1273_n2603# 0.0101f
+C323 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.121f
+C324 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 1.03e-19
+C325 a_496_n6166# RST 0.00236f
+C326 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_2247_n1462# 4.52e-20
+C327 mux_4x1_0.I1 a_2401_n2559# 0.0157f
+C328 a_5240_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00118f
+C329 a_555_n1506# CLK 0.00939f
+C330 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.23f
+C331 mux_4x1_0.mux_2x1_0.nand2_1.IN2 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.00212f
+C332 CLK CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.268f
+C333 a_3548_n3844# CLK_div_3_mag_0.Q0 2.79e-20
+C334 a_5032_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.011f
+C335 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.0386f
+C336 OPA0 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT 0.138f
+C337 RST a_4462_n7262# 0.0017f
+C338 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.0386f
+C339 CLK_div_3_mag_0.JK_FF_mag_1.QB a_2223_n3800# 0.0112f
+C340 mux_4x1_0.I1 a_1113_n2603# 0.0102f
+C341 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN mux_4x1_0.I0 0.00108f
+C342 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.747f
+C343 mux_4x1_0.I0 mux_4x1_0.I2 0.519f
+C344 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_3_mag_0.Q1 2.87e-20
+C345 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 4.82e-20
+C346 mux_4x1_0.mux_2x1_2.nand2_2.OUT mux_4x1_0.I2 0.00573f
+C347 CLK_div_4_mag_0.Vdiv4 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.00799f
+C348 RST CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.276f
+C349 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 2.49e-19
+C350 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.QB 0.28f
+C351 mux_4x1_0.I1 a_1837_n2559# 0.00859f
+C352 a_395_n1506# CLK 0.0101f
+C353 dec_2x4_ibr_mag_0.D2 mux_4x1_0.I1 0.3f
+C354 Vdiv VDD 0.24f
+C355 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.397f
+C356 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 1.43e-19
+C357 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 0.00384f
+C358 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 0.394f
+C359 RST a_3898_n7262# 0.00188f
+C360 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.768f
+C361 mux_4x1_0.I1 a_549_n2603# 0.00789f
+C362 a_2377_n4897# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 2.37e-20
+C363 CLK_div_3_mag_0.or_2_mag_0.IN2 mux_4x1_0.I2 0.00103f
+C364 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK 0.308f
+C365 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.652f
+C366 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.402f
+C367 CLK_div_4_mag_0.VDD mux_4x1_0.I2 0.0926f
+C368 CLK_div_3_mag_0.JK_FF_mag_1.QB a_2377_n4897# 0.0811f
+C369 OPA0 a_7416_n2080# 6.89e-19
+C370 a_1683_n1462# CLK_div_2_mag_0.JK_FF_mag_0.QB 2.96e-19
+C371 a_3388_n3844# a_3548_n3844# 0.0504f
+C372 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.36f
+C373 OPA1 VDD 1.99f
+C374 CLK CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.00415f
+C375 CLK_div_4_mag_0.Vdiv4 CLK_div_3_mag_0.Q0 1.41e-19
+C376 a_4266_n4941# CLK_div_3_mag_0.Q0 0.0101f
+C377 VDD dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.407f
+C378 VDD mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.457f
+C379 a_1813_n4897# CLK_div_3_mag_0.JK_FF_mag_1.QB 0.00964f
+C380 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_2348_n6122# 4.52e-20
+C381 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_3_mag_0.Q0 6.32e-19
+C382 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 mux_4x1_0.I1 0.107f
+C383 a_3824_n2701# CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 0.069f
+C384 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.199f
+C385 RST a_3738_n7262# 0.00188f
+C386 CLK_div_3_mag_0.JK_FF_mag_1.K a_4797_n2465# 0.00168f
+C387 a_4760_n28# OPA0 0.00347f
+C388 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.235f
+C389 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 OPA1 0.0465f
+C390 mux_4x1_0.I1 a_389_n2603# 0.00335f
+C391 CLK_div_3_mag_0.JK_FF_mag_1.QB a_1095_n3800# 3.33e-19
+C392 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00183f
+C393 a_5186_n7218# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.0036f
+C394 OPA1 a_9668_n2080# 2.62e-19
+C395 mux_4x1_0.I1 CLK_div_3_mag_0.Q1 0.00443f
+C396 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.101f
+C397 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 3.83e-20
+C398 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 6.02e-20
+C399 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.109f
+C400 a_1119_n1462# CLK_div_2_mag_0.JK_FF_mag_0.QB 3e-19
+C401 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.Q1 0.0636f
+C402 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 a_4760_n28# 0.00352f
+C403 CLK_div_2_mag_0.JK_FF_mag_0.QB a_2247_n1462# 0.0114f
+C404 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.00166f
+C405 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB a_3744_n6165# 1.23e-20
+C406 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_3_mag_0.Q1 0.00335f
+C407 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 4.76e-20
+C408 a_6692_n28# dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.0691f
+C409 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN 7.53e-19
+C410 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.00975f
+C411 a_395_n1506# a_555_n1506# 0.0504f
+C412 dec_2x4_ibr_mag_0.D1 OPA1 0.00201f
+C413 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.122f
+C414 a_1249_n4941# CLK_div_3_mag_0.JK_FF_mag_1.QB 0.00696f
+C415 OPA0 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.136f
+C416 mux_4x1_0.mux_2x1_1.I1 OPA1 0.0628f
+C417 a_4106_n4941# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0203f
+C418 mux_4x1_0.I0 mux_4x1_0.mux_2x1_0.nand2_2.OUT 2.18e-19
+C419 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.0258f
+C420 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.995f
+C421 CLK_div_4_mag_0.VDD a_5596_n6121# 3.6e-19
+C422 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 0.107f
+C423 CLK_div_3_mag_0.JK_FF_mag_1.QB a_531_n3844# 0.00392f
+C424 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.765f
+C425 mux_4x1_0.I0 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00177f
+C426 mux_4x1_0.mux_2x1_0.nand2_1.IN2 CLK_div_4_mag_0.Vdiv4 0.127f
+C427 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 6.29e-20
+C428 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.122f
+C429 a_555_n1506# CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00392f
+C430 RST a_1273_n2603# 0.0017f
+C431 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.00255f
+C432 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB a_2348_n6122# 0.0114f
+C433 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 6.76e-20
+C434 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.739f
+C435 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT a_3744_n6165# 0.0203f
+C436 dec_2x4_ibr_mag_0.D0 OPA0 1.41f
+C437 mux_4x1_0.I0 a_7416_n1480# 5.54e-19
+C438 a_1089_n4941# CLK_div_3_mag_0.JK_FF_mag_1.QB 0.00695f
+C439 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 3.34e-19
+C440 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.321f
+C441 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 mux_4x1_0.I0 0.00417f
+C442 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0889f
+C443 a_3542_n4941# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 1.5e-20
+C444 OPA0 CLK_div_3_mag_0.Q0 2.59e-20
+C445 CLK_div_4_mag_0.VDD a_5032_n6121# 3.18e-19
+C446 a_7416_n1480# mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.00949f
+C447 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.K 2.23f
+C448 VDD mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT 0.402f
+C449 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.Vdiv4 1.94f
+C450 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 0.0462f
+C451 RST a_1113_n2603# 0.00191f
+C452 a_5032_n6121# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.31e-21
+C453 CLK_div_3_mag_0.JK_FF_mag_1.K a_549_n2603# 0.00126f
+C454 mux_4x1_0.I0 CLK 0.0312f
+C455 CLK CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.267f
+C456 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB a_1784_n6122# 2.96e-19
+C457 Vdiv mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.307f
+C458 a_1683_n1462# mux_4x1_0.I0 2.92e-19
+C459 a_3548_n3844# CLK_div_3_mag_0.JK_FF_mag_1.QB 1.41e-20
+C460 mux_4x1_0.I0 a_6853_n1480# 4.06e-19
+C461 a_5394_n4897# CLK_div_3_mag_0.Q0 0.0157f
+C462 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 6.64e-19
+C463 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT a_9668_n2080# 0.00372f
+C464 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN a_4797_n2465# 0.132f
+C465 dec_2x4_ibr_mag_0.D2 RST 0.756f
+C466 a_3382_n4941# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 1.17e-20
+C467 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 3.08e-20
+C468 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.Q0 0.00194f
+C469 CLK_div_4_mag_0.VDD a_4468_n6121# 3.18e-19
+C470 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.Q1 9.98e-19
+C471 mux_4x1_0.I1 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN 4.51e-20
+C472 dec_2x4_ibr_mag_0.D2 a_3824_n2701# 5.92e-19
+C473 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00109f
+C474 mux_4x1_0.I1 mux_4x1_0.I2 3.33e-19
+C475 VDD a_8542_n2080# 0.00444f
+C476 mux_4x1_0.I0 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.00252f
+C477 a_6692_n28# OPA0 0.0035f
+C478 CLK_div_4_mag_0.VDD a_5750_n7218# 3.14e-19
+C479 OPA1 mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.00158f
+C480 RST a_549_n2603# 0.00287f
+C481 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 0.00113f
+C482 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.00212f
+C483 dec_2x4_ibr_mag_0.D2 VDD 0.179f
+C484 CLK_div_3_mag_0.JK_FF_mag_1.K a_389_n2603# 0.00126f
+C485 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.652f
+C486 CLK CLK_div_3_mag_0.or_2_mag_0.IN2 6.62e-20
+C487 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.Q1 0.363f
+C488 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB a_1220_n6122# 3e-19
+C489 dec_2x4_ibr_mag_0.D1 a_2401_n2559# 3.14e-19
+C490 a_1119_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00378f
+C491 CLK_div_4_mag_0.VDD CLK 1.11f
+C492 a_3388_n3844# CLK_div_3_mag_0.JK_FF_mag_1.QB 1.86e-20
+C493 mux_4x1_0.mux_2x1_0.nand2_1.IN2 OPA0 0.378f
+C494 CLK CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.422f
+C495 mux_4x1_0.I0 a_2247_n1462# 6.47e-19
+C496 a_4830_n4897# CLK_div_3_mag_0.Q0 0.00859f
+C497 CLK_div_4_mag_0.VDD a_6853_n1480# 0.00115f
+C498 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 9.62e-20
+C499 mux_4x1_0.I0 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.00343f
+C500 mux_4x1_0.I0 a_3794_n29# 6.58e-19
+C501 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 9.49e-19
+C502 CLK CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.471f
+C503 dec_2x4_ibr_mag_0.D1 a_1113_n2603# 2.21e-19
+C504 a_4112_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00378f
+C505 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.122f
+C506 a_5596_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 4.52e-20
+C507 CLK_div_4_mag_0.VDD a_5186_n7218# 3.14e-19
+C508 CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 1.03e-19
+C509 dec_2x4_ibr_mag_0.D2 a_365_n4941# 0.0132f
+C510 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT RST 0.0943f
+C511 RST a_389_n2603# 0.00313f
+C512 OPA0 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.108f
+C513 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.Q0 7.24e-19
+C514 a_5240_n3800# CLK_div_3_mag_0.JK_FF_mag_1.K 0.012f
+C515 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 2.16e-20
+C516 RST CLK_div_3_mag_0.Q1 0.109f
+C517 OPA0 CLK_div_4_mag_0.Vdiv4 0.164f
+C518 a_3824_n2701# CLK_div_3_mag_0.Q1 0.01f
+C519 dec_2x4_ibr_mag_0.D1 a_1837_n2559# 3.14e-19
+C520 CLK_div_3_mag_0.Q1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 6.18e-20
+C521 a_8542_n1480# mux_4x1_0.mux_2x1_2.OUT 2.44e-19
+C522 a_555_n1506# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0732f
+C523 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 8.63e-21
+C524 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D1 0.0781f
+C525 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.199f
+C526 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 6.43e-21
+C527 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.0256f
+C528 RST CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.34f
+C529 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 6.7e-19
+C530 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.or_2_mag_0.IN2 3.81e-19
+C531 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 4.67e-20
+C532 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 0.413f
+C533 a_3548_n3844# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0732f
+C534 VDD mux_4x1_0.mux_2x1_2.OUT 1.28f
+C535 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 8.1e-20
+C536 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.338f
+C537 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 3.08e-20
+C538 a_4676_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 4.52e-20
+C539 dec_2x4_ibr_mag_0.D2 a_4106_n4941# 2.21e-19
+C540 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK 0.149f
+C541 CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 7.24e-19
+C542 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN a_5726_n28# 9.69e-20
+C543 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.36f
+C544 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT a_365_n4941# 0.0202f
+C545 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 a_1837_n2559# 2.88e-20
+C546 a_395_n1506# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0203f
+C547 a_365_n4941# CLK_div_3_mag_0.Q1 0.00335f
+C548 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.758f
+C549 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.343f
+C550 a_9668_n2080# mux_4x1_0.mux_2x1_2.OUT 0.00375f
+C551 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 1f
+C552 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.402f
+C553 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.0889f
+C554 a_3388_n3844# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0203f
+C555 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.12f
+C556 OPA1 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 3.65e-19
+C557 dec_2x4_ibr_mag_0.D1 a_389_n2603# 0.00108f
+C558 a_365_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 1.17e-20
+C559 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00335f
+C560 mux_4x1_0.I0 CLK_div_2_mag_0.JK_FF_mag_0.QB 0.0121f
+C561 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.343f
+C562 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.Q1 1.58e-19
+C563 RST CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.0816f
+C564 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.00165f
+C565 a_4112_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0202f
+C566 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 a_5750_n7218# 0.00372f
+C567 dec_2x4_ibr_mag_0.D2 a_3542_n4941# 0.00305f
+C568 CLK_div_3_mag_0.JK_FF_mag_1.K mux_4x1_0.I2 4.49e-19
+C569 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.Q1 0.00139f
+C570 mux_4x1_0.mux_2x1_1.I1 mux_4x1_0.mux_2x1_2.OUT 0.00146f
+C571 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 2.1e-19
+C572 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 1.5e-19
+C573 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.Q0 0.0343f
+C574 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 2.18e-19
+C575 a_4106_n4941# CLK_div_3_mag_0.Q1 3.6e-22
+C576 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 mux_4x1_0.I1 0.0168f
+C577 dec_2x4_ibr_mag_0.D0 OPA1 6.05e-21
+C578 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 6.6e-20
+C579 dec_2x4_ibr_mag_0.D2 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT 0.00556f
+C580 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.00118f
+C581 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 2.62e-21
+C582 dec_2x4_ibr_mag_0.D2 a_2223_n3800# 3.56e-19
+C583 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.0177f
+C584 a_5240_n3800# CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 4.94e-20
+C585 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00167f
+C586 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 RST 0.0062f
+C587 dec_2x4_ibr_mag_0.D2 a_3382_n4941# 0.00743f
+C588 a_8542_n1480# mux_4x1_0.I2 3.7e-19
+C589 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 a_5186_n7218# 0.069f
+C590 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 OPA0 0.884f
+C591 mux_4x1_0.I1 CLK 0.158f
+C592 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 7.24e-19
+C593 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00975f
+C594 a_4622_n7262# CLK_div_4_mag_0.Vdiv4 0.0101f
+C595 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 1.23f
+C596 CLK CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.0215f
+C597 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK 5.57e-19
+C598 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.159f
+C599 dec_2x4_ibr_mag_0.D0 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 2.37e-20
+C600 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 2.97e-21
+C601 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00191f
+C602 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN VDD 0.397f
+C603 mux_4x1_0.I1 a_6853_n1480# 0.00347f
+C604 VDD mux_4x1_0.I2 0.508f
+C605 a_3542_n4941# CLK_div_3_mag_0.Q1 1.86e-20
+C606 dec_2x4_ibr_mag_0.D2 a_371_n3844# 5.99e-19
+C607 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB a_4622_n7262# 0.00696f
+C608 CLK CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.013f
+C609 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK_div_3_mag_0.Q0 8.04e-19
+C610 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 3.38e-20
+C611 dec_2x4_ibr_mag_0.D2 a_1659_n3800# 3.14e-19
+C612 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 1.01e-19
+C613 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.0635f
+C614 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 9.98e-20
+C615 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 6.99e-20
+C616 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN 0.195f
+C617 dec_2x4_ibr_mag_0.D2 a_2377_n4897# 0.00149f
+C618 a_6692_n28# OPA1 0.00556f
+C619 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00168f
+C620 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 9.48e-20
+C621 a_4462_n7262# CLK_div_4_mag_0.Vdiv4 0.0102f
+C622 CLK CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.235f
+C623 CLK_div_3_mag_0.Q1 a_2223_n3800# 0.069f
+C624 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT mux_4x1_0.mux_2x1_2.OUT 0.00411f
+C625 a_6692_n28# dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 9.69e-20
+C626 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.K 0.198f
+C627 CLK_div_3_mag_0.Q1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 3.27e-20
+C628 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN CLK 0.0996f
+C629 mux_4x1_0.I1 a_2247_n1462# 0.069f
+C630 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB a_4462_n7262# 0.00695f
+C631 mux_4x1_0.mux_2x1_1.nand2_2.OUT mux_4x1_0.mux_2x1_2.OUT 0.25f
+C632 mux_4x1_0.mux_2x1_0.nand2_1.IN2 OPA1 9.84e-19
+C633 a_3382_n4941# CLK_div_3_mag_0.Q1 2.55e-20
+C634 dec_2x4_ibr_mag_0.D2 a_1813_n4897# 0.00149f
+C635 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.122f
+C636 Vdiv CLK_div_4_mag_0.Vdiv4 0.00184f
+C637 a_4797_n2465# CLK_div_3_mag_0.Q0 0.0134f
+C638 a_490_n7263# a_650_n7263# 0.0504f
+C639 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN 8.85e-20
+C640 RST CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.253f
+C641 dec_2x4_ibr_mag_0.D1 mux_4x1_0.I2 1.74e-19
+C642 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.768f
+C643 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_4266_n4941# 0.0733f
+C644 dec_2x4_ibr_mag_0.D2 a_1095_n3800# 3.14e-19
+C645 mux_4x1_0.mux_2x1_1.I1 mux_4x1_0.I2 4.11e-19
+C646 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00113f
+C647 a_656_n6166# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00392f
+C648 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 2.81e-20
+C649 RST CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.0846f
+C650 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.417f
+C651 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN mux_4x1_0.I2 0.137f
+C652 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 2.91e-19
+C653 a_3898_n7262# CLK_div_4_mag_0.Vdiv4 0.00789f
+C654 OPA1 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.415f
+C655 RST CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.00239f
+C656 a_555_n1506# mux_4x1_0.I1 2.79e-20
+C657 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 1.06e-19
+C658 OPA1 CLK_div_4_mag_0.Vdiv4 0.113f
+C659 mux_4x1_0.I0 mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.249f
+C660 a_8542_n2080# mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.00372f
+C661 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 7.49e-19
+C662 dec_2x4_ibr_mag_0.D2 a_4676_n3800# 3.14e-19
+C663 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN mux_4x1_0.mux_2x1_2.nand2_1.IN2 2.9e-20
+C664 a_2377_n4897# CLK_div_3_mag_0.Q1 0.0157f
+C665 dec_2x4_ibr_mag_0.D2 a_1249_n4941# 9.82e-19
+C666 mux_4x1_0.mux_2x1_2.nand2_1.IN2 CLK_div_4_mag_0.Vdiv4 0.002f
+C667 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT a_1659_n3800# 4.52e-20
+C668 mux_4x1_0.mux_2x1_2.OUT a_7416_n2080# 1.5e-19
+C669 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN a_2247_n1462# 3.4e-20
+C670 mux_4x1_0.mux_2x1_0.nand2_2.OUT a_8542_n1480# 0.00949f
+C671 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 2.59e-20
+C672 dec_2x4_ibr_mag_0.D2 a_531_n3844# 2.65e-19
+C673 a_5032_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 0.0059f
+C674 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN a_3794_n29# 1.29e-20
+C675 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK 0.235f
+C676 a_1813_n4897# CLK_div_3_mag_0.Q1 0.00859f
+C677 VDD a_7979_n1480# 3.14e-19
+C678 RST CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.153f
+C679 mux_4x1_0.I0 CLK_div_3_mag_0.or_2_mag_0.IN2 0.0257f
+C680 a_3738_n7262# CLK_div_4_mag_0.Vdiv4 0.00335f
+C681 CLK_div_4_mag_0.VDD mux_4x1_0.I0 0.0834f
+C682 mux_4x1_0.mux_2x1_0.nand2_2.OUT VDD 0.662f
+C683 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00183f
+C684 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.321f
+C685 VDD a_9668_n1480# 0.00444f
+C686 a_1813_n4897# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.00378f
+C687 dec_2x4_ibr_mag_0.D2 a_4112_n3800# 3.14e-19
+C688 CLK_div_4_mag_0.VDD mux_4x1_0.mux_2x1_2.nand2_2.OUT 4.1e-19
+C689 dec_2x4_ibr_mag_0.D2 a_2348_n6122# 2.93e-19
+C690 CLK CLK_div_3_mag_0.JK_FF_mag_1.K 2.1f
+C691 dec_2x4_ibr_mag_0.D2 a_1089_n4941# 0.0012f
+C692 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.D0 2.64e-19
+C693 mux_4x1_0.I0 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00486f
+C694 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.747f
+C695 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT a_1095_n3800# 0.0202f
+C696 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 RST 0.00463f
+C697 a_4468_n6121# RST 3.11e-19
+C698 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.Q0 1.26f
+C699 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 0.0697f
+C700 a_1249_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT 2.88e-20
+C701 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.QB 1.95f
+C702 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 8.34e-20
+C703 a_1249_n4941# CLK_div_3_mag_0.Q1 0.0101f
+C704 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT mux_4x1_0.I2 0.00416f
+C705 VDD a_7416_n1480# 0.00444f
+C706 a_5596_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 0.00372f
+C707 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.00975f
+C708 mux_4x1_0.mux_2x1_2.OUT mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.019f
+C709 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 6.92e-20
+C710 CLK_div_3_mag_0.Q1 a_531_n3844# 2.79e-20
+C711 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 4.44e-20
+C712 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1273_n2603# 0.0733f
+C713 RST CLK 0.377f
+C714 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.109f
+C715 VDD a_9105_n1480# 3.14e-19
+C716 a_1249_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.0733f
+C717 CLK a_3824_n2701# 0.0103f
+C718 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.22f
+C719 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 0.0948f
+C720 CLK CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 6.64e-19
+C721 dec_2x4_ibr_mag_0.D2 a_525_n4941# 0.00888f
+C722 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 5.75e-20
+C723 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.or_2_mag_0.IN2 5.32e-19
+C724 dec_2x4_ibr_mag_0.D0 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 4.94e-19
+C725 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_1.I1 0.328f
+C726 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.0023f
+C727 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.656f
+C728 OPA1 OPA0 0.541f
+C729 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 3.43e-20
+C730 a_1089_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT 9.1e-19
+C731 CLK CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00254f
+C732 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.0725f
+C733 OPA0 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.106f
+C734 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT CLK_div_4_mag_0.Vdiv4 0.0127f
+C735 a_1089_n4941# CLK_div_3_mag_0.Q1 0.0102f
+C736 dec_2x4_ibr_mag_0.D0 CLK_div_3_mag_0.Q1 5.34e-21
+C737 dec_2x4_ibr_mag_0.D2 a_6692_n28# 0.00171f
+C738 RST CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 2.17e-19
+C739 OPA0 mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.369f
+C740 VDD a_6853_n1480# 3.14e-19
+C741 a_5032_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 0.069f
+C742 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00267f
+C743 a_5726_n28# VDD 3.14e-19
+C744 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.Q0 0.0285f
+C745 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 8.1e-20
+C746 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 OPA1 0.828f
+C747 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1113_n2603# 0.0203f
+C748 dec_2x4_ibr_mag_0.D2 a_3388_n3844# 2.21e-19
+C749 RST CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 0.0145f
+C750 a_1089_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.0203f
+C751 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.21f
+C752 a_1119_n1462# RST 3.11e-19
+C753 OPA0 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 2.59e-20
+C754 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.0122f
+C755 a_365_n4941# CLK 0.00117f
+C756 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 mux_4x1_0.mux_2x1_2.nand2_1.IN2 1.77e-19
+C757 a_555_n1506# CLK_div_3_mag_0.JK_FF_mag_1.K 2.33e-20
+C758 VDD mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.46f
+C759 a_496_n6166# a_656_n6166# 0.0504f
+C760 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 a_5726_n28# 0.00347f
+C761 mux_4x1_0.mux_2x1_1.I1 a_9105_n1480# 0.00372f
+C762 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_1837_n2559# 0.00378f
+C763 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 8.21e-20
+C764 a_525_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT 0.0731f
+C765 a_8542_n2080# CLK_div_4_mag_0.Vdiv4 0.00165f
+C766 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00171f
+C767 a_525_n4941# CLK_div_3_mag_0.Q1 0.00789f
+C768 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_4830_n4897# 0.00378f
+C769 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN a_4760_n28# 1e-19
+C770 a_5240_n3800# CLK_div_3_mag_0.Q0 0.069f
+C771 dec_2x4_ibr_mag_0.D1 CLK 1.12f
+C772 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 2.25f
+C773 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.0257f
+C774 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.Vdiv4 1.05e-19
+C775 dec_2x4_ibr_mag_0.D1 a_1683_n1462# 3.18e-19
+C776 VDD a_3794_n29# 3.14e-19
+C777 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.109f
+C778 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.0177f
+C779 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_549_n2603# 1.5e-20
+C780 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT a_1784_n6122# 7.92e-21
+C781 CLK CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 7.03e-21
+C782 a_525_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 1.5e-20
+C783 a_555_n1506# RST 7.69e-19
+C784 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0153f
+C785 dec_2x4_ibr_mag_0.D1 a_5726_n28# 0.00171f
+C786 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 3.06e-19
+C787 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 7.86e-20
+C788 a_395_n1506# CLK_div_3_mag_0.JK_FF_mag_1.K 3.3e-20
+C789 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0622f
+C790 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0622f
+C791 a_4462_n7262# a_4622_n7262# 0.0504f
+C792 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.391f
+C793 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 a_3794_n29# 0.00719f
+C794 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 2.3e-20
+C795 a_3388_n3844# CLK_div_3_mag_0.Q1 0.00149f
+C796 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.00115f
+C797 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT mux_4x1_0.I2 0.0617f
+C798 mux_4x1_0.mux_2x1_0.nand2_1.IN2 mux_4x1_0.mux_2x1_2.OUT 0.0154f
+C799 mux_4x1_0.mux_2x1_1.I1 mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.11f
+C800 mux_4x1_0.I1 mux_4x1_0.I0 0.089f
+C801 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00975f
+C802 mux_4x1_0.I1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 7.24e-19
+C803 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.K 7.23e-19
+C804 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 6.73e-20
+C805 CLK CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 1.31f
+C806 dec_2x4_ibr_mag_0.D1 a_1119_n1462# 3.18e-19
+C807 a_9668_n1480# mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.00949f
+C808 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT a_389_n2603# 1.17e-20
+C809 dec_2x4_ibr_mag_0.D1 a_2247_n1462# 3.6e-19
+C810 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 9.98e-20
+C811 a_395_n1506# RST 9.23e-19
+C812 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 0.391f
+C813 CLK_div_3_mag_0.JK_FF_mag_1.QB a_2401_n2559# 2.88e-20
+C814 CLK a_3542_n4941# 0.00164f
+C815 CLK_div_4_mag_0.Vdiv4 mux_4x1_0.mux_2x1_2.OUT 0.159f
+C816 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 a_2348_n6122# 0.00372f
+C817 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 2.34e-19
+C818 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 5.48e-20
+C819 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN 0.128f
+C820 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 3.21e-20
+C821 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 1.53e-19
+C822 CLK_div_2_mag_0.JK_FF_mag_0.QB RST 0.1f
+C823 a_3904_n6165# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.00119f
+C824 mux_4x1_0.I1 CLK_div_3_mag_0.or_2_mag_0.IN2 8.57e-20
+C825 mux_4x1_0.I2 CLK_div_3_mag_0.Q0 0.0201f
+C826 CLK_div_4_mag_0.VDD mux_4x1_0.I1 0.0717f
+C827 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.0854f
+C828 RST CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.00751f
+C829 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 8.06e-20
+C830 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.233f
+C831 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 0.00212f
+C832 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN mux_4x1_0.I0 0.116f
+C833 OPA0 a_8542_n2080# 2.62e-19
+C834 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00953f
+C835 CLK a_2223_n3800# 9.45e-19
+C836 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 6.72e-20
+C837 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.00236f
+C838 dec_2x4_ibr_mag_0.D2 OPA0 0.188f
+C839 CLK CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 9.71e-20
+C840 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.QB 0.875f
+C841 CLK a_3382_n4941# 0.00117f
+C842 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 a_1784_n6122# 0.069f
+C843 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 2.18e-19
+C844 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 2.84e-20
+C845 dec_2x4_ibr_mag_0.D1 a_395_n1506# 0.00492f
+C846 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_2223_n3800# 6.87e-21
+C847 CLK a_371_n3844# 0.0101f
+C848 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 0.00879f
+C849 Vdiv OPA1 0.0127f
+C850 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.747f
+C851 CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.338f
+C852 mux_4x1_0.mux_2x1_1.nand2_1.IN2 mux_4x1_0.mux_2x1_1.nand2_2.OUT 0.053f
+C853 dec_2x4_ibr_mag_0.D2 a_5394_n4897# 3.14e-19
+C854 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00118f
+C855 CLK a_1659_n3800# 6.06e-21
+C856 mux_4x1_0.I1 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN 4.5e-20
+C857 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 4.43e-20
+C858 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.QB 0.908f
+C859 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.103f
+C860 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.12f
+C861 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 5.38e-19
+C862 mux_4x1_0.mux_2x1_0.nand2_1.IN2 mux_4x1_0.I2 0.00102f
+C863 CLK_div_4_mag_0.VDD a_2502_n7219# 3.14e-19
+C864 a_5596_n6121# CLK_div_3_mag_0.Q0 4e-20
+C865 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_3_mag_0.Q0 7.27e-19
+C866 CLK_div_3_mag_0.Q1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.00142f
+C867 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_1.QB 0.103f
+C868 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.Q1 1.94f
+C869 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 6.11e-19
+C870 OPA1 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.359f
+C871 OPA0 CLK_div_3_mag_0.Q1 2.59e-20
+C872 OPA1 mux_4x1_0.mux_2x1_2.nand2_1.IN2 6.31e-19
+C873 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 3.26e-20
+C874 OPA0 mux_4x1_0.mux_2x1_2.OUT 0.187f
+C875 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT a_371_n3844# 0.0203f
+C876 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.Q0 0.0635f
+C877 mux_4x1_0.I0 CLK_div_3_mag_0.JK_FF_mag_1.K 0.0128f
+C878 dec_2x4_ibr_mag_0.D2 a_4830_n4897# 3.14e-19
+C879 CLK a_1095_n3800# 6.43e-21
+C880 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.215f
+C881 CLK_div_4_mag_0.Vdiv4 mux_4x1_0.I2 0.117f
+C882 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.36f
+C883 a_3738_n7262# a_3898_n7262# 0.0504f
+C884 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.122f
+C885 CLK_div_4_mag_0.VDD a_1938_n7219# 3.14e-19
+C886 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 4.12e-20
+C887 dec_2x4_ibr_mag_0.D0 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 4.7e-19
+C888 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00244f
+C889 a_1938_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.0036f
+C890 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.647f
+C891 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 8.16e-20
+C892 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.338f
+C893 RST CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.00531f
+C894 mux_4x1_0.I0 a_3824_n2701# 0.00136f
+C895 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.or_2_mag_0.IN2 0.00761f
+C896 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 9.52e-19
+C897 CLK a_531_n3844# 0.0094f
+C898 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.K 0.00105f
+C899 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT a_1095_n3800# 0.00378f
+C900 dec_2x4_ibr_mag_0.D0 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.0022f
+C901 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 a_3542_n4941# 7.99e-19
+C902 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_2502_n7219# 0.0157f
+C903 mux_4x1_0.I0 VDD 0.391f
+C904 mux_4x1_0.I0 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00348f
+C905 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.69f
+C906 VDD mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.659f
+C907 CLK a_4112_n3800# 6.43e-21
+C908 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 1.06e-19
+C909 dec_2x4_ibr_mag_0.D0 CLK 0.333f
+C910 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 mux_4x1_0.I0 0.0127f
+C911 CLK_div_4_mag_0.Vdiv4 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.0343f
+C912 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 8.59e-20
+C913 a_5596_n6121# CLK_div_4_mag_0.Vdiv4 0.069f
+C914 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.121f
+C915 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN a_4797_n2465# 3.25e-19
+C916 CLK_div_4_mag_0.VDD RST 0.983f
+C917 a_3824_n2701# CLK_div_3_mag_0.or_2_mag_0.IN2 7.48e-20
+C918 CLK CLK_div_3_mag_0.Q0 0.149f
+C919 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 0.656f
+C920 mux_4x1_0.mux_2x1_0.nand2_1.IN2 a_7979_n1480# 0.069f
+C921 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.101f
+C922 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 8.8e-20
+C923 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.995f
+C924 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.109f
+C925 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT a_531_n3844# 0.0732f
+C926 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.0825f
+C927 mux_4x1_0.mux_2x1_0.nand2_1.IN2 mux_4x1_0.mux_2x1_0.nand2_2.OUT 0.053f
+C928 a_5596_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 0.0114f
+C929 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.25f
+C930 OPA1 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT 0.137f
+C931 a_4676_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.069f
+C932 a_656_n6166# CLK_div_3_mag_0.Q1 1.78e-20
+C933 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 9.85e-22
+C934 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 a_3382_n4941# 8e-19
+C935 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_1938_n7219# 0.00859f
+C936 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.16f
+C937 CLK_div_3_mag_0.or_2_mag_0.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 1.82e-19
+C938 RST CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00941f
+C939 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00131f
+C940 CLK_div_4_mag_0.VDD a_1214_n7263# 2.21e-19
+C941 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.0592f
+C942 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 7.04e-20
+C943 CLK_div_4_mag_0.VDD VDD 0.252f
+C944 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00241f
+C945 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.00183f
+C946 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN OPA0 0.0356f
+C947 dec_2x4_ibr_mag_0.D1 mux_4x1_0.I0 0.115f
+C948 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.QB 4.82e-20
+C949 dec_2x4_ibr_mag_0.D1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.758f
+C950 OPA0 mux_4x1_0.I2 0.00749f
+C951 CLK a_3548_n3844# 0.00939f
+C952 a_7979_n1480# CLK_div_4_mag_0.Vdiv4 0.00518f
+C953 a_525_n4941# CLK 0.00164f
+C954 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.233f
+C955 mux_4x1_0.I0 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 0.0223f
+C956 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.995f
+C957 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_3_mag_0.JK_FF_mag_1.K 1.75e-19
+C958 mux_4x1_0.mux_2x1_0.nand2_2.OUT CLK_div_4_mag_0.Vdiv4 0.0793f
+C959 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.768f
+C960 mux_4x1_0.I1 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 2.04e-19
+C961 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 CLK_div_4_mag_0.VDD 6.22e-21
+C962 a_9668_n1480# CLK_div_4_mag_0.Vdiv4 8.64e-19
+C963 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN 0.361f
+C964 OPA1 a_8542_n2080# 2.15e-19
+C965 a_5032_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 2.96e-19
+C966 CLK_div_4_mag_0.VDD a_365_n4941# 6.56e-20
+C967 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_1374_n7263# 0.0101f
+C968 dec_2x4_ibr_mag_0.D0 a_3794_n29# 8.3e-19
+C969 dec_2x4_ibr_mag_0.D2 OPA1 0.0475f
+C970 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.Q0 0.107f
+C971 a_3904_n6165# CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 0.00939f
+C972 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.or_2_mag_0.IN2 5.19e-20
+C973 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.16f
+C974 dec_2x4_ibr_mag_0.D2 dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.129f
+C975 CLK a_3388_n3844# 0.0101f
+C976 dec_2x4_ibr_mag_0.D1 CLK_div_4_mag_0.VDD 3.57e-19
+C977 CLK a_1220_n6122# 6.43e-21
+C978 dec_2x4_ibr_mag_0.D2 mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.00116f
+C979 a_7416_n1480# CLK_div_4_mag_0.Vdiv4 9.32e-20
+C980 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 RST 0.195f
+C981 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN VDD 0.395f
+C982 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 9.71e-20
+C983 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.or_2_mag_0.IN2 0.0445f
+C984 a_1089_n4941# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 6.56e-20
+C985 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0343f
+C986 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 0.00208f
+C987 a_9105_n1480# CLK_div_4_mag_0.Vdiv4 0.00389f
+C988 a_5750_n7218# CLK_div_4_mag_0.Vdiv4 0.0157f
+C989 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 0.465f
+C990 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 3e-19
+C991 CLK CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 7.84e-19
+C992 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_1214_n7263# 0.0102f
+C993 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 0.402f
+C994 Vdiv mux_4x1_0.mux_2x1_2.OUT 5.19e-19
+C995 a_1683_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 4.52e-20
+C996 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 4.33e-19
+C997 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN 0.0784f
+C998 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.99e-19
+C999 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB a_5750_n7218# 0.0811f
+C1000 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 2.21e-20
+C1001 a_4622_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 2.88e-20
+C1002 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 2.12e-21
+C1003 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.00233f
+C1004 mux_4x1_0.I0 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT 0.0706f
+C1005 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00135f
+C1006 a_1113_n2603# a_1273_n2603# 0.0504f
+C1007 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.122f
+C1008 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.K 0.172f
+C1009 OPA1 mux_4x1_0.mux_2x1_2.OUT 0.0201f
+C1010 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 8.58e-20
+C1011 a_5186_n7218# CLK_div_4_mag_0.Vdiv4 0.00859f
+C1012 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 RST 2.17e-19
+C1013 dec_2x4_ibr_mag_0.D1 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN 0.13f
+C1014 mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.12f
+C1015 dec_2x4_ibr_mag_0.D2 a_4797_n2465# 0.165f
+C1016 OPA0 a_7979_n1480# 0.0151f
+C1017 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.0622f
+C1018 CLK_div_4_mag_0.Vdiv4 mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.0126f
+C1019 mux_4x1_0.mux_2x1_2.nand2_1.IN2 mux_4x1_0.mux_2x1_2.OUT 0.109f
+C1020 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 8.58e-20
+C1021 a_1119_n1462# CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0202f
+C1022 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB a_5186_n7218# 0.00964f
+C1023 mux_4x1_0.mux_2x1_0.nand2_2.OUT OPA0 0.00117f
+C1024 dec_2x4_ibr_mag_0.D0 CLK_div_2_mag_0.JK_FF_mag_0.QB 6.84e-20
+C1025 a_4462_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 9.1e-19
+C1026 CLK_div_3_mag_0.Q1 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 0.305f
+C1027 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_5394_n4897# 0.00372f
+C1028 a_3542_n4941# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.46e-19
+C1029 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT a_1220_n6122# 0.00378f
+C1030 mux_4x1_0.I1 RST 0.0451f
+C1031 RST CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 6.71e-19
+C1032 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.Q0 0.103f
+C1033 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 RST 0.0564f
+C1034 CLK_div_4_mag_0.VDD mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT 0.00416f
+C1035 dec_2x4_ibr_mag_0.D2 a_2401_n2559# 9.84e-21
+C1036 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 1.48e-20
+C1037 OPA0 a_7416_n1480# 9.5e-19
+C1038 RST CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 0.202f
+C1039 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.656f
+C1040 mux_4x1_0.I1 VDD 0.175f
+C1041 mux_4x1_0.I0 a_7416_n2080# 0.00444f
+C1042 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00132f
+C1043 a_1374_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 2.88e-20
+C1044 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.233f
+C1045 mux_4x1_0.mux_2x1_2.nand2_2.OUT a_7416_n2080# 0.0964f
+C1046 a_3898_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.0731f
+C1047 CLK_div_3_mag_0.Q1 a_4797_n2465# 6.83e-19
+C1048 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 a_4830_n4897# 0.069f
+C1049 CLK CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.307f
+C1050 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 mux_4x1_0.I1 0.00191f
+C1051 CLK CLK_div_3_mag_0.JK_FF_mag_1.QB 0.362f
+C1052 OPA0 CLK 2.59e-20
+C1053 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.0846f
+C1054 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.121f
+C1055 OPA0 a_6853_n1480# 0.0144f
+C1056 a_5726_n28# OPA0 0.00307f
+C1057 a_4468_n6121# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.00378f
+C1058 a_4622_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.0733f
+C1059 a_1214_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 9.1e-19
+C1060 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 8.16e-20
+C1061 RST a_2502_n7219# 9.78e-19
+C1062 a_650_n7263# CLK 0.00164f
+C1063 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT a_1273_n2603# 2.67e-20
+C1064 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN VDD 0.00112f
+C1065 a_3738_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_2.OUT 0.0202f
+C1066 dec_2x4_ibr_mag_0.D1 mux_4x1_0.I1 1.71f
+C1067 mux_4x1_0.I0 a_4676_n3800# 2.59e-19
+C1068 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.00121f
+C1069 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 5.09e-19
+C1070 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT mux_4x1_0.mux_2x1_2.OUT 0.0646f
+C1071 OPA0 mux_4x1_0.mux_2x1_1.nand2_1.IN2 2.92e-19
+C1072 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_1.K 0.0881f
+C1073 OPA1 mux_4x1_0.I2 0.0047f
+C1074 mux_4x1_0.I0 mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.00459f
+C1075 mux_4x1_0.I1 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 6.93e-20
+C1076 dec_2x4_ibr_mag_0.and_2_ibr_0.nverterlayout_ibr_0.IN dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 4.89e-22
+C1077 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.25f
+C1078 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_0.OUT 0.343f
+C1079 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 5.09e-19
+C1080 a_1813_n4897# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 2.37e-20
+C1081 mux_4x1_0.mux_2x1_2.nand2_2.OUT mux_4x1_0.mux_2x1_0.nverterlayout_0.OUT 0.0112f
+C1082 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 5.24e-19
+C1083 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00335f
+C1084 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.Vdiv4 0.0168f
+C1085 a_4462_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 0.0203f
+C1086 OPA0 a_3794_n29# 8.25e-19
+C1087 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 6.01e-20
+C1088 RST a_1938_n7219# 9.57e-19
+C1089 a_490_n7263# CLK 0.00117f
+C1090 CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN mux_4x1_0.I2 3.03e-19
+C1091 mux_4x1_0.I0 a_4112_n3800# 1.22e-19
+C1092 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT 0.802f
+C1093 a_4676_n3800# CLK_div_3_mag_0.or_2_mag_0.IN2 4.9e-20
+C1094 a_1938_n7219# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00378f
+C1095 RST CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.0981f
+C1096 mux_4x1_0.I1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 8.26e-20
+C1097 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 0.28f
+C1098 a_8542_n2080# mux_4x1_0.mux_2x1_2.OUT 8.2e-19
+C1099 dec_2x4_ibr_mag_0.D0 mux_4x1_0.I0 0.357f
+C1100 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.Q1 2.49f
+C1101 CLK_div_4_mag_0.VDD a_3744_n6165# 0.00492f
+C1102 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.359f
+C1103 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 0.343f
+C1104 dec_2x4_ibr_mag_0.D1 Buffer_delayed_mag_0.Inverter_delayed_mag_0.IN 0.00258f
+C1105 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.313f
+C1106 a_389_n2603# a_549_n2603# 0.0504f
+C1107 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 a_3794_n29# 0.00348f
+C1108 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 1.02e-19
+C1109 mux_4x1_0.I0 CLK_div_3_mag_0.Q0 0.018f
+C1110 CLK_div_3_mag_0.JK_FF_mag_1.QB CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 4.98e-20
+C1111 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.231f
+C1112 a_4676_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.011f
+C1113 RST CLK_div_3_mag_0.JK_FF_mag_1.K 0.402f
+C1114 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00169f
+C1115 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 2.76e-20
+C1116 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 1f
+C1117 CLK CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.272f
+C1118 a_3898_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 1.5e-20
+C1119 a_656_n6166# CLK 0.00939f
+C1120 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.122f
+C1121 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN a_4760_n28# 0.0691f
+C1122 RST a_1374_n7263# 0.00187f
+C1123 dec_2x4_ibr_mag_0.D2 a_5240_n3800# 3.56e-19
+C1124 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.0435f
+C1125 mux_4x1_0.I0 a_3548_n3844# 3.23e-19
+C1126 a_1374_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0733f
+C1127 CLK_div_4_mag_0.VDD a_2348_n6122# 3.6e-19
+C1128 a_3904_n6165# RST 8.48e-19
+C1129 CLK_div_3_mag_0.or_2_mag_0.IN2 CLK_div_3_mag_0.Q0 0.0655f
+C1130 a_1214_n7263# a_1374_n7263# 0.0504f
+C1131 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_2348_n6122# 0.00118f
+C1132 Vdiv a_9668_n1480# 0.069f
+C1133 CLK_div_4_mag_0.VDD CLK_div_3_mag_0.Q0 0.186f
+C1134 RST CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 0.152f
+C1135 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.Q1 0.338f
+C1136 a_2223_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.00372f
+C1137 a_4112_n3800# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 1.43e-19
+C1138 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 a_2223_n3800# 4.52e-20
+C1139 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.281f
+C1140 a_3738_n7262# CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 1.17e-20
+C1141 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_3_mag_0.Q0 0.0175f
+C1142 a_496_n6166# CLK 0.0101f
+C1143 mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT mux_4x1_0.I2 0.00429f
+C1144 RST a_1214_n7263# 0.0017f
+C1145 VDD a_8542_n1480# 0.00444f
+C1146 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_2.OUT CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 0.121f
+C1147 RST CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.143f
+C1148 mux_4x1_0.mux_2x1_0.nand2_2.OUT OPA1 0.11f
+C1149 mux_4x1_0.I0 a_3388_n3844# 3.98e-19
+C1150 CLK_div_2_mag_0.JK_FF_mag_0.QB CLK_div_3_mag_0.JK_FF_mag_1.QB 1.74e-19
+C1151 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_3744_n6165# 0.0101f
+C1152 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 8.4e-21
+C1153 a_1214_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0203f
+C1154 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT CLK_div_3_mag_0.Q1 0.0343f
+C1155 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.QB 2.24e-19
+C1156 CLK_div_4_mag_0.VDD a_1784_n6122# 3.18e-19
+C1157 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.JK_FF_mag_1.K 0.0165f
+C1158 mux_4x1_0.mux_2x1_0.nand2_1.IN2 mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.0101f
+C1159 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1784_n6122# 0.011f
+C1160 a_3548_n3844# CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.00119f
+C1161 a_1659_n3800# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_1.IN2 0.069f
+C1162 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_4106_n4941# 9.1e-19
+C1163 mux_4x1_0.I0 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00171f
+C1164 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN CLK_div_3_mag_0.JK_FF_mag_1.K 0.00205f
+C1165 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.0622f
+C1166 dec_2x4_ibr_mag_0.D0 dec_2x4_ibr_mag_0.and_2_ibr_1.nverterlayout_ibr_0.IN 0.00978f
+C1167 RST a_365_n4941# 0.00319f
+C1168 CLK_div_4_mag_0.VDD a_6692_n28# 9.03e-19
+C1169 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.00165f
+C1170 mux_4x1_0.I0 CLK_div_4_mag_0.Vdiv4 4.38e-19
+C1171 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 a_1659_n3800# 0.0059f
+C1172 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 a_2377_n4897# 0.00372f
+C1173 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 VDD 0.546f
+C1174 a_8542_n2080# mux_4x1_0.I2 0.00387f
+C1175 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.K 1.09e-19
+C1176 a_656_n6166# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0732f
+C1177 CLK_div_3_mag_0.JK_FF_mag_1.K a_4106_n4941# 0.00695f
+C1178 VDD a_9668_n2080# 0.00444f
+C1179 CLK CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00302f
+C1180 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_2348_n6122# 0.069f
+C1181 mux_4x1_0.mux_2x1_2.nand2_2.OUT CLK_div_4_mag_0.Vdiv4 0.0217f
+C1182 dec_2x4_ibr_mag_0.D2 mux_4x1_0.I2 0.182f
+C1183 a_7416_n1480# mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.00372f
+C1184 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 0.00398f
+C1185 CLK_div_4_mag_0.VDD a_1220_n6122# 3.18e-19
+C1186 OPA1 a_9105_n1480# 0.0144f
+C1187 dec_2x4_ibr_mag_0.D1 RST 0.345f
+C1188 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_3.IN1 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_0.OUT 0.0889f
+C1189 mux_4x1_0.mux_2x1_1.I1 a_8542_n1480# 0.069f
+C1190 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_3_mag_0.Q0 7.47e-19
+C1191 a_1813_n4897# CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 0.069f
+C1192 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 a_1220_n6122# 1.43e-19
+C1193 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_1273_n2603# 2.88e-20
+C1194 CLK_div_3_mag_0.JK_FF_mag_1.K CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.0715f
+C1195 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_3542_n4941# 0.0731f
+C1196 dec_2x4_ibr_mag_0.D1 VDD 0.173f
+C1197 Vdiv mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.109f
+C1198 mux_4x1_0.mux_2x1_1.I1 VDD 0.422f
+C1199 RST a_4106_n4941# 0.00119f
+C1200 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.IN1 0.109f
+C1201 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 a_1095_n3800# 0.0697f
+C1202 CLK_div_4_mag_0.VDD dec_2x4_ibr_mag_0.and_2_ibr_3.nverterlayout_ibr_0.IN 0.144f
+C1203 a_5726_n28# OPA1 0.00348f
+C1204 VDD CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 4.45e-19
+C1205 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.Vdiv4 1.11f
+C1206 a_496_n6166# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_0.OUT 0.0203f
+C1207 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 a_1784_n6122# 3.95e-21
+C1208 a_5726_n28# dec_2x4_ibr_mag_0.and_2_ibr_2.nverterlayout_ibr_0.IN 0.0705f
+C1209 a_6853_n1480# mux_4x1_0.mux_2x1_2.nand2_1.IN2 0.069f
+C1210 dec_2x4_ibr_mag_0.and_2_ibr_0.IN2 dec_2x4_ibr_mag_0.D1 0.103f
+C1211 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.QB 0.908f
+C1212 CLK CLK_div_3_mag_0.and2_mag_0.GF_INV_MAG_0.IN 0.0983f
+C1213 RST CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_3.IN1 0.151f
+C1214 OPA1 mux_4x1_0.mux_2x1_1.nand2_1.IN2 0.362f
+C1215 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_1113_n2603# 9.1e-19
+C1216 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 a_1273_n2603# 8.64e-19
+C1217 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_3382_n4941# 0.0202f
+C1218 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_0.nand3_mag_1.OUT 0.00975f
+C1219 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.Q1 3.27e-20
+C1220 CLK_div_4_mag_0.VDD CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.391f
+C1221 CLK_div_3_mag_0.Q1 mux_4x1_0.I2 3.67e-19
+C1222 a_1249_n4941# CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.IN1 8.64e-19
+C1223 mux_4x1_0.mux_2x1_0.nand2_2.OUT mux_4x1_0.mux_2x1_1.nverterlayout_0.OUT 0.0112f
+C1224 mux_4x1_0.mux_2x1_2.OUT mux_4x1_0.I2 0.182f
+C1225 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_3.IN1 0.321f
+C1226 dec_2x4_ibr_mag_0.D2 CLK_div_4_mag_0.CLK_div_2_mag_1.JK_FF_mag_0.nand3_mag_1.OUT 6.56e-19
+C1227 RST a_3542_n4941# 0.00218f
+C1228 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand2_mag_1.IN2 CLK_div_3_mag_0.JK_FF_mag_1.nand3_mag_1.OUT 3.26e-20
+C1229 dec_2x4_ibr_mag_0.D2 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT 0.00201f
+C1230 dec_2x4_ibr_mag_0.D0 mux_4x1_0.I1 0.00297f
+C1231 dec_2x4_ibr_mag_0.D1 CLK_div_3_mag_0.or_2_mag_0.GF_INV_MAG_1.IN 6.44e-19
+C1232 CLK_div_3_mag_0.JK_FF_mag_1.nand2_mag_4.IN2 a_2348_n6122# 7.92e-21
+C1233 a_1374_n7263# CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 8.64e-19
+C1234 mux_4x1_0.I0 OPA0 0.13f
+C1235 dec_2x4_ibr_mag_0.D2 CLK_div_3_mag_0.JK_FF_mag_0.nand2_mag_4.IN2 0.391f
+C1236 CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_2.OUT a_549_n2603# 0.0731f
+C1237 mux_4x1_0.I1 CLK_div_3_mag_0.Q0 1.57e-19
+C1238 CLK_div_3_mag_0.JK_FF_mag_1.K a_371_n3844# 8.64e-19
+C1239 OPA0 mux_4x1_0.mux_2x1_2.nand2_2.OUT 0.0525f
+C1240 RST a_2223_n3800# 7.24e-19
+C1241 mux_4x1_0.mux_2x1_0.nand2_2.OUT a_8542_n2080# 0.0964f
+C1242 CLK_div_4_mag_0.CLK_div_2_mag_0.Vdiv2 CLK_div_4_mag_0.Vdiv4 0.157f
+C1243 RST CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.19f
+C1244 dec_2x4_ibr_mag_0.and_2_ibr_0.IN1 mux_4x1_0.I0 8.41e-19
+C1245 RST a_3382_n4941# 0.00218f
+C1246 VDD mux_4x1_0.mux_2x1_2.nverterlayout_0.OUT 0.401f
+C1247 CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.OUT CLK_div_4_mag_0.CLK_div_2_mag_0.JK_FF_mag_0.nand3_mag_1.IN1 0.768f
+.ends
+

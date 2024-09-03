@@ -1,0 +1,635 @@
+timestamp 1714557138
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use DFF_ DFF__0 1 0 364 0 1 -146
+use buffer_loading_mag buffer_loading_mag_1 1 0 4449 0 1 1071
+use buffer_mag buffer_mag_0 -1 0 6016 0 -1 3136
+use inv_my_mag inv_my_mag_1 1 0 -411 0 -1 2018
+use nand2 nand2_0 -1 0 6506 0 -1 2788
+use DFF_ DFF__1 1 0 363 0 -1 5112
+use buffer_loading_mag buffer_loading_mag_0 1 0 4310 0 1 3120
+use inv_my_mag inv_my_mag_0 1 0 -398 0 1 2946
+port "PD" 0 6563 1364 6563 1364 m1
+port "VDIV" 5 -535 1544 -535 1544 m1
+port "VSS" 3 2686 -25 2686 -25 m1
+port "PU" 1 6538 3418 6538 3418 m1
+port "VREF" 4 -498 3417 -498 3417 m1
+port "VDD" 2 2659 5365 2659 5365 m1
+node "m1_3208_499#" 0 65.7355 3208 499 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7097 396 0 0 0 0 0 0 0 0
+node "PD" 1 192.095 6563 1364 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29016 1220 0 0 0 0 0 0 0 0
+node "m1_n73_1474#" 0 52.1452 -73 1474 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16366 530 0 0 0 0 0 0 0 0
+node "VDIV" 0 65.3268 -535 1544 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 372 0 0 0 0 0 0 0 0
+node "m1_3662_1617#" 0 51.0703 3662 1617 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5376 320 0 0 0 0 0 0 0 0
+node "m1_3789_1058#" 2 1825.3 3789 1058 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 739423 6684 103146 2042 0 0 0 0 0 0
+node "m1_4087_1617#" 4 1057.96 4087 1617 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70203 2236 356941 7058 0 0 0 0 0 0
+node "m1_3265_2242#" 4 873.996 3265 2242 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 210602 5676 44588 1162 0 0 0 0 0 0
+node "m1_5921_2867#" 0 372.916 5921 2867 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 175808 1848 0 0 0 0 0 0 0 0
+node "m1_3982_2796#" 0 257.459 3982 2796 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96954 1250 0 0 0 0 0 0 0 0
+node "VSS" 15 8213.6 2686 -25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3082754 23208 1476505 27202 0 0 0 0 0 0
+node "PU" 1 224.101 6538 3418 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34268 1422 0 0 0 0 0 0 0 0
+node "m1_3648_3301#" 0 58.8562 3648 3301 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5952 344 0 0 0 0 0 0 0 0
+node "m1_4095_3301#" 3 982.397 4095 3301 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41922 1368 324185 6178 0 0 0 0 0 0
+node "m1_n60_3392#" 0 74.1052 -60 3392 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22600 652 0 0 0 0 0 0 0 0
+node "VREF" 0 68.0483 -498 3417 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7550 402 0 0 0 0 0 0 0 0
+node "m1_3789_3833#" 0 272.892 3789 3833 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95120 1338 0 0 0 0 0 0 0 0
+node "m1_3236_4420#" 0 61.0639 3236 4420 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5405 324 0 0 0 0 0 0 0 0
+node "VDD" 14 8384.62 2659 5365 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3212709 21664 1492031 27636 0 0 0 0 0 0
+node "w_2268_956#" 41057 0.492 2268 956 nw 164 168 0 0 36 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3763_1058#" 75976 0.906 3763 1058 nw 302 306 0 0 302 306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2357_1072#" 7827 1.89 2357 1072 nw 630 158 0 0 630 158 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2865_1176#" 49726 1.848 2865 1176 nw 616 356 0 0 616 356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n137_1312#" 1543 253.422 -137 1312 nw 84474 1190 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n80_3418#" 1331 222.312 -80 3418 nw 74104 1100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3761_3757#" 50650 1.359 3761 3757 nw 453 308 0 0 453 308 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2880_3872#" 1133 0.765 2880 3872 nw 255 64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2863_3783#" 17501 6.582 2863 3783 nw 2194 412 0 0 860 354 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2355_3722#" 33178 2.808 2355 3722 nw 936 362 0 0 936 362 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_5806_3910#" 1552 110.418 5806 3910 nw 36806 786 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_5503_3910#" 1552 110.418 5503 3910 nw 36806 786 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_5178_3910#" 1552 110.418 5178 3910 nw 36806 786 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_4706_3910#" 1552 110.418 4706 3910 nw 36806 786 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2268_3928#" 83372 0.249 2268 3928 nw 83 168 0 0 59 120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2010_3928#" 83372 0.249 2010 3928 nw 83 168 0 0 59 120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_3208_499#" "VSS" 25.0507
+cap "m1_3982_2796#" "m1_4087_1617#" 2.24063
+cap "PD" "m1_3789_1058#" 50.5
+cap "w_n80_3418#" "VREF" 0.0995915
+cap "w_4706_3910#" "VDD" 26.9927
+cap "m1_n60_3392#" "VREF" 6.752
+cap "m1_5921_2867#" "m1_4095_3301#" 15.3442
+cap "VDD" "m1_3236_4420#" 7.29274
+cap "m1_3789_1058#" "PU" 0.701231
+cap "w_5806_3910#" "VDD" 26.9791
+cap "VSS" "VREF" 16.5736
+cap "VSS" "w_2865_1176#" 0.0283783
+cap "w_2268_956#" "VSS" 0.0103995
+cap "m1_3789_1058#" "m1_3265_2242#" 12.4185
+cap "m1_4095_3301#" "VDD" 21.3249
+cap "m1_4095_3301#" "w_4706_3910#" 0.00259267
+cap "m1_4095_3301#" "w_5806_3910#" 0.00259267
+cap "VDD" "w_2880_3872#" 0.00640467
+cap "m1_3789_1058#" "VSS" 90.874
+cap "m1_4095_3301#" "m1_3648_3301#" 6.85666
+cap "m1_3662_1617#" "m1_4087_1617#" 6.41774
+cap "m1_3789_3833#" "w_2268_3928#" 0.00152789
+cap "VDD" "VREF" 1.28037
+cap "m1_3662_1617#" "w_3763_1058#" 0.0404742
+cap "m1_5921_2867#" "m1_3789_1058#" 19.7961
+cap "PD" "m1_4087_1617#" 3.77101
+cap "m1_3265_2242#" "m1_3789_3833#" 7.47319
+cap "w_3761_3757#" "VDD" 0.0113253
+cap "VDD" "w_5503_3910#" 27.0032
+cap "PU" "m1_4087_1617#" 0.467059
+cap "w_2863_3783#" "m1_3789_3833#" 0.0144136
+cap "w_3761_3757#" "m1_3648_3301#" 0.0607113
+cap "VDD" "w_2010_3928#" 0.00250052
+cap "m1_3265_2242#" "m1_4087_1617#" 1.37461
+cap "m1_3789_3833#" "w_2355_3722#" 0.0115612
+cap "m1_4095_3301#" "w_5503_3910#" 0.00259267
+cap "m1_4095_3301#" "m1_3789_1058#" 135.324
+cap "VSS" "m1_4087_1617#" 98.1466
+cap "w_3763_1058#" "VSS" 0.0152422
+cap "m1_3982_2796#" "m1_3265_2242#" 96.6193
+cap "m1_3789_3833#" "VDD" 66.1593
+cap "m1_3789_3833#" "w_4706_3910#" 0.00079221
+cap "m1_5921_2867#" "m1_4087_1617#" 26.5405
+cap "w_2357_1072#" "VSS" 0.033388
+cap "m1_3789_1058#" "w_2865_1176#" 0.0457712
+cap "VDD" "w_5178_3910#" 27.0014
+cap "m1_4095_3301#" "m1_3789_3833#" 17.2805
+cap "w_n137_1312#" "VDIV" 0.30632
+cap "m1_3789_3833#" "w_2880_3872#" 0.011778
+cap "m1_4095_3301#" "w_5178_3910#" 0.00259267
+cap "m1_4095_3301#" "m1_4087_1617#" 221.578
+cap "m1_3662_1617#" "m1_3265_2242#" 8.00237
+cap "m1_n73_1474#" "VDIV" 6.02857
+cap "VSS" "VDIV" 32.7223
+cap "w_3761_3757#" "m1_3789_3833#" 0.0942033
+cap "m1_3662_1617#" "VSS" 3.32406
+cap "m1_3982_2796#" "m1_4095_3301#" 158.529
+cap "PD" "VSS" 27.0184
+cap "w_n137_1312#" "m1_n73_1474#" 23.0632
+cap "w_n137_1312#" "VSS" 6.59086
+cap "VDIV" "VDD" 0.10937
+cap "m1_3789_1058#" "m1_4087_1617#" 1099.63
+cap "m1_5921_2867#" "PD" 0.193573
+cap "w_n80_3418#" "m1_n60_3392#" 27.1946
+cap "w_3763_1058#" "m1_3789_1058#" 0.165723
+cap "VSS" "w_n80_3418#" 1.68011
+cap "m1_5921_2867#" "PU" 105.763
+cap "VSS" "m1_n60_3392#" 4.23535
+cap "w_2357_1072#" "m1_3789_1058#" 0.0133023
+cap "m1_n73_1474#" "VSS" 7.61302
+cap "m1_3982_2796#" "m1_3789_1058#" 5.86439
+cap "w_n137_1312#" "VDD" 22.2917
+cap "PU" "VDD" 5.66903
+cap "VDD" "w_2268_3928#" 0.00250052
+cap "w_5806_3910#" "PU" 0.00775532
+cap "w_n80_3418#" "VDD" 19.1187
+cap "w_2863_3783#" "VDD" 0.0509192
+cap "m1_4095_3301#" "PU" 1.58843
+cap "VDD" "m1_n60_3392#" 171.431
+cap "m1_n73_1474#" "VDD" 98.8522
+cap "m1_3265_2242#" "m1_3648_3301#" 8.93859
+cap "VSS" "VDD" 1115.74
+cap "m1_3982_2796#" "m1_3789_3833#" 6.65386
+cap "m1_4095_3301#" "m1_3265_2242#" 158.694
+cap "VDD" "w_2355_3722#" 0.0233539
+cap "m1_3662_1617#" "m1_3789_1058#" 0.598519
+cap "m1_5921_2867#" "VDD" 0.319284
+cap "DFF__0/nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/nand2_2/VSS" 2.05263
+cap "DFF__0/nand2_2/IN1" "DFF__0/nand2_2/VSS" 12.7269
+cap "DFF__0/nand2_2/OUT" "DFF__0/nand2_2/VSS" 4.649
+cap "DFF__0/nand2_2/IN1" "DFF__0/D" 2.58627
+cap "DFF__0/CLK" "DFF__0/nand2_2/VSS" -1.47527
+cap "DFF__0/nand2_2/IN1" "inv_my_mag_1/IN" 0.0172283
+cap "DFF__0/nand2_2/VSS" "DFF__0/nand2_3/OUT" 0.0764136
+cap "DFF__0/CLK" "DFF__0/D" 6.4772
+cap "DFF__0/nand2_3/IN1" "DFF__0/nand2_2/VSS" 0.0371743
+cap "DFF__0/nand2_2/VSS" "DFF__0/nand2_3/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0331159
+cap "DFF__0/nand2_2/VSS" "DFF__0/D" 209.049
+cap "inv_my_mag_1/IN" "DFF__0/nand2_2/VSS" 1.38258
+cap "inv_my_mag_1/IN" "DFF__0/D" 1.84603
+cap "DFF__0/nand2_2/IN2" "DFF__0/nand2_2/VSS" 37.754
+cap "DFF__0/D" "DFF__0/nand2_2/IN1" 3.10637
+cap "DFF__1/m1_317_1901#" "DFF__0/RST" 0.000286033
+cap "DFF__0/RST" "DFF__0/VSS" 1.05335
+cap "DFF__0/VSS" "DFF__0/nand2_3/nmos_3p3_5QNVWA_1/a_n116_n44#" 2.21165
+cap "DFF__0/nand2_2/IN2" "DFF__0/D" 2.84217e-14
+cap "DFF__0/nand2_2/OUT" "DFF__0/VSS" 2.55013
+cap "DFF__0/nand2_3/OUT" "DFF__0/VSS" 3.96187
+cap "DFF__0/RST" "DFF__0/D" -5.68434e-14
+cap "DFF__0/nand2_2/IN1" "DFF__0/VSS" 9.78424
+cap "DFF__0/D" "DFF__0/VSS" 0.0320026
+cap "DFF__0/nand2_2/IN2" "DFF__0/VSS" 33.4577
+cap "DFF__0/QB" "DFF__0/VSS" 8.12304
+cap "DFF__0/nand2_1/OUT" "DFF__0/VSS" -3.00566
+cap "DFF__0/RST" "DFF__0/nand2_2/VDD" 0.213426
+cap "DFF__0/inv_0/OUT" "DFF__0/VSS" 0.578526
+cap "DFF__0/VSS" "DFF__0/nand2_1/IN1" 0.578286
+cap "DFF__0/RST" "DFF__0/QB" 0.0671038
+cap "DFF__0/nand2_4/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/VSS" 10.9207
+cap "DFF__0/nand2_1/OUT" "DFF__0/RST" 0.0019875
+cap "DFF__0/inv_0/OUT" "DFF__1/m1_317_1901#" 0.000871772
+cap "DFF__0/QB" "DFF__0/nand2_2/VDD" -1.13687e-13
+cap "DFF__0/VSS" "DFF__0/Q" 1.07803
+cap "DFF__0/VSS" "DFF__0/nand2_2/VDD" 0.19262
+cap "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/Q" 0.0176889
+cap "DFF__0/RST" "DFF__0/inv_0/VDD" -6.04233
+cap "DFF__0/QB" "DFF__0/VSS" 5.6109
+cap "DFF__0/inv_0/VDD" "DFF__0/Q" 67.1449
+cap "buffer_loading_mag_1/OUT" "DFF__0/inv_0/VDD" 0.38894
+cap "DFF__0/nand2_1/OUT" "DFF__0/VSS" -0.145919
+cap "DFF__0/QB" "DFF__0/inv_0/VDD" 37.9111
+cap "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/VSS" 1.74018
+cap "DFF__0/QB" "DFF__0/RST" 0.0296705
+cap "DFF__0/QB" "DFF__0/Q" -9.37237
+cap "DFF__0/inv_0/VDD" "DFF__0/VSS" 170.12
+cap "DFF__0/Q" "DFF__0/VSS" 11.519
+cap "DFF__0/inv_0/VDD" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 3.64482
+cap "DFF__0/Q" "DFF__0/nand2_1/IN1" 0.00871675
+cap "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/VSS" 10.1019
+cap "DFF__0/nand2_4/VDD" "DFF__0/VSS" -6.41555
+cap "buffer_loading_mag_1/OUT" "DFF__0/VSS" 0.166216
+cap "DFF__0/Q" "DFF__0/VSS" 0.205412
+cap "inv_my_mag_1/IN" "DFF__0/nand2_2/IN1" 0.225548
+cap "DFF__1/nand2_7/IN1" "DFF__0/nand2_7/IN1" 0.736051
+cap "DFF__0/nand2_2/VSS" "DFF__0/nand2_2/IN1" 4.56463
+cap "DFF__0/CLK" "DFF__1/nand2_7/IN1" 0.474883
+cap "DFF__0/nand2_7/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/D" 1.2461
+cap "DFF__0/CLK" "DFF__1/nand2_7/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.18175
+cap "DFF__1/nand2_7/IN1" "DFF__0/nand2_2/VSS" 4.92843
+cap "DFF__0/D" "DFF__0/nand2_2/IN1" 34.0538
+cap "DFF__0/CLK" "DFF__0/nand2_7/IN1" 3.55271e-15
+cap "DFF__0/nand2_7/IN1" "DFF__1/nand2_7/OUT" 0.0888249
+cap "inv_my_mag_1/IN" "DFF__0/nand2_0/OUT" 0.00412676
+cap "DFF__0/CLK" "DFF__1/nand2_7/OUT" 0.439327
+cap "DFF__0/nand2_7/IN1" "DFF__0/nand2_2/VSS" 10.0072
+cap "DFF__0/CLK" "inv_my_mag_1/IN" -2.79216
+cap "DFF__0/D" "DFF__0/nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.171249
+cap "DFF__1/CLK" "DFF__0/nand2_2/VSS" 0.160887
+cap "DFF__0/CLK" "DFF__0/nand2_2/VSS" 67.3843
+cap "DFF__0/nand2_2/VSS" "inv_my_mag_1/IN" 32.4785
+cap "DFF__0/D" "DFF__0/nand2_0/OUT" 0.146675
+cap "DFF__0/nand2_3/IN1" "DFF__0/D" 1.79716
+cap "DFF__0/D" "DFF__0/nand2_7/IN1" 8.0698
+cap "DFF__0/D" "DFF__1/CLK" 0.000664822
+cap "DFF__0/CLK" "DFF__0/D" 147.243
+cap "DFF__0/D" "inv_my_mag_1/IN" 16.6872
+cap "DFF__0/D" "DFF__0/nand2_2/VSS" 109.899
+cap "inv_my_mag_0/IN" "inv_my_mag_1/IN" 0.168033
+cap "DFF__0/nand2_7/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/nand2_2/VSS" 0.0149286
+cap "DFF__0/nand2_2/VSS" "inv_my_mag_0/IN" 0.372519
+cap "DFF__1/nand2_7/OUT" "DFF__0/nand2_2/IN1" 1.91746
+cap "DFF__0/CLK" "DFF__0/nand2_2/IN1" 7.10543e-15
+cap "DFF__0/D" "DFF__1/nand2_6/IN1" 0.160344
+cap "DFF__0/nand2_3/OUT" "DFF__0/VSS" 4.44089e-16
+cap "DFF__0/D" "DFF__0/nand2_1/IN1" -2.84217e-14
+cap "DFF__0/VSS" "DFF__0/RST" 0.960932
+cap "DFF__0/nand2_2/IN1" "DFF__1/nand2_7/OUT" 2.75644
+cap "DFF__0/RST" "DFF__1/nand2_6/IN1" 8.3452
+cap "DFF__0/VSS" "DFF__1/nand2_6/IN1" 5.35387
+cap "DFF__0/nand2_6/IN1" "DFF__0/nand2_2/IN1" 2.84217e-14
+cap "DFF__1/nand2_1/IN1" "DFF__0/RST" 0.0772153
+cap "DFF__0/nand2_6/IN1" "DFF__0/D" 4.60697
+cap "DFF__0/CLK" "DFF__0/nand2_2/IN1" 0.0203767
+cap "DFF__0/CLK" "DFF__0/D" 0.254682
+cap "DFF__0/D" "DFF__0/nand2_2/IN1" 12.6043
+cap "DFF__0/nand2_6/IN1" "DFF__0/VSS" 8.39938
+cap "DFF__0/CLK" "inv_my_mag_1/IN" 0.202653
+cap "DFF__0/CLK" "DFF__0/VSS" 0.373375
+cap "DFF__0/nand2_6/IN1" "DFF__1/nand2_6/IN1" 897.031
+cap "DFF__0/CLK" "DFF__1/nand2_6/IN1" 0.182015
+cap "DFF__0/CLK" "DFF__1/CLK" 0.640106
+cap "DFF__0/D" "DFF__0/RST" 1.62729
+cap "DFF__0/nand2_2/IN1" "DFF__0/VSS" 1.91305
+cap "DFF__0/nand2_6/IN1" "DFF__1/nand2_7/OUT" 0.0370921
+cap "DFF__0/D" "DFF__0/VSS" -5.55112e-17
+cap "DFF__0/nand2_2/IN1" "DFF__1/CLK" 0.00509232
+cap "DFF__0/nand2_2/IN1" "DFF__1/nand2_6/IN1" 0.409043
+cap "DFF__0/QB" "DFF__0/nand2_2/VDD" 2.86984
+cap "DFF__1/nand2_6/OUT" "DFF__0/nand2_6/IN1" 0.0173262
+cap "DFF__1/nand2_5/IN1" "DFF__0/nand2_1/IN1" 0.00051976
+cap "DFF__0/QB" "DFF__0/VSS" 7.10543e-15
+cap "DFF__0/nand2_1/IN1" "DFF__0/RST" 0.221424
+cap "DFF__1/nand2_6/IN1" "DFF__0/VSS" 0.0150166
+cap "DFF__0/Q" "DFF__0/RST" 0.593663
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/nand2_6/IN1" 0.213415
+cap "DFF__0/RST" "DFF__0/nand2_3/OUT" 0.150666
+cap "DFF__1/nand2_5/IN1" "DFF__0/nand2_3/OUT" 0.294714
+cap "DFF__0/nand2_1/IN1" "DFF__1/nand2_1/IN1" 0.471592
+cap "DFF__0/nand2_2/VDD" "DFF__0/nand2_6/IN1" 0.69625
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/RST" 0.424489
+cap "DFF__0/Q" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 0.111572
+cap "DFF__0/Q" "DFF__0/nand2_3/OUT" 0.00180892
+cap "DFF__0/VSS" "DFF__0/nand2_6/IN1" 0.75913
+cap "DFF__0/RST" "DFF__0/nand2_2/VDD" 1.72961
+cap "DFF__0/RST" "DFF__0/VSS" 188.753
+cap "DFF__0/nand2_6/IN1" "DFF__1/nand2_2/VDD" 0.00100244
+cap "DFF__0/Q" "DFF__0/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0038287
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_6/IN1" 548.477
+cap "DFF__0/Q" "DFF__0/nand2_2/VDD" 3.74082
+cap "DFF__1/Q" "DFF__0/RST" -0.559498
+cap "DFF__0/nand2_1/IN1" "DFF__0/VSS" 0.270127
+cap "DFF__0/nand2_2/VDD" "DFF__0/nand2_3/OUT" 0.102375
+cap "DFF__0/RST" "DFF__1/nand2_6/IN1" 15.7281
+cap "DFF__0/Q" "DFF__0/VSS" 0.142669
+cap "DFF__0/VSS" "DFF__0/nand2_3/OUT" 0.158731
+cap "DFF__0/nand2_1/IN1" "DFF__1/nand2_2/VDD" 0.00151718
+cap "DFF__0/nand2_2/VDD" "DFF__0/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0601313
+cap "DFF__0/Q" "DFF__1/Q" 0.378455
+cap "DFF__0/nand2_3/OUT" "DFF__1/nand2_2/VDD" 0.000114661
+cap "DFF__0/nand2_1/IN1" "DFF__1/nand2_6/IN1" 0.2247
+cap "DFF__0/Q" "DFF__0/QB" 3.43543
+cap "DFF__0/RST" "DFF__0/nand2_6/IN1" 13.3185
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_3/OUT" 0.165023
+cap "DFF__1/nand2_5/IN1" "DFF__0/RST" 0.0220245
+cap "buffer_mag_0/IN" "nand2_0/IN1" 1.37016
+cap "DFF__0/inv_0/VDD" "DFF__0/QB" 1.81785
+cap "DFF__0/Q" "DFF__0/RST" 1.17098
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/nand2_6/IN1" 0.140617
+cap "nand2_0/IN1" "buffer_mag_0/gf_inv_mag_1/IN" 77.6555
+cap "DFF__0/inv_0/VDD" "DFF__0/nand2_6/IN1" 0.196316
+cap "DFF__0/inv_0/VDD" "nand2_0/IN1" 63.9679
+cap "DFF__0/Q" "DFF__0/QB" -4.54918
+cap "DFF__0/VSS" "DFF__0/RST" 322.545
+cap "DFF__0/nand2_1/IN1" "DFF__0/Q" 0.054119
+cap "nand2_0/IN1" "DFF__1/inv_0/VDD" 6.72519
+cap "buffer_mag_0/gf_inv_mag_1/IN" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 0.401523
+cap "DFF__0/inv_0/VDD" "buffer_loading_mag_1/OUT" 0.0572312
+cap "nand2_0/IN1" "DFF__0/Q" 0.435093
+cap "DFF__0/inv_0/VDD" "buffer_mag_0/gf_inv_mag_1/IN" 7.23469
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "nand2_0/IN1" 3.67871
+cap "DFF__0/inv_0/VDD" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 20.0784
+cap "DFF__0/inv_0/VDD" "DFF__0/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0453858
+cap "DFF__1/inv_0/VDD" "buffer_mag_0/gf_inv_mag_1/IN" 0.114311
+cap "buffer_loading_mag_1/OUT" "DFF__0/Q" 1.37703
+cap "DFF__0/VSS" "nand2_0/IN1" 24.339
+cap "DFF__1/nand2_6/IN1" "DFF__0/RST" 3.08845
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/Q" 15.9112
+cap "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/Q" 102.058
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "buffer_mag_0/gf_inv_mag_1/IN" 0.290097
+cap "DFF__0/inv_0/VDD" "DFF__0/Q" 213.223
+cap "DFF__0/VSS" "buffer_mag_0/gf_inv_mag_1/IN" 0.2531
+cap "DFF__0/VSS" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 0.162729
+cap "DFF__0/inv_0/VDD" "DFF__0/VSS" 360.466
+cap "DFF__0/VSS" "DFF__0/Q" 12.5351
+cap "DFF__1/nand2_6/IN1" "buffer_mag_0/gf_inv_mag_1/IN" 0.122912
+cap "DFF__0/RST" "DFF__0/nand2_6/IN1" 4.77572
+cap "nand2_0/IN1" "DFF__0/RST" 204.333
+cap "buffer_mag_0/IN" "DFF__0/RST" 0.634426
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/RST" 6.781
+cap "DFF__0/inv_0/VDD" "DFF__0/RST" 24.8555
+cap "buffer_loading_mag_0/OUT" "nand2_0/IN1" 3.70131
+cap "DFF__0/VSS" "DFF__0/nand2_4/VDD" -27.9295
+cap "buffer_loading_mag_1/OUT" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 1.98026
+cap "buffer_mag_0/OUT" "nand2_0/IN1" 0.465343
+cap "buffer_mag_0/IN" "DFF__0/Q" 41.0375
+cap "nand2_0/IN1" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 0.56211
+cap "DFF__0/VSS" "buffer_loading_mag_1/OUT" -2.91323
+cap "DFF__0/Q" "buffer_mag_0/gf_inv_mag_1/IN" 6.47008
+cap "nand2_0/IN1" "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" 7.59751
+cap "DFF__0/VSS" "nand2_0/IN1" 18.4139
+cap "DFF__0/nand2_4/VDD" "DFF__0/Q" 127.389
+cap "buffer_loading_mag_1/OUT" "DFF__0/Q" 17.0808
+cap "DFF__0/Q" "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.562541
+cap "nand2_0/IN1" "DFF__0/Q" 10.7929
+cap "DFF__0/VSS" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 2.31401
+cap "buffer_mag_0/IN" "buffer_mag_0/gf_inv_mag_1/IN" 15.1793
+cap "buffer_mag_0/IN" "DFF__0/nand2_4/VDD" 25.241
+cap "buffer_mag_0/OUT" "DFF__0/Q" 0.0731411
+cap "buffer_loading_mag_0/OUT" "DFF__0/Q" 0.0347927
+cap "buffer_loading_mag_1/OUT" "buffer_mag_0/IN" 0.667546
+cap "DFF__0/nand2_4/VDD" "buffer_mag_0/gf_inv_mag_1/IN" 0.758941
+cap "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/Q" 22.2418
+cap "buffer_mag_0/IN" "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0646347
+cap "buffer_mag_0/IN" "nand2_0/IN1" 245.474
+cap "DFF__0/VSS" "DFF__0/Q" 4.83529
+cap "buffer_mag_0/IN" "DFF__1/nand2_4/VDD" 0.414067
+cap "nand2_0/IN1" "buffer_mag_0/gf_inv_mag_1/IN" 190.781
+cap "buffer_loading_mag_1/OUT" "DFF__0/nand2_4/VDD" 15.0235
+cap "DFF__0/nand2_4/VDD" "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0118031
+cap "buffer_mag_0/IN" "buffer_loading_mag_0/OUT" 0.489203
+cap "nand2_0/IN1" "DFF__0/nand2_4/VDD" 303.999
+cap "buffer_mag_0/IN" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 8.80304
+cap "buffer_loading_mag_1/OUT" "nand2_0/IN1" 0.088947
+cap "DFF__0/VSS" "buffer_mag_0/IN" 10.9137
+cap "buffer_mag_0/IN" "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" 2.21585
+cap "buffer_loading_mag_0/OUT" "DFF__0/nand2_4/VDD" -0.350615
+cap "nand2_0/IN1" "DFF__1/nand2_4/VDD" 10.0266
+cap "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" "buffer_mag_0/gf_inv_mag_1/IN" 0.428091
+cap "DFF__0/nand2_4/VDD" "buffer_loading_mag_1/nmos_3p3_5GGST2_0/a_n212_n50#" 13.0543
+cap "buffer_loading_mag_1/VSS" "nand2_0/IN2" 10.5036
+cap "buffer_loading_mag_1/VDD" "buffer_loading_mag_1/VSS" -5.81049
+cap "buffer_loading_mag_1/VDD" "nand2_0/IN2" 32.281
+cap "DFF__0/D" "DFF__1/CLK" 196.011
+cap "DFF__1/nand2_7/IN1" "DFF__0/nand2_7/IN1" 0.735718
+cap "DFF__1/nand2_7/IN1" "DFF__0/nand2_0/VSS" 4.46242
+cap "DFF__1/nand2_7/IN1" "DFF__0/D" 7.27629
+cap "DFF__0/nand2_0/VSS" "DFF__0/D" 76.7408
+cap "DFF__0/nand2_7/IN1" "DFF__1/nand2_2/IN1" 0.00076087
+cap "DFF__0/D" "DFF__1/nand2_0/OUT" 0.146864
+cap "DFF__1/nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/D" 0.17149
+cap "DFF__0/nand2_7/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__1/CLK" 0.18175
+cap "DFF__0/nand2_7/OUT" "DFF__1/CLK" 0.422902
+cap "DFF__1/nand2_7/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/nand2_0/VSS" 0.014972
+cap "DFF__0/nand2_0/VSS" "DFF__1/nand2_2/IN1" 2.72317
+cap "inv_my_mag_0/IN" "DFF__1/CLK" -3.47805
+cap "DFF__1/nand2_7/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/D" 1.25029
+cap "DFF__0/D" "DFF__1/nand2_2/IN1" 40.7374
+cap "DFF__0/D" "DFF__1/nand2_3/IN1" 1.79838
+cap "DFF__1/nand2_7/IN1" "DFF__0/nand2_7/OUT" 0.08519
+cap "DFF__1/nand2_7/IN1" "DFF__0/CLK" 0.000664822
+cap "DFF__0/nand2_0/VSS" "inv_my_mag_0/IN" -12.8555
+cap "inv_my_mag_0/IN" "DFF__0/D" 32.8883
+cap "inv_my_mag_0/IN" "DFF__1/nand2_0/OUT" 0.0112626
+cap "DFF__0/nand2_7/OUT" "DFF__1/nand2_2/IN1" 1.91917
+cap "inv_my_mag_0/IN" "inv_my_mag_1/IN" 0.168033
+cap "DFF__0/D" "DFF__1/nand2_2/IN2" 0.336302
+cap "DFF__0/CLK" "DFF__1/nand2_2/IN1" 0.015455
+cap "DFF__0/nand2_7/IN1" "DFF__1/CLK" 0.474883
+cap "inv_my_mag_0/IN" "DFF__1/nand2_2/IN1" 0.25313
+cap "DFF__0/nand2_0/VSS" "DFF__1/CLK" 6.93076
+cap "DFF__1/nand2_2/IN1" "DFF__0/nand2_6/IN1" 0.368879
+cap "DFF__0/RST" "DFF__0/nand2_6/IN1" 8.36028
+cap "DFF__1/nand2_6/IN1" "DFF__0/D" 4.48076
+cap "DFF__1/CLK" "DFF__0/D" 0.250302
+cap "DFF__1/nand2_6/IN1" "DFF__1/nand2_2/IN1" 1.42109e-14
+cap "DFF__1/CLK" "DFF__0/nand2_6/IN1" 0.182015
+cap "DFF__0/RST" "DFF__0/nand2_0/OUT" 0.0764815
+cap "DFF__1/CLK" "DFF__1/nand2_2/IN1" 0.128276
+cap "DFF__0/D" "DFF__0/nand2_6/VSS" -5.55112e-17
+cap "DFF__1/nand2_2/IN1" "inv_my_mag_0/IN" 0.119886
+cap "DFF__0/D" "DFF__1/nand2_1/IN1" -5.68434e-14
+cap "DFF__0/nand2_7/OUT" "DFF__1/nand2_2/IN1" 2.75644
+cap "DFF__1/nand2_2/IN1" "DFF__0/nand2_6/VSS" 0.796146
+cap "DFF__0/RST" "DFF__0/nand2_6/VSS" 0.979587
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_6/VSS" 3.22653
+cap "DFF__0/D" "DFF__1/nand2_3/OUT" 2.84217e-14
+cap "DFF__1/CLK" "inv_my_mag_0/IN" 0.211995
+cap "DFF__1/CLK" "DFF__0/CLK" 0.640429
+cap "DFF__1/CLK" "DFF__0/nand2_6/VSS" 0.359466
+cap "DFF__0/D" "DFF__1/nand2_2/IN1" 18.5834
+cap "DFF__0/RST" "DFF__0/D" 1.63177
+cap "DFF__1/nand2_2/OUT" "DFF__0/D" -7.10543e-15
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__1/Q" 0.158718
+cap "DFF__1/nand2_6/IN1" "DFF__1/Q" 1.32841
+cap "DFF__1/Q" "DFF__1/nand2_1/IN1" -0.0257556
+cap "DFF__0/nand2_6/IN1" "DFF__1/inv_0/OUT" 0.000871772
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__1/QB" 0.870541
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_6/IN1" 0.300983
+cap "DFF__1/nand2_6/IN1" "DFF__1/QB" -1.13687e-13
+cap "DFF__1/Q" "DFF__1/nand2_2/VDD" 0.831951
+cap "DFF__1/nand2_3/OUT" "DFF__0/nand2_5/IN1" 0.295214
+cap "DFF__1/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__1/Q" 0.00755841
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_6/OUT" 0.018218
+cap "DFF__1/nand2_2/VDD" "DFF__1/nand2_1/IN1" 0.169297
+cap "DFF__0/nand2_6/VSS" "DFF__1/nand2_6/IN1" 0.754514
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_2/VDD" 0.000103888
+cap "DFF__0/nand2_6/IN1" "DFF__1/nand2_1/IN1" 0.183885
+cap "DFF__1/Q" "DFF__1/QB" 3.05103
+cap "DFF__1/nand2_6/IN1" "DFF__1/nand2_3/OUT" -5.68434e-14
+cap "DFF__1/nand2_6/IN1" "DFF__0/RST" 7.35582
+cap "DFF__0/nand2_0/OUT" "DFF__1/nand2_1/IN1" 0.471634
+cap "DFF__0/nand2_6/VSS" "DFF__1/Q" 1.0948
+cap "DFF__1/Q" "DFF__1/nand2_3/OUT" 0.0214506
+cap "DFF__1/nand2_2/VDD" "DFF__1/QB" 0.323321
+cap "DFF__1/Q" "DFF__0/nand2_2/VDD" 0.00100244
+cap "DFF__1/Q" "DFF__0/RST" 0.637108
+cap "DFF__0/nand2_6/VSS" "DFF__1/nand2_1/IN1" 0.242104
+cap "DFF__0/RST" "DFF__1/nand2_1/IN1" 0.222755
+cap "DFF__1/nand2_3/OUT" "DFF__1/nand2_2/VDD" 0.0165098
+cap "DFF__1/nand2_2/VDD" "DFF__0/RST" 0.219856
+cap "DFF__0/nand2_6/VSS" "DFF__1/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.051346
+cap "DFF__0/nand2_6/IN1" "DFF__0/RST" 8.20561
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/RST" 0.00365898
+cap "DFF__0/nand2_6/VSS" "DFF__1/QB" 2.10453
+cap "DFF__0/Q" "DFF__1/Q" 0.378455
+cap "DFF__0/nand2_6/IN1" "DFF__1/nand2_3/OUT" 0.163108
+cap "DFF__1/nand2_3/OUT" "DFF__0/nand2_0/OUT" 0.000202751
+cap "DFF__0/nand2_6/VSS" "DFF__1/nand2_3/OUT" 0.191346
+cap "DFF__0/nand2_6/VSS" "DFF__0/RST" 205.533
+cap "DFF__1/nand2_3/OUT" "DFF__0/nand2_2/VDD" 0.00151718
+cap "DFF__1/nand2_3/OUT" "DFF__0/RST" 0.170863
+cap "DFF__1/QB" "DFF__0/RST" 0.00103491
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__1/inv_0/VDD" 13.3071
+cap "nand2_0/IN1" "buffer_mag_0/IN" 2.45335
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__1/QB" 0.872594
+cap "DFF__0/nand2_6/VSS" "DFF__1/inv_0/VDD" 143.728
+cap "nand2_0/IN1" "DFF__0/nand2_1/VDD" -0.684114
+cap "DFF__0/nand2_6/VSS" "DFF__1/QB" 2.08081
+cap "DFF__0/nand2_6/VSS" "DFF__0/nand2_1/VDD" -2.92969
+cap "nand2_0/IN1" "buffer_loading_mag_0/OUT" 0.428709
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__1/inv_0/VDD" 1.39339
+cap "nand2_0/IN1" "DFF__0/RST" 2.64224
+cap "nand2_0/IN1" "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" 24.4041
+cap "nand2_0/IN1" "DFF__0/nand2_6/VSS" 331.4
+cap "buffer_loading_mag_0/OUT" "DFF__0/nand2_6/VSS" 0.686676
+cap "DFF__0/nand2_6/VSS" "DFF__0/RST" 282.5
+cap "DFF__0/nand2_6/VSS" "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" 38.2697
+cap "nand2_0/IN1" "DFF__1/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0315346
+cap "nand2_0/IN1" "DFF__1/nand2_1/IN1" 0.0821858
+cap "DFF__0/nand2_6/VSS" "DFF__1/nand2_6/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0535751
+cap "nand2_0/IN1" "buffer_mag_0/gf_inv_mag_1/IN" 23.362
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/RST" 0.733614
+cap "buffer_mag_0/gf_inv_mag_1/IN" "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" 0.646389
+cap "buffer_mag_0/gf_inv_mag_1/IN" "DFF__0/nand2_6/VSS" 3.6559
+cap "DFF__1/nand2_6/IN1" "nand2_0/IN1" 1.34674
+cap "DFF__1/nand2_6/IN1" "DFF__0/RST" 1.86944
+cap "DFF__1/nand2_6/IN1" "DFF__0/nand2_6/VSS" 0.239482
+cap "nand2_0/IN1" "DFF__0/Q" 0.0667285
+cap "DFF__1/QB" "DFF__1/inv_0/VDD" 27.8477
+cap "DFF__0/Q" "DFF__0/nand2_6/VSS" -1.11941
+cap "DFF__1/inv_0/VDD" "DFF__0/nand2_1/VDD" 0.0040529
+cap "DFF__1/nand2_6/IN1" "buffer_mag_0/gf_inv_mag_1/IN" 0.000561175
+cap "nand2_0/IN1" "DFF__1/inv_0/VDD" 100.224
+cap "nand2_0/IN1" "DFF__1/QB" -5.1745
+cap "DFF__0/RST" "DFF__1/inv_0/VDD" -6.07797
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/nand2_4/VDD" 0.615157
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "buffer_mag_0/gf_inv_mag_1/IN" 1.06
+cap "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__0/nand2_6/VSS" 0.0395567
+cap "buffer_mag_0/IN" "buffer_mag_0/gf_inv_mag_1/IN" 2.17013
+cap "DFF__1/nand2_4/VDD" "nand2_0/IN1" -0.32799
+cap "DFF__0/Q" "buffer_loading_mag_0/OUT" 0.0701528
+cap "buffer_mag_0/OUT" "nand2_0/IN1" 0.0177346
+cap "DFF__0/nand2_6/VSS" "nand2_0/IN1" -7.34201
+cap "DFF__0/nand2_4/VDD" "buffer_loading_mag_0/OUT" -0.350615
+cap "DFF__1/nand2_4/VDD" "DFF__0/nand2_6/VSS" 1.82471
+cap "buffer_mag_0/IN" "nand2_0/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0517077
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "nand2_0/IN1" 0.0810068
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "DFF__0/nand2_6/VSS" 6.26611
+cap "DFF__1/nand2_4/VDD" "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" 13.5359
+cap "buffer_mag_0/IN" "DFF__0/nand2_6/VSS" 24.6338
+cap "DFF__1/nand2_4/VDD" "buffer_mag_0/IN" 2.31842
+cap "buffer_loading_mag_0/OUT" "DFF__0/nand2_6/VSS" 24.039
+cap "buffer_loading_mag_0/OUT" "nand2_0/IN1" -0.643431
+cap "DFF__1/nand2_4/VDD" "buffer_loading_mag_0/OUT" 3.37772
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "buffer_mag_0/IN" 13.566
+cap "buffer_loading_mag_0/nmos_3p3_5GGST2_0/a_n212_n50#" "buffer_loading_mag_0/OUT" 2.10969
+cap "DFF__0/Q" "DFF__0/nand2_6/VSS" -4.06766
+cap "buffer_mag_0/gf_inv_mag_1/IN" "nand2_0/IN1" 0.179973
+cap "buffer_mag_0/IN" "buffer_loading_mag_0/OUT" 0.0742236
+cap "DFF__0/nand2_4/VDD" "DFF__0/nand2_6/VSS" -10.4854
+cap "DFF__1/nand2_4/VDD" "buffer_mag_0/gf_inv_mag_1/IN" 0.349635
+cap "DFF__1/nand2_4/VDD" "DFF__0/nand2_4/VDD" 0.0212896
+cap "buffer_mag_0/VSS" "nand2_0/IN2" -1.69848
+cap "buffer_mag_0/VSS" "buffer_loading_mag_1/VDD" -4.29592
+cap "DFF__1/nand2_2/nmos_3p3_5QNVWA_1/a_n116_n44#" "DFF__1/D" 0.199853
+cap "DFF__1/nand2_2/IN1" "DFF__1/D" 9.71763
+cap "DFF__1/nand2_3/IN1" "DFF__1/D" 0.337724
+cap "DFF__1/nand2_3/OUT" "DFF__1/D" 0.299844
+cap "DFF__1/D" "DFF__1/nand2_2/OUT" 4.28976
+cap "DFF__1/D" "DFF__1/nand2_3/nmos_3p3_5QNVWA_1/a_n116_n44#" 0.0419254
+cap "DFF__1/nand2_2/IN2" "DFF__1/D" 45.108
+cap "DFF__1/D" "DFF__1/nand2_2/VSS" 235.397
+cap "DFF__1/D" "DFF__1/nand2_3/OUT" 0.735036
+cap "DFF__1/D" "DFF__1/nand2_2/OUT" 0.876356
+cap "DFF__1/nand2_2/IN2" "DFF__1/D" 30.1506
+cap "DFF__1/D" "DFF__1/nand2_2/IN1" 6.34341
+cap "DFF__1/D" "DFF__1/RST" 0.864327
+cap "DFF__1/D" "DFF__1/VSS" 345.834
+cap "DFF__1/nand2_2/VDD" "DFF__1/QB" 10.0468
+cap "buffer_mag_0/VSS" "DFF__1/nand2_2/VDD" 346.016
+cap "DFF__1/QB" "buffer_mag_0/OUT" 0.0816314
+cap "DFF__1/Q" "DFF__1/nand2_2/VDD" 0.401031
+cap "DFF__1/nand2_1/IN1" "DFF__1/nand2_2/VDD" 0.745903
+cap "DFF__1/nand2_2/VDD" "DFF__1/nand2_1/OUT" 10.1088
+cap "DFF__1/nand2_1/OUT" "buffer_mag_0/OUT" 0.00301283
+cap "DFF__1/inv_0/OUT" "DFF__1/nand2_2/VDD" 0.717641
+cap "DFF__1/QB" "buffer_mag_0/OUT" 0.0359625
+cap "buffer_mag_0/VSS" "DFF__1/QB" -3.76016
+cap "buffer_mag_0/VSS" "DFF__1/inv_0/VDD" 284.941
+cap "DFF__1/inv_0/VDD" "DFF__1/QB" 34.5288
+cap "DFF__1/Q" "DFF__1/QB" -10.3484
+cap "DFF__1/inv_0/VDD" "DFF__1/nand2_1/OUT" -0.120314
+cap "DFF__1/inv_0/VDD" "DFF__1/Q" 4.34636
+merge "inv_my_mag_0/w_n60_831#" "DFF__0/nand2_1/VDD" -7769.65 -641638 -12876 0 0 -4983 -2396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1198997 -17294 0 0 0 0 0 0 0 0
+merge "DFF__0/nand2_1/VDD" "DFF__1/nand2_4/VDD"
+merge "DFF__1/nand2_4/VDD" "DFF__1/inv_0/VDD"
+merge "DFF__1/inv_0/VDD" "w_5806_3910#"
+merge "w_5806_3910#" "w_5503_3910#"
+merge "w_5503_3910#" "buffer_loading_mag_0/VDD"
+merge "buffer_loading_mag_0/VDD" "w_5178_3910#"
+merge "w_5178_3910#" "w_4706_3910#"
+merge "w_4706_3910#" "DFF__1/nand2_2/VDD"
+merge "DFF__1/nand2_2/VDD" "inv_my_mag_0/w_114_556#"
+merge "inv_my_mag_0/w_114_556#" "m1_3789_3833#"
+merge "m1_3789_3833#" "w_3761_3757#"
+merge "w_3761_3757#" "w_2880_3872#"
+merge "w_2880_3872#" "w_2863_3783#"
+merge "w_2863_3783#" "DFF__1/D"
+merge "DFF__1/D" "DFF__1/VDD"
+merge "DFF__1/VDD" "w_n80_3418#"
+merge "w_n80_3418#" "w_2355_3722#"
+merge "w_2355_3722#" "w_2268_3928#"
+merge "w_2268_3928#" "w_2010_3928#"
+merge "w_2010_3928#" "DFF__0/nand2_4/VDD"
+merge "DFF__0/nand2_4/VDD" "nand2_0/VDD"
+merge "nand2_0/VDD" "DFF__0/inv_0/VDD"
+merge "DFF__0/inv_0/VDD" "buffer_mag_0/VDD"
+merge "buffer_mag_0/VDD" "buffer_loading_mag_1/VDD"
+merge "buffer_loading_mag_1/VDD" "DFF__0/nand2_2/VDD"
+merge "DFF__0/nand2_2/VDD" "inv_my_mag_1/w_114_556#"
+merge "inv_my_mag_1/w_114_556#" "m1_3789_1058#"
+merge "m1_3789_1058#" "w_3763_1058#"
+merge "w_3763_1058#" "w_2865_1176#"
+merge "w_2865_1176#" "DFF__0/VDD"
+merge "DFF__0/VDD" "DFF__0/D"
+merge "DFF__0/D" "VDD"
+merge "VDD" "w_2268_956#"
+merge "w_2268_956#" "w_2357_1072#"
+merge "w_2357_1072#" "w_n137_1312#"
+merge "DFF__0/nand2_6/VSS" "DFF__1/nand2_2/VSS" -7557.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1561265 -21484 0 0 0 0 0 0 0 0
+merge "DFF__1/nand2_2/VSS" "DFF__0/nand2_0/VSS"
+merge "DFF__0/nand2_0/VSS" "buffer_loading_mag_0/VSS"
+merge "buffer_loading_mag_0/VSS" "m1_5921_2867#"
+merge "m1_5921_2867#" "buffer_mag_0/VSS"
+merge "buffer_mag_0/VSS" "DFF__1/nand2_6/VSS"
+merge "DFF__1/nand2_6/VSS" "inv_my_mag_0/VSS"
+merge "inv_my_mag_0/VSS" "DFF__1/VSS"
+merge "DFF__1/VSS" "nand2_0/VSS"
+merge "nand2_0/VSS" "buffer_mag_0/VSUBS"
+merge "buffer_mag_0/VSUBS" "buffer_mag_0/gf_inv_mag_1/VSS"
+merge "buffer_mag_0/gf_inv_mag_1/VSS" "m1_3982_2796#"
+merge "m1_3982_2796#" "buffer_loading_mag_1/VSS"
+merge "buffer_loading_mag_1/VSS" "DFF__0/VSS"
+merge "DFF__0/VSS" "DFF__1/a_92_239#"
+merge "DFF__1/a_92_239#" "DFF__1/nand2_0/VSS"
+merge "DFF__1/nand2_0/VSS" "inv_my_mag_1/VSS"
+merge "inv_my_mag_1/VSS" "DFF__0/a_92_239#"
+merge "DFF__0/a_92_239#" "VSUBS"
+merge "VSUBS" "DFF__0/nand2_2/VSS"
+merge "DFF__0/nand2_2/VSS" "VSS"
+merge "nand2_0/OUT" "buffer_mag_0/IN" -163.578 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2080 -212 0 0 0 0 0 0 0 0
+merge "DFF__1/nand2_4/OUT" "buffer_loading_mag_0/IN" -948.737 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18759 -1180 0 0 0 0 0 0 0 0
+merge "buffer_loading_mag_0/IN" "DFF__1/Q"
+merge "DFF__1/Q" "nand2_0/IN1"
+merge "nand2_0/IN1" "m1_4095_3301#"
+merge "m1_4095_3301#" "DFF__1/nand2_6/IN2"
+merge "DFF__1/nand2_6/IN2" "m1_3648_3301#"
+merge "nand2_0/pmos_3p3_M8SWPS_1/w_n202_n210#" "buffer_mag_0/gf_inv_mag_1/pmos_3p3_M6H3WS_0/w_n470_n180#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "buffer_loading_mag_0/OUT" "PU" -44.724 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3224 -228 0 0 0 0 0 0 0 0
+merge "buffer_mag_0/OUT" "DFF__1/RST" -968.488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -34461 -1322 0 0 0 0 0 0 0 0
+merge "DFF__1/RST" "DFF__0/RST"
+merge "DFF__0/RST" "m1_3265_2242#"
+merge "inv_my_mag_0/IN" "VREF" -58.3052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4450 -278 0 0 0 0 0 0 0 0
+merge "inv_my_mag_0/OUT" "DFF__1/CLK" -201.953 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7830 -460 0 0 0 0 0 0 0 0
+merge "DFF__1/CLK" "m1_n60_3392#"
+merge "inv_my_mag_1/OUT" "DFF__0/CLK" -171.193 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1350 -316 0 0 0 0 0 0 0 0
+merge "DFF__0/CLK" "m1_n73_1474#"
+merge "DFF__0/nand2_1/OUT" "DFF__0/nand2_2/IN2" -104.746 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7097 -396 0 0 0 0 0 0 0 0
+merge "DFF__0/nand2_2/IN2" "m1_3208_499#"
+merge "inv_my_mag_1/IN" "VDIV" -44.9234 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2650 -206 0 0 0 0 0 0 0 0
+merge "DFF__0/nand2_6/IN2" "nand2_0/IN2" -760.514 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -34220 -1560 0 0 0 0 0 0 0 0
+merge "nand2_0/IN2" "buffer_loading_mag_1/IN"
+merge "buffer_loading_mag_1/IN" "DFF__0/Q"
+merge "DFF__0/Q" "m1_4087_1617#"
+merge "m1_4087_1617#" "DFF__0/nand2_4/OUT"
+merge "DFF__0/nand2_4/OUT" "m1_3662_1617#"
+merge "buffer_loading_mag_1/OUT" "PD" -43.126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3692 -246 0 0 0 0 0 0 0 0
+merge "DFF__1/nand2_1/OUT" "DFF__1/nand2_2/IN2" -159.857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5405 -324 0 0 0 0 0 0 0 0
+merge "DFF__1/nand2_2/IN2" "m1_3236_4420#"

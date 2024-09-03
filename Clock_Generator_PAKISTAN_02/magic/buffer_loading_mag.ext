@@ -1,0 +1,65 @@
+timestamp 1714130772
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use pmos_3p3_MWXUAR pmos_3p3_MWXUAR_0 1 0 382 0 1 570
+use nmos_3p3_5GGST2 nmos_3p3_5GGST2_0 1 0 380 0 1 118
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "IN" 3 -40 290 -40 290 m1
+port "OUT" 2 1610 290 1610 290 m1
+port "VDD" 0 810 910 810 910 nsc
+port "VSS" 1 750 -100 750 -100 psc
+node "IN" 157 903.518 -40 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 78636 2716 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16854 592 0 0 0 0 0 0 0 0
+node "OUT" 87 492.558 1610 290 m1 0 0 0 0 20800 816 41600 1216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98124 3534 0 0 0 0 0 0 0 0
+node "a_876_227#" 406 1695.66 876 227 p 0 0 0 0 0 0 0 0 0 0 0 0 184368 6496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 114656 4050 0 0 0 0 0 0 0 0
+node "VDD" 5216 3165.53 810 910 nsc 819264 4896 0 0 52622 966 56000 1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 532960 7828 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 750 -100 psc 0 0 0 0 28000 1160 40524 878 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 368735 5844 0 0 0 0 0 0 0 0
+cap "a_876_227#" "OUT" 329.57
+cap "VDD" "OUT" 574.359
+cap "VDD" "a_876_227#" 1067.25
+cap "IN" "OUT" 0.943453
+cap "IN" "a_876_227#" 220.186
+cap "IN" "VDD" 55.3015
+device msubckt nfet_03v3 1456 68 1457 69 l=56 w=100 "VSS" "a_876_227#" 112 0 "OUT" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 1296 68 1297 69 l=56 w=100 "VSS" "a_876_227#" 112 0 "VSS" 100 5200,204 "OUT" 100 5200,204
+device msubckt nfet_03v3 1136 68 1137 69 l=56 w=100 "VSS" "a_876_227#" 112 0 "OUT" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 976 68 977 69 l=56 w=100 "VSS" "a_876_227#" 112 0 "VSS" 100 8800,376 "OUT" 100 5200,204
+device msubckt pfet_03v3 1458 470 1459 471 l=56 w=200 "VDD" "a_876_227#" 112 0 "OUT" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 1298 470 1299 471 l=56 w=200 "VDD" "a_876_227#" 112 0 "VDD" 200 10400,304 "OUT" 200 10400,304
+device msubckt pfet_03v3 1138 470 1139 471 l=56 w=200 "VDD" "a_876_227#" 112 0 "OUT" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 978 470 979 471 l=56 w=200 "VDD" "a_876_227#" 112 0 "VDD" 200 17600,576 "OUT" 200 10400,304
+cap "nmos_3p3_5GGST2_0/a_108_n50#" "OUT" 0.00737666
+cap "nmos_3p3_5GGST2_0/a_268_n50#" "nmos_3p3_5GGST2_0/a_108_n50#" -137.741
+cap "pmos_3p3_MWXUAR_0/a_268_n100#" "OUT" 4.34043
+cap "nmos_3p3_5GGST2_0/a_268_n50#" "pmos_3p3_MWXUAR_0/a_268_n100#" 0.733349
+cap "nmos_3p3_5GGST2_0/a_212_n94#" "OUT" 0.598295
+cap "nmos_3p3_5GGST2_0/a_268_n50#" "nmos_3p3_5GGST2_0/a_212_n94#" 56.5881
+cap "nmos_3p3_5GGST2_0/a_108_n50#" "pmos_3p3_MWXUAR_0/a_268_n100#" -211.38
+cap "nmos_3p3_5GGST2_0/a_108_n50#" "nmos_3p3_5GGST2_0/a_212_n94#" 101.796
+cap "nmos_3p3_5GGST2_0/a_212_n94#" "pmos_3p3_MWXUAR_0/a_268_n100#" 317.57
+merge "pmos_3p3_MWXUAR_0/a_268_n100#" "pmos_3p3_MWXUAR_0/a_n52_n100#" -465.205 -14384 -2688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26496 -1428 0 0 0 0 0 0 0 0
+merge "pmos_3p3_MWXUAR_0/a_n52_n100#" "pmos_3p3_MWXUAR_0/a_n356_n100#"
+merge "pmos_3p3_MWXUAR_0/a_n356_n100#" "pmos_3p3_MWXUAR_0/w_n442_n230#"
+merge "pmos_3p3_MWXUAR_0/w_n442_n230#" "VDD"
+merge "nmos_3p3_5GGST2_0/a_212_n94#" "nmos_3p3_5GGST2_0/a_52_n94#" -494.01 0 0 0 0 0 0 0 0 0 0 0 0 -892 -924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_5GGST2_0/a_52_n94#" "nmos_3p3_5GGST2_0/a_n108_n94#"
+merge "nmos_3p3_5GGST2_0/a_n108_n94#" "nmos_3p3_5GGST2_0/a_n268_n94#"
+merge "nmos_3p3_5GGST2_0/a_n268_n94#" "pmos_3p3_MWXUAR_0/a_212_n144#"
+merge "pmos_3p3_MWXUAR_0/a_212_n144#" "pmos_3p3_MWXUAR_0/a_52_n144#"
+merge "pmos_3p3_MWXUAR_0/a_52_n144#" "pmos_3p3_MWXUAR_0/a_n108_n144#"
+merge "pmos_3p3_MWXUAR_0/a_n108_n144#" "pmos_3p3_MWXUAR_0/a_n268_n144#"
+merge "pmos_3p3_MWXUAR_0/a_n268_n144#" "IN"
+merge "nmos_3p3_5GGST2_0/a_108_n50#" "nmos_3p3_5GGST2_0/a_n212_n50#" -298.411 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26864 -1536 0 0 0 0 0 0 0 0
+merge "nmos_3p3_5GGST2_0/a_n212_n50#" "pmos_3p3_MWXUAR_0/a_108_n100#"
+merge "pmos_3p3_MWXUAR_0/a_108_n100#" "pmos_3p3_MWXUAR_0/a_n212_n100#"
+merge "pmos_3p3_MWXUAR_0/a_n212_n100#" "a_876_227#"
+merge "nmos_3p3_5GGST2_0/VSUBS" "nmos_3p3_5GGST2_0/a_268_n50#" -160.014 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13248 -852 0 0 0 0 0 0 0 0
+merge "nmos_3p3_5GGST2_0/a_268_n50#" "nmos_3p3_5GGST2_0/a_n52_n50#"
+merge "nmos_3p3_5GGST2_0/a_n52_n50#" "nmos_3p3_5GGST2_0/a_n356_n50#"
+merge "nmos_3p3_5GGST2_0/a_n356_n50#" "pmos_3p3_MWXUAR_0/VSUBS"
+merge "pmos_3p3_MWXUAR_0/VSUBS" "VSS"

@@ -1,0 +1,1397 @@
+timestamp 1694088685
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use and2_mag and2_mag_0 1 0 2425 0 1 3119
+use and2_mag and2_mag_1 1 0 3401 0 1 3119
+use and2_mag and2_mag_2 1 0 4377 0 1 3119
+use JK_FF_mag JK_FF_mag_0 1 0 390 0 1 0
+use JK_FF_mag JK_FF_mag_1 1 0 3627 0 1 5
+use JK_FF_mag JK_FF_mag_2 1 0 6980 0 1 5
+use GF_INV_MAG GF_INV_MAG_0 1 0 7235 0 1 3300
+use nor_3_mag nor_3_mag_0 1 0 6059 0 1 2152
+use Buffer_delayed_mag Buffer_delayed_mag_0 1 0 5506 0 1 3106
+port "VSS" 2 3281 25 3281 25 m1
+port "RST" 0 1517 576 1517 576 v2
+port "Q2" 8 6739 3067 6739 3067 v
+port "CLK" 1 174 1621 174 1621 m2
+port "Q0" 7 2528 3416 2528 3416 v
+port "Q1" 6 2784 3509 2784 3509 v
+port "VDD" 3 7762 2582 7762 2582 m1
+node "m1_6135_11#" 1 384.756 6135 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78431 1680 0 0 0 0 0 0 0 0
+node "VSS" 1 388.679 3281 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78431 1680 0 0 0 0 0 0 0 0
+node "m1_494_439#" 10 3565.11 494 439 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22321 844 940615 19986 0 0 0 0 0 0
+node "RST" 7 1712.03 1517 576 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17376 938 17495 942 875420 13728 0 0 0 0
+node "m1_6655_1588#" 0 66.6273 6655 1588 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10823 432 0 0 0 0 0 0 0 0
+node "m1_493_1528#" 6 2096.15 493 1528 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38482 1454 18244 780 1322332 16454 0 0 0 0
+node "m1_6163_1994#" 1 508.809 6163 1994 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166751 2360 0 0 0 0 0 0 0 0
+node "m1_2897_1989#" 0 455.095 2897 1989 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127029 1900 0 0 0 0 0 0 0 0
+node "m1_6963_2592#" 1 325.845 6963 2592 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104415 1906 0 0 0 0 0 0 0 0
+node "Q2" 4 1457.67 6739 3067 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6248 318 439122 9130 0 0 0 0 0 0
+node "m1_6308_2593#" 0 203.459 6308 2593 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45288 1092 0 0 0 0 0 0 0 0
+node "m1_6234_3107#" 1 184.541 6234 3107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10446 578 31723 1076 0 0 0 0 0 0
+node "m1_5242_2931#" 0 179.912 5242 2931 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42154 942 0 0 0 0 0 0 0 0
+node "m1_4252_2932#" 0 142.733 4252 2932 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28908 782 0 0 0 0 0 0 0 0
+node "m1_3273_2930#" 0 150.553 3273 2930 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28908 782 0 0 0 0 0 0 0 0
+node "m1_n336_1288#" 2 2432 -336 1288 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 792927 9616 0 0 0 0 0 0 0 0
+node "m1_3186_3296#" 7 1646.44 3186 3296 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16749 742 724040 12598 241304 4476 0 0 0 0
+node "m1_4141_3288#" 3 556.257 4141 3288 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16328 710 98586 2568 65964 1618 0 0 0 0
+node "m1_6995_3433#" 0 77.2291 6995 3433 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13662 546 0 0 0 0 0 0 0 0
+node "CLK" 8 2146.08 174 1621 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10160 414 1041893 17954 160127 3082 0 0 0 0
+node "Q0" 8 2272.49 2528 3416 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33307 1492 811318 15302 0 0 0 0 0 0
+node "Q1" 7 1313.67 2784 3509 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21248 1060 522633 11754 0 0 0 0 0 0
+node "VDD" 1 1039.68 7762 2582 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 349866 4434 0 0 0 0 0 0 0 0
+node "m1_6979_3700#" 0 102.975 6979 3700 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38577 796 0 0 0 0 0 0 0 0
+node "m1_6330_3636#" 0 126.01 6330 3636 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29302 686 0 0 0 0 0 0 0 0
+node "m1_5258_3630#" 0 165.515 5258 3630 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44676 890 0 0 0 0 0 0 0 0
+node "m1_5141_3656#" 3 772.516 5141 3656 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9326 536 204584 5102 0 0 0 0 0 0
+node "m1_4307_3817#" 1 34.2604 4307 3817 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 742 226 0 0 0 0 0 0 0 0
+node "m1_3331_3817#" 1 39.0991 3331 3817 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 848 228 0 0 0 0 0 0 0 0
+node "w_6979_3700#" 7095 131.388 6979 3700 nw 43796 1272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_5252_3686#" 19272 24.582 5252 3686 nw 8194 836 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_6339_3684#" 69778 21.783 6339 3684 nw 7261 1444 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_4307_3454#" 58625 11.256 4307 3454 nw 3752 954 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3706_3480#" 1385 38.304 3706 3480 nw 12768 458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3326_3454#" 59821 11.271 3326 3454 nw 3757 964 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2736_3479#" 1688 46.29 2736 3479 nw 15430 514 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_3326_3454#" "Q1" 0.775651
+cap "m1_6979_3700#" "m1_6330_3636#" 10.0009
+cap "Q2" "RST" 6.38425
+cap "Q2" "m1_6234_3107#" 82.4946
+cap "m1_5242_2931#" "m1_5141_3656#" 0.194658
+cap "Q2" "w_6979_3700#" 0.0615644
+cap "CLK" "RST" 5.38694
+cap "CLK" "m1_6234_3107#" 11.6511
+cap "m1_6135_11#" "RST" 7.62486
+cap "Q0" "w_4307_3454#" 0.59258
+cap "Q0" "m1_3186_3296#" 84.5062
+cap "m1_2897_1989#" "Q1" 1.32741
+cap "m1_3273_2930#" "Q0" 1.58624
+cap "m1_6163_1994#" "m1_6963_2592#" 20.3997
+cap "m1_4307_3817#" "m1_3331_3817#" 4.48254
+cap "m1_5258_3630#" "m1_5141_3656#" 95.0905
+cap "m1_5242_2931#" "m1_3186_3296#" 4.02711
+cap "m1_6163_1994#" "RST" 0.820512
+cap "m1_5258_3630#" "m1_4307_3817#" 4.55435
+cap "m1_6163_1994#" "m1_6234_3107#" 6.77086
+cap "m1_6963_2592#" "m1_6308_2593#" 26.1175
+cap "m1_3331_3817#" "m1_3186_3296#" 0.0206026
+cap "m1_4252_2932#" "Q1" 32.4001
+cap "Q0" "m1_494_439#" 51.6824
+cap "CLK" "m1_4141_3288#" 8.54045
+cap "m1_493_1528#" "m1_6655_1588#" 12.7409
+cap "m1_3273_2930#" "m1_3331_3817#" 0.55401
+cap "m1_6995_3433#" "m1_5141_3656#" 9.3125
+cap "m1_5258_3630#" "w_4307_3454#" 0.0497809
+cap "m1_6963_2592#" "m1_5141_3656#" 19.7071
+cap "VSS" "m1_493_1528#" 4.05621
+cap "m1_6308_2593#" "m1_6234_3107#" 24.2579
+cap "Q2" "m1_6655_1588#" 0.0591646
+cap "CLK" "m1_6655_1588#" 29.0708
+cap "m1_6135_11#" "m1_6655_1588#" 3.80147
+cap "m1_5258_3630#" "m1_6979_3700#" 2.70427
+cap "Q0" "w_3326_3454#" 0.481286
+cap "VSS" "CLK" 0.0381531
+cap "Q2" "m1_493_1528#" 44.0604
+cap "w_6339_3684#" "VDD" 0.0655532
+cap "m1_6234_3107#" "m1_5141_3656#" 38.7554
+cap "w_3706_3480#" "Q1" 9.39806
+cap "w_5252_3686#" "m1_4141_3288#" 0.132104
+cap "m1_5141_3656#" "w_6979_3700#" 0.658265
+cap "CLK" "m1_493_1528#" 133.721
+cap "VDD" "m1_6330_3636#" 2.19354
+cap "m1_6135_11#" "m1_493_1528#" 3.3645
+cap "Q0" "Q1" 602.024
+cap "Q2" "CLK" 132.093
+cap "Q0" "m1_2897_1989#" 25.7551
+cap "m1_6995_3433#" "m1_6979_3700#" 32.0278
+cap "CLK" "m1_6135_11#" 0.00471827
+cap "m1_6163_1994#" "m1_6655_1588#" 17.7321
+cap "m1_6963_2592#" "m1_6979_3700#" 0.662773
+cap "RST" "m1_3186_3296#" 246.202
+cap "m1_6234_3107#" "m1_3186_3296#" 13.8636
+cap "m1_n336_1288#" "m1_493_1528#" 24.4036
+cap "m1_5242_2931#" "Q1" 2.74139
+cap "m1_3331_3817#" "w_3326_3454#" 1.44084
+cap "m1_6163_1994#" "m1_493_1528#" 59.6982
+cap "w_6339_3684#" "m1_6330_3636#" 3.68196
+cap "m1_6979_3700#" "w_6979_3700#" 29.7313
+cap "m1_5141_3656#" "m1_4141_3288#" 69.3038
+cap "CLK" "m1_n336_1288#" 81.385
+cap "m1_3331_3817#" "Q1" 0.122155
+cap "Q2" "m1_6163_1994#" 129.42
+cap "CLK" "m1_6163_1994#" 192.695
+cap "m1_4252_2932#" "Q0" 0.324657
+cap "m1_4307_3817#" "m1_4141_3288#" 0.121393
+cap "Q0" "w_6339_3684#" 0.00859304
+cap "Q0" "m1_6330_3636#" 0.0340673
+cap "m1_494_439#" "RST" 183.525
+cap "Q2" "m1_6308_2593#" 14.0298
+cap "m1_4252_2932#" "m1_5242_2931#" 13.3814
+cap "w_4307_3454#" "m1_4141_3288#" 0.162866
+cap "CLK" "m1_6308_2593#" 0.719893
+cap "m1_3186_3296#" "m1_4141_3288#" 106.323
+cap "Q2" "m1_5141_3656#" 113.777
+cap "CLK" "m1_5141_3656#" 1.91721
+cap "m1_6655_1588#" "m1_3186_3296#" 1.65599
+cap "RST" "Q1" 6.30728
+cap "m1_493_1528#" "m1_3186_3296#" 221.897
+cap "m1_6995_3433#" "VDD" 5.67684
+cap "m1_6963_2592#" "VDD" 66.9755
+cap "m1_6163_1994#" "m1_6308_2593#" 9.65473
+cap "m1_5258_3630#" "w_6339_3684#" 0.0146008
+cap "m1_2897_1989#" "RST" 1.32272
+cap "w_5252_3686#" "m1_5141_3656#" 0.256598
+cap "Q2" "m1_3186_3296#" 38.8019
+cap "m1_5258_3630#" "m1_6330_3636#" 8.11131
+cap "CLK" "w_4307_3454#" 0.0185033
+cap "CLK" "m1_3186_3296#" 1486.29
+cap "m1_6163_1994#" "m1_5141_3656#" 4.54981
+cap "m1_6135_11#" "m1_3186_3296#" 10.6316
+cap "VDD" "RST" 0.96798
+cap "m1_3273_2930#" "CLK" 31.1407
+cap "m1_3331_3817#" "Q0" 2.78551
+cap "VDD" "w_6979_3700#" 0.431424
+cap "m1_494_439#" "m1_6655_1588#" 0.0376226
+cap "m1_6995_3433#" "w_6339_3684#" 0.0525336
+cap "m1_5258_3630#" "Q0" 3.4821
+cap "VSS" "m1_494_439#" 128.451
+cap "m1_493_1528#" "m1_494_439#" 56.986
+cap "m1_6308_2593#" "m1_5141_3656#" 0.15743
+cap "m1_n336_1288#" "m1_3186_3296#" 0.438237
+cap "m1_4141_3288#" "Q1" 154.309
+cap "w_2736_3479#" "Q1" 11.2708
+cap "m1_3273_2930#" "m1_n336_1288#" 5.25331
+cap "m1_6163_1994#" "m1_3186_3296#" 55.5201
+cap "w_6339_3684#" "m1_6234_3107#" 0.41639
+cap "Q2" "m1_494_439#" 6.83869
+cap "m1_5258_3630#" "m1_5242_2931#" 14.0837
+cap "m1_6234_3107#" "m1_6330_3636#" 0.594235
+cap "m1_6135_11#" "m1_494_439#" 128.451
+cap "m1_6330_3636#" "w_6979_3700#" 0.119239
+cap "m1_6655_1588#" "Q1" 0.612236
+cap "m1_6308_2593#" "m1_3186_3296#" 19.6249
+cap "m1_493_1528#" "Q1" 16.2888
+cap "CLK" "w_3326_3454#" 0.0264371
+cap "Q0" "RST" 96.8884
+cap "m1_2897_1989#" "m1_493_1528#" 3.71183
+cap "m1_3186_3296#" "m1_5141_3656#" 23.9761
+cap "m1_4252_2932#" "m1_4141_3288#" 30.7896
+cap "CLK" "Q1" 894.579
+cap "m1_4307_3817#" "w_4307_3454#" 1.29972
+cap "w_6339_3684#" "m1_4141_3288#" 0.0803295
+cap "m1_6135_11#" "Q1" 0.0819923
+cap "m1_6979_3700#" "m1_5141_3656#" 4.85836
+cap "CLK" "m1_2897_1989#" 251.602
+cap "m1_5242_2931#" "m1_6234_3107#" 6.72943
+cap "Q2" "VDD" 42.9618
+cap "CLK" "VDD" 0.398702
+cap "w_5252_3686#" "Q1" 0.00737518
+cap "m1_3273_2930#" "m1_3186_3296#" 53.9303
+cap "m1_6163_1994#" "Q1" 11.8725
+cap "Q0" "m1_4141_3288#" 48.1827
+cap "CLK" "m1_4252_2932#" 2.75902
+cap "m1_6995_3433#" "m1_6963_2592#" 15.686
+cap "m1_6163_1994#" "VDD" 7.03845
+cap "m1_5242_2931#" "m1_4141_3288#" 29.9885
+cap "CLK" "m1_6330_3636#" 0.0319102
+cap "VSS" "Q0" 0.954888
+cap "m1_494_439#" "m1_3186_3296#" 129.527
+cap "Q0" "m1_493_1528#" 149.342
+cap "m1_6995_3433#" "w_6979_3700#" 2.05367
+cap "m1_6963_2592#" "m1_6234_3107#" 3.39796
+cap "m1_4307_3817#" "Q1" 0.102721
+cap "CLK" "Q0" 448.529
+cap "m1_5258_3630#" "m1_4141_3288#" 2.544
+cap "w_3326_3454#" "m1_3186_3296#" 0.0715027
+cap "VDD" "m1_5141_3656#" 5.70818
+cap "m1_6163_1994#" "m1_6330_3636#" 2.23078
+cap "m1_3273_2930#" "w_3326_3454#" 0.456092
+cap "Q2" "m1_5242_2931#" 0.252684
+cap "w_4307_3454#" "Q1" 0.727313
+cap "m1_3186_3296#" "Q1" 364.702
+cap "CLK" "m1_5242_2931#" 0.579945
+cap "w_6339_3684#" "m1_6308_2593#" 0.523548
+cap "m1_3273_2930#" "Q1" 2.75943
+cap "m1_n336_1288#" "Q0" 40.9083
+cap "Q0" "w_5252_3686#" 0.121784
+cap "m1_2897_1989#" "m1_3186_3296#" 17.6028
+cap "m1_3273_2930#" "m1_2897_1989#" 5.20869
+cap "m1_6308_2593#" "m1_6330_3636#" 5.50248
+cap "w_6339_3684#" "m1_5141_3656#" 0.888944
+cap "VDD" "m1_3186_3296#" 2.46153
+cap "m1_4307_3817#" "m1_4252_2932#" 0.486422
+cap "m1_5141_3656#" "m1_6330_3636#" 54.9171
+cap "w_5252_3686#" "m1_5242_2931#" 0.212063
+cap "VDD" "m1_6979_3700#" 23.949
+cap "m1_4252_2932#" "w_4307_3454#" 0.465948
+cap "m1_494_439#" "Q1" 7.35735
+cap "m1_4252_2932#" "m1_3186_3296#" 4.3511
+cap "m1_6963_2592#" "m1_493_1528#" 2.56738
+cap "m1_6655_1588#" "RST" 0.284878
+cap "m1_3273_2930#" "m1_4252_2932#" 13.504
+cap "w_6339_3684#" "m1_3186_3296#" 0.172727
+cap "Q0" "m1_5141_3656#" 9.48432
+cap "Q2" "m1_6995_3433#" 0.163395
+cap "VSS" "RST" 9.93869
+cap "Q2" "m1_6963_2592#" 21.7053
+cap "m1_5258_3630#" "w_5252_3686#" 5.54322
+cap "m1_3186_3296#" "m1_6330_3636#" 0.255432
+cap "m1_493_1528#" "RST" 1552.59
+cap "m1_6308_2593#" "m1_5242_2931#" 4.89655
+cap "w_6339_3684#" "m1_6979_3700#" 0.0310174
+cap "m1_4307_3817#" "Q0" 2.5488
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/IN1" 0.103129
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 1.29495
+cap "JK_FF_mag_0/nand3_mag_2/IN1" "and2_mag_0/VSS" -13.0996
+cap "JK_FF_mag_0/nand3_mag_2/VDD" "JK_FF_mag_0/K" 77.1849
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_2/VDD" 14.6089
+cap "JK_FF_mag_0/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_0/K" 2.56457
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_0/OUT" 0.148769
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand3_mag_2/OUT" -0.177684
+cap "JK_FF_mag_0/nand3_mag_0/OUT" "JK_FF_mag_0/K" 6.73401
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/nand3_mag_2/IN1" -2.84217e-14
+cap "JK_FF_mag_0/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_0/J" 0.264925
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 3.25124
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/K" -1.71242
+cap "JK_FF_mag_0/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_0/K" 1.28165
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.377196
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/RST" 0.0534796
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" 12.1111
+cap "JK_FF_mag_0/nand3_mag_0/IN1" "JK_FF_mag_0/K" 31.3816
+cap "and2_mag_0/VSS" "JK_FF_mag_0/K" 68.8446
+cap "JK_FF_mag_0/J" "and2_mag_0/VSS" 157.103
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/K" 111.517
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/J" 17.3378
+cap "JK_FF_mag_0/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_0/K" 0.15064
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.139264
+cap "JK_FF_mag_0/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_0/K" 1.28165
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" 8.85534
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/K" 3.81502
+cap "JK_FF_mag_0/nand3_mag_1/OUT" "JK_FF_mag_0/K" 1.37873
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/VDD" 0.24746
+cap "JK_FF_mag_0/CLK" "and2_mag_0/VSS" -8.53427
+cap "JK_FF_mag_0/nand3_mag_2/IN1" "JK_FF_mag_0/nand3_mag_2/VDD" -0.040177
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/OUT" 0.000899125
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_2/OUT" 13.7895
+cap "JK_FF_mag_0/nand3_mag_2/IN1" "JK_FF_mag_0/K" 11.4903
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_1/IN2" 0.05206
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_2/IN1" 114.697
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_2/OUT" 15.5668
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/IN1" 0.964401
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/QB" -0.0461172
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_2/OUT" 2.38762
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/QB" -5.16426
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/RST" -0.807643
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/nand3_mag_2/OUT" -0.523289
+cap "and2_mag_0/VSS" "JK_FF_mag_0/Q" -78.496
+cap "JK_FF_mag_0/J" "and2_mag_0/VSS" 244.235
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/nand2_mag_4/IN2" -0.00191049
+cap "JK_FF_mag_0/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_0/RST" 0.0475646
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/Q" 1.64157
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 0.217088
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -1.77636e-15
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/J" -7.33339
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_1/IN2" 6.13539
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/IN1" 81.5191
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_4/IN2" 2.83939
+cap "JK_FF_mag_0/nand3_mag_1/OUT" "JK_FF_mag_0/RST" 51.4666
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 2.349
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand3_mag_0/OUT" 0.0686395
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand2_mag_3/nmos_3p3_5QNVWA_0/a_28_n44#" 1.14224
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/nmos_3p3_VGTVWA_0/a_28_n66#" 0.957302
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_0/OUT" 4.16972
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/Q" 605.837
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/RST" 52.9232
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/nand3_mag_1/OUT" -0.118355
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.532563
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/IN1" 0.724198
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand2_mag_1/IN2" 0.0126851
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/RST" 79.2974
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/nand3_mag_1/OUT" -2.33829
+cap "JK_FF_mag_0/nand3_mag_2/OUT" "JK_FF_mag_0/RST" 2.22095
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand2_mag_4/IN2" 2.30826
+cap "and2_mag_0/VSS" "JK_FF_mag_0/RST" 9.71671
+cap "JK_FF_mag_0/GF_INV_MAG_0/OUT" "JK_FF_mag_0/nand3_mag_1/OUT" -0.00281209
+cap "JK_FF_mag_0/GF_INV_MAG_0/OUT" "JK_FF_mag_0/RST" 77.469
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.436009
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/VDD" -3.59474
+cap "JK_FF_mag_0/nand3_mag_2/OUT" "JK_FF_mag_0/VDD" -5.68434e-14
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/OUT" 82.6668
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/RST" 1.15302
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_0/OUT" 0.00223855
+cap "and2_mag_0/VSS" "JK_FF_mag_0/QB" -0.433191
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.957302
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -0.254004
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/VDD" 159.538
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -0.0506829
+cap "JK_FF_mag_0/nand3_mag_2/OUT" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -0.00390907
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/QB" 60.2299
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_2/OUT" 7.4741
+cap "JK_FF_mag_0/nand2_mag_3/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_0/RST" 0.993084
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 1.10678
+cap "JK_FF_mag_0/nand3_mag_1/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_0/RST" 0.858007
+cap "JK_FF_mag_0/K" "and2_mag_0/VSS" 36.7065
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/Q" 15.5474
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/RST" 0.0566551
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/RST" -21.0367
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/OUT" 5.06663
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/nand3_mag_1/OUT" -1.16271
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/RST" 69.8267
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 90.3878
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/nand2_mag_4/IN2" 18.3439
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/VDD" 0.101621
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/Q" 0.206095
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/VDD" -1.69112
+cap "m1_493_1528#" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 2.75646
+cap "m1_494_439#" "JK_FF_mag_0/RST" -4.69514
+cap "m1_493_1528#" "JK_FF_mag_0/QB" 71.9158
+cap "m1_493_1528#" "JK_FF_mag_0/nand2_mag_1/IN2" 0.894033
+cap "JK_FF_mag_0/QB" "JK_FF_mag_1/CLK" 0.0145491
+cap "JK_FF_mag_0/nand2_mag_4/IN2" "JK_FF_mag_0/RST" 8.02435
+cap "m1_493_1528#" "JK_FF_mag_0/VDD" 71.2914
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_2/IN1" -0.00720777
+cap "JK_FF_mag_0/Q" "JK_FF_mag_0/QB" 3.14658
+cap "JK_FF_mag_0/Q" "JK_FF_mag_1/nand3_mag_2/OUT" 21.8066
+cap "m1_494_439#" "JK_FF_mag_0/nand2_mag_4/IN2" 0.72832
+cap "JK_FF_mag_0/Q" "JK_FF_mag_0/VDD" 6.55999
+cap "JK_FF_mag_1/nand3_mag_0/IN1" "JK_FF_mag_0/Q" 0.00226143
+cap "JK_FF_mag_0/Q" "JK_FF_mag_0/RST" 70.5654
+cap "m1_493_1528#" "m1_494_439#" -2.18764
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" 0.0130575
+cap "m1_494_439#" "JK_FF_mag_1/CLK" 0.268426
+cap "m1_493_1528#" "JK_FF_mag_0/nand2_mag_4/IN2" 1.8048
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_2/VDD" -0.0545076
+cap "m1_494_439#" "JK_FF_mag_0/Q" 170.875
+cap "JK_FF_mag_0/nand2_mag_4/IN2" "JK_FF_mag_0/Q" 0.0487892
+cap "m1_493_1528#" "JK_FF_mag_1/CLK" 3.68885
+cap "m1_493_1528#" "JK_FF_mag_0/Q" 59.9454
+cap "and2_mag_0/VSS" "JK_FF_mag_0/QB" 27.3959
+cap "JK_FF_mag_0/Q" "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.492914
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_2/OUT" -0.0989839
+cap "JK_FF_mag_0/Q" "JK_FF_mag_1/CLK" 104.837
+cap "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_0/QB" 0.0113322
+cap "JK_FF_mag_0/QB" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" 0.00899143
+cap "and2_mag_0/VSS" "JK_FF_mag_0/VDD" 69.9919
+cap "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_0/Q" 0.388665
+cap "and2_mag_0/VSS" "JK_FF_mag_0/RST" 37.4624
+cap "m1_493_1528#" "JK_FF_mag_0/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 1.10678
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" 1.00408
+cap "and2_mag_0/VSS" "m1_494_439#" 154.329
+cap "JK_FF_mag_0/nand3_mag_2/OUT" "JK_FF_mag_0/QB" -0.00167406
+cap "JK_FF_mag_1/nand3_mag_2/VDD" "JK_FF_mag_0/RST" 5.5173
+cap "m1_494_439#" "JK_FF_mag_0/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" 1.14224
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand2_mag_4/IN2" 0.0948021
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/nand2_mag_1/IN2" -0.0780445
+cap "JK_FF_mag_1/nand3_mag_2/VDD" "m1_494_439#" 4.02079
+cap "JK_FF_mag_0/Q" "JK_FF_mag_1/nand3_mag_2/IN1" 11.0433
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/QB" 0.000330913
+cap "m1_493_1528#" "and2_mag_0/VSS" 48.4758
+cap "and2_mag_0/VSS" "JK_FF_mag_1/CLK" -0.0460046
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/QB" 88.9076
+cap "JK_FF_mag_0/nand3_mag_1/OUT" "JK_FF_mag_0/QB" -0.000893873
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/nand2_mag_1/IN2" 0.0366592
+cap "and2_mag_0/VSS" "JK_FF_mag_0/Q" 214.637
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/RST" 17.4159
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "JK_FF_mag_0/QB" 0.00446044
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_2/VDD" 14.3952
+cap "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_0/Q" 3.82094
+cap "m1_494_439#" "JK_FF_mag_0/QB" 5.46274
+cap "m1_494_439#" "JK_FF_mag_0/nand2_mag_1/IN2" 0.00820803
+cap "m1_494_439#" "JK_FF_mag_0/VDD" 5.08234
+cap "JK_FF_mag_1/nand3_mag_2/VDD" "JK_FF_mag_0/Q" 118.723
+cap "JK_FF_mag_1/nand3_mag_2/OUT" "m1_494_439#" 9.49855
+cap "m1_3186_3296#" "JK_FF_mag_1/Q" 0.00412159
+cap "JK_FF_mag_1/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_1/QB" -0.00417311
+cap "m1_493_1528#" "JK_FF_mag_1/Q" 6.03927
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" 0.263027
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "JK_FF_mag_1/Q" 0.0697362
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/Q" 55.4465
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 1.56121
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/Q" 0.0305813
+cap "m1_3186_3296#" "JK_FF_mag_1/nand3_mag_1/IN1" 0.0387855
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_1/IN1" 81.4619
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -0.030647
+cap "m1_3186_3296#" "JK_FF_mag_1/RST" -0.964481
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/Q" -0.321416
+cap "m1_3186_3296#" "JK_FF_mag_1/nand3_mag_1/OUT" 0.00415559
+cap "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" "m1_494_439#" 5.61192
+cap "m1_493_1528#" "JK_FF_mag_1/RST" 1.17672
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_1/OUT" 79.2516
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" 5.61192
+cap "JK_FF_mag_1/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_1/RST" 0.862761
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_1/IN1" 71.1383
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/nand3_mag_1/IN1" -1.09551
+cap "and2_mag_0/VSS" "JK_FF_mag_1/Q" -64.2089
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "m1_493_1528#" 149.111
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_1/OUT" 63.2907
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_1/QB" -0.00382097
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/nand3_mag_1/IN1" -1.69819
+cap "JK_FF_mag_1/CLK" "JK_FF_mag_1/Q" 2.84217e-14
+cap "m1_493_1528#" "and2_mag_0/VSS" 31.3617
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_1/nmos_3p3_VGTVWA_0/a_28_n66#" 0.83635
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/RST" 58.1195
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/nand3_mag_1/OUT" -0.408538
+cap "m1_3186_3296#" "JK_FF_mag_1/CLK" 0.00412159
+cap "m1_493_1528#" "JK_FF_mag_1/CLK" 66.9059
+cap "and2_mag_0/VSS" "JK_FF_mag_1/RST" 12.8206
+cap "JK_FF_mag_1/Q" "JK_FF_mag_0/Q" 9.1942
+cap "JK_FF_mag_1/CLK" "JK_FF_mag_1/nand3_mag_1/IN1" 0.0313987
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/CLK" 39.3801
+cap "JK_FF_mag_1/CLK" "JK_FF_mag_1/nand3_mag_1/OUT" 0.00219867
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "m1_493_1528#" 9.05624
+cap "m1_494_439#" "JK_FF_mag_1/Q" 469.128
+cap "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_0/Q" 0.295283
+cap "m1_493_1528#" "JK_FF_mag_0/Q" 0.440613
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/CLK" -20.8471
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "JK_FF_mag_1/RST" 0.00993966
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.374551
+cap "JK_FF_mag_1/RST" "JK_FF_mag_0/Q" -1.58408
+cap "m1_493_1528#" "JK_FF_mag_1/QB" 79.8457
+cap "JK_FF_mag_1/nand3_mag_2/OUT" "JK_FF_mag_1/Q" -5.68434e-14
+cap "m1_493_1528#" "m1_494_439#" -6.14115
+cap "JK_FF_mag_1/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" "m1_494_439#" 0.83635
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "JK_FF_mag_1/QB" -5.07346
+cap "and2_mag_0/VSS" "JK_FF_mag_1/CLK" -25.0044
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_1/IN1" 0.699178
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/nand3_mag_0/OUT" 0.00614038
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_0/Q" 1.0563
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/QB" 130.93
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/QB" -2.46891
+cap "JK_FF_mag_1/RST" "m1_494_439#" -23.7681
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_2/OUT" 12.0878
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "m1_494_439#" 4.19251
+cap "JK_FF_mag_1/nand3_mag_2/OUT" "JK_FF_mag_1/nand3_mag_1/IN1" -0.514267
+cap "m1_493_1528#" "JK_FF_mag_1/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.433026
+cap "and2_mag_0/VSS" "JK_FF_mag_0/Q" 0.215621
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/QB" -3.51703
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "m1_494_439#" 5.18717
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_2/OUT" 43.348
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" 1.34178
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.00596158
+cap "JK_FF_mag_1/CLK" "JK_FF_mag_0/Q" 98.3563
+cap "and2_mag_0/VSS" "JK_FF_mag_1/QB" -0.446729
+cap "m1_493_1528#" "JK_FF_mag_1/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 1.09747
+cap "and2_mag_0/VSS" "m1_494_439#" 242.64
+cap "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_1/Q" -4.44089e-16
+cap "m1_493_1528#" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 2.917
+cap "JK_FF_mag_1/CLK" "m1_494_439#" 13.3278
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "JK_FF_mag_0/Q" 0.0715016
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_2/OUT" -0.0989839
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.059647
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" 1.93861
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "m1_494_439#" 0.149724
+cap "m1_494_439#" "JK_FF_mag_0/Q" 0.149245
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" 1.93861
+cap "JK_FF_mag_0/QB" "JK_FF_mag_1/Q" 0.105731
+cap "m1_493_1528#" "JK_FF_mag_1/nand2_mag_1/IN2" 1.61808
+cap "JK_FF_mag_1/nand3_mag_2/OUT" "JK_FF_mag_0/Q" 11.4746
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand2_mag_4/IN2" 0.0100785
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_1/nmos_3p3_VGTVWA_0/a_28_n66#" 0.862761
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/nand2_mag_1/IN2" -0.0563421
+cap "JK_FF_mag_1/VDD" "JK_FF_mag_1/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 1.09747
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "m1_494_439#" 0.0183974
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/VDD" 0.374213
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/nand3_mag_2/IN1" 3.64535
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/J" 171.039
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.428377
+cap "JK_FF_mag_1/VDD" "and2_mag_2/VSS" 49.4401
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/QB" 0.0142246
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_2/J" 0.0387855
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_2/CLK" 0.00219867
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/nand3_mag_2/VDD" 0.457116
+cap "JK_FF_mag_1/RST" "JK_FF_mag_2/J" -11.0107
+cap "JK_FF_mag_1/QB" "and2_mag_2/VSS" 13.3935
+cap "m1_494_439#" "and2_mag_2/VSS" 138.742
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" 0.332331
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand2_mag_1/IN2" 0.0927701
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/VDD" 74.4587
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/Q" 0.439681
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/VDD" 1.68188
+cap "JK_FF_mag_1/VDD" "m1_494_439#" 0.498613
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_1/VDD" 4.92532
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/nand3_mag_2/OUT" -0.00334812
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/nand2_mag_3/IN1" 0.0376535
+cap "JK_FF_mag_1/Q" "and2_mag_2/VSS" -41.8114
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/QB" -0.00178775
+cap "JK_FF_mag_1/QB" "m1_494_439#" 5.22435
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "m1_494_439#" 0.226047
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "m1_494_439#" 2.64961
+cap "JK_FF_mag_1/Q" "JK_FF_mag_1/VDD" 65.9653
+cap "JK_FF_mag_1/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" "m1_494_439#" 0.994924
+cap "JK_FF_mag_1/RST" "and2_mag_2/VSS" 6.49491
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_1/VDD" 87.788
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_2/VDD" 7.84005
+cap "JK_FF_mag_1/Q" "JK_FF_mag_1/QB" 4.56079
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_1/nand3_mag_2/OUT" -0.00390907
+cap "JK_FF_mag_1/Q" "m1_494_439#" 340.285
+cap "JK_FF_mag_1/QB" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.0108491
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/VDD" 29.4545
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_1/Q" 0.0305813
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/nand3_mag_2/OUT" 0.0136658
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/nand2_mag_3/IN1" -0.00281209
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/nand2_mag_3/IN1" -0.0231596
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/J" 20.3711
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "m1_494_439#" 0.191312
+cap "JK_FF_mag_1/nand2_mag_3/nmos_3p3_5QNVWA_0/a_28_n44#" "m1_494_439#" 0.994924
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/QB" 110.506
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_1/OUT" 4.26048
+cap "JK_FF_mag_1/RST" "m1_494_439#" -9.96963
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.41458
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_1/RST" 26.5584
+cap "JK_FF_mag_2/J" "and2_mag_2/VSS" 22.1926
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" 1.01048
+cap "JK_FF_mag_1/Q" "JK_FF_mag_1/nand2_mag_3/IN1" 2.74896
+cap "JK_FF_mag_2/J" "JK_FF_mag_1/VDD" 64.3281
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/Q" 76.6469
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "JK_FF_mag_1/VDD" 5.51384
+cap "JK_FF_mag_1/QB" "JK_FF_mag_2/J" 13.2773
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand2_mag_3/IN1" 75.8212
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_2/OUT" 0.926767
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_2/J" 0.00415559
+cap "JK_FF_mag_2/CLK" "and2_mag_2/VSS" -0.109815
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand2_mag_3/nmos_3p3_5QNVWA_0/a_28_n44#" 1.00202
+cap "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_1/QB" 0.00876105
+cap "JK_FF_mag_1/Q" "JK_FF_mag_1/nand2_mag_4/VDD" 0.697946
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/nand3_mag_2/OUT" 2.84217e-14
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_1/OUT" 29.4003
+cap "JK_FF_mag_1/Q" "JK_FF_mag_1/nand2_mag_4/VSS" 2.71132
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/RST" 0.622322
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/nand2_mag_4/VDD" 0.534232
+cap "JK_FF_mag_1/Q" "JK_FF_mag_2/Q" 3.60627
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.273098
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/RST" 2.20445
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.962799
+cap "JK_FF_mag_1/nand2_mag_4/VSS" "JK_FF_mag_1/QB" 9.63005
+cap "JK_FF_mag_2/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_2/RST" 0.862761
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_1/nand2_mag_4/VDD" 1.73602
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" 5.61192
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_1/nand2_mag_4/VDD" 1.22251
+cap "JK_FF_mag_2/nand2_mag_1/IN2" "JK_FF_mag_1/nand2_mag_4/VDD" 0.0456566
+cap "JK_FF_mag_2/Q" "JK_FF_mag_1/QB" 0.0856874
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_0/OUT" 0.027255
+cap "JK_FF_mag_2/nand2_mag_4/IN2" "JK_FF_mag_1/nand2_mag_4/VDD" 0.00596405
+cap "JK_FF_mag_2/J" "JK_FF_mag_1/nand2_mag_4/VDD" 22.2563
+cap "JK_FF_mag_2/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_1/nand2_mag_4/VDD" 0.121452
+cap "JK_FF_mag_1/nand2_mag_4/VDD" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 1.54144
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_0/OUT" 5.35705
+cap "JK_FF_mag_2/RST" "JK_FF_mag_1/nand2_mag_4/VDD" 66.3551
+cap "JK_FF_mag_2/J" "JK_FF_mag_1/nand2_mag_4/VSS" 114.626
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/OUT" 0.0087693
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/QB" -2.44543
+cap "JK_FF_mag_2/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_1/nand2_mag_4/VDD" 0.131844
+cap "JK_FF_mag_1/nand2_mag_4/VSS" "JK_FF_mag_2/RST" 45.422
+cap "JK_FF_mag_2/nand2_mag_4/IN2" "JK_FF_mag_2/QB" -0.00573146
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/Q" 9.60171
+cap "JK_FF_mag_1/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_1/nand2_mag_4/VDD" 0.144734
+cap "JK_FF_mag_2/nand3_mag_0/OUT" "JK_FF_mag_1/nand2_mag_4/VDD" 1.54499
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/QB" 2.83112
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.374551
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/RST" 49.2878
+cap "JK_FF_mag_2/nand3_mag_1/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_2/QB" 0.83635
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/RST" 81.8313
+cap "JK_FF_mag_1/nand2_mag_4/VSS" "JK_FF_mag_1/nand2_mag_4/VDD" 123.921
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 0.527566
+cap "JK_FF_mag_2/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" "JK_FF_mag_2/RST" 1.93861
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_2/OUT" 15.8539
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_0/OUT" 0.149724
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/RST" 0.916972
+cap "JK_FF_mag_2/Q" "JK_FF_mag_1/nand2_mag_4/VDD" -0.033445
+cap "JK_FF_mag_2/nand3_mag_2/OUT" "JK_FF_mag_2/RST" 44.5812
+cap "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_2/RST" 0.803644
+cap "JK_FF_mag_2/QB" "JK_FF_mag_1/nand2_mag_4/VDD" 9.59528
+cap "JK_FF_mag_2/Q" "JK_FF_mag_1/nand2_mag_4/VSS" -32.9199
+cap "JK_FF_mag_2/QB" "JK_FF_mag_1/nand2_mag_4/VSS" 233.936
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_1/nand2_mag_4/VDD" 3.51627
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/J" 31.3332
+cap "JK_FF_mag_2/nand3_mag_2/OUT" "JK_FF_mag_1/nand2_mag_4/VDD" 0.173047
+cap "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_1/nand2_mag_4/VDD" 1.12151
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/QB" 240.411
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/RST" 53.1553
+cap "JK_FF_mag_1/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_1/nand2_mag_4/VSS" 0.0102743
+cap "JK_FF_mag_2/nand3_mag_2/OUT" "JK_FF_mag_1/nand2_mag_4/VSS" -0.693699
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_2/nmos_3p3_VGTVWA_0/a_n116_n66#" 5.61192
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/QB" -0.035222
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/nand2_mag_4/VDD" 51.0935
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_2/OUT" 9.49855
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" 0.263027
+cap "JK_FF_mag_1/nand2_mag_4/IN2" "JK_FF_mag_1/nand2_mag_4/VSS" 0.0744907
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/nand2_mag_4/VSS" -2.54446
+cap "JK_FF_mag_2/J" "JK_FF_mag_1/Q" 1.90986
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "JK_FF_mag_1/nand2_mag_4/VDD" 0.162286
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/Q" 0.00513767
+cap "JK_FF_mag_2/nand3_mag_2/nmos_3p3_VGTVWA_0/a_28_n66#" "JK_FF_mag_2/RST" 1.93861
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/QB" 13.5664
+cap "JK_FF_mag_2/J" "JK_FF_mag_1/QB" 0.172825
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/nand3_mag_1/OUT" -0.149156
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/VSS" 2.48312
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/QB" 2.05227
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/Q" 0.0313939
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/GF_INV_MAG_0/OUT" -0.721317
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/VSS" -76.6503
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/VSS" 241.89
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/nand3_mag_1/IN1" -0.996075
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/VDD" -0.0366632
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand2_mag_4/IN2" 0.50373
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/Q" 0.63074
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/QB" 11.5427
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/nand2_mag_4/IN2" 0.0313939
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand2_mag_4/IN2" 2.64961
+cap "JK_FF_mag_2/nand3_mag_2/OUT" "JK_FF_mag_2/QB" -0.00502217
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_1/IN1" 34.82
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/Q" 622.05
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/RST" 22.4082
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" 0.994924
+cap "JK_FF_mag_2/nand3_mag_2/OUT" "JK_FF_mag_2/nand3_mag_1/IN1" -0.514267
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/nand3_mag_1/IN1" 0.0723862
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/IN1" -1.91013
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/QB" -2.78353
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/Q" 0.328145
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/nand3_mag_1/IN1" -1.66957
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand2_mag_3/nmos_3p3_5QNVWA_0/a_28_n44#" 0.994924
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_1/nmos_3p3_VGTVWA_0/a_28_n66#" 0.719702
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/nmos_3p3_VGTVWA_0/a_28_n66#" 0.83635
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/GF_INV_MAG_0/OUT" -0.00281209
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 2.06744
+cap "JK_FF_mag_2/nand3_mag_2/OUT" "JK_FF_mag_2/GF_INV_MAG_0/OUT" -0.00390907
+cap "JK_FF_mag_2/nand2_mag_1/IN2" "JK_FF_mag_2/QB" -0.0418069
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/RST" 12.8787
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 2.75806
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 0.168153
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/RST" 0.0579936
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/Q" 49.1177
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/OUT" 0.000953098
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/IN1" 0.0710041
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/VDD" 6.06129
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/nand3_mag_1/VSS" 18.8037
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/nand3_mag_1/VDD" 0.209349
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/nand3_mag_0/IN1" 2.15319
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/OUT" 1.30912
+cap "JK_FF_mag_0/GF_INV_MAG_0/OUT" "JK_FF_mag_0/nand3_mag_0/IN1" -0.0440277
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/VDD" 296.409
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/IN1" 2.27815
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -35.0302
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/K" 84.5667
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 17.5055
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/nand3_mag_1/OUT" 0.300311
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand3_mag_0/IN1" 0.151038
+cap "JK_FF_mag_0/VDD" "and2_mag_0/VSS" 138.8
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/nand3_mag_1/IN1" 0.31041
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 209.606
+cap "JK_FF_mag_0/K" "and2_mag_0/VSS" 9.71811
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/K" 0.502692
+cap "JK_FF_mag_0/nand3_mag_2/VDD" "JK_FF_mag_0/K" 3.007
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.851757
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_0/IN1" 0.00146548
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_0/OUT" 12.8343
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" 0.541426
+cap "JK_FF_mag_0/CLK" "and2_mag_0/VSS" 24.3661
+cap "JK_FF_mag_0/GF_INV_MAG_0/OUT" "and2_mag_0/VSS" 15.7474
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/nand3_mag_2/VDD" -2.19851
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/J" -1.41513
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 0.130649
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_0/IN1" 3.86502
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/K" 8.64575
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/nand3_mag_0/OUT" 8.99788
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.121584
+cap "JK_FF_mag_0/nand3_mag_0/OUT" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -0.62022
+cap "JK_FF_mag_0/CLK" "JK_FF_mag_0/J" 1.50684
+cap "and2_mag_0/IN2" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 7.00896
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand3_mag_0/OUT" 3.06082
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -46.0433
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_4/IN2" 0.0123411
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -0.18292
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand3_mag_1/IN1" 0.987024
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/OUT" 0.00683605
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_1/IN2" 4.44438
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/nand2_mag_1/IN2" 5.68434e-14
+cap "and2_mag_1/IN2" "and2_mag_0/VDD" 0.864037
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 3.0597
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/K" 0.0539328
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/IN1" 0.0612451
+cap "and2_mag_0/VSS" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 0.178735
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand2_mag_1/IN2" 0.0879684
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/nand3_mag_1/OUT" -5.68434e-14
+cap "and2_mag_1/IN2" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 231.498
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand3_mag_1/IN1" 0.154085
+cap "JK_FF_mag_0/nand2_mag_4/IN2" "and2_mag_1/IN2" 0.0635788
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand2_mag_1/IN2" 8.16402
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand3_mag_1/IN1" 4.13342
+cap "JK_FF_mag_0/VDD" "and2_mag_0/IN2" 58.5266
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/GF_INV_MAG_0/OUT" 0.0153847
+cap "JK_FF_mag_0/nand3_mag_1/OUT" "JK_FF_mag_0/RST" 1.9078
+cap "and2_mag_0/IN2" "JK_FF_mag_0/QB" 0.362186
+cap "and2_mag_0/VDD" "JK_FF_mag_0/nand2_mag_1/IN2" 0.0205957
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand2_mag_1/IN2" 0.0134536
+cap "JK_FF_mag_0/J" "JK_FF_mag_0/nand3_mag_1/IN1" 0.0134536
+cap "and2_mag_1/IN2" "JK_FF_mag_0/RST" -2.49323
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand3_mag_1/OUT" 0.339606
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/nand3_mag_1/OUT" -0.0399811
+cap "and2_mag_0/IN2" "and2_mag_0/VSS" 0.0802254
+cap "JK_FF_mag_0/VDD" "and2_mag_0/VSS" 39.7012
+cap "JK_FF_mag_0/QB" "JK_FF_mag_0/nand3_mag_1/OUT" -1.70207
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/GF_INV_MAG_0/OUT" -0.151162
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand3_mag_0/OUT" 0.442781
+cap "and2_mag_0/IN2" "and2_mag_1/IN2" 0.0186033
+cap "JK_FF_mag_0/VDD" "and2_mag_1/IN2" 347.632
+cap "JK_FF_mag_0/GF_INV_MAG_0/OUT" "JK_FF_mag_0/RST" 0.753141
+cap "JK_FF_mag_0/K" "JK_FF_mag_0/nand3_mag_1/OUT" 0.860455
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand3_mag_1/OUT" 0.178735
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "JK_FF_mag_0/RST" 0.0622431
+cap "and2_mag_1/IN2" "JK_FF_mag_0/K" -2.84091
+cap "JK_FF_mag_0/nand3_mag_1/IN1" "JK_FF_mag_0/RST" 0.0619134
+cap "JK_FF_mag_0/nand3_mag_0/OUT" "JK_FF_mag_0/K" 0.0285346
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand3_mag_1/OUT" 1.42797
+cap "and2_mag_0/VSS" "and2_mag_1/IN2" 4.07296
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand3_mag_0/OUT" 0.154085
+cap "m1_494_439#" "JK_FF_mag_0/QB" 0.0153847
+cap "and2_mag_0/IN2" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 46.7493
+cap "and2_mag_1/IN2" "and2_mag_0/OUT" 4.95916
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand2_mag_1/IN2" 0.979827
+cap "JK_FF_mag_1/nand3_mag_2/VDD" "and2_mag_0/OUT" 0.214066
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "JK_FF_mag_0/QB" 0.00152784
+cap "and2_mag_1/IN2" "JK_FF_mag_1/nand3_mag_2/VDD" -4.87215
+cap "JK_FF_mag_0/VDD" "and2_mag_0/OUT" 12.4022
+cap "m1_493_1528#" "JK_FF_mag_0/QB" 0.257268
+cap "and2_mag_0/IN2" "and2_mag_0/OUT" -0.0174809
+cap "and2_mag_1/IN2" "JK_FF_mag_0/VDD" 157.365
+cap "and2_mag_0/OUT" "and2_mag_0/IN1" 2.51291
+cap "and2_mag_0/IN2" "and2_mag_1/IN2" 173.106
+cap "and2_mag_0/VDD" "JK_FF_mag_0/QB" 0.0321051
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_1/IN2" 4.93115
+cap "and2_mag_1/IN2" "and2_mag_0/IN1" 1.78214
+cap "and2_mag_1/IN2" "JK_FF_mag_0/RST" 0.142166
+cap "and2_mag_0/GF_INV_MAG_0/IN" "and2_mag_1/IN2" 2.64049
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand3_mag_2/VDD" 3.60392
+cap "and2_mag_0/IN2" "JK_FF_mag_0/VDD" 271.946
+cap "JK_FF_mag_0/VDD" "and2_mag_0/IN1" -0.933222
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/VDD" -0.87846
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.805866
+cap "and2_mag_0/VSS" "JK_FF_mag_0/QB" 0.2217
+cap "and2_mag_0/IN2" "JK_FF_mag_0/RST" -0.465732
+cap "and2_mag_0/IN2" "and2_mag_0/IN1" 0.075487
+cap "and2_mag_0/IN2" "and2_mag_0/GF_INV_MAG_0/IN" 0.107033
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_1/IN2" 0.223231
+cap "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/OUT" 0.748153
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "JK_FF_mag_1/nand3_mag_0/OUT" -0.450759
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 1.20435
+cap "and2_mag_1/IN2" "and2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 0.381659
+cap "and2_mag_1/IN2" "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.182285
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "and2_mag_1/IN2" 0.306276
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand2_mag_3/IN1" 0.00350005
+cap "and2_mag_1/IN2" "m1_494_439#" 0.290204
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "JK_FF_mag_0/QB" 0.0437496
+cap "and2_mag_0/IN2" "and2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 0.193096
+cap "JK_FF_mag_1/nand3_mag_0/IN1" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -0.0640403
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_3/IN1" 2.96708
+cap "and2_mag_1/IN2" "JK_FF_mag_1/nand3_mag_0/OUT" 2.06612
+cap "and2_mag_0/IN2" "m1_494_439#" -1.76082
+cap "and2_mag_0/VDD" "and2_mag_0/OUT" 5.21194
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 2.02026
+cap "m1_493_1528#" "and2_mag_1/IN2" 0.276282
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "and2_mag_0/VDD" 0.0133266
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand3_mag_0/OUT" 4.16318
+cap "and2_mag_1/IN2" "and2_mag_0/VDD" 1.69835
+cap "and2_mag_1/GF_INV_MAG_0/IN" "and2_mag_0/OUT" 2.58741
+cap "m1_493_1528#" "JK_FF_mag_0/VDD" -1.70975
+cap "and2_mag_1/IN2" "JK_FF_mag_0/QB" 10.9015
+cap "JK_FF_mag_0/nand2_mag_4/IN2" "and2_mag_0/IN2" 0.54787
+cap "and2_mag_1/GF_INV_MAG_0/IN" "and2_mag_1/IN2" 0.134526
+cap "and2_mag_0/VSS" "and2_mag_0/OUT" 9.32559
+cap "JK_FF_mag_1/nand3_mag_0/IN1" "and2_mag_1/IN2" 0.72391
+cap "m1_493_1528#" "and2_mag_0/IN2" -0.727339
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand2_mag_1/IN2" 0.0629425
+cap "and2_mag_0/IN2" "and2_mag_0/VDD" 0.140069
+cap "and2_mag_0/VSS" "and2_mag_1/IN2" -9.79363
+cap "JK_FF_mag_0/VDD" "JK_FF_mag_0/QB" -7.14914
+cap "and2_mag_0/IN2" "JK_FF_mag_0/QB" 72.1871
+cap "JK_FF_mag_1/nand3_mag_0/IN1" "and2_mag_0/IN2" 0.187925
+cap "and2_mag_0/VSS" "JK_FF_mag_0/VDD" 47.8744
+cap "JK_FF_mag_0/RST" "JK_FF_mag_0/QB" 0.0724866
+cap "JK_FF_mag_0/QB" "and2_mag_0/IN1" 0.04686
+cap "and2_mag_0/IN2" "and2_mag_1/GF_INV_MAG_0/IN" 0.0201924
+cap "and2_mag_0/GF_INV_MAG_0/IN" "JK_FF_mag_0/QB" 0.0243513
+cap "and2_mag_0/IN2" "and2_mag_0/VSS" 55.834
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_0/OUT" 3.78311
+cap "and2_mag_1/IN2" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 114.354
+cap "and2_mag_1/IN2" "JK_FF_mag_0/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 0.00255415
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "JK_FF_mag_0/VDD" -3.47792
+cap "and2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_0/QB" 0.0338656
+cap "and2_mag_1/GF_INV_MAG_0/IN" "and2_mag_1/IN2" 0.0196611
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_1/IN2" 4.7595
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0936769
+cap "and2_mag_1/OUT" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.0845457
+cap "and2_mag_0/IN1" "JK_FF_mag_0/nand2_mag_4/VDD" 275.823
+cap "JK_FF_mag_1/QB" "and2_mag_1/IN2" 5.32924
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_1/IN1" 0.0118517
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_1/OUT" 0.108658
+cap "and2_mag_0/VSS" "JK_FF_mag_1/QB" 0.0658427
+cap "and2_mag_0/IN2" "and2_mag_0/IN1" 0.251719
+cap "and2_mag_0/VDD" "and2_mag_0/OUT" 0.943552
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "and2_mag_0/OUT" 0.374888
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/QB" -1.75526
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "and2_mag_1/IN2" 280.696
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_0/OUT" 1.08923
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.305786
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand2_mag_4/VDD" 34.4857
+cap "and2_mag_0/IN2" "and2_mag_1/IN2" 21.2788
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_0/nand2_mag_4/VDD" -0.0386068
+cap "and2_mag_1/OUT" "and2_mag_1/IN2" 0.00338667
+cap "and2_mag_0/IN1" "and2_mag_0/OUT" 0.280067
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand3_mag_0/OUT" 1.7368
+cap "and2_mag_0/IN2" "and2_mag_0/VSS" 0.00778363
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "and2_mag_0/VDD" 0.0319082
+cap "and2_mag_0/IN2" "and2_mag_1/GF_INV_MAG_0/IN" 0.00200795
+cap "and2_mag_1/OUT" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0279995
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand3_mag_1/OUT" 0.213326
+cap "JK_FF_mag_1/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_1/IN2" 0.301294
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_1/OUT" 0.0198016
+cap "m1_494_439#" "and2_mag_1/IN2" 2.16623
+cap "and2_mag_2/GF_INV_MAG_0/IN" "and2_mag_0/OUT" 1.13676
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -0.558963
+cap "and2_mag_0/VDD" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.000638164
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/OUT" 0.78493
+cap "and2_mag_1/OUT" "JK_FF_mag_1/QB" 0.0597135
+cap "and2_mag_0/OUT" "and2_mag_1/IN2" 0.320592
+cap "m1_494_439#" "JK_FF_mag_1/nand3_mag_1/OUT" 0.00602305
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "and2_mag_0/OUT" 0.314479
+cap "m1_494_439#" "JK_FF_mag_1/QB" 0.0012912
+cap "and2_mag_0/VSS" "and2_mag_0/OUT" 15.1106
+cap "and2_mag_0/IN1" "and2_mag_0/VDD" 0.0825177
+cap "and2_mag_0/IN1" "JK_FF_mag_1/nand3_mag_1/IN1" 12.1602
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_4/VDD" -3.55271e-15
+cap "and2_mag_1/GF_INV_MAG_0/IN" "and2_mag_0/OUT" 1.2144
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_0/OUT" 0.855681
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_1/IN1" 0.061437
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "m1_493_1528#" 0.0641995
+cap "JK_FF_mag_1/QB" "and2_mag_0/OUT" 2.065
+cap "and2_mag_0/IN1" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 314.469
+cap "and2_mag_2/OUT" "JK_FF_mag_1/nand3_mag_1/IN1" 0.0307984
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "and2_mag_2/GF_INV_MAG_0/IN" 0.0257295
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 1.21375
+cap "m1_493_1528#" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 2.93296
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "and2_mag_1/IN2" 2.54479
+cap "and2_mag_2/OUT" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.000284261
+cap "and2_mag_0/VDD" "and2_mag_1/IN2" 0.044629
+cap "and2_mag_0/VDD" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0319082
+cap "and2_mag_0/VSS" "JK_FF_mag_1/nand3_mag_1/IN1" 0.0676884
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -0.0198109
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "and2_mag_0/OUT" 34.5252
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_1/IN2" 101.486
+cap "and2_mag_0/IN1" "m1_493_1528#" -2.59175
+cap "JK_FF_mag_1/RST" "and2_mag_0/IN1" -2.83918
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_0/VDD" 0.00482904
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/nand3_mag_1/IN1" 1.13687e-13
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -0.991048
+cap "and2_mag_0/IN1" "and2_mag_2/GF_INV_MAG_0/IN" 0.129933
+cap "JK_FF_mag_1/QB" "and2_mag_0/VDD" 0.0357372
+cap "and2_mag_0/VSS" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.371
+cap "and2_mag_0/IN2" "and2_mag_0/OUT" 1.78665
+cap "and2_mag_0/IN1" "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 0.131602
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -0.539152
+cap "and2_mag_1/OUT" "and2_mag_0/OUT" 0.0545386
+cap "and2_mag_0/IN1" "JK_FF_mag_1/nand2_mag_1/IN2" 6.85195
+cap "and2_mag_0/IN1" "and2_mag_1/IN2" 0.43605
+cap "and2_mag_0/IN1" "JK_FF_mag_1/nand3_mag_0/OUT" 4.75961
+cap "JK_FF_mag_1/RST" "and2_mag_1/IN2" -0.234971
+cap "m1_493_1528#" "and2_mag_1/IN2" -0.359579
+cap "and2_mag_0/VSS" "and2_mag_0/IN1" 0.276243
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_0/IN1" 4.23036
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0515835
+cap "m1_493_1528#" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0300015
+cap "and2_mag_0/IN1" "JK_FF_mag_1/QB" 0.569804
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "m1_493_1528#" 0.850961
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/nand3_mag_1/OUT" 1.96309
+cap "JK_FF_mag_0/nand2_mag_4/VDD" "JK_FF_mag_1/GF_INV_MAG_0/OUT" -75.4856
+cap "and2_mag_2/GF_INV_MAG_0/IN" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0226385
+cap "and2_mag_0/IN2" "and2_mag_0/VDD" 0.00446714
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0184502
+cap "JK_FF_mag_1/QB" "m1_493_1528#" 0.818481
+cap "JK_FF_mag_1/RST" "JK_FF_mag_1/QB" 0.199503
+cap "JK_FF_mag_1/nand3_mag_1/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 0.0614326
+cap "JK_FF_mag_1/nand3_mag_0/OUT" "and2_mag_1/IN2" 16.8263
+cap "and2_mag_1/OUT" "JK_FF_mag_1/nand3_mag_1/IN1" 0.0169909
+cap "and2_mag_0/VSS" "and2_mag_1/IN2" 2.07938
+cap "JK_FF_mag_1/QB" "JK_FF_mag_2/J" 2.2108
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "and2_mag_1/GF_INV_MAG_0/VDD" 0.171541
+cap "nor_3_mag_0/IN3" "JK_FF_mag_2/J" 0.733141
+cap "and2_mag_1/IN1" "JK_FF_mag_1/nand2_mag_3/IN1" 60.6369
+cap "and2_mag_1/IN1" "JK_FF_mag_2/CLK" -0.612236
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "JK_FF_mag_2/J" 96.3885
+cap "m1_494_439#" "JK_FF_mag_1/nand2_mag_3/IN1" 0.013555
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "JK_FF_mag_1/nand2_mag_3/IN1" 0.240882
+cap "m1_494_439#" "JK_FF_mag_2/CLK" -0.00247156
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_0/IN1" 0.181803
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "JK_FF_mag_2/CLK" 6.09864
+cap "JK_FF_mag_1/QB" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 0.0324439
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "JK_FF_mag_2/J" 1.0716
+cap "and2_mag_1/IN1" "JK_FF_mag_1/RST" -0.828652
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "JK_FF_mag_2/J" 0.220851
+cap "JK_FF_mag_1/QB" "JK_FF_mag_2/CLK" 2.65561
+cap "nor_3_mag_0/IN3" "JK_FF_mag_2/CLK" 1.02668
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "and2_mag_1/GF_INV_MAG_0/VDD" 4.9352
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "JK_FF_mag_1/nand2_mag_3/IN1" -8.29997
+cap "and2_mag_1/IN1" "JK_FF_mag_1/nand3_mag_1/OUT" 0.120689
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "JK_FF_mag_2/CLK" 186.536
+cap "JK_FF_mag_1/QB" "JK_FF_mag_1/RST" 0.0687318
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" 0.230274
+cap "and2_mag_1/IN1" "JK_FF_mag_1/nand3_mag_0/OUT" 0.0990859
+cap "and2_mag_2/OUT" "and2_mag_1/GF_INV_MAG_0/VSS" 0.0225133
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "JK_FF_mag_2/CLK" 0.191632
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/J" 2.2609
+cap "JK_FF_mag_1/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_1/IN1" 0.001231
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "JK_FF_mag_1/RST" -0.152613
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_2/J" 0.724636
+cap "JK_FF_mag_2/nand2_mag_2/pmos_3p3_M8SWPS_0/a_n116_n80#" "JK_FF_mag_2/J" 0.114485
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/J" 7.32895
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "JK_FF_mag_1/RST" 0.0618785
+cap "and2_mag_1/IN1" "m1_494_439#" -2.13313
+cap "JK_FF_mag_2/CLK" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" 0.675665
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "and2_mag_1/IN1" 3.63741
+cap "and2_mag_2/OUT" "and2_mag_1/GF_INV_MAG_0/VDD" -0.105744
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "and2_mag_1/OUT" 0.1692
+cap "JK_FF_mag_1/QB" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.046087
+cap "and2_mag_1/IN1" "JK_FF_mag_1/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.876721
+cap "JK_FF_mag_1/QB" "and2_mag_1/IN1" 68.4469
+cap "JK_FF_mag_1/QB" "m1_494_439#" 0.013555
+cap "JK_FF_mag_1/QB" "and2_mag_1/GF_INV_MAG_0/VSS" 0.206315
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_2/CLK" 0.222821
+cap "JK_FF_mag_2/CLK" "GF_INV_MAG_0/IN" 0.268921
+cap "and2_mag_1/OUT" "JK_FF_mag_2/J" 3.58655
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "nor_3_mag_0/IN3" 0.456304
+cap "JK_FF_mag_2/nand3_mag_0/OUT" "JK_FF_mag_2/J" 0.932153
+cap "JK_FF_mag_2/J" "JK_FF_mag_1/nand3_mag_1/OUT" 0.116972
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "nor_3_mag_0/IN2" -0.318822
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "and2_mag_1/IN1" 330.552
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "and2_mag_1/GF_INV_MAG_0/VSS" 56.3359
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_1/RST" 0.107432
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.0975472
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/RST" -0.0187146
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "and2_mag_1/IN1" 14.8886
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "m1_494_439#" 0.0118517
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "and2_mag_1/GF_INV_MAG_0/VSS" 0.0913253
+cap "JK_FF_mag_1/nand3_mag_1/IN1" "and2_mag_1/IN1" 0.379263
+cap "JK_FF_mag_2/J" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 7.87678
+cap "JK_FF_mag_1/QB" "and2_mag_1/GF_INV_MAG_0/VDD" -4.90688
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "nor_3_mag_0/IN3" -3.52932
+cap "and2_mag_1/IN1" "JK_FF_mag_2/J" 15.6763
+cap "and2_mag_1/OUT" "JK_FF_mag_1/nand2_mag_3/IN1" 0.0891061
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "JK_FF_mag_2/J" 11.8996
+cap "and2_mag_2/OUT" "JK_FF_mag_1/nand2_mag_3/IN1" 0.00540095
+cap "and2_mag_1/IN1" "JK_FF_mag_1/nand2_mag_4/IN2" 0.646449
+cap "JK_FF_mag_2/CLK" "GF_INV_MAG_0/IN" 0.219268
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_0/OUT" 0.0515835
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/QB" 2.91698
+cap "GF_INV_MAG_0/IN" "and2_mag_2/GF_INV_MAG_0/VSS" 11.3425
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/nand3_mag_0/OUT" -1.27797
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/QB" 2.14238
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "and2_mag_2/GF_INV_MAG_0/VDD" -22.2189
+cap "and2_mag_2/GF_INV_MAG_0/VSS" "JK_FF_mag_2/QB" 0.0255406
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "and2_mag_2/GF_INV_MAG_0/VDD" 2.22771
+cap "JK_FF_mag_2/nand2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_2/GF_INV_MAG_0/VDD" 0.133111
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "JK_FF_mag_1/Q" 0.0486425
+cap "GF_INV_MAG_0/IN" "and2_mag_2/GF_INV_MAG_0/VDD" 0.0729932
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "JK_FF_mag_2/QB" 2.75789
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" "JK_FF_mag_2/Q" 0.963803
+cap "JK_FF_mag_2/nand3_mag_0/OUT" "and2_mag_2/GF_INV_MAG_0/VDD" 62.1481
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "JK_FF_mag_1/QB" 0.605704
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/nand2_mag_1/IN2" 0.0036988
+cap "JK_FF_mag_1/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_2/CLK" 0.00375811
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/J" 9.40754
+cap "GF_INV_MAG_0/OUT" "JK_FF_mag_2/Q" 0.367151
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_1/OUT" 0.207669
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/Q" 461.304
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/Q" 7.39028
+cap "and2_mag_2/OUT" "and2_mag_2/GF_INV_MAG_0/VDD" -2.34137
+cap "JK_FF_mag_2/J" "and2_mag_2/GF_INV_MAG_0/VSS" 1.96626
+cap "GF_INV_MAG_0/IN" "JK_FF_mag_2/Q" 3.2028
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/nand3_mag_1/OUT" 0.21783
+cap "JK_FF_mag_1/nand2_mag_1/IN2" "and2_mag_2/GF_INV_MAG_0/VDD" 0.740404
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/QB" 4.5002
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/CLK" 0.633979
+cap "JK_FF_mag_2/J" "and2_mag_2/GF_INV_MAG_0/VDD" 0.304592
+cap "JK_FF_mag_2/nand3_mag_0/OUT" "JK_FF_mag_2/Q" 28.3954
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/nand3_mag_1/IN1" -0.130797
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "and2_mag_2/GF_INV_MAG_0/VDD" 1.19357
+cap "GF_INV_MAG_0/OUT" "JK_FF_mag_2/QB" 0.00928249
+cap "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_n116_n66#" "and2_mag_2/GF_INV_MAG_0/VDD" 0.862329
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/QB" -0.62769
+cap "JK_FF_mag_2/CLK" "and2_mag_2/GF_INV_MAG_0/VSS" 3.34772
+cap "JK_FF_mag_2/RST" "and2_mag_2/GF_INV_MAG_0/VDD" -0.830759
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/nand3_mag_0/OUT" -19.9379
+cap "JK_FF_mag_2/nand2_mag_1/IN2" "and2_mag_2/GF_INV_MAG_0/VDD" 0.459479
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "JK_FF_mag_2/CLK" 0.135318
+cap "JK_FF_mag_2/CLK" "and2_mag_2/GF_INV_MAG_0/VDD" 115.271
+cap "and2_mag_2/OUT" "JK_FF_mag_2/Q" 0.988739
+cap "JK_FF_mag_2/nand3_mag_0/OUT" "JK_FF_mag_2/QB" 1.13687e-13
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "and2_mag_2/GF_INV_MAG_0/VSS" 71.296
+cap "JK_FF_mag_2/nand2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_2/GF_INV_MAG_0/VDD" 0.143442
+cap "JK_FF_mag_2/J" "JK_FF_mag_2/Q" -3.42419
+cap "JK_FF_mag_2/nand3_mag_0/nmos_3p3_VGTVWA_0/a_28_n66#" "and2_mag_2/GF_INV_MAG_0/VDD" 0.595959
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/Q" 0.736401
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.0090705
+cap "JK_FF_mag_2/CLK" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" 0.0279406
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/Q" -1.57949
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/J" 1.1853
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/Q" 10.4223
+cap "JK_FF_mag_1/nand2_mag_3/IN1" "JK_FF_mag_2/CLK" 0.00265263
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/nand3_mag_1/OUT" -0.123355
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "JK_FF_mag_1/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.157587
+cap "JK_FF_mag_2/Q" "and2_mag_2/GF_INV_MAG_0/VSS" 87.2705
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 0.580319
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/QB" -0.141839
+cap "GF_INV_MAG_0/OUT" "JK_FF_mag_2/CLK" 0.0141796
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "JK_FF_mag_2/Q" 0.0494459
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 39.2333
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_2/nand3_mag_1/IN1" 0.296494
+cap "JK_FF_mag_2/CLK" "JK_FF_mag_1/Q" 0.727404
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "JK_FF_mag_2/Q" 224.663
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/QB" 0.199503
+cap "JK_FF_mag_2/nand2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_2/Q" 0.884175
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/nand3_mag_1/OUT" -0.0375079
+cap "JK_FF_mag_2/nand3_mag_0/OUT" "JK_FF_mag_2/Q" 0.0958525
+cap "JK_FF_mag_2/nand2_mag_1/IN2" "JK_FF_mag_2/GF_INV_MAG_0/OUT" -0.130797
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/nand3_mag_1/OUT" 3.71029
+cap "JK_FF_mag_2/VSS" "JK_FF_mag_2/Q" 3.63206
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/GF_INV_MAG_0/OUT" -46.9009
+cap "JK_FF_mag_2/nand2_mag_4/IN2" "JK_FF_mag_2/Q" 0.64913
+cap "JK_FF_mag_2/nand3_mag_1/OUT" "JK_FF_mag_2/QB" -1.53648
+cap "JK_FF_mag_2/nand2_mag_4/nmos_3p3_5QNVWA_0/a_28_n44#" "JK_FF_mag_2/Q" 0.000603173
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/Q" 272.2
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/Q" -1.60016
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/QB" 0.013555
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/Q" 5.71023
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/QB" 0.0118517
+cap "JK_FF_mag_2/VSS" "JK_FF_mag_2/nand3_mag_1/OUT" 4.44089e-16
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/nand3_mag_1/OUT" -0.452302
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/nand2_mag_1/IN2" -1.13687e-13
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/nand3_mag_1/OUT" 1.70544
+cap "JK_FF_mag_2/nand2_mag_1/IN2" "JK_FF_mag_2/Q" 22.3639
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/Q" 443.783
+cap "JK_FF_mag_2/nand3_mag_1/IN1" "JK_FF_mag_2/nand3_mag_1/OUT" -5.68434e-14
+cap "JK_FF_mag_2/RST" "JK_FF_mag_2/GF_INV_MAG_0/OUT" 0.0193791
+cap "JK_FF_mag_2/nand2_mag_1/IN2" "JK_FF_mag_2/QB" 0.0118517
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "JK_FF_mag_2/nand3_mag_1/IN1" -0.575657
+cap "JK_FF_mag_2/VDD" "JK_FF_mag_2/QB" -6.59109
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/QB" 63.037
+cap "JK_FF_mag_2/nand3_mag_1/VDD" "JK_FF_mag_2/Q" 94.8181
+cap "JK_FF_mag_2/QB" "JK_FF_mag_2/Q" 0.133586
+cap "and2_mag_0/VSS" "JK_FF_mag_0/K" -2.15131
+cap "JK_FF_mag_0/CLK" "and2_mag_0/VSS" -2.76881
+cap "and2_mag_0/VSS" "JK_FF_mag_0/VDD" 25.2703
+cap "and2_mag_0/IN2" "JK_FF_mag_0/VDD" 0.0170192
+cap "and2_mag_0/VDD" "and2_mag_0/VSS" 0.00708996
+cap "and2_mag_0/VSS" "and2_mag_1/IN2" -4.30918
+cap "and2_mag_0/VSS" "and2_mag_0/OUT" -0.256237
+cap "and2_mag_0/VDD" "and2_mag_0/IN2" 1.63454
+cap "and2_mag_0/VSS" "JK_FF_mag_0/VDD" 39.7012
+cap "and2_mag_0/VSS" "and2_mag_0/IN2" 7.3527
+cap "JK_FF_mag_0/nand2_mag_1/IN2" "and2_mag_0/IN2" 0.0402721
+cap "and2_mag_0/OUT" "and2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" 0.824141
+cap "JK_FF_mag_0/nand2_mag_1/IN1" "and2_mag_0/IN1" 0.0595582
+cap "JK_FF_mag_0/VDD" "and2_mag_1/IN2" -1.64271
+cap "and2_mag_0/OUT" "JK_FF_mag_0/VDD" -1.51563
+cap "and2_mag_0/VSS" "JK_FF_mag_0/VDD" 33.0149
+cap "and2_mag_0/VSS" "and2_mag_1/IN2" 99.993
+cap "and2_mag_0/OUT" "and2_mag_1/IN2" 39.5586
+cap "and2_mag_0/OUT" "and2_mag_0/VSS" 95.9324
+cap "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_1/IN2" 7.0613
+cap "and2_mag_0/IN2" "and2_mag_1/GF_INV_MAG_0/IN" 11.426
+cap "and2_mag_0/GF_INV_MAG_0/IN" "and2_mag_1/GF_INV_MAG_0/IN" 0.170359
+cap "JK_FF_mag_0/VDD" "and2_mag_0/IN1" 1.19049
+cap "and2_mag_0/IN1" "and2_mag_1/IN2" 9.95559
+cap "and2_mag_0/OUT" "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.0297558
+cap "and2_mag_0/VSS" "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 0.166935
+cap "and2_mag_0/OUT" "and2_mag_0/IN1" 41.3871
+cap "and2_mag_0/VSS" "and2_mag_0/IN1" 13.6239
+cap "and2_mag_0/IN1" "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" 1.6049
+cap "and2_mag_0/IN1" "and2_mag_2/GF_INV_MAG_0/IN" 0.0350663
+cap "and2_mag_1/OUT" "and2_mag_1/GF_INV_MAG_0/IN" -0.052417
+cap "and2_mag_0/VDD" "and2_mag_1/GF_INV_MAG_0/IN" 1.19734
+cap "and2_mag_0/IN2" "and2_mag_0/GF_INV_MAG_0/IN" 69.8432
+cap "and2_mag_1/IN2" "and2_mag_1/GF_INV_MAG_0/IN" 15.2381
+cap "and2_mag_0/VSS" "and2_mag_1/GF_INV_MAG_0/IN" 1.28198
+cap "and2_mag_0/OUT" "and2_mag_1/GF_INV_MAG_0/IN" 23.894
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_1/IN2" 0.113838
+cap "and2_mag_0/IN1" "and2_mag_1/GF_INV_MAG_0/IN" 62.4481
+cap "and2_mag_0/IN2" "and2_mag_0/VDD" 411.956
+cap "and2_mag_1/OUT" "and2_mag_0/IN2" 0.0727388
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_0/IN1" 0.0220525
+cap "and2_mag_0/VDD" "and2_mag_0/GF_INV_MAG_0/IN" 6.67173
+cap "JK_FF_mag_0/nand2_mag_1/IN1" "and2_mag_0/IN2" 0.0141196
+cap "and2_mag_0/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/IN2" 9.51027
+cap "JK_FF_mag_0/VDD" "and2_mag_0/GF_INV_MAG_0/IN" 0.105393
+cap "and2_mag_0/VSS" "and2_mag_0/IN2" 101.381
+cap "JK_FF_mag_0/VDD" "and2_mag_0/IN2" 0.580841
+cap "and2_mag_0/IN2" "and2_mag_1/IN2" -0.208089
+cap "and2_mag_0/GF_INV_MAG_0/IN" "and2_mag_1/IN2" 13.9322
+cap "and2_mag_0/OUT" "and2_mag_0/IN2" 12.1916
+cap "and2_mag_0/VSS" "and2_mag_0/GF_INV_MAG_0/IN" 0.176807
+cap "and2_mag_0/OUT" "and2_mag_0/GF_INV_MAG_0/IN" 3.75563
+cap "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/GF_INV_MAG_0/IN" 0.0495107
+cap "and2_mag_0/IN1" "and2_mag_0/GF_INV_MAG_0/IN" 52.2717
+cap "and2_mag_0/IN1" "and2_mag_0/IN2" 12.1706
+cap "and2_mag_1/OUT" "and2_mag_1/IN2" 0.158924
+cap "and2_mag_0/VDD" "and2_mag_1/IN2" 8.66791
+cap "and2_mag_0/OUT" "and2_mag_1/OUT" -1.55453
+cap "and2_mag_0/VSS" "and2_mag_0/VDD" 1.16286
+cap "and2_mag_0/OUT" "and2_mag_0/VDD" 49.6141
+cap "and2_mag_1/OUT" "and2_mag_0/IN1" 1.3001
+cap "and2_mag_0/IN1" "and2_mag_0/VDD" 115.607
+cap "and2_mag_1/OUT" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.0742547
+cap "and2_mag_2/OUT" "and2_mag_0/VDD" 104.163
+cap "JK_FF_mag_1/nand2_mag_2/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 0.0257295
+cap "and2_mag_1/IN2" "and2_mag_0/VSS" 0.562973
+cap "and2_mag_0/VDD" "and2_mag_0/VSS" 0.0864293
+cap "and2_mag_0/IN2" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.00770045
+cap "and2_mag_1/OUT" "nor_3_mag_0/IN3" 0.158286
+cap "and2_mag_0/VSS" "JK_FF_mag_0/nand2_mag_1/VDD" 34.4857
+cap "and2_mag_0/IN2" "nor_3_mag_0/IN3" 0.117987
+cap "and2_mag_1/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/IN1" 0.446079
+cap "and2_mag_0/IN1" "JK_FF_mag_1/nand3_mag_0/OUT" 0.208759
+cap "and2_mag_0/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 0.148959
+cap "and2_mag_1/OUT" "and2_mag_0/IN2" 17.975
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_2/GF_INV_MAG_0/IN" 0.275741
+cap "and2_mag_2/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 1.02311
+cap "and2_mag_0/OUT" "and2_mag_0/IN1" 0.12816
+cap "and2_mag_2/OUT" "and2_mag_0/IN1" 0.521436
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_0/IN1" 0.940635
+cap "and2_mag_0/VSS" "and2_mag_2/GF_INV_MAG_0/IN" 0.793157
+cap "and2_mag_0/IN1" "and2_mag_0/VSS" 111.108
+cap "and2_mag_0/OUT" "and2_mag_1/GF_INV_MAG_0/IN" 0.173044
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/VSS" 0.166935
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand2_mag_2/OUT" 0.0527871
+cap "and2_mag_0/VSS" "and2_mag_1/GF_INV_MAG_0/IN" 0.176807
+cap "and2_mag_1/OUT" "and2_mag_0/OUT" -1.81903
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_1/OUT" 1.23854
+cap "and2_mag_1/OUT" "and2_mag_2/OUT" 39.7826
+cap "and2_mag_1/IN2" "and2_mag_2/GF_INV_MAG_0/IN" 0.0438306
+cap "and2_mag_0/IN2" "and2_mag_0/OUT" 0.129253
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_0/IN2" 0.984903
+cap "and2_mag_0/IN2" "and2_mag_2/OUT" 2.45616
+cap "and2_mag_1/IN2" "and2_mag_0/IN1" -1.09469
+cap "and2_mag_0/VDD" "and2_mag_2/GF_INV_MAG_0/IN" 20.2427
+cap "and2_mag_1/OUT" "and2_mag_0/VSS" 139.351
+cap "JK_FF_mag_0/nand2_mag_1/VDD" "and2_mag_2/GF_INV_MAG_0/IN" 0.467738
+cap "and2_mag_0/IN2" "and2_mag_0/VSS" 1.43524
+cap "and2_mag_0/IN1" "and2_mag_0/VDD" 77.6631
+cap "and2_mag_1/OUT" "JK_FF_mag_1/nand2_mag_2/IN1" 0.0615114
+cap "and2_mag_0/IN1" "JK_FF_mag_0/nand2_mag_1/VDD" 0.913542
+cap "and2_mag_1/IN2" "and2_mag_1/GF_INV_MAG_0/IN" 0.025699
+cap "and2_mag_0/IN2" "JK_FF_mag_1/nand2_mag_2/IN1" 0.224209
+cap "and2_mag_0/VDD" "and2_mag_1/GF_INV_MAG_0/IN" 7.2596
+cap "JK_FF_mag_0/nand2_mag_1/VDD" "and2_mag_1/GF_INV_MAG_0/IN" 0.485217
+cap "and2_mag_0/IN1" "and2_mag_2/GF_INV_MAG_0/IN" 25.7894
+cap "and2_mag_0/IN1" "and2_mag_0/GF_INV_MAG_0/IN" 0.104082
+cap "and2_mag_1/IN2" "and2_mag_1/OUT" -0.343536
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/IN1" 7.17869
+cap "and2_mag_1/OUT" "and2_mag_0/VDD" 96.6026
+cap "and2_mag_1/IN2" "and2_mag_0/IN2" 0.140962
+cap "and2_mag_2/GF_INV_MAG_0/IN" "and2_mag_1/GF_INV_MAG_0/IN" 0.213086
+cap "and2_mag_1/OUT" "JK_FF_mag_0/nand2_mag_1/VDD" 0.679309
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_2/OUT" 3.87874
+cap "and2_mag_0/OUT" "and2_mag_0/VSS" 6.73883
+cap "and2_mag_0/IN1" "and2_mag_1/GF_INV_MAG_0/IN" 41.9872
+cap "and2_mag_0/IN2" "and2_mag_0/VDD" 281.528
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_0/VSS" 0.345451
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 0.00852473
+cap "and2_mag_0/IN2" "JK_FF_mag_0/nand2_mag_1/VDD" 0.520985
+cap "and2_mag_0/GF_INV_MAG_0/IN" "and2_mag_1/GF_INV_MAG_0/IN" 0.0731736
+cap "JK_FF_mag_1/nand3_mag_0/IN1" "and2_mag_1/OUT" 0.00639765
+cap "and2_mag_2/OUT" "and2_mag_0/VSS" -0.0481345
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_1/GF_INV_MAG_0/IN" 0.0495107
+cap "and2_mag_0/IN1" "JK_FF_mag_1/GF_INV_MAG_0/OUT" 0.0147017
+cap "nor_3_mag_0/IN3" "and2_mag_2/GF_INV_MAG_0/IN" 0.0815929
+cap "and2_mag_1/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 107.54
+cap "JK_FF_mag_1/GF_INV_MAG_0/OUT" "and2_mag_1/GF_INV_MAG_0/IN" 0.00809537
+cap "and2_mag_1/OUT" "and2_mag_0/IN1" 85.5807
+cap "and2_mag_0/IN2" "and2_mag_2/GF_INV_MAG_0/IN" 43.4992
+cap "and2_mag_1/OUT" "and2_mag_0/GF_INV_MAG_0/IN" 0.404881
+cap "and2_mag_0/IN2" "and2_mag_0/GF_INV_MAG_0/IN" 0.130907
+cap "and2_mag_0/IN2" "and2_mag_0/IN1" 10.9805
+cap "and2_mag_1/OUT" "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" 2.81278
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "and2_mag_2/GF_INV_MAG_0/IN" 0.0329977
+cap "and2_mag_1/OUT" "and2_mag_1/GF_INV_MAG_0/IN" 5.41898
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_0/IN2" 0.899374
+cap "and2_mag_0/IN2" "and2_mag_1/GF_INV_MAG_0/IN" 7.4871
+cap "and2_mag_1/IN1" "and2_mag_1/GF_INV_MAG_0/VSS" -0.279103
+cap "and2_mag_1/OUT" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" 0.474916
+cap "nor_3_mag_0/IN3" "m1_3186_3296#" -0.349219
+cap "and2_mag_1/OUT" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 13.1552
+cap "nor_3_mag_0/IN3" "and2_mag_2/IN1" 0.0450516
+cap "m1_3186_3296#" "and2_mag_1/GF_INV_MAG_0/VSS" 6.16068
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "GF_INV_MAG_0/IN" 0.922051
+cap "nor_3_mag_0/IN3" "JK_FF_mag_2/CLK" -0.0624717
+cap "nor_3_mag_0/IN3" "and2_mag_1/GF_INV_MAG_0/VSS" 41.1023
+cap "JK_FF_mag_2/CLK" "and2_mag_1/GF_INV_MAG_0/VSS" 1.03157
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.330938
+cap "and2_mag_1/OUT" "nor_3_mag_0/IN2" 0.284133
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_1/IN1" 0.254981
+cap "and2_mag_2/OUT" "nor_3_mag_0/IN3" 14.2278
+cap "and2_mag_2/OUT" "and2_mag_1/GF_INV_MAG_0/VSS" 4.90089
+cap "and2_mag_1/OUT" "and2_mag_2/GF_INV_MAG_0/IN" 2.56746
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "and2_mag_1/OUT" 25.0919
+cap "nor_3_mag_0/IN3" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" 0.498396
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "GF_INV_MAG_0/IN" 2.22045e-16
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "m1_3186_3296#" 0.48501
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "JK_FF_mag_2/CLK" 0.135118
+cap "nor_3_mag_0/IN3" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 9.17866
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_1/GF_INV_MAG_0/VSS" 7.77241
+cap "and2_mag_2/nmos_3p3_5QNVWA_0/a_28_n44#" "and2_mag_1/OUT" 0.0723257
+cap "and2_mag_2/OUT" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" 5.53734
+cap "and2_mag_2/OUT" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 33.0291
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "m1_3186_3296#" -0.0113969
+cap "nor_3_mag_0/IN3" "nor_3_mag_0/IN2" -18.4397
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" "and2_mag_1/OUT" 0.261739
+cap "and2_mag_1/GF_INV_MAG_0/VSS" "nor_3_mag_0/IN2" -0.80335
+cap "and2_mag_1/OUT" "and2_mag_1/IN1" 0.240584
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "JK_FF_mag_2/CLK" -0.0319102
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.560141
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "nor_3_mag_0/IN3" 144.649
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "and2_mag_1/GF_INV_MAG_0/VSS" 40.1885
+cap "and2_mag_1/OUT" "m1_3186_3296#" 0.48501
+cap "nor_3_mag_0/IN3" "and2_mag_1/OUT" 2.61137
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "and2_mag_2/OUT" 251.62
+cap "nor_3_mag_0/IN3" "GF_INV_MAG_0/IN" 1.35942
+cap "and2_mag_1/OUT" "JK_FF_mag_2/CLK" 0.136324
+cap "and2_mag_1/OUT" "and2_mag_2/IN1" 0.505794
+cap "and2_mag_1/OUT" "and2_mag_1/GF_INV_MAG_0/VSS" 23.2915
+cap "GF_INV_MAG_0/OUT" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.0261013
+cap "GF_INV_MAG_0/IN" "and2_mag_1/GF_INV_MAG_0/VSS" 19.1635
+cap "JK_FF_mag_1/nand2_mag_1/IN1" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.00318106
+cap "and2_mag_2/OUT" "and2_mag_1/OUT" 16.2781
+cap "and2_mag_2/OUT" "GF_INV_MAG_0/IN" 0.255237
+cap "nor_3_mag_0/IN3" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" 0.251055
+cap "and2_mag_1/OUT" "JK_FF_mag_1/nand2_mag_1/IN2" 0.21221
+cap "and2_mag_1/GF_INV_MAG_0/VDD" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 20.3034
+cap "GF_INV_MAG_0/IN" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" -2.55317
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "and2_mag_2/OUT" 0.199286
+cap "GF_INV_MAG_0/IN" "JK_FF_mag_2/Q" 61.4711
+cap "nor_3_mag_0/IN3" "and2_mag_2/GF_INV_MAG_0/VSS" -1.70604
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "and2_mag_2/OUT" 22.2487
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "and2_mag_2/OUT" 105.006
+cap "Buffer_delayed_mag_0/IN" "and2_mag_2/OUT" 2.2534
+cap "and2_mag_2/GF_INV_MAG_0/VSS" "JK_FF_mag_2/Q" 14.4167
+cap "GF_INV_MAG_0/IN" "GF_INV_MAG_0/OUT" 19.8412
+cap "GF_INV_MAG_0/IN" "and2_mag_2/GF_INV_MAG_0/VSS" 210.749
+cap "nor_3_mag_0/IN3" "and2_mag_2/OUT" 7.20088
+cap "GF_INV_MAG_0/IN" "JK_FF_mag_2/nand3_mag_0/OUT" 0.0280691
+cap "and2_mag_2/OUT" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" 57.5924
+cap "JK_FF_mag_2/Q" "and2_mag_2/OUT" -26.5665
+cap "JK_FF_mag_2/Q" "JK_FF_mag_2/CLK" 0.439787
+cap "GF_INV_MAG_0/IN" "and2_mag_2/OUT" 62.6683
+cap "GF_INV_MAG_0/IN" "JK_FF_mag_2/CLK" 0.0893455
+cap "and2_mag_2/GF_INV_MAG_0/VSS" "and2_mag_2/OUT" 3.63344
+cap "GF_INV_MAG_0/IN" "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" 0.664547
+cap "GF_INV_MAG_0/OUT" "and2_mag_2/OUT" 3.96124
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "and2_mag_2/GF_INV_MAG_0/VDD" -0.296369
+cap "nor_3_mag_0/IN3" "and2_mag_2/GF_INV_MAG_0/VDD" 0.180848
+cap "JK_FF_mag_2/CLK" "and2_mag_2/OUT" 0.0248214
+cap "Buffer_delayed_mag_0/Inverter_delayed_mag_0/IN" "and2_mag_2/OUT" 6.94287
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "JK_FF_mag_2/Q" 16.6576
+cap "and2_mag_2/GF_INV_MAG_0/VDD" "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_28_n240#" -0.315585
+cap "JK_FF_mag_2/Q" "and2_mag_2/GF_INV_MAG_0/VDD" 2.71843
+cap "JK_FF_mag_2/GF_INV_MAG_0/OUT" "GF_INV_MAG_0/IN" 0.00655422
+cap "GF_INV_MAG_0/IN" "and2_mag_2/GF_INV_MAG_0/VDD" 66.8032
+cap "nor_3_mag_0/pmos_3p3_MYFUKR_2/a_n116_n240#" "GF_INV_MAG_0/IN" -3.06511
+cap "and2_mag_2/GF_INV_MAG_0/VSS" "and2_mag_2/GF_INV_MAG_0/VDD" 40.7437
+cap "GF_INV_MAG_0/OUT" "and2_mag_2/GF_INV_MAG_0/VDD" 83.4558
+cap "nor_3_mag_0/IN3" "JK_FF_mag_2/Q" -16.8875
+cap "GF_INV_MAG_0/IN" "nor_3_mag_0/IN3" 1.54797
+merge "JK_FF_mag_2/QB" "JK_FF_mag_0/J" -2453.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10519 -590 -399000 -8400 0 0 0 0 0 0
+merge "JK_FF_mag_0/J" "m1_494_439#"
+merge "JK_FF_mag_0/GF_INV_MAG_0/VSS" "and2_mag_2/GF_INV_MAG_0/VSS" -2358.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -107562 -5794 0 0 0 0 0 0 0 0
+merge "and2_mag_2/GF_INV_MAG_0/VSS" "GF_INV_MAG_0/VSS"
+merge "GF_INV_MAG_0/VSS" "and2_mag_1/GF_INV_MAG_0/VSS"
+merge "and2_mag_1/GF_INV_MAG_0/VSS" "JK_FF_mag_2/VSS"
+merge "JK_FF_mag_2/VSS" "JK_FF_mag_1/nand3_mag_2/VSS"
+merge "JK_FF_mag_1/nand3_mag_2/VSS" "JK_FF_mag_1/nand2_mag_4/VSS"
+merge "JK_FF_mag_1/nand2_mag_4/VSS" "nor_3_mag_0/VSS"
+merge "nor_3_mag_0/VSS" "m1_6963_2592#"
+merge "m1_6963_2592#" "m1_6308_2593#"
+merge "m1_6308_2593#" "JK_FF_mag_2/VSUBS"
+merge "JK_FF_mag_2/VSUBS" "JK_FF_mag_2/GF_INV_MAG_0/VSS"
+merge "JK_FF_mag_2/GF_INV_MAG_0/VSS" "JK_FF_mag_1/VSS"
+merge "JK_FF_mag_1/VSS" "m1_6135_11#"
+merge "m1_6135_11#" "JK_FF_mag_0/nand3_mag_1/VSS"
+merge "JK_FF_mag_0/nand3_mag_1/VSS" "JK_FF_mag_0/nand2_mag_4/VSS"
+merge "JK_FF_mag_0/nand2_mag_4/VSS" "Buffer_delayed_mag_0/VSS"
+merge "Buffer_delayed_mag_0/VSS" "m1_5242_2931#"
+merge "m1_5242_2931#" "and2_mag_2/VSS"
+merge "and2_mag_2/VSS" "m1_4252_2932#"
+merge "m1_4252_2932#" "JK_FF_mag_1/VSUBS"
+merge "JK_FF_mag_1/VSUBS" "JK_FF_mag_1/GF_INV_MAG_0/VSS"
+merge "JK_FF_mag_1/GF_INV_MAG_0/VSS" "and2_mag_1/VSS"
+merge "and2_mag_1/VSS" "VSS"
+merge "VSS" "m1_3273_2930#"
+merge "m1_3273_2930#" "JK_FF_mag_0/VSUBS"
+merge "JK_FF_mag_0/VSUBS" "JK_FF_mag_0/VSS"
+merge "JK_FF_mag_0/VSS" "and2_mag_0/VSS"
+merge "and2_mag_0/VSS" "VSUBS"
+merge "VSUBS" "m1_n336_1288#"
+merge "JK_FF_mag_1/nand2_mag_1/VDD" "JK_FF_mag_0/nand2_mag_1/VDD" -3454.15 -74785 -10714 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -195090 -8110 0 0 0 0 0 0 0 0
+merge "JK_FF_mag_0/nand2_mag_1/VDD" "and2_mag_2/GF_INV_MAG_0/VDD"
+merge "and2_mag_2/GF_INV_MAG_0/VDD" "and2_mag_1/GF_INV_MAG_0/VDD"
+merge "and2_mag_1/GF_INV_MAG_0/VDD" "Buffer_delayed_mag_0/VDD"
+merge "Buffer_delayed_mag_0/VDD" "nor_3_mag_0/VDD"
+merge "nor_3_mag_0/VDD" "m1_6330_3636#"
+merge "m1_6330_3636#" "w_6339_3684#"
+merge "w_6339_3684#" "and2_mag_2/VDD"
+merge "and2_mag_2/VDD" "m1_5258_3630#"
+merge "m1_5258_3630#" "w_5252_3686#"
+merge "w_5252_3686#" "and2_mag_1/VDD"
+merge "and2_mag_1/VDD" "m1_4307_3817#"
+merge "m1_4307_3817#" "w_4307_3454#"
+merge "w_4307_3454#" "w_3706_3480#"
+merge "w_3706_3480#" "and2_mag_0/VDD"
+merge "and2_mag_0/VDD" "m1_3331_3817#"
+merge "m1_3331_3817#" "w_2736_3479#"
+merge "w_2736_3479#" "w_3326_3454#"
+merge "w_3326_3454#" "GF_INV_MAG_0/VDD"
+merge "GF_INV_MAG_0/VDD" "m1_6979_3700#"
+merge "m1_6979_3700#" "w_6979_3700#"
+merge "w_6979_3700#" "JK_FF_mag_1/nand2_mag_4/VDD"
+merge "JK_FF_mag_1/nand2_mag_4/VDD" "JK_FF_mag_2/K"
+merge "JK_FF_mag_2/K" "VDD"
+merge "VDD" "JK_FF_mag_2/VDD"
+merge "JK_FF_mag_2/VDD" "JK_FF_mag_0/K"
+merge "JK_FF_mag_0/K" "m1_493_1528#"
+merge "m1_493_1528#" "JK_FF_mag_2/GF_INV_MAG_0/VDD"
+merge "JK_FF_mag_2/GF_INV_MAG_0/VDD" "JK_FF_mag_0/nand2_mag_4/VDD"
+merge "JK_FF_mag_0/nand2_mag_4/VDD" "m1_6163_1994#"
+merge "m1_6163_1994#" "JK_FF_mag_1/VDD"
+merge "JK_FF_mag_1/VDD" "JK_FF_mag_1/GF_INV_MAG_0/VDD"
+merge "JK_FF_mag_1/GF_INV_MAG_0/VDD" "JK_FF_mag_0/VDD"
+merge "JK_FF_mag_0/VDD" "m1_2897_1989#"
+merge "nor_3_mag_0/OUT" "GF_INV_MAG_0/IN" -275.626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8382 -518 0 0 0 0 0 0 0 0
+merge "GF_INV_MAG_0/IN" "m1_6995_3433#"
+merge "JK_FF_mag_2/RST" "JK_FF_mag_1/RST" -776.282 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16517 -978 0 0 0 0 0 0 0 0
+merge "JK_FF_mag_1/RST" "JK_FF_mag_0/RST"
+merge "JK_FF_mag_0/RST" "RST"
+merge "nor_3_mag_0/IN1" "and2_mag_2/OUT" -464.483 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8450 -512 0 0 0 0 0 0 0 0
+merge "and2_mag_2/OUT" "m1_5141_3656#"
+merge "and2_mag_2/IN1" "and2_mag_0/IN2" -1644.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28213 -1436 -4836 -290 0 0 0 0 0 0
+merge "and2_mag_0/IN2" "JK_FF_mag_1/J"
+merge "JK_FF_mag_1/J" "JK_FF_mag_1/K"
+merge "JK_FF_mag_1/K" "JK_FF_mag_0/Q"
+merge "JK_FF_mag_0/Q" "Q0"
+merge "nor_3_mag_0/IN2" "JK_FF_mag_2/Q" -1107.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5041 -284 -6048 -322 0 0 0 0 0 0
+merge "JK_FF_mag_2/Q" "Q2"
+merge "and2_mag_2/IN2" "and2_mag_1/IN1" -1426.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19625 -1036 -7139 -354 0 0 0 0 0 0
+merge "and2_mag_1/IN1" "and2_mag_0/IN1"
+merge "and2_mag_0/IN1" "JK_FF_mag_1/Q"
+merge "JK_FF_mag_1/Q" "Q1"
+merge "Buffer_delayed_mag_0/OUT" "nor_3_mag_0/IN3" -229.752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9536 -552 0 0 0 0 0 0 0 0
+merge "nor_3_mag_0/IN3" "m1_6234_3107#"
+merge "and2_mag_1/IN2" "JK_FF_mag_2/CLK" -1665.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18203 -826 -14233 -920 0 0 0 0 0 0
+merge "JK_FF_mag_2/CLK" "m1_6655_1588#"
+merge "m1_6655_1588#" "JK_FF_mag_1/CLK"
+merge "JK_FF_mag_1/CLK" "JK_FF_mag_0/CLK"
+merge "JK_FF_mag_0/CLK" "CLK"
+merge "and2_mag_0/OUT" "JK_FF_mag_2/J" -702.487 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11531 -640 0 0 0 0 0 0 0 0
+merge "JK_FF_mag_2/J" "m1_3186_3296#"
+merge "Buffer_delayed_mag_0/IN" "and2_mag_1/OUT" -379.599 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8736 -532 0 0 0 0 0 0 0 0
+merge "and2_mag_1/OUT" "m1_4141_3288#"

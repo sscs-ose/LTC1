@@ -1,0 +1,423 @@
+timestamp 1713185578
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_0 0 1 2309 -1 0 -424
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_3 0 1 2669 -1 0 -424
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_23 0 -1 2670 1 0 -914
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_24 0 -1 2306 1 0 -910
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_1 1 0 3797 0 1 -606
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_27 1 0 3281 0 1 -609
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_11 1 0 4613 0 1 -606
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_0 1 0 4205 0 1 -606
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_10 1 0 5129 0 1 -606
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_4 1 0 5537 0 1 -606
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_2 1 0 5945 0 1 -606
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_31 1 0 6499 0 1 -606
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_7 0 1 2669 -1 0 -24
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_8 0 1 2309 -1 0 -24
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_2 0 1 2669 -1 0 384
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_3 0 1 2309 -1 0 384
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_13 1 0 3797 0 1 -196
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_18 1 0 3797 0 1 214
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_29 1 0 3277 0 1 210
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_30 1 0 3279 0 1 -198
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_12 1 0 4613 0 1 -196
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_20 1 0 4613 0 1 214
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_5 1 0 4205 0 1 -196
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_8 1 0 4205 0 1 214
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_5 1 0 5129 0 1 -196
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_14 1 0 5129 0 1 214
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_1 1 0 5537 0 1 -196
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_6 1 0 5537 0 1 214
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_4 1 0 5945 0 1 -196
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_15 1 0 5945 0 1 214
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_33 1 0 6497 0 1 216
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_34 1 0 6497 0 1 -196
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_6 0 1 2669 -1 0 792
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_9 0 1 2309 -1 0 792
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_25 0 -1 2309 1 0 1221
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_26 0 -1 2668 1 0 1221
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_19 1 0 3797 0 1 624
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_28 1 0 3281 0 1 624
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_21 1 0 4613 0 1 624
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_9 1 0 4205 0 1 624
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_16 1 0 5129 0 1 624
+use pmos_3p3_HVHTA7 pmos_3p3_HVHTA7_7 1 0 5537 0 1 624
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_17 1 0 5945 0 1 624
+use pmos_3p3_HMKTA7 pmos_3p3_HMKTA7_32 1 0 6497 0 1 626
+port "M2" 1 2710 935 2710 935 m1
+port "M4" 2 2182 927 2182 927 m1
+port "VCTRL" 3 1483 -706 1483 -706 m1
+node "a_3197_n703#" 29 6.22112 3197 -703 p 0 0 0 0 0 0 0 0 0 0 0 0 6972 416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3195_n293#" 28 0.493671 3195 -293 p 0 0 0 0 0 0 0 0 0 0 0 0 7348 422 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3194_116#" 29 0.609128 3194 116 p 0 0 0 0 0 0 0 0 0 0 0 0 6930 414 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "M2" 602 888.26 2710 935 m1 0 0 0 0 0 0 0 0 0 0 0 0 190182 7682 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 259400 12756 846296 25778 774110 25560 0 0 0 0
+node "a_3197_530#" 28 0.328158 3197 530 p 0 0 0 0 0 0 0 0 0 0 0 0 7095 416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3785_674#" 28 0.00911548 3785 674 p 0 0 0 0 0 0 0 0 0 0 0 0 248 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "M4" 633 1301.22 2182 927 m1 0 0 0 0 0 0 0 0 0 0 0 0 178968 7642 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 444406 20176 884428 26340 744614 21924 0 0 0 0
+node "a_2740_794#" 7 0 2740 794 p 0 0 0 0 0 0 0 0 0 0 0 0 25 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2719_794#" 26 0.0180315 2719 794 p 0 0 0 0 0 0 0 0 0 0 0 0 90 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VCTRL" 383 782.914 1483 -706 m1 0 0 0 0 0 0 0 0 0 0 0 0 124913 5146 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101744 4054 536475 13756 0 0 0 0 0 0
+node "a_2720_1137#" 28 5.82697 2720 1137 p 0 0 0 0 0 0 0 0 0 0 0 0 7392 424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1846_n1269#" 4307 40594.7 1846 -1269 nw 12690073 15866 0 0 1608101 34196 85629 3710 0 0 0 0 355020 8268 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2743539 81736 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_3785_674#" "M4" -9.85151
+cap "w_1846_n1269#" "M4" 12254.1
+cap "a_3194_116#" "VCTRL" 1.17103
+cap "a_3195_n293#" "VCTRL" 1.19914
+cap "M2" "a_2719_794#" 0.30897
+cap "VCTRL" "a_2720_1137#" 3.78385
+cap "a_2740_794#" "a_2719_794#" -7.92714
+cap "VCTRL" "M4" 967.78
+cap "w_1846_n1269#" "a_2719_794#" 9.49207
+cap "a_3194_116#" "M4" 1.30136
+cap "a_3195_n293#" "M4" 2.27477
+cap "M2" "a_2740_794#" 0.0858249
+cap "M2" "a_3197_n703#" 0.793234
+cap "a_2719_794#" "VCTRL" 1.22983
+cap "M2" "a_3197_530#" 5.5726
+cap "M2" "a_3785_674#" 0.512501
+cap "w_1846_n1269#" "M2" 9375.43
+cap "a_2719_794#" "a_2720_1137#" 0.575201
+cap "w_1846_n1269#" "a_2740_794#" 2.43462
+cap "w_1846_n1269#" "a_3197_n703#" 128.763
+cap "M2" "VCTRL" 2384.17
+cap "w_1846_n1269#" "a_3197_530#" 132.159
+cap "w_1846_n1269#" "a_3785_674#" 17.7532
+cap "a_2740_794#" "VCTRL" -18.2658
+cap "VCTRL" "a_3197_n703#" 1.53669
+cap "M2" "a_3194_116#" 5.60985
+cap "M2" "a_3195_n293#" 5.63194
+cap "a_3197_530#" "VCTRL" 1.74566
+cap "M2" "a_2720_1137#" 0.710132
+cap "a_3785_674#" "VCTRL" 0.00138104
+cap "w_1846_n1269#" "VCTRL" 3727.44
+cap "a_2740_794#" "a_2720_1137#" 0.169177
+cap "M2" "M4" 7984.08
+cap "w_1846_n1269#" "a_3194_116#" 132.078
+cap "a_3197_n703#" "M4" 2.57857
+cap "w_1846_n1269#" "a_3195_n293#" 134.824
+cap "w_1846_n1269#" "a_2720_1137#" 135.99
+cap "a_3197_530#" "M4" 0.823287
+cap "pmos_3p3_HVHTA7_9/a_n308_n50#" "pmos_3p3_HVHTA7_9/a_52_n94#" -97.8183
+cap "pmos_3p3_HVHTA7_9/a_n308_n50#" "pmos_3p3_HMKTA7_9/a_n84_n94#" -288.412
+cap "pmos_3p3_HVHTA7_9/a_52_n94#" "pmos_3p3_HMKTA7_9/a_n84_n94#" 62.4376
+cap "pmos_3p3_HVHTA7_9/a_n308_n50#" "pmos_3p3_HVHTA7_9/a_n52_n50#" -116.041
+cap "pmos_3p3_HVHTA7_9/a_52_n94#" "pmos_3p3_HVHTA7_9/a_n52_n50#" 18.8406
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_9/a_n52_n50#" 48.1432
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HMKTA7_17/a_n172_n50#" 0.177407
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -197.13
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HVHTA7_4/a_52_n94#" 53.1471
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HMKTA7_17/a_n172_n50#" 13.9637
+cap "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HVHTA7_7/a_n52_n50#" 78.7601
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_4/a_52_n94#" 0.308257
+cap "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HMKTA7_9/a_n84_n94#" 0.356099
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HMKTA7_14/a_n172_n50#" 4.82894
+cap "pmos_3p3_HVHTA7_4/a_52_n94#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -40.745
+cap "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -203.844
+cap "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HVHTA7_4/a_52_n94#" 9.42495
+cap "pmos_3p3_HMKTA7_14/a_n172_n50#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -42.0076
+cap "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HMKTA7_14/a_n172_n50#" 12.0489
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HVHTA7_7/a_52_n94#" 0.0776111
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_7/a_n52_n50#" 2.60329
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HMKTA7_17/a_84_n50#" -480.42
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HMKTA7_17/a_n84_n94#" -421.218
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HMKTA7_17/a_84_n50#" 327.12
+cap "pmos_3p3_HVHTA7_4/a_n52_n50#" "pmos_3p3_HVHTA7_7/a_52_n94#" 0.256902
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HVHTA7_7/a_52_n94#" 27.046
+cap "pmos_3p3_HVHTA7_4/a_n52_n50#" "pmos_3p3_HMKTA7_32/a_84_n50#" -7.47535
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HMKTA7_32/a_84_n50#" -39.34
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HVHTA7_1/a_52_n94#" 14.7319
+cap "pmos_3p3_HMKTA7_17/a_84_n50#" "pmos_3p3_HVHTA7_4/a_n52_n50#" 0.504125
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HMKTA7_17/a_84_n50#" 17.2757
+cap "pmos_3p3_HVHTA7_1/a_52_n94#" "pmos_3p3_HVHTA7_7/a_52_n94#" 63.7081
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HVHTA7_7/a_52_n94#" -159.912
+cap "pmos_3p3_HMKTA7_17/a_84_n50#" "pmos_3p3_HVHTA7_7/a_52_n94#" 14.8999
+cap "pmos_3p3_HVHTA7_1/a_52_n94#" "pmos_3p3_HMKTA7_32/a_84_n50#" -96.724
+cap "pmos_3p3_HVHTA7_1/a_52_n94#" "pmos_3p3_HMKTA7_17/a_84_n50#" 21.5015
+cap "pmos_3p3_HMKTA7_17/a_84_n50#" "pmos_3p3_HMKTA7_32/a_84_n50#" -74.1223
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_9/a_52_n94#" 46.1658
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_8/a_n52_n50#" 0.0252045
+cap "pmos_3p3_HVHTA7_9/a_n52_n50#" "pmos_3p3_HVHTA7_9/a_n308_n50#" -161.786
+cap "pmos_3p3_HVHTA7_9/a_n308_n50#" "pmos_3p3_HVHTA7_9/a_52_n94#" -129.257
+cap "pmos_3p3_HVHTA7_9/a_n52_n50#" "pmos_3p3_HVHTA7_9/a_52_n94#" 4.90676
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_9/a_n308_n50#" -393.882
+cap "pmos_3p3_HVHTA7_9/a_n52_n50#" "pmos_3p3_HMKTA7_9/a_n84_n94#" 102.512
+cap "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -128.399
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HVHTA7_7/a_n52_n50#" 53.3394
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HMKTA7_17/a_n172_n50#" 22.2095
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HMKTA7_14/a_n172_n50#" 4.78065
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HMKTA7_16/a_n172_n50#" 0.0144257
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HVHTA7_4/a_52_n94#" 0.00968451
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -70.3458
+cap "pmos_3p3_HVHTA7_4/a_52_n94#" "pmos_3p3_HVHTA7_7/a_n52_n50#" 0.0858302
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -188.618
+cap "pmos_3p3_HMKTA7_14/a_n172_n50#" "pmos_3p3_HMKTA7_17/a_n172_n50#" -44.4168
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HMKTA7_16/a_n172_n50#" 8.78502
+cap "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HMKTA7_16/a_n172_n50#" 58.9408
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_7/a_52_n94#" 0.416988
+cap "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HVHTA7_7/a_n52_n50#" 8.63146
+cap "pmos_3p3_HVHTA7_4/a_52_n94#" "pmos_3p3_HMKTA7_17/a_n172_n50#" 0.0130396
+cap "pmos_3p3_HMKTA7_14/a_n172_n50#" "pmos_3p3_HMKTA7_16/a_n172_n50#" 7.31452
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HMKTA7_17/a_84_n50#" 275.05
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HMKTA7_32/a_84_n50#" -428.653
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HMKTA7_17/a_84_n50#" -306.48
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HMKTA7_17/a_84_n50#" 15.729
+cap "pmos_3p3_HMKTA7_17/a_84_n50#" "pmos_3p3_HMKTA7_17/a_n84_n94#" 24.2007
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HMKTA7_17/a_n84_n94#" -168.031
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HMKTA7_32/a_84_n50#" -36.7483
+cap "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HMKTA7_17/a_n84_n94#" 75.1813
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HVHTA7_1/a_52_n94#" 0.684809
+cap "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HVHTA7_1/a_52_n94#" 0.0835793
+cap "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HMKTA7_17/a_84_n50#" -61.9388
+merge "pmos_3p3_HMKTA7_32/a_84_n50#" "pmos_3p3_HMKTA7_32/a_n172_n50#" -31571.4 -9152640 -82528 0 0 0 0 -229629 -10590 0 0 0 0 -231430 -8442 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -291274 -18738 0 0 0 0 0 0 0 0
+merge "pmos_3p3_HMKTA7_32/a_n172_n50#" "pmos_3p3_HMKTA7_32/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_32/a_n84_n94#" "pmos_3p3_HMKTA7_32/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_32/w_n258_n180#" "pmos_3p3_HMKTA7_34/a_84_n50#"
+merge "pmos_3p3_HMKTA7_34/a_84_n50#" "pmos_3p3_HMKTA7_34/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_34/a_n172_n50#" "pmos_3p3_HMKTA7_34/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_34/a_n84_n94#" "pmos_3p3_HMKTA7_34/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_34/w_n258_n180#" "pmos_3p3_HMKTA7_33/a_84_n50#"
+merge "pmos_3p3_HMKTA7_33/a_84_n50#" "pmos_3p3_HMKTA7_33/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_33/a_n172_n50#" "pmos_3p3_HMKTA7_33/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_33/a_n84_n94#" "pmos_3p3_HMKTA7_33/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_33/w_n258_n180#" "pmos_3p3_HMKTA7_31/a_84_n50#"
+merge "pmos_3p3_HMKTA7_31/a_84_n50#" "pmos_3p3_HMKTA7_31/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_31/a_n172_n50#" "pmos_3p3_HMKTA7_31/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_31/a_n84_n94#" "pmos_3p3_HMKTA7_31/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_31/w_n258_n180#" "pmos_3p3_HMKTA7_17/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_17/a_n172_n50#" "pmos_3p3_HMKTA7_17/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_17/w_n258_n180#" "pmos_3p3_HVHTA7_7/a_220_n50#"
+merge "pmos_3p3_HVHTA7_7/a_220_n50#" "pmos_3p3_HVHTA7_7/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_7/a_n308_n50#" "pmos_3p3_HVHTA7_7/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_7/w_n394_n180#" "pmos_3p3_HMKTA7_16/a_84_n50#"
+merge "pmos_3p3_HMKTA7_16/a_84_n50#" "pmos_3p3_HMKTA7_16/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_16/w_n258_n180#" "pmos_3p3_HVHTA7_9/a_220_n50#"
+merge "pmos_3p3_HVHTA7_9/a_220_n50#" "pmos_3p3_HMKTA7_21/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_21/a_n172_n50#" "pmos_3p3_HMKTA7_15/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_15/a_n172_n50#" "pmos_3p3_HMKTA7_15/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_15/w_n258_n180#" "pmos_3p3_HMKTA7_4/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_4/a_n172_n50#" "pmos_3p3_HMKTA7_4/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_4/w_n258_n180#" "pmos_3p3_HVHTA7_6/a_220_n50#"
+merge "pmos_3p3_HVHTA7_6/a_220_n50#" "pmos_3p3_HVHTA7_6/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_6/a_n308_n50#" "pmos_3p3_HVHTA7_6/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_6/w_n394_n180#" "pmos_3p3_HVHTA7_1/a_220_n50#"
+merge "pmos_3p3_HVHTA7_1/a_220_n50#" "pmos_3p3_HVHTA7_1/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_1/a_n308_n50#" "pmos_3p3_HVHTA7_1/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_1/w_n394_n180#" "pmos_3p3_HMKTA7_14/a_84_n50#"
+merge "pmos_3p3_HMKTA7_14/a_84_n50#" "pmos_3p3_HMKTA7_14/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_14/w_n258_n180#" "pmos_3p3_HMKTA7_5/a_84_n50#"
+merge "pmos_3p3_HMKTA7_5/a_84_n50#" "pmos_3p3_HMKTA7_5/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_5/w_n258_n180#" "pmos_3p3_HVHTA7_8/a_220_n50#"
+merge "pmos_3p3_HVHTA7_8/a_220_n50#" "pmos_3p3_HVHTA7_5/a_220_n50#"
+merge "pmos_3p3_HVHTA7_5/a_220_n50#" "pmos_3p3_HMKTA7_20/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_20/a_n172_n50#" "pmos_3p3_HMKTA7_12/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_12/a_n172_n50#" "pmos_3p3_HMKTA7_2/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_2/a_n172_n50#" "pmos_3p3_HMKTA7_2/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_2/w_n258_n180#" "pmos_3p3_HVHTA7_4/a_220_n50#"
+merge "pmos_3p3_HVHTA7_4/a_220_n50#" "pmos_3p3_HVHTA7_4/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_4/a_n308_n50#" "pmos_3p3_HVHTA7_4/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_4/w_n394_n180#" "pmos_3p3_HMKTA7_10/a_84_n50#"
+merge "pmos_3p3_HMKTA7_10/a_84_n50#" "pmos_3p3_HMKTA7_10/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_10/w_n258_n180#" "pmos_3p3_HVHTA7_0/a_220_n50#"
+merge "pmos_3p3_HVHTA7_0/a_220_n50#" "pmos_3p3_HMKTA7_11/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_11/a_n172_n50#" "pmos_3p3_HVHTA7_9/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_9/a_n308_n50#" "pmos_3p3_HVHTA7_9/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_9/w_n394_n180#" "pmos_3p3_HMKTA7_21/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_21/w_n258_n180#" "pmos_3p3_HMKTA7_28/a_84_n50#"
+merge "pmos_3p3_HMKTA7_28/a_84_n50#" "a_3197_530#"
+merge "a_3197_530#" "pmos_3p3_HMKTA7_28/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_28/a_n172_n50#" "pmos_3p3_HMKTA7_28/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_28/a_n84_n94#" "pmos_3p3_HMKTA7_28/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_28/w_n258_n180#" "pmos_3p3_HMKTA7_19/a_84_n50#"
+merge "pmos_3p3_HMKTA7_19/a_84_n50#" "pmos_3p3_HMKTA7_19/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_19/w_n258_n180#" "pmos_3p3_HMKTA7_26/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_26/a_n172_n50#" "pmos_3p3_HMKTA7_26/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_26/a_n84_n94#" "a_2720_1137#"
+merge "a_2720_1137#" "pmos_3p3_HMKTA7_26/a_84_n50#"
+merge "pmos_3p3_HMKTA7_26/a_84_n50#" "pmos_3p3_HMKTA7_26/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_26/w_n258_n180#" "pmos_3p3_HMKTA7_25/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_25/a_n172_n50#" "pmos_3p3_HMKTA7_25/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_25/a_n84_n94#" "pmos_3p3_HMKTA7_25/a_84_n50#"
+merge "pmos_3p3_HMKTA7_25/a_84_n50#" "pmos_3p3_HMKTA7_25/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_25/w_n258_n180#" "pmos_3p3_HMKTA7_9/a_84_n50#"
+merge "pmos_3p3_HMKTA7_9/a_84_n50#" "pmos_3p3_HMKTA7_9/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_9/w_n258_n180#" "pmos_3p3_HMKTA7_6/a_84_n50#"
+merge "pmos_3p3_HMKTA7_6/a_84_n50#" "pmos_3p3_HMKTA7_6/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_6/w_n258_n180#" "pmos_3p3_HVHTA7_8/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_8/a_n308_n50#" "pmos_3p3_HVHTA7_8/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_8/w_n394_n180#" "pmos_3p3_HVHTA7_5/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_5/a_n308_n50#" "pmos_3p3_HVHTA7_5/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_5/w_n394_n180#" "pmos_3p3_HMKTA7_20/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_20/w_n258_n180#" "pmos_3p3_HMKTA7_12/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_12/w_n258_n180#" "pmos_3p3_HMKTA7_30/a_84_n50#"
+merge "pmos_3p3_HMKTA7_30/a_84_n50#" "a_3195_n293#"
+merge "a_3195_n293#" "pmos_3p3_HMKTA7_30/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_30/a_n172_n50#" "pmos_3p3_HMKTA7_30/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_30/a_n84_n94#" "pmos_3p3_HMKTA7_30/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_30/w_n258_n180#" "pmos_3p3_HMKTA7_29/a_84_n50#"
+merge "pmos_3p3_HMKTA7_29/a_84_n50#" "a_3194_116#"
+merge "a_3194_116#" "pmos_3p3_HMKTA7_29/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_29/a_n172_n50#" "pmos_3p3_HMKTA7_29/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_29/a_n84_n94#" "pmos_3p3_HMKTA7_29/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_29/w_n258_n180#" "pmos_3p3_HMKTA7_18/a_84_n50#"
+merge "pmos_3p3_HMKTA7_18/a_84_n50#" "pmos_3p3_HMKTA7_18/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_18/w_n258_n180#" "pmos_3p3_HMKTA7_13/a_84_n50#"
+merge "pmos_3p3_HMKTA7_13/a_84_n50#" "pmos_3p3_HMKTA7_13/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_13/w_n258_n180#" "pmos_3p3_HVHTA7_3/a_220_n50#"
+merge "pmos_3p3_HVHTA7_3/a_220_n50#" "pmos_3p3_HVHTA7_3/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_3/a_n308_n50#" "pmos_3p3_HVHTA7_3/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_3/w_n394_n180#" "pmos_3p3_HVHTA7_2/a_220_n50#"
+merge "pmos_3p3_HVHTA7_2/a_220_n50#" "pmos_3p3_HVHTA7_2/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_2/a_n308_n50#" "pmos_3p3_HVHTA7_2/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_2/w_n394_n180#" "pmos_3p3_HMKTA7_8/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_8/a_n172_n50#" "pmos_3p3_HMKTA7_8/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_8/w_n258_n180#" "pmos_3p3_HMKTA7_7/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_7/a_n172_n50#" "pmos_3p3_HMKTA7_7/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_7/w_n258_n180#" "pmos_3p3_HVHTA7_0/a_n308_n50#"
+merge "pmos_3p3_HVHTA7_0/a_n308_n50#" "pmos_3p3_HVHTA7_0/w_n394_n180#"
+merge "pmos_3p3_HVHTA7_0/w_n394_n180#" "pmos_3p3_HMKTA7_11/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_11/w_n258_n180#" "pmos_3p3_HMKTA7_27/a_84_n50#"
+merge "pmos_3p3_HMKTA7_27/a_84_n50#" "a_3197_n703#"
+merge "a_3197_n703#" "pmos_3p3_HMKTA7_27/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_27/a_n172_n50#" "pmos_3p3_HMKTA7_27/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_27/a_n84_n94#" "pmos_3p3_HMKTA7_27/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_27/w_n258_n180#" "pmos_3p3_HMKTA7_1/a_84_n50#"
+merge "pmos_3p3_HMKTA7_1/a_84_n50#" "pmos_3p3_HMKTA7_1/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_1/w_n258_n180#" "pmos_3p3_HMKTA7_24/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_24/a_n172_n50#" "pmos_3p3_HMKTA7_24/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_24/a_n84_n94#" "pmos_3p3_HMKTA7_24/a_84_n50#"
+merge "pmos_3p3_HMKTA7_24/a_84_n50#" "pmos_3p3_HMKTA7_24/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_24/w_n258_n180#" "pmos_3p3_HMKTA7_23/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_23/a_n172_n50#" "pmos_3p3_HMKTA7_23/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_23/a_n84_n94#" "pmos_3p3_HMKTA7_23/a_84_n50#"
+merge "pmos_3p3_HMKTA7_23/a_84_n50#" "pmos_3p3_HMKTA7_23/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_23/w_n258_n180#" "pmos_3p3_HMKTA7_3/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_3/a_n172_n50#" "pmos_3p3_HMKTA7_3/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_3/w_n258_n180#" "pmos_3p3_HMKTA7_0/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_0/a_n172_n50#" "pmos_3p3_HMKTA7_0/w_n258_n180#"
+merge "pmos_3p3_HMKTA7_0/w_n258_n180#" "w_1846_n1269#"
+merge "pmos_3p3_HMKTA7_32/VSUBS" "pmos_3p3_HMKTA7_34/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_3p3_HMKTA7_34/VSUBS" "pmos_3p3_HMKTA7_33/VSUBS"
+merge "pmos_3p3_HMKTA7_33/VSUBS" "pmos_3p3_HMKTA7_31/VSUBS"
+merge "pmos_3p3_HMKTA7_31/VSUBS" "pmos_3p3_HMKTA7_17/VSUBS"
+merge "pmos_3p3_HMKTA7_17/VSUBS" "pmos_3p3_HVHTA7_7/VSUBS"
+merge "pmos_3p3_HVHTA7_7/VSUBS" "pmos_3p3_HMKTA7_16/VSUBS"
+merge "pmos_3p3_HMKTA7_16/VSUBS" "pmos_3p3_HMKTA7_15/VSUBS"
+merge "pmos_3p3_HMKTA7_15/VSUBS" "pmos_3p3_HMKTA7_4/VSUBS"
+merge "pmos_3p3_HMKTA7_4/VSUBS" "pmos_3p3_HVHTA7_6/VSUBS"
+merge "pmos_3p3_HVHTA7_6/VSUBS" "pmos_3p3_HVHTA7_1/VSUBS"
+merge "pmos_3p3_HVHTA7_1/VSUBS" "pmos_3p3_HMKTA7_14/VSUBS"
+merge "pmos_3p3_HMKTA7_14/VSUBS" "pmos_3p3_HMKTA7_5/VSUBS"
+merge "pmos_3p3_HMKTA7_5/VSUBS" "pmos_3p3_HMKTA7_2/VSUBS"
+merge "pmos_3p3_HMKTA7_2/VSUBS" "pmos_3p3_HVHTA7_4/VSUBS"
+merge "pmos_3p3_HVHTA7_4/VSUBS" "pmos_3p3_HMKTA7_10/VSUBS"
+merge "pmos_3p3_HMKTA7_10/VSUBS" "pmos_3p3_HVHTA7_9/VSUBS"
+merge "pmos_3p3_HVHTA7_9/VSUBS" "pmos_3p3_HMKTA7_21/VSUBS"
+merge "pmos_3p3_HMKTA7_21/VSUBS" "pmos_3p3_HMKTA7_28/VSUBS"
+merge "pmos_3p3_HMKTA7_28/VSUBS" "pmos_3p3_HMKTA7_19/VSUBS"
+merge "pmos_3p3_HMKTA7_19/VSUBS" "pmos_3p3_HMKTA7_26/VSUBS"
+merge "pmos_3p3_HMKTA7_26/VSUBS" "pmos_3p3_HMKTA7_25/VSUBS"
+merge "pmos_3p3_HMKTA7_25/VSUBS" "pmos_3p3_HMKTA7_9/VSUBS"
+merge "pmos_3p3_HMKTA7_9/VSUBS" "pmos_3p3_HMKTA7_6/VSUBS"
+merge "pmos_3p3_HMKTA7_6/VSUBS" "pmos_3p3_HVHTA7_8/VSUBS"
+merge "pmos_3p3_HVHTA7_8/VSUBS" "pmos_3p3_HVHTA7_5/VSUBS"
+merge "pmos_3p3_HVHTA7_5/VSUBS" "pmos_3p3_HMKTA7_20/VSUBS"
+merge "pmos_3p3_HMKTA7_20/VSUBS" "pmos_3p3_HMKTA7_12/VSUBS"
+merge "pmos_3p3_HMKTA7_12/VSUBS" "pmos_3p3_HMKTA7_30/VSUBS"
+merge "pmos_3p3_HMKTA7_30/VSUBS" "pmos_3p3_HMKTA7_29/VSUBS"
+merge "pmos_3p3_HMKTA7_29/VSUBS" "pmos_3p3_HMKTA7_18/VSUBS"
+merge "pmos_3p3_HMKTA7_18/VSUBS" "pmos_3p3_HMKTA7_13/VSUBS"
+merge "pmos_3p3_HMKTA7_13/VSUBS" "pmos_3p3_HVHTA7_3/VSUBS"
+merge "pmos_3p3_HVHTA7_3/VSUBS" "pmos_3p3_HVHTA7_2/VSUBS"
+merge "pmos_3p3_HVHTA7_2/VSUBS" "pmos_3p3_HMKTA7_8/VSUBS"
+merge "pmos_3p3_HMKTA7_8/VSUBS" "pmos_3p3_HMKTA7_7/VSUBS"
+merge "pmos_3p3_HMKTA7_7/VSUBS" "pmos_3p3_HVHTA7_0/VSUBS"
+merge "pmos_3p3_HVHTA7_0/VSUBS" "pmos_3p3_HMKTA7_11/VSUBS"
+merge "pmos_3p3_HMKTA7_11/VSUBS" "pmos_3p3_HMKTA7_27/VSUBS"
+merge "pmos_3p3_HMKTA7_27/VSUBS" "pmos_3p3_HMKTA7_1/VSUBS"
+merge "pmos_3p3_HMKTA7_1/VSUBS" "pmos_3p3_HMKTA7_24/VSUBS"
+merge "pmos_3p3_HMKTA7_24/VSUBS" "pmos_3p3_HMKTA7_23/VSUBS"
+merge "pmos_3p3_HMKTA7_23/VSUBS" "pmos_3p3_HMKTA7_3/VSUBS"
+merge "pmos_3p3_HMKTA7_3/VSUBS" "pmos_3p3_HMKTA7_0/VSUBS"
+merge "pmos_3p3_HMKTA7_0/VSUBS" "VSUBS"
+merge "pmos_3p3_HMKTA7_17/a_n84_n94#" "pmos_3p3_HMKTA7_15/a_84_n50#" -1351.98 0 0 0 0 0 0 0 0 0 0 0 0 -25816 -5724 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57914 -4158 0 0 0 0 0 0 0 0
+merge "pmos_3p3_HMKTA7_15/a_84_n50#" "pmos_3p3_HMKTA7_4/a_84_n50#"
+merge "pmos_3p3_HMKTA7_4/a_84_n50#" "pmos_3p3_HMKTA7_2/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_2/a_n84_n94#" "pmos_3p3_HVHTA7_7/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_7/a_n52_n50#" "pmos_3p3_HMKTA7_16/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_16/a_n84_n94#" "pmos_3p3_HMKTA7_21/a_84_n50#"
+merge "pmos_3p3_HMKTA7_21/a_84_n50#" "pmos_3p3_HVHTA7_6/a_52_n94#"
+merge "pmos_3p3_HVHTA7_6/a_52_n94#" "pmos_3p3_HVHTA7_6/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_6/a_n220_n94#" "pmos_3p3_HVHTA7_1/a_52_n94#"
+merge "pmos_3p3_HVHTA7_1/a_52_n94#" "pmos_3p3_HVHTA7_1/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_1/a_n220_n94#" "pmos_3p3_HMKTA7_14/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_14/a_n172_n50#" "pmos_3p3_HMKTA7_5/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_5/a_n172_n50#" "pmos_3p3_HMKTA7_20/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_20/a_n84_n94#" "pmos_3p3_HMKTA7_12/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_12/a_n84_n94#" "pmos_3p3_HVHTA7_4/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_4/a_n52_n50#" "pmos_3p3_HMKTA7_10/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_10/a_n84_n94#" "pmos_3p3_HMKTA7_11/a_84_n50#"
+merge "pmos_3p3_HMKTA7_11/a_84_n50#" "pmos_3p3_HVHTA7_9/a_52_n94#"
+merge "pmos_3p3_HVHTA7_9/a_52_n94#" "pmos_3p3_HVHTA7_9/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_9/a_n220_n94#" "pmos_3p3_HMKTA7_19/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_19/a_n172_n50#" "pmos_3p3_HMKTA7_6/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_6/a_n172_n50#" "pmos_3p3_HVHTA7_8/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_8/a_n52_n50#" "pmos_3p3_HVHTA7_5/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_5/a_n52_n50#" "pmos_3p3_HMKTA7_18/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_18/a_n84_n94#" "pmos_3p3_HMKTA7_13/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_13/a_n84_n94#" "pmos_3p3_HVHTA7_3/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_3/a_n52_n50#" "pmos_3p3_HMKTA7_7/a_84_n50#"
+merge "pmos_3p3_HMKTA7_7/a_84_n50#" "pmos_3p3_HVHTA7_0/a_52_n94#"
+merge "pmos_3p3_HVHTA7_0/a_52_n94#" "pmos_3p3_HVHTA7_0/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_0/a_n220_n94#" "pmos_3p3_HMKTA7_1/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_1/a_n172_n50#" "pmos_3p3_HMKTA7_0/a_84_n50#"
+merge "pmos_3p3_HMKTA7_0/a_84_n50#" "M2"
+merge "pmos_3p3_HMKTA7_9/a_n84_n94#" "pmos_3p3_HMKTA7_6/a_n84_n94#" -614.408 0 0 0 0 0 0 0 0 0 0 0 0 -17724 -3946 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_3p3_HMKTA7_6/a_n84_n94#" "a_2740_794#"
+merge "a_2740_794#" "a_2719_794#"
+merge "a_2719_794#" "pmos_3p3_HVHTA7_3/a_52_n94#"
+merge "pmos_3p3_HVHTA7_3/a_52_n94#" "pmos_3p3_HVHTA7_3/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_3/a_n220_n94#" "pmos_3p3_HVHTA7_2/a_52_n94#"
+merge "pmos_3p3_HVHTA7_2/a_52_n94#" "pmos_3p3_HVHTA7_2/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_2/a_n220_n94#" "pmos_3p3_HMKTA7_8/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_8/a_n84_n94#" "pmos_3p3_HMKTA7_7/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_7/a_n84_n94#" "pmos_3p3_HMKTA7_3/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_3/a_n84_n94#" "pmos_3p3_HMKTA7_0/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_0/a_n84_n94#" "VCTRL"
+merge "pmos_3p3_HMKTA7_17/a_84_n50#" "pmos_3p3_HMKTA7_15/a_n84_n94#" -1409.94 0 0 0 0 0 0 0 0 0 0 0 0 -32048 -6014 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -62790 -4202 0 0 0 0 0 0 0 0
+merge "pmos_3p3_HMKTA7_15/a_n84_n94#" "pmos_3p3_HMKTA7_4/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_4/a_n84_n94#" "pmos_3p3_HMKTA7_2/a_84_n50#"
+merge "pmos_3p3_HMKTA7_2/a_84_n50#" "pmos_3p3_HVHTA7_7/a_52_n94#"
+merge "pmos_3p3_HVHTA7_7/a_52_n94#" "pmos_3p3_HVHTA7_7/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_7/a_n220_n94#" "pmos_3p3_HMKTA7_16/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_16/a_n172_n50#" "pmos_3p3_HMKTA7_21/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_21/a_n84_n94#" "pmos_3p3_HVHTA7_6/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_6/a_n52_n50#" "pmos_3p3_HVHTA7_1/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_1/a_n52_n50#" "pmos_3p3_HMKTA7_14/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_14/a_n84_n94#" "pmos_3p3_HMKTA7_5/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_5/a_n84_n94#" "pmos_3p3_HMKTA7_20/a_84_n50#"
+merge "pmos_3p3_HMKTA7_20/a_84_n50#" "pmos_3p3_HMKTA7_12/a_84_n50#"
+merge "pmos_3p3_HMKTA7_12/a_84_n50#" "pmos_3p3_HVHTA7_4/a_52_n94#"
+merge "pmos_3p3_HVHTA7_4/a_52_n94#" "pmos_3p3_HVHTA7_4/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_4/a_n220_n94#" "pmos_3p3_HMKTA7_10/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_10/a_n172_n50#" "pmos_3p3_HMKTA7_11/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_11/a_n84_n94#" "pmos_3p3_HVHTA7_9/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_9/a_n52_n50#" "pmos_3p3_HMKTA7_19/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_19/a_n84_n94#" "a_3785_674#"
+merge "a_3785_674#" "pmos_3p3_HMKTA7_9/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_9/a_n172_n50#" "pmos_3p3_HVHTA7_8/a_52_n94#"
+merge "pmos_3p3_HVHTA7_8/a_52_n94#" "pmos_3p3_HVHTA7_8/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_8/a_n220_n94#" "pmos_3p3_HVHTA7_5/a_52_n94#"
+merge "pmos_3p3_HVHTA7_5/a_52_n94#" "pmos_3p3_HVHTA7_5/a_n220_n94#"
+merge "pmos_3p3_HVHTA7_5/a_n220_n94#" "pmos_3p3_HMKTA7_18/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_18/a_n172_n50#" "pmos_3p3_HMKTA7_13/a_n172_n50#"
+merge "pmos_3p3_HMKTA7_13/a_n172_n50#" "pmos_3p3_HVHTA7_2/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_2/a_n52_n50#" "pmos_3p3_HMKTA7_8/a_84_n50#"
+merge "pmos_3p3_HMKTA7_8/a_84_n50#" "pmos_3p3_HVHTA7_0/a_n52_n50#"
+merge "pmos_3p3_HVHTA7_0/a_n52_n50#" "pmos_3p3_HMKTA7_1/a_n84_n94#"
+merge "pmos_3p3_HMKTA7_1/a_n84_n94#" "pmos_3p3_HMKTA7_3/a_84_n50#"
+merge "pmos_3p3_HMKTA7_3/a_84_n50#" "M4"

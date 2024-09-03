@@ -1,0 +1,50 @@
+* NGSPICE file created from Delay_Cell_mag.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_ZB3RD7 a_268_n144# a_n52_n100# a_n468_n100# a_164_n100# a_380_n100#
++ a_n164_n144# a_n380_n144# a_52_n144# a_n268_n100# w_n554_n230#
+X0 a_n268_n100# a_n380_n144# a_n468_n100# w_n554_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.56u
+X1 a_380_n100# a_268_n144# a_164_n100# w_n554_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.56u
+X2 a_164_n100# a_52_n144# a_n52_n100# w_n554_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+X3 a_n52_n100# a_n164_n144# a_n268_n100# w_n554_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+.ends
+
+.subckt nmos_3p3_FSHHD6 a_n52_n100# a_164_n100# a_n164_n144# a_n252_n100# a_52_n144#
++ VSUBS
+X0 a_164_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.56u
+X1 a_n52_n100# a_n164_n144# a_n252_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.56u
+.ends
+
+.subckt nmos_3p3_VMHHD6 a_268_n144# a_n52_n100# a_n468_n100# a_164_n100# a_380_n100#
++ a_n164_n144# a_n380_n144# a_52_n144# a_n268_n100# VSUBS
+X0 a_n268_n100# a_n380_n144# a_n468_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.56u
+X1 a_380_n100# a_268_n144# a_164_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.56u
+X2 a_164_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+X3 a_n52_n100# a_n164_n144# a_n268_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.56u
+.ends
+
+.subckt nmos_3p3_QNHHD6 a_56_n100# a_n56_n144# a_n144_n100# VSUBS
+X0 a_56_n100# a_n56_n144# a_n144_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.56u
+.ends
+
+.subckt Delay_Cell_mag OUT OUTB EN VCONT INB IN VSS VDD
+Xpmos_3p3_ZB3RD7_5 OUT VDD VDD OUTB VDD OUT OUT OUT OUTB VDD pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_4 OUTB VDD VDD OUT VDD OUTB OUTB OUTB OUT VDD pmos_3p3_ZB3RD7
+Xnmos_3p3_FSHHD6_0 a_562_n2079# VSS EN VSS EN VSS nmos_3p3_FSHHD6
+Xnmos_3p3_VMHHD6_0 VCONT VSS VSS a_2095_n808# VSS VCONT VCONT VCONT a_2095_n808# VSS
++ nmos_3p3_VMHHD6
+Xnmos_3p3_VMHHD6_2 INB a_562_n2079# a_562_n2079# OUTB a_562_n2079# INB INB INB OUTB
++ VSS nmos_3p3_VMHHD6
+Xnmos_3p3_VMHHD6_1 IN a_562_n2079# a_562_n2079# OUT a_562_n2079# IN IN IN OUT VSS
++ nmos_3p3_VMHHD6
+Xnmos_3p3_QNHHD6_0 a_562_n2079# a_562_n2079# a_562_n2079# VSS nmos_3p3_QNHHD6
+Xnmos_3p3_QNHHD6_1 a_562_n2079# a_562_n2079# a_562_n2079# VSS nmos_3p3_QNHHD6
+Xpmos_3p3_ZB3RD7_0 a_2095_n808# VDD VDD a_2095_n808# VDD a_2095_n808# a_2095_n808#
++ a_2095_n808# a_2095_n808# VDD pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_1 OUT m1_277_n67# m1_277_n67# OUT m1_277_n67# OUT OUT OUT OUT VDD
++ pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_2 OUTB m1_277_n67# m1_277_n67# OUTB m1_277_n67# OUTB OUTB OUTB OUTB
++ VDD pmos_3p3_ZB3RD7
+Xpmos_3p3_ZB3RD7_3 a_2095_n808# m1_277_n67# m1_277_n67# VDD m1_277_n67# a_2095_n808#
++ a_2095_n808# a_2095_n808# VDD VDD pmos_3p3_ZB3RD7
+.ends
+

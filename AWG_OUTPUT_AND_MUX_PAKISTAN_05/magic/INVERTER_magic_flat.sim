@@ -1,0 +1,9 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x IN VSS OUT VSS s=3592,184 d=6184,328 l=56 w=50 x=346 y=-153 nfet_03v3
+x VSS VSS VSS VSS s=6184,328 l=56 w=50 x=178 y=-153 nfet_03v3
+x IN VDD OUT VDD s=3592,184 d=6184,328 l=56 w=50 x=346 y=136 pfet_03v3
+x IN OUT VDD VDD s=6184,328 d=3592,184 l=56 w=50 x=178 y=136 pfet_03v3
+R OUT 59
+R IN 117
+R VDD 1302
+R VSS 125

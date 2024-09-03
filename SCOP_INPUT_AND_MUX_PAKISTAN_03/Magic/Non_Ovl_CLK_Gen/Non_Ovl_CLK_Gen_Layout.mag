@@ -1,0 +1,136 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1699883071
+<< nwell >>
+rect -875 434 -873 980
+rect 2368 512 2370 980
+rect 2368 -868 2370 -400
+<< metal1 >>
+rect -1279 937 2774 967
+rect -1279 885 -833 937
+rect -781 885 2774 937
+rect -1279 855 2774 885
+rect -1478 347 -1227 393
+rect -912 367 -866 521
+rect -212 429 220 475
+rect 741 429 1027 475
+rect 1527 429 1813 475
+rect 2315 393 2361 475
+rect 2726 474 3162 520
+rect -1319 -209 -1273 347
+rect -912 321 -714 367
+rect 2315 347 2402 393
+rect 2818 339 2894 351
+rect 2818 287 2830 339
+rect 2882 287 2894 339
+rect 2818 275 2894 287
+rect -1227 0 2722 112
+rect -1319 -255 -717 -209
+rect 2315 -281 2424 -235
+rect -206 -363 224 -317
+rect 741 -363 1028 -317
+rect 1527 -363 1814 -317
+rect 2315 -363 2361 -281
+rect 2833 -362 2879 275
+rect 2940 -164 2986 474
+rect 2929 -176 3005 -164
+rect 2929 -228 2941 -176
+rect 2993 -228 3005 -176
+rect 2929 -240 3005 -228
+rect 2724 -408 3016 -362
+rect -873 -773 2774 -743
+rect -873 -825 -833 -773
+rect -781 -825 2774 -773
+rect -873 -855 2774 -825
+<< via1 >>
+rect -833 885 -781 937
+rect -101 287 -49 339
+rect 2830 287 2882 339
+rect -101 -228 -49 -176
+rect 2941 -228 2993 -176
+rect -833 -825 -781 -773
+<< metal2 >>
+rect -845 937 -769 949
+rect -845 885 -833 937
+rect -781 885 -769 937
+rect -845 873 -769 885
+rect -835 -761 -779 873
+rect -113 341 -37 351
+rect 2818 341 2894 351
+rect -113 339 2894 341
+rect -113 287 -101 339
+rect -49 287 2830 339
+rect 2882 287 2894 339
+rect -113 285 2894 287
+rect -113 275 -37 285
+rect 2818 275 2894 285
+rect -113 -174 -37 -164
+rect 2929 -174 3005 -164
+rect -113 -176 3005 -174
+rect -113 -228 -101 -176
+rect -49 -228 2941 -176
+rect 2993 -228 3005 -176
+rect -113 -230 3005 -228
+rect -113 -240 -37 -230
+rect 2929 -240 3005 -230
+rect -845 -773 -769 -761
+rect -845 -825 -833 -773
+rect -781 -825 -769 -773
+rect -845 -837 -769 -825
+use Inv_16x_Layout  Inv_16x_Layout_0 ~/GF180Projects/Tapeout/Magic/Logic_Gates/Inverter_8x
+timestamp 1692335619
+transform 1 0 1630 0 -1 5
+box -58 -107 738 873
+use Inv_16x_Layout  Inv_16x_Layout_1
+timestamp 1692335619
+transform 1 0 58 0 -1 5
+box -58 -107 738 873
+use Inv_16x_Layout  Inv_16x_Layout_2
+timestamp 1692335619
+transform 1 0 844 0 -1 5
+box -58 -107 738 873
+use Inv_16x_Layout  Inv_16x_Layout_3
+timestamp 1692335619
+transform 1 0 1630 0 1 107
+box -58 -107 738 873
+use Inv_16x_Layout  Inv_16x_Layout_4
+timestamp 1692335619
+transform 1 0 844 0 1 107
+box -58 -107 738 873
+use Inv_16x_Layout  Inv_16x_Layout_5
+timestamp 1692335619
+transform 1 0 58 0 1 107
+box -58 -107 738 873
+use Inverter_Layout  Inverter_Layout_0 ~/GF180Projects/Tapeout/Magic/Logic_Gates/Inverter
+timestamp 1699521709
+transform 1 0 2432 0 -1 -12
+box -62 -124 342 856
+use Inverter_Layout  Inverter_Layout_1
+timestamp 1699521709
+transform 1 0 2432 0 1 124
+box -62 -124 342 856
+use Inverter_Layout  Inverter_Layout_2
+timestamp 1699521709
+transform 1 0 -1217 0 1 124
+box -62 -124 342 856
+use NOR_Layout  NOR_Layout_0 ~/GF180Projects/Tapeout/Magic/Logic_Gates/NOR_Gate
+timestamp 1699883071
+transform 1 0 -873 0 -1 0
+box 0 -112 902 868
+use NOR_Layout  NOR_Layout_1
+timestamp 1699883071
+transform 1 0 -873 0 1 112
+box 0 -112 902 868
+<< labels >>
+flabel metal1 -1448 377 -1448 377 0 FreeSans 320 0 0 0 VIN
+port 0 nsew
+flabel metal1 2962 -384 2962 -384 0 FreeSans 320 0 0 0 PH2
+port 3 nsew
+flabel metal1 392 58 392 58 0 FreeSans 320 0 0 0 VSS
+port 4 nsew
+flabel metal1 355 912 355 912 0 FreeSans 320 0 0 0 VDD
+port 5 nsew
+flabel metal1 3090 497 3090 497 0 FreeSans 320 0 0 0 PH1
+port 2 nsew
+<< end >>

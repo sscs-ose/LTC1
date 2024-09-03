@@ -1,0 +1,20 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x A Inverter_0.IN a_230_424# VDD s=5200,204 d=8800,376 l=56 w=100 x=898 y=424 pfet_03v3
+x A VSS Inverter_0.IN VSS s=6184,328 d=6184,328 l=56 w=50 x=738 y=74 nfet_03v3
+x B VSS Inverter_0.IN VSS s=6184,328 d=6184,328 l=56 w=50 x=334 y=74 nfet_03v3
+x B a_230_424# VDD VDD s=5200,204 d=8800,376 l=56 w=100 x=334 y=424 pfet_03v3
+x Inverter_0.IN VSS OUT VSS s=6184,328 d=6184,328 l=56 w=50 x=1302 y=72 nfet_03v3
+x Inverter_0.IN VDD OUT VDD s=8800,376 d=8800,376 l=56 w=100 x=1302 y=371 pfet_03v3
+x A a_230_424# Inverter_0.IN VDD s=8800,376 d=5200,204 l=56 w=100 x=738 y=424 pfet_03v3
+x B VDD a_230_424# VDD s=8800,376 d=5200,204 l=56 w=100 x=174 y=424 pfet_03v3
+R A 129
+R B 129
+R OUT 20
+= OUT Inverter_0.OUT
+R Inverter_0.IN 118
+R a_230_424# 72
+C VDD0 2.6
+R VDD 3696
+= VDD Inverter_0.VDD
+R VSS 214
+= VSS Inverter_0.VSS

@@ -1,0 +1,510 @@
+timestamp 1713971633
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use tg_magic tg_magic_3 1 0 -917 0 1 515
+use tg_magic tg_magic_2 -1 0 4348 0 -1 378
+use tg_magic tg_magic_1 1 0 2297 0 1 514
+use tg_magic tg_magic_0 -1 0 1134 0 -1 378
+use inverter_magic inverter_magic_6 1 0 1034 0 1 1044
+use inverter_magic inverter_magic_5 1 0 -2001 0 1 1044
+use inverter_magic inverter_magic_4 -1 0 2199 0 -1 -159
+use inverter_magic inverter_magic_3 -1 0 5456 0 -1 -159
+use inverter_magic inverter_magic_2 1 0 4297 0 1 1051
+port "Q" 2 5488 450 5488 450 m1
+port "CLK" 1 -1848 1012 -1848 1012 m1
+node "m1_4187_n687#" 0 124.068 4187 -687 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18620 672 0 0 0 0 0 0 0 0
+node "m1_975_n692#" 1 134.353 975 -692 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17187 776 0 0 0 0 0 0 0 0
+node "m1_5235_340#" 0 67.7142 5235 340 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13601 540 0 0 0 0 0 0 0 0
+node "m1_3194_204#" 3 495.384 3194 204 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40388 1836 80967 2674 0 0 0 0 0 0
+node "m1_3232_375#" 0 71.939 3232 375 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10608 448 0 0 0 0 0 0 0 0
+node "m1_4051_379#" 1 207.315 4051 379 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21745 884 29667 982 0 0 0 0 0 0
+node "m1_n5_198#" 3 493.478 -5 198 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40894 1838 81394 2646 0 0 0 0 0 0
+node "m1_1034_337#" 0 46.5405 1034 337 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9417 404 0 0 0 0 0 0 0 0
+node "m1_1999_486#" 1 171.424 1999 486 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20583 834 34516 1254 0 0 0 0 0 0
+node "m1_1033_475#" 0 53.214 1033 475 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9720 402 0 0 0 0 0 0 0 0
+node "Q" 4 719.426 5488 450 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86804 3872 0 0 0 0 0 0 0 0
+node "m1_78_607#" 16 2673.99 78 607 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94162 3760 532282 17824 0 0 0 0 0 0
+node "m1_1888_n150#" 6 869.123 1888 -150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106405 4502 101817 2884 0 0 0 0 0 0
+node "m1_n985_342#" 6 1096.34 -985 342 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63938 2742 152140 5302 0 0 0 0 0 0
+node "m1_n1140_984#" 13 2119.18 -1140 984 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39958 1800 449331 15326 0 0 0 0 0 0
+node "m1_4218_1534#" 5 1266.43 4218 1534 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86621 2654 154748 4806 0 0 0 0 0 0
+node "m1_n958_1503#" 0 50.9588 -958 1503 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11242 446 0 0 0 0 0 0 0 0
+node "m1_n1911_1503#" 20 1709.58 -1911 1503 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60688 1884 824996 26242 0 0 0 0 0 0
+node "m1_1004_1535#" 3 227.849 1004 1535 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36067 2294 0 0 0 0 0 0 0 0
+node "CLK" 17 2688.13 -1848 1012 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 296260 12968 185858 5874 0 0 0 0 0 0
+node "VDD" 6932 440.018 2107 -715 nw 104644 1946 0 0 24601 820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26623 832 0 0 0 0 0 0 0 0
+node "w_1083_n739#" 12889 78.3 1083 -739 nw 26100 1250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1083_1624#" 8609 1597.83 1083 1624 nw 532609 4780 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n2001_1624#" 135500 26.016 -2001 1624 nw 8672 2184 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 -959 475 ppd 0 0 0 0 0 0 12798 478 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9720 402 0 0 0 0 0 0 0 0
+cap "m1_1888_n150#" "m1_n1140_984#" 4.9897
+cap "CLK" "m1_1004_1535#" 1070.35
+cap "m1_4218_1534#" "m1_5235_340#" 22.7846
+cap "m1_78_607#" "w_n2001_1624#" 0.233466
+cap "m1_n5_198#" "m1_n985_342#" 223.116
+cap "CLK" "m1_975_n692#" 1.40207
+cap "m1_78_607#" "m1_n985_342#" 93.0368
+cap "w_1083_n739#" "CLK" 2.53436
+cap "CLK" "VDD" 0.321968
+cap "w_1083_1624#" "m1_n985_342#" 0.0548228
+cap "CLK" "m1_n5_198#" 151.688
+cap "m1_78_607#" "CLK" 301.581
+cap "w_n2001_1624#" "m1_n1140_984#" 0.211743
+cap "CLK" "w_1083_1624#" 258.769
+cap "m1_1999_486#" "m1_3232_375#" 3.13299
+cap "m1_n1140_984#" "m1_n985_342#" 112.19
+cap "m1_4218_1534#" "m1_3194_204#" 6.17342
+cap "m1_1034_337#" "m1_1033_475#" 87.6532
+cap "CLK" "m1_n1140_984#" 107.116
+cap "m1_78_607#" "m1_4218_1534#" 110.373
+cap "m1_4218_1534#" "w_1083_1624#" 0.370942
+cap "m1_n958_1503#" "w_n2001_1624#" 0.11829
+cap "m1_3232_375#" "m1_3194_204#" 23.6221
+cap "m1_n958_1503#" "m1_n985_342#" 0.224437
+cap "m1_78_607#" "m1_5235_340#" 6.25981
+cap "m1_4218_1534#" "m1_n1140_984#" 25.0894
+cap "m1_n1911_1503#" "m1_78_607#" 21.1359
+cap "m1_78_607#" "m1_3232_375#" 19.3974
+cap "VDD" "m1_1999_486#" 3.77253
+cap "m1_78_607#" "m1_1999_486#" 85.7343
+cap "m1_1034_337#" "m1_n985_342#" 23.7338
+cap "m1_n958_1503#" "CLK" 84.4965
+cap "m1_4218_1534#" "m1_4051_379#" 5.07568
+cap "m1_n5_198#" "m1_1004_1535#" 0.810044
+cap "CLK" "m1_1034_337#" 0.722515
+cap "m1_78_607#" "m1_1004_1535#" 22.9487
+cap "m1_1888_n150#" "m1_1033_475#" 0.0803013
+cap "m1_n1911_1503#" "m1_n1140_984#" 710.154
+cap "w_1083_n739#" "m1_975_n692#" 7.84655
+cap "m1_n1140_984#" "m1_3232_375#" 0.0215431
+cap "VDD" "m1_975_n692#" 2.58668
+cap "m1_1999_486#" "m1_n1140_984#" 13.74
+cap "w_1083_1624#" "m1_1004_1535#" 18.1914
+cap "m1_4218_1534#" "m1_4187_n687#" 3.19357
+cap "w_1083_n739#" "VDD" 0.0499483
+cap "w_1083_n739#" "m1_n5_198#" 4.45181
+cap "m1_n5_198#" "m1_975_n692#" 21.9592
+cap "m1_5235_340#" "m1_4051_379#" 3.85607
+cap "m1_3232_375#" "m1_4051_379#" 8.44993
+cap "m1_78_607#" "m1_3194_204#" 326.806
+cap "m1_n5_198#" "VDD" 0.582857
+cap "m1_1999_486#" "m1_4051_379#" 1.72562
+cap "m1_78_607#" "VDD" 16.9921
+cap "m1_78_607#" "m1_n5_198#" 2.57082
+cap "m1_78_607#" "w_1083_1624#" 60.2604
+cap "m1_n1911_1503#" "m1_n958_1503#" 14.9838
+cap "w_1083_n739#" "m1_n1140_984#" 4.07913
+cap "m1_n1140_984#" "m1_975_n692#" 24.5841
+cap "m1_n1140_984#" "m1_3194_204#" 194.916
+cap "m1_1888_n150#" "m1_n985_342#" 17.3164
+cap "m1_1033_475#" "m1_n985_342#" 28.5164
+cap "VDD" "m1_n1140_984#" 44.3457
+cap "m1_4218_1534#" "Q" 142.499
+cap "m1_n5_198#" "m1_n1140_984#" 75.2413
+cap "m1_78_607#" "m1_n1140_984#" 79.9273
+cap "m1_4051_379#" "m1_3194_204#" 10.9983
+cap "m1_1888_n150#" "CLK" 174.488
+cap "m1_1999_486#" "m1_1034_337#" 3.55882
+cap "CLK" "m1_1033_475#" 0.190097
+cap "m1_78_607#" "m1_4051_379#" 309.669
+cap "m1_5235_340#" "Q" 65.4086
+cap "m1_4187_n687#" "m1_3194_204#" 5.56171
+cap "w_n2001_1624#" "m1_n985_342#" 0.0202827
+cap "m1_78_607#" "m1_n958_1503#" 0.551082
+cap "m1_n1140_984#" "m1_4051_379#" 3.79314
+cap "CLK" "w_n2001_1624#" 4.42345
+cap "m1_n5_198#" "m1_1034_337#" 20.4142
+cap "CLK" "m1_n985_342#" 54.4762
+cap "m1_1888_n150#" "m1_3232_375#" 15.1282
+cap "m1_4187_n687#" "m1_n1140_984#" 36.6057
+cap "m1_n958_1503#" "m1_n1140_984#" 12.9143
+cap "Q" "m1_3194_204#" 11.4836
+cap "m1_1888_n150#" "m1_1999_486#" 297.344
+cap "m1_1999_486#" "m1_1033_475#" 3.85032
+cap "m1_4187_n687#" "m1_4051_379#" 0.121437
+cap "m1_78_607#" "Q" 24.2694
+cap "m1_1888_n150#" "m1_1004_1535#" 13.9498
+cap "m1_1004_1535#" "m1_1033_475#" 2.04859
+cap "m1_n1911_1503#" "w_n2001_1624#" 2.43819
+cap "m1_1888_n150#" "m1_3194_204#" 2.94001
+cap "m1_n1140_984#" "Q" 0.25678
+cap "m1_n1911_1503#" "m1_n985_342#" 13.5587
+cap "m1_1888_n150#" "VDD" 12.7554
+cap "m1_1888_n150#" "m1_n5_198#" 12.4827
+cap "m1_1999_486#" "m1_n985_342#" 0.146226
+cap "m1_n5_198#" "m1_1033_475#" 0.102822
+cap "m1_78_607#" "m1_1888_n150#" 511.304
+cap "m1_78_607#" "m1_1033_475#" 0.0899208
+cap "Q" "m1_4051_379#" 0.659402
+cap "m1_n1911_1503#" "CLK" 529.055
+cap "CLK" "m1_3232_375#" 0.0355275
+cap "m1_1888_n150#" "w_1083_1624#" 66.8025
+cap "CLK" "m1_1999_486#" 60.0318
+cap "m1_1004_1535#" "m1_n985_342#" 22.0265
+cap "tg_magic_3/CLK" "tg_magic_0/IN" 7.31962
+cap "tg_magic_0/inverter_magic_0/VIN" "tg_magic_3/VDD" 0.705928
+cap "tg_magic_0/inverter_magic_0/VIN" "tg_magic_0/OUT" 4.70589
+cap "inverter_magic_5/VSS" "tg_magic_3/VDD" 158.598
+cap "tg_magic_0/OUT" "inverter_magic_5/VSS" 124.284
+cap "tg_magic_3/CLK" "tg_magic_3/VDD" 30.9899
+cap "tg_magic_0/inverter_magic_0/VOUT" "tg_magic_3/VDD" 0.890747
+cap "tg_magic_3/CLK" "tg_magic_0/OUT" 54.5495
+cap "tg_magic_0/OUT" "tg_magic_0/inverter_magic_0/VOUT" 0.00667317
+cap "tg_magic_3/VDD" "inverter_magic_5/VIN" 0.560508
+cap "tg_magic_0/IN" "tg_magic_0/OUT" 3.41606
+cap "tg_magic_0/inverter_magic_0/VIN" "inverter_magic_5/VSS" 0.156417
+cap "tg_magic_0/OUT" "tg_magic_3/VDD" 10.6821
+cap "tg_magic_3/CLK" "tg_magic_0/inverter_magic_0/VIN" 17.0848
+cap "tg_magic_3/CLK" "inverter_magic_5/VSS" 54.538
+cap "tg_magic_3/CLK" "tg_magic_0/inverter_magic_0/VOUT" 10.7719
+cap "inverter_magic_5/VSS" "inverter_magic_5/VIN" 5.60945
+cap "tg_magic_3/IN" "tg_magic_0/IN" -1.00661
+cap "inverter_magic_4/VSS" "tg_magic_3/OUT" 242.153
+cap "tg_magic_3/CLK" "tg_magic_0/IN" 50.9851
+cap "tg_magic_3/IN" "tg_magic_3/OUT" 2.37223
+cap "tg_magic_3/OUT" "tg_magic_0/IN" 25.0304
+cap "inverter_magic_4/VSS" "tg_magic_0/CLK" 0.22947
+cap "tg_magic_0/IN" "tg_magic_0/inverter_magic_0/VOUT" 34.2346
+cap "tg_magic_3/inverter_magic_0/VOUT" "tg_magic_3/OUT" 7.28374
+cap "tg_magic_3/CLK" "tg_magic_3/OUT" 129.013
+cap "tg_magic_3/CLK" "tg_magic_0/inverter_magic_0/VOUT" 42.5728
+cap "tg_magic_3/IN" "tg_magic_0/CLK" 0.285704
+cap "tg_magic_0/CLK" "tg_magic_0/IN" 146.179
+cap "tg_magic_3/VDD" "tg_magic_0/IN" 9.71627
+cap "tg_magic_3/OUT" "tg_magic_0/inverter_magic_0/VOUT" 1.78917
+cap "tg_magic_0/CLK" "tg_magic_3/inverter_magic_0/VOUT" 0.183396
+cap "tg_magic_0/CLK" "tg_magic_3/CLK" 84.101
+cap "tg_magic_3/CLK" "tg_magic_3/VDD" 208.938
+cap "tg_magic_0/CLK" "tg_magic_3/OUT" 84.4582
+cap "tg_magic_3/VDD" "tg_magic_3/OUT" -1.885
+cap "tg_magic_0/CLK" "tg_magic_0/inverter_magic_0/VOUT" 0.845301
+cap "tg_magic_3/VDD" "tg_magic_0/inverter_magic_0/VOUT" 0.966121
+cap "tg_magic_0/CLK" "tg_magic_3/VDD" -4.07249
+cap "inverter_magic_4/VSS" "tg_magic_0/IN" 94.1819
+cap "tg_magic_3/IN" "inverter_magic_4/VSS" 46.289
+cap "inverter_magic_4/VSS" "tg_magic_3/CLK" -4.13526
+cap "tg_magic_3/OUT" "inverter_magic_6/VOUT" 0.127049
+cap "tg_magic_0/inverter_magic_0/VOUT" "inverter_magic_6/VOUT" 0.0316408
+cap "tg_magic_3/OUT" "tg_magic_3/inverter_magic_0/VOUT" 0.8954
+cap "tg_magic_3/VDD" "tg_magic_1/CLK" 5.14926
+cap "tg_magic_2/IN" "tg_magic_2/VDD" 3.37633
+cap "tg_magic_0/IN" "tg_magic_0/OUT" 0.0191534
+cap "m1_n1140_984#" "tg_magic_0/IN" 29.1523
+cap "tg_magic_2/inverter_magic_0/VOUT" "tg_magic_1/CLK" 0.0286031
+cap "tg_magic_1/IN" "tg_magic_2/IN" 0.120367
+cap "tg_magic_3/OUT" "tg_magic_1/CLK" 16.1891
+cap "tg_magic_1/IN" "tg_magic_3/VDD" 0.816783
+cap "tg_magic_2/inverter_magic_0/VOUT" "tg_magic_2/VDD" 1.49793
+cap "tg_magic_1/IN" "tg_magic_3/OUT" 5.1426
+cap "tg_magic_1/IN" "tg_magic_2/inverter_magic_0/VOUT" 1.60178
+cap "inverter_magic_4/VSS" "tg_magic_1/CLK" 223.185
+cap "inverter_magic_4/VSS" "tg_magic_2/VDD" -26.5418
+cap "tg_magic_0/IN" "tg_magic_3/VDD" -0.405022
+cap "inverter_magic_4/VSS" "tg_magic_1/IN" 56.1846
+cap "tg_magic_0/IN" "tg_magic_3/OUT" -5.55022
+cap "tg_magic_3/IN" "tg_magic_3/OUT" -0.647963
+cap "tg_magic_1/CLK" "tg_magic_0/inverter_magic_0/VOUT" 3.01016
+cap "m1_n1140_984#" "inverter_magic_4/VSS" 4.63979
+cap "tg_magic_2/VDD" "tg_magic_0/inverter_magic_0/VOUT" 2.32478
+cap "tg_magic_3/CLK" "tg_magic_1/CLK" 1.37311
+cap "inverter_magic_4/VSS" "tg_magic_0/IN" 178.018
+cap "tg_magic_1/IN" "tg_magic_0/inverter_magic_0/VOUT" 0.529807
+cap "tg_magic_3/VDD" "tg_magic_3/OUT" 4.2679
+cap "tg_magic_1/CLK" "tg_magic_2/OUT" 0.8052
+cap "tg_magic_2/VDD" "tg_magic_2/OUT" 13.2357
+cap "tg_magic_1/IN" "tg_magic_2/OUT" 1.00287
+cap "tg_magic_2/VDD" "tg_magic_1/CLK" 34.8894
+cap "tg_magic_1/IN" "tg_magic_1/CLK" 55.1062
+cap "tg_magic_1/CLK" "tg_magic_2/nmos_3p3_G2UGVV_0/a_160_n156#" 3.86059
+cap "m1_n1140_984#" "tg_magic_0/inverter_magic_0/VOUT" 10.2079
+cap "tg_magic_0/IN" "tg_magic_0/inverter_magic_0/VOUT" 13.9241
+cap "inverter_magic_4/VSS" "tg_magic_3/VDD" -15.26
+cap "inverter_magic_4/VSS" "tg_magic_3/OUT" 112.603
+cap "tg_magic_1/IN" "tg_magic_2/VDD" 50.4426
+cap "tg_magic_1/IN" "tg_magic_2/nmos_3p3_G2UGVV_0/a_160_n156#" 1.08912
+cap "tg_magic_1/CLK" "tg_magic_0/OUT" 0.0760322
+cap "tg_magic_0/IN" "tg_magic_2/OUT" 4.46809
+cap "m1_n1140_984#" "tg_magic_1/CLK" 13.203
+cap "tg_magic_0/IN" "tg_magic_1/CLK" 32.418
+cap "m1_n1140_984#" "tg_magic_2/VDD" 256.625
+cap "tg_magic_0/IN" "tg_magic_2/VDD" 41.8497
+cap "tg_magic_1/IN" "tg_magic_0/OUT" 0.00161911
+cap "tg_magic_3/IN" "tg_magic_1/CLK" 0.00659293
+cap "m1_n1140_984#" "tg_magic_1/IN" 49.7241
+cap "tg_magic_0/IN" "tg_magic_1/IN" 1.73313
+cap "tg_magic_3/OUT" "tg_magic_3/CLK" 6.1766
+cap "tg_magic_2/IN" "tg_magic_1/CLK" 0.57752
+cap "inverter_magic_2/VSS" "tg_magic_2/IN" 0.916973
+cap "tg_magic_2/VDD" "tg_magic_1/IN" 8.6895
+cap "tg_magic_2/OUT" "tg_magic_2/CLK" 185.715
+cap "tg_magic_2/inverter_magic_0/VOUT" "inverter_magic_3/a_174_387#" 0.0306999
+cap "tg_magic_2/OUT" "tg_magic_0/inverter_magic_0/nmos_3p3_F2UGVV_0/a_n52_n112#" 0.0343567
+cap "tg_magic_2/OUT" "inverter_magic_4/VOUT" 5.5053
+cap "tg_magic_1/CLK" "tg_magic_1/IN" -2.52805
+cap "inverter_magic_2/VSS" "tg_magic_2/CLK" -0.864723
+cap "tg_magic_2/IN" "tg_magic_2/inverter_magic_0/VOUT" 1.42921
+cap "tg_magic_2/OUT" "tg_magic_1/IN" 1.25789
+cap "tg_magic_3/VDD" "tg_magic_2/CLK" 0.950489
+cap "tg_magic_2/CLK" "inverter_magic_3/a_174_387#" 0.227999
+cap "tg_magic_2/OUT" "tg_magic_2/VDD" 33.2302
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_2/CLK" 0.183478
+cap "tg_magic_1/CLK" "tg_magic_2/OUT" 1.966
+cap "inverter_magic_2/VSS" "tg_magic_1/IN" 146.825
+cap "tg_magic_2/inverter_magic_0/VOUT" "tg_magic_2/CLK" 28.3327
+cap "tg_magic_2/IN" "tg_magic_2/CLK" 95.9931
+cap "inverter_magic_2/VSS" "tg_magic_2/VDD" 0.613629
+cap "tg_magic_2/inverter_magic_0/VOUT" "inverter_magic_4/VOUT" 0.0488519
+cap "tg_magic_1/CLK" "inverter_magic_2/VSS" -3.10142
+cap "tg_magic_1/IN" "tg_magic_2/IN" -0.248564
+cap "tg_magic_1/IN" "tg_magic_2/inverter_magic_0/VOUT" 1.60012
+cap "tg_magic_2/VDD" "tg_magic_2/inverter_magic_0/VOUT" 8.34597
+cap "tg_magic_2/OUT" "inverter_magic_2/VSS" 168.389
+cap "tg_magic_2/VDD" "tg_magic_2/IN" 9.30966
+cap "inverter_magic_4/VOUT" "tg_magic_2/CLK" 0.360471
+cap "tg_magic_1/CLK" "tg_magic_2/inverter_magic_0/VOUT" 0.0286031
+cap "tg_magic_1/IN" "tg_magic_2/CLK" 5.42227
+cap "tg_magic_2/OUT" "tg_magic_2/IN" 35.0358
+cap "tg_magic_2/OUT" "tg_magic_2/inverter_magic_0/VOUT" -0.473494
+cap "tg_magic_2/VDD" "tg_magic_2/CLK" 146.333
+cap "tg_magic_1/IN" "tg_magic_3/OUT" -0.0260833
+cap "inverter_magic_2/VSS" "tg_magic_3/VDD" -4.52999
+cap "tg_magic_1/IN" "inverter_magic_4/VOUT" -2.64106
+cap "tg_magic_1/CLK" "tg_magic_2/CLK" 9.22092
+cap "tg_magic_1/inverter_magic_0/VOUT" "inverter_magic_2/VSS" 0.575072
+cap "tg_magic_2/OUT" "tg_magic_1/IN" 12.1365
+cap "tg_magic_2/CLK" "tg_magic_1/CLK" 6.23488
+cap "tg_magic_2/VDD" "inverter_magic_3/VIN" 5.32545
+cap "inverter_magic_3/VIN" "inverter_magic_2/VSS" 0.922521
+cap "tg_magic_2/OUT" "tg_magic_2/IN" -4.42565
+cap "tg_magic_2/CLK" "tg_magic_1/inverter_magic_0/VOUT" 0.000277507
+cap "tg_magic_2/OUT" "tg_magic_2/inverter_magic_0/VOUT" 2.27
+cap "tg_magic_2/CLK" "inverter_magic_3/VIN" 26.3525
+cap "tg_magic_1/IN" "inverter_magic_2/VSS" 3.07202
+cap "tg_magic_2/VDD" "tg_magic_2/IN" 82.8135
+cap "tg_magic_2/IN" "inverter_magic_2/VSS" 156.077
+cap "tg_magic_2/VDD" "tg_magic_2/inverter_magic_0/VOUT" 2.4542
+cap "tg_magic_2/CLK" "tg_magic_1/IN" 0.149067
+cap "tg_magic_2/CLK" "tg_magic_2/IN" 120.388
+cap "tg_magic_2/CLK" "tg_magic_2/inverter_magic_0/VOUT" 40.921
+cap "tg_magic_2/VDD" "tg_magic_2/OUT" 1.50482
+cap "tg_magic_2/OUT" "inverter_magic_2/VSS" 414.014
+cap "tg_magic_2/IN" "inverter_magic_3/VIN" 3.75107
+cap "inverter_magic_3/VIN" "tg_magic_2/inverter_magic_0/VOUT" 0.422346
+cap "tg_magic_2/CLK" "tg_magic_2/OUT" 22.1276
+cap "tg_magic_1/CLK" "tg_magic_2/OUT" 27.7506
+cap "tg_magic_2/VDD" "inverter_magic_2/VSS" -14.8525
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_2/OUT" 0.476508
+cap "tg_magic_2/CLK" "tg_magic_2/VDD" 267.321
+cap "tg_magic_2/OUT" "inverter_magic_3/VIN" 1.47084
+cap "tg_magic_2/CLK" "inverter_magic_2/VSS" 3.72243
+cap "tg_magic_2/IN" "tg_magic_2/inverter_magic_0/VOUT" 44.9495
+cap "tg_magic_1/CLK" "inverter_magic_2/VSS" 3.58836
+cap "tg_magic_2/CLK" "tg_magic_2/VDD" 0.68304
+cap "tg_magic_2/VDD" "tg_magic_2/inverter_magic_0/VOUT" 0.30996
+cap "inverter_magic_3/VIN" "inverter_magic_2/VSS" 100.069
+cap "tg_magic_1/OUT" "inverter_magic_2/VSS" -2.19912
+cap "inverter_magic_3/VOUT" "inverter_magic_3/VIN" -3.1444
+cap "tg_magic_2/VDD" "inverter_magic_2/VSS" 54.8498
+cap "tg_magic_1/OUT" "inverter_magic_3/VIN" -1.01847
+cap "inverter_magic_3/VOUT" "tg_magic_2/VDD" 20.6396
+cap "tg_magic_2/VDD" "inverter_magic_3/VIN" 76.7219
+cap "tg_magic_2/CLK" "inverter_magic_3/VIN" 1.26614
+cap "inverter_magic_3/VIN" "tg_magic_2/inverter_magic_0/VOUT" 0.041773
+cap "tg_magic_3/CLK" "tg_magic_0/inverter_magic_0/VIN" 0.11085
+cap "tg_magic_0/OUT" "tg_magic_3/CLK" -1.96093
+cap "inverter_magic_5/VIN" "tg_magic_3/VDD" 637.139
+cap "tg_magic_3/VDD" "tg_magic_3/inverter_magic_0/VOUT" 3.68615
+cap "tg_magic_3/CLK" "inverter_magic_5/VSS" 22.9513
+cap "inverter_magic_5/VIN" "tg_magic_3/inverter_magic_0/VOUT" 0.0438568
+cap "tg_magic_3/CLK" "tg_magic_3/VDD" 296.43
+cap "inverter_magic_5/VSS" "tg_magic_3/VDD" 77.7375
+cap "tg_magic_3/IN" "tg_magic_3/CLK" -0.190314
+cap "tg_magic_0/OUT" "inverter_magic_5/VIN" -0.0189084
+cap "inverter_magic_5/VIN" "tg_magic_3/CLK" 7.35622
+cap "tg_magic_3/CLK" "tg_magic_3/inverter_magic_0/VOUT" 6.7992
+cap "tg_magic_3/IN" "tg_magic_3/VDD" -0.125877
+cap "inverter_magic_5/VIN" "inverter_magic_5/VSS" 7.77108
+cap "inverter_magic_6/VOUT" "tg_magic_3/inverter_magic_0/VOUT" 0.0462925
+cap "tg_magic_0/IN" "tg_magic_0/CLK" -1.42092
+cap "tg_magic_3/OUT" "inverter_magic_4/VSS" 0.0309747
+cap "tg_magic_3/CLK" "tg_magic_3/inverter_magic_0/VOUT" 4.14805
+cap "tg_magic_0/CLK" "tg_magic_3/OUT" 0.770844
+cap "tg_magic_3/CLK" "inverter_magic_6/VOUT" 0.477797
+cap "tg_magic_3/IN" "tg_magic_3/inverter_magic_0/VOUT" 75.9735
+cap "tg_magic_3/OUT" "tg_magic_3/VDD" -0.791259
+cap "tg_magic_3/IN" "inverter_magic_6/VOUT" 0.590645
+cap "tg_magic_3/CLK" "tg_magic_3/IN" 179.577
+cap "tg_magic_0/CLK" "tg_magic_3/inverter_magic_0/VOUT" 2.99272
+cap "tg_magic_3/CLK" "inverter_magic_4/VSS" 0.991217
+cap "tg_magic_3/VDD" "tg_magic_3/inverter_magic_0/VOUT" 3.66553
+cap "tg_magic_0/inverter_magic_0/VOUT" "tg_magic_3/CLK" 0.132293
+cap "tg_magic_3/CLK" "tg_magic_0/CLK" 21.1497
+cap "tg_magic_3/IN" "inverter_magic_4/VSS" 81.3549
+cap "tg_magic_0/CLK" "tg_magic_3/IN" -8.79925
+cap "tg_magic_3/OUT" "tg_magic_3/inverter_magic_0/VOUT" -0.532238
+cap "tg_magic_3/CLK" "tg_magic_3/VDD" 2.9325
+cap "tg_magic_3/IN" "tg_magic_3/VDD" 188.502
+cap "tg_magic_3/CLK" "tg_magic_0/IN" 0.352334
+cap "tg_magic_3/CLK" "tg_magic_3/OUT" 25.5269
+cap "tg_magic_0/IN" "tg_magic_3/IN" -1.01561
+cap "tg_magic_3/OUT" "tg_magic_3/IN" 30.221
+cap "tg_magic_0/CLK" "tg_magic_3/VDD" 1362.59
+cap "tg_magic_1/CLK" "tg_magic_3/inverter_magic_0/VOUT" 1.97246
+cap "tg_magic_3/VDD" "tg_magic_1/IN" 14.1496
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_1/CLK" 0.895768
+cap "inverter_magic_4/VSS" "tg_magic_3/CLK" 3.60393
+cap "inverter_magic_4/VSS" "tg_magic_3/VDD" -8.65071
+cap "tg_magic_1/CLK" "tg_magic_3/IN" 1.14798
+cap "tg_magic_1/pmos_3p3_VRY6F7_0/a_n360_n112#" "tg_magic_3/OUT" 0.000284833
+cap "m1_n1140_984#" "tg_magic_3/OUT" -0.0126213
+cap "tg_magic_3/OUT" "tg_magic_3/inverter_magic_0/VOUT" 4.79549
+cap "tg_magic_3/CLK" "tg_magic_0/inverter_magic_0/VOUT" 0.0511032
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_3/OUT" 0.0400411
+cap "tg_magic_3/OUT" "tg_magic_3/IN" 63.1975
+cap "tg_magic_0/IN" "tg_magic_1/CLK" -0.591092
+cap "tg_magic_2/VDD" "tg_magic_1/CLK" 0.496157
+cap "tg_magic_1/IN" "tg_magic_3/IN" 9.63677
+cap "tg_magic_3/OUT" "tg_magic_1/CLK" 46.3049
+cap "tg_magic_3/VDD" "tg_magic_3/inverter_magic_0/VOUT" 9.04587
+cap "tg_magic_1/IN" "tg_magic_1/CLK" 32.6075
+cap "inverter_magic_4/VSS" "tg_magic_3/IN" 8.14441
+cap "tg_magic_3/CLK" "tg_magic_1/CLK" 6.47334
+cap "inverter_magic_4/VSS" "tg_magic_1/CLK" 37.5206
+cap "tg_magic_3/VDD" "tg_magic_3/IN" 88.7708
+cap "tg_magic_0/IN" "tg_magic_3/OUT" -4.16733
+cap "tg_magic_2/VDD" "tg_magic_3/OUT" 0.816477
+cap "tg_magic_3/VDD" "tg_magic_1/CLK" 333.445
+cap "tg_magic_1/IN" "tg_magic_3/OUT" 24.2343
+cap "tg_magic_2/VDD" "tg_magic_3/CLK" 0.380302
+cap "tg_magic_0/IN" "tg_magic_3/CLK" 0.181992
+cap "tg_magic_3/CLK" "tg_magic_3/OUT" 9.98544
+cap "tg_magic_3/CLK" "tg_magic_1/IN" 0.0654601
+cap "inverter_magic_4/VSS" "tg_magic_3/OUT" 114.544
+cap "tg_magic_3/inverter_magic_0/VOUT" "tg_magic_3/IN" 4.33229
+cap "tg_magic_0/IN" "tg_magic_3/VDD" -0.405022
+cap "inverter_magic_4/VSS" "tg_magic_1/IN" 25.8194
+cap "tg_magic_3/VDD" "tg_magic_3/OUT" 136.001
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_2/OUT" 10.7239
+cap "tg_magic_1/CLK" "tg_magic_1/IN" 138.325
+cap "tg_magic_2/CLK" "tg_magic_1/IN" -0.159038
+cap "tg_magic_3/VDD" "tg_magic_1/IN" -5.66423
+cap "tg_magic_1/CLK" "inverter_magic_2/VSS" -1.7596
+cap "tg_magic_3/VDD" "inverter_magic_2/VSS" -2.66166
+cap "tg_magic_1/CLK" "tg_magic_3/OUT" 4.03113
+cap "tg_magic_2/VDD" "tg_magic_1/CLK" 0.36116
+cap "tg_magic_2/OUT" "tg_magic_1/CLK" 46.4438
+cap "tg_magic_2/OUT" "tg_magic_3/VDD" 87.3877
+cap "tg_magic_2/inverter_magic_0/VOUT" "tg_magic_1/CLK" 0.0310807
+cap "inverter_magic_2/VSS" "tg_magic_1/IN" 245.044
+cap "inverter_magic_2/pmos_3p3_VH67F7_0/a_n268_n112#" "tg_magic_1/CLK" 0.0146598
+cap "tg_magic_2/OUT" "tg_magic_1/IN" -10.3244
+cap "tg_magic_3/OUT" "tg_magic_1/IN" -6.37387
+cap "tg_magic_2/OUT" "inverter_magic_2/VSS" 2.27978
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_1/CLK" 23.1602
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_3/VDD" -0.565306
+cap "tg_magic_1/CLK" "tg_magic_2/IN" 0.308254
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_1/IN" 16.7996
+cap "tg_magic_2/IN" "tg_magic_1/IN" -1.62802
+cap "tg_magic_2/CLK" "tg_magic_1/CLK" 6.25785
+cap "tg_magic_1/CLK" "tg_magic_3/VDD" 301.082
+cap "inverter_magic_3/VIN" "tg_magic_1/CLK" 0.295352
+cap "tg_magic_2/VDD" "tg_magic_1/CLK" 2.25023
+cap "tg_magic_1/CLK" "inverter_magic_2/VSS" 7.99585
+cap "tg_magic_2/IN" "tg_magic_1/CLK" 0.228644
+cap "tg_magic_2/OUT" "tg_magic_1/inverter_magic_0/VOUT" 32.7329
+cap "tg_magic_2/VDD" "inverter_magic_3/VIN" 2.3614
+cap "tg_magic_2/VDD" "inverter_magic_2/VSS" -4.0853
+cap "tg_magic_2/VDD" "tg_magic_2/IN" -0.679302
+cap "tg_magic_2/OUT" "tg_magic_1/IN" 27.2766
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_1/IN" 0.000243966
+cap "tg_magic_2/CLK" "tg_magic_1/IN" -0.018284
+cap "tg_magic_1/inverter_magic_0/VOUT" "tg_magic_1/CLK" 0.00761019
+cap "tg_magic_2/OUT" "tg_magic_1/CLK" 45.3119
+cap "tg_magic_2/CLK" "tg_magic_1/CLK" 6.82249
+cap "inverter_magic_3/VIN" "tg_magic_2/OUT" 22.7074
+cap "inverter_magic_3/VIN" "tg_magic_1/inverter_magic_0/VOUT" 0.06965
+cap "tg_magic_1/CLK" "tg_magic_1/IN" 1.39219
+cap "tg_magic_2/VDD" "tg_magic_2/OUT" 251.881
+cap "tg_magic_2/VDD" "tg_magic_1/inverter_magic_0/VOUT" 9.73006
+cap "tg_magic_2/OUT" "inverter_magic_2/VSS" 66.5631
+cap "tg_magic_2/IN" "tg_magic_2/OUT" -1.28988
+cap "tg_magic_2/inverter_magic_0/VOUT" "tg_magic_1/CLK" 0.152675
+cap "tg_magic_2/VDD" "tg_magic_1/IN" 10.8076
+cap "inverter_magic_2/VSS" "tg_magic_1/IN" 2.21657
+cap "tg_magic_2/IN" "tg_magic_1/IN" -0.489294
+cap "inverter_magic_6/pmos_3p3_VH67F7_0/a_380_n112#" "tg_magic_1/inverter_magic_0/VOUT" 0.00517545
+cap "tg_magic_1/IN" "tg_magic_2/VDD" 0.77614
+cap "tg_magic_2/VDD" "inverter_magic_3/VIN" 87.0066
+cap "inverter_magic_3/VOUT" "tg_magic_1/OUT" 0.0190363
+cap "inverter_magic_3/VIN" "inverter_magic_2/VSS" 45.137
+cap "inverter_magic_3/VIN" "tg_magic_1/OUT" -0.79397
+cap "tg_magic_2/VDD" "tg_magic_1/a_1282_109#" 3.73015
+cap "tg_magic_2/VDD" "inverter_magic_2/VSS" 8.35593
+cap "tg_magic_2/VDD" "tg_magic_1/OUT" 36.8371
+cap "inverter_magic_2/VSS" "tg_magic_1/OUT" 1.06203
+merge "inverter_magic_2/VSS" "m1_5235_340#" -3252.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51387 -3790 0 0 0 0 0 0 0 0
+merge "m1_5235_340#" "inverter_magic_3/VSS"
+merge "inverter_magic_3/VSS" "tg_magic_2/inverter_magic_0/VSS"
+merge "tg_magic_2/inverter_magic_0/VSS" "m1_4051_379#"
+merge "m1_4051_379#" "tg_magic_1/inverter_magic_0/VSS"
+merge "tg_magic_1/inverter_magic_0/VSS" "inverter_magic_4/VSS"
+merge "inverter_magic_4/VSS" "m1_3232_375#"
+merge "m1_3232_375#" "tg_magic_0/inverter_magic_0/VSS"
+merge "tg_magic_0/inverter_magic_0/VSS" "m1_1034_337#"
+merge "m1_1034_337#" "inverter_magic_6/VSS"
+merge "inverter_magic_6/VSS" "m1_1999_486#"
+merge "m1_1999_486#" "tg_magic_1/VSS"
+merge "tg_magic_1/VSS" "tg_magic_2/VSS"
+merge "tg_magic_2/VSS" "inverter_magic_5/VSS"
+merge "inverter_magic_5/VSS" "m1_1033_475#"
+merge "m1_1033_475#" "tg_magic_0/VSS"
+merge "tg_magic_0/VSS" "tg_magic_3/VSS"
+merge "tg_magic_3/VSS" "tg_magic_3/inverter_magic_0/VSS"
+merge "tg_magic_3/inverter_magic_0/VSS" "VSS"
+merge "inverter_magic_2/VOUT" "inverter_magic_3/VIN" -264.619 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2924 -320 0 0 0 0 0 0 0 0
+merge "inverter_magic_3/VIN" "Q"
+merge "inverter_magic_2/VIN" "tg_magic_1/OUT" -1761.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5590 -612 0 0 0 0 0 0 0 0
+merge "tg_magic_1/OUT" "tg_magic_2/OUT"
+merge "tg_magic_2/OUT" "tg_magic_3/IN"
+merge "tg_magic_3/IN" "m1_78_607#"
+merge "inverter_magic_2/VDD" "inverter_magic_3/VDD" -5217.22 -544316 -17918 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -136294 -8154 0 0 0 0 0 0 0 0
+merge "inverter_magic_3/VDD" "tg_magic_3/w_0_1109#"
+merge "tg_magic_3/w_0_1109#" "m1_4218_1534#"
+merge "m1_4218_1534#" "m1_4187_n687#"
+merge "m1_4187_n687#" "tg_magic_1/VDD"
+merge "tg_magic_1/VDD" "tg_magic_2/VDD"
+merge "tg_magic_2/VDD" "tg_magic_2/inverter_magic_0/VDD"
+merge "tg_magic_2/inverter_magic_0/VDD" "inverter_magic_4/VDD"
+merge "inverter_magic_4/VDD" "VDD"
+merge "VDD" "inverter_magic_6/VDD"
+merge "inverter_magic_6/VDD" "tg_magic_1/inverter_magic_0/VDD"
+merge "tg_magic_1/inverter_magic_0/VDD" "m1_975_n692#"
+merge "m1_975_n692#" "w_1083_n739#"
+merge "w_1083_n739#" "inverter_magic_5/VDD"
+merge "inverter_magic_5/VDD" "m1_1004_1535#"
+merge "m1_1004_1535#" "w_1083_1624#"
+merge "w_1083_1624#" "tg_magic_0/VDD"
+merge "tg_magic_0/VDD" "m1_n1911_1503#"
+merge "m1_n1911_1503#" "tg_magic_3/VDD"
+merge "tg_magic_3/VDD" "m1_n958_1503#"
+merge "m1_n958_1503#" "w_n2001_1624#"
+merge "tg_magic_2/CLK" "inverter_magic_5/VOUT" -1625.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3726 -438 -82600 -2800 0 0 0 0 0 0
+merge "inverter_magic_5/VOUT" "tg_magic_3/CLK"
+merge "tg_magic_3/CLK" "m1_n1140_984#"
+merge "tg_magic_1/CLK" "tg_magic_0/CLK" -1405.91 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5612 -520 0 0 0 0 0 0 0 0
+merge "tg_magic_0/CLK" "inverter_magic_5/VIN"
+merge "inverter_magic_5/VIN" "tg_magic_0/inverter_magic_0/VIN"
+merge "tg_magic_0/inverter_magic_0/VIN" "CLK"
+merge "inverter_magic_4/VOUT" "tg_magic_0/IN" -358.719 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4409 -374 0 0 0 0 0 0 0 0
+merge "tg_magic_0/IN" "m1_n5_198#"
+merge "tg_magic_1/IN" "inverter_magic_4/VIN" -558.571 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11914 -794 0 0 0 0 0 0 0 0
+merge "inverter_magic_4/VIN" "inverter_magic_6/VOUT"
+merge "inverter_magic_6/VOUT" "m1_1888_n150#"
+merge "inverter_magic_3/VOUT" "tg_magic_2/IN" -343.929 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4508 -380 0 0 0 0 0 0 0 0
+merge "tg_magic_2/IN" "m1_3194_204#"
+merge "inverter_magic_6/VIN" "tg_magic_3/OUT" -988.716 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5106 -498 0 0 0 0 0 0 0 0
+merge "tg_magic_3/OUT" "tg_magic_0/OUT"
+merge "tg_magic_0/OUT" "m1_n985_342#"

@@ -1,0 +1,209 @@
+timestamp 1699939503
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_3 1 0 266 0 1 -599
+use nfet_03v3_CTB5PZ nfet_03v3_CTB5PZ_0 1 0 -170 0 1 -600
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_4 1 0 817 0 1 -599
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_0 1 0 1919 0 1 -599
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_6 1 0 1368 0 1 -599
+use nfet_03v3_CTB5PZ nfet_03v3_CTB5PZ_2 1 0 2354 0 1 -599
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_2 1 0 266 0 1 308
+use nfet_03v3_CTB5PZ nfet_03v3_CTB5PZ_1 1 0 -170 0 1 308
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_5 1 0 817 0 1 308
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_1 1 0 1919 0 1 308
+use nfet_03v3_CT75PZ nfet_03v3_CT75PZ_7 1 0 1368 0 1 308
+use nfet_03v3_CTB5PZ nfet_03v3_CTB5PZ_3 1 0 2356 0 1 310
+port "IBIAS_PGA" 13 1890 676 1890 676 m1
+port "IBIAS_FILTER" 11 1380 660 1380 660 m1
+port "IBIAS_BUF2" 10 724 639 724 639 m1
+port "IBIAS_BUF1" 9 38 657 38 657 m1
+port "G_SINK_DOWN" 16 -617 -252 -617 -252 m2
+port "G_SINK_UP" 14 -627 -52 -627 -52 m2
+port "VSS" 18 244 -1007 244 -1007 m1
+node "m1_1867_n835#" 1 751.701 1867 -835 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141066 2970 0 0 0 0 0 0 0 0
+node "IBIAS_PGA" 1 1140.43 1890 676 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152961 3380 0 0 0 0 0 0 0 0
+node "m1_1316_n835#" 1 677.117 1316 -835 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141066 2970 0 0 0 0 0 0 0 0
+node "IBIAS_FILTER" 1 497.957 1380 660 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152961 3380 0 0 0 0 0 0 0 0
+node "m1_765_n835#" 1 677.427 765 -835 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141066 2970 0 0 0 0 0 0 0 0
+node "IBIAS_BUF2" 1 495.561 724 639 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152961 3380 0 0 0 0 0 0 0 0
+node "m1_214_n835#" 1 713.727 214 -835 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141066 2970 0 0 0 0 0 0 0 0
+node "IBIAS_BUF1" 1 1109.33 38 657 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152961 3380 0 0 0 0 0 0 0 0
+node "G_SINK_DOWN" 172 2887.27 -617 -252 m2 0 0 0 0 0 0 0 0 0 0 0 0 209930 4574 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57680 2562 220343 5668 0 0 0 0 0 0
+node "G_SINK_UP" 173 2247.18 -627 -52 m2 0 0 0 0 0 0 0 0 0 0 0 0 207808 4562 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57680 2562 218583 5624 0 0 0 0 0 0
+substrate "VSS" 0 0 244 -1007 m1 0 0 0 0 0 0 778698 19514 0 0 0 0 126204 2412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1737137 43292 0 0 0 0 0 0 0 0
+cap "G_SINK_DOWN" "m1_214_n835#" 186.742
+cap "G_SINK_DOWN" "IBIAS_BUF2" 5.54479
+cap "G_SINK_UP" "IBIAS_BUF1" 137.149
+cap "m1_1316_n835#" "m1_765_n835#" 22.6092
+cap "G_SINK_DOWN" "IBIAS_PGA" 2.32695
+cap "m1_765_n835#" "IBIAS_FILTER" 0.683747
+cap "G_SINK_DOWN" "G_SINK_UP" 1123.82
+cap "G_SINK_DOWN" "IBIAS_BUF1" 5.42198
+cap "m1_214_n835#" "m1_765_n835#" 22.7938
+cap "m1_1867_n835#" "m1_1316_n835#" 22.7938
+cap "m1_765_n835#" "IBIAS_BUF2" 478.425
+cap "m1_1316_n835#" "IBIAS_FILTER" 478.425
+cap "G_SINK_UP" "m1_765_n835#" 206.591
+cap "G_SINK_DOWN" "m1_765_n835#" 191.945
+cap "m1_1316_n835#" "IBIAS_PGA" 0.683747
+cap "m1_1867_n835#" "IBIAS_PGA" 478.425
+cap "IBIAS_FILTER" "IBIAS_BUF2" 725.84
+cap "G_SINK_UP" "m1_1316_n835#" 211.774
+cap "m1_1867_n835#" "G_SINK_UP" 137.055
+cap "IBIAS_PGA" "IBIAS_FILTER" 725.84
+cap "m1_214_n835#" "IBIAS_BUF2" 0.683747
+cap "G_SINK_UP" "IBIAS_FILTER" 137.416
+cap "G_SINK_DOWN" "m1_1316_n835#" 207.781
+cap "G_SINK_DOWN" "m1_1867_n835#" 151.468
+cap "m1_214_n835#" "G_SINK_UP" 218.097
+cap "G_SINK_UP" "IBIAS_BUF2" 139.757
+cap "m1_214_n835#" "IBIAS_BUF1" 478.425
+cap "G_SINK_DOWN" "IBIAS_FILTER" 3.19226
+cap "IBIAS_BUF1" "IBIAS_BUF2" 725.84
+cap "G_SINK_UP" "IBIAS_PGA" 79.8907
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" -0.00243872
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -64.9409
+cap "nfet_03v3_CT75PZ_2/a_n52_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" 71.5493
+cap "nfet_03v3_CT75PZ_2/a_152_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 32.5237
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 173.852
+cap "nfet_03v3_CT75PZ_1/a_n52_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" -0.000760411
+cap "nfet_03v3_CT75PZ_2/a_n52_n240#" "nfet_03v3_CT75PZ_2/a_152_n240#" -119.114
+cap "nfet_03v3_CT75PZ_2/a_152_n240#" "nfet_03v3_CT75PZ_5/a_152_n240#" -5.68434e-14
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" -0.000830071
+cap "nfet_03v3_CT75PZ_2/a_n52_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 37.2861
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -0.255682
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_5/a_152_n240#" 17.0038
+cap "nfet_03v3_CT75PZ_2/a_152_n240#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 0.882709
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 18.4567
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" 0.000504269
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -0.206094
+cap "nfet_03v3_CT75PZ_2/a_n52_n240#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" -258.671
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_7/a_52_n284#" 1.87378
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -30.2231
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_1/a_n52_n240#" -119.114
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_6/a_52_n284#" 279.026
+cap "nfet_03v3_CT75PZ_5/a_n52_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" 72.5138
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_7/a_152_n240#" 32.7336
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_7/a_152_n240#" -5.68434e-14
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 31.4082
+cap "nfet_03v3_CT75PZ_5/a_n52_n240#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" -193.736
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" -0.00148426
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" 38.1651
+cap "nfet_03v3_CT75PZ_1/a_n52_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 38.6187
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_1/a_152_n240#" 0.322948
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" 72.1113
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 15.7343
+cap "nfet_03v3_CT75PZ_1/a_n52_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" 72.7304
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_7/a_152_n240#" -5.68434e-14
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" -258.678
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_7/a_52_n284#" 2.64887
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_1/a_n52_n240#" -258.678
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_7/a_52_n284#" 4.79294
+cap "nfet_03v3_CT75PZ_5/a_n52_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 38.4734
+cap "nfet_03v3_CT75PZ_7/a_152_n240#" "nfet_03v3_CT75PZ_7/a_n52_n240#" -119.114
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -88.8906
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" 0.0024705
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_5/a_152_n240#" 0.00120088
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_1/a_152_n240#" 0.396397
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_5/a_n52_n240#" 0.00100454
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_1/a_n52_n240#" -0.0368597
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_7/a_152_n240#" 0.00502774
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_7/a_52_n284#" 2.66191
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_6/a_52_n284#" 3.21124
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_2/a_152_n240#" 86.1419
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_2/a_152_n240#" 5.68434e-14
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -35.1502
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_2/a_n52_n240#" 34.922
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 4.84309
+cap "nfet_03v3_CT75PZ_2/a_n52_n240#" "nfet_03v3_CT75PZ_2/a_152_n240#" -138.269
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_2/a_152_n240#" 1.60423
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" 0.161172
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_2/a_152_n240#" 1.45015
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_5/a_152_n240#" 34.1252
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_7/a_n52_n240#" 34.922
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_5/a_152_n240#" 1.34146
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 6.27344
+cap "nfet_03v3_CT75PZ_7/a_152_n240#" "nfet_03v3_CT75PZ_7/a_n52_n240#" -138.269
+cap "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_7/a_152_n240#" 1.4607
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 86.2697
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 52.6724
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_7/a_152_n240#" 5.68434e-14
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_1/a_n52_n240#" -138.269
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_7/a_152_n240#" 5.68434e-14
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_7/a_152_n240#" 86.7856
+cap "nfet_03v3_CT75PZ_1/a_n52_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 34.922
+cap "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_5/a_n52_n240#" -103.119
+cap "nfet_03v3_CT75PZ_5/a_n52_n240#" "nfet_03v3_CT75PZ_7/a_52_n284#" 34.922
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 0.0144697
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_6/a_52_n284#" 1.86476
+cap "nfet_03v3_CT75PZ_7/a_152_n240#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 0.00502774
+cap "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CT75PZ_5/a_152_n240#" 0.00120088
+cap "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 1.05531
+cap "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CTB5PZ_3/a_n50_n284#" 1.03581
+merge "nfet_03v3_CT75PZ_5/a_152_n240#" "nfet_03v3_CT75PZ_5/a_n240_n240#" -400.809 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43792 -2088 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_5/a_n240_n240#" "IBIAS_BUF2"
+merge "nfet_03v3_CT75PZ_7/a_52_n284#" "nfet_03v3_CT75PZ_7/a_n152_n284#" -595.79 0 0 0 0 0 0 0 0 0 0 0 0 -4960 -1726 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_7/a_n152_n284#" "nfet_03v3_CT75PZ_1/a_52_n284#"
+merge "nfet_03v3_CT75PZ_1/a_52_n284#" "nfet_03v3_CT75PZ_1/a_n152_n284#"
+merge "nfet_03v3_CT75PZ_1/a_n152_n284#" "nfet_03v3_CT75PZ_5/a_52_n284#"
+merge "nfet_03v3_CT75PZ_5/a_52_n284#" "nfet_03v3_CT75PZ_5/a_n152_n284#"
+merge "nfet_03v3_CT75PZ_5/a_n152_n284#" "nfet_03v3_CT75PZ_2/a_52_n284#"
+merge "nfet_03v3_CT75PZ_2/a_52_n284#" "nfet_03v3_CT75PZ_2/a_n152_n284#"
+merge "nfet_03v3_CT75PZ_2/a_n152_n284#" "G_SINK_UP"
+merge "nfet_03v3_CTB5PZ_3/a_50_n240#" "nfet_03v3_CTB5PZ_2/a_50_n240#" -3439.36 0 0 0 0 0 0 0 0 0 0 0 0 -1289 -820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -350336 -16704 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CTB5PZ_2/a_50_n240#" "nfet_03v3_CTB5PZ_3/VSUBS"
+merge "nfet_03v3_CTB5PZ_3/VSUBS" "nfet_03v3_CTB5PZ_3/a_n50_n284#"
+merge "nfet_03v3_CTB5PZ_3/a_n50_n284#" "nfet_03v3_CTB5PZ_3/a_n138_n240#"
+merge "nfet_03v3_CTB5PZ_3/a_n138_n240#" "nfet_03v3_CT75PZ_7/VSUBS"
+merge "nfet_03v3_CT75PZ_7/VSUBS" "nfet_03v3_CT75PZ_1/VSUBS"
+merge "nfet_03v3_CT75PZ_1/VSUBS" "nfet_03v3_CT75PZ_5/VSUBS"
+merge "nfet_03v3_CT75PZ_5/VSUBS" "nfet_03v3_CTB5PZ_1/VSUBS"
+merge "nfet_03v3_CTB5PZ_1/VSUBS" "nfet_03v3_CTB5PZ_1/a_n50_n284#"
+merge "nfet_03v3_CTB5PZ_1/a_n50_n284#" "nfet_03v3_CTB5PZ_1/a_50_n240#"
+merge "nfet_03v3_CTB5PZ_1/a_50_n240#" "nfet_03v3_CTB5PZ_1/a_n138_n240#"
+merge "nfet_03v3_CTB5PZ_1/a_n138_n240#" "nfet_03v3_CT75PZ_2/VSUBS"
+merge "nfet_03v3_CT75PZ_2/VSUBS" "nfet_03v3_CTB5PZ_2/VSUBS"
+merge "nfet_03v3_CTB5PZ_2/VSUBS" "nfet_03v3_CTB5PZ_2/a_n138_n240#"
+merge "nfet_03v3_CTB5PZ_2/a_n138_n240#" "nfet_03v3_CTB5PZ_2/a_n50_n284#"
+merge "nfet_03v3_CTB5PZ_2/a_n50_n284#" "nfet_03v3_CT75PZ_6/VSUBS"
+merge "nfet_03v3_CT75PZ_6/VSUBS" "nfet_03v3_CT75PZ_6/a_152_n240#"
+merge "nfet_03v3_CT75PZ_6/a_152_n240#" "nfet_03v3_CT75PZ_6/a_n240_n240#"
+merge "nfet_03v3_CT75PZ_6/a_n240_n240#" "nfet_03v3_CT75PZ_0/VSUBS"
+merge "nfet_03v3_CT75PZ_0/VSUBS" "nfet_03v3_CT75PZ_0/a_152_n240#"
+merge "nfet_03v3_CT75PZ_0/a_152_n240#" "nfet_03v3_CT75PZ_0/a_n240_n240#"
+merge "nfet_03v3_CT75PZ_0/a_n240_n240#" "nfet_03v3_CT75PZ_4/VSUBS"
+merge "nfet_03v3_CT75PZ_4/VSUBS" "nfet_03v3_CT75PZ_4/a_152_n240#"
+merge "nfet_03v3_CT75PZ_4/a_152_n240#" "nfet_03v3_CT75PZ_4/a_n240_n240#"
+merge "nfet_03v3_CT75PZ_4/a_n240_n240#" "nfet_03v3_CTB5PZ_0/VSUBS"
+merge "nfet_03v3_CTB5PZ_0/VSUBS" "nfet_03v3_CTB5PZ_0/a_50_n240#"
+merge "nfet_03v3_CTB5PZ_0/a_50_n240#" "nfet_03v3_CTB5PZ_0/a_n138_n240#"
+merge "nfet_03v3_CTB5PZ_0/a_n138_n240#" "nfet_03v3_CTB5PZ_0/a_n50_n284#"
+merge "nfet_03v3_CTB5PZ_0/a_n50_n284#" "nfet_03v3_CT75PZ_3/VSUBS"
+merge "nfet_03v3_CT75PZ_3/VSUBS" "nfet_03v3_CT75PZ_3/a_152_n240#"
+merge "nfet_03v3_CT75PZ_3/a_152_n240#" "nfet_03v3_CT75PZ_3/a_n240_n240#"
+merge "nfet_03v3_CT75PZ_3/a_n240_n240#" "VSS"
+merge "nfet_03v3_CT75PZ_2/a_152_n240#" "nfet_03v3_CT75PZ_2/a_n240_n240#" -402.121 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43792 -2088 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_2/a_n240_n240#" "IBIAS_BUF1"
+merge "nfet_03v3_CT75PZ_1/a_152_n240#" "nfet_03v3_CT75PZ_1/a_n240_n240#" -402.093 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43792 -2088 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_1/a_n240_n240#" "IBIAS_PGA"
+merge "nfet_03v3_CT75PZ_5/a_n52_n240#" "nfet_03v3_CT75PZ_4/a_n52_n240#" -285.909 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43700 -2084 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_4/a_n52_n240#" "m1_765_n835#"
+merge "nfet_03v3_CT75PZ_6/a_52_n284#" "nfet_03v3_CT75PZ_6/a_n152_n284#" -584.76 0 0 0 0 0 0 0 0 0 0 0 0 -6137 -1744 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_6/a_n152_n284#" "nfet_03v3_CT75PZ_0/a_52_n284#"
+merge "nfet_03v3_CT75PZ_0/a_52_n284#" "nfet_03v3_CT75PZ_0/a_n152_n284#"
+merge "nfet_03v3_CT75PZ_0/a_n152_n284#" "nfet_03v3_CT75PZ_4/a_52_n284#"
+merge "nfet_03v3_CT75PZ_4/a_52_n284#" "nfet_03v3_CT75PZ_4/a_n152_n284#"
+merge "nfet_03v3_CT75PZ_4/a_n152_n284#" "nfet_03v3_CT75PZ_3/a_52_n284#"
+merge "nfet_03v3_CT75PZ_3/a_52_n284#" "nfet_03v3_CT75PZ_3/a_n152_n284#"
+merge "nfet_03v3_CT75PZ_3/a_n152_n284#" "G_SINK_DOWN"
+merge "nfet_03v3_CT75PZ_7/a_n52_n240#" "nfet_03v3_CT75PZ_6/a_n52_n240#" -285.803 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43700 -2084 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_6/a_n52_n240#" "m1_1316_n835#"
+merge "nfet_03v3_CT75PZ_1/a_n52_n240#" "nfet_03v3_CT75PZ_0/a_n52_n240#" -285.631 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43700 -2084 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_0/a_n52_n240#" "m1_1867_n835#"
+merge "nfet_03v3_CT75PZ_2/a_n52_n240#" "nfet_03v3_CT75PZ_3/a_n52_n240#" -284.765 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43700 -2084 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_3/a_n52_n240#" "m1_214_n835#"
+merge "nfet_03v3_CT75PZ_7/a_152_n240#" "nfet_03v3_CT75PZ_7/a_n240_n240#" -400.736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43792 -2088 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CT75PZ_7/a_n240_n240#" "IBIAS_FILTER"

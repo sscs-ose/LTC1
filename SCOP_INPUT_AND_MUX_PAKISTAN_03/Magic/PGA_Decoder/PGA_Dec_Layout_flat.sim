@@ -1,0 +1,183 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x C a_3184_375# a_3328_375# VSS s=8800,376 d=5200,204 l=56 w=100 x=3272 y=375 nfet_03v3
+x B a_1425_n363# a_945_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=1529 y=-362 nfet_03v3
+x C a_801_n1645# VDD VDD s=10400,304 d=10400,304 l=56 w=200 x=1689 y=-1272 pfet_03v3
+x B a_3328_375# a_3808_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=3752 y=375 nfet_03v3
+x C OR_2_In_Layout_0.B VDD VDD s=17600,576 d=17600,576 l=56 w=200 x=327 y=-990 pfet_03v3
+x OR_2_In_Layout_0.B a_801_n363# VDD VDD s=10400,304 d=10400,304 l=56 w=200 x=1689 y=-834 pfet_03v3
+x OR_2_In_Layout_0.A VDD a_3184_n363# VDD s=10400,304 d=10400,304 l=56 w=200 x=3912 y=-834 pfet_03v3
+x a_3184_n363# VDD S3 VDD s=10400,304 d=17600,576 l=56 w=200 x=4232 y=-834 pfet_03v3
+x C a_1425_375# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=2169 y=375 nfet_03v3
+x a_801_n1645# VSS S4 VSS s=5200,204 d=8800,376 l=56 w=100 x=2329 y=-1644 nfet_03v3
+x A a_801_375# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=1369 y=747 pfet_03v3
+x a_801_375# VDD S6 VDD s=10400,304 d=17600,576 l=56 w=200 x=1849 y=747 pfet_03v3
+x A a_945_375# a_801_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=1049 y=375 nfet_03v3
+x B VDD a_801_n363# VDD s=10400,304 d=10400,304 l=56 w=200 x=1529 y=-834 pfet_03v3
+x OR_2_In_Layout_0.A a_945_n1645# a_1425_n1645# VSS s=5200,204 d=5200,204 l=56 w=100 x=1369 y=-1644 nfet_03v3
+x a_3303_n1718# VSS AND_2_In_Layout_0.A VSS s=5200,204 d=8800,376 l=56 w=100 x=3567 y=-1717 nfet_03v3
+x B a_1425_375# a_945_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=1529 y=375 nfet_03v3
+x C a_1425_n1645# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=1849 y=-1644 nfet_03v3
+x a_4292_n1650# VDD S1 VDD s=10400,304 d=17600,576 l=56 w=200 x=4716 y=-1277 pfet_03v3
+x a_3184_375# VDD S2 VDD s=10400,304 d=17600,576 l=56 w=200 x=4232 y=747 pfet_03v3
+x OR_2_In_Layout_0.A a_3328_n363# a_3808_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=3752 y=-362 nfet_03v3
+x OR_2_In_Layout_0.A a_3328_n363# a_3808_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=4072 y=-362 nfet_03v3
+x A AND_3_In_Layout_1.C VDD VDD s=17600,576 d=17600,576 l=56 w=200 x=327 y=719 pfet_03v3
+x A a_801_n1645# a_945_n1645# VSS s=8800,376 d=5200,204 l=56 w=100 x=889 y=-1644 nfet_03v3
+x C a_1425_n1645# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=2169 y=-1644 nfet_03v3
+x B a_945_375# a_1425_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=1689 y=375 nfet_03v3
+x B a_945_n363# a_1425_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=1369 y=-362 nfet_03v3
+x B OR_2_In_Layout_0.A VSS VSS s=8800,376 d=8800,376 l=56 w=100 x=327 y=-24 nfet_03v3
+x A a_801_n363# a_945_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=1209 y=-362 nfet_03v3
+x OR_2_In_Layout_0.B a_3184_n363# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=3752 y=-834 pfet_03v3
+x A a_3184_n363# VDD VDD s=10400,304 d=10400,304 l=56 w=200 x=4072 y=-834 pfet_03v3
+x OR_2_In_Layout_0.B a_2999_n1346# a_3303_n1718# VDD s=10400,304 d=10400,304 l=56 w=200 x=3407 y=-1345 pfet_03v3
+x a_3184_n363# VSS S3 VSS s=5200,204 d=8800,376 l=56 w=100 x=4712 y=-362 nfet_03v3
+x a_3303_n1718# AND_2_In_Layout_0.A VDD VDD s=17600,576 d=17600,576 l=56 w=200 x=3855 y=-1345 pfet_03v3
+x AND_3_In_Layout_1.C a_4292_n1650# VDD VDD s=10400,304 d=10400,304 l=56 w=200 x=4556 y=-1277 pfet_03v3
+x OR_2_In_Layout_0.A a_945_n1645# a_1425_n1645# VSS s=5200,204 d=5200,204 l=56 w=100 x=1689 y=-1644 nfet_03v3
+x B a_3328_375# a_3808_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=4072 y=375 nfet_03v3
+x AND_3_In_Layout_1.C a_3808_375# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=4552 y=375 nfet_03v3
+x A a_801_n363# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=1369 y=-834 pfet_03v3
+x C a_3184_375# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=3752 y=747 pfet_03v3
+x a_801_n363# VSS S5 VSS s=5200,204 d=8800,376 l=56 w=100 x=2329 y=-362 nfet_03v3
+x C OR_2_In_Layout_0.B VSS VSS s=8800,376 d=8800,376 l=56 w=100 x=327 y=-1362 nfet_03v3
+x C a_3328_375# a_3184_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=3432 y=375 nfet_03v3
+x B a_3808_375# a_3328_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=3912 y=375 nfet_03v3
+x a_801_375# VSS S6 VSS s=5200,204 d=8800,376 l=56 w=100 x=2329 y=375 nfet_03v3
+x AND_2_In_Layout_0.A a_4148_n1650# a_4292_n1650# VSS s=8800,376 d=5200,204 l=56 w=100 x=4236 y=-1649 nfet_03v3
+x OR_2_In_Layout_0.B a_3184_n363# a_3328_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=3592 y=-362 nfet_03v3
+x AND_3_In_Layout_1.C VSS a_4148_n1650# VSS s=5200,204 d=8800,376 l=56 w=100 x=4716 y=-1649 nfet_03v3
+x B VDD a_801_375# VDD s=10400,304 d=10400,304 l=56 w=200 x=1529 y=747 pfet_03v3
+x A a_801_375# a_945_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=1209 y=375 nfet_03v3
+x OR_2_In_Layout_0.A VDD a_2999_n1346# VDD s=10400,304 d=10400,304 l=56 w=200 x=3247 y=-1345 pfet_03v3
+x OR_2_In_Layout_0.B a_3328_n363# a_3184_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=3432 y=-362 nfet_03v3
+x OR_2_In_Layout_0.A VDD a_801_n1645# VDD s=10400,304 d=10400,304 l=56 w=200 x=1529 y=-1272 pfet_03v3
+x AND_2_In_Layout_0.A VDD a_4292_n1650# VDD s=17600,576 d=10400,304 l=56 w=200 x=4396 y=-1277 pfet_03v3
+x A a_801_375# a_945_375# VSS s=8800,376 d=5200,204 l=56 w=100 x=889 y=375 nfet_03v3
+x C a_3184_375# a_3328_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=3592 y=375 nfet_03v3
+x B OR_2_In_Layout_0.A VDD VDD s=17600,576 d=17600,576 l=56 w=200 x=327 y=-496 pfet_03v3
+x A a_945_n363# a_801_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=1049 y=-362 nfet_03v3
+x A a_3808_n363# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=4552 y=-362 nfet_03v3
+x OR_2_In_Layout_0.B a_1425_n363# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=1849 y=-362 nfet_03v3
+x A a_801_n1645# a_945_n1645# VSS s=5200,204 d=5200,204 l=56 w=100 x=1209 y=-1644 nfet_03v3
+x OR_2_In_Layout_0.B a_3303_n1718# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=3407 y=-1717 nfet_03v3
+x C a_801_375# VDD VDD s=10400,304 d=10400,304 l=56 w=200 x=1689 y=747 pfet_03v3
+x B a_945_375# a_1425_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=1369 y=375 nfet_03v3
+x OR_2_In_Layout_0.B a_1425_n363# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=2169 y=-362 nfet_03v3
+x AND_3_In_Layout_1.C a_4148_n1650# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=4556 y=-1649 nfet_03v3
+x a_4292_n1650# VSS S1 VSS s=8800,376 d=8800,376 l=56 w=100 x=5014 y=-1649 nfet_03v3
+x C a_1425_375# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=1849 y=375 nfet_03v3
+x OR_2_In_Layout_0.B VSS a_1425_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=2009 y=-362 nfet_03v3
+x AND_3_In_Layout_1.C a_3184_375# VDD VDD s=10400,304 d=10400,304 l=56 w=200 x=4072 y=747 pfet_03v3
+x a_801_n363# VDD S5 VDD s=10400,304 d=17600,576 l=56 w=200 x=1849 y=-834 pfet_03v3
+x OR_2_In_Layout_0.A a_2999_n1346# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=3087 y=-1345 pfet_03v3
+x AND_3_In_Layout_1.C a_3808_375# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=4232 y=375 nfet_03v3
+x A a_801_n1645# VDD VDD s=17600,576 d=10400,304 l=56 w=200 x=1369 y=-1272 pfet_03v3
+x OR_2_In_Layout_0.B a_3303_n1718# a_2999_n1346# VDD s=10400,304 d=17600,576 l=56 w=200 x=3567 y=-1345 pfet_03v3
+x a_3184_375# VSS S2 VSS s=5200,204 d=8800,376 l=56 w=100 x=4712 y=375 nfet_03v3
+x a_801_n1645# VDD S4 VDD s=10400,304 d=17600,576 l=56 w=200 x=1849 y=-1272 pfet_03v3
+x C VSS a_1425_n1645# VSS s=5200,204 d=5200,204 l=56 w=100 x=2009 y=-1644 nfet_03v3
+x B VDD a_3184_375# VDD s=10400,304 d=10400,304 l=56 w=200 x=3912 y=747 pfet_03v3
+x OR_2_In_Layout_0.B a_3184_n363# a_3328_n363# VSS s=8800,376 d=5200,204 l=56 w=100 x=3272 y=-362 nfet_03v3
+x A AND_3_In_Layout_1.C VSS VSS s=8800,376 d=8800,376 l=56 w=100 x=327 y=347 nfet_03v3
+x C VSS a_1425_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=2009 y=375 nfet_03v3
+x A a_945_n1645# a_801_n1645# VSS s=5200,204 d=5200,204 l=56 w=100 x=1049 y=-1644 nfet_03v3
+x OR_2_In_Layout_0.A VSS a_3303_n1718# VSS s=8800,376 d=5200,204 l=56 w=100 x=3247 y=-1717 nfet_03v3
+x A VSS a_3808_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=4392 y=-362 nfet_03v3
+x OR_2_In_Layout_0.A a_1425_n1645# a_945_n1645# VSS s=5200,204 d=5200,204 l=56 w=100 x=1529 y=-1644 nfet_03v3
+x AND_2_In_Layout_0.A a_4292_n1650# a_4148_n1650# VSS s=5200,204 d=5200,204 l=56 w=100 x=4396 y=-1649 nfet_03v3
+x AND_3_In_Layout_1.C VSS a_3808_375# VSS s=5200,204 d=5200,204 l=56 w=100 x=4392 y=375 nfet_03v3
+x A a_801_n363# a_945_n363# VSS s=8800,376 d=5200,204 l=56 w=100 x=889 y=-362 nfet_03v3
+x OR_2_In_Layout_0.A a_3808_n363# a_3328_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=3912 y=-362 nfet_03v3
+x A a_3808_n363# VSS VSS s=5200,204 d=5200,204 l=56 w=100 x=4232 y=-362 nfet_03v3
+x B a_945_n363# a_1425_n363# VSS s=5200,204 d=5200,204 l=56 w=100 x=1689 y=-362 nfet_03v3
+C VDD C 2.8
+R a_4148_n1650# 65
+R a_1425_n1645# 65
+R a_945_n1645# 65
+R S1 25
+= S1 AND_2_In_Layout_0.OUT
+R a_2999_n1346# 85
+R a_3303_n1718# 149
+R a_4292_n1650# 148
+R AND_2_In_Layout_0.A 163
+= AND_2_In_Layout_0.A OR_2_In_Layout_0.OUT
+R S4 30
+= S4 AND_3_In_Layout_0.OUT
+R a_801_n1645# 242
+R S3 26
+= S3 AND_3_In_Layout_2.OUT
+R a_3808_n363# 65
+R a_3328_n363# 65
+R S5 30
+= S5 AND_3_In_Layout_4.OUT
+R a_1425_n363# 65
+R a_945_n363# 65
+R a_3184_n363# 242
+R a_801_n363# 242
+C OR_2_In_Layout_0.B0 3.6
+R OR_2_In_Layout_0.B 725
+= OR_2_In_Layout_0.B AND_3_In_Layout_2.A
+= OR_2_In_Layout_0.B AND_3_In_Layout_4.C
+= OR_2_In_Layout_0.B Inverter_Layout_0.OUT
+C OR_2_In_Layout_0.A0 3.9
+R OR_2_In_Layout_0.A 650
+= OR_2_In_Layout_0.A Inverter_Layout_2.OUT
+= OR_2_In_Layout_0.A AND_3_In_Layout_2.B
+= OR_2_In_Layout_0.A AND_3_In_Layout_0.B
+R a_3808_375# 65
+R a_3328_375# 65
+R a_1425_375# 65
+R a_945_375# 65
+R S2 26
+= S2 AND_3_In_Layout_1.OUT
+R S6 28
+= S6 AND_3_In_Layout_3.OUT
+R a_3184_375# 242
+C AND_3_In_Layout_1.C0 3.7
+R AND_3_In_Layout_1.C 490
+= AND_3_In_Layout_1.C Inverter_Layout_1.OUT
+= AND_3_In_Layout_1.C AND_2_In_Layout_0.B
+R a_801_375# 242
+C C0 4.8
+R C 861
+= C AND_3_In_Layout_1.A
+= C AND_3_In_Layout_0.C
+= C Inverter_Layout_0.IN
+= C AND_3_In_Layout_3.C
+C B0 4.5
+R B 788
+= B AND_3_In_Layout_1.B
+= B Inverter_Layout_2.IN
+= B AND_3_In_Layout_3.B
+= B AND_3_In_Layout_4.B
+C A0 4.7
+R A 1069
+= A Inverter_Layout_1.IN
+= A AND_3_In_Layout_2.C
+= A AND_3_In_Layout_3.A
+= A AND_3_In_Layout_0.A
+= A AND_3_In_Layout_4.A
+C VDD0 13.9
+R VDD 27277
+= VDD AND_3_In_Layout_1.VDD
+= VDD AND_3_In_Layout_3.VDD
+= VDD Inverter_Layout_1.VDD
+= VDD AND_2_In_Layout_0.VDD
+= VDD AND_3_In_Layout_2.VDD
+= VDD Inverter_Layout_2.VDD
+= VDD AND_3_In_Layout_4.VDD
+= VDD AND_3_In_Layout_0.VDD
+= VDD Inverter_Layout_0.VDD
+= VDD OR_2_In_Layout_0.VDD
+R VSS 1212
+= VSS AND_3_In_Layout_1.VSS
+= VSS AND_3_In_Layout_3.VSS
+= VSS Inverter_Layout_1.VSS
+= VSS AND_2_In_Layout_0.VSS
+= VSS AND_3_In_Layout_2.VSS
+= VSS Inverter_Layout_2.VSS
+= VSS AND_3_In_Layout_4.VSS
+= VSS AND_3_In_Layout_0.VSS
+= VSS Inverter_Layout_0.VSS
+= VSS OR_2_In_Layout_0.VSS

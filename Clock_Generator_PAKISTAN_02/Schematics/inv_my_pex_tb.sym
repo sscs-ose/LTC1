@@ -1,0 +1,77 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 820 -210 850 -210 {
+lab=IN}
+N 900 -290 900 -260 {
+lab=VDD}
+N 900 -150 900 -130 {
+lab=VSS}
+N 1010 -210 1040 -210 {
+lab=OUT}
+N 400 -180 400 -170 {
+lab=GND}
+N 400 -250 400 -240 {
+lab=VSS}
+N 550 -250 550 -240 {
+lab=IN}
+N 550 -180 550 -160 {
+lab=VSS}
+N 1060 -210 1060 -200 {
+lab=OUT}
+N 1040 -210 1060 -210 {
+lab=OUT}
+N 1060 -140 1060 -120 {
+lab=VSS}
+N 480 -240 480 -230 {
+lab=VDD}
+N 480 -170 480 -150 {
+lab=VSS}
+C {devices/capa.sym} 1060 -170 0 0 {name=C1
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/vsource.sym} 550 -210 0 0 {name=V1 value="pulse (0 3.3 0 100p 100p 100n 200n)"}
+C {devices/vsource.sym} 400 -210 0 0 {name=V2 value=0}
+C {devices/gnd.sym} 400 -170 0 0 {name=l2 lab=GND}
+C {devices/vsource.sym} 480 -200 0 0 {name=V3 value=3.3}
+C {devices/lab_wire.sym} 400 -250 0 0 {name=p1 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} 550 -250 0 0 {name=p2 sig_type=std_logic lab=IN}
+C {devices/lab_wire.sym} 550 -160 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 820 -210 0 0 {name=p4 sig_type=std_logic lab=IN}
+C {devices/lab_wire.sym} 900 -130 0 0 {name=p5 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} 900 -290 0 0 {name=p6 sig_type=std_logic lab=VDD
+}
+C {devices/lab_wire.sym} 1060 -210 2 0 {name=p7 sig_type=std_logic lab=OUT}
+C {devices/lab_wire.sym} 1060 -120 2 0 {name=p8 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} 480 -240 0 0 {name=p9 sig_type=std_logic lab=VDD
+}
+C {devices/lab_wire.sym} 480 -150 0 0 {name=p10 sig_type=std_logic lab=VSS}
+C {devices/code_shown.sym} 80 -440 0 0 {name=MODELS only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+"}
+C {devices/code_shown.sym} 600 -560 0 0 {name=NGSPICE only_toplevel=true
+value="
+.include "pex_inv.spice"
+.control
+save all
+dc v1 0 3.3 0.1  
+plot v(IN) v(OUT)
+
+tran 10p 1u 
+plot v(IN) v(OUT)
+*write test_nfet_03v3.raw
+.endc
+"}
+C {inv_my_pex.sym} 410 -80 0 0 {name=x1}

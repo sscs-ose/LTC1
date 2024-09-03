@@ -1,0 +1,307 @@
+* NGSPICE file created from Buffer_Delayed1_mag_flat.ext - technology: gf180mcuC
+
+.subckt Buffer_Delayed1_mag_flat OUT VSS VDD IN
+X0 VSS Inverter_delayed_mag_8.IN Inverter_delayed_mag_1.IN VSS.t3 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X1 VDD Inverter_delayed_mag_13.IN Inverter_delayed_mag_12.IN VDD.t0 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X2 Inverter_delayed_mag_7.IN Inverter_delayed_mag_6.IN VDD.t10 VDD.t9 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X3 Inverter_delayed_mag_6.IN Inverter_delayed_mag_5.IN VSS.t27 VSS.t26 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X4 VSS Inverter_delayed_mag_13.IN Inverter_delayed_mag_12.IN VSS.t0 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X5 Inverter_delayed_mag_5.IN Inverter_delayed_mag_4.IN VSS.t39 VSS.t38 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X6 OUT Inverter_delayed_mag_7.IN VDD.t14 VDD.t13 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X7 VDD Inverter_delayed_mag_10.IN Inverter_delayed_mag_9.IN VDD.t28 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X8 Inverter_delayed_mag_0.IN Inverter_delayed_mag_2.IN VSS.t22 VSS.t21 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X9 VDD Inverter_delayed_mag_11.IN Inverter_delayed_mag_10.IN VDD.t15 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X10 VSS Inverter_delayed_mag_11.IN Inverter_delayed_mag_10.IN VSS.t12 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X11 Inverter_delayed_mag_6.IN Inverter_delayed_mag_5.IN VDD.t27 VDD.t26 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X12 VDD IN.t0 Inverter_delayed_mag_14.IN VDD.t3 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X13 Inverter_delayed_mag_4.IN Inverter_delayed_mag_3.IN VSS.t32 VSS.t31 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X14 Inverter_delayed_mag_5.IN Inverter_delayed_mag_4.IN VDD.t39 VDD.t38 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X15 Inverter_delayed_mag_2.IN Inverter_delayed_mag_1.IN VSS.t9 VSS.t8 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X16 VSS Inverter_delayed_mag_9.IN Inverter_delayed_mag_8.IN VSS.t23 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X17 VSS IN.t1 Inverter_delayed_mag_14.IN VSS.t15 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X18 VDD Inverter_delayed_mag_12.IN Inverter_delayed_mag_11.IN VDD.t18 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X19 Inverter_delayed_mag_3.IN Inverter_delayed_mag_0.IN VSS.t37 VSS.t36 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X20 VSS Inverter_delayed_mag_12.IN Inverter_delayed_mag_11.IN VSS.t18 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X21 VSS Inverter_delayed_mag_10.IN Inverter_delayed_mag_9.IN VSS.t28 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X22 Inverter_delayed_mag_7.IN Inverter_delayed_mag_6.IN VSS.t7 VSS.t6 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X23 Inverter_delayed_mag_0.IN Inverter_delayed_mag_2.IN VDD.t22 VDD.t21 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X24 OUT Inverter_delayed_mag_7.IN VSS.t11 VSS.t10 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X25 VDD Inverter_delayed_mag_8.IN Inverter_delayed_mag_1.IN VDD.t6 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X26 Inverter_delayed_mag_4.IN Inverter_delayed_mag_3.IN VDD.t32 VDD.t31 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X27 Inverter_delayed_mag_2.IN Inverter_delayed_mag_1.IN VDD.t12 VDD.t11 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X28 VDD Inverter_delayed_mag_9.IN Inverter_delayed_mag_8.IN VDD.t23 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X29 VDD Inverter_delayed_mag_14.IN Inverter_delayed_mag_13.IN VDD.t33 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+X30 VSS Inverter_delayed_mag_14.IN Inverter_delayed_mag_13.IN VSS.t33 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=1u
+X31 Inverter_delayed_mag_3.IN Inverter_delayed_mag_0.IN VDD.t37 VDD.t36 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=1u
+R0 VSS.t33 VSS.n32 4119.28
+R1 VSS.n33 VSS.t0 4119.28
+R2 VSS.n2 VSS.t10 3841.57
+R3 VSS.n7 VSS.t6 3841.57
+R4 VSS.n13 VSS.t38 3841.57
+R5 VSS.n14 VSS.t31 3841.57
+R6 VSS.n18 VSS.t21 3841.57
+R7 VSS.n8 VSS.t26 3834.27
+R8 VSS.n40 VSS.n39 1973.49
+R9 VSS.n46 VSS.t23 782.847
+R10 VSS.n46 VSS.t28 664.235
+R11 VSS.n46 VSS.t3 540.87
+R12 VSS.n21 VSS.t12 514.734
+R13 VSS.n40 VSS.t18 504.106
+R14 VSS.n40 VSS.n26 420.346
+R15 VSS.n41 VSS.n40 406.214
+R16 VSS.n47 VSS.n46 206.232
+R17 VSS.n32 VSS.t15 172.29
+R18 VSS.n33 VSS.t33 172.29
+R19 VSS.n39 VSS.t0 172.29
+R20 VSS.t10 VSS.n1 165.875
+R21 VSS.n2 VSS.t6 160.674
+R22 VSS.t26 VSS.n7 160.674
+R23 VSS.n8 VSS.t38 160.674
+R24 VSS.t31 VSS.n13 160.674
+R25 VSS.n14 VSS.t36 160.674
+R26 VSS.t21 VSS.n17 160.674
+R27 VSS.n18 VSS.t8 160.674
+R28 VSS.n46 VSS.n21 154.197
+R29 VSS.n46 VSS.n45 141.606
+R30 VSS.n43 VSS.n21 106.022
+R31 VSS.n40 VSS.n21 11.971
+R32 VSS.n19 VSS.t9 9.37908
+R33 VSS.n31 VSS.n30 9.33837
+R34 VSS.n48 VSS.n20 9.30652
+R35 VSS.n42 VSS.n23 9.30652
+R36 VSS.n44 VSS.n22 9.30652
+R37 VSS.n0 VSS.t11 9.30518
+R38 VSS.n4 VSS.t7 9.30518
+R39 VSS.n5 VSS.t27 9.30518
+R40 VSS.n10 VSS.t39 9.30518
+R41 VSS.n11 VSS.t32 9.30518
+R42 VSS.n16 VSS.t37 9.30518
+R43 VSS.n51 VSS.t22 9.30518
+R44 VSS.n25 VSS.n24 9.26757
+R45 VSS.n35 VSS.n27 9.26488
+R46 VSS.n29 VSS.n28 9.26488
+R47 VSS.n37 VSS.n36 9.26354
+R48 VSS.n50 VSS.n49 6.06679
+R49 VSS.n32 VSS.n31 5.2005
+R50 VSS.n34 VSS.n33 5.2005
+R51 VSS.n39 VSS.n38 5.2005
+R52 VSS.n3 VSS.n2 5.2005
+R53 VSS.n7 VSS.n6 5.2005
+R54 VSS.n9 VSS.n8 5.2005
+R55 VSS.n13 VSS.n12 5.2005
+R56 VSS.n15 VSS.n14 5.2005
+R57 VSS.n19 VSS.n18 5.2005
+R58 VSS.n52 VSS.n17 5.2005
+R59 VSS VSS.n29 0.152427
+R60 VSS.n35 VSS 0.152427
+R61 VSS VSS.n37 0.152427
+R62 VSS.n0 VSS 0.152014
+R63 VSS VSS.n4 0.152014
+R64 VSS.n11 VSS 0.152014
+R65 VSS VSS.n16 0.152014
+R66 VSS.n5 VSS 0.151601
+R67 VSS.n42 VSS 0.151087
+R68 VSS VSS.n25 0.150362
+R69 VSS.n44 VSS 0.141998
+R70 VSS.n49 VSS 0.111993
+R71 VSS.n50 VSS 0.100408
+R72 VSS VSS.n10 0.0760505
+R73 VSS.n1 VSS.n0 0.0743991
+R74 VSS.n4 VSS.n3 0.0743991
+R75 VSS.n6 VSS.n5 0.0743991
+R76 VSS.n10 VSS.n9 0.0743991
+R77 VSS.n12 VSS.n11 0.0743991
+R78 VSS.n16 VSS.n15 0.0743991
+R79 VSS.n52 VSS.n51 0.0743991
+R80 VSS.n34 VSS.n29 0.0739862
+R81 VSS.n38 VSS.n35 0.0739862
+R82 VSS.n37 VSS.n26 0.0739862
+R83 VSS.n41 VSS.n25 0.0739862
+R84 VSS.n43 VSS.n42 0.066973
+R85 VSS.n48 VSS.n47 0.0666983
+R86 VSS.n45 VSS.n44 0.0618793
+R87 VSS.n51 VSS.n50 0.0521055
+R88 VSS.n49 VSS.n48 0.0255299
+R89 VSS.n31 VSS 0.00132569
+R90 VSS VSS.n34 0.00132569
+R91 VSS.n38 VSS 0.00132569
+R92 VSS.n26 VSS 0.00132569
+R93 VSS VSS.n41 0.00132569
+R94 VSS.n1 VSS 0.00132569
+R95 VSS.n3 VSS 0.00132569
+R96 VSS.n6 VSS 0.00132569
+R97 VSS.n9 VSS 0.00132569
+R98 VSS.n12 VSS 0.00132569
+R99 VSS.n15 VSS 0.00132569
+R100 VSS VSS.n52 0.00132569
+R101 VSS VSS.n19 0.00132569
+R102 VSS VSS.n43 0.00124689
+R103 VSS.n47 VSS 0.0012438
+R104 VSS.n45 VSS 0.00118965
+R105 VDD.t21 VDD.t6 536.798
+R106 VDD.t33 VDD.t13 501.002
+R107 VDD.t9 VDD.t0 501.002
+R108 VDD.t18 VDD.t26 501.002
+R109 VDD.n19 VDD.t15 362.8
+R110 VDD.n20 VDD.t31 362.8
+R111 VDD.n25 VDD.t28 359.49
+R112 VDD.n28 VDD.t36 359.49
+R113 VDD.t23 VDD.n29 296.538
+R114 VDD.n26 VDD.t38 227.456
+R115 VDD.n26 VDD.n19 167.588
+R116 VDD.n27 VDD.n20 119.706
+R117 VDD.n27 VDD.n25 118.614
+R118 VDD.n29 VDD.n28 100.365
+R119 VDD.n27 VDD.n26 47.8826
+R120 VDD.n33 VDD.t23 28.139
+R121 VDD.n33 VDD.t21 28.139
+R122 VDD.t6 VDD.n32 28.139
+R123 VDD.n32 VDD.t11 28.139
+R124 VDD.n4 VDD.t3 22.0446
+R125 VDD.t13 VDD.n9 22.0446
+R126 VDD.n10 VDD.t33 22.0446
+R127 VDD.n11 VDD.t9 22.0446
+R128 VDD.t0 VDD.n2 22.0446
+R129 VDD.t26 VDD.n15 22.0446
+R130 VDD.n16 VDD.t18 21.0426
+R131 VDD.t38 VDD.n17 21.0426
+R132 VDD.n29 VDD.n27 18.2487
+R133 VDD VDD.n20 6.3005
+R134 VDD VDD.n19 6.3005
+R135 VDD VDD.n4 6.3005
+R136 VDD.n9 VDD 6.3005
+R137 VDD.n10 VDD 6.3005
+R138 VDD VDD.n11 6.3005
+R139 VDD VDD.n2 6.3005
+R140 VDD.n15 VDD 6.3005
+R141 VDD VDD.n16 6.3005
+R142 VDD VDD.n17 6.3005
+R143 VDD VDD.t12 5.17215
+R144 VDD VDD.n5 5.1552
+R145 VDD.n38 VDD.n18 5.09836
+R146 VDD.n37 VDD.t32 5.09836
+R147 VDD.n36 VDD.n21 5.09836
+R148 VDD.n35 VDD.t37 5.09836
+R149 VDD.n34 VDD.n23 5.09836
+R150 VDD.n24 VDD.t22 5.09836
+R151 VDD.n31 VDD.n30 5.09836
+R152 VDD.n8 VDD.t14 5.09836
+R153 VDD.n7 VDD.n6 5.09836
+R154 VDD.n12 VDD.t10 5.09836
+R155 VDD.n13 VDD.n3 5.09836
+R156 VDD.n14 VDD.t27 5.09836
+R157 VDD.n1 VDD.n0 5.09836
+R158 VDD.n39 VDD.t39 5.09836
+R159 VDD.n17 VDD.n16 5.01052
+R160 VDD.n9 VDD.n4 4.00852
+R161 VDD.n11 VDD.n10 4.00852
+R162 VDD.n15 VDD.n2 4.00852
+R163 VDD.n32 VDD 3.1535
+R164 VDD VDD.n33 3.1505
+R165 VDD.n28 VDD.n22 3.1505
+R166 VDD VDD.n22 1.5755
+R167 VDD.n8 VDD.n7 1.13088
+R168 VDD.n13 VDD.n12 1.13088
+R169 VDD.n14 VDD.n1 1.13083
+R170 VDD.n39 VDD 0.886596
+R171 VDD.n31 VDD.n24 0.102798
+R172 VDD.n35 VDD.n34 0.102778
+R173 VDD.n37 VDD.n36 0.0987707
+R174 VDD VDD.n24 0.0815938
+R175 VDD.n34 VDD 0.081125
+R176 VDD VDD.n35 0.0739434
+R177 VDD VDD.n31 0.0738649
+R178 VDD.n36 VDD 0.0735189
+R179 VDD VDD.n37 0.0594773
+R180 VDD.n38 VDD 0.0591364
+R181 VDD VDD.n8 0.0576804
+R182 VDD.n12 VDD 0.0576804
+R183 VDD VDD.n14 0.0576804
+R184 VDD.n7 VDD 0.0573421
+R185 VDD VDD.n13 0.0573421
+R186 VDD VDD.n39 0.0571292
+R187 VDD VDD.n1 0.0567921
+R188 VDD VDD.n38 0.0352326
+R189 OUT.n2 OUT.n1 9.33985
+R190 OUT.n2 OUT.n0 5.17407
+R191 OUT OUT.n2 0.0523644
+R192 IN.n0 IN.t0 7.483
+R193 IN.n0 IN.t1 4.636
+R194 IN IN.n0 4.20675
+C0 Inverter_delayed_mag_3.IN Inverter_delayed_mag_10.IN 8.99e-19
+C1 Inverter_delayed_mag_8.IN Inverter_delayed_mag_9.IN 0.11f
+C2 VDD Inverter_delayed_mag_8.IN 0.512f
+C3 Inverter_delayed_mag_10.IN Inverter_delayed_mag_12.IN 8.03e-20
+C4 Inverter_delayed_mag_2.IN Inverter_delayed_mag_8.IN 0.00102f
+C5 Inverter_delayed_mag_4.IN Inverter_delayed_mag_11.IN 7.44e-19
+C6 VDD Inverter_delayed_mag_3.IN 0.519f
+C7 Inverter_delayed_mag_13.IN Inverter_delayed_mag_11.IN 4.29e-20
+C8 VDD Inverter_delayed_mag_6.IN 0.519f
+C9 Inverter_delayed_mag_12.IN Inverter_delayed_mag_9.IN 1.56e-21
+C10 VDD Inverter_delayed_mag_12.IN 0.517f
+C11 Inverter_delayed_mag_6.IN Inverter_delayed_mag_5.IN 0.112f
+C12 Inverter_delayed_mag_12.IN Inverter_delayed_mag_5.IN 6.85e-19
+C13 Inverter_delayed_mag_14.IN IN 0.0985f
+C14 Inverter_delayed_mag_3.IN Inverter_delayed_mag_4.IN 0.112f
+C15 Inverter_delayed_mag_4.IN Inverter_delayed_mag_12.IN 0.00529f
+C16 Inverter_delayed_mag_6.IN Inverter_delayed_mag_7.IN 0.112f
+C17 VDD Inverter_delayed_mag_14.IN 0.516f
+C18 Inverter_delayed_mag_0.IN Inverter_delayed_mag_3.IN 0.112f
+C19 Inverter_delayed_mag_13.IN Inverter_delayed_mag_6.IN 7e-19
+C20 Inverter_delayed_mag_13.IN Inverter_delayed_mag_12.IN 0.112f
+C21 Inverter_delayed_mag_14.IN Inverter_delayed_mag_7.IN 7e-19
+C22 Inverter_delayed_mag_10.IN Inverter_delayed_mag_9.IN 0.111f
+C23 Inverter_delayed_mag_1.IN Inverter_delayed_mag_8.IN 0.11f
+C24 Inverter_delayed_mag_11.IN Inverter_delayed_mag_8.IN 3.59e-20
+C25 VDD Inverter_delayed_mag_10.IN 0.51f
+C26 Inverter_delayed_mag_13.IN Inverter_delayed_mag_14.IN 0.112f
+C27 VDD IN 0.341f
+C28 Inverter_delayed_mag_3.IN Inverter_delayed_mag_11.IN 0.00517f
+C29 VDD Inverter_delayed_mag_9.IN 0.515f
+C30 Inverter_delayed_mag_2.IN Inverter_delayed_mag_9.IN 0.00668f
+C31 Inverter_delayed_mag_11.IN Inverter_delayed_mag_12.IN 0.111f
+C32 VDD Inverter_delayed_mag_2.IN 0.514f
+C33 VDD Inverter_delayed_mag_5.IN 0.519f
+C34 Inverter_delayed_mag_7.IN IN 0.00527f
+C35 Inverter_delayed_mag_0.IN Inverter_delayed_mag_10.IN 0.00617f
+C36 VDD Inverter_delayed_mag_4.IN 0.519f
+C37 Inverter_delayed_mag_4.IN Inverter_delayed_mag_5.IN 0.112f
+C38 VDD Inverter_delayed_mag_7.IN 0.511f
+C39 Inverter_delayed_mag_0.IN Inverter_delayed_mag_9.IN 0.00102f
+C40 VDD Inverter_delayed_mag_0.IN 0.517f
+C41 Inverter_delayed_mag_0.IN Inverter_delayed_mag_2.IN 0.112f
+C42 VDD Inverter_delayed_mag_13.IN 0.517f
+C43 OUT IN 0.0019f
+C44 Inverter_delayed_mag_13.IN Inverter_delayed_mag_5.IN 0.00527f
+C45 Inverter_delayed_mag_10.IN Inverter_delayed_mag_1.IN 1.4e-21
+C46 Inverter_delayed_mag_10.IN Inverter_delayed_mag_11.IN 0.108f
+C47 VDD OUT 0.11f
+C48 Inverter_delayed_mag_14.IN Inverter_delayed_mag_6.IN 0.00527f
+C49 Inverter_delayed_mag_14.IN Inverter_delayed_mag_12.IN 7.4e-22
+C50 Inverter_delayed_mag_10.IN Inverter_delayed_mag_8.IN 7.87e-19
+C51 OUT Inverter_delayed_mag_7.IN 0.1f
+C52 Inverter_delayed_mag_1.IN Inverter_delayed_mag_9.IN 1.03e-19
+C53 Inverter_delayed_mag_1.IN Inverter_delayed_mag_2.IN 0.107f
+C54 VDD Inverter_delayed_mag_1.IN 0.714f
+C55 Inverter_delayed_mag_11.IN Inverter_delayed_mag_9.IN 4.17e-19
+C56 VDD Inverter_delayed_mag_11.IN 0.515f
+C57 OUT VSS 0.157f
+C58 Inverter_delayed_mag_7.IN VSS 0.675f
+C59 Inverter_delayed_mag_6.IN VSS 0.658f
+C60 Inverter_delayed_mag_5.IN VSS 0.658f
+C61 Inverter_delayed_mag_4.IN VSS 0.658f
+C62 Inverter_delayed_mag_3.IN VSS 0.662f
+C63 Inverter_delayed_mag_0.IN VSS 0.673f
+C64 Inverter_delayed_mag_2.IN VSS 0.758f
+C65 IN VSS 0.589f
+C66 Inverter_delayed_mag_14.IN VSS 0.712f
+C67 Inverter_delayed_mag_13.IN VSS 0.698f
+C68 Inverter_delayed_mag_12.IN VSS 0.698f
+C69 Inverter_delayed_mag_11.IN VSS 0.708f
+C70 Inverter_delayed_mag_9.IN VSS 0.683f
+C71 Inverter_delayed_mag_8.IN VSS 0.762f
+C72 Inverter_delayed_mag_1.IN VSS 1.03f
+C73 Inverter_delayed_mag_10.IN VSS 0.704f
+C74 VDD VSS 12.7f
+.ends
+

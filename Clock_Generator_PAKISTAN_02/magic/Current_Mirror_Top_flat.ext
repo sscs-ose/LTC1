@@ -1,0 +1,335 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "SD2_1" 11 252 1901 252 1901 v
+port "G2_1" 10 361 499 361 499 pc
+port "ITAIL" 12 -143 136 -143 141 v
+port "SD1_1" 9 263 4170 263 4170 v
+port "G1_1" 8 1175 4023 1175 4023 pc
+port "G1_2" 7 160 4312 160 4312 pc
+port "SD0_1" 6 2395 5173 2395 5173 v
+port "A2" 16 -303 5146 -303 5146 v
+port "ITAIL_SINK" 13 -1875 4982 -1875 4982 m1
+port "G_sink_dn" 5 307 5018 307 5018 m1
+port "G_sink_up" 4 314 5279 314 5279 m1
+port "ITAIL_SRC" 14 -1963 6357 -1963 6357 m1
+port "A1" 15 -260 6600 -260 6600 v
+port "G_source_dn" 2 851 5654 851 5654 m1
+port "G_source_up" 1 651 5747 651 5747 m1
+port "VDD" 0 505 6259 505 6259 nsc
+port "VSS" 3 513 5478 513 5478 m1
+node "SD2_1" 572 2953.89 252 1901 v 0 0 0 0 416000 12160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 222980 10760 494230 17476 0 0 0 0 0 0
+node "G2_1" 2780 14886.3 361 499 pc 0 0 0 0 416000 12160 0 0 0 0 0 0 1727844 45980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 932502 24644 0 0 0 0 0 0 0 0
+node "ITAIL" 339 20092.9 -143 136 v 0 0 0 0 222400 6624 0 0 0 0 0 0 1937168 58344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 393196 16324 526303 17842 240993 7762 0 0 0 0
+node "SD1_1" 281 391.165 263 4170 v 0 0 0 0 0 0 83200 3680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62730 3260 226454 8060 0 0 0 0 0 0
+node "G1_1" 2129 5004.48 1175 4023 pc 0 0 0 0 222400 6624 222400 6624 0 0 0 0 1418952 33928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1049530 37982 133041 4742 0 0 0 0 0 0
+node "G1_2" 2920 3669.72 160 4312 pc 0 0 0 0 0 0 416000 12160 0 0 0 0 1427561 42404 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 420379 18652 349461 12354 0 0 0 0 0 0
+node "SD0_1" 198 934.133 2395 5173 v 0 0 0 0 99840 3584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61016 3056 163544 5828 0 0 0 0 0 0
+node "A2" 198 1025.31 -303 5146 v 0 0 0 0 99840 3584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61784 3088 224680 7416 0 0 0 0 0 0
+node "ITAIL_SINK" 119 836.709 -1875 4982 m1 0 0 0 0 58560 2176 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 169290 5746 0 0 0 0 0 0 0 0
+node "G_sink_dn" 1348 6818.45 307 5018 m1 0 0 0 0 99840 3584 0 0 0 0 0 0 855817 23402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 147165 5698 0 0 0 0 0 0 0 0
+node "G_sink_up" 2189 13083.9 314 5279 m1 0 0 0 0 58560 2176 41600 1840 0 0 0 0 1068650 33772 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 341380 12586 106864 3804 0 0 0 0 0 0
+node "ITAIL_SRC" 131 206.502 -1963 6357 m1 0 0 0 0 0 0 58560 2176 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 247868 6626 0 0 0 0 0 0 0 0
+node "A1" 220 58.3193 -260 6600 v 0 0 0 0 0 0 99840 3584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61784 3088 254482 8486 0 0 0 0 0 0
+node "G_source_dn" 1172 4099.43 851 5654 m1 0 0 0 0 58560 2176 49920 1792 0 0 0 0 640243 18316 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 322457 13364 217410 7672 0 0 0 0 0 0
+node "G_source_up" 1309 2005.06 651 5747 m1 0 0 0 0 0 0 99840 3584 0 0 0 0 719925 20822 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 261848 10002 288587 8724 0 0 0 0 0 0
+node "VDD" 12759 49546.5 505 6259 nsc 13524086 27586 0 0 1970640 46644 386880 13120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4004019 59928 158346 5818 0 0 0 0 0 0
+substrate "VSS" 0 0 513 5478 m1 0 0 0 0 620480 19776 2055680 60280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4061338 76096 940227 30060 0 0 0 0 0 0
+cap "A2" "G_source_dn" 1.49602
+cap "G2_1" "G1_1" 873.963
+cap "G_sink_dn" "VDD" 6.3985
+cap "SD0_1" "G_sink_up" 164.148
+cap "G_source_up" "SD0_1" 11.6283
+cap "G1_1" "G_sink_up" 245.994
+cap "SD1_1" "G_sink_up" 1277.19
+cap "G_source_up" "SD1_1" 0.0183511
+cap "ITAIL" "SD2_1" 1020.51
+cap "SD0_1" "G1_2" 6.21376
+cap "G_sink_up" "A1" 6.02665
+cap "A2" "VDD" 28.8584
+cap "G_source_dn" "SD0_1" 852.123
+cap "SD2_1" "G1_2" 118.475
+cap "A2" "G_sink_dn" 164.826
+cap "G_source_up" "A1" 754.091
+cap "ITAIL" "G1_1" 617.641
+cap "ITAIL_SRC" "G_sink_up" 0.366253
+cap "G1_1" "G1_2" 4361.12
+cap "ITAIL_SINK" "A1" 0.174406
+cap "SD1_1" "G1_2" 376.156
+cap "G1_1" "G_source_dn" 0.611706
+cap "G_source_dn" "SD1_1" 43.2649
+cap "G_source_up" "ITAIL_SRC" 231.382
+cap "ITAIL_SRC" "ITAIL_SINK" 3.01485
+cap "G_source_dn" "A1" 218.692
+cap "ITAIL_SRC" "G_source_dn" 406.273
+cap "SD0_1" "VDD" 21.5804
+cap "G_sink_dn" "SD0_1" 159.611
+cap "VDD" "SD2_1" 86.7501
+cap "G1_1" "VDD" 9891.39
+cap "G_sink_dn" "G1_1" 0.419679
+cap "SD1_1" "VDD" 848.001
+cap "G_sink_dn" "SD1_1" 31.881
+cap "VDD" "A1" 717.48
+cap "G_sink_dn" "A1" 1.329
+cap "ITAIL_SRC" "VDD" 801.61
+cap "G_source_up" "G_sink_up" 37.2225
+cap "G2_1" "ITAIL" 5610.11
+cap "G2_1" "G1_2" 4.50758
+cap "ITAIL_SINK" "G_sink_up" 182.023
+cap "G_source_up" "ITAIL_SINK" 0.502404
+cap "A2" "A1" 52.1543
+cap "G_sink_up" "G1_2" 585.085
+cap "G_source_dn" "G_sink_up" 483.561
+cap "A2" "ITAIL_SRC" 0.411967
+cap "G_source_up" "G_source_dn" 2269.17
+cap "ITAIL_SINK" "G_source_dn" 1.33406
+cap "G1_1" "SD0_1" 1.04453
+cap "SD1_1" "SD0_1" 71.1736
+cap "G1_1" "SD2_1" 2489.17
+cap "G2_1" "VDD" 6.03088
+cap "ITAIL" "G1_2" 126.775
+cap "G_source_dn" "G1_2" 2.17109
+cap "G1_1" "SD1_1" 351.227
+cap "G_sink_dn" "G_sink_up" 2316.94
+cap "VDD" "G_sink_up" 853.342
+cap "G_source_up" "VDD" 8621.72
+cap "G_source_up" "G_sink_dn" 1.60577
+cap "ITAIL_SINK" "VDD" 1.01597
+cap "ITAIL_SINK" "G_sink_dn" 284.497
+cap "ITAIL" "VDD" 206.973
+cap "VDD" "G1_2" 13897.7
+cap "G_sink_dn" "G1_2" 5.8589
+cap "ITAIL_SRC" "A1" 900.643
+cap "G_source_dn" "VDD" 4040.43
+cap "G_sink_dn" "G_source_dn" 320.282
+cap "A2" "G_sink_up" 180.356
+cap "A2" "G_source_up" 18.52
+cap "A2" "ITAIL_SINK" 944.556
+cap "G2_1" "SD2_1" 473.492
+device msubckt nfet_03v3 3988 139 3989 140 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 17600,576
+device msubckt nfet_03v3 3784 139 3785 140 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 3580 139 3581 140 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 3376 139 3377 140 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 3172 139 3173 140 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 2968 139 2969 140 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 2764 139 2765 140 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 2560 139 2561 140 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 2356 139 2357 140 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 2152 139 2153 140 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 1948 139 1949 140 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 1744 139 1745 140 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 1540 139 1541 140 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 1336 139 1337 140 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 1132 139 1133 140 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 928 139 929 140 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 724 139 725 140 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 520 139 521 140 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 316 139 317 140 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 112 139 113 140 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 17600,576 "G2_1" 200 10400,304
+device msubckt nfet_03v3 3988 587 3989 588 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 17600,576
+device msubckt nfet_03v3 3784 587 3785 588 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 3580 587 3581 588 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 3376 587 3377 588 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 3172 587 3173 588 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 2968 587 2969 588 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 2764 587 2765 588 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 2560 587 2561 588 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 2356 587 2357 588 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 2152 587 2153 588 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 1948 587 1949 588 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 1744 587 1745 588 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 1540 587 1541 588 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 1336 587 1337 588 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 1132 587 1133 588 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 928 587 929 588 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 724 587 725 588 l=100 w=200 "VSS" "ITAIL" 200 0 "G2_1" 200 10400,304 "ITAIL" 200 10400,304
+device msubckt nfet_03v3 520 587 521 588 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "G2_1" 200 10400,304
+device msubckt nfet_03v3 316 587 317 588 l=100 w=200 "VSS" "G2_1" 200 0 "G2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 112 587 113 588 l=100 w=200 "VSS" "ITAIL" 200 0 "ITAIL" 200 17600,576 "G2_1" 200 10400,304
+device msubckt nfet_03v3 3988 1351 3989 1352 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 17600,576
+device msubckt nfet_03v3 3784 1351 3785 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 3580 1351 3581 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 3376 1351 3377 1352 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 3172 1351 3173 1352 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 2968 1351 2969 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 2764 1351 2765 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 2560 1351 2561 1352 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 2356 1351 2357 1352 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 2152 1351 2153 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 1948 1351 1949 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 1744 1351 1745 1352 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 1540 1351 1541 1352 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 1336 1351 1337 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 1132 1351 1133 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 928 1351 929 1352 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 724 1351 725 1352 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 520 1351 521 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 316 1351 317 1352 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 112 1351 113 1352 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 17600,576 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 3988 1802 3989 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 17600,576
+device msubckt nfet_03v3 3784 1802 3785 1803 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 3580 1802 3581 1803 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 3376 1802 3377 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 3172 1802 3173 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 2968 1802 2969 1803 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 2764 1802 2765 1803 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 2560 1802 2561 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 2356 1802 2357 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 2152 1802 2153 1803 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 1948 1802 1949 1803 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 1744 1802 1745 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 1540 1802 1541 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 1336 1802 1337 1803 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 1132 1802 1133 1803 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 928 1802 929 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 724 1802 725 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "SD2_1" 200 10400,304 "G1_1" 200 10400,304
+device msubckt nfet_03v3 520 1802 521 1803 l=100 w=200 "VSS" "G2_1" 200 0 "VSS" 200 10400,304 "SD2_1" 200 10400,304
+device msubckt nfet_03v3 316 1802 317 1803 l=100 w=200 "VSS" "G2_1" 200 0 "SD2_1" 200 10400,304 "VSS" 200 10400,304
+device msubckt nfet_03v3 112 1802 113 1803 l=100 w=200 "VSS" "ITAIL" 200 0 "G1_1" 200 17600,576 "SD2_1" 200 10400,304
+device msubckt pfet_03v3 3988 2796 3989 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 17600,576
+device msubckt pfet_03v3 3784 2796 3785 2797 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 3580 2796 3581 2797 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 3376 2796 3377 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 3172 2796 3173 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 2968 2796 2969 2797 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 2764 2796 2765 2797 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 2560 2796 2561 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 2356 2796 2357 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 2152 2796 2153 2797 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 1948 2796 1949 2797 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 1744 2796 1745 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 1540 2796 1541 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 1336 2796 1337 2797 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 1132 2796 1133 2797 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 928 2796 929 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 724 2796 725 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 520 2796 521 2797 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 316 2796 317 2797 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 112 2796 113 2797 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 17600,576 "G1_2" 200 10400,304
+device msubckt pfet_03v3 3988 3321 3989 3322 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 3784 3321 3785 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 3580 3321 3581 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 3376 3321 3377 3322 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 3172 3321 3173 3322 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 2968 3321 2969 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 2764 3321 2765 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 2560 3321 2561 3322 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 2356 3321 2357 3322 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 2152 3321 2153 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 1948 3321 1949 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 1744 3321 1745 3322 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 1540 3321 1541 3322 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 1336 3321 1337 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 1132 3321 1133 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 928 3321 929 3322 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 724 3321 725 3322 l=100 w=200 "VDD" "G1_2" 200 0 "G1_2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 520 3321 521 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_1" 200 10400,304 "G1_2" 200 10400,304
+device msubckt pfet_03v3 316 3321 317 3322 l=100 w=200 "VDD" "G1_1" 200 0 "G1_2" 200 10400,304 "G1_1" 200 10400,304
+device msubckt pfet_03v3 112 3321 113 3322 l=100 w=200 "VDD" "G1_2" 200 0 "VDD" 200 17600,576 "G1_2" 200 10400,304
+device msubckt pfet_03v3 3988 4117 3989 4118 l=100 w=80 "VDD" "G1_2" 200 0 "SD1_1" 80 4160,184 "VDD" 80 7040,336
+device msubckt pfet_03v3 3784 4117 3785 4118 l=100 w=80 "VDD" "G1_1" 200 0 "G_sink_up" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 3580 4117 3581 4118 l=100 w=80 "VDD" "G1_1" 200 0 "SD1_1" 80 4160,184 "G_sink_up" 80 4160,184
+device msubckt pfet_03v3 3376 4117 3377 4118 l=100 w=80 "VDD" "G1_2" 200 0 "VDD" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 3172 4117 3173 4118 l=100 w=80 "VDD" "G1_2" 200 0 "SD1_1" 80 4160,184 "VDD" 80 4160,184
+device msubckt pfet_03v3 2968 4117 2969 4118 l=100 w=80 "VDD" "G1_1" 200 0 "G_sink_up" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 2764 4117 2765 4118 l=100 w=80 "VDD" "G1_1" 200 0 "SD1_1" 80 4160,184 "G_sink_up" 80 4160,184
+device msubckt pfet_03v3 2560 4117 2561 4118 l=100 w=80 "VDD" "G1_2" 200 0 "VDD" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 2356 4117 2357 4118 l=100 w=80 "VDD" "G1_2" 200 0 "SD1_1" 80 4160,184 "VDD" 80 4160,184
+device msubckt pfet_03v3 2152 4117 2153 4118 l=100 w=80 "VDD" "G1_1" 200 0 "G_sink_up" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 1948 4117 1949 4118 l=100 w=80 "VDD" "G1_1" 200 0 "SD1_1" 80 4160,184 "G_sink_up" 80 4160,184
+device msubckt pfet_03v3 1744 4117 1745 4118 l=100 w=80 "VDD" "G1_2" 200 0 "VDD" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 1540 4117 1541 4118 l=100 w=80 "VDD" "G1_2" 200 0 "SD1_1" 80 4160,184 "VDD" 80 4160,184
+device msubckt pfet_03v3 1336 4117 1337 4118 l=100 w=80 "VDD" "G1_1" 200 0 "G_sink_up" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 1132 4117 1133 4118 l=100 w=80 "VDD" "G1_1" 200 0 "SD1_1" 80 4160,184 "G_sink_up" 80 4160,184
+device msubckt pfet_03v3 928 4117 929 4118 l=100 w=80 "VDD" "G1_2" 200 0 "VDD" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 724 4117 725 4118 l=100 w=80 "VDD" "G1_2" 200 0 "SD1_1" 80 4160,184 "VDD" 80 4160,184
+device msubckt pfet_03v3 520 4117 521 4118 l=100 w=80 "VDD" "G1_1" 200 0 "G_sink_up" 80 4160,184 "SD1_1" 80 4160,184
+device msubckt pfet_03v3 316 4117 317 4118 l=100 w=80 "VDD" "G1_1" 200 0 "SD1_1" 80 4160,184 "G_sink_up" 80 4160,184
+device msubckt pfet_03v3 112 4117 113 4118 l=100 w=80 "VDD" "G1_2" 200 0 "VDD" 80 7040,336 "SD1_1" 80 4160,184
+device msubckt nfet_03v3 3671 4755 3672 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "SD0_1" 120 6240,224 "VSS" 120 10560,416
+device msubckt nfet_03v3 3467 4755 3468 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_source_dn" 120 6240,224 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 3263 4755 3264 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "SD0_1" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt nfet_03v3 3059 4755 3060 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 2855 4755 2856 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "SD0_1" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 2651 4755 2652 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_source_dn" 120 6240,224 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 2447 4755 2448 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "SD0_1" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt nfet_03v3 2243 4755 2244 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 10560,416 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 1900 4755 1901 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "G_sink_dn" 120 6240,224 "VSS" 120 10560,416
+device msubckt nfet_03v3 1696 4755 1697 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_up" 120 6240,224 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 1492 4755 1493 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_dn" 120 6240,224 "G_sink_up" 120 6240,224
+device msubckt nfet_03v3 1288 4755 1289 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 1084 4755 1085 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "G_sink_dn" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 880 4755 881 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_up" 120 6240,224 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 676 4755 677 4756 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_dn" 120 6240,224 "G_sink_up" 120 6240,224
+device msubckt nfet_03v3 472 4755 473 4756 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 10560,416 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 -250 4739 -249 4740 l=100 w=120 "VSS" "G_sink_dn" 200 0 "A2" 120 6240,224 "VSS" 120 10560,416
+device msubckt nfet_03v3 -454 4739 -453 4740 l=100 w=120 "VSS" "G_sink_up" 200 0 "ITAIL_SINK" 120 6240,224 "A2" 120 6240,224
+device msubckt nfet_03v3 -658 4739 -657 4740 l=100 w=120 "VSS" "G_sink_up" 200 0 "A2" 120 6240,224 "ITAIL_SINK" 120 6240,224
+device msubckt nfet_03v3 -862 4739 -861 4740 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "A2" 120 6240,224
+device msubckt nfet_03v3 -1066 4739 -1065 4740 l=100 w=120 "VSS" "G_sink_dn" 200 0 "A2" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 -1270 4739 -1269 4740 l=100 w=120 "VSS" "G_sink_up" 200 0 "ITAIL_SINK" 120 6240,224 "A2" 120 6240,224
+device msubckt nfet_03v3 -1474 4739 -1473 4740 l=100 w=120 "VSS" "G_sink_up" 200 0 "A2" 120 6240,224 "ITAIL_SINK" 120 6240,224
+device msubckt nfet_03v3 -1678 4739 -1677 4740 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 10560,416 "A2" 120 6240,224
+device msubckt nfet_03v3 3671 5108 3672 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "SD0_1" 120 6240,224 "G_source_dn" 120 10560,416
+device msubckt nfet_03v3 3467 5108 3468 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 3263 5108 3264 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "SD0_1" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 3059 5108 3060 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_source_dn" 120 6240,224 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 2855 5108 2856 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "SD0_1" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt nfet_03v3 2651 5108 2652 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 2447 5108 2448 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "SD0_1" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 2243 5108 2244 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_source_dn" 120 10560,416 "SD0_1" 120 6240,224
+device msubckt nfet_03v3 1900 5108 1901 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_dn" 120 6240,224 "G_sink_up" 120 10560,416
+device msubckt nfet_03v3 1696 5108 1697 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 1492 5108 1493 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "G_sink_dn" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 1288 5108 1289 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_up" 120 6240,224 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 1084 5108 1085 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_dn" 120 6240,224 "G_sink_up" 120 6240,224
+device msubckt nfet_03v3 880 5108 881 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 676 5108 677 5109 l=100 w=120 "VSS" "G_sink_dn" 200 0 "G_sink_dn" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 472 5108 473 5109 l=100 w=120 "VSS" "G_sink_up" 200 0 "G_sink_up" 120 10560,416 "G_sink_dn" 120 6240,224
+device msubckt nfet_03v3 -250 5085 -249 5086 l=100 w=120 "VSS" "G_sink_up" 200 0 "A2" 120 6240,224 "ITAIL_SINK" 120 10560,416
+device msubckt nfet_03v3 -454 5085 -453 5086 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "A2" 120 6240,224
+device msubckt nfet_03v3 -658 5085 -657 5086 l=100 w=120 "VSS" "G_sink_dn" 200 0 "A2" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 -862 5085 -861 5086 l=100 w=120 "VSS" "G_sink_up" 200 0 "ITAIL_SINK" 120 6240,224 "A2" 120 6240,224
+device msubckt nfet_03v3 -1066 5085 -1065 5086 l=100 w=120 "VSS" "G_sink_up" 200 0 "A2" 120 6240,224 "ITAIL_SINK" 120 6240,224
+device msubckt nfet_03v3 -1270 5085 -1269 5086 l=100 w=120 "VSS" "G_sink_dn" 200 0 "VSS" 120 6240,224 "A2" 120 6240,224
+device msubckt nfet_03v3 -1474 5085 -1473 5086 l=100 w=120 "VSS" "G_sink_dn" 200 0 "A2" 120 6240,224 "VSS" 120 6240,224
+device msubckt nfet_03v3 -1678 5085 -1677 5086 l=100 w=120 "VSS" "G_sink_up" 200 0 "ITAIL_SINK" 120 10560,416 "A2" 120 6240,224
+device msubckt pfet_03v3 3594 5815 3595 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "G_source_up" 120 6240,224 "VDD" 120 10560,416
+device msubckt pfet_03v3 3390 5815 3391 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_dn" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 3186 5815 3187 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_up" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt pfet_03v3 2982 5815 2983 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 2778 5815 2779 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "G_source_up" 120 6240,224 "VDD" 120 6240,224
+device msubckt pfet_03v3 2574 5815 2575 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_dn" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 2370 5815 2371 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_up" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt pfet_03v3 2166 5815 2167 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 1962 5815 1963 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "G_source_up" 120 6240,224 "VDD" 120 6240,224
+device msubckt pfet_03v3 1758 5815 1759 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_dn" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 1554 5815 1555 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_up" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt pfet_03v3 1350 5815 1351 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 1146 5815 1147 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "G_source_up" 120 6240,224 "VDD" 120 6240,224
+device msubckt pfet_03v3 942 5815 943 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_dn" 120 6240,224 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 738 5815 739 5816 l=100 w=120 "VDD" "G_source_dn" 200 0 "G_source_up" 120 6240,224 "G_source_dn" 120 6240,224
+device msubckt pfet_03v3 534 5815 535 5816 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 10560,416 "G_source_up" 120 6240,224
+device msubckt pfet_03v3 -207 6057 -206 6058 l=100 w=120 "VDD" "G_source_dn" 200 0 "A1" 120 6240,224 "ITAIL_SRC" 120 10560,416
+device msubckt pfet_03v3 -411 6057 -410 6058 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 6240,224 "A1" 120 6240,224
+device msubckt pfet_03v3 -615 6057 -614 6058 l=100 w=120 "VDD" "G_source_up" 200 0 "A1" 120 6240,224 "VDD" 120 6240,224
+device msubckt pfet_03v3 -819 6057 -818 6058 l=100 w=120 "VDD" "G_source_dn" 200 0 "ITAIL_SRC" 120 6240,224 "A1" 120 6240,224
+device msubckt pfet_03v3 -1023 6057 -1022 6058 l=100 w=120 "VDD" "G_source_dn" 200 0 "A1" 120 6240,224 "ITAIL_SRC" 120 6240,224
+device msubckt pfet_03v3 -1227 6057 -1226 6058 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 6240,224 "A1" 120 6240,224
+device msubckt pfet_03v3 -1431 6057 -1430 6058 l=100 w=120 "VDD" "G_source_up" 200 0 "A1" 120 6240,224 "VDD" 120 6240,224
+device msubckt pfet_03v3 -1635 6057 -1634 6058 l=100 w=120 "VDD" "G_source_dn" 200 0 "ITAIL_SRC" 120 10560,416 "A1" 120 6240,224
+device msubckt pfet_03v3 -207 6537 -206 6538 l=100 w=120 "VDD" "G_source_up" 200 0 "A1" 120 6240,224 "VDD" 120 10560,416
+device msubckt pfet_03v3 -411 6537 -410 6538 l=100 w=120 "VDD" "G_source_dn" 200 0 "ITAIL_SRC" 120 6240,224 "A1" 120 6240,224
+device msubckt pfet_03v3 -615 6537 -614 6538 l=100 w=120 "VDD" "G_source_dn" 200 0 "A1" 120 6240,224 "ITAIL_SRC" 120 6240,224
+device msubckt pfet_03v3 -819 6537 -818 6538 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 6240,224 "A1" 120 6240,224
+device msubckt pfet_03v3 -1023 6537 -1022 6538 l=100 w=120 "VDD" "G_source_up" 200 0 "A1" 120 6240,224 "VDD" 120 6240,224
+device msubckt pfet_03v3 -1227 6537 -1226 6538 l=100 w=120 "VDD" "G_source_dn" 200 0 "ITAIL_SRC" 120 6240,224 "A1" 120 6240,224
+device msubckt pfet_03v3 -1431 6537 -1430 6538 l=100 w=120 "VDD" "G_source_dn" 200 0 "A1" 120 6240,224 "ITAIL_SRC" 120 6240,224
+device msubckt pfet_03v3 -1635 6537 -1634 6538 l=100 w=120 "VDD" "G_source_up" 200 0 "VDD" 120 10560,416 "A1" 120 6240,224

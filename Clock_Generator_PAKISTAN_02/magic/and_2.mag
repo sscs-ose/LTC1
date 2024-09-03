@@ -1,0 +1,36 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694602550
+<< nwell >>
+rect 823 1889 833 2007
+<< metal1 >>
+rect 430 1910 630 1970
+rect 823 1889 833 2007
+rect 730 1560 780 1590
+rect 1090 1500 1130 1580
+rect 400 1460 450 1490
+rect 727 1450 984 1497
+rect 819 1159 828 1256
+rect 460 1020 620 1080
+rect 819 996 883 1159
+use nand2  nand2_0
+timestamp 1694602550
+transform 1 0 327 0 1 1184
+box -70 -188 502 863
+use nverterlayout  nverterlayout_0
+timestamp 1694602550
+transform 1 0 915 0 1 917
+box -88 220 316 1130
+<< labels >>
+flabel metal1 535 1056 535 1056 0 FreeSans 480 0 0 0 VSS
+port 0 nsew
+flabel metal1 525 1933 525 1933 0 FreeSans 480 0 0 0 VDD
+port 1 nsew
+flabel metal1 429 1474 429 1474 0 FreeSans 480 0 0 0 IN2
+port 2 nsew
+flabel metal1 1114 1540 1114 1540 0 FreeSans 480 0 0 0 OUT
+port 4 nsew
+flabel metal1 753 1572 753 1572 0 FreeSans 480 0 0 0 IN1
+port 5 nsew
+<< end >>

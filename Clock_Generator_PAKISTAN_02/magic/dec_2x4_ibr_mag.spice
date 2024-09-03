@@ -1,0 +1,55 @@
+* NGSPICE file created from dec_2x4_ibr_mag.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8SWPS a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_5QNVWA a_n116_n44# a_28_n44# a_n28_n88# VSUBS
+X0 a_28_n44# a_n28_n88# a_n116_n44# VSUBS nfet_03v3 ad=0.194p pd=1.76u as=0.194p ps=1.76u w=0.44u l=0.28u
+.ends
+
+.subckt nand2_ibr VDD IN2 IN1 OUT VSS m1_186_70#
+Xpmos_3p3_M8SWPS_0 IN1 OUT VDD VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN2 VDD OUT VDD pmos_3p3_M8SWPS
+Xnmos_3p3_5QNVWA_0 VSS m1_186_70# IN2 VSS nmos_3p3_5QNVWA
+Xnmos_3p3_5QNVWA_1 m1_186_70# OUT IN1 VSS nmos_3p3_5QNVWA
+.ends
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt nverterlayout_ibr VDD VSS OUT IN
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt and_2_ibr VDD IN2 OUT IN1 nand2_ibr_0/m1_186_70# nand2_ibr_0/OUT VSS
+Xnand2_ibr_0 VDD IN2 IN1 nand2_ibr_0/OUT VSS nand2_ibr_0/m1_186_70# nand2_ibr
+Xnverterlayout_ibr_0 VDD VSS OUT nand2_ibr_0/OUT nverterlayout_ibr
+.ends
+
+.subckt nand2 VDD IN2 IN1 OUT VSS m1_186_70#
+Xpmos_3p3_M8SWPS_0 IN1 OUT VDD VDD pmos_3p3_M8SWPS
+Xpmos_3p3_M8SWPS_1 IN2 VDD OUT VDD pmos_3p3_M8SWPS
+Xnmos_3p3_5QNVWA_0 VSS m1_186_70# IN2 VSS nmos_3p3_5QNVWA
+Xnmos_3p3_5QNVWA_1 m1_186_70# OUT IN1 VSS nmos_3p3_5QNVWA
+.ends
+
+.subckt dec_2x4_ibr_mag IN1 IN2 D0 D1 D2 D3 VSS VDD
+Xand_2_ibr_0 VDD nand2_2/IN2 D0 nand2_1/IN1 nand2_0/m1_186_70# nand2_0/OUT VSS and_2_ibr
+Xand_2_ibr_1 VDD IN1 D1 nand2_1/IN1 nand2_1/m1_186_70# nand2_1/OUT VSS and_2_ibr
+Xand_2_ibr_3 VDD IN1 D3 IN2 nand2_3/m1_186_70# nand2_3/OUT VSS and_2_ibr
+Xand_2_ibr_2 VDD nand2_2/IN2 D2 IN2 nand2_2/m1_186_70# nand2_2/OUT VSS and_2_ibr
+Xnverterlayout_ibr_0 VDD VSS nand2_2/IN2 IN1 nverterlayout_ibr
+Xnverterlayout_ibr_1 VDD VSS nand2_1/IN1 IN2 nverterlayout_ibr
+Xnand2_0 VDD nand2_2/IN2 nand2_1/IN1 nand2_0/OUT VSS nand2_0/m1_186_70# nand2
+Xnand2_2 VDD nand2_2/IN2 IN2 nand2_2/OUT VSS nand2_2/m1_186_70# nand2
+Xnand2_1 VDD IN1 nand2_1/IN1 nand2_1/OUT VSS nand2_1/m1_186_70# nand2
+Xnand2_3 VDD IN1 IN2 nand2_3/OUT VSS nand2_3/m1_186_70# nand2
+.ends
+

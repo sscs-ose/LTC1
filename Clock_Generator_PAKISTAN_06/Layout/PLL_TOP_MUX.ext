@@ -1,0 +1,1698 @@
+timestamp 1693836168
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use VCO_DFF_C VCO_DFF_C_0 1 0 24282 0 1 -1600
+use RES_74k RES_74k_1 -1 0 51462 0 -1 12102
+use PFD_T2 PFD_T2_0 1 0 22661 0 1 8437
+use mux_magic mux_magic_3 1 0 20529 0 -1 9347
+use mux_magic mux_magic_2 1 0 20523 0 1 11061
+use mux_magic mux_magic_1 1 0 28501 0 -1 9424
+use mux_magic mux_magic_0 1 0 28348 0 1 11078
+use CP_1 CP_1_0 1 0 32106 0 1 10461
+use A_MUX A_MUX_0 1 0 42495 0 1 4782
+use cap_11p cap_11p_0 1 0 74717 0 1 12873
+use cap_240p cap_240p_0 1 0 89584 0 -1 24489
+port "OUT" 38 48004 888 48004 888 m1
+port "OUTB" 37 48168 1912 48168 1912 m1
+port "S4" 43 43370 4280 43370 4280 m1
+port "VCTRL_IN" 42 42870 4240 42870 4240 m1
+port "VSS" 40 33470 8331 33470 8331 m1
+port "VCTRL2" 39 32279 5743 32279 5743 m1
+port "S3" 19 22036 6756 22036 6756 m1
+port "DIV_OUT" 30 18872 6250 18872 6250 m1
+port "S6" 24 17670 6747 17670 6747 m1
+port "DN" 32 30955 6730 30955 6730 m1
+port "ITAIL1" 33 33398 13080 33398 13080 m1
+port "ITAIL" 14 30954 13379 30954 13379 m1
+port "UP" 31 29437 13558 29437 13558 m1
+port "S2" 20 21788 13047 21788 13047 m1
+port "DN_INPUT" 26 21858 13460 21858 13460 m1
+port "VDD" 41 30024 14122 30024 14122 m1
+port "UP_INPUT" 25 21995 13993 21995 13993 m1
+port "PRE_SCALAR" 28 19504 14129 19504 14129 m1
+port "S1" 23 18804 14117 18804 14117 m1
+port "F_IN" 29 18022 14399 18022 14399 m1
+node "m5_67761_n293#" 0 52628 67761 -293 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97113676 253744
+node "m2_26597_8889#" 1 497.14 26597 8889 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 187544 3030 0 0 0 0 0 0
+node "m2_28891_10157#" 0 73.0143 28891 10157 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19644 600 0 0 0 0 0 0
+node "m2_26556_11527#" 1 406.982 26556 11527 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106468 2648 0 0 0 0 0 0
+node "m1_47432_n795#" 3 4055.95 47432 -795 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1606933 14612 0 0 0 0 0 0 0 0
+node "OUT" 1 200.741 48004 888 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27696 926 0 0 0 0 0 0 0 0
+node "OUTB" 1 234.452 48168 1912 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35840 1056 0 0 0 0 0 0 0 0
+node "m1_44729_2789#" 0 1398.12 44729 2789 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 705375 4512 0 0 0 0 0 0 0 0
+node "S4" 0 136.601 43370 4280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28600 740 0 0 0 0 0 0 0 0
+node "VCTRL_IN" 0 144.805 42870 4240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28600 740 0 0 0 0 0 0 0 0
+node "m1_40140_4953#" 1 1150.54 40140 4953 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 353548 4522 0 0 0 0 0 0 0 0
+node "m1_43759_5971#" 6 3152.58 43759 5971 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 326035 5118 295438 4392 753850 9810 0 0 0 0
+node "m1_30300_4138#" 10 7784.36 30300 4138 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 377206 5054 454790 5084 3563817 34852 0 0 0 0
+node "VSS" 1 3131.88 33470 8331 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1821064 9260 0 0 0 0 0 0 0 0
+node "VCTRL2" 0 221.571 32279 5743 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43888 1052 0 0 0 0 0 0 0 0
+node "m1_22340_7798#" 9 8716.92 22340 7798 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2712682 30088 411964 3604 560604 5142 0 0 0 0
+node "S3" 4 3117.29 22036 6756 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128021 2436 1330784 13892 0 0 0 0 0 0
+node "DIV_OUT" 3 1694.18 18872 6250 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160868 2518 500810 7550 0 0 0 0 0 0
+node "S6" 2 2180.75 17670 6747 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 478717 4390 716526 6786 0 0 0 0 0 0
+node "m1_22320_8553#" 1 818.048 22320 8553 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 186753 3638 0 0 0 0 0 0 0 0
+node "DN" 2 2333.18 30955 6730 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 876652 9420 0 0 0 0 0 0 0 0
+node "m1_19780_9902#" 0 125.755 19780 9902 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24416 660 0 0 0 0 0 0 0 0
+node "m1_27356_10203#" 2 1124.38 27356 10203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 280087 4788 0 0 0 0 0 0 0 0
+node "m1_29638_10167#" 4 2619.89 29638 10167 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 303377 4088 273129 3690 600993 7700 0 0 0 0
+node "m1_16721_4611#" 5 9629.5 16721 4611 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4651614 31918 0 0 0 0 0 0 0 0
+node "m1_22383_10516#" 0 10.8585 22383 10516 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 76 0 0 0 0 0 0 0 0
+node "m1_41677_12061#" 4 3440.28 41677 12061 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166453 2108 1538421 15300 0 0 0 0 0 0
+node "m1_33817_9606#" 14 14543.2 33817 9606 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2191866 22328 4492018 43430 0 0 0 0 0 0
+node "ITAIL1" 3 2628.89 33398 13080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 348428 3088 1060936 10370 0 0 0 0 0 0
+node "ITAIL" 2 1365.51 30954 13379 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 424091 5712 48646 1190 0 0 0 0 0 0
+node "m1_22312_10710#" 1 716.885 22312 10710 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152187 3242 0 0 0 0 0 0 0 0
+node "UP" 4 2698.45 29437 13558 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 356650 4680 1073917 11848 0 0 0 0 0 0
+node "S2" 6 1877.56 21788 13047 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141312 2552 678885 12868 0 0 0 0 0 0
+node "DN_INPUT" 8 2544.18 21858 13460 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199213 2438 684290 9596 613051 11228 0 0 0 0
+node "VDD" 0 24107.5 30024 14122 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14756899 73294 0 0 0 0 0 0 0 0
+node "UP_INPUT" 6 3434.86 21995 13993 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 271376 2914 988371 11606 671924 9608 0 0 0 0
+node "PRE_SCALAR" 2 1625.63 19504 14129 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 350788 3334 599673 6512 0 0 0 0 0 0
+node "S1" 2 1140.43 18804 14117 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 233059 3400 419588 5268 0 0 0 0 0 0
+node "F_IN" 3 3085.7 18022 14399 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 458053 4194 1399467 12104 0 0 0 0 0 0
+substrate "a_28514_10224#" 0 0 28514 10224 ppd 0 0 0 0 0 0 2585 204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "F_IN" "S6" 4.73177
+cap "m1_22340_7798#" "DN" 22.0419
+cap "m1_22312_10710#" "m1_22320_8553#" 11.1009
+cap "UP" "ITAIL" 517.484
+cap "S2" "DN_INPUT" 771.443
+cap "VDD" "F_IN" 0.632118
+cap "VDD" "S2" 913.67
+cap "VDD" "PRE_SCALAR" 158.502
+cap "ITAIL" "DN" 11.0309
+cap "m1_22340_7798#" "m1_30300_4138#" 1.78015
+cap "S2" "UP_INPUT" 62.3918
+cap "m1_27356_10203#" "m1_29638_10167#" 381.904
+cap "VSS" "m1_30300_4138#" 204.049
+cap "m1_19780_9902#" "DIV_OUT" 2.97113
+cap "UP" "DN" 474.898
+cap "UP" "m2_28891_10157#" 0.2921
+cap "m1_19780_9902#" "m1_16721_4611#" 21.195
+cap "OUT" "m1_47432_n795#" 2.05124
+cap "S2" "m2_26556_11527#" 65.6217
+cap "VDD" "ITAIL1" 102.381
+cap "m1_16721_4611#" "DIV_OUT" 30.8496
+cap "ITAIL1" "VSS" 0.171702
+cap "m1_16721_4611#" "S1" 5.63306
+cap "m2_28891_10157#" "DN" 0.000671734
+cap "S2" "m1_22312_10710#" 0.523985
+cap "VCTRL2" "VSS" 17.8829
+cap "m1_27356_10203#" "DN_INPUT" 28.7218
+cap "DIV_OUT" "S6" 183.664
+cap "m1_30300_4138#" "DN" 109.261
+cap "m1_16721_4611#" "S6" 31.0365
+cap "F_IN" "PRE_SCALAR" 28.4527
+cap "VDD" "S1" 32.514
+cap "m1_22320_8553#" "m1_22383_10516#" 1.62251
+cap "VSS" "m1_29638_10167#" 12.9086
+cap "m1_27356_10203#" "m2_26556_11527#" 0.899085
+cap "S3" "DN_INPUT" 0.766187
+cap "m1_27356_10203#" "m2_26597_8889#" 1.46557
+cap "m1_44729_2789#" "m1_33817_9606#" 2.5226
+cap "m1_44729_2789#" "m1_43759_5971#" 3.56512
+cap "m1_22340_7798#" "S3" 408.442
+cap "m1_30300_4138#" "m1_43759_5971#" 202.825
+cap "UP" "m1_29638_10167#" 192.729
+cap "m1_22312_10710#" "m1_22383_10516#" 3.44472
+cap "m1_27356_10203#" "m2_28891_10157#" 65.2523
+cap "VDD" "DN_INPUT" 270.652
+cap "m1_22340_7798#" "DN_INPUT" 0.00645165
+cap "S3" "m2_26597_8889#" 78.887
+cap "ITAIL1" "m1_33817_9606#" 286.638
+cap "VCTRL2" "m1_30300_4138#" 1.62136
+cap "m1_33817_9606#" "m1_43759_5971#" 20.1077
+cap "DN_INPUT" "UP_INPUT" 890.029
+cap "DN" "m1_29638_10167#" 208.939
+cap "m2_28891_10157#" "m1_29638_10167#" 10.3681
+cap "VDD" "m1_41677_12061#" 417.634
+cap "m1_19780_9902#" "F_IN" 16.3443
+cap "DN_INPUT" "m2_26556_11527#" 10.0346
+cap "VDD" "UP_INPUT" 233.591
+cap "m2_26597_8889#" "DN_INPUT" 14.5831
+cap "F_IN" "DIV_OUT" 9.19378
+cap "m1_22340_7798#" "m1_22320_8553#" 22.8134
+cap "m1_16721_4611#" "F_IN" 438.766
+cap "F_IN" "S1" 273.983
+cap "VDD" "m2_26556_11527#" 11.2647
+cap "m1_16721_4611#" "PRE_SCALAR" 0.452249
+cap "VDD" "ITAIL" 138.347
+cap "m1_22340_7798#" "m2_26597_8889#" 9.85532
+cap "PRE_SCALAR" "S1" 304.413
+cap "VCTRL_IN" "S4" 26.2781
+cap "m2_26556_11527#" "UP_INPUT" 104.039
+cap "m2_26597_8889#" "UP_INPUT" 7.3896
+cap "VDD" "UP" 401.047
+cap "DN_INPUT" "m2_28891_10157#" 0.165431
+cap "VDD" "m1_22312_10710#" 19.7998
+cap "m1_44729_2789#" "S4" 7.98569
+cap "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/VDD" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/VSS" 0.147055
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/VSS" 1.09926
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" 6.16931
+cap "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 3.39006
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/a_n4178_n205#" 4.28927
+cap "VCO_DFF_C_0/DFF_3_mag_0/a_n4178_n205#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 16.1742
+cap "m1_47432_n795#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 16.4134
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "m1_47432_n795#" 4.28927
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "m1_47432_n795#" 16.1742
+cap "m1_47432_n795#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 14.6261
+cap "VCO_DFF_C_0/OUT" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 3.87596
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/OUT" 1.44959
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 0.457543
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 6.41809
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 0.493884
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 3.57853
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 13.4883
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 0.108369
+cap "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" "VCO_DFF_C_0/OUT" 13.2681
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" 19.5259
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VDD" 3.18511
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/IN" 3.21055
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/OUT" 10.7597
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/OUT" 9.52615
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/a_n4178_n205#" 18.5902
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "m1_47432_n795#" 2.88716
+cap "m1_47432_n795#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 18.5902
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_3374_n6300#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_3494_n6180#" 0.476143
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 0.0353275
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 6.39731
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 4.33256
+cap "VCO_DFF_C_0/DFF_3_mag_0/Q-" "VCO_DFF_C_0/DFF_3_mag_0/CLK" -0.39479
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/OUTB" 0.135825
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/OUT" 2.31937
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 0.00146659
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 2.68337
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/OUT" 1.24188
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 0.0692611
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 0.00129279
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/OUT" 0.0747622
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/OUTB" 11.4806
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 9.85427
+cap "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" "VCO_DFF_C_0/OUTB" 11.4806
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/IN" 0.494951
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VDD" 7.49041
+cap "VCO_DFF_C_0/OUT" "VCO_DFF_C_0/OUTB" 0.393825
+cap "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 12.9529
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/OUTB" 31.9727
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/OUT" 13.4469
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/OUTB" 34.4383
+cap "VCO_DFF_C_0/OUT" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 5.99805
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/M2" 42.828
+cap "VCO_DFF_C_0/VCO_C_0/VCTRL2" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/M2" -0.998131
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/M2" "VCO_DFF_C_0/VCO_C_0/VSS" -2.11679
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_17/a_84_n50#" 22.8584
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_17/a_84_n50#" "VCO_DFF_C_0/VCO_C_0/VCTRL2" -8.41334
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" 9.78854
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCO_C_0/INV_2_0/IN" 0.91119
+cap "VCO_DFF_C_0/VCTRL2" "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" -4.17432
+cap "VCO_DFF_C_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/D" 0.925341
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/D" 0.660408
+cap "VCO_DFF_C_0/DFF_3_mag_0/CLK" "A_MUX_0/SEL" 0.874697
+cap "VCO_DFF_C_0/DFF_3_mag_0/CLK" "A_MUX_0/IN2" 1.57135
+cap "A_MUX_0/IN2" "VCO_DFF_C_0/DFF_3_mag_0/D" 11.6165
+cap "A_MUX_0/Tr_Gate_0/nmos_3p3_UKFAHE_3/a_n138_n84#" "VCO_DFF_C_0/DFF_3_mag_0/D" 5.78442
+cap "VCO_DFF_C_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/D" 4.98396
+cap "VCO_DFF_C_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 3.01402
+cap "VCO_DFF_C_0/VSS" "A_MUX_0/SEL" 0.170348
+cap "VCO_DFF_C_0/VSS" "A_MUX_0/IN2" 6.14963
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 2.19795
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 7.54921
+cap "A_MUX_0/INV_2_0/OUT" "VCO_DFF_C_0/OUTB" 0.470575
+cap "VCO_DFF_C_0/OUTB" "A_MUX_0/SEL" 14.1992
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 43.5465
+cap "VCO_DFF_C_0/OUTB" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 5.10487
+cap "A_MUX_0/INV_2_0/OUT" "VCO_DFF_C_0/DFF_3_mag_0/Q-" 0.895449
+cap "A_MUX_0/IN1" "VCO_DFF_C_0/DFF_3_mag_0/Q-" 7.68007
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 14.8866
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/Q-" 268.383
+cap "VCO_DFF_C_0/DFF_3_mag_0/Q-" "A_MUX_0/Tr_Gate_1/nmos_3p3_UKFAHE_0/a_n138_n84#" 9.15313
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "A_MUX_0/IN1" 4.28024
+cap "A_MUX_0/IN1" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 5.23191
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 1.02215
+cap "A_MUX_0/IN1" "VCO_DFF_C_0/OUTB" 42.3762
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 3.86716
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "VCO_DFF_C_0/OUTB" 22.5473
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "VCO_DFF_C_0/OUTB" 22.2514
+cap "VCO_DFF_C_0/OUTB" "A_MUX_0/Tr_Gate_1/IN" 5.08132
+cap "VCO_DFF_C_0/DFF_3_mag_0/INV_2_2/VSS" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 6.79379
+cap "S3" "VCO_DFF_C_0/VCO_C_0/VSS" 0.0620329
+cap "VCO_DFF_C_0/VCO_C_0/VCTRL2" "VCO_DFF_C_0/VCO_C_0/VSS" 12.125
+cap "S3" "VCO_DFF_C_0/VCO_C_0/VSS" 0.103511
+cap "S3" "VCO_DFF_C_0/VCO_C_0/VSS" 0.0262848
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" "VCO_DFF_C_0/VCO_C_0/VCTRL2" 190.384
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_17/a_84_n50#" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" 22.0698
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/pmos_3p3_HMKTA7_17/a_84_n50#" "VCO_DFF_C_0/VCO_C_0/VCTRL2" -8.41334
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/M2" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" 45.597
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/M2" "VCO_DFF_C_0/VCO_C_0/VCTRL2" -0.426974
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" "VCO_DFF_C_0/VCO_C_0/VSS" 135.811
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "VCO_DFF_C_0/VCO_C_0/VCTRL2" -8.52651e-14
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/OUTB" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" 6.86886
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCO_C_0/VSS" 182.991
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" "VCO_DFF_C_0/VCO_C_0/VSS" -1.54699
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/w_5819_4436#" "VCO_DFF_C_0/VCTRL" 15.7189
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCO_C_0/INV_2_0/IN" 1.13042
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/VCTRL" "VCO_DFF_C_0/VCTRL" 0.073018
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" "VCO_DFF_C_0/VCTRL" 66.9141
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCTRL2" 192.013
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" "VCO_DFF_C_0/VCTRL2" -4.17432
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/VDD" "VCO_DFF_C_0/VCTRL" 13.9141
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" "VCO_DFF_C_0/VCO_C_0/INV_2_5/VDD" -1.2337
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "VCO_DFF_C_0/VCTRL" 46.1038
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "DN" 3.0337
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCTRL2" 0.928141
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCO_C_0/INV_2_5/IN" 0.150878
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "VCO_DFF_C_0/VCO_C_0/INV_2_5/OUT" 10.3733
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/OUT" "VCO_DFF_C_0/VCO_C_0/INV_2_5/VDD" -7.10543e-15
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "VCO_DFF_C_0/VCTRL2" 25.2337
+cap "VCO_DFF_C_0/VCO_C_0/VCTRL2" "VCO_DFF_C_0/VCO_C_0/VSS" 16.5407
+cap "VCO_DFF_C_0/VCO_C_0/INV_2_5/OUT" "VCO_DFF_C_0/VCO_C_0/VSS" 9.2611
+cap "VCO_DFF_C_0/VSS" "VCO_DFF_C_0/OUTB" 0.568907
+cap "VCO_DFF_C_0/VSS" "VCO_DFF_C_0/OUTB" 2.50015
+cap "VCO_DFF_C_0/VSS" "A_MUX_0/SEL" 1.03429
+cap "A_MUX_0/IN2" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 1.14951
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 0.555537
+cap "VCO_DFF_C_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 0.983568
+cap "A_MUX_0/IN2" "VCO_DFF_C_0/OUTB" 11.7473
+cap "A_MUX_0/IN2" "A_MUX_0/SEL" -8.81812
+cap "A_MUX_0/OUT" "VCO_DFF_C_0/OUTB" 5.57443
+cap "VCO_DFF_C_0/VSS" "A_MUX_0/IN2" 30.6568
+cap "A_MUX_0/OUT" "A_MUX_0/SEL" 0.19379
+cap "VCO_DFF_C_0/OUTB" "A_MUX_0/SEL" 0.544461
+cap "VCO_DFF_C_0/DFF_3_mag_0/CLK" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 5.90991
+cap "VCO_DFF_C_0/OUTB" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 1.82672
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/CLK" 6.20126
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/OUTB" 13.2451
+cap "A_MUX_0/SEL" "A_MUX_0/IN2" 0.0270044
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 4.44189
+cap "A_MUX_0/VDD" "A_MUX_0/SEL" 0.804148
+cap "A_MUX_0/IN1" "VCO_DFF_C_0/OUTB" 8.02099
+cap "A_MUX_0/VDD" "A_MUX_0/Tr_Gate_1/CLK" 0.85017
+cap "A_MUX_0/OUT" "VCO_DFF_C_0/OUTB" 8.86321
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/OUTB" 2.97704
+cap "A_MUX_0/VDD" "A_MUX_0/IN1" 0.28533
+cap "A_MUX_0/IN1" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 12.2831
+cap "A_MUX_0/VDD" "VCO_DFF_C_0/DFF_3_mag_0/VSS" -0.353139
+cap "A_MUX_0/SEL" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 0.881806
+cap "A_MUX_0/Tr_Gate_1/CLK" "VCO_DFF_C_0/OUTB" 0.518854
+cap "A_MUX_0/Tr_Gate_1/VDD" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 0.108869
+cap "VCO_DFF_C_0/OUTB" "VCO_DFF_C_0/DFF_3_mag_0/VSS" 0.250286
+cap "VCO_DFF_C_0/DFF_3_mag_0/VSS" "A_MUX_0/IN1" 37.7316
+cap "A_MUX_0/Tr_Gate_1/VDD" "A_MUX_0/IN1" -0.0494735
+cap "VCO_DFF_C_0/OUTB" "A_MUX_0/IN1" 43.0684
+cap "A_MUX_0/Tr_Gate_1/IN" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_2/VSS" 1.17712
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "A_MUX_0/Tr_Gate_1/IN" 83.9699
+cap "VCO_DFF_C_0/OUTB" "A_MUX_0/Tr_Gate_1/IN" 5.08132
+cap "A_MUX_0/Tr_Gate_1/IN" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 60.7761
+cap "DIV_OUT" "mux_magic_3/VDD" 8.91642
+cap "mux_magic_3/VDD" "DIV_OUT" 2.65896
+cap "S3" "VCO_DFF_C_0/VCO_C_0/VSS" 0.09207
+cap "S3" "VCO_DFF_C_0/VCO_C_0/VSS" 0.153633
+cap "S3" "VCO_DFF_C_0/VCO_C_0/VSS" 0.0390122
+cap "VCO_DFF_C_0/VCO_C_0/VCTRL2" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" 28.8348
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" 73.8842
+cap "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL_mag_0/M2" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" 6.18668
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCTRL2" 3.56589
+cap "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCTRL2" 2.7424
+cap "DN" "VCO_DFF_C_0/VCO_C_0/VSS" 3.0337
+cap "VCO_DFF_C_0/VCTRL2" "VCO_DFF_C_0/VCO_C_0/VSS" 1.45655
+cap "VCO_DFF_C_0/VCTRL2" "m1_30300_4138#" 0.41266
+cap "VCO_DFF_C_0/VCO_C_0/VSS" "A_MUX_0/SEL" -3.55271e-15
+cap "A_MUX_0/Tr_Gate_0/pmos_3p3_YMKZL5_2/a_n50_n128#" "A_MUX_0/IN2" 0.0152868
+cap "A_MUX_0/SEL" "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" 2.55534
+cap "A_MUX_0/VDD" "A_MUX_0/SEL" -1.13687e-13
+cap "A_MUX_0/SEL" "A_MUX_0/OUT" 1.92337
+cap "RES_74k_1/w_8316_3895#" "A_MUX_0/SEL" 3.76402
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_1916#" "A_MUX_0/OUT" 0.804404
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/OUT" 6.26958
+cap "A_MUX_0/Tr_Gate_0/pmos_3p3_YMKZL5_2/a_n50_n128#" "A_MUX_0/VDD" 0.116765
+cap "RES_74k_1/w_8316_3895#" "A_MUX_0/OUT" 23.1741
+cap "A_MUX_0/OUT" "RES_74k_1/w_8316_3895#" 0.307571
+cap "A_MUX_0/SEL" "A_MUX_0/Tr_Gate_0/pmos_3p3_YMKZL5_2/a_n50_n128#" -1.13687e-13
+cap "A_MUX_0/VDD" "A_MUX_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" 5.82766
+cap "A_MUX_0/SEL" "RES_74k_1/w_8316_3895#" 2.32224
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/VDD" 0.00909751
+cap "A_MUX_0/VDD" "A_MUX_0/VSS" 26.0343
+cap "A_MUX_0/Tr_Gate_1/CLK" "A_MUX_0/VDD" 24.3945
+cap "A_MUX_0/OUT" "A_MUX_0/VDD" 32.5538
+cap "A_MUX_0/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_1916#" 0.00297284
+cap "A_MUX_0/SEL" "A_MUX_0/VDD" 167.629
+cap "A_MUX_0/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" 0.0172233
+cap "A_MUX_0/OUT" "A_MUX_0/VSS" -0.402539
+cap "A_MUX_0/VDD" "A_MUX_0/Tr_Gate_0/pmos_3p3_YMKZL5_2/a_n50_n128#" 20.9703
+cap "A_MUX_0/OUT" "A_MUX_0/Tr_Gate_1/CLK" -2.74822
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/SEL" 2.60478
+cap "A_MUX_0/VDD" "RES_74k_1/w_8316_3895#" 0.116942
+cap "A_MUX_0/OUT" "A_MUX_0/SEL" -11.4535
+cap "A_MUX_0/OUT" "A_MUX_0/VDD" 131.971
+cap "RES_74k_1/P" "A_MUX_0/VDD" 4.38187
+cap "RES_74k_1/P" "A_MUX_0/Tr_Gate_1/CLK" 3.3553
+cap "A_MUX_0/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_1916#" 0.385851
+cap "A_MUX_0/VSS" "A_MUX_0/VDD" 30.5253
+cap "A_MUX_0/OUT" "RES_74k_1/P" 10.2402
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_1916#" "A_MUX_0/OUT" 0.756505
+cap "A_MUX_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "A_MUX_0/VDD" 184.396
+cap "A_MUX_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "A_MUX_0/Tr_Gate_1/CLK" 1.13687e-13
+cap "A_MUX_0/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n410_1916#" 0.804404
+cap "A_MUX_0/VDD" "A_MUX_0/Tr_Gate_1/CLK" 67.2915
+cap "A_MUX_0/IN1" "A_MUX_0/VDD" 17.8611
+cap "A_MUX_0/Tr_Gate_1/VDD" "A_MUX_0/Tr_Gate_1/VSS" 86.3739
+cap "RES_74k_1/P" "A_MUX_0/Tr_Gate_1/VSS" 2.21831
+cap "A_MUX_0/Tr_Gate_1/VDD" "A_MUX_0/Tr_Gate_1/OUT" 162.137
+cap "RES_74k_1/P" "A_MUX_0/Tr_Gate_1/OUT" 13.1151
+cap "A_MUX_0/Tr_Gate_1/VDD" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.345037
+cap "RES_74k_1/P" "A_MUX_0/Tr_Gate_1/VDD" 2.52617
+cap "A_MUX_0/Tr_Gate_1/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_1916#" 0.0259962
+cap "A_MUX_0/Tr_Gate_1/CLK" "A_MUX_0/Tr_Gate_1/VDD" 5.1384
+cap "A_MUX_0/Tr_Gate_1/VDD" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.164304
+cap "A_MUX_0/Tr_Gate_1/nmos_3p3_UKFAHE_5/a_n138_n84#" "A_MUX_0/Tr_Gate_1/VDD" 1.56139
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/P" 71.0401
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 0.196811
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/P" 20.027
+cap "A_MUX_0/VSS" "RES_74k_1/P" 2.11907
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 5.5554
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "RES_74k_1/P" 52.2208
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" -0.0472058
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 0.413304
+cap "A_MUX_0/Tr_Gate_1/OUT" "RES_74k_1/P" 12.9851
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/SEL" 2.44778
+cap "mux_magic_3/VDD" "mux_magic_3/IN1" 14.043
+cap "mux_magic_3/VDD" "mux_magic_3/SEL" 59.2711
+cap "mux_magic_3/VDD" "mux_magic_3/IN1" 198.642
+cap "mux_magic_3/IN1" "mux_magic_3/AND2_magic_0/A" 14.3541
+cap "mux_magic_3/SEL" "mux_magic_3/IN1" 19.177
+cap "mux_magic_3/VDD" "mux_magic_3/AND2_magic_0/A" -2.50905
+cap "mux_magic_3/VDD" "mux_magic_3/SEL" -7.16699
+cap "mux_magic_3/SEL" "mux_magic_3/AND2_magic_0/A" 0.064877
+cap "mux_magic_3/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "S3" 0.45373
+cap "mux_magic_3/VDD" "mux_magic_3/OR_magic_0/B" 0.302211
+cap "mux_magic_3/VDD" "S3" 16.8709
+cap "S3" "mux_magic_3/OR_magic_0/B" 1.68421
+cap "S3" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.648993
+cap "PFD_T2_0/VDD" "PFD_T2_0/FDIV" -2.52783
+cap "PFD_T2_0/VDD" "PFD_T2_0/PFD_2_down_0/a_172_278#" 0.0542361
+cap "S3" "mux_magic_3/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.346824
+cap "S3" "PFD_T2_0/VDD" 4.3298
+cap "S3" "PFD_T2_0/VDD" 2.755
+cap "PFD_T2_0/VDD" "mux_magic_1/SEL" 2.09854
+cap "PFD_T2_0/Buffer_V_2_0/VDD" "mux_magic_1/SEL" 64.6801
+cap "mux_magic_1/AND2_magic_0/A" "mux_magic_1/SEL" 1.49752
+cap "PFD_T2_0/Buffer_V_2_0/VDD" "PFD_T2_0/DOWN" -2.22891
+cap "mux_magic_1/VDD" "mux_magic_1/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 7.28801
+cap "mux_magic_1/VDD" "mux_magic_1/AND2_magic_0/A" 7.33042
+cap "mux_magic_1/VDD" "PFD_T2_0/DOWN" 7.28801
+cap "mux_magic_1/AND2_magic_0/A" "mux_magic_1/SEL" 0.0766442
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/VOUT" 12.6844
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/OR_magic_0/A" 5.39067
+cap "m1_30300_4138#" "mux_magic_1/OR_magic_0/VDD" 1.17762
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/OR_magic_0/B" 5.39067
+cap "mux_magic_1/OR_magic_0/B" "mux_magic_1/VOUT" 0.346108
+cap "mux_magic_1/VOUT" "mux_magic_1/OR_magic_0/VDD" 12.7283
+cap "m1_30300_4138#" "VCO_DFF_C_0/VCTRL2" 1.95349
+cap "VCO_DFF_C_0/VCTRL2" "m1_30300_4138#" 0.39322
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/VDD" 4.20128
+cap "A_MUX_0/OUT" "A_MUX_0/Tr_Gate_0/IN" 2.00114
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/OUT" 31.9437
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/Tr_Gate_0/IN" 0.0370936
+cap "A_MUX_0/Tr_Gate_0/nmos_3p3_UKFAHE_4/a_n138_n84#" "A_MUX_0/OUT" 0.195774
+cap "A_MUX_0/Tr_Gate_0/CLK" "A_MUX_0/OUT" 7.02495
+cap "A_MUX_0/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_1916#" 2.12736
+cap "RES_74k_1/w_7716_2415#" "A_MUX_0/VSS" 114.357
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/Tr_Gate_0/CLK" 2.45117
+cap "A_MUX_0/Tr_Gate_0/pmos_3p3_YMKZL5_2/a_n50_n128#" "A_MUX_0/OUT" 8.0242
+cap "A_MUX_0/OUT" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_1916#" 0.728739
+cap "A_MUX_0/OUT" "A_MUX_0/VSS" 91.9094
+cap "A_MUX_0/OUT" "A_MUX_0/Tr_Gate_0/nmos_3p3_UKFAHE_3/a_n50_n128#" 0.560343
+cap "RES_74k_1/w_7716_2415#" "A_MUX_0/OUT" 169.9
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "m1_33817_9606#" 0.132954
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/VSS" 2.56947
+cap "A_MUX_0/OUT" "A_MUX_0/VDD" 26.3314
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_1916#" "A_MUX_0/OUT" 1.92071
+cap "A_MUX_0/OUT" "RES_74k_1/w_7716_2415#" 1292.93
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/VSS" 3.41084
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/OUT" 81.0794
+cap "A_MUX_0/Tr_Gate_0/pmos_3p3_YMKZL5_2/a_n50_n128#" "A_MUX_0/OUT" 3.29326
+cap "A_MUX_0/Tr_Gate_0/nmos_3p3_UKFAHE_4/a_n138_n84#" "A_MUX_0/OUT" 0.166277
+cap "A_MUX_0/OUT" "A_MUX_0/VDD" -17.0935
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/VDD" 6.07352
+cap "A_MUX_0/OUT" "A_MUX_0/Tr_Gate_0/IN" 0.622262
+cap "A_MUX_0/Tr_Gate_0/CLK" "A_MUX_0/OUT" 5.37374
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_1916#" "A_MUX_0/OUT" 2.94866
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_790_1916#" "A_MUX_0/OUT" 3.69264
+cap "A_MUX_0/OUT" "A_MUX_0/VSS" 440.145
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/Tr_Gate_0/IN" 0.0112893
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "A_MUX_0/Tr_Gate_0/CLK" 2.71137
+cap "A_MUX_0/VSS" "RES_74k_1/w_7716_2415#" 0.78712
+cap "A_MUX_0/Tr_Gate_1/IN" "RES_74k_1/P" 0.0490228
+cap "A_MUX_0/VDD" "A_MUX_0/VSS" 157.424
+cap "RES_74k_1/P" "A_MUX_0/VDD" 8.46227
+cap "A_MUX_0/Tr_Gate_1/CLK" "RES_74k_1/P" 3.29847
+cap "A_MUX_0/OUT" "RES_74k_1/P" 1.46097
+cap "RES_74k_1/P" "A_MUX_0/VSS" 3.63439
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 1.32988
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/P" 0.376474
+cap "A_MUX_0/Tr_Gate_1/VDD" "A_MUX_0/VSS" 117.65
+cap "RES_74k_1/P" "A_MUX_0/VSS" 1.74046
+cap "A_MUX_0/Tr_Gate_1/VDD" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_1916#" 0.0953428
+cap "A_MUX_0/Tr_Gate_1/VDD" "A_MUX_0/Tr_Gate_1/OUT" 16.087
+cap "A_MUX_0/Tr_Gate_1/VDD" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_1916#" 3.65053
+cap "A_MUX_0/Tr_Gate_1/VDD" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 2.25369
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "A_MUX_0/Tr_Gate_1/VDD" 1.07886
+cap "RES_74k_1/P" "A_MUX_0/Tr_Gate_1/OUT" 0.689175
+cap "A_MUX_0/Tr_Gate_1/VDD" "RES_74k_1/P" 64.6246
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/P" 92.4429
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 21.6035
+cap "A_MUX_0/VSS" "RES_74k_1/P" 0.018814
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_1916#" "RES_74k_1/P" 0.165827
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_1916#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.056602
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 45.3423
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1916#" 0.0245147
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 78.4897
+cap "mux_magic_3/SEL" "mux_magic_3/IN1" 7.49826
+cap "mux_magic_3/SEL" "mux_magic_3/AND2_magic_0/A" 4.56745
+cap "mux_magic_3/SEL" "mux_magic_3/VDD" 86.5415
+cap "mux_magic_3/SEL" "mux_magic_3/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" -0.270736
+cap "mux_magic_3/SEL" "mux_magic_2/IN2" 1.45734
+cap "mux_magic_3/VSS" "mux_magic_3/SEL" 1.87503
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/IN1" 2.29729
+cap "mux_magic_3/IN1" "mux_magic_3/VDD" 8.63516
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" -23.3932
+cap "mux_magic_3/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/VDD" -0.336023
+cap "mux_magic_2/AND2_magic_1/A" "mux_magic_3/SEL" 0.577153
+cap "mux_magic_3/IN1" "mux_magic_3/VSS" 8.22026
+cap "mux_magic_2/IN2" "mux_magic_3/SEL" 0.131234
+cap "mux_magic_2/AND2_magic_1/A" "mux_magic_3/VDD" 0.163181
+cap "mux_magic_3/VSS" "mux_magic_3/SEL" 0.698233
+cap "mux_magic_2/IN2" "mux_magic_3/VDD" 0.0567693
+cap "mux_magic_3/IN1" "mux_magic_3/SEL" 63.5255
+cap "mux_magic_3/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/VSS" -1.24345e-14
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/VSS" -1.44293
+cap "mux_magic_3/VSS" "mux_magic_3/VDD" -0.368973
+cap "mux_magic_3/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/IN1" 0.0490537
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/IN1" 223.977
+cap "mux_magic_3/IN1" "mux_magic_3/VDD" 193.534
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/SEL" 0.103675
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/SEL" 0.0598929
+cap "mux_magic_3/VDD" "mux_magic_3/SEL" -30.3904
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/VDD" 0.173883
+cap "mux_magic_3/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/IN1" 102.591
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" -0.0317165
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/VSS" 4.26326e-14
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_3/VDD" -11.0507
+cap "mux_magic_2/IN2" "mux_magic_3/IN1" -4.59689
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.69718
+cap "mux_magic_3/VDD" "mux_magic_3/OR_magic_0/B" 3.85282
+cap "mux_magic_3/OR_magic_0/B" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 5.68434e-14
+cap "mux_magic_3/VDD" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 7.52585
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_3/OR_magic_0/B" 0.00351693
+cap "mux_magic_3/VSS" "mux_magic_3/OR_magic_0/A" 2.84217e-14
+cap "mux_magic_3/VDD" "PFD_T2_0/FDIV" 1.1165
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 6.14963
+cap "mux_magic_3/VSS" "mux_magic_3/OR_magic_0/B" 0.0326089
+cap "mux_magic_3/VSS" "mux_magic_3/VDD" -0.392419
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/FDIV" 0.0800732
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n56_n156#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.678506
+cap "mux_magic_3/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/FDIV" 0.0188204
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/FDIV" 11.6183
+cap "mux_magic_3/VSS" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 3.4598
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/PFD_2_down_0/a_172_278#" 0.00273547
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 3.58024
+cap "mux_magic_3/VSS" "PFD_T2_0/FDIV" 1.24076
+cap "mux_magic_3/VSS" "PFD_T2_0/PFD_2_down_0/a_172_278#" 3.90229
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/OR_magic_0/B" 0.0592883
+cap "mux_magic_3/OR_magic_0/B" "mux_magic_2/AND2_magic_1/pmos_3p3_VZX6F7_2/w_n338_n242#" 3.4209e-05
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" 0.287218
+cap "PFD_T2_0/PFD_2_down_0/pmos_3p3_KG2TLV_3/a_n52_n50#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0214771
+cap "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n240_n50#" "PFD_T2_0/FDIV" 0.00197863
+cap "PFD_T2_0/VSS" "PFD_T2_0/PFD_2_down_0/a_172_278#" 4.6637
+cap "mux_magic_2/AND2_magic_1/pmos_3p3_VZX6F7_2/w_n338_n242#" "PFD_T2_0/FDIV" 0.0366065
+cap "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" "mux_magic_3/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.156226
+cap "PFD_T2_0/VDD" "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" 5.05641
+cap "mux_magic_3/OR_magic_0/B" "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" 0.41044
+cap "PFD_T2_0/VSS" "PFD_T2_0/FDIV" -1.17473
+cap "PFD_T2_0/VDD" "PFD_T2_0/PFD_2_down_0/pmos_3p3_KG2TLV_3/a_n52_n50#" 0.0452123
+cap "PFD_T2_0/FDIV" "PFD_T2_0/PFD_2_down_0/a_172_278#" 28.7841
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 8.6387
+cap "PFD_T2_0/FDIV" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.514
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "mux_magic_3/OR_magic_0/A" 0.741578
+cap "PFD_T2_0/FDIV" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n52_n50#" 0.0024698
+cap "PFD_T2_0/FDIV" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_1/a_n240_n50#" 2.45528
+cap "PFD_T2_0/FDIV" "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" 6.17945
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "mux_magic_3/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0990809
+cap "PFD_T2_0/VDD" "PFD_T2_0/PFD_2_down_0/a_172_278#" 9.92752
+cap "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.51398
+cap "mux_magic_3/OR_magic_0/B" "PFD_T2_0/PFD_2_down_0/a_172_278#" 2.1262
+cap "PFD_T2_0/FDIV" "PFD_T2_0/PFD_2_down_0/pmos_3p3_KG2TLV_3/a_n52_n50#" 2.82334
+cap "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" "mux_magic_3/OR_magic_0/A" 0.208047
+cap "PFD_T2_0/FDIV" "mux_magic_3/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0135382
+cap "PFD_T2_0/VDD" "PFD_T2_0/FDIV" 124.172
+cap "PFD_T2_0/VDD" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0864457
+cap "PFD_T2_0/FDIV" "mux_magic_3/OR_magic_0/B" 0.0124321
+cap "PFD_T2_0/VDD" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_1/a_n240_n50#" -0.00819691
+cap "PFD_T2_0/VDD" "PFD_T2_0/INV_mag_1/IN" 17.1375
+cap "PFD_T2_0/VDD" "PFD_T2_0/Buffer_V_2_0/IN" 0.186596
+cap "PFD_T2_0/INV_mag_1/IN" "mux_magic_3/OR_magic_0/VDD" 0.0928257
+cap "PFD_T2_0/FDIV" "PFD_T2_0/INV_mag_1/IN" 0.568042
+cap "PFD_T2_0/VDD" "PFD_T2_0/PFD_2_down_0/a_172_278#" 3.38924
+cap "PFD_T2_0/INV_mag_1/IN" "PFD_T2_0/VDD" 0.363115
+cap "PFD_T2_0/DOWN" "mux_magic_1/IN2" 0.00249109
+cap "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_1/AND2_magic_0/A" 0.0585148
+cap "PFD_T2_0/Buffer_V_2_0/IN" "PFD_T2_0/VSS" 0.0793661
+cap "PFD_T2_0/VDD" "mux_magic_1/IN2" -0.00126199
+cap "PFD_T2_0/DOWN" "PFD_T2_0/VDD" 4.61298
+cap "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" "PFD_T2_0/VSS" 0.154715
+cap "PFD_T2_0/Buffer_V_2_0/IN" "mux_magic_1/SEL" 0.03177
+cap "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_1/SEL" 0.978451
+cap "PFD_T2_0/Buffer_V_2_0/IN" "PFD_T2_0/DOWN" 0.407644
+cap "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" "PFD_T2_0/DOWN" 1.02154
+cap "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_1/IN2" 0.0479758
+cap "PFD_T2_0/INV_mag_1/IN" "PFD_T2_0/DOWN" 0.090815
+cap "PFD_T2_0/VSS" "mux_magic_1/IN2" 0.0115323
+cap "PFD_T2_0/Buffer_V_2_0/IN" "PFD_T2_0/VDD" 3.1606
+cap "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" "PFD_T2_0/VDD" 1.84748
+cap "mux_magic_1/IN2" "PFD_T2_0/INV_mag_1/VDD" -0.000407092
+cap "mux_magic_1/AND2_magic_0/A" "PFD_T2_0/INV_mag_1/VDD" 2.9926
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/INV_mag_1/VDD" 0.00272703
+cap "PFD_T2_0/DOWN" "PFD_T2_0/INV_mag_1/VSS" 77.3475
+cap "mux_magic_1/SEL" "PFD_T2_0/INV_mag_1/VDD" 204.324
+cap "mux_magic_1/IN2" "PFD_T2_0/INV_mag_1/VSS" 2.13969
+cap "PFD_T2_0/DOWN" "PFD_T2_0/PFD_2_down_0/a_172_278#" 0.00227004
+cap "mux_magic_0/IN2" "PFD_T2_0/INV_mag_1/VDD" 0.0197934
+cap "mux_magic_0/AND2_magic_1/A" "PFD_T2_0/INV_mag_1/VDD" 0.250971
+cap "mux_magic_1/IN2" "PFD_T2_0/DOWN" 6.68039
+cap "PFD_T2_0/DOWN" "mux_magic_1/AND2_magic_0/A" 137.504
+cap "mux_magic_1/SEL" "PFD_T2_0/INV_mag_1/VSS" -0.94478
+cap "PFD_T2_0/DOWN" "PFD_T2_0/INV_mag_1/IN" 0.00143019
+cap "PFD_T2_0/DOWN" "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.528377
+cap "mux_magic_0/IN2" "PFD_T2_0/INV_mag_1/VSS" 1.1933
+cap "mux_magic_1/SEL" "PFD_T2_0/DOWN" 146.729
+cap "mux_magic_1/IN2" "mux_magic_1/SEL" -0.0917255
+cap "mux_magic_1/SEL" "mux_magic_1/AND2_magic_0/A" 6.35694
+cap "mux_magic_1/SEL" "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" 3.31665
+cap "PFD_T2_0/DOWN" "PFD_T2_0/PFD_2_down_0/a_1398_n81#" 0.0016777
+cap "PFD_T2_0/DOWN" "PFD_T2_0/Buffer_V_2_0/IN" 0.57031
+cap "PFD_T2_0/INV_mag_1/VSS" "PFD_T2_0/INV_mag_1/VDD" 52.8498
+cap "mux_magic_1/SEL" "PFD_T2_0/Buffer_V_2_0/IN" 1.08436
+cap "PFD_T2_0/DOWN" "PFD_T2_0/INV_mag_1/VDD" 81.2998
+cap "mux_magic_0/IN2" "mux_magic_1/SEL" 0.331609
+cap "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/VOUT" 0.0324818
+cap "mux_magic_1/VDD" "mux_magic_1/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.00965996
+cap "mux_magic_1/SEL" "mux_magic_1/AND2_magic_0/A" 0.0965584
+cap "mux_magic_1/VDD" "mux_magic_1/SEL" 0.0737468
+cap "mux_magic_1/VDD" "mux_magic_0/IN2" 0.0421816
+cap "mux_magic_1/VDD" "mux_magic_1/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" 3.45363
+cap "mux_magic_1/VSS" "PFD_T2_0/DOWN" 0.266521
+cap "mux_magic_1/VDD" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" -1.13687e-13
+cap "mux_magic_1/VDD" "mux_magic_0/AND2_magic_1/A" 0.0808591
+cap "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/VSS" 0.0716545
+cap "mux_magic_1/VDD" "mux_magic_1/AND2_magic_0/A" 0.320012
+cap "mux_magic_1/VSS" "mux_magic_1/VOUT" 1.31094
+cap "mux_magic_1/VDD" "mux_magic_1/VSS" 0.902264
+cap "PFD_T2_0/DOWN" "mux_magic_1/AND2_magic_0/A" 1.1321
+cap "mux_magic_1/VDD" "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.789754
+cap "mux_magic_1/VDD" "PFD_T2_0/DOWN" 0.196304
+cap "mux_magic_0/AND2_magic_1/pmos_3p3_VZX6F7_2/w_n338_n242#" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0160297
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.956852
+cap "mux_magic_0/AND2_magic_1/pmos_3p3_VZX6F7_2/w_n338_n242#" "mux_magic_1/OR_magic_0/B" 0.00625549
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/down" 8.88178e-16
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/VDD" 18.6327
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/VOUT" 17.613
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 15.2476
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/A" 2.7958
+cap "CP_1_0/down" "mux_magic_1/VOUT" 1.11022e-16
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/B" 6.86444
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/VOUT" 34.7949
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/OR_magic_0/A" 0.0200376
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/VOUT" 5.9432
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/OR_magic_0/B" 0.333354
+cap "mux_magic_1/VOUT" "mux_magic_1/OR_magic_0/B" 0.71473
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 1.72563
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0521701
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_1/a_56_n112#" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0249181
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/B" 0.0265969
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" 0.257008
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_56_n484#" "mux_magic_1/OR_magic_0/VSS" 1.18674
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/VOUT" 29.8696
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.32008
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/pmos_3p3_MDK7F7_17/a_n148_n36#" 1.21871
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/A" 0.0512526
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/B" 0.581286
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/VOUT" 0.0676669
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/down" 39.1951
+cap "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" "mux_magic_1/OR_magic_0/VSS" 5.92158
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/VDD" 3.20278
+cap "CP_1_0/down" "mux_magic_1/VOUT" 0.00556705
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" "mux_magic_1/OR_magic_0/VSS" 3.1681
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 4.97485
+cap "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/VOUT" 26.9247
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/pmos_3p3_RL7FD7_0/a_n56_n528#" 2.3869
+cap "mux_magic_1/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "mux_magic_1/OR_magic_0/VSS" 0.242519
+cap "mux_magic_1/OR_magic_0/VSS" "CP_1_0/w_n717_n102#" 11.2412
+cap "CP_1_0/VSS" "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" 0.144912
+cap "CP_1_0/down" "CP_1_0/VSS" 0.614226
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" "CP_1_0/VSS" 0.212923
+cap "CP_1_0/VCTRL" "CP_1_0/VSS" 52.5017
+cap "CP_1_0/VSS" "CP_1_0/ITAIL1" -1.26782
+cap "CP_1_0/VSS" "CP_1_0/pmos_3p3_MDK7F7_1/a_n148_n36#" -0.0332099
+cap "CP_1_0/VCTRL" "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" 1.84134
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" 73.4981
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_1294#" 3.14621
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_1916#" 1.48562
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_1916#" "m1_33817_9606#" 0.265102
+cap "m1_33817_9606#" "RES_74k_1/w_8016_1411#" 103.811
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_1088#" 7.22315
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_1294#" 8.61678
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_1916#" 0.836688
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_490_1088#" "m1_33817_9606#" 9.37217
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1090_1294#" 4.30846
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_1088#" "m1_33817_9606#" 2.14902
+cap "m1_33817_9606#" "RES_74k_1/w_8016_1411#" 88.8234
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_790_1916#" 1.48562
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2744#" "m1_33817_9606#" 2.3607
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1090_1088#" 9.37217
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_1916#" 1.22052
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_490_1294#" 4.30846
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_1294#" 1.16225
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" "m1_33817_9606#" 77.134
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n110_1294#" 4.30846
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n710_1294#" 4.30846
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n110_1088#" 9.37217
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1294#" "m1_33817_9606#" 1.76497
+cap "RES_74k_1/P" "m1_33817_9606#" 2.45924
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n710_1088#" 9.37217
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1088#" "m1_33817_9606#" 3.17936
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_1916#" 0.648931
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n410_1916#" 1.48562
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_1916#" "m1_33817_9606#" 1.40751
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_1916#" 1.48562
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/P" 0.461962
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 190.656
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_1294#" 4.30846
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_466#" -0.723999
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_1088#" 9.37217
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 1.63186
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_1916#" 0.0781049
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1294#" "RES_74k_1/P" 2.5435
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1088#" "RES_74k_1/P" 6.19281
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1088#" "RES_74k_1/P" 0.27234
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 129.18
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_1294#" 1.54065
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_1916#" 0.231309
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" 19.2258
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_1088#" 1.54065
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 117.92
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_1294#" 1.11855
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_1916#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.174763
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_1088#" 1.11855
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1294#" 0.27234
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_1916#" "RES_74k_1/P" 0.0397277
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 106.475
+cap "mux_magic_3/VSS" "F_IN" 1.42109e-14
+cap "mux_magic_2/IN2" "mux_magic_2/AND2_magic_0/A" 1.84074
+cap "mux_magic_3/VSS" "mux_magic_2/IN2" 50.1053
+cap "mux_magic_2/IN1" "mux_magic_3/VSS" -0.191877
+cap "mux_magic_3/VSS" "mux_magic_2/SEL" 0.664892
+cap "mux_magic_3/VSS" "mux_magic_3/SEL" 0.679944
+cap "mux_magic_2/IN2" "mux_magic_2/SEL" 8.53789
+cap "mux_magic_2/IN2" "mux_magic_3/SEL" 2.58281
+cap "mux_magic_2/IN2" "mux_magic_2/VDD" 2.00414
+cap "mux_magic_3/AND2_magic_0/A" "mux_magic_2/IN2" 0.543629
+cap "mux_magic_2/VDD" "mux_magic_3/SEL" 0.0460759
+cap "mux_magic_3/AND2_magic_1/VDD" "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.0333822
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/AND2_magic_1/VDD" 0.014482
+cap "mux_magic_2/IN2" "mux_magic_2/AND2_magic_0/A" -0.660348
+cap "mux_magic_2/SEL" "mux_magic_3/AND2_magic_1/VDD" 0.0133033
+cap "mux_magic_2/IN2" "mux_magic_3/VSS" 135.444
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_2/IN2" 2.96176
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/VSS" 5.37505
+cap "mux_magic_3/VSS" "mux_magic_3/SEL" 12.0954
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/SEL" -3.55271e-15
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_2/IN2" 2.58292
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 26.0007
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/VSS" 8.33415
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/SEL" 1.47791
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/IN2" 96.7015
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.0467594
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/VSS" -13.5185
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/SEL" 0.00431899
+cap "mux_magic_3/VSS" "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.518933
+cap "mux_magic_2/SEL" "mux_magic_2/IN2" 22.1704
+cap "mux_magic_2/SEL" "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 1.47164
+cap "mux_magic_2/IN1" "mux_magic_2/IN2" -3.28275
+cap "mux_magic_2/SEL" "mux_magic_3/VSS" 8.7356
+cap "mux_magic_2/IN1" "mux_magic_3/VSS" -0.260372
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0466357
+cap "mux_magic_2/SEL" "mux_magic_3/SEL" 27.7482
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.624512
+cap "mux_magic_3/VSS" "mux_magic_3/AND2_magic_0/A" -0.73615
+cap "mux_magic_2/SEL" "mux_magic_2/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" -3.55271e-15
+cap "mux_magic_3/AND2_magic_1/VDD" "mux_magic_3/VSS" -1.0521
+cap "mux_magic_3/IN1" "mux_magic_2/IN2" -4.59689
+cap "mux_magic_3/IN1" "mux_magic_3/VSS" 3.30248
+cap "mux_magic_2/SEL" "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.107544
+cap "mux_magic_2/IN2" "mux_magic_2/VDD" -0.896085
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_2/VDD" 0.0335848
+cap "mux_magic_3/VSS" "mux_magic_2/VDD" 0.113249
+cap "mux_magic_3/VSS" "PFD_T2_0/PFD_2_down_0/a_172_278#" 4.66485
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.00317312
+cap "mux_magic_3/VSS" "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 2.25631
+cap "mux_magic_3/AND2_magic_1/VDD" "mux_magic_2/OR_magic_0/A" 0.0139412
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/OR_magic_0/B" 1.32431
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_2/OR_magic_0/A" 0.0226253
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0166921
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_3/AND2_magic_1/VDD" 0.0112968
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 0.282865
+cap "mux_magic_3/OR_magic_0/A" "mux_magic_2/OR_magic_0/B" 0.00355481
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 13.91
+cap "mux_magic_3/OR_magic_0/B" "mux_magic_2/OR_magic_0/A" 0.00355481
+cap "PFD_T2_0/FIN" "PFD_T2_0/FDIV" -0.0407976
+cap "mux_magic_3/VSS" "mux_magic_3/AND2_magic_1/VDD" 0.0331742
+cap "mux_magic_3/VSS" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.97367
+cap "mux_magic_3/OR_magic_0/B" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.708013
+cap "mux_magic_3/OR_magic_0/A" "mux_magic_2/OR_magic_0/A" 1.29273
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0115717
+cap "PFD_T2_0/FIN" "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0336486
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_3/OR_magic_0/pmos_3p3_V9Y6F7_5/a_n144_n112#" 0.00492902
+cap "mux_magic_3/OR_magic_0/A" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.700353
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/VSS" 0.863357
+cap "mux_magic_3/VSS" "mux_magic_3/OR_magic_0/B" 0.716773
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/FDIV" 0.0273752
+cap "mux_magic_3/OR_magic_0/A" "mux_magic_3/VSS" 0.625462
+cap "mux_magic_3/VSS" "mux_magic_2/OR_magic_0/A" 0.577033
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 3.39322
+cap "mux_magic_3/VSS" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 3.11498
+cap "mux_magic_3/VSS" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 5.24347
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.00552926
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n240_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0891321
+cap "PFD_T2_0/FDIV" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.880469
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/VDD" 0.0358274
+cap "mux_magic_3/VSS" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 1.16054
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/PFD_2_down_0/a_172_278#" 0.0131644
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_2/VDD" 0.0308909
+cap "mux_magic_3/OR_magic_0/B" "mux_magic_2/VDD" 0.0116176
+cap "PFD_T2_0/PFD_2_0/a_173_n912#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.330298
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_3JEA4B_2/a_n342_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.00472181
+cap "mux_magic_3/VSS" "PFD_T2_0/FDIV" 2.37627
+cap "mux_magic_3/VSS" "PFD_T2_0/PFD_2_0/a_173_n912#" 1.83665
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_down_0/a_172_278#" 0.625643
+cap "mux_magic_3/OR_magic_0/A" "mux_magic_2/VDD" 0.0139412
+cap "mux_magic_3/VSS" "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 1.88498
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_0/a_172_278#" 2.24482
+cap "mux_magic_3/VSS" "mux_magic_3/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.000253754
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_2/VDD" -3.55271e-15
+cap "PFD_T2_0/FIN" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 14.863
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0029895
+cap "mux_magic_3/VSS" "PFD_T2_0/PFD_2_0/a_172_278#" 2.53109
+cap "PFD_T2_0/FIN" "mux_magic_3/VSS" 3.25904
+cap "mux_magic_3/VSS" "mux_magic_2/VDD" 0.0744041
+cap "PFD_T2_0/VSS" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 12.7731
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/FDIV" 0.00409242
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/OR_magic_0/VDD" 0.11201
+cap "mux_magic_2/OR_magic_0/A" "PFD_T2_0/PFD_2_0/a_172_278#" 0.722715
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n240_n50#" "PFD_T2_0/FIN" 2.04588
+cap "mux_magic_3/OR_magic_0/A" "PFD_T2_0/PFD_2_down_0/a_172_278#" 0.657128
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/FIN" 0.14244
+cap "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_1/a_n240_n50#" "PFD_T2_0/FDIV" 7.15436
+cap "PFD_T2_0/PFD_2_0/a_173_n912#" "PFD_T2_0/VSS" 17.7475
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 6.27331
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "PFD_T2_0/FIN" 5.29666
+cap "PFD_T2_0/FDIV" "PFD_T2_0/FIN" -2.61868
+cap "PFD_T2_0/VSS" "mux_magic_3/OR_magic_0/w_297_185#" -1.88486
+cap "PFD_T2_0/VSS" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 1.19504
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "PFD_T2_0/VDD" -0.0469011
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "PFD_T2_0/FDIV" 3.67796
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/VSS" -1.66497
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "PFD_T2_0/FIN" 0.0147606
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "PFD_T2_0/FDIV" 0.000134647
+cap "mux_magic_2/OR_magic_0/B" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 0.109215
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "mux_magic_3/OR_magic_0/B" 0.937187
+cap "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n240_n50#" "PFD_T2_0/FDIV" 0.0882614
+cap "PFD_T2_0/VSS" "PFD_T2_0/FIN" 9.31532
+cap "PFD_T2_0/PFD_2_0/a_173_n912#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.398824
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 3.4302
+cap "PFD_T2_0/PFD_2_0/a_173_n912#" "PFD_T2_0/FIN" 0.0916414
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/FDIV" 0.0293916
+cap "mux_magic_2/OR_magic_0/B" "PFD_T2_0/FIN" 0.00302012
+cap "PFD_T2_0/PFD_2_down_0/a_172_278#" "PFD_T2_0/VSS" 10.1637
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "PFD_T2_0/VSS" 4.45078
+cap "PFD_T2_0/VSS" "PFD_T2_0/FDIV" 21.4047
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 0.334927
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" "PFD_T2_0/FIN" 15.4088
+cap "mux_magic_2/OR_magic_0/B" "PFD_T2_0/PFD_2_0/a_172_278#" 1.07188
+cap "PFD_T2_0/PFD_2_down_0/pmos_3p3_HMK9E7_0/a_n970_n50#" "PFD_T2_0/FDIV" 0.0159351
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n240_n50#" 0.255922
+cap "DN_INPUT" "PFD_T2_0/Buffer_V_2_1/IN" 0.0182774
+cap "DN_INPUT" "PFD_T2_0/INV_mag_1/OUT" 13.642
+cap "PFD_T2_0/INV_mag_1/OUT" "PFD_T2_0/VDD" -4.06074
+cap "PFD_T2_0/INV_mag_0/OUT" "PFD_T2_0/INV_mag_1/OUT" -0.621706
+cap "PFD_T2_0/FDIV" "PFD_T2_0/INV_mag_1/IN" 0.357517
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_2/a_n240_n50#" "PFD_T2_0/VDD" 0.107833
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_1/a_n144_n112#" "PFD_T2_0/INV_mag_1/IN" 1.41037
+cap "PFD_T2_0/FIN" "PFD_T2_0/INV_mag_0/IN" 0.000294111
+cap "PFD_T2_0/FIN" "PFD_T2_0/INV_mag_1/IN" 0.48331
+cap "PFD_T2_0/INV_mag_0/IN" "PFD_T2_0/VDD" 1.38917
+cap "mux_magic_1/IN2" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.174248
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_1/IN2" 0.20602
+cap "PFD_T2_0/INV_mag_0/IN" "mux_magic_1/IN2" 43.9879
+cap "PFD_T2_0/INV_mag_0/IN" "mux_magic_0/SEL" 0.00790146
+cap "PFD_T2_0/VSS" "mux_magic_1/IN2" 15.066
+cap "mux_magic_1/IN2" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_3/a_n52_n50#" 0.0615976
+cap "PFD_T2_0/VDD" "mux_magic_1/IN2" 108.055
+cap "PFD_T2_0/INV_mag_0/OUT" "mux_magic_1/IN2" 141.757
+cap "PFD_T2_0/INV_mag_0/IN" "PFD_T2_0/INV_mag_1/OUT" -0.636643
+cap "PFD_T2_0/VSS" "PFD_T2_0/INV_mag_1/OUT" 0.0290061
+cap "PFD_T2_0/VDD" "PFD_T2_0/INV_mag_1/OUT" 2.34879
+cap "PFD_T2_0/VSS" "PFD_T2_0/INV_mag_1/IN" 0.0801727
+cap "mux_magic_1/IN2" "PFD_T2_0/Buffer_V_2_0/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.61232
+cap "PFD_T2_0/INV_mag_1/IN" "PFD_T2_0/VDD" 0.378309
+cap "mux_magic_1/IN2" "PFD_T2_0/DOWN" 1.17576
+cap "PFD_T2_0/INV_mag_0/IN" "PFD_T2_0/VSS" 0.174989
+cap "PFD_T2_0/UP" "mux_magic_1/IN2" 0.541116
+cap "PFD_T2_0/INV_mag_0/IN" "PFD_T2_0/VDD" 0.816924
+cap "PFD_T2_0/INV_mag_1/OUT" "mux_magic_0/SEL" 11.4757
+cap "mux_magic_1/IN2" "PFD_T2_0/INV_mag_1/OUT" 153.769
+cap "PFD_T2_0/INV_mag_1/IN" "mux_magic_1/IN2" 0.0840691
+cap "PFD_T2_0/INV_mag_0/IN" "mux_magic_0/IN2" 0.405641
+cap "PFD_T2_0/INV_mag_1/OUT" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.000380428
+cap "PFD_T2_0/INV_mag_0/OUT" "PFD_T2_0/INV_mag_0/IN" -2.08188
+cap "mux_magic_0/AND2_magic_0/A" "mux_magic_0/IN2" -0.0758204
+cap "mux_magic_1/IN2" "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 1.68529
+cap "PFD_T2_0/INV_mag_1/OUT" "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.807437
+cap "PFD_T2_0/DOWN" "PFD_T2_0/INV_mag_1/VSS" -0.79296
+cap "PFD_T2_0/INV_mag_0/OUT" "mux_magic_0/IN2" 0.805137
+cap "mux_magic_1/AND2_magic_0/A" "mux_magic_1/IN2" 1.02976
+cap "PFD_T2_0/DOWN" "mux_magic_1/IN2" 6.7838
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/INV_mag_1/VSS" 69.0677
+cap "PFD_T2_0/UP" "mux_magic_0/IN2" 6.73794
+cap "PFD_T2_0/INV_mag_1/IN" "mux_magic_1/IN2" 0.377913
+cap "mux_magic_1/SEL" "mux_magic_0/IN2" 0.480114
+cap "mux_magic_0/SEL" "PFD_T2_0/DOWN" 0.0130708
+cap "PFD_T2_0/INV_mag_1/OUT" "PFD_T2_0/INV_mag_1/VSS" 5.94862
+cap "mux_magic_1/IN2" "PFD_T2_0/INV_mag_1/VSS" 49.339
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/INV_mag_1/OUT" 0.101945
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "PFD_T2_0/INV_mag_1/OUT" 1.57724
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_1/IN2" 19.6724
+cap "mux_magic_0/SEL" "PFD_T2_0/INV_mag_1/VSS" 0.694611
+cap "mux_magic_0/IN2" "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 4.81536
+cap "mux_magic_0/SEL" "PFD_T2_0/INV_mag_1/VDD" 0.358979
+cap "mux_magic_1/AND2_magic_1/VDD" "mux_magic_1/IN2" -0.419454
+cap "mux_magic_1/IN2" "PFD_T2_0/INV_mag_1/OUT" 47.7076
+cap "mux_magic_0/SEL" "mux_magic_1/AND2_magic_1/VDD" 0.268382
+cap "mux_magic_0/SEL" "mux_magic_1/IN2" 6.57556
+cap "mux_magic_0/SEL" "PFD_T2_0/INV_mag_1/OUT" 1.86083
+cap "mux_magic_0/AND2_magic_0/A" "mux_magic_1/IN2" 0.20355
+cap "mux_magic_1/AND2_magic_0/A" "mux_magic_0/IN2" 0.078899
+cap "PFD_T2_0/UP" "PFD_T2_0/INV_mag_1/VSS" -0.326344
+cap "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/INV_mag_1/OUT" 0.36691
+cap "mux_magic_1/SEL" "PFD_T2_0/INV_mag_1/VSS" 0.0848053
+cap "PFD_T2_0/INV_mag_1/VSS" "mux_magic_0/IN2" 25.4219
+cap "mux_magic_1/SEL" "PFD_T2_0/INV_mag_1/VDD" 0.0641207
+cap "PFD_T2_0/INV_mag_0/OUT" "mux_magic_1/IN2" 0.0721863
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_0/IN2" 2.4401
+cap "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "PFD_T2_0/INV_mag_1/OUT" 1.28275
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_0/IN2" 8.06743
+cap "mux_magic_0/SEL" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.241085
+cap "PFD_T2_0/UP" "mux_magic_1/IN2" -2.42315
+cap "mux_magic_1/SEL" "PFD_T2_0/INV_mag_1/OUT" 0.687359
+cap "PFD_T2_0/INV_mag_0/OUT" "mux_magic_0/SEL" 0.0176896
+cap "mux_magic_1/IN2" "mux_magic_0/IN2" 59.8665
+cap "PFD_T2_0/INV_mag_1/OUT" "mux_magic_0/IN2" 19.6685
+cap "mux_magic_1/SEL" "mux_magic_1/IN2" 4.12264
+cap "mux_magic_1/SEL" "mux_magic_0/SEL" 1.49067
+cap "mux_magic_0/SEL" "mux_magic_0/IN2" 7.76905
+cap "mux_magic_1/VSS" "mux_magic_0/OR_magic_0/B" 1.21489
+cap "mux_magic_1/VSS" "mux_magic_1/IN2" 0.652226
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.759218
+cap "mux_magic_1/AND2_magic_1/VDD" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.479095
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_1/IN2" 2.8894
+cap "mux_magic_1/SEL" "mux_magic_0/VDD" 1.20561
+cap "mux_magic_0/IN2" "mux_magic_1/VSS" 0.0768832
+cap "mux_magic_0/VDD" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 8.88178e-16
+cap "mux_magic_1/SEL" "mux_magic_0/SEL" 27.8088
+cap "mux_magic_0/IN2" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 3.40576
+cap "mux_magic_0/VOUT" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0103688
+cap "mux_magic_1/VSS" "mux_magic_1/OR_magic_0/B" 0.913038
+cap "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_0/VDD" 0.933913
+cap "mux_magic_1/SEL" "mux_magic_1/IN2" 0.401463
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_0/IN2" 0.220955
+cap "mux_magic_1/VSS" "mux_magic_1/VOUT" 0.184119
+cap "mux_magic_0/SEL" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.129896
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/VSS" 7.02679
+cap "mux_magic_0/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/VSS" 0.245026
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.595485
+cap "mux_magic_1/IN2" "mux_magic_0/SEL" 0.129222
+cap "mux_magic_1/VSS" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 3.27724
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_1/VSS" 3.27992
+cap "mux_magic_1/VSS" "mux_magic_1/AND2_magic_0/A" 0.0808924
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.33073
+cap "PFD_T2_0/m1_2279_1510#" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 1.09376
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 19.5905
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "PFD_T2_0/m1_2279_1510#" 1.21095
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/SEL" 1.30009
+cap "mux_magic_1/OR_magic_0/B" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0417383
+cap "mux_magic_1/VSS" "mux_magic_0/VOUT" 14.4714
+cap "mux_magic_1/VSS" "mux_magic_1/AND2_magic_1/VDD" 3.29211
+cap "mux_magic_1/VSS" "mux_magic_1/SEL" 6.14875
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/AND2_magic_1/VDD" 0.366529
+cap "mux_magic_1/VSS" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0913499
+cap "mux_magic_1/VSS" "mux_magic_0/VDD" 3.96897
+cap "mux_magic_1/VSS" "mux_magic_1/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.204527
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_1/SEL" 5.62117
+cap "mux_magic_1/VSS" "mux_magic_0/SEL" 4.05874
+cap "mux_magic_0/VDD" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 0.944083
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_1/AND2_magic_1/VDD" 1.23186
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 2.27609
+cap "mux_magic_0/SEL" "mux_magic_1/AND2_magic_1/nmos_3p3_F2UGVV_0/a_n252_n112#" 4.78364
+cap "mux_magic_1/VOUT" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0601155
+cap "mux_magic_1/VSS" "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 8.01753
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_0/OR_magic_0/A" 3.55271e-15
+cap "mux_magic_1/VOUT" "mux_magic_0/VOUT" 0.359477
+cap "CP_1_0/VDD" "mux_magic_1/OR_magic_0/VSS" 16.6974
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/A" 0.777336
+cap "mux_magic_1/VOUT" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.66496
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_1/OR_magic_0/B" 0.0910856
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/B" 0.423014
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_0/OR_magic_0/VDD" 22.4971
+cap "mux_magic_1/OR_magic_0/A" "mux_magic_0/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0437594
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/A" 0.827818
+cap "mux_magic_1/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "mux_magic_1/OR_magic_0/VSS" 1.93822
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_0/VOUT" 8.75185
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.344179
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 8.43941
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "CP_1_0/ITAIL" 0.00968038
+cap "mux_magic_0/VOUT" "mux_magic_1/OR_magic_0/A" 0.302997
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/AND2_magic_1/VDD" 0.752019
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_1/AND2_magic_1/VDD" 0.367044
+cap "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" "mux_magic_1/OR_magic_0/VSS" 2.3772
+cap "mux_magic_1/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_1/OR_magic_0/VSS" 0.902597
+cap "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" "mux_magic_1/OR_magic_0/VSS" 0.452132
+cap "mux_magic_0/VOUT" "mux_magic_1/OR_magic_0/B" 0.451931
+cap "mux_magic_1/OR_magic_0/A" "mux_magic_0/OR_magic_0/B" 0.742134
+cap "mux_magic_1/VOUT" "mux_magic_1/OR_magic_0/VSS" 64.9762
+cap "mux_magic_0/VOUT" "CP_1_0/ITAIL" 0.173871
+cap "mux_magic_0/VOUT" "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.76433
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/OR_magic_0/B" 0.040984
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "CP_1_0/VDD" 0.229128
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" "mux_magic_1/OR_magic_0/VSS" 1.14918
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/B" 1.21712
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_0/OR_magic_0/B" 0.505708
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_1/OR_magic_0/VSS" 0.524321
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/VSS" 38.0299
+cap "mux_magic_1/OR_magic_0/A" "mux_magic_0/OR_magic_0/VDD" 0.13855
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/AND2_magic_1/VDD" 0.181847
+cap "mux_magic_0/VOUT" "CP_1_0/VDD" 4.6723
+cap "mux_magic_1/OR_magic_0/B" "mux_magic_0/OR_magic_0/VDD" 0.323284
+cap "mux_magic_1/OR_magic_0/A" "mux_magic_1/OR_magic_0/VSS" 1.76205
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 0.00890188
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/OR_magic_0/B" 13.2493
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/VDD" 0.071321
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_0/OR_magic_0/VDD" 0.323284
+cap "mux_magic_0/VOUT" "mux_magic_1/OR_magic_0/VSS" 66.7385
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/OR_magic_0/VSS" 48.8527
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/VOUT" 0.206475
+cap "mux_magic_1/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "mux_magic_0/OR_magic_0/B" 0.0437594
+cap "mux_magic_1/AND2_magic_1/VDD" "mux_magic_1/OR_magic_0/VSS" 20.8129
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/OR_magic_0/VSS" 4.73319
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 0.00105094
+cap "CP_1_0/ITAIL" "CP_1_0/VDD" 1.53802
+cap "CP_1_0/VDD" "mux_magic_0/VOUT" 55.931
+cap "CP_1_0/VDD" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0990179
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/VOUT" 0.205039
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_0/VOUT" 0.014274
+cap "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" "mux_magic_1/VOUT" 2.27374e-13
+cap "CP_1_0/ITAIL" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 0.0989671
+cap "CP_1_0/VDD" "mux_magic_1/OR_magic_0/VSS" 8.98841
+cap "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" "mux_magic_0/VOUT" 9.04937
+cap "CP_1_0/nmos_3p3_FYTGVN_1/a_n56_n72#" "mux_magic_0/VOUT" 0.41951
+cap "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" "mux_magic_0/VOUT" 0.077961
+cap "CP_1_0/ITAIL" "mux_magic_1/VOUT" 0.605994
+cap "mux_magic_0/VOUT" "mux_magic_1/VOUT" 9.06463
+cap "CP_1_0/ITAIL" "mux_magic_0/VOUT" 1.24787
+cap "CP_1_0/nmos_3p3_FYTGVN_1/a_56_n28#" "mux_magic_0/VOUT" 0.0214986
+cap "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" "mux_magic_1/OR_magic_0/VSS" 0.0227199
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_1/VOUT" 0.19943
+cap "CP_1_0/ITAIL" "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" 0.0180038
+cap "CP_1_0/VDD" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 5.68434e-14
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" "mux_magic_0/VOUT" 2.77464
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_1/VOUT" 23.2334
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_0/VOUT" 34.5867
+cap "CP_1_0/VDD" "mux_magic_1/VOUT" 13.9537
+cap "CP_1_0/VSS" "mux_magic_0/VOUT" 0.403186
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" "CP_1_0/VDD" -1.13687e-13
+cap "CP_1_0/VCTRL" "CP_1_0/ITAIL1" 0.254336
+cap "CP_1_0/VSS" "CP_1_0/ITAIL1" 3.69189
+cap "CP_1_0/ITAIL" "CP_1_0/ITAIL1" 0.00571221
+cap "CP_1_0/ITAIL1" "mux_magic_0/VOUT" 0.288494
+cap "mux_magic_1/VOUT" "CP_1_0/VDD" 1.9653
+cap "mux_magic_1/VOUT" "mux_magic_0/VOUT" 0.0501657
+cap "CP_1_0/VSS" "CP_1_0/VDD" 4.45372
+cap "CP_1_0/ITAIL" "CP_1_0/VDD" 0.114176
+cap "CP_1_0/VCTRL" "CP_1_0/VSS" 9.23129
+cap "mux_magic_0/VOUT" "CP_1_0/VDD" 15.4977
+cap "CP_1_0/ITAIL" "CP_1_0/VSS" 0.169342
+cap "CP_1_0/ITAIL1" "CP_1_0/VDD" 113.121
+cap "CP_1_0/nmos_3p3_GYTGVN_2/a_n168_n72#" "CP_1_0/VCTRL" 0.00928386
+cap "CP_1_0/pmos_3p3_MDK7F7_15/a_n148_n36#" "CP_1_0/VCTRL" -0.0902916
+cap "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" "CP_1_0/VCTRL" 0.523173
+cap "CP_1_0/ITAIL1" "CP_1_0/VSS" 5.40382
+cap "CP_1_0/ITAIL1" "CP_1_0/ITAIL" 1.66894
+cap "CP_1_0/VDD" "CP_1_0/VCTRL" -0.819515
+cap "CP_1_0/VSS" "CP_1_0/VCTRL" 57.0033
+cap "CP_1_0/ITAIL" "CP_1_0/VCTRL" 0.0289801
+cap "CP_1_0/VDD" "CP_1_0/VSS" 3.99674
+cap "CP_1_0/ITAIL1" "CP_1_0/nmos_3p3_GYTGVN_2/a_n168_n72#" 0.0185312
+cap "CP_1_0/ITAIL1" "CP_1_0/VCTRL" 34.6683
+cap "CP_1_0/ITAIL1" "CP_1_0/pmos_3p3_MDK7F7_15/a_n148_n36#" 19.414
+cap "CP_1_0/ITAIL" "CP_1_0/VSS" 0.187649
+cap "CP_1_0/ITAIL1" "CP_1_0/nmos_3p3_GYTGVN_2/a_n56_n28#" 0.0526122
+cap "m1_33817_9606#" "RES_74k_1/w_8016_n69#" 71.3447
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_n568#" 1.07952
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_466#" 4.89348
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_n362#" "m1_33817_9606#" 1.82765
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_n362#" "m1_33817_9606#" 2.7962
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_260#" 2.02626
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_260#" 10.5982
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1990_466#" 30.9176
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_2122#" 27.0145
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1090_n568#" 1.48696
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_466#" 26.0241
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1090_n362#" 2.41001
+cap "m1_33817_9606#" "RES_74k_1/w_8016_n69#" 67.0399
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_n362#" 0.582352
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_466#" 18.7195
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_260#" 5.70698
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_790_466#" 30.9176
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_790_260#" 10.5982
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_490_n362#" 2.41001
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1390_260#" 8.57199
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_490_n568#" 1.48696
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_n568#" 0.407449
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n410_260#" 10.5982
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_466#" 12.1981
+cap "m1_33817_9606#" "RES_74k_1/w_8016_n69#" 60.8677
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n410_466#" 30.9176
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n710_n568#" "m1_33817_9606#" 1.48696
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_466#" "m1_33817_9606#" 29.017
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n710_n362#" 2.41001
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_260#" 10.0159
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_260#" 4.89127
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_n568#" 0.618238
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n110_n568#" 1.48696
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_n362#" 0.88382
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n110_n362#" 2.41001
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.670749
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_466#" 20.9729
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_466#" 1.90064
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_466#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.132407
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 2.36939
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_n568#" 1.48696
+cap "RES_74k_1/P" "RES_74k_1/w_6816_n69#" 158.797
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_n568#" 0.868727
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_n362#" 1.52619
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_260#" 10.5982
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_466#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 0.245667
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1010_260#" 0.582319
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_n362#" 2.41001
+cap "RES_74k_1/P" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_466#" 30.9176
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_466#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.231365
+cap "RES_74k_1/P" "RES_74k_1/w_5016_n69#" 88.9955
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_n568#" 1.11855
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_466#" 2.35975
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/w_5016_n69#" 23.6551
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/P" 48.202
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_260#" 0.231365
+cap "RES_74k_1/P" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 43.8823
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_n362#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 1.11855
+cap "mux_magic_3/IN2" "mux_magic_2/SEL" 1.58441
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/VDD" -5.68434e-14
+cap "mux_magic_2/IN2" "mux_magic_2/SEL" 10.2342
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/IN1" 40.2282
+cap "mux_magic_2/IN1" "mux_magic_2/VDD" 64.569
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/SEL" 4.67885
+cap "mux_magic_3/IN2" "mux_magic_2/IN2" 8.42484
+cap "mux_magic_2/VDD" "mux_magic_2/SEL" 80.7497
+cap "mux_magic_2/IN1" "mux_magic_2/SEL" 74.8801
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/IN2" 1.31972
+cap "mux_magic_2/IN2" "mux_magic_2/VDD" 0.645864
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/SEL" -0.270736
+cap "mux_magic_3/IN2" "mux_magic_2/IN1" 11.5812
+cap "mux_magic_2/IN1" "mux_magic_2/IN2" 8.88178e-16
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/IN1" 100.035
+cap "mux_magic_2/SEL" "mux_magic_2/IN1" 41.6994
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/VDD" -9.05585
+cap "mux_magic_3/AND2_magic_1/A" "mux_magic_2/VDD" 0.0719182
+cap "mux_magic_3/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/VDD" 0.196245
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_2/VDD" 0.124956
+cap "mux_magic_3/IN2" "mux_magic_2/VDD" -0.162201
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" -0.0317165
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/OR_magic_0/VOUT" 0.000578334
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_3/IN2" -1.44293
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/VDD" -0.335657
+cap "mux_magic_2/VDD" "mux_magic_2/IN1" 154.783
+cap "mux_magic_2/SEL" "mux_magic_2/VDD" -31.8865
+cap "mux_magic_2/IN2" "mux_magic_2/IN1" -3.2464
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" -22.3158
+cap "mux_magic_2/IN2" "mux_magic_2/SEL" 1.1422
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/IN1" 235.389
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/SEL" -0.690407
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_2/IN1" 0.0492014
+cap "mux_magic_3/IN2" "mux_magic_2/IN1" 5.96729
+cap "mux_magic_3/IN2" "mux_magic_2/SEL" -0.0834733
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_3/IN2" 0.191301
+cap "mux_magic_3/OR_magic_0/pmos_3p3_V9Y6F7_6/w_n230_n242#" "mux_magic_2/OR_magic_0/B" 0.000205254
+cap "PFD_T2_0/FIN" "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0748994
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/OR_magic_0/B" 0.0377833
+cap "mux_magic_2/OR_magic_0/B" "PFD_T2_0/w_133_3540#" 2.72381
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_2/VDD" 2.70247
+cap "mux_magic_2/VDD" "PFD_T2_0/w_133_3540#" 2.207
+cap "PFD_T2_0/FIN" "mux_magic_2/VDD" 15.6287
+cap "DN_INPUT" "mux_magic_2/OR_magic_0/B" 0.072248
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_3/IN2" 0.0326089
+cap "PFD_T2_0/FIN" "mux_magic_3/IN2" 1.05803
+cap "mux_magic_3/IN2" "PFD_T2_0/w_133_3540#" 0.31184
+cap "mux_magic_2/OR_magic_0/A" "mux_magic_2/VDD" 0.000731041
+cap "mux_magic_2/VDD" "mux_magic_3/IN2" -0.94082
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_3JEA4B_2/a_n342_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0116471
+cap "mux_magic_2/OR_magic_0/B" "S2" 0.137737
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.165173
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_0/a_172_278#" 0.682063
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n240_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.547471
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/FIN" 0.0106895
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" 0.487787
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/VDD" 0.0146712
+cap "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_2/OR_magic_0/B" 0.00515874
+cap "mux_magic_2/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "PFD_T2_0/PFD_2_0/a_172_278#" 0.00578586
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/a_n358_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.000322859
+cap "mux_magic_2/VDD" "PFD_T2_0/PFD_2_0/a_172_278#" 0.170176
+cap "mux_magic_3/IN2" "PFD_T2_0/PFD_2_0/a_172_278#" 5.75843
+cap "mux_magic_3/OR_magic_0/pmos_3p3_V9Y6F7_6/w_n230_n242#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.000205254
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 2.84217e-14
+cap "PFD_T2_0/FIN" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 35.8122
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "PFD_T2_0/w_133_3540#" 4.774
+cap "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_2/VDD" 0.550009
+cap "PFD_T2_0/FIN" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" 9.51227
+cap "PFD_T2_0/FIN" "PFD_T2_0/PFD_2_0/a_172_278#" 36.2959
+cap "PFD_T2_0/FDIV" "PFD_T2_0/FIN" -0.0892335
+cap "mux_magic_2/OR_magic_0/A" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" 0.20679
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" 8.85134
+cap "mux_magic_2/OR_magic_0/A" "PFD_T2_0/PFD_2_0/a_172_278#" 1.24106
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "mux_magic_2/OR_magic_0/B" 0.392107
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/PFD_2_0/a_172_278#" 22.6504
+cap "PFD_T2_0/VSS" "PFD_T2_0/PFD_2_0/a_172_278#" 5.75843
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/OR_magic_0/B" 2.74404
+cap "S2" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" 6.80739
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/FIN" 88.1029
+cap "PFD_T2_0/VSS" "PFD_T2_0/FIN" -0.992316
+cap "S2" "PFD_T2_0/PFD_2_0/a_172_278#" 0.619091
+cap "DN_INPUT" "PFD_T2_0/PFD_2_0/a_172_278#" 0.10601
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/w_n632_n180#" 5.68434e-14
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "mux_magic_2/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0469893
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/a_n358_n50#" -0.0317028
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/w_n632_n180#" "PFD_T2_0/PFD_2_0/a_172_278#" 1.13687e-13
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n240_n50#" "PFD_T2_0/FIN" 6.29916
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.26943
+cap "PFD_T2_0/FIN" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/a_n358_n50#" 3.12038
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.818723
+cap "PFD_T2_0/FIN" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/w_n632_n180#" 12.7721
+cap "PFD_T2_0/FIN" "PFD_T2_0/PFD_2_down_0/nmos_3p3_8FEA4B_2/a_n52_n50#" 0.0181483
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 7.26667
+cap "PFD_T2_0/FIN" "mux_magic_2/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 0.0398587
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n240_n50#" "mux_magic_2/OR_magic_0/VDD" 1.35364
+cap "PFD_T2_0/FIN" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.27357
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/a_n358_n50#" 0.0852335
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/w_n632_n180#" -1.13687e-13
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "PFD_T2_0/PFD_2_0/a_172_278#" -0.183015
+cap "mux_magic_2/OR_magic_0/VDD" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.055096
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/Buffer_V_2_1/IN" 0.355274
+cap "PFD_T2_0/INV_mag_1/OUT" "DN_INPUT" 0.0134401
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/INV_mag_0/IN" 22.9331
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" 14.6117
+cap "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/INV_mag_0/IN" 0.242901
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/PFD_2_0/a_172_278#" 10.9971
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" "mux_magic_2/OR_magic_0/VDD" 1.02537
+cap "PFD_T2_0/FIN" "PFD_T2_0/INV_mag_0/IN" 0.043829
+cap "PFD_T2_0/FIN" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" 3.21463
+cap "PFD_T2_0/INV_mag_0/IN" "DN_INPUT" 0.0956671
+cap "S2" "PFD_T2_0/INV_mag_0/IN" 18.1817
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n240_n50#" 0.174088
+cap "PFD_T2_0/UP" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" -0.399958
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" "DN_INPUT" 6.88623
+cap "S2" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" 1.1642
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "DN_INPUT" 0.191578
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" -0.312645
+cap "S2" "PFD_T2_0/PFD_2_0/a_172_278#" 1.14134
+cap "PFD_T2_0/INV_mag_1/VDD" "DN_INPUT" 0.245087
+cap "S2" "PFD_T2_0/INV_mag_1/VDD" 1.46151
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_0/AND2_magic_0/A" 0.0276208
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/INV_mag_0/IN" 0.325555
+cap "PFD_T2_0/INV_mag_0/IN" "mux_magic_0/SEL" 0.439231
+cap "PFD_T2_0/VSS" "PFD_T2_0/Buffer_V_2_1/IN" 0.392324
+cap "mux_magic_0/AND2_magic_0/A" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.123688
+cap "PFD_T2_0/UP" "mux_magic_1/IN2" 28.7163
+cap "PFD_T2_0/VSS" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.25025
+cap "mux_magic_0/AND2_magic_0/VSS" "PFD_T2_0/UP" 0.000838767
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_0/IN2" 0.0153825
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_0/IN2" 0.0946717
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" "mux_magic_1/IN2" 8.0231
+cap "mux_magic_0/AND2_magic_0/A" "PFD_T2_0/UP" 0.0234471
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_1/IN2" 87.2418
+cap "mux_magic_0/SEL" "mux_magic_1/IN2" 5.88472
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n240_n50#" "mux_magic_1/IN2" 2.18972
+cap "PFD_T2_0/INV_mag_0/IN" "mux_magic_1/IN2" 5.3847
+cap "PFD_T2_0/VSS" "PFD_T2_0/UP" 0.0270034
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "PFD_T2_0/UP" 0.766965
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_1/IN2" 2.88837
+cap "PFD_T2_0/UP" "mux_magic_0/IN2" 0.0170289
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/INV_mag_1/OUT" 0.000658759
+cap "PFD_T2_0/Buffer_V_2_1/IN" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n240_n50#" 7.10543e-15
+cap "PFD_T2_0/Buffer_V_2_1/IN" "PFD_T2_0/INV_mag_1/VDD" 4.09686
+cap "PFD_T2_0/Buffer_V_2_1/IN" "PFD_T2_0/INV_mag_0/IN" -5.68434e-14
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_0/SEL" 8.0812
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 4.06517
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_0/SEL" 0.964239
+cap "PFD_T2_0/INV_mag_1/OUT" "mux_magic_1/IN2" 0.87174
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/UP" 3.58272
+cap "mux_magic_0/SEL" "PFD_T2_0/UP" 5.71121
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_1/IN2" 13.2985
+cap "PFD_T2_0/VSS" "mux_magic_1/IN2" 58.7238
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_1/IN2" 19.2711
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_0/AND2_magic_0/VSS" 0.00257141
+cap "mux_magic_0/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_0/IN2" 5.69312
+cap "PFD_T2_0/UP" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.330951
+cap "mux_magic_1/IN2" "mux_magic_0/SEL" -0.445805
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/INV_mag_1/VSS" 79.6223
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_0/IN2" 74.5709
+cap "PFD_T2_0/UP" "mux_magic_0/SEL" 133.381
+cap "PFD_T2_0/UP" "mux_magic_1/IN2" -3.39435
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_0/SEL" 1.02498
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_0/AND2_magic_0/A" 5.89537
+cap "PFD_T2_0/INV_mag_1/VSS" "mux_magic_0/IN2" 50.3662
+cap "PFD_T2_0/Buffer_V_2_1/IN" "PFD_T2_0/UP" 0.0431034
+cap "mux_magic_0/AND2_magic_0/A" "mux_magic_0/IN2" 55.3531
+cap "mux_magic_0/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" "mux_magic_0/IN2" 2.4401
+cap "mux_magic_0/SEL" "PFD_T2_0/PFD_2_0/a_172_278#" 0.243003
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_0/IN2" 0.318855
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_0/SEL" 309.294
+cap "PFD_T2_0/INV_mag_1/VDD" "mux_magic_1/IN2" 1.57678
+cap "mux_magic_0/SEL" "PFD_T2_0/PFD_2_0/a_1398_n81#" 0.101034
+cap "PFD_T2_0/INV_mag_1/VSS" "mux_magic_0/SEL" -1.3197
+cap "PFD_T2_0/INV_mag_1/VSS" "mux_magic_1/IN2" 1.77448
+cap "PFD_T2_0/INV_mag_1/VDD" "PFD_T2_0/UP" 51.125
+cap "mux_magic_0/SEL" "mux_magic_0/IN2" 149.085
+cap "mux_magic_0/AND2_magic_0/A" "mux_magic_0/SEL" 10.5589
+cap "PFD_T2_0/INV_mag_1/VSS" "PFD_T2_0/UP" 59.1046
+cap "PFD_T2_0/UP" "mux_magic_0/IN2" 11.9888
+cap "mux_magic_0/AND2_magic_1/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_0/IN2" 2.59506
+cap "mux_magic_0/SEL" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 3.15863
+cap "mux_magic_0/AND2_magic_0/A" "PFD_T2_0/UP" 106.754
+cap "mux_magic_0/VOUT" "mux_magic_1/OR_magic_0/VSS" 9.00053
+cap "mux_magic_0/IN2" "mux_magic_1/OR_magic_0/VSS" 0.0716459
+cap "mux_magic_0/VDD" "mux_magic_1/OR_magic_0/VSS" 1.20179
+cap "mux_magic_0/VDD" "mux_magic_0/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0130605
+cap "mux_magic_0/VDD" "mux_magic_0/AND2_magic_0/nmos_3p3_F2UGVV_0/a_n252_n112#" 9.38895
+cap "mux_magic_0/VDD" "PFD_T2_0/UP" 0.549665
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/OR_magic_0/a_174_n1010#" 0.071141
+cap "mux_magic_0/OR_magic_0/VDD" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 2.13931
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/OR_magic_0/B" 0.000412545
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/OR_magic_0/pmos_3p3_V9Y6F7_6/w_n230_n242#" 0.000390968
+cap "CP_1_0/UP" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.481329
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 20.7185
+cap "mux_magic_0/OR_magic_0/VDD" "CP_1_0/ITAIL" 16.6052
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_1/OR_magic_0/VSS" 0.0320884
+cap "mux_magic_0/OR_magic_0/B" "CP_1_0/ITAIL" 0.431859
+cap "mux_magic_0/VOUT" "mux_magic_1/OR_magic_0/VSS" 11.834
+cap "mux_magic_0/VOUT" "CP_1_0/ITAIL" 21.683
+cap "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0904388
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_0/OR_magic_0/VDD" 0.0274915
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_0/OR_magic_0/VDD" 0.458071
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 6.21795
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_0/VOUT" 6.31306
+cap "mux_magic_0/OR_magic_0/VDD" "mux_magic_0/VOUT" 75.7367
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_0/VOUT" 13.6834
+cap "mux_magic_1/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0157726
+cap "mux_magic_1/OR_magic_0/pmos_3p3_V9Y6F7_6/w_n230_n242#" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0203303
+cap "mux_magic_1/OR_magic_0/VSS" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 0.0951869
+cap "CP_1_0/ITAIL" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.27076
+cap "mux_magic_0/VOUT" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 0.142061
+cap "CP_1_0/ITAIL" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 4.3358
+cap "mux_magic_0/VOUT" "CP_1_0/UP" 0.969166
+cap "CP_1_0/ITAIL" "CP_1_0/UP" 4.93214
+cap "CP_1_0/ITAIL" "mux_magic_0/VOUT" 83.1798
+cap "CP_1_0/pmos_3p3_RL7FD7_0/a_n144_n484#" "CP_1_0/ITAIL" 1.20967
+cap "mux_magic_0/OR_magic_0/VDD" "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" 0.0314262
+cap "CP_1_0/pmos_3p3_MDK7F7_17/a_56_n28#" "CP_1_0/VDD" 0.699252
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "CP_1_0/UP" 0.444459
+cap "mux_magic_0/OR_magic_0/VDD" "CP_1_0/UP" 0.706195
+cap "CP_1_0/UP" "CP_1_0/VDD" 0.681054
+cap "mux_magic_0/VOUT" "CP_1_0/VDD" -0.892125
+cap "mux_magic_0/OR_magic_0/VDD" "CP_1_0/ITAIL" 23.7069
+cap "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" "CP_1_0/ITAIL" 0.0431048
+cap "CP_1_0/ITAIL" "CP_1_0/VDD" 240.142
+cap "CP_1_0/ITAIL" "mux_magic_0/VOUT" 0.00389189
+cap "CP_1_0/ITAIL1" "CP_1_0/ITAIL" 0.910533
+cap "CP_1_0/VDD" "CP_1_0/UP" -4.44089e-16
+cap "CP_1_0/VDD" "CP_1_0/ITAIL1" 3.45106
+cap "CP_1_0/VDD" "CP_1_0/ITAIL" 67.5569
+cap "CP_1_0/ITAIL" "CP_1_0/ITAIL1" 5.10413
+cap "CP_1_0/pmos_3p3_MDK7F7_15/a_n148_n36#" "CP_1_0/ITAIL1" 14.4555
+cap "CP_1_0/VDD" "CP_1_0/ITAIL1" 86.9272
+cap "RES_74k_1/w_8016_n69#" "RES_74k_1/M" 21.6529
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_466#" "RES_74k_1/M" 3.98
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_n2018#" "RES_74k_1/M" 0.231651
+cap "RES_74k_1/w_8016_n69#" "RES_74k_1/M" 42.2607
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1090_n2018#" "RES_74k_1/M" 0.0399858
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_466#" "RES_74k_1/M" 2.40989
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_n2224#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 2.27067
+cap "m1_33817_9606#" "RES_74k_1/VDD" 78.1223
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_n2224#" "m1_33817_9606#" 2.20808
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_n1190#" 0.132407
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_n2224#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.642801
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_n1190#" 0.245667
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_n1190#" 0.278872
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_n1396#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.231365
+cap "RES_74k_1/w_5016_n69#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 23.6373
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_n2224#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 7.43811
+cap "m1_33817_9606#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 40.9559
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1610_n1190#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.231365
+cap "m1_33817_9606#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 43.4641
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n2210_n1190#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 2.35975
+cap "m1_33817_9606#" "RES_74k_1/w_5016_n69#" 87.591
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1910_n2018#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 1.11855
+cap "mux_magic_2/IN1" "mux_magic_2/VDD" 19.2088
+cap "mux_magic_2/SEL" "mux_magic_2/IN1" 6.15748
+cap "mux_magic_2/SEL" "mux_magic_2/AND2_magic_0/A" 0.167836
+cap "mux_magic_2/IN1" "mux_magic_2/AND2_magic_0/A" 0.34968
+cap "F_IN" "mux_magic_2/VDD" 0.470208
+cap "mux_magic_2/VSS" "mux_magic_2/IN1" 0.358979
+cap "F_IN" "mux_magic_2/SEL" 0.105051
+cap "mux_magic_2/SEL" "mux_magic_2/VDD" 13.3485
+cap "mux_magic_2/VDD" "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 0.0694841
+cap "mux_magic_2/SEL" "mux_magic_2/AND2_magic_0/A" 0.0591386
+cap "mux_magic_2/IN1" "mux_magic_2/AND2_magic_0/A" 2.01826
+cap "mux_magic_2/AND2_magic_0/A" "mux_magic_2/VDD" 0.23177
+cap "mux_magic_2/SEL" "mux_magic_2/IN1" 6.00853
+cap "mux_magic_2/SEL" "mux_magic_2/VDD" -1.58887
+cap "mux_magic_2/IN1" "mux_magic_2/VDD" 27.784
+cap "PFD_T2_0/FIN" "S2" 0.210796
+cap "mux_magic_2/OR_magic_0/A" "DN_INPUT" 0.0266436
+cap "mux_magic_2/OR_magic_0/A" "S2" 1.63061
+cap "mux_magic_2/OR_magic_0/B" "DN_INPUT" 0.645122
+cap "PFD_T2_0/FIN" "mux_magic_2/VDD" -0.295948
+cap "mux_magic_2/OR_magic_0/B" "S2" 8.49565
+cap "mux_magic_2/OR_magic_0/B" "UP_INPUT" 0.146809
+cap "mux_magic_2/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "S2" 3.82393
+cap "S2" "mux_magic_2/VDD" 10.1412
+cap "mux_magic_2/OR_magic_0/A" "mux_magic_2/VDD" 0.232315
+cap "S2" "mux_magic_2/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 4.07483
+cap "mux_magic_2/OR_magic_0/B" "mux_magic_2/VDD" 0.98511
+cap "mux_magic_2/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "mux_magic_2/VDD" 0.262093
+cap "mux_magic_2/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" "S2" 0.857428
+cap "S2" "PFD_T2_0/PFD_2_0/a_172_278#" 2.86955
+cap "S2" "PFD_T2_0/FIN" 0.20156
+cap "S2" "PFD_T2_0/PFD_2_0/pmos_3p3_K83TLV_0/w_n632_n180#" 7.97637
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "mux_magic_2/OR_magic_0/VDD" 0.0647655
+cap "PFD_T2_0/FIN" "mux_magic_2/OR_magic_0/VDD" -1.50098
+cap "S2" "mux_magic_2/OR_magic_0/VDD" 4.91387
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "S2" 7.6068
+cap "PFD_T2_0/PFD_2_0/a_172_278#" "S2" 2.18976
+cap "PFD_T2_0/Buffer_V_2_1/VDD" "S2" 8.43026
+cap "S2" "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n152_n94#" 0.0288507
+cap "PFD_T2_0/PFD_2_0/nmos_3p3_8FEA4B_1/a_n52_n50#" "S2" 18.7009
+cap "PFD_T2_0/INV_mag_0/VSS" "mux_magic_0/SEL" 2.86523
+cap "PFD_T2_0/m1_2279_1510#" "mux_magic_0/SEL" 11.4757
+cap "DN_INPUT" "PFD_T2_0/Buffer_V_2_1/VDD" 4.74963
+cap "PFD_T2_0/PFD_2_0/pmos_3p3_KG2TLV_2/a_n240_n50#" "mux_magic_0/SEL" 0.177732
+cap "DN_INPUT" "mux_magic_0/SEL" 0.439574
+cap "PFD_T2_0/INV_mag_0/nmos_3p3_MGEA4B_0/a_n50_n94#" "mux_magic_0/SEL" 0.0174255
+cap "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" "mux_magic_0/SEL" 5.13965
+cap "PFD_T2_0/PFD_2_0/a_582_n305#" "mux_magic_0/SEL" 1.25769
+cap "PFD_T2_0/Buffer_V_2_1/IN" "mux_magic_0/SEL" 11.3941
+cap "mux_magic_0/SEL" "PFD_T2_0/Buffer_V_2_1/VDD" 26.455
+cap "DN_INPUT" "PFD_T2_0/Buffer_V_2_1/pmos_3p3_KG2TLV_0/a_n52_n50#" 0.0210492
+cap "DN_INPUT" "PFD_T2_0/Buffer_V_2_1/IN" 0.0420985
+cap "PFD_T2_0/UP" "mux_magic_0/SEL" 7.06049
+cap "PFD_T2_0/Buffer_V_2_1/VDD" "PFD_T2_0/UP" -1.78188
+cap "mux_magic_0/SEL" "mux_magic_0/AND2_magic_0/A" 0.595207
+cap "mux_magic_0/SEL" "PFD_T2_0/Buffer_V_2_1/VDD" 31.778
+cap "mux_magic_0/SEL" "PFD_T2_0/UP" 0.871012
+cap "mux_magic_0/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" "UP_INPUT" 0.661339
+cap "UP_INPUT" "mux_magic_0/AND2_magic_0/A" 3.87275
+cap "PFD_T2_0/Buffer_V_2_1/VDD" "UP_INPUT" 13.2517
+cap "PFD_T2_0/UP" "UP_INPUT" 1.13166
+cap "mux_magic_0/SEL" "UP_INPUT" 6.72599
+cap "PFD_T2_0/Buffer_V_2_1/VDD" "mux_magic_0/AND2_magic_0/A" 3.28248
+cap "mux_magic_0/VDD" "mux_magic_0/AND2_magic_0/A" 8.61909
+cap "mux_magic_0/VDD" "mux_magic_0/AND2_magic_0/nmos_3p3_A2UGVV_0/a_n144_n112#" 9.52757
+cap "PFD_T2_0/UP" "mux_magic_0/VDD" 13.8226
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/nmos_3p3_A2UGVV_2/a_n144_n112#" 1.07569
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/B" 5.32339
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/VDD" 16.7594
+cap "mux_magic_0/OR_magic_0/B" "mux_magic_0/OR_magic_0/VDD" 7.08348
+cap "mux_magic_0/OR_magic_0/B" "CP_1_0/ITAIL" 0.139484
+cap "CP_1_0/ITAIL" "mux_magic_0/OR_magic_0/VDD" 4.5876
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/A" 2.59195
+cap "mux_magic_0/OR_magic_0/A" "mux_magic_0/OR_magic_0/VDD" 7.08348
+cap "mux_magic_0/VOUT" "mux_magic_0/OR_magic_0/pmos_3p3_VZX6F7_1/a_n252_n112#" 3.6039
+cap "CP_1_0/ITAIL" "mux_magic_0/OR_magic_0/VDD" 4.67355
+cap "CP_1_0/ITAIL" "ITAIL1" 0.786496
+cap "CP_1_0/VDD" "ITAIL1" 3.80973
+cap "CP_1_0/pmos_3p3_MDK7F7_8/a_n148_n36#" "ITAIL1" 0.0341917
+cap "CP_1_0/ITAIL" "ITAIL1" 3.96698
+cap "CP_1_0/pmos_3p3_MDK7F7_8/a_n148_n36#" "ITAIL1" 0.873883
+cap "CP_1_0/VDD" "ITAIL1" 12.7633
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_n1190#" "RES_74k_1/M" 7.24518
+cap "RES_74k_1/M" "RES_74k_1/w_8016_n69#" 68.9137
+cap "RES_74k_1/w_8016_n69#" "RES_74k_1/M" 27.6226
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_n1190#" "RES_74k_1/w_8016_n69#" 3.03855
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_n1190#" "RES_74k_1/M" 0.660172
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_2290_n1190#" "RES_74k_1/VDD" 17.905
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_1690_n2224#" "RES_74k_1/VDD" 18.0636
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_n2224#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 0.0279479
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_n2224#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 0.0987247
+cap "m1_33817_9606#" "RES_74k_1/VDD" 43.8601
+cap "m1_33817_9606#" "RES_74k_1/ppolyf_u_7PLHK3_0/a_190_n2224#" 0.672024
+cap "RES_74k_1/ppolyf_u_7PLHK3_0/a_n1310_n2224#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 1.25553
+cap "m1_33817_9606#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 35.0703
+cap "RES_74k_1/w_5016_n69#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 6.36657
+cap "m1_33817_9606#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9734_n6180#" 21.8665
+cap "m1_33817_9606#" "RES_74k_1/w_5016_n69#" 51.9523
+cap "m1_33817_9606#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 34.7584
+cap "m1_33817_9606#" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" 22.1709
+cap "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_n9854_n6300#" "m1_33817_9606#" 2.64337
+cap "UP_INPUT" "mux_magic_0/VDD" 2.62104
+cap "UP_INPUT" "mux_magic_0/pmos_3p3_VRCSD7_0/a_n56_24#" 0.281561
+cap "UP_INPUT" "mux_magic_0/pmos_3p3_VRCSD7_0/a_n160_68#" 0.210976
+cap "mux_magic_0/pmos_3p3_VRCSD7_0/a_n272_24#" "UP_INPUT" 0.73195
+cap "m1_41677_12061#" "cap_240p_0/P" 101.111
+cap "m1_41677_12061#" "cap_240p_0/P" 28.7716
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 58.9267
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 51.6555
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 83.5662
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 83.5662
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" "m5_67761_n293#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 84.5105
+cap "m5_67761_n293#" "cap_240p_0/cap_mim_2p0fF_CAMMVY_0/m4_30730_n36900#" 73.4936
+merge "cap_240p_0/VSUBS" "mux_magic_1/AND2_magic_1/VSS" -11673.3 0 0 0 0 0 0 -47 -190 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2994825 -39478 -5940 -514 0 0 0 0 0 0
+merge "mux_magic_1/AND2_magic_1/VSS" "mux_magic_3/AND2_magic_1/VSS"
+merge "mux_magic_3/AND2_magic_1/VSS" "mux_magic_1/OR_magic_0/VSS"
+merge "mux_magic_1/OR_magic_0/VSS" "mux_magic_0/OR_magic_0/VSS"
+merge "mux_magic_0/OR_magic_0/VSS" "mux_magic_0/AND2_magic_1/VSS"
+merge "mux_magic_0/AND2_magic_1/VSS" "mux_magic_0/VSS"
+merge "mux_magic_0/VSS" "m2_28891_10157#"
+merge "m2_28891_10157#" "m1_27356_10203#"
+merge "m1_27356_10203#" "mux_magic_2/OR_magic_0/VSS"
+merge "mux_magic_2/OR_magic_0/VSS" "mux_magic_3/OR_magic_0/VSS"
+merge "mux_magic_3/OR_magic_0/VSS" "mux_magic_3/IN2"
+merge "mux_magic_3/IN2" "m1_22383_10516#"
+merge "m1_22383_10516#" "mux_magic_2/VSS"
+merge "mux_magic_2/VSS" "m1_19780_9902#"
+merge "m1_19780_9902#" "CP_1_0/VSS"
+merge "CP_1_0/VSS" "m1_29638_10167#"
+merge "m1_29638_10167#" "RES_74k_1/VSUBS"
+merge "RES_74k_1/VSUBS" "mux_magic_1/VSS"
+merge "mux_magic_1/VSS" "PFD_T2_0/VSS"
+merge "PFD_T2_0/VSS" "mux_magic_3/VSS"
+merge "mux_magic_3/VSS" "A_MUX_0/Tr_Gate_1/VSS"
+merge "A_MUX_0/Tr_Gate_1/VSS" "A_MUX_0/VSS"
+merge "A_MUX_0/VSS" "cap_11p_0/VSUBS"
+merge "cap_11p_0/VSUBS" "VCO_DFF_C_0/VSUBS"
+merge "VCO_DFF_C_0/VSUBS" "a_28514_10224#"
+merge "a_28514_10224#" "A_MUX_0/Tr_Gate_0/VSS"
+merge "A_MUX_0/Tr_Gate_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/VSS"
+merge "VCO_DFF_C_0/DFF_3_mag_0/VSS" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_1/VSS"
+merge "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_1/VSS" "m1_40140_4953#"
+merge "m1_40140_4953#" "VCO_DFF_C_0/VCO_C_0/VSS"
+merge "VCO_DFF_C_0/VCO_C_0/VSS" "VSS"
+merge "VSS" "m1_16721_4611#"
+merge "m1_16721_4611#" "VCO_DFF_C_0/VSS"
+merge "VCO_DFF_C_0/VSS" "m1_44729_2789#"
+merge "m1_44729_2789#" "cap_11p_0/M"
+merge "cap_11p_0/M" "VCO_DFF_C_0/DFF_3_mag_0/a_n4178_n205#"
+merge "VCO_DFF_C_0/DFF_3_mag_0/a_n4178_n205#" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS"
+merge "VCO_DFF_C_0/DFF_3_mag_0/INV_2_3/VSS" "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/VSS"
+merge "VCO_DFF_C_0/DFF_3_mag_0/Tr_Gate_0/VSS" "VCO_DFF_C_0/DFF_3_mag_0/INV_2_1/VSS"
+merge "VCO_DFF_C_0/DFF_3_mag_0/INV_2_1/VSS" "m1_47432_n795#"
+merge "mux_magic_0/IN1" "PFD_T2_0/UP" -321.774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13674 -662 0 0 0 0 0 0
+merge "PFD_T2_0/UP" "m2_26556_11527#"
+merge "A_MUX_0/OUT" "VCO_DFF_C_0/VCTRL" -6028.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25278 -1032 -21754 -630 -2403402 -23334 0 0 0 0
+merge "VCO_DFF_C_0/VCTRL" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL"
+merge "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VCTRL" "m1_30300_4138#"
+merge "mux_magic_3/IN1" "DIV_OUT" -443.838 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2130 -202 -7309 -348 0 0 0 0 0 0
+merge "mux_magic_2/IN1" "PRE_SCALAR" -874.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -132508 -1487 -119510 -1353 0 0 0 0 0 0
+merge "cap_11p_0/P" "CP_1_0/VCTRL" -8684.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1435811 -14694 -1923168 -17208 0 0 0 0 0 0
+merge "CP_1_0/VCTRL" "RES_74k_1/P"
+merge "RES_74k_1/P" "A_MUX_0/Tr_Gate_1/IN"
+merge "A_MUX_0/Tr_Gate_1/IN" "A_MUX_0/IN1"
+merge "A_MUX_0/IN1" "m1_33817_9606#"
+merge "cap_240p_0/M" "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_3374_n6300#" -31869.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51451868 -157874
+merge "cap_11p_0/cap_mim_2p0fF_VGWXT2_1/m4_3374_n6300#" "m5_67761_n293#"
+merge "PFD_T2_0/Buffer_V_2_1/VDD" "RES_74k_1/VDD" -17106.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5131207 -53386 0 0 0 0 0 0 0 0
+merge "RES_74k_1/VDD" "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#"
+merge "RES_74k_1/ppolyf_u_7PLHK3_0/w_n2694_n3030#" "A_MUX_0/Tr_Gate_1/VDD"
+merge "A_MUX_0/Tr_Gate_1/VDD" "A_MUX_0/VDD"
+merge "A_MUX_0/VDD" "m1_43759_5971#"
+merge "m1_43759_5971#" "CP_1_0/VDD"
+merge "CP_1_0/VDD" "mux_magic_0/OR_magic_0/VDD"
+merge "mux_magic_0/OR_magic_0/VDD" "mux_magic_0/VDD"
+merge "mux_magic_0/VDD" "mux_magic_2/OR_magic_0/VDD"
+merge "mux_magic_2/OR_magic_0/VDD" "PFD_T2_0/INV_mag_1/VDD"
+merge "PFD_T2_0/INV_mag_1/VDD" "mux_magic_2/VDD"
+merge "mux_magic_2/VDD" "VDD"
+merge "VDD" "PFD_T2_0/Buffer_V_2_0/VDD"
+merge "PFD_T2_0/Buffer_V_2_0/VDD" "mux_magic_1/OR_magic_0/VDD"
+merge "mux_magic_1/OR_magic_0/VDD" "mux_magic_1/VDD"
+merge "mux_magic_1/VDD" "mux_magic_3/OR_magic_0/VDD"
+merge "mux_magic_3/OR_magic_0/VDD" "PFD_T2_0/VDD"
+merge "PFD_T2_0/VDD" "mux_magic_3/VDD"
+merge "mux_magic_3/VDD" "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD"
+merge "VCO_DFF_C_0/VCO_C_0/DelayCell_mag_0/VDD" "m1_22340_7798#"
+merge "mux_magic_2/SEL" "S1" -538.174 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -79369 -1224 -62328 -800 0 0 0 0 0 0
+merge "A_MUX_0/SEL" "S4" -161.985 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11110 -422 0 0 0 0 0 0 0 0
+merge "CP_1_0/UP" "mux_magic_1/VOUT" -625.251 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17735 -948 0 0 0 0 0 0 0 0
+merge "mux_magic_1/VOUT" "DN"
+merge "VCO_DFF_C_0/OUTB" "OUTB" -224.767 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6560 -360 0 0 0 0 0 0 0 0
+merge "CP_1_0/ITAIL" "ITAIL" -601.877 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19397 -592 -16747 -596 0 0 0 0 0 0
+merge "VCO_DFF_C_0/VCO_C_0/VCTRL2" "VCO_DFF_C_0/VCTRL2" -216.847 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10816 -520 0 0 0 0 0 0 0 0
+merge "VCO_DFF_C_0/VCTRL2" "VCTRL2"
+merge "mux_magic_0/SEL" "S2" -1568.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -116319 -2050 -374796 -6842 0 0 0 0 0 0
+merge "mux_magic_1/SEL" "S3" -452.243 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3969 -252 0 0 0 0 0 0 0 0
+merge "A_MUX_0/IN2" "VCTRL_IN" -135.043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9222 -386 0 0 0 0 0 0 0 0
+merge "cap_240p_0/P" "RES_74k_1/M" -2481.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13076 -556 -1163434 -11674 0 0 0 0 0 0
+merge "RES_74k_1/M" "m1_41677_12061#"
+merge "mux_magic_0/VOUT" "CP_1_0/down" -908.328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30663 -1118 -8361 -376 0 0 0 0 0 0
+merge "CP_1_0/down" "UP"
+merge "mux_magic_3/SEL" "S6" -287.887 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3969 -252 0 0 0 0 0 0 0 0
+merge "mux_magic_1/IN1" "PFD_T2_0/DOWN" -371.914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21863 -830 0 0 0 0 0 0
+merge "PFD_T2_0/DOWN" "m2_26597_8889#"
+merge "mux_magic_2/IN2" "F_IN" -2402.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -415056 -3550 -982713 -7608 0 0 0 0 0 0
+merge "mux_magic_2/VOUT" "mux_magic_2/OR_magic_0/VOUT" -829.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59234 -2730 0 0 0 0 0 0 0 0
+merge "mux_magic_2/OR_magic_0/VOUT" "PFD_T2_0/FIN"
+merge "PFD_T2_0/FIN" "mux_magic_2/OR_magic_0/pmos_3p3_V9Y6F7_6/a_56_n112#"
+merge "mux_magic_2/OR_magic_0/pmos_3p3_V9Y6F7_6/a_56_n112#" "m1_22312_10710#"
+merge "mux_magic_3/OR_magic_0/nmos_3p3_A2UGVV_1/a_56_n112#" "mux_magic_3/VOUT" -908.911 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81721 -3364 0 0 0 0 0 0 0 0
+merge "mux_magic_3/VOUT" "PFD_T2_0/FDIV"
+merge "PFD_T2_0/FDIV" "mux_magic_3/OR_magic_0/VOUT"
+merge "mux_magic_3/OR_magic_0/VOUT" "m1_22320_8553#"
+merge "CP_1_0/ITAIL1" "ITAIL1" -1730.86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -348428 -3088 -454326 -4360 0 0 0 0 0 0
+merge "VCO_DFF_C_0/OUT" "OUT" -93.5221 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5293 -326 0 0 0 0 0 0 0 0
+merge "mux_magic_0/IN2" "UP_INPUT" -3229.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -271376 -2914 -967065 -11204 -446627 -5368 0 0 0 0
+merge "mux_magic_1/IN2" "DN_INPUT" -2073.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -199213 -2438 -666854 -9310 -223216 -3652 0 0 0 0

@@ -1,0 +1,14 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/CM_MSB.sch
+**.subckt CM_MSB VSS IM_T IM OUT
+*.iopin VSS
+*.ipin IM_T
+*.ipin IM
+*.iopin OUT
+XM7 OUT IM_T net1 VSS nfet_03v3 L=0.5u W=38.4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net1 IM VSS VSS nfet_03v3 L=0.5u W=38.4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+**.ends
+.end

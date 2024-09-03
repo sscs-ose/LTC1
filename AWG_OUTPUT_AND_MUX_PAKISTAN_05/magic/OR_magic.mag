@@ -1,0 +1,198 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1692688043
+<< nwell >>
+rect 0 322 882 484
+<< pwell >>
+rect 0 -633 62 -435
+rect 518 -633 532 -435
+rect 820 -633 882 -435
+<< psubdiff >>
+rect 28 -683 854 -668
+rect 28 -738 44 -683
+rect 99 -738 167 -683
+rect 222 -738 290 -683
+rect 345 -738 413 -683
+rect 468 -738 536 -683
+rect 591 -738 659 -683
+rect 714 -738 782 -683
+rect 837 -738 854 -683
+rect 28 -754 854 -738
+<< nsubdiff >>
+rect 28 441 854 456
+rect 28 386 44 441
+rect 99 386 167 441
+rect 222 386 290 441
+rect 345 386 413 441
+rect 468 386 536 441
+rect 591 386 659 441
+rect 714 386 782 441
+rect 837 386 854 441
+rect 28 370 854 386
+<< psubdiffcont >>
+rect 44 -738 99 -683
+rect 167 -738 222 -683
+rect 290 -738 345 -683
+rect 413 -738 468 -683
+rect 536 -738 591 -683
+rect 659 -738 714 -683
+rect 782 -738 837 -683
+<< nsubdiffcont >>
+rect 44 386 99 441
+rect 167 386 222 441
+rect 290 386 345 441
+rect 413 386 468 441
+rect 536 386 591 441
+rect 659 386 714 441
+rect 782 386 837 441
+<< polysilicon >>
+rect 640 295 712 309
+rect -31 274 41 283
+rect -31 269 234 274
+rect -31 223 -18 269
+rect 28 223 234 269
+rect 640 249 653 295
+rect 699 249 712 295
+rect 640 236 712 249
+rect 648 230 704 236
+rect -31 218 234 223
+rect -31 210 41 218
+rect 178 -465 234 -301
+rect 311 -314 402 -301
+rect 648 -302 704 -282
+rect 311 -360 324 -314
+rect 370 -360 402 -314
+rect 311 -373 402 -360
+rect 346 -465 402 -373
+rect 607 -315 704 -302
+rect 607 -361 620 -315
+rect 666 -361 704 -315
+rect 607 -374 704 -361
+rect 648 -465 704 -374
+<< polycontact >>
+rect -18 223 28 269
+rect 653 249 699 295
+rect 324 -360 370 -314
+rect 620 -361 666 -315
+<< metal1 >>
+rect 14 441 868 470
+rect 14 386 44 441
+rect 99 386 167 441
+rect 222 386 290 441
+rect 345 386 413 441
+rect 468 386 536 441
+rect 591 386 659 441
+rect 714 386 782 441
+rect 837 386 868 441
+rect 14 356 868 386
+rect -31 269 41 283
+rect -66 223 -18 269
+rect 28 223 41 269
+rect -31 210 41 223
+rect 99 184 145 356
+rect 653 309 699 356
+rect 640 295 712 309
+rect 569 249 653 295
+rect 699 249 783 295
+rect 569 236 783 249
+rect 569 184 615 236
+rect 737 184 783 236
+rect 99 -209 145 138
+rect 267 -209 313 138
+rect 311 -314 383 -301
+rect -66 -360 324 -314
+rect 370 -360 383 -314
+rect 311 -373 383 -360
+rect 435 -315 481 138
+rect 569 -209 615 140
+rect 737 -14 912 32
+rect 607 -315 679 -302
+rect 435 -361 620 -315
+rect 666 -361 679 -315
+rect 435 -419 481 -361
+rect 607 -374 679 -361
+rect 99 -465 481 -419
+rect 99 -511 145 -465
+rect 435 -511 481 -465
+rect 737 -511 783 -14
+rect 267 -654 313 -557
+rect 569 -654 615 -557
+rect 14 -683 868 -654
+rect 14 -738 44 -683
+rect 99 -738 167 -683
+rect 222 -738 290 -683
+rect 345 -738 413 -683
+rect 468 -738 536 -683
+rect 591 -738 659 -683
+rect 714 -738 782 -683
+rect 837 -738 868 -683
+rect 14 -768 868 -738
+use nmos_3p3_H9QVWA  nmos_3p3_H9QVWA_0
+timestamp 1692686659
+transform 1 0 206 0 1 -534
+box -144 -99 144 99
+use nmos_3p3_H9QVWA  nmos_3p3_H9QVWA_1
+timestamp 1692686659
+transform 1 0 374 0 1 -534
+box -144 -99 144 99
+use nmos_3p3_H9QVWA  nmos_3p3_H9QVWA_2
+timestamp 1692686659
+transform 1 0 676 0 1 -534
+box -144 -99 144 99
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_0
+timestamp 1692567440
+transform 1 0 676 0 1 -232
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_1
+timestamp 1692567440
+transform 1 0 206 0 1 -232
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_2
+timestamp 1692567440
+transform 1 0 676 0 1 -102
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_3
+timestamp 1692567440
+transform 1 0 206 0 1 -102
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_4
+timestamp 1692567440
+transform 1 0 206 0 1 31
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_6
+timestamp 1692567440
+transform 1 0 676 0 1 161
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_7
+timestamp 1692567440
+transform 1 0 206 0 1 161
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_8
+timestamp 1692567440
+transform 1 0 374 0 1 -232
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_9
+timestamp 1692567440
+transform 1 0 374 0 1 -102
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_10
+timestamp 1692567440
+transform 1 0 374 0 1 31
+box -206 -161 206 161
+use pmos_3p3_M8RCNG  pmos_3p3_M8RCNG_11
+timestamp 1692567440
+transform 1 0 374 0 1 161
+box -206 -161 206 161
+<< labels >>
+flabel metal1 -63 244 -63 244 0 FreeSans 320 0 0 0 A
+port 1 nsew
+flabel metal1 -60 -333 -60 -333 0 FreeSans 320 0 0 0 B
+port 2 nsew
+flabel metal1 829 14 829 14 0 FreeSans 320 0 0 0 OUT
+port 3 nsew
+flabel nsubdiffcont 442 414 442 414 0 FreeSans 480 0 0 0 VDD
+port 5 nsew
+flabel psubdiffcont 442 -713 442 -713 0 FreeSans 480 0 0 0 VSS
+port 7 nsew
+<< end >>

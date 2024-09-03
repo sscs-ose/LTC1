@@ -1,0 +1,169 @@
+timestamp 1713338890
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_4 0 1 1488 1 0 930
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_3 1 0 1856 0 -1 881
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_2 1 0 2822 0 -1 890
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_1 1 0 2938 0 1 -567
+use M2_M1_CDNS_69033583165570 M2_M1_CDNS_69033583165570_0 1 0 1337 0 1 -1235
+use comp018green_std_xor2 comp018green_std_xor2_0 1 0 511 0 1 -3277
+use comp018green_std_nand2 comp018green_std_nand2_1 1 0 2168 0 -1 2153
+use comp018green_std_nand2 comp018green_std_nand2_0 1 0 1202 0 -1 2153
+port "PD_IN" 5 2185 -2041 2185 -2041 m2
+port "PUB_OUT" 4 1861 1095 1861 1095 m1
+port "PDB_OUT" 3 2840 1095 2840 1095 m1
+port "VDD" 2 781 -825 781 -825 m1
+port "VSS" 1 755 -3232 755 -3232 m1
+node "PD_IN" 0 0 2185 -2041 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "PUB_OUT" 0 0 1861 1095 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "PDB_OUT" 0 0 2840 1095 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 0 781 -825 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 755 -3232 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_2784_n553#" 2 499.743 2784 -553 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120612 3326 0 0 0 0 0 0
+node "m2_1314_n1221#" 3 484.325 1314 -1221 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 181564 4930 0 0 0 0 0 0
+node "m2_1148_n1493#" 5 1057.61 1148 -1493 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 301977 8126 0 0 0 0 0 0
+node "m1_2282_n2083#" 3 1030.74 2282 -2083 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 169024 4600 0 0 0 0 0 0 0 0
+node "m1_1818_809#" 0 469.141 1818 809 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127980 1904 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_1148_n1493#" "m1_2282_n2083#" 0.12261
+cap "m1_1818_809#" "m2_1314_n1221#" 2.0251
+cap "m2_2784_n553#" "m2_1148_n1493#" 9.44664
+cap "m1_2282_n2083#" "m2_1314_n1221#" 1.32437
+cap "m2_2784_n553#" "m1_1818_809#" 17.0654
+cap "m2_2784_n553#" "m2_1314_n1221#" 50.0105
+cap "m2_2784_n553#" "m1_2282_n2083#" 13.289
+cap "m1_1818_809#" "m2_1148_n1493#" 60.0719
+cap "m2_1148_n1493#" "m2_1314_n1221#" 441.047
+cap "comp018green_std_xor2_0/A" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.0713328
+cap "comp018green_std_xor2_0/A" "PD_IN" 0.159743
+cap "comp018green_std_nand2_1/VDD" "PD_IN" 0.394325
+cap "comp018green_std_xor2_0/Z" "PD_IN" 0.0312815
+cap "comp018green_std_xor2_0/A" "comp018green_std_xor2_0/Z" 0.51153
+cap "VDD" "VSS" -10.6155
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "PD_IN" 4.68587
+cap "VSS" "PD_IN" 36.4763
+cap "PD_IN" "comp018green_std_nand2_1/VDD" 1.00436
+cap "VDD" "PD_IN" 101.723
+cap "comp018green_std_xor2_0/A" "comp018green_std_nand2_1/VDD" 6.56441
+cap "comp018green_std_xor2_0/Z" "comp018green_std_nand2_1/VDD" 3.75548
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "PD_IN" -1.76445
+cap "comp018green_std_xor2_0/A" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 120.723
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 114.494
+cap "comp018green_std_xor2_0/A" "PD_IN" 27.4154
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_std_nand2_1/VDD" 0.163596
+cap "comp018green_std_xor2_0/Z" "PD_IN" 8.85353
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/A" 140.62
+cap "VDD" "comp018green_std_nand2_1/VDD" 43.1382
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" -0.367069
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "VDD" -5.45419
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_std_nand2_1/VDD" 0.267361
+cap "comp018green_std_xor2_0/A" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 4.7223
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 4.95145
+cap "comp018green_std_xor2_0/A" "VDD" 132.013
+cap "comp018green_std_xor2_0/Z" "VDD" 157.537
+cap "comp018green_std_nand2_1/VDD" "PD_IN" 2.13512
+cap "comp018green_std_nand2_1/A" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.125989
+cap "comp018green_std_xor2_0/Z" "PD_IN" -0.0493557
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "PD_IN" 8.88178e-16
+cap "comp018green_std_xor2_0/Z" "VDD" 0.184687
+cap "VDD" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" -0.605117
+cap "comp018green_std_nand2_1/VDD" "PD_IN" 1.8567
+cap "comp018green_std_xor2_0/A" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 2.61097
+cap "VDD" "PD_IN" 450.361
+cap "VDD" "VSS" -5.13443
+cap "comp018green_std_nand2_1/VDD" "VDD" 56.6446
+cap "comp018green_std_xor2_0/A" "PD_IN" 1.36399
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "PD_IN" 4.32998
+cap "VDD" "comp018green_std_xor2_0/A" 0.273718
+cap "comp018green_std_nand2_1/VDD" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" 0.999968
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 0.0335362
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_1/D" "comp018green_std_nand2_1/A" 0.514912
+cap "PDB_OUT" "comp018green_std_nand2_0/A" 2.01852
+cap "VDD" "comp018green_std_nand2_0/A" 2.44217
+cap "comp018green_std_xor2_0/Z" "VDD" 0.704703
+cap "PDB_OUT" "PUB_OUT" 2.80822
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/a_1294_1142#" 0.125989
+cap "comp018green_std_nand2_1/VSS" "comp018green_std_nand2_1/VDD" -2.08582
+cap "comp018green_std_nand2_1/VDD" "comp018green_std_nand2_0/A" 303.913
+cap "comp018green_std_xor2_0/Z" "comp018green_std_nand2_1/VDD" 215.436
+cap "PUB_OUT" "comp018green_std_nand2_1/VDD" 0.281132
+cap "comp018green_std_xor2_0/Z" "comp018green_std_nand2_0/A" 37.8008
+cap "PUB_OUT" "comp018green_std_nand2_0/A" 59.9708
+cap "comp018green_std_xor2_0/Z" "PUB_OUT" 25.6978
+cap "VDD" "comp018green_std_nand2_1/VDD" 36.6807
+cap "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" "comp018green_std_nand2_0/A" 0.131373
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 0.0431653
+cap "PD_IN" "comp018green_std_nand2_0/A" 1.17142
+cap "comp018green_std_xor2_0/Z" "PD_IN" 30.6921
+cap "comp018green_std_nand2_0/A" "PD_IN" 3.40954
+cap "PUB_OUT" "PDB_OUT" 2.80822
+cap "comp018green_std_nand2_1/VDD" "PUB_OUT" -3.64129
+cap "PD_IN" "VDD" 2.25046
+cap "comp018green_std_nand2_1/VDD" "PDB_OUT" 1.08034
+cap "comp018green_std_nand2_1/VDD" "comp018green_std_nand2_1/VSS" -8.60905
+cap "comp018green_std_xor2_0/Z" "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_2/D" 0.0882073
+cap "comp018green_std_xor2_0/a_1294_1142#" "comp018green_std_xor2_0/Z" 0.514912
+cap "comp018green_std_xor2_0/Z" "PDB_OUT" 2.09797
+cap "comp018green_std_nand2_1/VDD" "comp018green_std_xor2_0/Z" 157.496
+cap "comp018green_std_nand2_0/A" "comp018green_std_nand2_1/VDD" 1.01071
+cap "PUB_OUT" "PD_IN" 2.24717
+cap "comp018green_std_nand2_1/VDD" "VDD" 63.1187
+cap "comp018green_std_xor2_0/Z" "VDD" 3.7399
+cap "PD_IN" "PDB_OUT" 96.8788
+cap "comp018green_std_nand2_1/VDD" "PD_IN" 300.849
+cap "comp018green_std_nand2_1/VDD" "comp018green_std_nand2_1/A" 12.2773
+cap "PUB_OUT" "comp018green_std_nand2_1/A" 48.5652
+cap "comp018green_std_nand2_0/nmos_6p0_CDNS_4066195314511_1/D" "comp018green_std_nand2_1/A" 14.0727
+cap "comp018green_std_nand2_1/VSS" "comp018green_std_nand2_1/A" 65.5218
+cap "comp018green_std_nand2_0/A" "PUB_OUT" 2.38988
+cap "comp018green_std_nand2_1/VSS" "comp018green_std_nand2_0/A" 14.8175
+cap "comp018green_std_nand2_0/A" "comp018green_std_nand2_1/A" 78.9068
+cap "PDB_OUT" "PUB_OUT" 2.16371
+cap "comp018green_std_nand2_1/VSS" "comp018green_std_nand2_1/VDD" -5.15294
+cap "comp018green_std_nand2_1/B" "PDB_OUT" 21.8213
+cap "comp018green_std_nand2_1/VSS" "comp018green_std_nand2_1/VDD" -18.3844
+cap "comp018green_std_nand2_1/A" "PUB_OUT" 91.5791
+cap "comp018green_std_nand2_1/VSS" "comp018green_std_nand2_1/B" 0.178104
+cap "comp018green_std_nand2_1/A" "PDB_OUT" 2.03387
+cap "PDB_OUT" "PUB_OUT" 5.8582
+cap "PUB_OUT" "comp018green_std_nand2_1/VDD" -9.6045
+cap "comp018green_std_nand2_1/A" "comp018green_std_nand2_1/VSS" 50.4887
+cap "comp018green_std_nand2_1/A" "comp018green_std_nand2_1/B" 1.18498
+cap "PDB_OUT" "comp018green_std_nand2_1/VDD" -0.151867
+merge "comp018green_std_xor2_0/pmos_6p0_CDNS_4066195314512_3/D" "comp018green_std_nand2_0/A" -749.699 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10488 -580 -10412 -578 0 0 0 0 0 0
+merge "comp018green_std_nand2_0/A" "M2_M1_CDNS_69033583165570_4/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_4/m1_n38_n90#" "comp018green_std_xor2_0/A"
+merge "comp018green_std_xor2_0/A" "M2_M1_CDNS_69033583165570_0/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_0/m1_n38_n90#" "m2_1314_n1221#"
+merge "comp018green_std_nand2_0/B" "comp018green_std_nand2_1/A" -1171.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -34344 -1396 -13680 -664 0 0 0 0 0 0
+merge "comp018green_std_nand2_1/A" "M2_M1_CDNS_69033583165570_3/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_3/m1_n38_n90#" "m1_1818_809#"
+merge "m1_1818_809#" "comp018green_std_xor2_0/Z"
+merge "comp018green_std_xor2_0/Z" "m2_1148_n1493#"
+merge "M2_M1_CDNS_69033583165570_2/VSUBS" "M2_M1_CDNS_69033583165570_3/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "M2_M1_CDNS_69033583165570_3/VSUBS" "M2_M1_CDNS_69033583165570_4/VSUBS"
+merge "M2_M1_CDNS_69033583165570_4/VSUBS" "comp018green_std_nand2_0/VSUBS"
+merge "comp018green_std_nand2_0/VSUBS" "comp018green_std_nand2_1/VSUBS"
+merge "comp018green_std_nand2_1/VSUBS" "comp018green_std_xor2_0/VSUBS"
+merge "comp018green_std_xor2_0/VSUBS" "M2_M1_CDNS_69033583165570_0/VSUBS"
+merge "M2_M1_CDNS_69033583165570_0/VSUBS" "M2_M1_CDNS_69033583165570_1/VSUBS"
+merge "M2_M1_CDNS_69033583165570_1/VSUBS" "VSUBS"
+merge "comp018green_std_nand2_1/B" "M2_M1_CDNS_69033583165570_2/m1_n38_n90#" -1091.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28572 -1302 -14668 -703 0 0 0 0 0 0
+merge "M2_M1_CDNS_69033583165570_2/m1_n38_n90#" "comp018green_std_xor2_0/B"
+merge "comp018green_std_xor2_0/B" "PD_IN"
+merge "PD_IN" "M2_M1_CDNS_69033583165570_1/m1_n38_n90#"
+merge "M2_M1_CDNS_69033583165570_1/m1_n38_n90#" "m2_2784_n553#"
+merge "m2_2784_n553#" "m1_2282_n2083#"
+merge "comp018green_std_nand2_0/pmos_6p0_CDNS_4066195314512_1/S" "comp018green_std_nand2_0/w_n83_1292#" -1523.82 -331264 -3100 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_std_nand2_0/w_n83_1292#" "comp018green_std_nand2_0/VDD"
+merge "comp018green_std_nand2_0/VDD" "comp018green_std_nand2_1/VDD"
+merge "comp018green_std_nand2_1/Z" "PDB_OUT" -19.9393 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "comp018green_std_xor2_0/VSS" "VSS" -10.8041 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "comp018green_std_xor2_0/VDD" "VDD" -329.681 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "comp018green_std_nand2_0/M1_PSUB_CDNS_69033583165609_1/a_n45_n515#" "comp018green_std_nand2_1/M1_PSUB_CDNS_69033583165609_0/a_n45_n515#" -477.014 0 0 0 0 0 0 -92700 -2240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68544 -2152 0 0 0 0 0 0 0 0
+merge "comp018green_std_nand2_1/M1_PSUB_CDNS_69033583165609_0/a_n45_n515#" "comp018green_std_nand2_0/VSS"
+merge "comp018green_std_nand2_0/VSS" "comp018green_std_nand2_1/VSS"
+merge "comp018green_std_nand2_0/Z" "PUB_OUT" -21.8973 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

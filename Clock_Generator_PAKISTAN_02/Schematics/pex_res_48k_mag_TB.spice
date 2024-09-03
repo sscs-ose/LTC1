@@ -1,0 +1,27 @@
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/pex_res_48k_mag_TB.sch
+**.subckt pex_res_48k_mag_TB
+x1 A B VDD pex_res_48k_mag
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+.include pex_res_48k_mag.spice
+va a 0 0
+vb b 0 0
+vvdd VDD 0 3.3
+
+.control
+save all
+dc va 0 3.3 0.01
+write pex_res_48k_mag_TB.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.end

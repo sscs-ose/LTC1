@@ -1,0 +1,109 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713185578
+<< checkpaint >>
+rect -2008 -2438 3070 2535
+<< nwell >>
+rect -1 360 1060 534
+rect 174 75 274 88
+rect 174 14 379 75
+rect 676 37 886 86
+<< psubdiff >>
+rect 335 -327 775 -305
+rect 335 -373 360 -327
+rect 406 -373 480 -327
+rect 526 -373 600 -327
+rect 646 -373 775 -327
+rect 335 -398 775 -373
+<< nsubdiff >>
+rect 206 465 896 494
+rect 206 419 289 465
+rect 805 419 896 465
+rect 206 393 896 419
+<< psubdiffcont >>
+rect 360 -373 406 -327
+rect 480 -373 526 -327
+rect 600 -373 646 -327
+<< nsubdiffcont >>
+rect 289 419 805 465
+<< polysilicon >>
+rect 174 80 274 88
+rect 121 75 274 80
+rect 378 75 478 88
+rect 786 86 886 87
+rect 582 77 886 86
+rect 121 62 478 75
+rect 121 16 148 62
+rect 194 16 478 62
+rect 121 14 478 16
+rect 121 -1 220 14
+rect 378 -42 478 14
+rect 550 58 886 77
+rect 550 12 577 58
+rect 623 37 886 58
+rect 623 12 682 37
+rect 550 -4 682 12
+rect 582 -42 682 -4
+<< polycontact >>
+rect 148 16 194 62
+rect 577 12 623 58
+<< metal1 >>
+rect -1 465 1060 535
+rect -1 419 289 465
+rect 805 419 1060 465
+rect -1 361 1060 419
+rect 98 360 145 361
+rect 506 360 553 361
+rect 913 360 961 361
+rect 99 131 145 360
+rect 121 66 220 80
+rect -8 62 220 66
+rect -8 16 148 62
+rect 194 16 220 62
+rect -8 13 220 16
+rect 121 -1 220 13
+rect 303 59 349 228
+rect 507 132 553 360
+rect 711 86 757 229
+rect 914 134 961 360
+rect 550 59 649 77
+rect 303 58 649 59
+rect 303 12 577 58
+rect 623 12 649 58
+rect 303 10 649 12
+rect 303 -183 349 10
+rect 550 -4 649 10
+rect 711 37 1070 86
+rect 507 -265 553 -88
+rect 711 -184 757 37
+rect 91 -327 1061 -265
+rect 91 -373 360 -327
+rect 406 -373 480 -327
+rect 526 -373 600 -327
+rect 646 -373 1061 -327
+rect 91 -438 1061 -373
+use nmos_3p3_MGEA4B  nmos_3p3_MGEA4B_0
+timestamp 1713185578
+transform 1 0 428 0 1 -136
+box -162 -118 162 118
+use nmos_3p3_MGEA4B  nmos_3p3_MGEA4B_1
+timestamp 1713185578
+transform 1 0 632 0 1 -136
+box -162 -118 162 118
+use pmos_3p3_KG2TLV  pmos_3p3_KG2TLV_0
+timestamp 1713185578
+transform 1 0 326 0 1 180
+box -326 -180 326 180
+use pmos_3p3_KG2TLV  pmos_3p3_KG2TLV_1
+timestamp 1713185578
+transform 1 0 734 0 1 180
+box -326 -180 326 180
+<< labels >>
+flabel nsubdiffcont 550 442 550 442 0 FreeSans 500 0 0 0 VDD
+flabel psubdiffcont 502 -351 502 -351 0 FreeSans 750 0 0 0 VSS
+flabel metal1 s -6 38 -6 38 0 FreeSans 500 0 0 0 IN
+port 1 nsew
+flabel metal1 s 1066 58 1066 58 0 FreeSans 500 0 0 0 out
+port 2 nsew
+<< end >>

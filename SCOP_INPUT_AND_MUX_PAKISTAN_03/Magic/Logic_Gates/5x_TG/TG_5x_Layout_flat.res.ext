@@ -1,0 +1,206 @@
+scale 1000 1 0.5
+killnode "VDD"
+rnode "VDD.n0" 0 0 123 637 0
+rnode "VDD.t4" 0 0 1130 637 0
+rnode "VDD.t6" 0 0 970 637 0
+rnode "VDD.t3" 0 0 810 637 0
+rnode "VDD.t5" 0 0 650 637 0
+rnode "VDD.t7" 0 0 490 637 0
+rnode "VDD.n1" 0 0 236 884 0
+rnode "VDD.n2" 0 0 236 884 0
+rnode "VDD.n3" 0 0 175 828 0
+rnode "VDD.n4" 0 0 142 884 0
+rnode "VDD.n5" 0 0 142 884 0
+rnode "VDD.n6" 0 0 142 884 0
+rnode "VDD.t0" 0 0 95 637 0
+rnode "VDD.n7" 0 0 48 884 0
+rnode "Inverter_Layout_0.VDD" 0 0 95 887 0
+resist "VDD.n6" "VDD.n3" 0.0265179
+resist "Inverter_Layout_0.VDD" "VDD.n6" 0.0377679
+resist "Inverter_Layout_0.VDD" "VDD.n7" 2.46165
+resist "VDD.n5" "VDD.n4" 3.15
+resist "VDD.n6" "VDD.n5" 3.15
+resist "VDD.n2" "VDD.n1" 3.15
+resist "VDD.n3" "VDD.n2" 3.19902
+resist "VDD.n3" "VDD.n0" 4.7937
+resist "VDD.n7" "VDD.t0" 89.1459
+resist "VDD.t7" "VDD.t5" 293.04
+resist "VDD.t5" "VDD.t3" 293.04
+resist "VDD.t3" "VDD.t6" 293.04
+resist "VDD.t6" "VDD.t4" 293.04
+resist "VDD.n1" "VDD.t7" 465.201
+rnode "Inverter_Layout_0.OUT" 0 0 -44 470 0
+rnode "Inverter_Layout_0.OUT.t1" 0 0 67 215 0
+rnode "Inverter_Layout_0.OUT.t4" 0 0 650 637 0
+rnode "Inverter_Layout_0.OUT.t6" 0 0 810 637 0
+rnode "Inverter_Layout_0.OUT.t3" 0 0 970 637 0
+rnode "Inverter_Layout_0.OUT.t5" 0 0 1130 637 0
+rnode "Inverter_Layout_0.OUT.n0" 0 0 970 737 0
+rnode "Inverter_Layout_0.OUT.n1" 0 0 810 737 0
+rnode "Inverter_Layout_0.OUT.n2" 0 0 650 737 0
+rnode "Inverter_Layout_0.OUT.t2" 0 0 490 637 0
+rnode "Inverter_Layout_0.OUT.t0" 0 0 67 637 0
+resist "Inverter_Layout_0.OUT" "Inverter_Layout_0.OUT.t0" 4.70174
+resist "Inverter_Layout_0.OUT" "Inverter_Layout_0.OUT.t1" 6.87991
+resist "Inverter_Layout_0.OUT.n2" "Inverter_Layout_0.OUT.t4" 13.0357
+resist "Inverter_Layout_0.OUT.n1" "Inverter_Layout_0.OUT.t6" 13.0357
+resist "Inverter_Layout_0.OUT.n0" "Inverter_Layout_0.OUT.t3" 13.0357
+resist "Inverter_Layout_0.OUT.n2" "Inverter_Layout_0.OUT.n1" 23.642
+resist "Inverter_Layout_0.OUT.n1" "Inverter_Layout_0.OUT.n0" 23.642
+resist "Inverter_Layout_0.OUT.t2" "Inverter_Layout_0.OUT.n2" 38.959
+resist "Inverter_Layout_0.OUT.n0" "Inverter_Layout_0.OUT.t5" 38.959
+resist "Inverter_Layout_0.OUT" "Inverter_Layout_0.OUT.t2" 51.1316
+killnode "VSS"
+rnode "VSS.n0" 0 0 123 215 0
+rnode "VSS.t1" 0 0 1290 215 0
+rnode "VSS.t3" 0 0 1130 215 0
+rnode "VSS.t8" 0 0 970 215 0
+rnode "VSS.t2" 0 0 810 215 0
+rnode "VSS.t7" 0 0 650 215 0
+rnode "VSS.t0" 0 0 490 215 0
+rnode "VSS.n1" 0 0 189 29 0
+rnode "VSS.n2" 0 0 189 29 0
+rnode "VSS.n3" 0 0 175 85 0
+rnode "VSS.t4" 0 0 95 215 0
+rnode "VSS.n4" 0 0 95 215 0
+rnode "VSS.n5" 0 0 95 29 0
+rnode "Inverter_Layout_0.VSS" 0 0 95 29 0
+resist "VSS.n5" "VSS.n4" 0.0335817
+resist "Inverter_Layout_0.VSS" "VSS.n3" 0.0642857
+resist "VSS.n4" "VSS.t4" 2.55801
+resist "VSS.n2" "VSS.n1" 2.6
+resist "Inverter_Layout_0.VSS" "VSS.n5" 2.6
+resist "VSS.n3" "VSS.n2" 2.61125
+resist "VSS.n3" "VSS.n0" 6.68035
+resist "VSS.t0" "VSS.t7" 1198.16
+resist "VSS.t7" "VSS.t2" 1198.16
+resist "VSS.t2" "VSS.t8" 1198.16
+resist "VSS.t8" "VSS.t3" 1198.16
+resist "VSS.t3" "VSS.t1" 1198.16
+resist "VSS.n1" "VSS.t0" 2254.03
+rnode "VOUT.n0" 0 0 1318 215 0
+rnode "VOUT.t7" 0 0 1102 215 0
+rnode "VOUT.n1" 0 0 998 215 0
+rnode "VOUT.n2" 0 0 1050 215 0
+rnode "VOUT.t6" 0 0 782 215 0
+rnode "VOUT.n3" 0 0 678 215 0
+rnode "VOUT.n4" 0 0 730 215 0
+rnode "VOUT.t3" 0 0 782 637 0
+rnode "VOUT.n5" 0 0 678 637 0
+rnode "VOUT.n6" 0 0 730 637 0
+rnode "VOUT.t10" 0 0 1102 637 0
+rnode "VOUT.n7" 0 0 998 637 0
+rnode "VOUT.n8" 0 0 1050 637 0
+rnode "VOUT.n9" 0 0 730 781 0
+rnode "VOUT.t1" 0 0 462 637 0
+rnode "VOUT.n10" 0 0 410 637 0
+rnode "VOUT.t4" 0 0 462 215 0
+rnode "VOUT.n11" 0 0 410 215 0
+rnode "VOUT.n12" 0 0 730 121 0
+rnode "VOUT.n13" 0 0 1050 121 0
+rnode "VOUT.n14" 0 0 1370 215 0
+rnode "VOUT" 0 0 1436 326 0
+resist "VOUT" "VOUT.n14" 0.303261
+resist "VOUT.n13" "VOUT.n12" 0.626087
+resist "VOUT.n14" "VOUT.n13" 0.81
+resist "VOUT.n12" "VOUT.n11" 0.81
+resist "VOUT.n11" "VOUT.n10" 0.825652
+resist "VOUT.n10" "VOUT.n9" 0.907826
+resist "VOUT.n8" "VOUT.n7" 1.82
+resist "VOUT.n8" "VOUT.t10" 1.82
+resist "VOUT.n6" "VOUT.n5" 1.82
+resist "VOUT.n6" "VOUT.t3" 1.82
+resist "VOUT.n9" "VOUT.n6" 2.88174
+resist "VOUT.n4" "VOUT.n3" 3.276
+resist "VOUT.n4" "VOUT.t6" 3.276
+resist "VOUT.n2" "VOUT.n1" 3.276
+resist "VOUT.n2" "VOUT.t7" 3.276
+resist "VOUT.n12" "VOUT.n4" 3.33391
+resist "VOUT.n13" "VOUT.n2" 3.33391
+resist "VOUT.n9" "VOUT.n8" 3.50783
+resist "VOUT.n10" "VOUT.t1" 4.42
+resist "VOUT.n11" "VOUT.t4" 6.426
+resist "VOUT.n14" "VOUT.n0" 6.426
+rnode "VIN.n0" 0 0 1158 637 0
+rnode "VIN.t7" 0 0 1262 215 0
+rnode "VIN.n1" 0 0 1158 215 0
+rnode "VIN.n2" 0 0 1210 215 0
+rnode "VIN.t9" 0 0 942 215 0
+rnode "VIN.n3" 0 0 838 215 0
+rnode "VIN.n4" 0 0 890 215 0
+rnode "VIN.t8" 0 0 622 215 0
+rnode "VIN.n5" 0 0 518 215 0
+rnode "VIN.n6" 0 0 570 215 0
+rnode "VIN.n7" 0 0 890 309 0
+rnode "VIN.n8" 0 0 1210 355 0
+rnode "VIN.t0" 0 0 942 637 0
+rnode "VIN.n9" 0 0 838 637 0
+rnode "VIN.n10" 0 0 890 637 0
+rnode "VIN.t2" 0 0 622 637 0
+rnode "VIN.n11" 0 0 518 637 0
+rnode "VIN.n12" 0 0 570 637 0
+rnode "VIN.n13" 0 0 890 493 0
+rnode "VIN.n14" 0 0 1210 493 0
+rnode "VIN" 0 0 1296 470 0
+resist "VIN" "VIN.n14" 0.168261
+resist "VIN.n14" "VIN.n8" 0.18
+resist "VIN.n14" "VIN.n13" 0.626087
+resist "VIN.n8" "VIN.n7" 0.626087
+resist "VIN.n12" "VIN.n11" 1.82
+resist "VIN.n12" "VIN.t2" 1.82
+resist "VIN.n10" "VIN.n9" 1.82
+resist "VIN.n10" "VIN.t0" 1.82
+resist "VIN.n13" "VIN.n10" 2.88174
+resist "VIN.n4" "VIN.n3" 3.276
+resist "VIN.n4" "VIN.t9" 3.276
+resist "VIN.n6" "VIN.n5" 3.276
+resist "VIN.n6" "VIN.t8" 3.276
+resist "VIN.n2" "VIN.n1" 3.276
+resist "VIN.n2" "VIN.t7" 3.276
+resist "VIN.n7" "VIN.n4" 3.33391
+resist "VIN.n8" "VIN.n2" 3.33391
+resist "VIN.n13" "VIN.n12" 3.50783
+resist "VIN.n7" "VIN.n6" 3.96
+resist "VIN.n14" "VIN.n0" 4.70174
+rnode "CLK.t1" 0 0 650 215 0
+rnode "CLK.t4" 0 0 810 215 0
+rnode "CLK.t0" 0 0 970 215 0
+rnode "CLK.t3" 0 0 1130 215 0
+rnode "CLK.t5" 0 0 1290 215 0
+rnode "CLK.n0" 0 0 1130 165 0
+rnode "CLK.n1" 0 0 970 165 0
+rnode "CLK.n2" 0 0 810 165 0
+rnode "CLK.n3" 0 0 650 165 0
+rnode "CLK.t7" 0 0 490 215 0
+rnode "CLK.t6" 0 0 95 637 0
+rnode "CLK.t2" 0 0 95 215 0
+rnode "CLK.n4" 0 0 95 371 0
+rnode "CLK" 0 0 207 343 0
+rnode "Inverter_Layout_0.IN" 0 0 275 343 0
+resist "Inverter_Layout_0.IN" "CLK" 4.11152
+resist "CLK.n3" "CLK.t1" 6.51786
+resist "CLK.n2" "CLK.t4" 6.51786
+resist "CLK.n1" "CLK.t0" 6.51786
+resist "CLK.n0" "CLK.t3" 6.51786
+resist "CLK.n4" "CLK.t2" 13.0357
+resist "CLK" "CLK.n4" 13.5571
+resist "CLK.n3" "CLK.n2" 23.642
+resist "CLK.n2" "CLK.n1" 23.642
+resist "CLK.n1" "CLK.n0" 23.642
+resist "CLK.t7" "CLK.n3" 32.4412
+resist "CLK.n0" "CLK.t5" 32.4412
+resist "CLK.n4" "CLK.t6" 34.675
+resist "CLK" "CLK.t7" 48.8839
+device msubckt nfet_03v3 462 165 463 166  "VSS.t0" "CLK.t7" 112 0 "VOUT.t4" 100 8800,376 "VIN" 100 5200,204
+device msubckt pfet_03v3 782 537 783 538  "VDD.t3" "Inverter_Layout_0.OUT.t6" 112 0 "VOUT.t3" 200 10400,304 "VIN" 200 10400,304
+device msubckt pfet_03v3 1102 537 1103 538  "VDD.t4" "Inverter_Layout_0.OUT.t5" 112 0 "VOUT.t10" 200 10400,304 "VIN" 200 17600,576
+device msubckt pfet_03v3 622 537 623 538  "VDD.t5" "Inverter_Layout_0.OUT.t4" 112 0 "VIN.t2" 200 10400,304 "VOUT" 200 10400,304
+device msubckt pfet_03v3 67 537 68 538  "VDD.t0" "CLK.t6" 112 0 "Inverter_Layout_0.OUT.t0" 200 17600,576 "VDD" 200 17600,576
+device msubckt nfet_03v3 1262 165 1263 166  "VSS.t1" "CLK.t5" 112 0 "VIN.t7" 100 5200,204 "VOUT" 100 8800,376
+device msubckt nfet_03v3 782 165 783 166  "VSS.t2" "CLK.t4" 112 0 "VOUT.t6" 100 5200,204 "VIN" 100 5200,204
+device msubckt nfet_03v3 1102 165 1103 166  "VSS.t3" "CLK.t3" 112 0 "VOUT.t7" 100 5200,204 "VIN" 100 5200,204
+device msubckt nfet_03v3 67 165 68 166  "VSS.t4" "CLK.t2" 112 0 "Inverter_Layout_0.OUT.t1" 100 8800,376 "VSS" 100 8800,376
+device msubckt nfet_03v3 622 165 623 166  "VSS.t7" "CLK.t1" 112 0 "VIN.t8" 100 5200,204 "VOUT" 100 5200,204
+device msubckt pfet_03v3 942 537 943 538  "VDD.t6" "Inverter_Layout_0.OUT.t3" 112 0 "VIN.t0" 200 10400,304 "VOUT" 200 10400,304
+device msubckt pfet_03v3 462 537 463 538  "VDD.t7" "Inverter_Layout_0.OUT.t2" 112 0 "VOUT.t1" 200 17600,576 "VIN" 200 10400,304
+device msubckt nfet_03v3 942 165 943 166  "VSS.t8" "CLK.t0" 112 0 "VIN.t9" 100 5200,204 "VOUT" 100 5200,204

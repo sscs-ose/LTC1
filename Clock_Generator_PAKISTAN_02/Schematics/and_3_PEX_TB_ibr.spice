@@ -1,0 +1,38 @@
+** sch_path: /home/shahid/GF180Projects/Decoder_3x8/Xschem/and_3_PEX_TB.sym
+**.subckt and_3_PEX_TB
+V6 VDD VSS 3.3
+.save i(v6)
+V7 VSS GND 0
+.save i(v7)
+V8 IN1 VSS pulse(0 3.3 0 100p 100p 100n 200n)
+.save i(v8)
+V9 IN2 VSS pulse(0 3.3 0 100p 100p 200n 400n)
+.save i(v9)
+V10 IN3 VSS pulse(0 3.3 0 100p 100p 400n 800n)
+.save i(v10)
+x1 IN1 VSS VDD OUT IN3 IN2 and_3_PEX
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+.include pex_and_3.spice
+.control
+save all
+tran 50p 1u
+plot v(IN1)
+plot V(IN2)
+plot V(IN3)
+plot v(OUT)
+
+
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

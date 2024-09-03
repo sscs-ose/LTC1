@@ -1,0 +1,102 @@
+timestamp 1692806021
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use nmos_3p3_VGTVWA nmos_3p3_VGTVWA_0 1 0 300 0 1 90
+use nmos_3p3_VGTVWA nmos_3p3_VGTVWA_1 1 0 140 0 1 90
+use nmos_3p3_VGTVWA nmos_3p3_VGTVWA_2 1 0 460 0 1 90
+use GF_INV_MAG GF_INV_MAG_0 1 0 780 0 1 173
+use pmos_3p3_M8SWPS pmos_3p3_M8SWPS_0 1 0 460 0 1 545
+use pmos_3p3_M8SWPS pmos_3p3_M8SWPS_1 1 0 140 0 1 545
+use pmos_3p3_M8SWPS pmos_3p3_M8SWPS_2 1 0 300 0 1 545
+port "IN1" 11 529 390 529 390 m1
+port "IN3" 8 24 302 24 302 m1
+port "IN2" 9 375 388 375 388 m1
+port "VDD" 3 196 756 196 756 nsc
+port "VSS" 4 200 -126 200 -126 psc
+node "m1_186_470#" 2 414.461 186 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77135 2816 0 0 0 0 0 0 0 0
+node "IN1" 32 178.608 529 390 m1 0 0 0 0 0 0 0 0 0 0 0 0 15792 646 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5757 316 0 0 0 0 0 0 0 0
+node "IN3" 32 252.252 24 302 m1 0 0 0 0 0 0 0 0 0 0 0 0 15854 648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8971 428 0 0 0 0 0 0 0 0
+node "IN2" 33 158.931 375 388 m1 0 0 0 0 0 0 0 0 0 0 0 0 15757 648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5723 314 0 0 0 0 0 0 0 0
+node "w_436_365#" 12562 2.049 436 365 nw 683 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_485_364#" 1482 7.362 485 364 nw 2454 202 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_386_361#" 28500 0.342 386 361 nw 114 118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_345_366#" 5667 1.377 345 366 nw 459 120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_295_365#" 5889 1.431 295 365 nw 477 124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 5052 740.768 196 756 nsc 119624 1860 0 0 41064 940 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 131864 2752 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 200 -126 psc 0 0 0 0 0 0 29564 930 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103410 2426 0 0 0 0 0 0 0 0
+cap "IN1" "w_485_364#" 6.78886
+cap "w_295_365#" "IN2" 1.31974
+cap "VDD" "IN2" 44.7464
+cap "IN3" "IN2" 25.8357
+cap "IN2" "w_386_361#" 0.279417
+cap "IN1" "IN2" 94.7272
+cap "IN2" "w_345_366#" 1.26994
+cap "IN3" "VDD" 31.1301
+cap "IN1" "VDD" 14.802
+cap "IN3" "IN1" 0.129794
+cap "IN1" "w_386_361#" 0.163202
+cap "m1_186_470#" "IN2" 195.531
+cap "IN1" "w_436_365#" 1.88969
+cap "m1_186_470#" "VDD" 242.032
+cap "IN3" "m1_186_470#" 84.3071
+cap "IN1" "m1_186_470#" 223.382
+cap "GF_INV_MAG_0/VDD" "nmos_3p3_VGTVWA_0/a_n116_n66#" 0.221293
+cap "nmos_3p3_VGTVWA_0/a_28_n66#" "nmos_3p3_VGTVWA_2/a_28_n66#" 21.1258
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_1/a_n28_n110#" 16.229
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_2/a_n28_n110#" 9.17354
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_2/a_28_n66#" 45.2732
+cap "nmos_3p3_VGTVWA_0/a_n28_n110#" "nmos_3p3_VGTVWA_0/a_28_n66#" 0.16446
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "GF_INV_MAG_0/VDD" 2.62669
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_0/a_n28_n110#" 7.76876
+cap "nmos_3p3_VGTVWA_1/a_n28_n110#" "nmos_3p3_VGTVWA_2/a_28_n66#" 5.60042
+cap "nmos_3p3_VGTVWA_2/a_n28_n110#" "nmos_3p3_VGTVWA_2/a_28_n66#" 29.758
+cap "nmos_3p3_VGTVWA_1/a_n28_n110#" "GF_INV_MAG_0/VDD" 67.3574
+cap "nmos_3p3_VGTVWA_1/a_n28_n110#" "nmos_3p3_VGTVWA_0/a_n28_n110#" 20.7792
+cap "nmos_3p3_VGTVWA_2/a_n28_n110#" "GF_INV_MAG_0/VDD" 64.0199
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_0/a_n116_n66#" 25.8716
+cap "nmos_3p3_VGTVWA_2/a_n28_n110#" "GF_INV_MAG_0/OUT" 0.133729
+cap "nmos_3p3_VGTVWA_2/a_n28_n110#" "nmos_3p3_VGTVWA_0/a_n28_n110#" 20.0709
+cap "GF_INV_MAG_0/VDD" "nmos_3p3_VGTVWA_2/a_28_n66#" 32.4826
+cap "GF_INV_MAG_0/OUT" "nmos_3p3_VGTVWA_2/a_28_n66#" 22.654
+cap "nmos_3p3_VGTVWA_0/a_n28_n110#" "nmos_3p3_VGTVWA_2/a_28_n66#" 13.2122
+cap "nmos_3p3_VGTVWA_1/a_n28_n110#" "nmos_3p3_VGTVWA_0/a_n116_n66#" 1.11022e-16
+cap "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_0/a_28_n66#" 22.2702
+cap "GF_INV_MAG_0/VDD" "GF_INV_MAG_0/OUT" 0.581121
+cap "nmos_3p3_VGTVWA_0/a_n28_n110#" "GF_INV_MAG_0/VDD" 64.2484
+cap "nmos_3p3_VGTVWA_0/a_n116_n66#" "nmos_3p3_VGTVWA_2/a_28_n66#" 20.2033
+merge "pmos_3p3_M8SWPS_2/VSUBS" "pmos_3p3_M8SWPS_1/VSUBS" -155.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6180 -472 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8SWPS_1/VSUBS" "pmos_3p3_M8SWPS_0/VSUBS"
+merge "pmos_3p3_M8SWPS_0/VSUBS" "GF_INV_MAG_0/VSS"
+merge "GF_INV_MAG_0/VSS" "nmos_3p3_VGTVWA_2/VSUBS"
+merge "nmos_3p3_VGTVWA_2/VSUBS" "nmos_3p3_VGTVWA_1/VSUBS"
+merge "nmos_3p3_VGTVWA_1/VSUBS" "nmos_3p3_VGTVWA_1/a_n116_n66#"
+merge "nmos_3p3_VGTVWA_1/a_n116_n66#" "nmos_3p3_VGTVWA_0/VSUBS"
+merge "nmos_3p3_VGTVWA_0/VSUBS" "VSS"
+merge "pmos_3p3_M8SWPS_2/a_n28_n124#" "nmos_3p3_VGTVWA_0/a_n28_n110#" -146.834 0 0 0 0 0 0 0 0 0 0 0 0 -234 -236 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VGTVWA_0/a_n28_n110#" "IN2"
+merge "pmos_3p3_M8SWPS_2/a_28_n80#" "pmos_3p3_M8SWPS_2/w_n202_n210#" -1177.13 -259775 -5998 0 0 0 0 -11520 -464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23056 -1430 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8SWPS_2/w_n202_n210#" "pmos_3p3_M8SWPS_1/a_n116_n80#"
+merge "pmos_3p3_M8SWPS_1/a_n116_n80#" "pmos_3p3_M8SWPS_1/w_n202_n210#"
+merge "pmos_3p3_M8SWPS_1/w_n202_n210#" "pmos_3p3_M8SWPS_0/a_n116_n80#"
+merge "pmos_3p3_M8SWPS_0/a_n116_n80#" "pmos_3p3_M8SWPS_0/w_n202_n210#"
+merge "pmos_3p3_M8SWPS_0/w_n202_n210#" "w_436_365#"
+merge "w_436_365#" "w_485_364#"
+merge "w_485_364#" "w_386_361#"
+merge "w_386_361#" "w_345_366#"
+merge "w_345_366#" "w_295_365#"
+merge "w_295_365#" "GF_INV_MAG_0/VDD"
+merge "GF_INV_MAG_0/VDD" "VDD"
+merge "pmos_3p3_M8SWPS_2/a_n116_n80#" "pmos_3p3_M8SWPS_1/a_28_n80#" -453.318 0 0 0 0 0 0 -11520 -464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25007 -1584 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8SWPS_1/a_28_n80#" "pmos_3p3_M8SWPS_0/a_28_n80#"
+merge "pmos_3p3_M8SWPS_0/a_28_n80#" "GF_INV_MAG_0/IN"
+merge "GF_INV_MAG_0/IN" "nmos_3p3_VGTVWA_2/a_28_n66#"
+merge "nmos_3p3_VGTVWA_2/a_28_n66#" "m1_186_470#"
+merge "nmos_3p3_VGTVWA_2/a_n116_n66#" "nmos_3p3_VGTVWA_0/a_28_n66#" -82.9313 0 0 0 0 -9504 -408 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5888 -348 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VGTVWA_1/a_28_n66#" "nmos_3p3_VGTVWA_0/a_n116_n66#" -83.1074 0 0 0 0 -9504 -408 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5888 -348 0 0 0 0 0 0 0 0
+merge "pmos_3p3_M8SWPS_1/a_n28_n124#" "nmos_3p3_VGTVWA_1/a_n28_n110#" -130.862 0 0 0 0 0 0 0 0 0 0 0 0 0 -216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VGTVWA_1/a_n28_n110#" "IN3"
+merge "pmos_3p3_M8SWPS_0/a_n28_n124#" "nmos_3p3_VGTVWA_2/a_n28_n110#" -146.853 0 0 0 0 0 0 0 0 0 0 0 0 -336 -236 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3p3_VGTVWA_2/a_n28_n110#" "IN1"

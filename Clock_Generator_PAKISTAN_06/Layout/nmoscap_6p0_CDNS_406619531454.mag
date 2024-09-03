@@ -1,0 +1,60 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713338890
+<< checkpaint >>
+rect -2218 -2350 4218 7092
+<< pwell >>
+rect -88 0 2088 5000
+<< mvndiff >>
+rect -88 4920 0 5000
+rect -88 80 -75 4920
+rect -29 80 0 4920
+rect -88 0 0 80
+rect 2000 4920 2088 5000
+rect 2000 80 2029 4920
+rect 2075 80 2088 4920
+rect 2000 0 2088 80
+<< mvndiffc >>
+rect -75 80 -29 4920
+rect 2029 80 2075 4920
+<< mvnmoscap >>
+rect 0 0 2000 5000
+<< polysilicon >>
+rect 0 5079 2000 5092
+rect 0 5033 84 5079
+rect 1916 5033 2000 5079
+rect 0 5000 2000 5033
+rect 0 -33 2000 0
+rect 0 -79 84 -33
+rect 1916 -79 2000 -33
+rect 0 -92 2000 -79
+<< polycontact >>
+rect 84 5033 1916 5079
+rect 84 -79 1916 -33
+<< metal1 >>
+rect 42 5079 1958 5090
+rect 42 5033 84 5079
+rect 1916 5033 1958 5079
+rect 42 5022 1958 5033
+rect -218 4920 -18 5000
+rect -218 80 -75 4920
+rect -29 80 -18 4920
+rect -218 -150 -18 80
+rect 500 -22 1500 5022
+rect 2018 4920 2218 5000
+rect 2018 80 2029 4920
+rect 2075 80 2218 4920
+rect 42 -33 1958 -22
+rect 42 -79 84 -33
+rect 1916 -79 1958 -33
+rect 42 -90 1958 -79
+rect 2018 -150 2218 80
+rect -218 -350 2218 -150
+<< labels >>
+rlabel metal1 1000 -250 1000 -250 4 D
+rlabel metal1 2118 2325 2118 2325 4 D
+rlabel metal1 -118 2325 -118 2325 4 D
+rlabel polycontact 1000 5056 1000 5056 4 G
+rlabel polycontact 1000 -56 1000 -56 4 G
+<< end >>

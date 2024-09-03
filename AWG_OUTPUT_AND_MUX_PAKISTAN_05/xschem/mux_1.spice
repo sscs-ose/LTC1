@@ -1,0 +1,115 @@
+** sch_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/mux_1.sch
+**.subckt mux_1 VDD VSS A0 A1 A2 A3 A4 A5 A6 A7 S0 S1 S2 Vout ENA
+*.iopin VDD
+*.iopin VSS
+*.iopin A0
+*.iopin A1
+*.iopin A2
+*.iopin A3
+*.iopin A4
+*.iopin A5
+*.iopin A6
+*.iopin A7
+*.ipin S0
+*.ipin S1
+*.ipin S2
+*.iopin Vout
+*.ipin ENA
+x1 VSS VDD S0B S0 GF_INV
+x3 VSS VDD S1B S1 GF_INV
+x4 VSS VDD S2B S2 GF_INV
+x2 VDD net2 S0B net1 VSS TGate
+x5 VDD net2 S0 net3 VSS TGate
+x6 VDD net5 S0B net4 VSS TGate
+x7 VDD net5 S0 net6 VSS TGate
+x8 VDD net8 S0B net7 VSS TGate
+x9 VDD net8 S0 net9 VSS TGate
+x10 VDD net11 S0B net10 VSS TGate
+x11 VDD net11 S0 net12 VSS TGate
+x12 VDD net14 S1B net2 VSS TGate
+x13 VDD net14 S1 net5 VSS TGate
+x14 VDD net13 S1B net8 VSS TGate
+x15 VDD net13 S1 net11 VSS TGate
+x16 VDD Vout S2B net14 VSS TGate
+x17 VDD Vout S2 net13 VSS TGate
+x18 VDD ENA net1 A0 VSS TG_GATE_SWITCH
+x19 VDD ENA net3 A4 VSS TG_GATE_SWITCH
+x20 VDD ENA net4 A2 VSS TG_GATE_SWITCH
+x21 VDD ENA net6 A6 VSS TG_GATE_SWITCH
+x22 VDD ENA net7 A1 VSS TG_GATE_SWITCH
+x23 VDD ENA net9 A5 VSS TG_GATE_SWITCH
+x24 VDD ENA net10 A3 VSS TG_GATE_SWITCH
+x25 VDD ENA net12 A7 VSS TG_GATE_SWITCH
+**.ends
+
+* expanding   symbol:  GF_INV.sym # of pins=4
+** sym_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/GF_INV.sym
+** sch_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/GF_INV.sch
+.subckt GF_INV VSS VDD OUT IN
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  TGate.sym # of pins=5
+** sym_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/TGate.sym
+** sch_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/TGate.sch
+.subckt TGate VDD B CLK A VSS
+*.iopin VDD
+*.iopin VSS
+*.opin B
+*.ipin CLK
+*.ipin A
+XM4 CLKB CLK VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 CLKB CLK VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 B CLK A VSS nfet_03v3 L=0.28u W=12u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 B CLKB A VDD pfet_03v3 L=0.28u W=24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  TG_GATE_SWITCH.sym # of pins=5
+** sym_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/TG_GATE_SWITCH.sym
+** sch_path: /home/shahid/Videos/AWG_MUX/mux/1x8_MUX/xschem/TG_GATE_SWITCH.sch
+.subckt TG_GATE_SWITCH VDD CLK B A VSS
+*.iopin VDD
+*.iopin VSS
+*.opin B
+*.ipin CLK
+*.ipin A
+XM4 CLKB CLK1 VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 CLKB CLK1 VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 B CLK1 A VSS nfet_03v3 L=0.28u W=12u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM2 B CLKB A VDD pfet_03v3 L=0.28u W=24u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM3 CLK1 CLK VSS VSS nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 CLK1 CLK VDD VDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

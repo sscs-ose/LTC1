@@ -1,0 +1,36 @@
+* NGSPICE file created from AND_3_magic.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MGRCNG a_n204_n36# a_56_n69# a_112_n25# a_n112_n69# w_n290_n161#
++ a_n56_n25#
+X0 a_n56_n25# a_n112_n69# a_n204_n36# w_n290_n161# pfet_03v3 ad=89.8f pd=0.92u as=0.155p ps=1.64u w=0.25u l=0.28u
+X1 a_112_n25# a_56_n69# a_n56_n25# w_n290_n161# pfet_03v3 ad=0.155p pd=1.64u as=89.8f ps=0.92u w=0.25u l=0.28u
+.ends
+
+.subckt nmos_3p3_H9QVWA a_n120_n36# a_28_n25# a_n28_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n120_n36# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt pmos_3p3_M8RCNG a_n120_n36# w_n206_n161# a_28_n25# a_n28_n69#
+X0 a_28_n25# a_n28_n69# a_n120_n36# w_n206_n161# pfet_03v3 ad=0.155p pd=1.64u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt nmos_3p3_F9QVWA a_140_n69# a_28_n25# a_n28_n69# a_n140_n25# a_n288_n36# a_196_n25#
++ a_n196_n69# VSUBS
+X0 a_28_n25# a_n28_n69# a_n140_n25# VSUBS nfet_03v3 ad=89.8f pd=0.92u as=89.8f ps=0.92u w=0.25u l=0.28u
+X1 a_196_n25# a_140_n69# a_28_n25# VSUBS nfet_03v3 ad=0.155p pd=1.64u as=89.8f ps=0.92u w=0.25u l=0.28u
+X2 a_n140_n25# a_n196_n69# a_n288_n36# VSUBS nfet_03v3 ad=89.8f pd=0.92u as=0.155p ps=1.64u w=0.25u l=0.28u
+.ends
+
+.subckt AND_3_magic B C OUT VDD VSS A
+Xpmos_3p3_MGRCNG_0 VDD A VDD A VDD a_1469_n10# pmos_3p3_MGRCNG
+Xpmos_3p3_MGRCNG_1 VDD a_1469_n10# VDD a_1469_n10# VDD OUT pmos_3p3_MGRCNG
+Xnmos_3p3_H9QVWA_0 VSS OUT a_1469_n10# VSS nmos_3p3_H9QVWA
+Xpmos_3p3_MGRCNG_2 VDD B VDD B VDD a_1469_n10# pmos_3p3_MGRCNG
+Xpmos_3p3_MGRCNG_4 VDD C VDD C VDD a_1469_n10# pmos_3p3_MGRCNG
+Xpmos_3p3_M8RCNG_0 VDD VDD VDD VDD pmos_3p3_M8RCNG
+Xpmos_3p3_M8RCNG_1 VDD VDD VDD VDD pmos_3p3_M8RCNG
+Xnmos_3p3_F9QVWA_0 B m1_603_n148# B m1_771_n286# m1_603_n148# m1_771_n286# B VSS nmos_3p3_F9QVWA
+Xnmos_3p3_F9QVWA_2 C m1_771_n286# C VSS m1_771_n286# VSS C VSS nmos_3p3_F9QVWA
+Xnmos_3p3_F9QVWA_1 A a_1469_n10# A m1_603_n148# a_1469_n10# m1_603_n148# A VSS nmos_3p3_F9QVWA
+.ends
+

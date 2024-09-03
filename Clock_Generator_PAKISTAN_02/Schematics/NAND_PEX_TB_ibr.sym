@@ -1,0 +1,75 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -990 420 -990 430 {
+lab=VSS}
+N -990 340 -990 360 {
+lab=VDD}
+N -910 340 -910 360 {
+lab=VSS}
+N -910 420 -910 440 {
+lab=GND}
+N -840 420 -840 430 {
+lab=VSS}
+N -840 340 -840 360 {
+lab=IN1}
+N -680 300 -660 300 {
+lab=IN1}
+N -680 320 -660 320 {
+lab=IN2}
+N -610 360 -610 380 {
+lab=VSS}
+N -615 240 -615 260 {
+lab=VDD}
+N -530 310 -520 310 {
+lab=OUT}
+N -990 270 -990 280 {
+lab=VSS}
+N -990 200 -990 210 {
+lab=IN2}
+N -535 310 -530 310 {
+lab=OUT}
+C {devices/vsource.sym} -990 390 0 0 {name=V1 value=3.3}
+C {devices/vsource.sym} -910 390 0 0 {name=V2 value=0}
+C {devices/vsource.sym} -840 390 0 0 {name=V3 value="pulse(0 3.3 0 100p 100p 100n 200n)"}
+C {devices/vsource.sym} -990 240 0 0 {name=V4 value="pulse(0 3.3 0 100p 100p 200n 400n)"}
+C {devices/lab_wire.sym} -910 340 0 0 {name=p1 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -990 430 0 0 {name=p3 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} -990 340 0 0 {name=p4 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -840 340 0 0 {name=p5 sig_type=std_logic lab=IN1}
+C {devices/lab_wire.sym} -840 430 0 0 {name=p6 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -680 300 0 0 {name=p7 sig_type=std_logic lab=IN1}
+C {devices/lab_wire.sym} -680 320 0 0 {name=p8 sig_type=std_logic lab=IN2}
+C {devices/lab_wire.sym} -610 380 3 0 {name=p9 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -615 240 1 0 {name=p10 sig_type=std_logic lab=VDD
+}
+C {devices/lab_wire.sym} -520 310 2 0 {name=p11 sig_type=std_logic lab=OUT}
+C {devices/lab_wire.sym} -990 200 0 0 {name=p12 sig_type=std_logic lab=IN2}
+C {devices/lab_wire.sym} -990 280 0 0 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/gnd.sym} -910 440 0 0 {name=l1 lab=GND}
+C {devices/code_shown.sym} -830 100 0 0 {name=MODELS only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+"}
+C {devices/code_shown.sym} 145 50 0 1 {name=NGSPICE1 only_toplevel=true
+value="
+.include "pex_nand2.spice"
+.control
+save all
+tran 50p 1u 
+plot v(IN1)
+plot V(IN2) 
+plot v(OUT)
+
+
+*write test_nfet_03v3.raw
+.endc
+"}
+C {NAND_PEX.sym} -580 340 0 0 {name=x1}

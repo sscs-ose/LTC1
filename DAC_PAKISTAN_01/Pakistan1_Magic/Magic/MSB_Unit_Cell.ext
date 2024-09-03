@@ -1,0 +1,655 @@
+timestamp 1695284343
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use MSB_Unit_Cell_p2 MSB_Unit_Cell_p2_3 1 0 205 0 1 6770
+use MSB_Unit_Cell_p2 MSB_Unit_Cell_p2_2 1 0 205 0 1 5973
+use MSB_Unit_Cell_p2 MSB_Unit_Cell_p2_1 1 0 205 0 1 4379
+use MSB_Unit_Cell_p2 MSB_Unit_Cell_p2_0 1 0 205 0 1 5176
+use Local_Enc Local_Enc_0 1 0 -2914 0 1 3601
+use CM_MSB_V2 CM_MSB_V2_0 1 0 -2839 0 1 2178
+port "SD" 12 -540 2480 -540 2480 m2
+port "IM" 1 -3340 2694 -3340 2694 m1
+port "IM_T" 0 -3384 3241 -3384 3241 m1
+port "OUT" 9 4074 2797 4074 2797 m1
+port "Ri" 3 -3204 3981 -3204 3981 m1
+port "Ci" 4 -3431 4954 -3431 4954 m1
+port "Ri-1" 5 -3540 5919 -3540 5919 m1
+port "VDD" 6 -3483 6325 -3483 6325 m1
+port "QB" 7 -517 6019 -517 6019 m2
+port "OUT+" 10 3898 7510 3898 7510 v
+port "OUT-" 11 3681 7653 3681 7653 v
+port "Q" 8 -589 4973 -589 4973 v
+port "VSS" 2 -3423 3612 -3423 3612 m1
+node "SD" 0 78.0034 -540 2480 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9519 448 0 0 0 0 0 0
+node "m2_n2995_3104#" 0 67.7819 -2995 3104 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8990 426 0 0 0 0 0 0
+node "IM" 1 247.051 -3340 2694 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44868 1320 0 0 0 0 0 0 0 0
+node "IM_T" 1 265.619 -3384 3241 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40732 1334 0 0 0 0 0 0 0 0
+node "OUT" 18 7048.07 4074 2797 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1559398 34462 121744 2274 0 0 0 0 0 0
+node "Ri" 1 382.608 -3204 3981 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60204 1712 0 0 0 0 0 0 0 0
+node "Ci" 1 353.953 -3431 4954 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65943 1926 0 0 0 0 0 0 0 0
+node "Ri-1" 1 281.33 -3540 5919 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65240 1764 0 0 0 0 0 0 0 0
+node "m1_n602_5992#" 0 79.1909 -602 5992 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5244 320 0 0 0 0 0 0 0 0
+node "VDD" 1 529.855 -3483 6325 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 162474 2484 0 0 0 0 0 0 0 0
+node "QB" 7 1185.32 -517 6019 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61816 2666 175824 6336 0 0 0 0 0 0
+node "m1_454_7124#" 6 2105.53 454 7124 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138414 6110 0 0 0 0 0 0 0 0
+node "OUT+" 7 1645.27 3898 7510 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97140 4472 365376 7024 0 0 0 0 0 0
+node "OUT-" 4 1052.62 3681 7653 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13608 660 393799 8074 0 0 0 0 0 0
+node "Q" 101 2267.23 -589 4973 v 0 0 0 0 0 0 0 0 0 0 0 0 34964 1428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97173 4020 229415 8286 0 0 0 0 0 0
+substrate "VSS" 0 0 -3423 3612 m1 0 0 0 0 0 0 2040000 32800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3137655 51024 0 0 0 0 0 0 0 0
+cap "m1_n602_5992#" "Q" 2.24312
+cap "VDD" "Ci" 1.58791
+cap "OUT-" "m1_454_7124#" 6.17969
+cap "Ci" "Ri-1" 37.0535
+cap "OUT" "OUT+" 84.2858
+cap "m2_n2995_3104#" "IM" 1.0816
+cap "m2_n2995_3104#" "IM_T" 20.4723
+cap "OUT" "OUT-" 60.2364
+cap "m2_n2995_3104#" "Ri" 0.212088
+cap "VDD" "Ri-1" 94.7057
+cap "OUT+" "OUT-" 1316.66
+cap "OUT" "m1_454_7124#" 2463.31
+cap "OUT" "QB" 11.8316
+cap "QB" "Q" 1047.86
+cap "QB" "m1_n602_5992#" 11.264
+cap "IM" "IM_T" 51.8013
+cap "Ri" "Ci" 35.5029
+cap "OUT+" "m1_454_7124#" 0.939345
+cap "OUT" "Q" 77.791
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_3/SD" 0.210659
+cap "Local_Enc_0/NAND_8/VSS" "CM_MSB_V2_0/IM" -0.178262
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n3112_n120#" "Local_Enc_0/NAND_3/SD" 0.420425
+cap "Local_Enc_0/NAND_6/B" "CM_MSB_V2_0/IM_T" 0.256123
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_2/nmos_3p3_HZS5UA_0/a_28_n50#" 0.0236567
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_2/SD" 0.0146638
+cap "Local_Enc_0/NAND_8/VSS" "CM_MSB_V2_0/IM_T" 19.2819
+cap "Local_Enc_0/Ri" "CM_MSB_V2_0/IM" 0.0016616
+cap "Local_Enc_0/NAND_8/VSS" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n3112_n120#" 3.13446
+cap "CM_MSB_V2_0/IM_T" "CM_MSB_V2_0/IM" 6.7424
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/A" 0.653147
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/Ri" 2.84614
+cap "Local_Enc_0/NAND_7/VDD" "CM_MSB_V2_0/IM_T" 3.21074
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n3112_n120#" "CM_MSB_V2_0/IM" 0.0226959
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" "CM_MSB_V2_0/IM" 0.230619
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n3112_n120#" "Local_Enc_0/NAND_6/A" 0.806649
+cap "Local_Enc_0/Ri" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n3112_n120#" 0.969643
+cap "Local_Enc_0/NAND_7/VDD" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n3112_n120#" 1.00887
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" "CM_MSB_V2_0/IM_T" -0.00846726
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_8/nmos_3p3_HZS5UA_0/a_28_n50#" 0.0020571
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/B" 1.61775
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_8/A" 0.0236567
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_5/SD" 0.0146638
+cap "Local_Enc_0/NAND_7/VDD" "CM_MSB_V2_0/SD" 1.2768
+cap "Local_Enc_0/NAND_6/OUT" "CM_MSB_V2_0/SD" 7.57999
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/OUT" 0.622761
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_7/B" 3.24551
+cap "Local_Enc_0/NAND_7/VDD" "CM_MSB_V2_0/IM_T" 5.02478
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_8/SD" 0.0146638
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_6/SD" 0.372379
+cap "Local_Enc_0/NAND_8/VSS" "CM_MSB_V2_0/SD" 12.0853
+cap "CM_MSB_V2_0/IM_T" "CM_MSB_V2_0/SD" 5.68434e-14
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/B" 3.33549
+cap "Local_Enc_0/NAND_6/A" "CM_MSB_V2_0/SD" 1.17011
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/SD" 0.211336
+cap "Local_Enc_0/NAND_8/VSS" "CM_MSB_V2_0/IM_T" 27.867
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_7/OUT" 0.407735
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_7/SD" 0.361538
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/A" 1.56691
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/OUT" 0.0995764
+cap "Local_Enc_0/NAND_6/B" "CM_MSB_V2_0/SD" 2.73027
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/SD" 0.211336
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" "CM_MSB_V2_0/SD" -6.82121e-13
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" "CM_MSB_V2_0/SD" 0.284254
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" 0.0212493
+cap "Local_Enc_0/NAND_7/OUT" "CM_MSB_V2_0/SD" 1.407
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/OUT" 0.735237
+cap "CM_MSB_V2_0/SD" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n2908_n120#" 1.13687e-13
+cap "CM_MSB_V2_0/IM" "CM_MSB_V2_0/SD" 5.68434e-14
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/a_n74_n149#" 0.531635
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/a_n74_n149#" 0.324009
+cap "MSB_Unit_Cell_p2_1/a_51_258#" "CM_MSB_V2_0/SD" 2.10847
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/a_51_258#" 4.43473
+cap "Local_Enc_0/NAND_7/VDD" "CM_MSB_V2_0/SD" 0.0598753
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/VDD" 1.36772
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "CM_MSB_V2_0/SD" 0.266076
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" 1.39187
+cap "Local_Enc_0/NAND_8/VSS" "CM_MSB_V2_0/SD" 12.8123
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_8/VSS" 31.1179
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_8/nmos_3p3_HZS5UA_0/a_28_n50#" 0.0215996
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n1580_n164#" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" 0.278028
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/a_n74_n149#" 0.885185
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" 2.56567
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/m1_23_6#" 0.626154
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n1580_n164#" "Local_Enc_0/NAND_8/VSS" 30.9668
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n1580_n164#" "MSB_Unit_Cell_p2_1/a_51_258#" 12.2533
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/m1_34_n336#" 7.24388
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_8/VSS" 14.6025
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/a_51_258#" 1.19215
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" "MSB_Unit_Cell_p2_1/a_316_n480#" 1.32332
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" "MSB_Unit_Cell_p2_1/m1_23_6#" 0.623063
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.468852
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.780212
+cap "MSB_Unit_Cell_p2_1/m1_34_n336#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" 0.0598994
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 5.28147
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" 0.572731
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" 2.56446
+cap "CM_MSB_V2_0/VSS" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" 30.9668
+cap "MSB_Unit_Cell_p2_1/a_316_n480#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" 11.5094
+cap "CM_MSB_V2_0/VSS" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" 13.3619
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_0/a_n138_n60#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_1376_n120#" 0.449579
+cap "CM_MSB_V2_0/VSS" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_1376_n120#" 2.86287
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 0.861828
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_1376_n120#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 1.93296
+cap "CM_MSB_V2_0/IM_T" "CM_MSB_V2_0/VSS" 7.53537
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_0/a_n138_n60#" 5.74104
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/m1_34_n336#" 0.565205
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_1376_n120#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 0.262173
+cap "CM_MSB_V2_0/IM" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_0/a_n138_n60#" 0.491185
+cap "MSB_Unit_Cell_p2_1/m1_23_6#" "CM_MSB_V2_0/IM_T" 0.14142
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_0/a_n138_n60#" 55.3627
+cap "Local_Enc_0/NAND_8/VDD" "CM_MSB_V2_0/IM_T" 0.118179
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/Ri" 2.40036
+cap "Local_Enc_0/NAND_8/VDD" "Local_Enc_0/Ri" 45.6207
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_6/B" 2.25569
+cap "Local_Enc_0/VSS" "CM_MSB_V2_0/IM" 0.0220968
+cap "Local_Enc_0/NAND_8/VDD" "Local_Enc_0/Ci" 9.21863
+cap "Local_Enc_0/Ci" "Local_Enc_0/Ri" -9.53956
+cap "Local_Enc_0/VSS" "CM_MSB_V2_0/IM_T" 7.06559
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_8/VDD" -17.6344
+cap "Local_Enc_0/NAND_6/B" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" 0.128684
+cap "CM_MSB_V2_0/IM" "Local_Enc_0/NAND_6/B" 0.9488
+cap "Local_Enc_0/VSS" "Local_Enc_0/Ri" 41.15
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/B" 0.372297
+cap "Local_Enc_0/VSS" "Local_Enc_0/Ci" 15.5411
+cap "Local_Enc_0/Ri" "Local_Enc_0/NAND_8/A" 0.0495253
+cap "Local_Enc_0/NAND_6/OUT" "Local_Enc_0/NAND_6/A" -2.84217e-14
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_8/A" 1.48503
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" "Local_Enc_0/NAND_6/B" 0.0638561
+cap "Local_Enc_0/NAND_6/OUT" "Local_Enc_0/VSS" 12.155
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_7/SD" 0.116862
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "Local_Enc_0/NAND_8/A" 2.38676
+cap "CM_MSB_V2_0/IM" "Local_Enc_0/NAND_6/B" 0.406565
+cap "MSB_Unit_Cell_p2_2/a_n74_n149#" "Local_Enc_0/NAND_8/A" 0.617527
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_8/A" 11.7508
+cap "Local_Enc_0/NAND_6/OUT" "CM_MSB_V2_0/IM_T" 3.75709
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_6/B" 2.53049
+cap "Local_Enc_0/NAND_6/A" "Local_Enc_0/VSS" 2.78271
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "Local_Enc_0/NAND_8/A" 0.0665069
+cap "Local_Enc_0/NAND_6/OUT" "Local_Enc_0/NAND_6/SD" 7.10543e-15
+cap "Local_Enc_0/NAND_6/OUT" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" 1.05919
+cap "MSB_Unit_Cell_p2_1/m1_238_n336#" "Local_Enc_0/NAND_8/A" 0.0352106
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_6/B" 5.76751
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_8/A" 3.93735
+cap "Local_Enc_0/NAND_6/OUT" "Local_Enc_0/NAND_8/VDD" 5.68434e-14
+cap "Local_Enc_0/NAND_8/SD" "Local_Enc_0/VSS" 0.116862
+cap "Local_Enc_0/NAND_6/OUT" "CM_MSB_V2_0/IM" 2.13238
+cap "Local_Enc_0/NAND_6/OUT" "Local_Enc_0/Ri" 0.0503817
+cap "Local_Enc_0/NAND_7/OUT" "Local_Enc_0/VSS" 1.78552
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/A" 1.16699
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n3300_n120#" "Local_Enc_0/NAND_8/A" 0.067114
+cap "Local_Enc_0/NAND_6/OUT" "CM_MSB_V2_0/SD" 7.69443
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_2/a_50_n60#" "Local_Enc_0/NAND_8/A" 0.0191032
+cap "CM_MSB_V2_0/IM" "Local_Enc_0/NAND_8/A" 0.324095
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/B" 2.20863
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "Local_Enc_0/NAND_7/OUT" 13.0533
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n2908_n120#" "MSB_Unit_Cell_p2_3/a_316_n480#" 0.252075
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" -1.42109e-14
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "Local_Enc_0/VSS" 40.7645
+cap "Local_Enc_0/NAND_8/A" "MSB_Unit_Cell_p2_2/a_n74_n149#" 0.476729
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 3.16549
+cap "Local_Enc_0/NAND_8/A" "Local_Enc_0/VSS" 1.04891
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "Local_Enc_0/NAND_7/VDD" 0.746492
+cap "Local_Enc_0/NAND_8/SD" "Local_Enc_0/VSS" 0.121904
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "CM_MSB_V2_0/IM_T" 4.56803
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n2908_n120#" "Local_Enc_0/NAND_7/OUT" 0.228592
+cap "CM_MSB_V2_0/IM" "MSB_Unit_Cell_p2_2/a_n74_n149#" 0.750297
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_316_n480#" 32.9235
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "CM_MSB_V2_0/IM" 0.00852195
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 8.77461
+cap "Local_Enc_0/NAND_7/SD" "Local_Enc_0/VSS" 0.121904
+cap "Local_Enc_0/NAND_8/A" "MSB_Unit_Cell_p2_3/a_316_n480#" 2.92382
+cap "Local_Enc_0/NAND_7/OUT" "Local_Enc_0/NAND_7/VDD" 2.84217e-14
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/a_n74_n149#" 4.90014
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 1.98241
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_2/a_n74_n149#" 10.9381
+cap "Local_Enc_0/NAND_8/SD" "MSB_Unit_Cell_p2_3/a_316_n480#" 0.00989003
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/OUT" 0.162607
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "Local_Enc_0/VSS" 21.7407
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/a_n74_n149#" 0.0581868
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n2908_n120#" 0.152091
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 3.91385
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_2/a_n74_n149#" 0.160682
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_3/a_316_n480#" 0.123111
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "CM_MSB_V2_0/IM" 0.7414
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "CM_MSB_V2_0/SD" 1.62776
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 0.483332
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/VSS" -0.191652
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_2/a_n74_n149#" 92.5518
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_316_n480#" 50.6808
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "CM_MSB_V2_0/IM_T" 0.426803
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "Local_Enc_0/VSS" 5.07183
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_2/a_n74_n149#" -1.21125
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_316_n480#" 16.7809
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_3/a_316_n480#" 1.50867
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_7/OUT" 0.0313241
+cap "CM_MSB_V2_0/IM" "Local_Enc_0/NAND_7/OUT" 0.198657
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 2.74741
+cap "Local_Enc_0/NAND_7/OUT" "MSB_Unit_Cell_p2_2/a_n74_n149#" 36.2156
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n2908_n120#" "MSB_Unit_Cell_p2_2/a_n74_n149#" 0.0653019
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "Local_Enc_0/VSS" 2.33737
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n2908_n120#" 0.440114
+cap "Local_Enc_0/NAND_6/OUT" "Local_Enc_0/VSS" 0.0253121
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_7/OUT" 60.6991
+cap "Local_Enc_0/NAND_7/VDD" "MSB_Unit_Cell_p2_2/a_n74_n149#" 2.03118
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_2/a_50_n60#" "MSB_Unit_Cell_p2_3/a_316_n480#" 4.56324
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "CM_MSB_V2_0/IM" 0.0733164
+cap "CM_MSB_V2_0/SD" "Local_Enc_0/NAND_7/OUT" 1.17912
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_2/a_n74_n149#" 0.223305
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_7/VDD" 52.5129
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 14.5048
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "CM_MSB_V2_0/IM_T" 1.74005
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/a_n74_n149#" 1.04435
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n1580_n164#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 8.23751
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_3/a_316_n480#" 48.774
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n1276_n120#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 1.85916
+cap "MSB_Unit_Cell_p2_0/m1_23_6#" "MSB_Unit_Cell_p2_1/m1_23_6#" 0.115576
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_3/m1_238_n336#" -8.07723
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_1/m1_23_6#" 1.4658
+cap "MSB_Unit_Cell_p2_0/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_238_n336#" -0.323074
+cap "MSB_Unit_Cell_p2_2/a_n74_n149#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 6.83263
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_1/m1_23_6#" 2.32939
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_238_n336#" -39.0155
+cap "MSB_Unit_Cell_p2_1/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 108.387
+cap "MSB_Unit_Cell_p2_0/m1_34_n336#" "MSB_Unit_Cell_p2_3/a_316_n480#" -0.196696
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/m1_34_n336#" 0.538024
+cap "MSB_Unit_Cell_p2_0/m1_34_n336#" "MSB_Unit_Cell_p2_1/m1_23_6#" 2.95219
+cap "MSB_Unit_Cell_p2_0/m1_23_6#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 4.97754
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n1580_n164#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 6.03666
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_1/m1_34_n336#" 49.8188
+cap "MSB_Unit_Cell_p2_0/m1_34_n336#" "MSB_Unit_Cell_p2_3/m1_238_n336#" -1.12468
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 6.08299
+cap "MSB_Unit_Cell_p2_1/m1_34_n336#" "MSB_Unit_Cell_p2_1/m1_23_6#" -0.758972
+cap "MSB_Unit_Cell_p2_1/m1_34_n336#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 156.593
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n1580_n164#" "MSB_Unit_Cell_p2_3/a_316_n480#" 12.2533
+cap "MSB_Unit_Cell_p2_0/m1_34_n336#" "MSB_Unit_Cell_p2_1/m1_34_n336#" 86.6993
+cap "CM_MSB_V2_0/SD" "MSB_Unit_Cell_p2_1/m1_34_n336#" 7.88978
+cap "MSB_Unit_Cell_p2_2/a_n74_n149#" "MSB_Unit_Cell_p2_3/a_316_n480#" -2.55795e-13
+cap "MSB_Unit_Cell_p2_2/a_n74_n149#" "MSB_Unit_Cell_p2_1/m1_23_6#" -4.5539
+cap "MSB_Unit_Cell_p2_2/a_n74_n149#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 30.5748
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_n152_n164#" 5.20222
+cap "MSB_Unit_Cell_p2_1/a_316_n480#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" 11.5094
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_2/m1_23_6#" 0.00415483
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.885812
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_2/m1_23_6#" 2.38641
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 137.96
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/a_316_n480#" 10.1621
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_238_n336#" -0.0992724
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_1/a_316_n480#" -5.46859
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" -3.7046
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_0/a_316_n480#" -50.7433
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_1/a_316_n480#" 38.9576
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_152_n120#" 6.02428
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" 8.589
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "CM_MSB_V2_0/VSS" 49.4494
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.468852
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_238_n336#" -1.11519
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "CM_MSB_V2_0/VSS" 5.35357
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" -2.59995
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_0/a_316_n480#" 1.51175
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_2/m1_23_6#" 5.33822
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_0/a_316_n480#" 0.0355501
+cap "MSB_Unit_Cell_p2_1/a_316_n480#" "CM_MSB_V2_0/VSS" 50.4154
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" 33.3929
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "CM_MSB_V2_0/nmos_3p3_LNPLVM_0/a_n152_n164#" 10.1016
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_2/m1_23_6#" 98.8059
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_0/a_316_n480#" -0.335733
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "CM_MSB_V2_0/IM_T" 0.402737
+cap "MSB_Unit_Cell_p2_1/a_316_n480#" "MSB_Unit_Cell_p2_2/m1_23_6#" -0.719472
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "CM_MSB_V2_0/IM" 1.04075
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_2/m1_34_n336#" 0.864377
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" 3.08338
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_2/m1_34_n336#" 18.7767
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 6.03623
+cap "MSB_Unit_Cell_p2_1/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 1.8515
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_0/a_316_n480#" 0.81217
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 22.2186
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.39921
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_3/m1_238_n336#" 2.69492
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_2/m1_34_n336#" 0.129068
+cap "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 61.1381
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_3/m1_238_n336#" 46.068
+cap "CM_MSB_V2_0/IM" "MSB_Unit_Cell_p2_2/m1_34_n336#" 1.27536
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 0.473516
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/a_316_n480#" 10.4721
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_0/a_316_n480#" 1.24075
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 23.5333
+cap "CM_MSB_V2_0/nmos_3p3_LNPLVM_1/a_1376_n120#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 2.04289
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_2/m1_23_6#" 12.4534
+cap "MSB_Unit_Cell_p2_1/a_316_n480#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 2.22045e-16
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 9.03481
+cap "CM_MSB_V2_0/IM_T" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 0.861828
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 4.23623
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" "MSB_Unit_Cell_p2_0/a_316_n480#" 14.5661
+cap "Local_Enc_0/Ci" "Local_Enc_0/Ri" -9.53956
+cap "Local_Enc_0/Ri-1" "Local_Enc_0/VSS" 34.2878
+cap "Local_Enc_0/Ri-1" "Local_Enc_0/VDD" 70.0842
+cap "Local_Enc_0/VSS" "Local_Enc_0/VDD" -11.9078
+cap "Local_Enc_0/Ci" "Local_Enc_0/NAND_6/B" 0.0185495
+cap "Local_Enc_0/VSS" "Local_Enc_0/Ri" 0.00324756
+cap "Local_Enc_0/VDD" "Local_Enc_0/Ri" 0.0218444
+cap "Local_Enc_0/Ri-1" "Local_Enc_0/Ci" -18.2526
+cap "Local_Enc_0/Ci" "Local_Enc_0/VSS" 50.079
+cap "Local_Enc_0/Ci" "Local_Enc_0/VDD" 95.5776
+cap "MSB_Unit_Cell_p2_2/m1_238_n336#" "Local_Enc_0/NAND_8/A" 0.00307466
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_2/a_50_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 0.00923672
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_8/A" 1.07479
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_3/a_n74_n149#" 2.23244
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_4/SD" 0.116862
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 0.0830324
+cap "Local_Enc_0/NAND_5/B" "Local_Enc_0/Ri-1" 1.03309
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/NAND_8/A" 1.14969
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 1.7987
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_2/a_50_n60#" 0.00818709
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_7/OUT" 3.55271e-15
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 0.00471377
+cap "Local_Enc_0/NAND_8/A" "MSB_Unit_Cell_p2_1/m1_238_n336#" 0.0359735
+cap "Local_Enc_0/Ci" "Local_Enc_0/NAND_6/OUT" 0.0763206
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" "Local_Enc_0/NAND_8/A" 0.0317694
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_6/OUT" 0.502178
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "Local_Enc_0/NAND_8/A" 1.17895
+cap "MSB_Unit_Cell_p2_2/m1_238_n336#" "MSB_Unit_Cell_p2_3/a_51_258#" 0.0135285
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/VDD" -5.68434e-14
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_3/a_51_258#" 2.90567
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 0.0357655
+cap "Local_Enc_0/NAND_8/A" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_2/a_50_n60#" 0.0247712
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_2/a_50_n60#" "Local_Enc_0/NAND_8/A" 0.00188933
+cap "CM_MSB_V2_0/IM_T" "Local_Enc_0/NAND_6/OUT" 0.00393541
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" "Local_Enc_0/NAND_8/A" 0.093326
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/m1_238_n336#" 0.0122986
+cap "Local_Enc_0/NAND_8/A" "Local_Enc_0/Ci" 0.119928
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" 1.77622
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 0.112397
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_2/a_50_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 4.56324
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_8/VDD" 52.4469
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -3.22501
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/NAND_8/SD" 0.0080661
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 15.5995
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 12.9337
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" -7.10543e-15
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_3/a_n74_n149#" 98.8813
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_2/a_50_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 1.95689
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_3/a_51_258#" 28.6359
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" 3.91385
+cap "Local_Enc_0/NAND_7/OUT" "Local_Enc_0/NAND_8/VDD" 1.42109e-14
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" 3.16549
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 3.91452
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 18.1979
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 3.16549
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" 0.826503
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 5.69008
+cap "Local_Enc_0/NAND_8/A" "MSB_Unit_Cell_p2_3/a_n74_n149#" 0.782836
+cap "Local_Enc_0/NAND_7/OUT" "MSB_Unit_Cell_p2_3/a_n74_n149#" 6.31925
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 6.33097
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 6.17188
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/NAND_8/A" 0.154921
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "Local_Enc_0/NAND_4/SD" 0.0230494
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 3.79824
+cap "Local_Enc_0/NAND_7/OUT" "MSB_Unit_Cell_p2_3/a_51_258#" 72.0012
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 48.6519
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 64.7668
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "Local_Enc_0/VDD" 2.70357
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "CM_MSB_V2_0/IM_T" 0.526093
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 3.91452
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" 0.0581868
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 0.826503
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" -7.10543e-15
+cap "Local_Enc_0/NAND_8/VDD" "MSB_Unit_Cell_p2_3/a_n74_n149#" 0.817587
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" -2.35287
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/VDD" 0.142937
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 5.52305
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 3.50664
+cap "Local_Enc_0/NAND_8/VDD" "MSB_Unit_Cell_p2_3/a_51_258#" 1.45558
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 25.5814
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n138_n60#" 8.77461
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_8/A" 0.26319
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 53.8063
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_7/OUT" 7.53144
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 15.5786
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n138_n60#" 49.3258
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 149.743
+cap "Local_Enc_0/VSS" "Local_Enc_0/NAND_4/SD" 0.121904
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" 13.7363
+cap "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_1/a_n138_n60#" 9.42333
+cap "Local_Enc_0/VSS" "Local_Enc_0/VDD" 12.5054
+cap "Local_Enc_0/NAND_8/SD" "MSB_Unit_Cell_p2_3/a_n74_n149#" 0.0187563
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_0/m1_34_n336#" 4.97754
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 83.8073
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_3/a_51_258#" 4.07758
+cap "MSB_Unit_Cell_p2_0/m1_23_6#" "MSB_Unit_Cell_p2_0/m1_34_n336#" -0.758972
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/m1_23_6#" 83.3808
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_2/m1_23_6#" -4.5539
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 2.95219
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_0/m1_23_6#" -4.5539
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_2/m1_23_6#" 1.46154
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/m1_23_6#" 2.95994
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_2/m1_23_6#" -0.758972
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_0/m1_23_6#" 2.76586
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_0/m1_23_6#" 1.46367
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/m1_34_n336#" 121.328
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/m1_23_6#" 5.90437
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_0/m1_34_n336#" 8.1957
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 47.2487
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_0/m1_23_6#" 0.115576
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_0/m1_34_n336#" 15.1266
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -14.9251
+cap "MSB_Unit_Cell_p2_1/m1_34_n336#" "MSB_Unit_Cell_p2_0/m1_34_n336#" 82.2559
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_23_6#" 0.115576
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -49.3596
+cap "MSB_Unit_Cell_p2_0/m1_34_n336#" "MSB_Unit_Cell_p2_1/m1_23_6#" 2.95219
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/m1_34_n336#" 168.955
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/a_51_258#" -6.25278e-13
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 73.5824
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_2/m1_34_n336#" -0.758898
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_2/a_316_n480#" 13.4052
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_2/a_316_n480#" 0.0581964
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" 3.02349
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 2.17611
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/a_316_n480#" -0.199113
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/a_316_n480#" 1.6249
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/a_316_n480#" 5.29871
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 146.578
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_0/a_316_n480#" 0.069396
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 185.33
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_0/a_316_n480#" 3.24307
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 9.0963
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_0/a_316_n480#" 0.0197694
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_1/a_n50_n104#" 4.03754
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "CM_MSB_V2_0/VSS" 4.8792
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 7.0438
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 24.6655
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" -3.69359
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_0/a_316_n480#" 1.51175
+cap "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 26.0092
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" -3.69622
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.062289
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" 6.15512
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" 1.43759
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.059412
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -45.7028
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_2/a_316_n480#" -0.266337
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_23_6#" 0.00415483
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" 14.804
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/m1_23_6#" 67.2498
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_8/a_n50_n104#" 3.08338
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_23_6#" 0.217283
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" 8.62579
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "CM_MSB_V2_0/VSS" 1.24075
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_8/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_23_6#" 4.27321
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_0/a_316_n480#" 10.0707
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.15771
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" 15.1088
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_3/m1_34_n336#" 23.2402
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 20.5428
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.39921
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_3/a_316_n480#" 0.109981
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_0/a_316_n480#" 3.05409
+cap "MSB_Unit_Cell_p2_0/a_316_n480#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" 14.5661
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_8/a_n50_n104#" 29.1323
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.63857
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/a_316_n480#" 3.56605
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.19923
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" -2.1582
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.65257
+cap "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_23_6#" 3.87613
+cap "CM_MSB_V2_0/VSS" "MSB_Unit_Cell_p2_3/m1_23_6#" 24.6556
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_8/a_n50_n104#" 14.5347
+cap "Local_Enc_0/VDD" "Local_Enc_0/Ci" -0.546744
+cap "Local_Enc_0/Ri-1" "Local_Enc_0/VDD" -0.54322
+cap "Local_Enc_0/VDD" "Local_Enc_0/VSS" -5.44335
+cap "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_3/a_51_258#" 0.0768786
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 0.0373913
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -0.86012
+cap "Local_Enc_0/VDD" "MSB_Unit_Cell_p2_3/a_51_258#" 1.20686
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" 64.7192
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 1.77622
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_51_258#" 52.429
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/VSS" 30.2651
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 9.42333
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 0.547682
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "Local_Enc_0/NAND_4/B" 0.151491
+cap "Local_Enc_0/VDD" "MSB_Unit_Cell_p2_3/a_n74_n149#" 8.29869
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_2/a_50_n60#" 4.56324
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 2.25149
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "Local_Enc_0/VSS" 9.12165
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 2.58179
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_2/a_50_n60#" 2.60635
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n138_n60#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 0.152254
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "Local_Enc_0/VSS" 3.72668
+cap "Local_Enc_0/VDD" "Local_Enc_0/VSS" 39.9232
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 5.74803
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" "Local_Enc_0/VSS" 21.2436
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n138_n60#" "Local_Enc_0/VSS" 20.0195
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 16.2083
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/a_n74_n149#" 73.5909
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_1/a_n138_n60#" 0.112397
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n138_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n138_n60#" 3.16549
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "Local_Enc_0/NAND_8/VSS" 32.6572
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -9.84824
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/a_51_258#" 3.6751
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -28.6529
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 119.36
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_3/m1_23_6#" 4.97754
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 8.9546
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/m1_23_6#" -0.194085
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_2/m1_23_6#" 2.95219
+cap "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -0.749606
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 10.8523
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_2/m1_34_n336#" 168.955
+cap "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 46.6205
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/m1_23_6#" -4.53926
+cap "Local_Enc_0/NAND_8/VSS" "MSB_Unit_Cell_p2_3/m1_23_6#" 2.24379
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_3/m1_23_6#" 1.01368
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/a_51_258#" -4.26326e-13
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_3/m1_23_6#" -0.758972
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/m1_34_n336#" -0.924572
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 83.3766
+cap "MSB_Unit_Cell_p2_3/a_n74_n149#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 23.5212
+cap "MSB_Unit_Cell_p2_3/a_51_258#" "Local_Enc_0/NAND_8/VSS" 21.0341
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n50_n104#" "VSS" 21.1431
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 11.7803
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n50_n104#" "VSS" 0.065166
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/a_316_n480#" -0.0672246
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 160.375
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 72.5835
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 3.87146
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_34_n336#" -2.97496
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_23_6#" -0.378864
+cap "MSB_Unit_Cell_p2_3/m1_34_n336#" "VSS" 30.8561
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 5.98905
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "VSS" 2.81323
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n50_n104#" -3.69625
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -47.9782
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_1/a_n50_n104#" 0.22852
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "VSS" 0.0610734
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n50_n104#" 3.02349
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 5.85842
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_1/a_n50_n104#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" 30.1866
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "VSS" 10.0409
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_1/a_n50_n104#" 24.894
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 12.6187
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" "VSS" 8.07285
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "VSS" 1.13077
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 16.9768
+cap "MSB_Unit_Cell_p2_2/nmos_3p3_AGPLV7_8/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 1.67773
+cap "VSS" "MSB_Unit_Cell_p2_3/m1_34_n336#" 12.7034
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_8/a_n50_n104#" 29.1323
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_8/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 10.0418
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_8/a_n50_n104#" "VSS" 13.05
+cap "VSS" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_8/a_n50_n104#" 1.71269
+cap "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_8/a_n50_n104#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 13.6263
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" -1.28253
+cap "MSB_Unit_Cell_p2_3/a_316_n480#" "MSB_Unit_Cell_p2_3/m1_23_6#" 3.655
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "VSS" 27.0839
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/m1_34_n336#" 27.1264
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_8/a_n50_n104#" 0.833164
+cap "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_3/nmos_3p3_AGPLV7_8/a_n50_n104#" 0.969693
+merge "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_0/a_n138_n60#" "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" -9912.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1079204 -56854 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_3/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_0/a_n138_n60#"
+merge "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_0/a_n138_n60#" "m1_454_7124#"
+merge "m1_454_7124#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_0/a_n138_n60#"
+merge "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_0/a_n138_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_5/a_50_n60#"
+merge "MSB_Unit_Cell_p2_0/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_5/a_50_n60#"
+merge "MSB_Unit_Cell_p2_2/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_9/a_50_n60#"
+merge "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_9/a_50_n60#" "MSB_Unit_Cell_p2_2/m1_238_n336#"
+merge "MSB_Unit_Cell_p2_2/m1_238_n336#" "MSB_Unit_Cell_p2_3/m1_238_n336#"
+merge "MSB_Unit_Cell_p2_3/m1_238_n336#" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_0/a_n138_n60#"
+merge "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_0/a_n138_n60#" "CM_MSB_V2_0/OUT"
+merge "CM_MSB_V2_0/OUT" "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_5/a_50_n60#"
+merge "MSB_Unit_Cell_p2_0/nmos_3p3_AGPLV7_5/a_50_n60#" "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#"
+merge "MSB_Unit_Cell_p2_1/nmos_3p3_AQEADK_5/a_50_n60#" "MSB_Unit_Cell_p2_0/m1_238_n336#"
+merge "MSB_Unit_Cell_p2_0/m1_238_n336#" "MSB_Unit_Cell_p2_1/m1_238_n336#"
+merge "MSB_Unit_Cell_p2_1/m1_238_n336#" "OUT"
+merge "Local_Enc_0/VDD" "Local_Enc_0/NAND_8/VDD" -518.206 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -69583 -1680 0 0 0 0 0 0 0 0
+merge "Local_Enc_0/NAND_8/VDD" "VDD"
+merge "MSB_Unit_Cell_p2_2/VSUBS" "MSB_Unit_Cell_p2_3/VSUBS" -5790.11 0 0 0 0 0 0 -423310 -6864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -584129 -28324 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_3/VSUBS" "Local_Enc_0/VSS"
+merge "Local_Enc_0/VSS" "MSB_Unit_Cell_p2_0/VSUBS"
+merge "MSB_Unit_Cell_p2_0/VSUBS" "Local_Enc_0/NAND_7/VSS"
+merge "Local_Enc_0/NAND_7/VSS" "MSB_Unit_Cell_p2_1/VSUBS"
+merge "MSB_Unit_Cell_p2_1/VSUBS" "CM_MSB_V2_0/VSS"
+merge "CM_MSB_V2_0/VSS" "Local_Enc_0/VSUBS"
+merge "Local_Enc_0/VSUBS" "Local_Enc_0/NAND_8/VSS"
+merge "Local_Enc_0/NAND_8/VSS" "VSS"
+merge "MSB_Unit_Cell_p2_3/a_51_258#" "MSB_Unit_Cell_p2_0/a_51_258#" -6588.45 0 0 0 0 0 0 0 0 0 0 0 0 -421600 -17264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12396 -1084 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_0/a_51_258#" "MSB_Unit_Cell_p2_2/a_316_n480#"
+merge "MSB_Unit_Cell_p2_2/a_316_n480#" "MSB_Unit_Cell_p2_2/a_51_258#"
+merge "MSB_Unit_Cell_p2_2/a_51_258#" "MSB_Unit_Cell_p2_3/a_316_n480#"
+merge "MSB_Unit_Cell_p2_3/a_316_n480#" "Local_Enc_0/NAND_8/OUT"
+merge "Local_Enc_0/NAND_8/OUT" "MSB_Unit_Cell_p2_0/a_316_n480#"
+merge "MSB_Unit_Cell_p2_0/a_316_n480#" "MSB_Unit_Cell_p2_1/a_316_n480#"
+merge "MSB_Unit_Cell_p2_1/a_316_n480#" "MSB_Unit_Cell_p2_1/a_51_258#"
+merge "MSB_Unit_Cell_p2_1/a_51_258#" "Local_Enc_0/Q"
+merge "Local_Enc_0/Q" "Q"
+merge "Local_Enc_0/Ci" "Ci" -101.835 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4664 -330 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_3/m1_23_6#" "MSB_Unit_Cell_p2_0/m1_23_6#" -454.175 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8533 -740 0 0 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_0/m1_23_6#" "MSB_Unit_Cell_p2_2/m1_23_6#"
+merge "MSB_Unit_Cell_p2_2/m1_23_6#" "MSB_Unit_Cell_p2_1/m1_23_6#"
+merge "MSB_Unit_Cell_p2_1/m1_23_6#" "OUT+"
+merge "CM_MSB_V2_0/IM" "IM" -59.5125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5900 -308 0 0 0 0 0 0 0 0
+merge "CM_MSB_V2_0/IM_T" "m2_n2995_3104#" -164.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4624 -272 -8990 -426 0 0 0 0 0 0
+merge "m2_n2995_3104#" "IM_T"
+merge "MSB_Unit_Cell_p2_3/a_n74_n149#" "Local_Enc_0/QB" -743.707 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13346 -1052 -3640 -242 0 0 0 0 0 0
+merge "Local_Enc_0/QB" "m1_n602_5992#"
+merge "m1_n602_5992#" "MSB_Unit_Cell_p2_0/a_n74_n149#"
+merge "MSB_Unit_Cell_p2_0/a_n74_n149#" "MSB_Unit_Cell_p2_2/a_n74_n149#"
+merge "MSB_Unit_Cell_p2_2/a_n74_n149#" "MSB_Unit_Cell_p2_1/a_n74_n149#"
+merge "MSB_Unit_Cell_p2_1/a_n74_n149#" "QB"
+merge "CM_MSB_V2_0/SD" "SD" -225.393 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9519 -448 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_3/m1_34_n336#" "MSB_Unit_Cell_p2_2/m1_34_n336#" -3412.56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8120 -738 0 0 0 0 0 0
+merge "MSB_Unit_Cell_p2_2/m1_34_n336#" "MSB_Unit_Cell_p2_0/m1_34_n336#"
+merge "MSB_Unit_Cell_p2_0/m1_34_n336#" "MSB_Unit_Cell_p2_1/m1_34_n336#"
+merge "MSB_Unit_Cell_p2_1/m1_34_n336#" "OUT-"
+merge "Local_Enc_0/Ri" "Ri" -69.1415 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3030 -246 0 0 0 0 0 0 0 0
+merge "Local_Enc_0/Ri-1" "Ri-1" -58.4369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -870 -194 0 0 0 0 0 0 0 0

@@ -1,0 +1,23 @@
+* NGSPICE file created from GF_INV_Mag_flat.ext - technology: gf180mcuC
+
+.subckt inv_pex VSS VDD IN OUT
+X0 OUT IN.t0 VDD.t1 VDD.t0 pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+X1 OUT IN.t1 VSS.t1 VSS.t0 nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+R0 IN.n0 IN.t0 21.0056
+R1 IN.n0 IN.t1 16.2458
+R2 IN IN.n0 4.14819
+R3 VDD.n1 VDD.t0 490.774
+R4 VDD VDD.t1 5.1658
+R5 VDD VDD.n1 3.15128
+R6 VDD.n1 VDD.n0 0.0755
+R7 OUT OUT.n1 9.35196
+R8 OUT OUT.n0 5.09556
+R9 VSS.n0 VSS.t0 1030.02
+R10 VSS VSS.t1 9.41658
+R11 VSS VSS.n0 5.2005
+R12 VSS VSS.n0 5.2005
+C0 OUT IN 0.0691f
+C1 VDD IN 0.232f
+C2 OUT VDD 0.152f
+.ends
+

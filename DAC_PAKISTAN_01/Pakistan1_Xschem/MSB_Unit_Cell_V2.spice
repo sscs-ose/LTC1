@@ -1,0 +1,160 @@
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/MSB_Unit_Cell_V2.sch
+**.subckt MSB_Unit_Cell_V2 VDD VSS Ri-1 Ri Ci IM_T IM IOUT+ IOUT-
+*.iopin VDD
+*.iopin VSS
+*.ipin Ri-1
+*.ipin Ri
+*.ipin Ci
+*.ipin IM_T
+*.ipin IM
+*.opin IOUT+
+*.opin IOUT-
+x1 VDD VSS Ri-1 Ri Ci net2 net3 Local_Enc
+x2 net1 IOUT+ VSS net2 nfet_03V3_m128
+x3 net1 IOUT- VSS net3 nfet_03V3_m128
+x4 net4 net1 VSS IM_T nfet_03V3_m128
+x5 VSS net4 VSS IM nfet_03V3_m128
+**.ends
+
+* expanding   symbol:  Local_Enc.sym # of pins=7
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/Local_Enc.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/Local_Enc.sch
+.subckt Local_Enc VDD VSS Ri-1 Ri Ci Q QB
+*.iopin VDD
+*.iopin VSS
+*.ipin Ri-1
+*.ipin Ri
+*.ipin Ci
+*.opin Q
+*.opin QB
+x1 VDD VSS Ri-1 Ri-1 net5 NAND
+x2 VDD VSS Ri Ri net6 NAND
+x3 VDD VSS Ci Ci net7 NAND
+x4 VDD VSS net5 net5 net3 NAND
+x5 VDD VSS net6 net7 net4 NAND
+x6 VDD VSS net3 net4 net2 NAND
+x7 VDD VSS net2 net2 net1 NAND
+x8 VDD VSS Q net1 QB NAND
+x9 VDD VSS net2 QB Q NAND
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m128.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m128.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m128.sch
+.subckt nfet_03V3_m128 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m64
+x2 S D B G nfet_03V3_m64
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/NAND.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/NAND.sch
+.subckt NAND VDD VSS A B OUT
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.ipin B
+*.opin OUT
+XM1 net1 B VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT A VDD VDD pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT B VDD VDD pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT A net1 VSS nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m64.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m64.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m64.sch
+.subckt nfet_03V3_m64 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m32
+x2 S D B G nfet_03V3_m32
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m32.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m32.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m32.sch
+.subckt nfet_03V3_m32 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m16
+x2 S D B G nfet_03V3_m16
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m16.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m16.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m16.sch
+.subckt nfet_03V3_m16 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m8
+x2 S D B G nfet_03V3_m8
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m8.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m8.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m8.sch
+.subckt nfet_03V3_m8 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m4
+x2 S D B G nfet_03V3_m4
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m4.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m4.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m4.sch
+.subckt nfet_03V3_m4 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+x1 S D B G nfet_03V3_m2
+x2 S D B G nfet_03V3_m2
+.ends
+
+
+* expanding   symbol:  nfet_03V3_m2.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m2.sym
+** sch_path: /home/shahid/GF180Projects/GF_INV/Xschem/nfet_03V3_m2.sch
+.subckt nfet_03V3_m2 S D B G
+*.iopin G
+*.iopin S
+*.iopin D
+*.iopin B
+XM1 D G S B nfet_03v3 L=0.28u W=0.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 D G S B nfet_03v3 L=0.28u W=0.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

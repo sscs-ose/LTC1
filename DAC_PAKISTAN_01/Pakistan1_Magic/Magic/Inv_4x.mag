@@ -1,0 +1,75 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694581763
+<< nwell >>
+rect -58 1061 506 1214
+<< psubdiff >>
+rect -58 -87 506 -59
+rect -58 -174 -27 -87
+rect 476 -174 506 -87
+rect -58 -203 506 -174
+<< nsubdiff >>
+rect -27 1154 476 1186
+rect -27 1072 11 1154
+rect 449 1072 476 1154
+rect -27 1042 476 1072
+<< psubdiffcont >>
+rect -27 -174 476 -87
+<< nsubdiffcont >>
+rect 11 1072 449 1154
+<< polysilicon >>
+rect 116 501 172 795
+rect 10 482 172 501
+rect 276 482 332 796
+rect 10 466 332 482
+rect 10 405 36 466
+rect 105 439 332 466
+rect 105 426 340 439
+rect 105 405 172 426
+rect 10 373 172 405
+rect 116 354 172 373
+rect 284 354 340 426
+rect 116 118 172 297
+rect 284 143 340 297
+<< polycontact >>
+rect 36 405 105 466
+<< metal1 >>
+rect -58 1154 506 1214
+rect -58 1072 11 1154
+rect 449 1072 506 1154
+rect -58 1042 506 1072
+rect 41 682 87 1042
+rect 201 511 247 862
+rect 361 693 407 1042
+rect 20 466 121 484
+rect 20 405 36 466
+rect 105 405 121 466
+rect 20 389 121 405
+rect 201 393 511 511
+rect 37 -59 83 265
+rect 201 122 251 393
+rect 201 90 247 122
+rect 373 -59 419 267
+rect -58 -87 506 -59
+rect -58 -174 -27 -87
+rect 476 -174 506 -87
+rect -58 -203 506 -174
+use nmos_3p3_BZS5U2  nmos_3p3_BZS5U2_0
+timestamp 1694581763
+transform 1 0 228 0 1 192
+box -228 -192 228 192
+use pmos_3p3_MNXALR  pmos_3p3_MNXALR_0
+timestamp 1694581763
+transform 1 0 224 0 1 763
+box -282 -298 282 298
+<< labels >>
+flabel metal1 469 435 469 435 0 FreeSans 800 0 0 0 OUT
+port 0 nsew
+flabel polycontact 68 437 68 437 0 FreeSans 800 0 0 0 IN
+port 1 nsew
+flabel nsubdiffcont 223 1115 223 1115 0 FreeSans 800 0 0 0 VDD
+port 2 nsew
+flabel psubdiffcont 220 -130 220 -130 0 FreeSans 800 0 0 0 VSS
+port 3 nsew
+<< end >>

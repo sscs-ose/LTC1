@@ -1,0 +1,25 @@
+* NGSPICE file created from TGATE_PGA_MAGIC.ext - technology: gf180mcuC
+
+.subckt nfet_03v3_DNL5WS a_n196_n100# a_n52_n100# a_108_n100# a_52_n144# a_n108_n144#
++ VSUBS
+X0 a_n52_n100# a_n108_n144# a_n196_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 a_108_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt pfet_03v3_6DZECV a_n196_n100# a_n52_n100# w_n282_n230# a_108_n100# a_52_n144#
++ a_n108_n144#
+X0 a_n52_n100# a_n108_n144# a_n196_n100# w_n282_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 a_108_n100# a_52_n144# a_n52_n100# w_n282_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt nfet_03v3_DNQ7WS a_28_n100# a_n28_n144# a_n116_n100# VSUBS
+X0 a_28_n100# a_n28_n144# a_n116_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt TGATE_PGA_MAGIC VDD VSS B CLK A
+Xnfet_03v3_DNL5WS_0 A B A CLK CLK VSS nfet_03v3_DNL5WS
+Xpfet_03v3_6DZECV_0 VDD a_n36_13# VDD VDD CLK CLK pfet_03v3_6DZECV
+Xpfet_03v3_6DZECV_1 A B VDD A a_n36_13# a_n36_13# pfet_03v3_6DZECV
+Xnfet_03v3_DNQ7WS_0 a_n36_13# CLK VSS VSS nfet_03v3_DNQ7WS
+.ends
+

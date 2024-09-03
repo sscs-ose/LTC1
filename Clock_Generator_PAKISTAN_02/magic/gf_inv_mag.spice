@@ -1,0 +1,23 @@
+* NGSPICE file created from gf_inv_mag.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_EA23U2 a_122_n100# a_n52_n100# a_n122_n144# a_296_n100# a_n226_n100#
++ a_n296_n144# a_n384_n100# a_52_n144# a_226_n144# VSUBS
+X0 a_296_n100# a_226_n144# a_122_n100# VSUBS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.35u
+X1 a_n226_n100# a_n296_n144# a_n384_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.35u
+X2 a_n52_n100# a_n122_n144# a_n226_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.35u
+X3 a_122_n100# a_52_n144# a_n52_n100# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.35u
+.ends
+
+.subckt pmos_3p3_M6H3WS a_n52_n50# a_n384_n50# a_296_n50# a_226_n94# a_n296_n94# w_n470_n180#
++ a_52_n94# a_n226_n50# a_122_n50# a_n122_n94#
+X0 a_n52_n50# a_n122_n94# a_n226_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.35u
+X1 a_122_n50# a_52_n94# a_n52_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.35u
+X2 a_296_n50# a_226_n94# a_122_n50# w_n470_n180# pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.35u
+X3 a_n226_n50# a_n296_n94# a_n384_n50# w_n470_n180# pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.35u
+.ends
+
+.subckt gf_inv_mag VDD VSS OUT IN
+Xnmos_3p3_EA23U2_0 OUT VSS IN VSS OUT IN VSS IN IN VSS nmos_3p3_EA23U2
+Xpmos_3p3_M6H3WS_0 VDD VDD VDD IN IN VDD IN OUT OUT IN pmos_3p3_M6H3WS
+.ends
+

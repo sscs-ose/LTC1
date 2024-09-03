@@ -1,0 +1,31 @@
+* NGSPICE file created from or_2_mag.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_M8QNDR w_n202_n290# a_28_n160# a_n116_n160# a_n28_n204#
+X0 a_28_n160# a_n28_n204# a_n116_n160# w_n202_n290# pfet_03v3 ad=0.704p pd=4.08u as=0.704p ps=4.08u w=1.6u l=0.28u
+.ends
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt GF_INV_MAG VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+
+.subckt pmos_3p3_M4YALR w_n202_n290# a_28_n160# a_n116_n160# a_n28_n204#
+X0 a_28_n160# a_n28_n204# a_n116_n160# w_n202_n290# pfet_03v3 ad=0.704p pd=4.08u as=0.704p ps=4.08u w=1.6u l=0.28u
+.ends
+
+.subckt or_2_mag VSS VDD IN2 IN1 OUT
+Xpmos_3p3_M8QNDR_0 VDD pmos_3p3_M8QNDR_0/a_28_n160# VDD IN2 pmos_3p3_M8QNDR
+XGF_INV_MAG_1 VDD VSS GF_INV_MAG_1/IN OUT GF_INV_MAG
+Xpmos_3p3_M4YALR_0 VDD GF_INV_MAG_1/IN pmos_3p3_M8QNDR_0/a_28_n160# IN1 pmos_3p3_M4YALR
+Xnmos_3p3_DDNVWA_0 GF_INV_MAG_1/IN VSS IN1 VSS nmos_3p3_DDNVWA
+Xnmos_3p3_DDNVWA_1 VSS GF_INV_MAG_1/IN IN2 VSS nmos_3p3_DDNVWA
+.ends
+

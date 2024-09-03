@@ -1,0 +1,91 @@
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/dec_3x8_updated_ibr.sch
+**.subckt dec_3x8_updated_ibr IN2 IN1 VSS VDD D0 D1 D2 D3 D4 D5 D6 D7 IN3
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin D0
+*.opin D1
+*.opin D2
+*.opin D3
+*.opin D4
+*.opin D5
+*.opin D6
+*.opin D7
+*.ipin IN3
+x1 IN3B VSS VDD D0 IN1B IN2B and_3_ibr
+x2 IN3 VSS VDD D1 IN2B IN1B and_3_ibr
+x3 IN3B VSS VDD D2 IN1B IN2 and_3_ibr
+x4 IN3 VSS VDD D3 IN1B IN2 and_3_ibr
+x5 IN3 VSS VDD D7 IN1 IN2 and_3_ibr
+x6 IN3B VSS VDD D6 IN1 IN2 and_3_ibr
+x7 IN3 VSS VDD D5 IN2B IN1 and_3_ibr
+x8 IN3B VSS VDD D4 IN2B IN1 and_3_ibr
+x9 VSS IN1 IN1B VDD inv_my_ibr
+x10 VSS IN2 IN2B VDD inv_my_ibr
+x11 VSS IN3 IN3B VDD inv_my_ibr
+**.ends
+
+* expanding   symbol:  and_3_ibr.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/and_3_ibr.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/and_3_ibr.sch
+.subckt and_3_ibr IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+x1 IN1 VSS VDD net1 IN3 IN2 nand3_ibr
+x2 VSS net1 OUT VDD inv_my_ibr
+.ends
+
+
+* expanding   symbol:  inv_my_ibr.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_my_ibr.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/inv_my_ibr.sch
+.subckt inv_my_ibr VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  nand3_ibr.sym # of pins=6
+** sym_path: /home/shahid/GF180Projects/Top_test/top/xschem/nand3_ibr.sym
+** sch_path: /home/shahid/GF180Projects/Top_test/top/xschem/nand3_ibr.sch
+.subckt nand3_ibr IN1 VSS VDD OUT IN3 IN2
+*.ipin IN2
+*.ipin IN1
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.ipin IN3
+XM3 net1 IN3 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM4 OUT IN1 net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM1 OUT IN3 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN1 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net2 IN2 net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=3
+XM8 OUT IN2 VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

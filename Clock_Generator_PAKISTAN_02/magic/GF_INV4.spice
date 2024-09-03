@@ -1,0 +1,19 @@
+* NGSPICE file created from GF_INV4.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_9MTZEK a_n52_n70# a_52_n114# a_n122_n114# a_n210_n70# a_122_n70#
++ VSUBS
+X0 a_n52_n70# a_n122_n114# a_n210_n70# VSUBS nfet_03v3 ad=0.182p pd=1.22u as=0.308p ps=2.28u w=0.7u l=0.35u
+X1 a_122_n70# a_52_n114# a_n52_n70# VSUBS nfet_03v3 ad=0.308p pd=2.28u as=0.182p ps=1.22u w=0.7u l=0.35u
+.ends
+
+.subckt pmos_3p3_585UPK a_52_n184# a_122_n140# a_n52_n140# a_n122_n184# a_n210_n140#
++ w_n296_n270#
+X0 a_122_n140# a_52_n184# a_n52_n140# w_n296_n270# pfet_03v3 ad=0.616p pd=3.68u as=0.364p ps=1.92u w=1.4u l=0.35u
+X1 a_n52_n140# a_n122_n184# a_n210_n140# w_n296_n270# pfet_03v3 ad=0.364p pd=1.92u as=0.616p ps=3.68u w=1.4u l=0.35u
+.ends
+
+.subckt GF_INV4 VDD IN OUT VSS
+Xnmos_3p3_9MTZEK_0 OUT IN IN VSS VSS VSS nmos_3p3_9MTZEK
+Xpmos_3p3_585UPK_0 IN VDD OUT IN VDD VDD pmos_3p3_585UPK
+.ends
+

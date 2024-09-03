@@ -1,0 +1,76 @@
+* NGSPICE file created from PGA_Dec_Layout.ext - technology: gf180mcuC
+
+.subckt nmos_3p3_JCGST2 a_n28_n94# a_132_n94# a_n132_n50# a_n276_n50# a_188_n50# a_28_n50#
++ a_n188_n94# VSUBS
+X0 a_28_n50# a_n28_n94# a_n132_n50# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X1 a_n132_n50# a_n188_n94# a_n276_n50# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+X2 a_188_n50# a_132_n94# a_28_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+.ends
+
+.subckt nmos_3p3_GGGST2 a_n28_n94# a_n116_n50# a_28_n50# VSUBS
+X0 a_28_n50# a_n28_n94# a_n116_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt pmos_3p3_MNVUAR w_n202_n230# a_28_n100# a_n28_n144# a_n116_n100#
+X0 a_28_n100# a_n28_n144# a_n116_n100# w_n202_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt AND_3_In_Layout A B C OUT VDD VSS
+Xnmos_3p3_JCGST2_0 C C VSS m1_677_137# VSS m1_677_137# C VSS nmos_3p3_JCGST2
+Xnmos_3p3_JCGST2_1 A A m1_197_n22# a_1072_364# m1_197_n22# a_1072_364# A VSS nmos_3p3_JCGST2
+Xnmos_3p3_JCGST2_2 B B m1_677_137# m1_197_n22# m1_677_137# m1_197_n22# B VSS nmos_3p3_JCGST2
+Xnmos_3p3_GGGST2_0 a_1072_364# VSS OUT VSS nmos_3p3_GGGST2
+Xpmos_3p3_MNVUAR_0 VDD a_1072_364# B VDD pmos_3p3_MNVUAR
+Xpmos_3p3_MNVUAR_1 VDD VDD A a_1072_364# pmos_3p3_MNVUAR
+Xpmos_3p3_MNVUAR_2 VDD OUT a_1072_364# VDD pmos_3p3_MNVUAR
+Xpmos_3p3_MNVUAR_3 VDD VDD C a_1072_364# pmos_3p3_MNVUAR
+.ends
+
+.subckt nmos_3p3_BGGST2 a_n52_n50# a_n196_n50# a_52_n94# a_108_n50# a_n108_n94# VSUBS
+X0 a_108_n50# a_52_n94# a_n52_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+X1 a_n52_n50# a_n108_n94# a_n196_n50# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+.ends
+
+.subckt AND_2_In_Layout A B OUT VDD VSS
+Xnmos_3p3_GGGST2_0 a_589_329# VSS OUT VSS nmos_3p3_GGGST2
+Xpmos_3p3_MNVUAR_0 VDD OUT a_589_329# VDD pmos_3p3_MNVUAR
+Xnmos_3p3_BGGST2_0 VSS m1_37_n22# B m1_37_n22# B VSS nmos_3p3_BGGST2
+Xpmos_3p3_MNVUAR_1 VDD a_589_329# A VDD pmos_3p3_MNVUAR
+Xnmos_3p3_BGGST2_1 a_589_329# m1_37_n22# A m1_37_n22# A VSS nmos_3p3_BGGST2
+Xpmos_3p3_MNVUAR_2 VDD VDD B a_589_329# pmos_3p3_MNVUAR
+.ends
+
+.subckt pmos_3p3_MEVUAR a_n196_n100# a_n52_n100# w_n282_n230# a_108_n100# a_52_n144#
++ a_n108_n144#
+X0 a_n52_n100# a_n108_n144# a_n196_n100# w_n282_n230# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 a_108_n100# a_52_n144# a_n52_n100# w_n282_n230# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt OR_2_In_Layout OUT VDD VSS A B
+Xpmos_3p3_MEVUAR_0 m1_99_350# a_622_212# VDD m1_99_350# B B pmos_3p3_MEVUAR
+Xpmos_3p3_MEVUAR_1 m1_99_350# VDD VDD m1_99_350# A A pmos_3p3_MEVUAR
+Xnmos_3p3_GGGST2_0 a_622_212# VSS OUT VSS nmos_3p3_GGGST2
+Xnmos_3p3_GGGST2_1 A VSS a_622_212# VSS nmos_3p3_GGGST2
+Xnmos_3p3_GGGST2_2 B a_622_212# VSS VSS nmos_3p3_GGGST2
+Xpmos_3p3_MNVUAR_0 VDD VDD a_622_212# OUT pmos_3p3_MNVUAR
+.ends
+
+.subckt Inverter_Layout IN OUT VSS VDD
+Xnmos_3p3_GGGST2_0 IN VSS OUT VSS nmos_3p3_GGGST2
+Xpmos_3p3_MNVUAR_0 VDD OUT IN VDD pmos_3p3_MNVUAR
+.ends
+
+.subckt PGA_Dec_Layout A B C S1 S3 S2 S6 S5 S4 VDD VSS
+XAND_3_In_Layout_0 A OR_2_In_Layout_0/A C S4 VDD VSS AND_3_In_Layout
+XAND_3_In_Layout_1 C B AND_3_In_Layout_1/C S2 VDD VSS AND_3_In_Layout
+XAND_2_In_Layout_0 AND_2_In_Layout_0/A AND_3_In_Layout_1/C S1 VDD VSS AND_2_In_Layout
+XAND_3_In_Layout_2 OR_2_In_Layout_0/B OR_2_In_Layout_0/A A S3 VDD VSS AND_3_In_Layout
+XAND_3_In_Layout_3 A B C S6 VDD VSS AND_3_In_Layout
+XAND_3_In_Layout_4 A B OR_2_In_Layout_0/B S5 VDD VSS AND_3_In_Layout
+XOR_2_In_Layout_0 AND_2_In_Layout_0/A VDD VSS OR_2_In_Layout_0/A OR_2_In_Layout_0/B
++ OR_2_In_Layout
+XInverter_Layout_1 A AND_3_In_Layout_1/C VSS VDD Inverter_Layout
+XInverter_Layout_0 C OR_2_In_Layout_0/B VSS VDD Inverter_Layout
+XInverter_Layout_2 B OR_2_In_Layout_0/A VSS VDD Inverter_Layout
+.ends
+

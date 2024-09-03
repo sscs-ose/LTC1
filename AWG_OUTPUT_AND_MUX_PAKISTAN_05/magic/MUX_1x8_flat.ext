@@ -1,0 +1,1745 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "A1" 30 -5362 -5551 -5362 -5551 m1
+port "A5" 29 -5348 -6192 -5348 -6192 m1
+port "S2" 33 -249 -4375 -249 -4375 m1
+port "A7" 45 -5242 -3352 -5242 -3352 m1
+port "A3" 43 -5266 -3998 -5266 -3998 m1
+port "Vout" 36 7779 -1906 7779 -1906 m1
+port "S1" 34 -286 -2051 -286 -2051 v
+port "A4" 28 -5235 -1468 -5235 -1468 m1
+port "A0" 6 -5245 -994 -5245 -994 m1
+port "A2" 26 -5320 626 -5320 626 m1
+port "A6" 27 -5266 1147 -5266 1147 m1
+port "S0" 3 -62 -890 -62 -890 m1
+port "ENA" 47 -5011 -24 -5010 -23 m1
+port "VDD" 38 5373 2647 5373 2647 m1
+port "VSS" 40 7170 -5116 7170 -5116 m1
+node "a_5684_n6152#" 1471 1289.57 5684 -6152 p 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_3874_n7430#" 1471 1284.68 3874 -7430 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_2004_n6151#" 1471 1287.2 2004 -6151 p 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_301_n7430#" 1471 1291.84 301 -7430 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "TG_GATE_SWITCH_magic_4.B" 1291 2668.2 -1491 -7431 pdif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 902537 35512 760801 13532 0 0 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_4.B" "TG_magic_2.A"
+node "A1" 737 2757.26 -5362 -5551 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 498200 20638 565315 9344 0 0 0 0 0 0
+equiv "A1" "TG_GATE_SWITCH_magic_4.A"
+node "a_n1894_n7431#" 1471 1321.32 -1894 -7431 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "TG_GATE_SWITCH_magic_2.B" 1296 4173.92 -3894 -7438 pdif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 903824 35544 1488000 26598 0 0 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_2.B" "TG_magic_13.A"
+node "A5" 734 2232.96 -5348 -6192 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 505605 20864 186746 2512 0 0 0 0 0 0
+equiv "A5" "TG_GATE_SWITCH_magic_2.A"
+node "a_n4297_n7438#" 1471 1313.83 -4297 -7438 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_n2298_n7431#" 1150 3284.75 -2298 -7431 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "a_n4701_n7438#" 1150 3260.26 -4701 -7438 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "a_5741_n4853#" 1471 1298.93 5741 -4853 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "S2" 1708 6112.55 -249 -4375 m1 0 0 0 0 0 0 0 0 0 0 0 0 739966 26278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 91823 3410 694764 23010 0 0 0 0 0 0
+equiv "S2" "INVERTER_MUX_1.IN"
+equiv "S2" "TG_magic_12.CLK"
+node "TG_magic_2.B" 1799 3477.14 3730 -4852 ndif 0 0 0 0 403200 12032 806400 24064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1388895 51552 215375 6066 0 0 0 0 0 0
+equiv "TG_magic_2.B" "TG_magic_13.B"
+equiv "TG_magic_2.B" "TG_magic_7.A"
+node "TG_magic_7.B" 1798 3303.09 2464 -4852 ndif 0 0 0 0 403200 12032 806400 24064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1338376 50614 326786 5694 0 0 0 0 0 0
+equiv "TG_magic_7.B" "TG_magic_12.A"
+equiv "TG_magic_7.B" "TG_magic_9.B"
+node "TG_magic_4.B" 1799 3442.07 704 -7430 pdif 0 0 0 0 403200 12032 806400 24064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1375090 51310 206044 5824 0 0 0 0 0 0
+equiv "TG_magic_4.B" "TG_magic_9.A"
+equiv "TG_magic_4.B" "TG_magic_1.B"
+node "a_3817_n4055#" 1471 1249.19 3817 -4055 p 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_2061_n4852#" 1471 1261.74 2061 -4852 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "TG_GATE_SWITCH_magic_5.B" 1288 3287.11 -1491 -4853 ndif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 903256 35526 114758 2318 454566 6130 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_5.B" "TG_magic_4.A"
+node "A7" 736 2354.27 -5242 -3352 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 497206 20542 580002 9584 0 0 0 0 0 0
+equiv "A7" "TG_GATE_SWITCH_magic_5.A"
+node "TG_GATE_SWITCH_magic_1.B" 1294 3519.25 -3894 -4860 ndif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 894881 35304 495155 9484 651894 11538 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_1.B" "TG_magic_1.A"
+node "A3" 734 2130.34 -5266 -3998 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 499721 20662 197356 2630 0 0 0 0 0 0
+equiv "A3" "TG_GATE_SWITCH_magic_1.A"
+node "a_n1894_n4853#" 1471 1285.12 -1894 -4853 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_n2298_n4853#" 1150 3279.37 -2298 -4853 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "a_n4297_n4860#" 1471 1277.43 -4297 -4860 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_n4701_n4860#" 1150 3249.07 -4701 -4860 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "Vout" 1075 3594.73 7779 -1906 m1 0 0 0 0 249600 7296 499200 14592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1620033 36862 407219 5042 0 0 0 0 0 0
+equiv "Vout" "TG_magic_8.B"
+equiv "Vout" "TG_magic_12.B"
+node "a_5741_n2271#" 1471 1298.44 5741 -2271 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_3817_n991#" 1471 1249.3 3817 -991 p 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "TG_magic_0.B" 1798 3288.43 2464 -2270 pdif 0 0 0 0 403200 12032 806400 24064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1363805 50930 343286 5750 0 0 0 0 0 0
+equiv "TG_magic_0.B" "TG_magic_8.A"
+equiv "TG_magic_0.B" "TG_magic_5.B"
+node "a_2061_n2270#" 1471 1279.16 2061 -2270 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "INVERTER_MUX_1.OUT" 1200 5547.98 291 -4392 ndif 0 0 0 0 41600 1632 83200 2432 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 354246 14336 309093 10654 0 0 0 0 0 0
+equiv "INVERTER_MUX_1.OUT" "TG_magic_8.CLK"
+node "S1" 2712 8595.85 -286 -2051 v 0 0 0 0 0 0 0 0 0 0 0 0 1191846 41984 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 284453 11112 644517 22724 0 0 0 0 0 0
+equiv "S1" "TG_magic_5.CLK"
+equiv "S1" "INVERTER_MUX_2.IN"
+equiv "S1" "TG_magic_9.CLK"
+node "TG_magic_7.CLK" 2198 7386.31 291 -2877 pdif 0 0 0 0 41600 1632 83200 2432 0 0 0 0 903760 31412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 383005 15200 353253 12312 0 0 0 0 0 0
+equiv "TG_magic_7.CLK" "TG_magic_0.CLK"
+equiv "TG_magic_7.CLK" "INVERTER_MUX_2.OUT"
+node "A4" 736 2285.35 -5235 -1468 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 497400 20520 699901 9090 0 0 0 0 0 0
+equiv "A4" "TG_GATE_SWITCH_magic_6.A"
+node "a_n1894_n2271#" 1471 1289.53 -1894 -2271 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "A0" 734 2143.53 -5245 -994 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 504540 20710 201052 2696 0 0 0 0 0 0
+equiv "A0" "TG_GATE_SWITCH_magic_0.A"
+node "a_n4297_n2278#" 1471 1277.49 -4297 -2278 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_n2298_n2271#" 1150 3274.45 -2298 -2271 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "a_n4701_n2278#" 1150 3248.53 -4701 -2278 pdif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "a_5684_1104#" 1471 1288.6 5684 1104 p 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "TG_magic_5.A" 1799 3493.3 3730 -2270 pdif 0 0 0 0 403200 12032 806400 24064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1390472 51788 200946 5656 0 0 0 0 0 0
+equiv "TG_magic_5.A" "TG_magic_3.B"
+equiv "TG_magic_5.A" "TG_magic_11.B"
+node "TG_GATE_SWITCH_magic_0.B" 1294 3500.11 -3894 -2278 pdif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 903601 35540 513720 8994 668902 11828 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_0.B" "TG_magic_6.A"
+node "TG_magic_0.A" 1799 3471.11 704 308 ndif 0 0 0 0 403200 12032 806400 24064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1379672 51518 207979 5640 0 0 0 0 0 0
+equiv "TG_magic_0.A" "TG_magic_6.B"
+equiv "TG_magic_0.A" "TG_magic_10.B"
+node "TG_GATE_SWITCH_magic_6.B" 1288 3239.44 -1491 -2271 pdif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 903819 35532 118198 2128 419186 6128 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_6.B" "TG_magic_10.A"
+node "TG_GATE_SWITCH_magic_7.B" 1291 2617.6 -1491 307 ndif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 894748 35312 711769 13062 0 0 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_7.B" "TG_magic_11.A"
+node "A2" 736 2785.5 -5320 626 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 502671 20710 708669 9192 0 0 0 0 0 0
+equiv "A2" "TG_GATE_SWITCH_magic_7.A"
+node "TG_GATE_SWITCH_magic_3.B" 1296 4148.28 -3894 300 ndif 0 0 0 0 278400 8384 556800 16768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 905946 35602 1507497 26502 0 0 0 0 0 0
+equiv "TG_GATE_SWITCH_magic_3.B" "TG_magic_3.A"
+node "A6" 734 2221.61 -5266 1147 m1 0 0 0 0 153600 4736 307200 9472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 506108 20710 201498 2668 0 0 0 0 0 0
+equiv "A6" "TG_GATE_SWITCH_magic_3.A"
+node "a_3874_308#" 1471 1291.75 3874 308 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "TG_magic_1.CLK" 234 14829.5 291 -1451 ndif 0 0 0 0 41600 1632 83200 2432 0 0 0 0 1807520 62824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 493320 20192 397673 14044 0 0 0 0 0 0
+equiv "TG_magic_1.CLK" "TG_magic_11.CLK"
+equiv "TG_magic_1.CLK" "TG_magic_6.CLK"
+equiv "TG_magic_1.CLK" "INVERTER_MUX_0.OUT"
+equiv "TG_magic_1.CLK" "TG_magic_2.CLK"
+node "a_2004_1105#" 1471 1287.23 2004 1105 p 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_301_308#" 1471 1291.89 301 308 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "S0" 57 16945.4 -62 -890 m1 0 0 0 0 0 0 0 0 0 0 0 0 2095606 73396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534548 18188 1551460 41198 0 0 0 0 0 0
+equiv "S0" "TG_magic_3.CLK"
+equiv "S0" "TG_magic_10.CLK"
+equiv "S0" "INVERTER_MUX_0.IN"
+equiv "S0" "TG_magic_13.CLK"
+equiv "S0" "TG_magic_4.CLK"
+node "a_n1894_307#" 1471 1319.74 -1894 307 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_n2298_307#" 1150 3275.55 -2298 307 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "a_n4297_300#" 1471 1313.77 -4297 300 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 598060 20774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123094 5338 0 0 0 0 0 0 0 0
+node "a_n4701_300#" 1150 3261.37 -4701 300 ndif 0 0 0 0 35200 1152 70400 2304 0 0 0 0 451880 15706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118740 4966 0 0 0 0 0 0 0 0
+node "ENA" 2580 10476.5 -5011 -24 m1 0 0 0 0 0 0 0 0 0 0 0 0 1148032 40224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 688887 20266 1182604 22320 0 0 0 0 0 0
+equiv "ENA" "TG_GATE_SWITCH_magic_7.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_3.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_6.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_0.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_5.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_4.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_2.CLK"
+equiv "ENA" "TG_GATE_SWITCH_magic_1.CLK"
+node "VDD" 1042 223121 5373 2647 m1 68102002 110392 0 0 3428486 65022 2448000 79680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10138307 188750 2343591 33574 0 0 0 0 0 0
+equiv "VDD" "TG_magic_3.VDD"
+equiv "VDD" "TG_magic_11.VDD"
+equiv "VDD" "TG_magic_6.VDD"
+equiv "VDD" "TG_magic_10.VDD"
+equiv "VDD" "INVERTER_MUX_0.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_7.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_3.VDD"
+equiv "VDD" "TG_magic_8.VDD"
+equiv "VDD" "TG_magic_5.VDD"
+equiv "VDD" "TG_magic_0.VDD"
+equiv "VDD" "INVERTER_MUX_2.VDD"
+equiv "VDD" "INVERTER_MUX_1.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_6.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_0.VDD"
+equiv "VDD" "TG_magic_13.VDD"
+equiv "VDD" "TG_magic_12.VDD"
+equiv "VDD" "TG_magic_9.VDD"
+equiv "VDD" "TG_magic_7.VDD"
+equiv "VDD" "TG_magic_2.VDD"
+equiv "VDD" "TG_magic_1.VDD"
+equiv "VDD" "TG_magic_4.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_5.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_4.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_2.VDD"
+equiv "VDD" "TG_GATE_SWITCH_magic_1.VDD"
+substrate "VSS" 0 0 7170 -5116 m1 0 0 0 0 1224000 41520 2448850 46720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6485081 113968 813885 11050 0 0 0 0 0 0
+equiv "VSS" "TG_magic_3.VSS"
+equiv "VSS" "TG_magic_11.VSS"
+equiv "VSS" "TG_magic_6.VSS"
+equiv "VSS" "TG_magic_10.VSS"
+equiv "VSS" "INVERTER_MUX_0.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_7.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_3.VSS"
+equiv "VSS" "TG_magic_8.VSS"
+equiv "VSS" "TG_magic_5.VSS"
+equiv "VSS" "TG_magic_0.VSS"
+equiv "VSS" "INVERTER_MUX_2.VSS"
+equiv "VSS" "INVERTER_MUX_1.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_6.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_0.VSS"
+equiv "VSS" "TG_magic_13.VSS"
+equiv "VSS" "TG_magic_12.VSS"
+equiv "VSS" "TG_magic_9.VSS"
+equiv "VSS" "TG_magic_7.VSS"
+equiv "VSS" "TG_magic_2.VSS"
+equiv "VSS" "TG_magic_1.VSS"
+equiv "VSS" "TG_magic_4.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_5.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_4.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_2.VSS"
+equiv "VSS" "TG_GATE_SWITCH_magic_1.VSS"
+cap "TG_GATE_SWITCH_magic_4.B" "S0" 234.173
+cap "TG_GATE_SWITCH_magic_0.B" "TG_magic_7.CLK" 1.66074
+cap "A6" "a_n4297_300#" 1156.81
+cap "S0" "a_n2298_n7431#" 6.73204
+cap "a_n2298_n4853#" "A1" 3.80799
+cap "a_5741_n4853#" "TG_magic_7.CLK" 11.5323
+cap "A7" "S0" 148.666
+cap "ENA" "a_n2298_307#" 176.055
+cap "VDD" "TG_GATE_SWITCH_magic_0.B" 2284.49
+cap "TG_magic_0.B" "a_2061_n4852#" 0.528683
+cap "TG_GATE_SWITCH_magic_2.B" "VDD" 3909.39
+cap "TG_GATE_SWITCH_magic_0.B" "a_n4701_n2278#" 193.857
+cap "TG_GATE_SWITCH_magic_6.B" "a_n2298_307#" 24.7438
+cap "a_n4297_300#" "A0" 0.000372878
+cap "a_n1894_n4853#" "INVERTER_MUX_1.OUT" 0.287444
+cap "VDD" "a_5741_n4853#" 3470.72
+cap "a_n4701_n4860#" "A5" 1.43415
+cap "TG_GATE_SWITCH_magic_7.B" "A2" 4980.85
+cap "a_2004_n6151#" "TG_GATE_SWITCH_magic_4.B" 150.052
+cap "ENA" "a_n4701_n7438#" 293.626
+cap "TG_GATE_SWITCH_magic_2.B" "S2" 4.85309
+cap "a_n4701_300#" "a_n1894_307#" 0.00445678
+cap "a_n2298_n4853#" "S0" 0.564928
+cap "TG_magic_0.B" "a_3817_n991#" 563.945
+cap "VDD" "TG_GATE_SWITCH_magic_1.B" 1976.75
+cap "S2" "a_5741_n4853#" 208.447
+cap "A4" "S0" 1344.33
+cap "S1" "S0" 1023.47
+cap "a_n4297_n7438#" "a_n4701_n7438#" 235.034
+cap "a_n4701_300#" "a_n4297_300#" 235.034
+cap "a_n2298_n2271#" "a_n4297_n2278#" 0.10357
+cap "S2" "TG_GATE_SWITCH_magic_1.B" 158.193
+cap "TG_GATE_SWITCH_magic_3.B" "TG_magic_5.A" 5168.34
+cap "VDD" "A6" 1531.46
+cap "a_n2298_n2271#" "a_n1894_n2271#" 235.034
+cap "TG_magic_0.A" "TG_GATE_SWITCH_magic_3.B" 110.918
+cap "a_2004_1105#" "S0" 32.601
+cap "VDD" "a_n1894_n7431#" 3437.25
+cap "TG_GATE_SWITCH_magic_7.B" "TG_GATE_SWITCH_magic_3.B" 977.657
+cap "a_n4701_n7438#" "A3" 1.43415
+cap "TG_magic_7.B" "a_2061_n2270#" 0.528683
+cap "INVERTER_MUX_1.OUT" "TG_GATE_SWITCH_magic_3.B" 1.66074
+cap "A6" "a_n4701_n2278#" 1.43415
+cap "TG_GATE_SWITCH_magic_5.B" "a_301_n7430#" 1185.42
+cap "A5" "a_n2298_n7431#" 0.0403081
+cap "a_n4297_n4860#" "A5" 0.000372878
+cap "a_n2298_n2271#" "A2" 5.01388
+cap "a_3874_308#" "TG_magic_5.A" 433.176
+cap "a_n1894_307#" "S0" 6.82005
+cap "S1" "a_2061_n4852#" 207.863
+cap "TG_magic_2.B" "TG_magic_0.B" 1.58636
+cap "TG_GATE_SWITCH_magic_5.B" "TG_magic_4.B" 5086.66
+cap "Vout" "TG_magic_0.B" 4922.98
+cap "S2" "a_n1894_n7431#" 1.75542
+cap "a_3874_308#" "TG_GATE_SWITCH_magic_7.B" 1123.67
+cap "ENA" "a_n4701_n4860#" 323.551
+cap "TG_GATE_SWITCH_magic_5.B" "INVERTER_MUX_1.OUT" 3.21658
+cap "VDD" "A0" 1487.35
+cap "TG_magic_1.CLK" "S0" 755.377
+cap "a_5684_1104#" "S0" 252.308
+cap "TG_magic_2.B" "TG_GATE_SWITCH_magic_4.B" 5073.51
+cap "a_n1894_n2271#" "a_n4297_n2278#" 0.00891356
+cap "a_n4701_n2278#" "A0" 377.912
+cap "TG_GATE_SWITCH_magic_6.B" "a_301_308#" 1193.26
+cap "S1" "a_3817_n991#" 255.931
+cap "a_n1894_n4853#" "a_n1894_n2271#" 19.0898
+cap "A2" "a_n4297_n2278#" 1.55724
+cap "VDD" "A1" 1494.63
+cap "VDD" "a_n4701_300#" 1265.18
+cap "TG_magic_7.B" "TG_magic_5.A" 1.39768
+cap "TG_magic_7.B" "TG_magic_4.B" 4983.04
+cap "TG_magic_1.CLK" "a_2061_n4852#" 28.3137
+cap "A3" "a_n4701_n4860#" 377.094
+cap "A2" "a_n1894_n2271#" 0.624527
+cap "TG_magic_7.B" "INVERTER_MUX_1.OUT" 0.855827
+cap "ENA" "a_n2298_n7431#" 172.07
+cap "a_n4297_n4860#" "ENA" 72.8016
+cap "a_n4701_300#" "a_n4701_n2278#" 48.1737
+cap "TG_GATE_SWITCH_magic_2.B" "TG_GATE_SWITCH_magic_1.B" 442.068
+cap "S0" "TG_magic_7.CLK" 23.1539
+cap "S2" "A1" 164.76
+cap "TG_magic_1.CLK" "a_2004_n6151#" 208.507
+cap "A7" "ENA" 353.275
+cap "A6" "TG_GATE_SWITCH_magic_0.B" 42.3657
+cap "a_n4297_n7438#" "a_n2298_n7431#" 0.105686
+cap "TG_magic_1.CLK" "a_3817_n991#" 0.339124
+cap "TG_magic_2.B" "S1" 0.479477
+cap "S1" "Vout" 1.81694
+cap "TG_GATE_SWITCH_magic_2.B" "a_n1894_n7431#" 112.418
+cap "TG_magic_0.A" "a_n2298_307#" 0.000479446
+cap "VDD" "S0" 6575.91
+cap "TG_GATE_SWITCH_magic_7.B" "a_n2298_307#" 173.954
+cap "a_n4297_n4860#" "A3" 1154.73
+cap "S0" "a_n4701_n2278#" 32.755
+cap "a_3817_n991#" "a_5741_n2271#" 2.954
+cap "TG_GATE_SWITCH_magic_0.B" "A0" 4937.12
+cap "A2" "TG_GATE_SWITCH_magic_3.B" 426.262
+cap "a_2061_n4852#" "TG_magic_7.CLK" 73.6562
+cap "a_n2298_n4853#" "ENA" 178.24
+cap "A7" "A3" 304.798
+cap "S2" "S0" 656.22
+cap "S1" "ENA" 62.2361
+cap "A4" "ENA" 424.223
+cap "TG_GATE_SWITCH_magic_1.B" "a_n1894_n7431#" 90.0922
+cap "TG_GATE_SWITCH_magic_5.B" "a_n1894_n2271#" 0.528683
+cap "a_n1894_n4853#" "TG_GATE_SWITCH_magic_5.B" 431.814
+cap "A4" "TG_GATE_SWITCH_magic_6.B" 4943.22
+cap "TG_magic_7.B" "a_3817_n4055#" 558.549
+cap "S1" "TG_GATE_SWITCH_magic_6.B" 87.7973
+cap "VDD" "a_2061_n4852#" 3485.3
+cap "TG_magic_2.B" "TG_magic_1.CLK" 246.766
+cap "a_2061_n2270#" "TG_magic_0.B" 440.158
+cap "a_n2298_n2271#" "a_n2298_307#" 48.1737
+cap "a_n4701_300#" "TG_GATE_SWITCH_magic_0.B" 17.0324
+cap "a_n2298_n4853#" "A3" 0.42403
+cap "S2" "a_2061_n4852#" 17.5944
+cap "VDD" "a_2004_n6151#" 3460.45
+cap "S1" "A3" 11.4772
+cap "TG_GATE_SWITCH_magic_2.B" "A1" 409.247
+cap "a_2004_1105#" "TG_GATE_SWITCH_magic_6.B" 1.01969
+cap "Vout" "a_5741_n2271#" 440.26
+cap "TG_GATE_SWITCH_magic_6.B" "a_n1894_307#" 4.53958
+cap "ENA" "a_n4297_300#" 75.6127
+cap "VDD" "a_3817_n991#" 3476.92
+cap "a_3874_308#" "TG_GATE_SWITCH_magic_3.B" 105.476
+cap "A1" "TG_GATE_SWITCH_magic_1.B" 241.379
+cap "VDD" "A5" 1533.6
+cap "TG_GATE_SWITCH_magic_6.B" "TG_magic_1.CLK" 13.0264
+cap "TG_magic_0.A" "a_301_308#" 430.847
+cap "Vout" "TG_magic_7.CLK" 1.72482
+cap "TG_GATE_SWITCH_magic_0.B" "S0" 353.388
+cap "TG_GATE_SWITCH_magic_7.B" "a_301_308#" 127.197
+cap "TG_magic_2.B" "TG_magic_7.CLK" 660.486
+cap "TG_GATE_SWITCH_magic_2.B" "S0" 635.796
+cap "S2" "A5" 6.88301
+cap "A6" "a_n4701_300#" 396.359
+cap "a_5741_n4853#" "S0" 1.35194
+cap "TG_magic_0.B" "TG_magic_5.A" 5346.68
+cap "TG_magic_0.A" "TG_magic_0.B" 4991.28
+cap "a_301_n7430#" "TG_GATE_SWITCH_magic_4.B" 131.713
+cap "A1" "a_n1894_n7431#" 1172.71
+cap "TG_GATE_SWITCH_magic_4.B" "TG_magic_4.B" 189.525
+cap "Vout" "VDD" 2938.81
+cap "INVERTER_MUX_1.OUT" "TG_magic_0.B" 566.612
+cap "A2" "a_n2298_307#" 532.06
+cap "TG_magic_2.B" "VDD" 1778.94
+cap "a_301_n7430#" "a_n2298_n7431#" 0.000453209
+cap "S1" "a_2061_n2270#" 76.1478
+cap "S0" "TG_GATE_SWITCH_magic_1.B" 341.3
+cap "a_n2298_n7431#" "TG_magic_4.B" 0.000239723
+cap "TG_GATE_SWITCH_magic_6.B" "TG_magic_7.CLK" 0.339921
+cap "S2" "Vout" 184.157
+cap "TG_magic_2.B" "S2" 245.115
+cap "a_n4701_300#" "A0" 1.43415
+cap "VDD" "ENA" 4513.09
+cap "A7" "INVERTER_MUX_1.OUT" 0.0531369
+cap "S0" "a_n1894_n7431#" 6.80806
+cap "TG_GATE_SWITCH_magic_2.B" "a_2004_n6151#" 68.5255
+cap "ENA" "a_n4701_n2278#" 358.585
+cap "TG_GATE_SWITCH_magic_3.B" "a_n2298_307#" 56.3185
+cap "a_n4297_n7438#" "VDD" 3439.19
+cap "TG_GATE_SWITCH_magic_6.B" "VDD" 1825.53
+cap "S2" "ENA" 615.136
+cap "a_2061_n2270#" "TG_magic_1.CLK" 26.0228
+cap "S0" "A0" 101.184
+cap "a_n4297_n7438#" "S2" 0.863769
+cap "TG_magic_0.B" "a_3817_n4055#" 2.07437
+cap "TG_GATE_SWITCH_magic_2.B" "A5" 5010.75
+cap "a_2004_n6151#" "TG_GATE_SWITCH_magic_1.B" 1292.56
+cap "INVERTER_MUX_1.OUT" "a_n2298_n4853#" 0.0183707
+cap "S1" "TG_magic_4.B" 384.38
+cap "S1" "TG_magic_5.A" 665.151
+cap "VDD" "A3" 1499.34
+cap "S1" "TG_magic_0.A" 267.695
+cap "a_n1894_n4853#" "a_n4701_n4860#" 0.00445678
+cap "S1" "INVERTER_MUX_1.OUT" 3065.57
+cap "S1" "TG_GATE_SWITCH_magic_7.B" 1.66074
+cap "a_n2298_n2271#" "A7" 0.520591
+cap "A2" "a_301_308#" 0.0527425
+cap "S2" "A3" 147.157
+cap "a_5684_n6152#" "a_3874_n7430#" 10.5443
+cap "A5" "TG_GATE_SWITCH_magic_1.B" 44.2342
+cap "A1" "S0" 54.1961
+cap "a_2004_1105#" "TG_magic_0.A" 433.084
+cap "TG_GATE_SWITCH_magic_2.B" "TG_magic_2.B" 5177.81
+cap "a_2004_1105#" "TG_GATE_SWITCH_magic_7.B" 133.216
+cap "TG_magic_0.A" "a_n1894_307#" 0.000724549
+cap "TG_magic_1.CLK" "a_301_n7430#" 0.000298448
+cap "Vout" "a_5741_n4853#" 439.605
+cap "a_2061_n2270#" "TG_magic_7.CLK" 202.107
+cap "TG_GATE_SWITCH_magic_7.B" "a_n1894_307#" 471.934
+cap "TG_magic_2.B" "a_5741_n4853#" 0.32337
+cap "a_n2298_n2271#" "a_n2298_n4853#" 1.736
+cap "a_n4297_n4860#" "a_n4297_n2278#" 19.0898
+cap "TG_magic_1.CLK" "TG_magic_4.B" 606.336
+cap "TG_magic_1.CLK" "TG_magic_5.A" 234.775
+cap "a_5684_1104#" "TG_magic_5.A" 431.256
+cap "A7" "a_n4297_n2278#" 3.9445
+cap "a_n2298_n2271#" "S1" 38.0292
+cap "a_n2298_n2271#" "A4" 457.782
+cap "TG_magic_0.A" "TG_magic_1.CLK" 666.452
+cap "ENA" "TG_GATE_SWITCH_magic_0.B" 507.08
+cap "a_n4297_n4860#" "a_n1894_n4853#" 0.00827687
+cap "TG_magic_1.CLK" "INVERTER_MUX_1.OUT" 634.837
+cap "TG_GATE_SWITCH_magic_7.B" "a_5684_1104#" 0.67503
+cap "TG_GATE_SWITCH_magic_7.B" "TG_magic_1.CLK" 363.492
+cap "TG_GATE_SWITCH_magic_2.B" "ENA" 334.649
+cap "a_301_308#" "TG_GATE_SWITCH_magic_3.B" 72.8274
+cap "TG_GATE_SWITCH_magic_6.B" "TG_GATE_SWITCH_magic_0.B" 465.378
+cap "A7" "a_n1894_n4853#" 1188.13
+cap "A7" "a_n1894_n2271#" 2.54649
+cap "a_2061_n2270#" "VDD" 3474.56
+cap "TG_magic_5.A" "a_5741_n2271#" 0.209126
+cap "TG_GATE_SWITCH_magic_2.B" "a_n4297_n7438#" 492.119
+cap "INVERTER_MUX_1.OUT" "a_5741_n2271#" 207.694
+cap "TG_magic_0.B" "TG_GATE_SWITCH_magic_3.B" 0.958174
+cap "ENA" "TG_GATE_SWITCH_magic_1.B" 526.197
+cap "A4" "a_n4297_n2278#" 128.589
+cap "S1" "a_n4297_n2278#" 98.8282
+cap "TG_magic_7.CLK" "TG_magic_4.B" 255.049
+cap "a_n1894_n4853#" "a_n2298_n4853#" 235.034
+cap "TG_magic_5.A" "TG_magic_7.CLK" 0.51417
+cap "a_n4297_n7438#" "TG_GATE_SWITCH_magic_1.B" 19.0624
+cap "A4" "a_n1894_n2271#" 1182.07
+cap "TG_magic_0.A" "TG_magic_7.CLK" 369.916
+cap "S1" "a_n1894_n4853#" 11.6899
+cap "A4" "a_n1894_n4853#" 2.54649
+cap "S1" "a_n1894_n2271#" 101.977
+cap "INVERTER_MUX_1.OUT" "TG_magic_7.CLK" 458.833
+cap "a_n2298_n2271#" "TG_magic_1.CLK" 0.132269
+cap "A1" "A5" 216.849
+cap "A6" "ENA" 580.71
+cap "VDD" "a_301_n7430#" 3458.41
+cap "TG_magic_1.CLK" "a_3817_n4055#" 0.374677
+cap "A4" "A2" 14.024
+cap "TG_GATE_SWITCH_magic_5.B" "TG_GATE_SWITCH_magic_4.B" 299.199
+cap "VDD" "TG_magic_4.B" 1767.17
+cap "VDD" "TG_magic_5.A" 2212.69
+cap "a_2004_n6151#" "S0" 44.8685
+cap "A3" "TG_GATE_SWITCH_magic_1.B" 4936.72
+cap "TG_magic_0.A" "VDD" 2228.89
+cap "a_n4297_n7438#" "a_n1894_n7431#" 0.00891356
+cap "TG_GATE_SWITCH_magic_7.B" "VDD" 2362.67
+cap "TG_GATE_SWITCH_magic_5.B" "a_n2298_n7431#" 25.0745
+cap "VDD" "INVERTER_MUX_1.OUT" 1872.55
+cap "S2" "TG_magic_4.B" 55.8
+cap "ENA" "A0" 702.501
+cap "A7" "TG_GATE_SWITCH_magic_5.B" 4957.38
+cap "a_5684_n6152#" "TG_GATE_SWITCH_magic_4.B" 0.689586
+cap "S2" "INVERTER_MUX_1.OUT" 420.09
+cap "A2" "a_n1894_307#" 1177.38
+cap "TG_magic_7.B" "TG_magic_0.B" 1.32099
+cap "TG_magic_1.CLK" "a_n1894_n2271#" 0.0352717
+cap "a_301_308#" "a_n2298_307#" 0.000906419
+cap "A2" "a_n4297_300#" 44.525
+cap "a_3817_n4055#" "TG_magic_7.CLK" 254.032
+cap "TG_GATE_SWITCH_magic_5.B" "a_n2298_n4853#" 195.141
+cap "A1" "ENA" 771.756
+cap "a_n4701_300#" "ENA" 269.202
+cap "a_n2298_n2271#" "VDD" 1270.7
+cap "Vout" "S0" 8.76167
+cap "a_n4297_n7438#" "A1" 40.8116
+cap "S1" "TG_GATE_SWITCH_magic_5.B" 4.76367
+cap "a_2004_1105#" "TG_GATE_SWITCH_magic_3.B" 72.8274
+cap "TG_magic_2.B" "S0" 693.984
+cap "a_n4701_n7438#" "a_n4701_n4860#" 48.1737
+cap "a_n2298_n2271#" "a_n4701_n2278#" 0.252554
+cap "TG_GATE_SWITCH_magic_3.B" "a_n1894_307#" 111.692
+cap "TG_GATE_SWITCH_magic_4.B" "a_3874_n7430#" 1221.75
+cap "VDD" "a_3817_n4055#" 3476.98
+cap "a_3874_308#" "a_2004_1105#" 9.58897
+cap "a_n1894_n2271#" "TG_magic_7.CLK" 0.120371
+cap "TG_GATE_SWITCH_magic_3.B" "a_n4297_300#" 496.041
+cap "a_n1894_n4853#" "TG_magic_7.CLK" 0.0323324
+cap "a_5684_1104#" "TG_GATE_SWITCH_magic_3.B" 1350.9
+cap "S2" "a_3817_n4055#" 28.2715
+cap "TG_magic_1.CLK" "TG_GATE_SWITCH_magic_3.B" 21.2863
+cap "A1" "A3" 13.5891
+cap "TG_GATE_SWITCH_magic_2.B" "a_301_n7430#" 68.5255
+cap "ENA" "S0" 46.6905
+cap "VDD" "a_n4297_n2278#" 3451.22
+cap "TG_magic_0.A" "TG_GATE_SWITCH_magic_0.B" 5349.31
+cap "TG_GATE_SWITCH_magic_7.B" "TG_GATE_SWITCH_magic_0.B" 1057.68
+cap "TG_GATE_SWITCH_magic_2.B" "TG_magic_4.B" 104.188
+cap "TG_magic_7.B" "S1" 173.03
+cap "TG_magic_2.B" "a_2061_n4852#" 0.797995
+cap "a_3874_308#" "a_5684_1104#" 10.5443
+cap "a_3874_308#" "TG_magic_1.CLK" 206.738
+cap "a_n4701_n2278#" "a_n4297_n2278#" 235.034
+cap "TG_GATE_SWITCH_magic_6.B" "S0" 781.041
+cap "VDD" "a_n1894_n2271#" 3454.85
+cap "TG_magic_1.CLK" "TG_GATE_SWITCH_magic_5.B" 5.54895
+cap "VDD" "a_n1894_n4853#" 3490.03
+cap "a_n4701_n7438#" "a_n2298_n7431#" 0.252554
+cap "A2" "VDD" 1495.2
+cap "a_301_n7430#" "TG_GATE_SWITCH_magic_1.B" 130.968
+cap "a_n1894_n2271#" "a_n4701_n2278#" 0.0038201
+cap "TG_GATE_SWITCH_magic_1.B" "TG_magic_4.B" 5348.8
+cap "S2" "a_n1894_n4853#" 54.3926
+cap "TG_magic_2.B" "a_3817_n991#" 2.54649
+cap "A2" "a_n4701_n2278#" 17.5821
+cap "A4" "a_n2298_307#" 3.40134
+cap "a_301_n7430#" "a_n1894_n7431#" 0.00750422
+cap "a_n2298_n2271#" "TG_GATE_SWITCH_magic_0.B" 25.7532
+cap "TG_magic_4.B" "a_n1894_n7431#" 0.000958891
+cap "TG_magic_7.B" "TG_magic_1.CLK" 93.7158
+cap "TG_GATE_SWITCH_magic_5.B" "TG_magic_7.CLK" 0.244577
+cap "VDD" "TG_GATE_SWITCH_magic_3.B" 4140.46
+cap "a_n1894_307#" "a_n2298_307#" 235.034
+cap "a_n4297_n4860#" "a_n4701_n4860#" 235.034
+cap "a_3817_n4055#" "a_5741_n4853#" 2.954
+cap "ENA" "A5" 493.187
+cap "TG_magic_7.B" "a_5741_n2271#" 2.5946
+cap "a_3874_308#" "VDD" 3505.88
+cap "TG_magic_2.B" "Vout" 0.298723
+cap "a_n4297_300#" "a_n2298_307#" 0.119151
+cap "VDD" "TG_GATE_SWITCH_magic_5.B" 1619.35
+cap "a_n4297_n7438#" "A5" 1157.71
+cap "TG_magic_1.CLK" "a_3874_n7430#" 206.798
+cap "A7" "a_n4701_n4860#" 65.3759
+cap "TG_GATE_SWITCH_magic_0.B" "a_n4297_n2278#" 431.666
+cap "a_2061_n2270#" "S0" 0.0900435
+cap "a_n1894_n2271#" "TG_GATE_SWITCH_magic_0.B" 2.56746
+cap "a_301_n7430#" "A1" 0.00375921
+cap "S2" "TG_GATE_SWITCH_magic_5.B" 268.255
+cap "TG_magic_7.B" "TG_magic_7.CLK" 884.753
+cap "TG_GATE_SWITCH_magic_4.B" "a_n2298_n7431#" 174.014
+cap "A2" "TG_GATE_SWITCH_magic_0.B" 272.549
+cap "VDD" "a_5684_n6152#" 3472.46
+cap "a_n2298_n4853#" "a_n4701_n4860#" 0.322411
+cap "TG_GATE_SWITCH_magic_1.B" "a_n4297_n2278#" 0.528683
+cap "S1" "a_n4701_n4860#" 3.67201
+cap "TG_magic_7.B" "VDD" 2213.06
+cap "A7" "a_n2298_n7431#" 1.43415
+cap "A7" "a_n4297_n4860#" 184.163
+cap "a_n1894_n4853#" "TG_GATE_SWITCH_magic_1.B" 2.31908
+cap "a_2061_n2270#" "a_2061_n4852#" 19.0898
+cap "a_n2298_n2271#" "A0" 0.0403081
+cap "A6" "a_n4297_n2278#" 0.000372878
+cap "a_301_n7430#" "S0" 249.435
+cap "TG_magic_7.B" "S2" 581.881
+cap "S1" "TG_magic_0.B" 878.113
+cap "a_2004_1105#" "a_301_308#" 12.9561
+cap "TG_GATE_SWITCH_magic_6.B" "ENA" 1.16483
+cap "TG_GATE_SWITCH_magic_3.B" "TG_GATE_SWITCH_magic_0.B" 432.508
+cap "a_n4297_n7438#" "ENA" 83.6378
+cap "S0" "TG_magic_4.B" 668.44
+cap "TG_magic_5.A" "S0" 461.432
+cap "a_301_308#" "a_n1894_307#" 0.00705101
+cap "TG_magic_0.A" "S0" 452.778
+cap "VDD" "a_3874_n7430#" 3461.61
+cap "a_2061_n2270#" "a_3817_n991#" 11.6934
+cap "INVERTER_MUX_1.OUT" "S0" 65.8232
+cap "TG_GATE_SWITCH_magic_7.B" "S0" 156.448
+cap "VDD" "a_n2298_307#" 1267.17
+cap "A2" "A6" 235.126
+cap "a_n2298_n4853#" "a_n2298_n7431#" 48.1737
+cap "a_n4297_n4860#" "a_n2298_n4853#" 0.119151
+cap "S1" "a_n4297_n4860#" 14.7139
+cap "A7" "a_n2298_n4853#" 481.407
+cap "a_n4297_n2278#" "A0" 1153.32
+cap "ENA" "A3" 679.885
+cap "TG_GATE_SWITCH_magic_2.B" "TG_GATE_SWITCH_magic_5.B" 203.963
+cap "S1" "A7" 120.233
+cap "a_n4297_n7438#" "A3" 0.000372878
+cap "a_2061_n4852#" "TG_magic_4.B" 1093.24
+cap "VDD" "a_n4701_n7438#" 1265.18
+cap "TG_magic_0.A" "a_2061_n4852#" 2.54649
+cap "INVERTER_MUX_1.OUT" "a_2061_n4852#" 2.1262
+cap "TG_magic_1.CLK" "TG_magic_0.B" 89.7268
+cap "A2" "A0" 21.2037
+cap "a_2004_n6151#" "a_301_n7430#" 12.9561
+cap "a_2004_n6151#" "TG_magic_4.B" 433.785
+cap "TG_GATE_SWITCH_magic_5.B" "TG_GATE_SWITCH_magic_1.B" 461.74
+cap "A6" "TG_GATE_SWITCH_magic_3.B" 5025.95
+cap "S2" "a_n4701_n7438#" 9.47766
+cap "TG_magic_1.CLK" "TG_GATE_SWITCH_magic_4.B" 419.148
+cap "a_n2298_n2271#" "S0" 45.9826
+cap "S1" "a_n2298_n4853#" 4.31191
+cap "TG_GATE_SWITCH_magic_2.B" "a_5684_n6152#" 1319.16
+cap "A4" "S1" 150.142
+cap "a_3817_n991#" "TG_magic_5.A" 1083.14
+cap "a_n1894_n4853#" "A1" 0.468772
+cap "TG_magic_0.A" "a_3817_n991#" 0.797995
+cap "TG_magic_0.B" "a_5741_n2271#" 1200.57
+cap "TG_GATE_SWITCH_magic_2.B" "TG_magic_7.B" 1.00299
+cap "INVERTER_MUX_1.OUT" "a_3817_n991#" 28.7962
+cap "A2" "a_n4701_300#" 145.842
+cap "TG_GATE_SWITCH_magic_5.B" "a_n1894_n7431#" 4.35598
+cap "TG_magic_7.B" "a_5741_n4853#" 1191.47
+cap "S0" "a_n4297_n2278#" 87.011
+cap "TG_magic_0.B" "TG_magic_7.CLK" 174.896
+cap "A4" "a_n1894_307#" 0.624527
+cap "VDD" "a_n4701_n4860#" 1265.91
+cap "VDD" "a_301_308#" 3461.79
+cap "TG_GATE_SWITCH_magic_0.B" "a_n2298_307#" 57.8029
+cap "TG_GATE_SWITCH_magic_2.B" "a_3874_n7430#" 105.242
+cap "TG_GATE_SWITCH_magic_4.B" "TG_magic_7.CLK" 1.66074
+cap "a_n1894_n2271#" "S0" 133.26
+cap "a_3817_n4055#" "a_2061_n4852#" 11.6934
+cap "a_n1894_n4853#" "S0" 1.0546
+cap "a_n4701_n4860#" "a_n4701_n2278#" 1.736
+cap "S2" "a_n4701_n4860#" 100.079
+cap "Vout" "TG_magic_5.A" 0.205146
+cap "A4" "TG_magic_1.CLK" 0.000538565
+cap "TG_magic_2.B" "TG_magic_4.B" 186.455
+cap "VDD" "TG_magic_0.B" 2376.79
+cap "S1" "TG_magic_1.CLK" 222.413
+cap "a_n4701_300#" "TG_GATE_SWITCH_magic_3.B" 174.836
+cap "A2" "S0" 52.6837
+cap "Vout" "INVERTER_MUX_1.OUT" 184.624
+cap "VDD" "TG_GATE_SWITCH_magic_4.B" 2102.9
+cap "TG_GATE_SWITCH_magic_2.B" "a_n4701_n7438#" 174.619
+cap "a_3817_n4055#" "a_3817_n991#" 19.0898
+cap "S2" "TG_magic_0.B" 0.113467
+cap "S1" "a_5741_n2271#" 11.8631
+cap "TG_GATE_SWITCH_magic_5.B" "A1" 39.0378
+cap "a_2004_1105#" "TG_magic_1.CLK" 208.345
+cap "a_n1894_307#" "a_n4297_300#" 0.00827687
+cap "VDD" "a_n2298_n7431#" 1265.84
+cap "a_n4297_n4860#" "VDD" 3451.11
+cap "S2" "TG_GATE_SWITCH_magic_4.B" 2.47122
+cap "A7" "VDD" 1945.69
+cap "A6" "a_n2298_307#" 0.42403
+cap "TG_GATE_SWITCH_magic_6.B" "TG_magic_0.A" 5120.24
+cap "S2" "a_n2298_n7431#" 9.81453
+cap "a_n4701_n7438#" "TG_GATE_SWITCH_magic_1.B" 17.0351
+cap "S2" "a_n4297_n4860#" 29.3238
+cap "TG_GATE_SWITCH_magic_3.B" "S0" 573.058
+cap "A7" "a_n4701_n2278#" 1.10553
+cap "A4" "TG_magic_7.CLK" 0.0769693
+cap "TG_GATE_SWITCH_magic_7.B" "TG_GATE_SWITCH_magic_6.B" 284.53
+cap "S1" "TG_magic_7.CLK" 3940.66
+cap "S2" "A7" 257.011
+cap "a_3874_308#" "S0" 44.8181
+cap "TG_GATE_SWITCH_magic_5.B" "S0" 693.359
+cap "a_301_308#" "TG_GATE_SWITCH_magic_0.B" 126.564
+cap "VDD" "a_n2298_n4853#" 1267.28
+cap "a_n4701_n7438#" "a_n1894_n7431#" 0.0038201
+cap "TG_magic_2.B" "a_3817_n4055#" 1083.49
+cap "A4" "VDD" 1694.73
+cap "S1" "VDD" 2516.95
+cap "S2" "a_n2298_n4853#" 119.877
+cap "a_n2298_n2271#" "ENA" 180.292
+cap "A4" "a_n4701_n2278#" 43.0719
+cap "S1" "a_n4701_n2278#" 38.1973
+cap "a_5684_n6152#" "S0" 266.627
+cap "S1" "S2" 96.4183
+cap "a_n2298_n2271#" "TG_GATE_SWITCH_magic_6.B" 197.532
+cap "TG_magic_1.CLK" "TG_magic_7.CLK" 3248.81
+cap "a_n4701_300#" "a_n2298_307#" 0.322411
+cap "a_2004_1105#" "VDD" 3499.83
+cap "a_n4701_n4860#" "TG_GATE_SWITCH_magic_1.B" 192.268
+cap "VDD" "a_n1894_307#" 3437.25
+cap "TG_GATE_SWITCH_magic_2.B" "TG_GATE_SWITCH_magic_4.B" 1082.36
+cap "TG_magic_7.B" "S0" 10.7329
+cap "TG_magic_0.B" "a_5741_n4853#" 2.61508
+cap "a_n4297_n4860#" "TG_GATE_SWITCH_magic_0.B" 0.528683
+cap "TG_GATE_SWITCH_magic_5.B" "a_2004_n6151#" 1.01962
+cap "VDD" "a_n4297_300#" 3439.09
+cap "TG_GATE_SWITCH_magic_2.B" "a_n2298_n7431#" 57.4554
+cap "ENA" "a_n4297_n2278#" 68.4772
+cap "VDD" "a_5684_1104#" 3511.63
+cap "A7" "TG_GATE_SWITCH_magic_0.B" 2.00898
+cap "a_2061_n2270#" "TG_magic_4.B" 2.54649
+cap "a_2061_n2270#" "TG_magic_5.A" 0.797995
+cap "VDD" "TG_magic_1.CLK" 3764.54
+cap "a_n1894_n2271#" "ENA" 0.75283
+cap "A1" "a_n4701_n7438#" 133.36
+cap "a_2061_n2270#" "TG_magic_0.A" 1091.37
+cap "a_n1894_n4853#" "ENA" 0.650166
+cap "TG_GATE_SWITCH_magic_4.B" "TG_GATE_SWITCH_magic_1.B" 952.756
+cap "a_2061_n2270#" "INVERTER_MUX_1.OUT" 19.5834
+cap "a_3874_n7430#" "S0" 56.5358
+cap "S0" "a_n2298_307#" 5.13485
+cap "S2" "TG_magic_1.CLK" 754.202
+cap "TG_magic_7.B" "a_2061_n4852#" 438.869
+cap "TG_GATE_SWITCH_magic_6.B" "a_n1894_n2271#" 431.834
+cap "a_n2298_n7431#" "TG_GATE_SWITCH_magic_1.B" 56.136
+cap "TG_GATE_SWITCH_magic_6.B" "a_n1894_n4853#" 0.528683
+cap "a_n4297_n4860#" "TG_GATE_SWITCH_magic_1.B" 431.518
+cap "A2" "ENA" 1048.87
+cap "VDD" "a_5741_n2271#" 3473.47
+cap "TG_GATE_SWITCH_magic_6.B" "A2" 36.4719
+cap "A7" "TG_GATE_SWITCH_magic_1.B" 199.038
+cap "A4" "TG_GATE_SWITCH_magic_0.B" 180.955
+cap "TG_GATE_SWITCH_magic_4.B" "a_n1894_n7431#" 473.244
+cap "A3" "a_n4297_n2278#" 2.54649
+cap "S1" "TG_GATE_SWITCH_magic_0.B" 86.3799
+cap "a_n2298_n7431#" "a_n1894_n7431#" 235.034
+cap "TG_magic_7.B" "a_3817_n991#" 1.84025
+cap "VDD" "TG_magic_7.CLK" 2050.39
+cap "a_301_n7430#" "TG_magic_4.B" 431.24
+cap "A7" "a_n1894_n7431#" 0.000372878
+cap "A1" "a_n4701_n4860#" 14.1922
+cap "TG_GATE_SWITCH_magic_3.B" "ENA" 305.811
+cap "a_2004_n6151#" "a_3874_n7430#" 4.09385
+cap "TG_magic_0.A" "TG_magic_5.A" 179.932
+cap "TG_GATE_SWITCH_magic_7.B" "TG_magic_5.A" 5136.85
+cap "a_n2298_n4853#" "TG_GATE_SWITCH_magic_1.B" 24.028
+cap "S2" "TG_magic_7.CLK" 990.073
+cap "a_2004_1105#" "TG_GATE_SWITCH_magic_0.B" 1313.9
+cap "INVERTER_MUX_1.OUT" "TG_magic_4.B" 12.221
+cap "TG_GATE_SWITCH_magic_7.B" "TG_magic_0.A" 175.277
+cap "INVERTER_MUX_1.OUT" "TG_magic_5.A" 256.558
+cap "a_n1894_307#" "TG_GATE_SWITCH_magic_0.B" 90.2777
+cap "TG_magic_0.A" "INVERTER_MUX_1.OUT" 64.9355
+cap "TG_GATE_SWITCH_magic_6.B" "TG_GATE_SWITCH_magic_3.B" 206.436
+cap "S1" "TG_GATE_SWITCH_magic_1.B" 8.00372
+cap "a_n4297_n4860#" "A0" 2.54649
+cap "TG_GATE_SWITCH_magic_5.B" "ENA" 1.05793
+cap "A7" "A0" 3.95004
+cap "TG_magic_2.B" "a_5684_n6152#" 431.402
+cap "a_n4297_300#" "TG_GATE_SWITCH_magic_0.B" 19.1429
+cap "VDD" "a_n4701_n2278#" 1265.91
+cap "TG_magic_1.CLK" "TG_GATE_SWITCH_magic_0.B" 342.885
+cap "S2" "VDD" 1395.95
+cap "TG_magic_7.B" "Vout" 4917.08
+cap "A1" "TG_GATE_SWITCH_magic_4.B" 4982.67
+cap "TG_GATE_SWITCH_magic_2.B" "TG_magic_1.CLK" 20.6416
+cap "TG_magic_7.B" "TG_magic_2.B" 5361.89
+cap "a_301_308#" "S0" 243.716
+cap "A1" "a_n2298_n7431#" 501.707
+cap "a_n4297_n4860#" "A1" 1.12469
+cap "S1" "A0" 136.965
+cap "A4" "A0" 295.922
+cap "TG_magic_1.CLK" "TG_GATE_SWITCH_magic_1.B" 342.051
+cap "TG_magic_2.B" "a_3874_n7430#" 433.892
+cap "a_n4701_n7438#" "A5" 404.603
+cap "a_3817_n4055#" "TG_magic_4.B" 0.797995
+cap "a_3817_n4055#" "TG_magic_5.A" 2.54649
+cap "a_5741_n4853#" "a_5741_n2271#" 19.0898
+cap "TG_magic_0.B" "S0" 2.62981
+device msubckt pfet_03v3 6888 -7431 6889 -7430 l=56 w=200 "VDD" "S0" 112 0 "a_5684_n6152#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 -7431 6486 -7430 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 6325 -7431 6326 -7430 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6165 -7431 6166 -7430 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6005 -7431 6006 -7430 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5845 -7431 5846 -7430 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5685 -7431 5686 -7430 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5021 -7430 5022 -7429 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 4861 -7430 4862 -7429 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4701 -7430 4702 -7429 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4541 -7430 4542 -7429 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4381 -7430 4382 -7429 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4221 -7430 4222 -7429 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -7430 3819 -7429 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_n7430#" 200 17600,576
+device msubckt pfet_03v3 3208 -7430 3209 -7429 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_n6151#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 -7430 2806 -7429 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 17600,576
+device msubckt pfet_03v3 2645 -7430 2646 -7429 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2485 -7430 2486 -7429 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2325 -7430 2326 -7429 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2165 -7430 2166 -7429 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2005 -7430 2006 -7429 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1448 -7430 1449 -7429 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 17600,576
+device msubckt pfet_03v3 1288 -7430 1289 -7429 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1128 -7430 1129 -7429 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 968 -7430 969 -7429 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 808 -7430 809 -7429 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 648 -7430 649 -7429 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 245 -7430 246 -7429 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_n7430#" 200 17600,576
+device msubckt pfet_03v3 -747 -7431 -746 -7430 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 17600,576
+device msubckt pfet_03v3 -907 -7431 -906 -7430 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -7431 -1066 -7430 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1227 -7431 -1226 -7430 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -7431 -1386 -7430 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1547 -7431 -1546 -7430 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 17600,576 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -7431 -1949 -7430 l=56 w=200 "VDD" "a_n2298_n7431#" 112 0 "VDD" 200 17600,576 "a_n1894_n7431#" 200 17600,576
+device msubckt pfet_03v3 -2354 -7431 -2353 -7430 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n7431#" 200 17600,576
+device msubckt pfet_03v3 -3150 -7438 -3149 -7437 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 17600,576
+device msubckt pfet_03v3 -3310 -7438 -3309 -7437 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -7438 -3469 -7437 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3630 -7438 -3629 -7437 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -7438 -3789 -7437 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3950 -7438 -3949 -7437 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 17600,576 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -7438 -4352 -7437 l=56 w=200 "VDD" "a_n4701_n7438#" 112 0 "VDD" 200 17600,576 "a_n4297_n7438#" 200 17600,576
+device msubckt pfet_03v3 -4757 -7438 -4756 -7437 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n7438#" 200 17600,576
+device msubckt pfet_03v3 6888 -7095 6889 -7094 l=56 w=200 "VDD" "S0" 112 0 "a_5684_n6152#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 -7095 6486 -7094 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 6325 -7095 6326 -7094 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6165 -7095 6166 -7094 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6005 -7095 6006 -7094 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5845 -7095 5846 -7094 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5685 -7095 5686 -7094 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5021 -7094 5022 -7093 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 4861 -7094 4862 -7093 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4701 -7094 4702 -7093 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4541 -7094 4542 -7093 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4381 -7094 4382 -7093 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4221 -7094 4222 -7093 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -7094 3819 -7093 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_n7430#" 200 17600,576
+device msubckt pfet_03v3 3208 -7094 3209 -7093 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_n6151#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 -7094 2806 -7093 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 17600,576
+device msubckt pfet_03v3 2645 -7094 2646 -7093 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2485 -7094 2486 -7093 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2325 -7094 2326 -7093 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2165 -7094 2166 -7093 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2005 -7094 2006 -7093 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1448 -7094 1449 -7093 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 17600,576
+device msubckt pfet_03v3 1288 -7094 1289 -7093 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1128 -7094 1129 -7093 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 968 -7094 969 -7093 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 808 -7094 809 -7093 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 648 -7094 649 -7093 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 245 -7094 246 -7093 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_n7430#" 200 17600,576
+device msubckt pfet_03v3 -747 -7095 -746 -7094 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 17600,576
+device msubckt pfet_03v3 -907 -7095 -906 -7094 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -7095 -1066 -7094 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1227 -7095 -1226 -7094 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -7095 -1386 -7094 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1547 -7095 -1546 -7094 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 17600,576 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -7095 -1949 -7094 l=56 w=200 "VDD" "a_n2298_n7431#" 112 0 "VDD" 200 17600,576 "a_n1894_n7431#" 200 17600,576
+device msubckt pfet_03v3 -2354 -7095 -2353 -7094 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n7431#" 200 17600,576
+device msubckt pfet_03v3 -3150 -7102 -3149 -7101 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 17600,576
+device msubckt pfet_03v3 -3310 -7102 -3309 -7101 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -7102 -3469 -7101 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3630 -7102 -3629 -7101 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -7102 -3789 -7101 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3950 -7102 -3949 -7101 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 17600,576 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -7102 -4352 -7101 l=56 w=200 "VDD" "a_n4701_n7438#" 112 0 "VDD" 200 17600,576 "a_n4297_n7438#" 200 17600,576
+device msubckt pfet_03v3 -4757 -7102 -4756 -7101 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n7438#" 200 17600,576
+device msubckt pfet_03v3 6888 -6759 6889 -6758 l=56 w=200 "VDD" "S0" 112 0 "a_5684_n6152#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 -6759 6486 -6758 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 6325 -6759 6326 -6758 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6165 -6759 6166 -6758 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6005 -6759 6006 -6758 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5845 -6759 5846 -6758 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5685 -6759 5686 -6758 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5021 -6758 5022 -6757 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 4861 -6758 4862 -6757 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4701 -6758 4702 -6757 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4541 -6758 4542 -6757 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4381 -6758 4382 -6757 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4221 -6758 4222 -6757 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -6758 3819 -6757 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_n7430#" 200 17600,576
+device msubckt pfet_03v3 3208 -6758 3209 -6757 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_n6151#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 -6758 2806 -6757 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 17600,576
+device msubckt pfet_03v3 2645 -6758 2646 -6757 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2485 -6758 2486 -6757 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2325 -6758 2326 -6757 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2165 -6758 2166 -6757 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2005 -6758 2006 -6757 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1448 -6758 1449 -6757 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 17600,576
+device msubckt pfet_03v3 1288 -6758 1289 -6757 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1128 -6758 1129 -6757 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 968 -6758 969 -6757 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 808 -6758 809 -6757 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 648 -6758 649 -6757 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 245 -6758 246 -6757 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_n7430#" 200 17600,576
+device msubckt pfet_03v3 -747 -6759 -746 -6758 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 17600,576
+device msubckt pfet_03v3 -907 -6759 -906 -6758 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -6759 -1066 -6758 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1227 -6759 -1226 -6758 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -6759 -1386 -6758 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1547 -6759 -1546 -6758 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 17600,576 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -6759 -1949 -6758 l=56 w=200 "VDD" "a_n2298_n7431#" 112 0 "VDD" 200 17600,576 "a_n1894_n7431#" 200 17600,576
+device msubckt pfet_03v3 -2354 -6759 -2353 -6758 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n7431#" 200 17600,576
+device msubckt pfet_03v3 -3150 -6766 -3149 -6765 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 17600,576
+device msubckt pfet_03v3 -3310 -6766 -3309 -6765 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -6766 -3469 -6765 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3630 -6766 -3629 -6765 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -6766 -3789 -6765 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3950 -6766 -3949 -6765 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 17600,576 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -6766 -4352 -6765 l=56 w=200 "VDD" "a_n4701_n7438#" 112 0 "VDD" 200 17600,576 "a_n4297_n7438#" 200 17600,576
+device msubckt pfet_03v3 -4757 -6766 -4756 -6765 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n7438#" 200 17600,576
+device msubckt pfet_03v3 6888 -6423 6889 -6422 l=56 w=200 "VDD" "S0" 112 0 "a_5684_n6152#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 -6423 6486 -6422 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 6325 -6423 6326 -6422 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6165 -6423 6166 -6422 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 6005 -6423 6006 -6422 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5845 -6423 5846 -6422 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5685 -6423 5686 -6422 l=56 w=200 "VDD" "a_5684_n6152#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 5021 -6422 5022 -6421 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 4861 -6422 4862 -6421 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4701 -6422 4702 -6421 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4541 -6422 4542 -6421 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4381 -6422 4382 -6421 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 4221 -6422 4222 -6421 l=56 w=200 "VDD" "a_3874_n7430#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -6422 3819 -6421 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_n7430#" 200 17600,576
+device msubckt pfet_03v3 3208 -6422 3209 -6421 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_n6151#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 -6422 2806 -6421 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 17600,576
+device msubckt pfet_03v3 2645 -6422 2646 -6421 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2485 -6422 2486 -6421 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2325 -6422 2326 -6421 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2165 -6422 2166 -6421 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 2005 -6422 2006 -6421 l=56 w=200 "VDD" "a_2004_n6151#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1448 -6422 1449 -6421 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 17600,576
+device msubckt pfet_03v3 1288 -6422 1289 -6421 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 1128 -6422 1129 -6421 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 968 -6422 969 -6421 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 808 -6422 809 -6421 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 648 -6422 649 -6421 l=56 w=200 "VDD" "a_301_n7430#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 245 -6422 246 -6421 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_n7430#" 200 17600,576
+device msubckt pfet_03v3 -747 -6423 -746 -6422 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 17600,576
+device msubckt pfet_03v3 -907 -6423 -906 -6422 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -6423 -1066 -6422 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1227 -6423 -1226 -6422 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -6423 -1386 -6422 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt pfet_03v3 -1547 -6423 -1546 -6422 l=56 w=200 "VDD" "a_n1894_n7431#" 112 0 "A1" 200 17600,576 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -6423 -1949 -6422 l=56 w=200 "VDD" "a_n2298_n7431#" 112 0 "VDD" 200 17600,576 "a_n1894_n7431#" 200 17600,576
+device msubckt pfet_03v3 -2354 -6423 -2353 -6422 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n7431#" 200 17600,576
+device msubckt pfet_03v3 -3150 -6430 -3149 -6429 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 17600,576
+device msubckt pfet_03v3 -3310 -6430 -3309 -6429 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -6430 -3469 -6429 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3630 -6430 -3629 -6429 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -6430 -3789 -6429 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt pfet_03v3 -3950 -6430 -3949 -6429 l=56 w=200 "VDD" "a_n4297_n7438#" 112 0 "A5" 200 17600,576 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -6430 -4352 -6429 l=56 w=200 "VDD" "a_n4701_n7438#" 112 0 "VDD" 200 17600,576 "a_n4297_n7438#" 200 17600,576
+device msubckt pfet_03v3 -4757 -6430 -4756 -6429 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n7438#" 200 17600,576
+device msubckt nfet_03v3 6888 -5841 6889 -5840 l=56 w=200 "VSS" "S0" 112 0 "a_5684_n6152#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 6485 -5841 6486 -5840 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 17600,576
+device msubckt nfet_03v3 6325 -5841 6326 -5840 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 6165 -5841 6166 -5840 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 6005 -5841 6006 -5840 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 5845 -5841 5846 -5840 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 5685 -5841 5686 -5840 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 5021 -5840 5022 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 17600,576
+device msubckt nfet_03v3 4861 -5840 4862 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 4701 -5840 4702 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 4541 -5840 4542 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 4381 -5840 4382 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 4221 -5840 4222 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 3818 -5840 3819 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "VSS" 200 17600,576 "a_3874_n7430#" 200 17600,576
+device msubckt nfet_03v3 3208 -5840 3209 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "a_2004_n6151#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 2805 -5840 2806 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 17600,576
+device msubckt nfet_03v3 2645 -5840 2646 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2485 -5840 2486 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 2325 -5840 2326 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2165 -5840 2166 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 2005 -5840 2006 -5839 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 1448 -5840 1449 -5839 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 17600,576
+device msubckt nfet_03v3 1288 -5840 1289 -5839 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 1128 -5840 1129 -5839 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 968 -5840 969 -5839 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 808 -5840 809 -5839 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 648 -5840 649 -5839 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 245 -5840 246 -5839 l=56 w=200 "VSS" "S0" 112 0 "VSS" 200 17600,576 "a_301_n7430#" 200 17600,576
+device msubckt nfet_03v3 -747 -5841 -746 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 17600,576
+device msubckt nfet_03v3 -907 -5841 -906 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 -1067 -5841 -1066 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt nfet_03v3 -1227 -5841 -1226 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 -1387 -5841 -1386 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt nfet_03v3 -1547 -5841 -1546 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "A1" 200 17600,576 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 -1950 -5841 -1949 -5840 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "VSS" 200 17600,576 "a_n1894_n7431#" 200 17600,576
+device msubckt nfet_03v3 -2354 -5841 -2353 -5840 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_n7431#" 200 17600,576
+device msubckt nfet_03v3 -3150 -5848 -3149 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 17600,576
+device msubckt nfet_03v3 -3310 -5848 -3309 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 -3470 -5848 -3469 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt nfet_03v3 -3630 -5848 -3629 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 -3790 -5848 -3789 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt nfet_03v3 -3950 -5848 -3949 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "A5" 200 17600,576 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 -4353 -5848 -4352 -5847 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "VSS" 200 17600,576 "a_n4297_n7438#" 200 17600,576
+device msubckt nfet_03v3 -4757 -5848 -4756 -5847 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_n7438#" 200 17600,576
+device msubckt nfet_03v3 6888 -5505 6889 -5504 l=56 w=200 "VSS" "S0" 112 0 "a_5684_n6152#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 6485 -5505 6486 -5504 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 17600,576
+device msubckt nfet_03v3 6325 -5505 6326 -5504 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 6165 -5505 6166 -5504 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 6005 -5505 6006 -5504 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 5845 -5505 5846 -5504 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 5685 -5505 5686 -5504 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 5021 -5504 5022 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 17600,576
+device msubckt nfet_03v3 4861 -5504 4862 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 4701 -5504 4702 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 4541 -5504 4542 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 4381 -5504 4382 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 4221 -5504 4222 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 17600,576 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 3818 -5504 3819 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "VSS" 200 17600,576 "a_3874_n7430#" 200 17600,576
+device msubckt nfet_03v3 3208 -5504 3209 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "a_2004_n6151#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 2805 -5504 2806 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 17600,576
+device msubckt nfet_03v3 2645 -5504 2646 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2485 -5504 2486 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 2325 -5504 2326 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2165 -5504 2166 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 2005 -5504 2006 -5503 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 1448 -5504 1449 -5503 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 17600,576
+device msubckt nfet_03v3 1288 -5504 1289 -5503 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 1128 -5504 1129 -5503 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 968 -5504 969 -5503 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 808 -5504 809 -5503 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_4.B" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 648 -5504 649 -5503 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 17600,576 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 245 -5504 246 -5503 l=56 w=200 "VSS" "S0" 112 0 "VSS" 200 17600,576 "a_301_n7430#" 200 17600,576
+device msubckt nfet_03v3 -747 -5505 -746 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 17600,576
+device msubckt nfet_03v3 -907 -5505 -906 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 -1067 -5505 -1066 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt nfet_03v3 -1227 -5505 -1226 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "A1" 200 10400,304 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 -1387 -5505 -1386 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "TG_GATE_SWITCH_magic_4.B" 200 10400,304 "A1" 200 10400,304
+device msubckt nfet_03v3 -1547 -5505 -1546 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "A1" 200 17600,576 "TG_GATE_SWITCH_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 -1950 -5505 -1949 -5504 l=56 w=200 "VSS" "a_n2298_n7431#" 112 0 "VSS" 200 17600,576 "a_n1894_n7431#" 200 17600,576
+device msubckt nfet_03v3 -2354 -5505 -2353 -5504 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_n7431#" 200 17600,576
+device msubckt nfet_03v3 -3150 -5512 -3149 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 17600,576
+device msubckt nfet_03v3 -3310 -5512 -3309 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 -3470 -5512 -3469 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt nfet_03v3 -3630 -5512 -3629 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "A5" 200 10400,304 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 -3790 -5512 -3789 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "TG_GATE_SWITCH_magic_2.B" 200 10400,304 "A5" 200 10400,304
+device msubckt nfet_03v3 -3950 -5512 -3949 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "A5" 200 17600,576 "TG_GATE_SWITCH_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 -4353 -5512 -4352 -5511 l=56 w=200 "VSS" "a_n4701_n7438#" 112 0 "VSS" 200 17600,576 "a_n4297_n7438#" 200 17600,576
+device msubckt nfet_03v3 -4757 -5512 -4756 -5511 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_n7438#" 200 17600,576
+device msubckt nfet_03v3 6888 -4853 6889 -4852 l=56 w=200 "VSS" "S2" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 17600,576
+device msubckt nfet_03v3 6728 -4853 6729 -4852 l=56 w=200 "VSS" "S2" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6568 -4853 6569 -4852 l=56 w=200 "VSS" "S2" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 6408 -4853 6409 -4852 l=56 w=200 "VSS" "S2" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6248 -4853 6249 -4852 l=56 w=200 "VSS" "S2" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 6088 -4853 6089 -4852 l=56 w=200 "VSS" "S2" 112 0 "TG_magic_7.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt nfet_03v3 5685 -4853 5686 -4852 l=56 w=200 "VSS" "S2" 112 0 "VSS" 200 17600,576 "a_5741_n4853#" 200 17600,576
+device msubckt nfet_03v3 5021 -4852 5022 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "a_3817_n4055#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 4618 -4852 4619 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 17600,576
+device msubckt nfet_03v3 4458 -4852 4459 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 4298 -4852 4299 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 4138 -4852 4139 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 3978 -4852 3979 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 3818 -4852 3819 -4851 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_2.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 3208 -4852 3209 -4851 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 17600,576
+device msubckt nfet_03v3 3048 -4852 3049 -4851 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 2888 -4852 2889 -4851 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2728 -4852 2729 -4851 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 2568 -4852 2569 -4851 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2408 -4852 2409 -4851 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_4.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 2005 -4852 2006 -4851 l=56 w=200 "VSS" "S1" 112 0 "VSS" 200 17600,576 "a_2061_n4852#" 200 17600,576
+device msubckt nfet_03v3 -747 -4853 -746 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 17600,576
+device msubckt nfet_03v3 -907 -4853 -906 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 -1067 -4853 -1066 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt nfet_03v3 -1227 -4853 -1226 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 -1387 -4853 -1386 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt nfet_03v3 -1547 -4853 -1546 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "A7" 200 17600,576 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 -1950 -4853 -1949 -4852 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "VSS" 200 17600,576 "a_n1894_n4853#" 200 17600,576
+device msubckt nfet_03v3 -2354 -4853 -2353 -4852 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_n4853#" 200 17600,576
+device msubckt nfet_03v3 -3150 -4860 -3149 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 17600,576
+device msubckt nfet_03v3 -3310 -4860 -3309 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 -3470 -4860 -3469 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt nfet_03v3 -3630 -4860 -3629 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 -3790 -4860 -3789 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt nfet_03v3 -3950 -4860 -3949 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "A3" 200 17600,576 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 -4353 -4860 -4352 -4859 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "VSS" 200 17600,576 "a_n4297_n4860#" 200 17600,576
+device msubckt nfet_03v3 -4757 -4860 -4756 -4859 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_n4860#" 200 17600,576
+device msubckt nfet_03v3 6888 -4517 6889 -4516 l=56 w=200 "VSS" "S2" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 17600,576
+device msubckt nfet_03v3 6728 -4517 6729 -4516 l=56 w=200 "VSS" "S2" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6568 -4517 6569 -4516 l=56 w=200 "VSS" "S2" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 6408 -4517 6409 -4516 l=56 w=200 "VSS" "S2" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6248 -4517 6249 -4516 l=56 w=200 "VSS" "S2" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 6088 -4517 6089 -4516 l=56 w=200 "VSS" "S2" 112 0 "TG_magic_7.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt nfet_03v3 5685 -4517 5686 -4516 l=56 w=200 "VSS" "S2" 112 0 "VSS" 200 17600,576 "a_5741_n4853#" 200 17600,576
+device msubckt nfet_03v3 5021 -4516 5022 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "a_3817_n4055#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 4618 -4516 4619 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 17600,576
+device msubckt nfet_03v3 4458 -4516 4459 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 4298 -4516 4299 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 4138 -4516 4139 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 3978 -4516 3979 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt nfet_03v3 3818 -4516 3819 -4515 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_2.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 3208 -4516 3209 -4515 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 17600,576
+device msubckt nfet_03v3 3048 -4516 3049 -4515 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 2888 -4516 2889 -4515 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2728 -4516 2729 -4515 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 2568 -4516 2569 -4515 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt nfet_03v3 2408 -4516 2409 -4515 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_4.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 2005 -4516 2006 -4515 l=56 w=200 "VSS" "S1" 112 0 "VSS" 200 17600,576 "a_2061_n4852#" 200 17600,576
+device msubckt pfet_03v3 6888 -3935 6889 -3934 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 6728 -3935 6729 -3934 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -3935 6569 -3934 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6408 -3935 6409 -3934 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -3935 6249 -3934 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6088 -3935 6089 -3934 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -3935 5686 -3934 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 17600,576 "a_5741_n4853#" 200 17600,576
+device msubckt nfet_03v3 715 -4392 716 -4391 l=56 w=100 "VSS" "S2" 112 0 "INVERTER_MUX_1.OUT" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 555 -4392 556 -4391 l=56 w=100 "VSS" "S2" 112 0 "VSS" 100 5200,204 "INVERTER_MUX_1.OUT" 100 5200,204
+device msubckt nfet_03v3 395 -4392 396 -4391 l=56 w=100 "VSS" "S2" 112 0 "INVERTER_MUX_1.OUT" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 235 -4392 236 -4391 l=56 w=100 "VSS" "S2" 112 0 "VSS" 100 8800,376 "INVERTER_MUX_1.OUT" 100 5200,204
+device msubckt nfet_03v3 -747 -4517 -746 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 17600,576
+device msubckt nfet_03v3 -907 -4517 -906 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 -1067 -4517 -1066 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt nfet_03v3 -1227 -4517 -1226 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 -1387 -4517 -1386 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt nfet_03v3 -1547 -4517 -1546 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "A7" 200 17600,576 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt nfet_03v3 -1950 -4517 -1949 -4516 l=56 w=200 "VSS" "a_n2298_n4853#" 112 0 "VSS" 200 17600,576 "a_n1894_n4853#" 200 17600,576
+device msubckt nfet_03v3 -2354 -4517 -2353 -4516 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_n4853#" 200 17600,576
+device msubckt nfet_03v3 -3150 -4524 -3149 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 17600,576
+device msubckt nfet_03v3 -3310 -4524 -3309 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 -3470 -4524 -3469 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt nfet_03v3 -3630 -4524 -3629 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 -3790 -4524 -3789 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt nfet_03v3 -3950 -4524 -3949 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "A3" 200 17600,576 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt nfet_03v3 -4353 -4524 -4352 -4523 l=56 w=200 "VSS" "a_n4701_n4860#" 112 0 "VSS" 200 17600,576 "a_n4297_n4860#" 200 17600,576
+device msubckt nfet_03v3 -4757 -4524 -4756 -4523 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_n4860#" 200 17600,576
+device msubckt nfet_03v3 715 -4156 716 -4155 l=56 w=100 "VSS" "S2" 112 0 "INVERTER_MUX_1.OUT" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 555 -4156 556 -4155 l=56 w=100 "VSS" "S2" 112 0 "VSS" 100 5200,204 "INVERTER_MUX_1.OUT" 100 5200,204
+device msubckt nfet_03v3 395 -4156 396 -4155 l=56 w=100 "VSS" "S2" 112 0 "INVERTER_MUX_1.OUT" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 235 -4156 236 -4155 l=56 w=100 "VSS" "S2" 112 0 "VSS" 100 8800,376 "INVERTER_MUX_1.OUT" 100 5200,204
+device msubckt pfet_03v3 5021 -3934 5022 -3933 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "a_3817_n4055#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -3934 4619 -3933 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 4458 -3934 4459 -3933 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4298 -3934 4299 -3933 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4138 -3934 4139 -3933 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3978 -3934 3979 -3933 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -3934 3819 -3933 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3208 -3934 3209 -3933 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 3048 -3934 3049 -3933 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2888 -3934 2889 -3933 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2728 -3934 2729 -3933 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2568 -3934 2569 -3933 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2408 -3934 2409 -3933 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2005 -3934 2006 -3933 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 17600,576 "a_2061_n4852#" 200 17600,576
+device msubckt pfet_03v3 6888 -3599 6889 -3598 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 6728 -3599 6729 -3598 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -3599 6569 -3598 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6408 -3599 6409 -3598 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -3599 6249 -3598 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6088 -3599 6089 -3598 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -3599 5686 -3598 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 17600,576 "a_5741_n4853#" 200 17600,576
+device msubckt pfet_03v3 715 -3807 716 -3806 l=56 w=200 "VDD" "S2" 112 0 "INVERTER_MUX_1.OUT" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 555 -3807 556 -3806 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 10400,304 "INVERTER_MUX_1.OUT" 200 10400,304
+device msubckt pfet_03v3 395 -3807 396 -3806 l=56 w=200 "VDD" "S2" 112 0 "INVERTER_MUX_1.OUT" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 235 -3807 236 -3806 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 17600,576 "INVERTER_MUX_1.OUT" 200 10400,304
+device msubckt pfet_03v3 -747 -3935 -746 -3934 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 17600,576
+device msubckt pfet_03v3 -907 -3935 -906 -3934 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -3935 -1066 -3934 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1227 -3935 -1226 -3934 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -3935 -1386 -3934 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1547 -3935 -1546 -3934 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 17600,576 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -3935 -1949 -3934 l=56 w=200 "VDD" "a_n2298_n4853#" 112 0 "VDD" 200 17600,576 "a_n1894_n4853#" 200 17600,576
+device msubckt pfet_03v3 -2354 -3935 -2353 -3934 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n4853#" 200 17600,576
+device msubckt pfet_03v3 -3150 -3942 -3149 -3941 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 17600,576
+device msubckt pfet_03v3 -3310 -3942 -3309 -3941 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -3942 -3469 -3941 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3630 -3942 -3629 -3941 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -3942 -3789 -3941 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3950 -3942 -3949 -3941 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 17600,576 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -3942 -4352 -3941 l=56 w=200 "VDD" "a_n4701_n4860#" 112 0 "VDD" 200 17600,576 "a_n4297_n4860#" 200 17600,576
+device msubckt pfet_03v3 -4757 -3942 -4756 -3941 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n4860#" 200 17600,576
+device msubckt pfet_03v3 5021 -3598 5022 -3597 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "a_3817_n4055#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -3598 4619 -3597 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 4458 -3598 4459 -3597 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4298 -3598 4299 -3597 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4138 -3598 4139 -3597 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3978 -3598 3979 -3597 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -3598 3819 -3597 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3208 -3598 3209 -3597 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 3048 -3598 3049 -3597 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2888 -3598 2889 -3597 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2728 -3598 2729 -3597 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2568 -3598 2569 -3597 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2408 -3598 2409 -3597 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2005 -3598 2006 -3597 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 17600,576 "a_2061_n4852#" 200 17600,576
+device msubckt pfet_03v3 6888 -3263 6889 -3262 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 6728 -3263 6729 -3262 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -3263 6569 -3262 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6408 -3263 6409 -3262 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -3263 6249 -3262 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6088 -3263 6089 -3262 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -3263 5686 -3262 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 17600,576 "a_5741_n4853#" 200 17600,576
+device msubckt pfet_03v3 715 -3471 716 -3470 l=56 w=200 "VDD" "S2" 112 0 "INVERTER_MUX_1.OUT" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 555 -3471 556 -3470 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 10400,304 "INVERTER_MUX_1.OUT" 200 10400,304
+device msubckt pfet_03v3 395 -3471 396 -3470 l=56 w=200 "VDD" "S2" 112 0 "INVERTER_MUX_1.OUT" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 235 -3471 236 -3470 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 17600,576 "INVERTER_MUX_1.OUT" 200 10400,304
+device msubckt pfet_03v3 -747 -3599 -746 -3598 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 17600,576
+device msubckt pfet_03v3 -907 -3599 -906 -3598 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -3599 -1066 -3598 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1227 -3599 -1226 -3598 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -3599 -1386 -3598 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1547 -3599 -1546 -3598 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 17600,576 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -3599 -1949 -3598 l=56 w=200 "VDD" "a_n2298_n4853#" 112 0 "VDD" 200 17600,576 "a_n1894_n4853#" 200 17600,576
+device msubckt pfet_03v3 -2354 -3599 -2353 -3598 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n4853#" 200 17600,576
+device msubckt pfet_03v3 -3150 -3606 -3149 -3605 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 17600,576
+device msubckt pfet_03v3 -3310 -3606 -3309 -3605 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -3606 -3469 -3605 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3630 -3606 -3629 -3605 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -3606 -3789 -3605 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3950 -3606 -3949 -3605 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 17600,576 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -3606 -4352 -3605 l=56 w=200 "VDD" "a_n4701_n4860#" 112 0 "VDD" 200 17600,576 "a_n4297_n4860#" 200 17600,576
+device msubckt pfet_03v3 -4757 -3606 -4756 -3605 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n4860#" 200 17600,576
+device msubckt pfet_03v3 5021 -3262 5022 -3261 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "a_3817_n4055#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -3262 4619 -3261 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 4458 -3262 4459 -3261 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4298 -3262 4299 -3261 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4138 -3262 4139 -3261 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3978 -3262 3979 -3261 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -3262 3819 -3261 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3208 -3262 3209 -3261 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 3048 -3262 3049 -3261 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2888 -3262 2889 -3261 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2728 -3262 2729 -3261 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2568 -3262 2569 -3261 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2408 -3262 2409 -3261 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2005 -3262 2006 -3261 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 17600,576 "a_2061_n4852#" 200 17600,576
+device msubckt pfet_03v3 6888 -2927 6889 -2926 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 6728 -2927 6729 -2926 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -2927 6569 -2926 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6408 -2927 6409 -2926 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -2927 6249 -2926 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "Vout" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 6088 -2927 6089 -2926 l=56 w=200 "VDD" "a_5741_n4853#" 112 0 "TG_magic_7.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -2927 5686 -2926 l=56 w=200 "VDD" "S2" 112 0 "VDD" 200 17600,576 "a_5741_n4853#" 200 17600,576
+device msubckt pfet_03v3 -747 -3263 -746 -3262 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 17600,576
+device msubckt pfet_03v3 -907 -3263 -906 -3262 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -3263 -1066 -3262 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1227 -3263 -1226 -3262 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -3263 -1386 -3262 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1547 -3263 -1546 -3262 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 17600,576 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -3263 -1949 -3262 l=56 w=200 "VDD" "a_n2298_n4853#" 112 0 "VDD" 200 17600,576 "a_n1894_n4853#" 200 17600,576
+device msubckt pfet_03v3 -2354 -3263 -2353 -3262 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n4853#" 200 17600,576
+device msubckt pfet_03v3 -3150 -3270 -3149 -3269 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 17600,576
+device msubckt pfet_03v3 -3310 -3270 -3309 -3269 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -3270 -3469 -3269 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3630 -3270 -3629 -3269 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -3270 -3789 -3269 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3950 -3270 -3949 -3269 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 17600,576 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -3270 -4352 -3269 l=56 w=200 "VDD" "a_n4701_n4860#" 112 0 "VDD" 200 17600,576 "a_n4297_n4860#" 200 17600,576
+device msubckt pfet_03v3 -4757 -3270 -4756 -3269 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n4860#" 200 17600,576
+device msubckt pfet_03v3 5021 -2926 5022 -2925 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "a_3817_n4055#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -2926 4619 -2925 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 17600,576
+device msubckt pfet_03v3 4458 -2926 4459 -2925 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4298 -2926 4299 -2925 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 4138 -2926 4139 -2925 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3978 -2926 3979 -2925 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_2.B" 200 10400,304
+device msubckt pfet_03v3 3818 -2926 3819 -2925 l=56 w=200 "VDD" "a_3817_n4055#" 112 0 "TG_magic_2.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 3208 -2926 3209 -2925 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 17600,576
+device msubckt pfet_03v3 3048 -2926 3049 -2925 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2888 -2926 2889 -2925 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2728 -2926 2729 -2925 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 10400,304 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2568 -2926 2569 -2925 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_7.B" 200 10400,304 "TG_magic_4.B" 200 10400,304
+device msubckt pfet_03v3 2408 -2926 2409 -2925 l=56 w=200 "VDD" "a_2061_n4852#" 112 0 "TG_magic_4.B" 200 17600,576 "TG_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 2005 -2926 2006 -2925 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 17600,576 "a_2061_n4852#" 200 17600,576
+device msubckt pfet_03v3 715 -2877 716 -2876 l=56 w=200 "VDD" "S1" 112 0 "TG_magic_7.CLK" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 555 -2877 556 -2876 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 10400,304 "TG_magic_7.CLK" 200 10400,304
+device msubckt pfet_03v3 395 -2877 396 -2876 l=56 w=200 "VDD" "S1" 112 0 "TG_magic_7.CLK" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 235 -2877 236 -2876 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 17600,576 "TG_magic_7.CLK" 200 10400,304
+device msubckt pfet_03v3 -747 -2927 -746 -2926 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 17600,576
+device msubckt pfet_03v3 -907 -2927 -906 -2926 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -2927 -1066 -2926 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1227 -2927 -1226 -2926 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 10400,304 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -2927 -1386 -2926 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "TG_GATE_SWITCH_magic_5.B" 200 10400,304 "A7" 200 10400,304
+device msubckt pfet_03v3 -1547 -2927 -1546 -2926 l=56 w=200 "VDD" "a_n1894_n4853#" 112 0 "A7" 200 17600,576 "TG_GATE_SWITCH_magic_5.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -2927 -1949 -2926 l=56 w=200 "VDD" "a_n2298_n4853#" 112 0 "VDD" 200 17600,576 "a_n1894_n4853#" 200 17600,576
+device msubckt pfet_03v3 -2354 -2927 -2353 -2926 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n4853#" 200 17600,576
+device msubckt pfet_03v3 -3150 -2934 -3149 -2933 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 17600,576
+device msubckt pfet_03v3 -3310 -2934 -3309 -2933 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -2934 -3469 -2933 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3630 -2934 -3629 -2933 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 10400,304 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -2934 -3789 -2933 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "TG_GATE_SWITCH_magic_1.B" 200 10400,304 "A3" 200 10400,304
+device msubckt pfet_03v3 -3950 -2934 -3949 -2933 l=56 w=200 "VDD" "a_n4297_n4860#" 112 0 "A3" 200 17600,576 "TG_GATE_SWITCH_magic_1.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -2934 -4352 -2933 l=56 w=200 "VDD" "a_n4701_n4860#" 112 0 "VDD" 200 17600,576 "a_n4297_n4860#" 200 17600,576
+device msubckt pfet_03v3 -4757 -2934 -4756 -2933 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n4860#" 200 17600,576
+device msubckt pfet_03v3 715 -2541 716 -2540 l=56 w=200 "VDD" "S1" 112 0 "TG_magic_7.CLK" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 555 -2541 556 -2540 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 10400,304 "TG_magic_7.CLK" 200 10400,304
+device msubckt pfet_03v3 395 -2541 396 -2540 l=56 w=200 "VDD" "S1" 112 0 "TG_magic_7.CLK" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 235 -2541 236 -2540 l=56 w=200 "VDD" "S1" 112 0 "VDD" 200 17600,576 "TG_magic_7.CLK" 200 10400,304
+device msubckt pfet_03v3 6888 -2271 6889 -2270 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 6728 -2271 6729 -2270 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -2271 6569 -2270 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6408 -2271 6409 -2270 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -2271 6249 -2270 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6088 -2271 6089 -2270 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -2271 5686 -2270 l=56 w=200 "VDD" "INVERTER_MUX_1.OUT" 112 0 "VDD" 200 17600,576 "a_5741_n2271#" 200 17600,576
+device msubckt pfet_03v3 5021 -2270 5022 -2269 l=56 w=200 "VDD" "S1" 112 0 "a_3817_n991#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -2270 4619 -2269 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 17600,576
+device msubckt pfet_03v3 4458 -2270 4459 -2269 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 4298 -2270 4299 -2269 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4138 -2270 4139 -2269 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3978 -2270 3979 -2269 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 -2270 3819 -2269 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3208 -2270 3209 -2269 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 17600,576
+device msubckt pfet_03v3 3048 -2270 3049 -2269 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2888 -2270 2889 -2269 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2728 -2270 2729 -2269 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2568 -2270 2569 -2269 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2408 -2270 2409 -2269 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 -2270 2006 -2269 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "VDD" 200 17600,576 "a_2061_n2270#" 200 17600,576
+device msubckt pfet_03v3 6888 -1935 6889 -1934 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 6728 -1935 6729 -1934 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -1935 6569 -1934 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6408 -1935 6409 -1934 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -1935 6249 -1934 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6088 -1935 6089 -1934 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -1935 5686 -1934 l=56 w=200 "VDD" "INVERTER_MUX_1.OUT" 112 0 "VDD" 200 17600,576 "a_5741_n2271#" 200 17600,576
+device msubckt nfet_03v3 715 -2092 716 -2091 l=56 w=100 "VSS" "S1" 112 0 "TG_magic_7.CLK" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 555 -2092 556 -2091 l=56 w=100 "VSS" "S1" 112 0 "VSS" 100 5200,204 "TG_magic_7.CLK" 100 5200,204
+device msubckt nfet_03v3 395 -2092 396 -2091 l=56 w=100 "VSS" "S1" 112 0 "TG_magic_7.CLK" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 235 -2092 236 -2091 l=56 w=100 "VSS" "S1" 112 0 "VSS" 100 8800,376 "TG_magic_7.CLK" 100 5200,204
+device msubckt pfet_03v3 -747 -2271 -746 -2270 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 17600,576
+device msubckt pfet_03v3 -907 -2271 -906 -2270 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -2271 -1066 -2270 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1227 -2271 -1226 -2270 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -2271 -1386 -2270 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1547 -2271 -1546 -2270 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 17600,576 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -2271 -1949 -2270 l=56 w=200 "VDD" "a_n2298_n2271#" 112 0 "VDD" 200 17600,576 "a_n1894_n2271#" 200 17600,576
+device msubckt pfet_03v3 -2354 -2271 -2353 -2270 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n2271#" 200 17600,576
+device msubckt pfet_03v3 -3150 -2278 -3149 -2277 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 17600,576
+device msubckt pfet_03v3 -3310 -2278 -3309 -2277 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -2278 -3469 -2277 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3630 -2278 -3629 -2277 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -2278 -3789 -2277 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3950 -2278 -3949 -2277 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 17600,576 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -2278 -4352 -2277 l=56 w=200 "VDD" "a_n4701_n2278#" 112 0 "VDD" 200 17600,576 "a_n4297_n2278#" 200 17600,576
+device msubckt pfet_03v3 -4757 -2278 -4756 -2277 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n2278#" 200 17600,576
+device msubckt pfet_03v3 5021 -1934 5022 -1933 l=56 w=200 "VDD" "S1" 112 0 "a_3817_n991#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -1934 4619 -1933 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 17600,576
+device msubckt pfet_03v3 4458 -1934 4459 -1933 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 4298 -1934 4299 -1933 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4138 -1934 4139 -1933 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3978 -1934 3979 -1933 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 -1934 3819 -1933 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3208 -1934 3209 -1933 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 17600,576
+device msubckt pfet_03v3 3048 -1934 3049 -1933 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2888 -1934 2889 -1933 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2728 -1934 2729 -1933 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2568 -1934 2569 -1933 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2408 -1934 2409 -1933 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 -1934 2006 -1933 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "VDD" 200 17600,576 "a_2061_n2270#" 200 17600,576
+device msubckt nfet_03v3 715 -1856 716 -1855 l=56 w=100 "VSS" "S1" 112 0 "TG_magic_7.CLK" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 555 -1856 556 -1855 l=56 w=100 "VSS" "S1" 112 0 "VSS" 100 5200,204 "TG_magic_7.CLK" 100 5200,204
+device msubckt nfet_03v3 395 -1856 396 -1855 l=56 w=100 "VSS" "S1" 112 0 "TG_magic_7.CLK" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 235 -1856 236 -1855 l=56 w=100 "VSS" "S1" 112 0 "VSS" 100 8800,376 "TG_magic_7.CLK" 100 5200,204
+device msubckt pfet_03v3 6888 -1599 6889 -1598 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 6728 -1599 6729 -1598 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -1599 6569 -1598 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6408 -1599 6409 -1598 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -1599 6249 -1598 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6088 -1599 6089 -1598 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -1599 5686 -1598 l=56 w=200 "VDD" "INVERTER_MUX_1.OUT" 112 0 "VDD" 200 17600,576 "a_5741_n2271#" 200 17600,576
+device msubckt pfet_03v3 -747 -1935 -746 -1934 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 17600,576
+device msubckt pfet_03v3 -907 -1935 -906 -1934 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -1935 -1066 -1934 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1227 -1935 -1226 -1934 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -1935 -1386 -1934 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1547 -1935 -1546 -1934 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 17600,576 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -1935 -1949 -1934 l=56 w=200 "VDD" "a_n2298_n2271#" 112 0 "VDD" 200 17600,576 "a_n1894_n2271#" 200 17600,576
+device msubckt pfet_03v3 -2354 -1935 -2353 -1934 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n2271#" 200 17600,576
+device msubckt pfet_03v3 -3150 -1942 -3149 -1941 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 17600,576
+device msubckt pfet_03v3 -3310 -1942 -3309 -1941 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -1942 -3469 -1941 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3630 -1942 -3629 -1941 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -1942 -3789 -1941 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3950 -1942 -3949 -1941 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 17600,576 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -1942 -4352 -1941 l=56 w=200 "VDD" "a_n4701_n2278#" 112 0 "VDD" 200 17600,576 "a_n4297_n2278#" 200 17600,576
+device msubckt pfet_03v3 -4757 -1942 -4756 -1941 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n2278#" 200 17600,576
+device msubckt pfet_03v3 5021 -1598 5022 -1597 l=56 w=200 "VDD" "S1" 112 0 "a_3817_n991#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -1598 4619 -1597 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 17600,576
+device msubckt pfet_03v3 4458 -1598 4459 -1597 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 4298 -1598 4299 -1597 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4138 -1598 4139 -1597 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3978 -1598 3979 -1597 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 -1598 3819 -1597 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3208 -1598 3209 -1597 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 17600,576
+device msubckt pfet_03v3 3048 -1598 3049 -1597 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2888 -1598 2889 -1597 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2728 -1598 2729 -1597 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2568 -1598 2569 -1597 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2408 -1598 2409 -1597 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 -1598 2006 -1597 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "VDD" 200 17600,576 "a_2061_n2270#" 200 17600,576
+device msubckt pfet_03v3 6888 -1263 6889 -1262 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 6728 -1263 6729 -1262 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6568 -1263 6569 -1262 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6408 -1263 6409 -1262 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt pfet_03v3 6248 -1263 6249 -1262 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 6088 -1263 6089 -1262 l=56 w=200 "VDD" "a_5741_n2271#" 112 0 "TG_magic_0.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt pfet_03v3 5685 -1263 5686 -1262 l=56 w=200 "VDD" "INVERTER_MUX_1.OUT" 112 0 "VDD" 200 17600,576 "a_5741_n2271#" 200 17600,576
+device msubckt nfet_03v3 715 -1451 716 -1450 l=56 w=100 "VSS" "S0" 112 0 "TG_magic_1.CLK" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 555 -1451 556 -1450 l=56 w=100 "VSS" "S0" 112 0 "VSS" 100 5200,204 "TG_magic_1.CLK" 100 5200,204
+device msubckt nfet_03v3 395 -1451 396 -1450 l=56 w=100 "VSS" "S0" 112 0 "TG_magic_1.CLK" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 235 -1451 236 -1450 l=56 w=100 "VSS" "S0" 112 0 "VSS" 100 8800,376 "TG_magic_1.CLK" 100 5200,204
+device msubckt pfet_03v3 -747 -1599 -746 -1598 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 17600,576
+device msubckt pfet_03v3 -907 -1599 -906 -1598 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -1599 -1066 -1598 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1227 -1599 -1226 -1598 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -1599 -1386 -1598 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1547 -1599 -1546 -1598 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 17600,576 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -1599 -1949 -1598 l=56 w=200 "VDD" "a_n2298_n2271#" 112 0 "VDD" 200 17600,576 "a_n1894_n2271#" 200 17600,576
+device msubckt pfet_03v3 -2354 -1599 -2353 -1598 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n2271#" 200 17600,576
+device msubckt pfet_03v3 -3150 -1606 -3149 -1605 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 17600,576
+device msubckt pfet_03v3 -3310 -1606 -3309 -1605 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -1606 -3469 -1605 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3630 -1606 -3629 -1605 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -1606 -3789 -1605 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3950 -1606 -3949 -1605 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 17600,576 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -1606 -4352 -1605 l=56 w=200 "VDD" "a_n4701_n2278#" 112 0 "VDD" 200 17600,576 "a_n4297_n2278#" 200 17600,576
+device msubckt pfet_03v3 -4757 -1606 -4756 -1605 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n2278#" 200 17600,576
+device msubckt pfet_03v3 5021 -1262 5022 -1261 l=56 w=200 "VDD" "S1" 112 0 "a_3817_n991#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 4618 -1262 4619 -1261 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 17600,576
+device msubckt pfet_03v3 4458 -1262 4459 -1261 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 4298 -1262 4299 -1261 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4138 -1262 4139 -1261 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3978 -1262 3979 -1261 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 -1262 3819 -1261 l=56 w=200 "VDD" "a_3817_n991#" 112 0 "TG_magic_5.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 3208 -1262 3209 -1261 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 17600,576
+device msubckt pfet_03v3 3048 -1262 3049 -1261 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2888 -1262 2889 -1261 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2728 -1262 2729 -1261 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2568 -1262 2569 -1261 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2408 -1262 2409 -1261 l=56 w=200 "VDD" "a_2061_n2270#" 112 0 "TG_magic_0.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 -1262 2006 -1261 l=56 w=200 "VDD" "TG_magic_7.CLK" 112 0 "VDD" 200 17600,576 "a_2061_n2270#" 200 17600,576
+device msubckt nfet_03v3 715 -1215 716 -1214 l=56 w=100 "VSS" "S0" 112 0 "TG_magic_1.CLK" 100 5200,204 "VSS" 100 8800,376
+device msubckt nfet_03v3 555 -1215 556 -1214 l=56 w=100 "VSS" "S0" 112 0 "VSS" 100 5200,204 "TG_magic_1.CLK" 100 5200,204
+device msubckt nfet_03v3 395 -1215 396 -1214 l=56 w=100 "VSS" "S0" 112 0 "TG_magic_1.CLK" 100 5200,204 "VSS" 100 5200,204
+device msubckt nfet_03v3 235 -1215 236 -1214 l=56 w=100 "VSS" "S0" 112 0 "VSS" 100 8800,376 "TG_magic_1.CLK" 100 5200,204
+device msubckt nfet_03v3 6888 -681 6889 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 17600,576
+device msubckt nfet_03v3 6728 -681 6729 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6568 -681 6569 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 6408 -681 6409 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6248 -681 6249 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 6088 -681 6089 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "TG_magic_0.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt nfet_03v3 5685 -681 5686 -680 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "VSS" 200 17600,576 "a_5741_n2271#" 200 17600,576
+device msubckt pfet_03v3 -747 -1263 -746 -1262 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 17600,576
+device msubckt pfet_03v3 -907 -1263 -906 -1262 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1067 -1263 -1066 -1262 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1227 -1263 -1226 -1262 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1387 -1263 -1386 -1262 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt pfet_03v3 -1547 -1263 -1546 -1262 l=56 w=200 "VDD" "a_n1894_n2271#" 112 0 "A4" 200 17600,576 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 -1950 -1263 -1949 -1262 l=56 w=200 "VDD" "a_n2298_n2271#" 112 0 "VDD" 200 17600,576 "a_n1894_n2271#" 200 17600,576
+device msubckt pfet_03v3 -2354 -1263 -2353 -1262 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_n2271#" 200 17600,576
+device msubckt pfet_03v3 -3150 -1270 -3149 -1269 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 17600,576
+device msubckt pfet_03v3 -3310 -1270 -3309 -1269 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3470 -1270 -3469 -1269 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3630 -1270 -3629 -1269 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -3790 -1270 -3789 -1269 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt pfet_03v3 -3950 -1270 -3949 -1269 l=56 w=200 "VDD" "a_n4297_n2278#" 112 0 "A0" 200 17600,576 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 -4353 -1270 -4352 -1269 l=56 w=200 "VDD" "a_n4701_n2278#" 112 0 "VDD" 200 17600,576 "a_n4297_n2278#" 200 17600,576
+device msubckt pfet_03v3 -4757 -1270 -4756 -1269 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_n2278#" 200 17600,576
+device msubckt nfet_03v3 5021 -680 5022 -679 l=56 w=200 "VSS" "S1" 112 0 "a_3817_n991#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 4618 -680 4619 -679 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 17600,576
+device msubckt nfet_03v3 4458 -680 4459 -679 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 4298 -680 4299 -679 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 4138 -680 4139 -679 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 3978 -680 3979 -679 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 3818 -680 3819 -679 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_5.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 3208 -680 3209 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 17600,576
+device msubckt nfet_03v3 3048 -680 3049 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2888 -680 2889 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2728 -680 2729 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2568 -680 2569 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2408 -680 2409 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2005 -680 2006 -679 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "VSS" 200 17600,576 "a_2061_n2270#" 200 17600,576
+device msubckt pfet_03v3 715 -866 716 -865 l=56 w=200 "VDD" "S0" 112 0 "TG_magic_1.CLK" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 555 -866 556 -865 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 10400,304 "TG_magic_1.CLK" 200 10400,304
+device msubckt pfet_03v3 395 -866 396 -865 l=56 w=200 "VDD" "S0" 112 0 "TG_magic_1.CLK" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 235 -866 236 -865 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "TG_magic_1.CLK" 200 10400,304
+device msubckt nfet_03v3 6888 -345 6889 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 17600,576
+device msubckt nfet_03v3 6728 -345 6729 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6568 -345 6569 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 6408 -345 6409 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "TG_magic_0.B" 200 10400,304 "Vout" 200 10400,304
+device msubckt nfet_03v3 6248 -345 6249 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "Vout" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 6088 -345 6089 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "TG_magic_0.B" 200 17600,576 "Vout" 200 10400,304
+device msubckt nfet_03v3 5685 -345 5686 -344 l=56 w=200 "VSS" "INVERTER_MUX_1.OUT" 112 0 "VSS" 200 17600,576 "a_5741_n2271#" 200 17600,576
+device msubckt nfet_03v3 5021 -344 5022 -343 l=56 w=200 "VSS" "S1" 112 0 "a_3817_n991#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 4618 -344 4619 -343 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 17600,576
+device msubckt nfet_03v3 4458 -344 4459 -343 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 4298 -344 4299 -343 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 4138 -344 4139 -343 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_5.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 3978 -344 3979 -343 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 3818 -344 3819 -343 l=56 w=200 "VSS" "S1" 112 0 "TG_magic_5.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 3208 -344 3209 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 17600,576
+device msubckt nfet_03v3 3048 -344 3049 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2888 -344 2889 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2728 -344 2729 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2568 -344 2569 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2408 -344 2409 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "TG_magic_0.A" 200 17600,576 "TG_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2005 -344 2006 -343 l=56 w=200 "VSS" "TG_magic_7.CLK" 112 0 "VSS" 200 17600,576 "a_2061_n2270#" 200 17600,576
+device msubckt pfet_03v3 715 -530 716 -529 l=56 w=200 "VDD" "S0" 112 0 "TG_magic_1.CLK" 200 10400,304 "VDD" 200 17600,576
+device msubckt pfet_03v3 555 -530 556 -529 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 10400,304 "TG_magic_1.CLK" 200 10400,304
+device msubckt pfet_03v3 395 -530 396 -529 l=56 w=200 "VDD" "S0" 112 0 "TG_magic_1.CLK" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 235 -530 236 -529 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "TG_magic_1.CLK" 200 10400,304
+device msubckt nfet_03v3 -747 -681 -746 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 17600,576
+device msubckt nfet_03v3 -907 -681 -906 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 -1067 -681 -1066 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt nfet_03v3 -1227 -681 -1226 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 -1387 -681 -1386 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt nfet_03v3 -1547 -681 -1546 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "A4" 200 17600,576 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 -1950 -681 -1949 -680 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "VSS" 200 17600,576 "a_n1894_n2271#" 200 17600,576
+device msubckt nfet_03v3 -2354 -681 -2353 -680 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_n2271#" 200 17600,576
+device msubckt nfet_03v3 -3150 -688 -3149 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 17600,576
+device msubckt nfet_03v3 -3310 -688 -3309 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 -3470 -688 -3469 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt nfet_03v3 -3630 -688 -3629 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 -3790 -688 -3789 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt nfet_03v3 -3950 -688 -3949 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "A0" 200 17600,576 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 -4353 -688 -4352 -687 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "VSS" 200 17600,576 "a_n4297_n2278#" 200 17600,576
+device msubckt nfet_03v3 -4757 -688 -4756 -687 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_n2278#" 200 17600,576
+device msubckt nfet_03v3 -747 -345 -746 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 17600,576
+device msubckt nfet_03v3 -907 -345 -906 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 -1067 -345 -1066 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt nfet_03v3 -1227 -345 -1226 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "A4" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 -1387 -345 -1386 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "A4" 200 10400,304
+device msubckt nfet_03v3 -1547 -345 -1546 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "A4" 200 17600,576 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 -1950 -345 -1949 -344 l=56 w=200 "VSS" "a_n2298_n2271#" 112 0 "VSS" 200 17600,576 "a_n1894_n2271#" 200 17600,576
+device msubckt nfet_03v3 -2354 -345 -2353 -344 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_n2271#" 200 17600,576
+device msubckt nfet_03v3 -3150 -352 -3149 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 17600,576
+device msubckt nfet_03v3 -3310 -352 -3309 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 -3470 -352 -3469 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt nfet_03v3 -3630 -352 -3629 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "A0" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 -3790 -352 -3789 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "A0" 200 10400,304
+device msubckt nfet_03v3 -3950 -352 -3949 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "A0" 200 17600,576 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 -4353 -352 -4352 -351 l=56 w=200 "VSS" "a_n4701_n2278#" 112 0 "VSS" 200 17600,576 "a_n4297_n2278#" 200 17600,576
+device msubckt nfet_03v3 -4757 -352 -4756 -351 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_n2278#" 200 17600,576
+device msubckt nfet_03v3 6888 307 6889 308 l=56 w=200 "VSS" "S0" 112 0 "a_5684_1104#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 6485 307 6486 308 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 17600,576
+device msubckt nfet_03v3 6325 307 6326 308 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 6165 307 6166 308 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 6005 307 6006 308 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 5845 307 5846 308 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 5685 307 5686 308 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 5021 308 5022 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 17600,576
+device msubckt nfet_03v3 4861 308 4862 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 4701 308 4702 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 4541 308 4542 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 4381 308 4382 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 4221 308 4222 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 3818 308 3819 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "VSS" 200 17600,576 "a_3874_308#" 200 17600,576
+device msubckt nfet_03v3 3208 308 3209 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "a_2004_1105#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 2805 308 2806 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 17600,576
+device msubckt nfet_03v3 2645 308 2646 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2485 308 2486 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2325 308 2326 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2165 308 2166 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2005 308 2006 309 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 1448 308 1449 309 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 17600,576
+device msubckt nfet_03v3 1288 308 1289 309 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 1128 308 1129 309 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 968 308 969 309 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 808 308 809 309 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 648 308 649 309 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 245 308 246 309 l=56 w=200 "VSS" "S0" 112 0 "VSS" 200 17600,576 "a_301_308#" 200 17600,576
+device msubckt nfet_03v3 -747 307 -746 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 17600,576
+device msubckt nfet_03v3 -907 307 -906 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 -1067 307 -1066 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt nfet_03v3 -1227 307 -1226 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 -1387 307 -1386 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt nfet_03v3 -1547 307 -1546 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "A2" 200 17600,576 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 -1950 307 -1949 308 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "VSS" 200 17600,576 "a_n1894_307#" 200 17600,576
+device msubckt nfet_03v3 -2354 307 -2353 308 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_307#" 200 17600,576
+device msubckt nfet_03v3 -3150 300 -3149 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 17600,576
+device msubckt nfet_03v3 -3310 300 -3309 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 -3470 300 -3469 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt nfet_03v3 -3630 300 -3629 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 -3790 300 -3789 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt nfet_03v3 -3950 300 -3949 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "A6" 200 17600,576 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 -4353 300 -4352 301 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "VSS" 200 17600,576 "a_n4297_300#" 200 17600,576
+device msubckt nfet_03v3 -4757 300 -4756 301 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_300#" 200 17600,576
+device msubckt nfet_03v3 6888 643 6889 644 l=56 w=200 "VSS" "S0" 112 0 "a_5684_1104#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 6485 643 6486 644 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 17600,576
+device msubckt nfet_03v3 6325 643 6326 644 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 6165 643 6166 644 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 6005 643 6006 644 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 5845 643 5846 644 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 5685 643 5686 644 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 5021 644 5022 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 17600,576
+device msubckt nfet_03v3 4861 644 4862 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 4701 644 4702 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 4541 644 4542 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 4381 644 4382 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 4221 644 4222 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt nfet_03v3 3818 644 3819 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "VSS" 200 17600,576 "a_3874_308#" 200 17600,576
+device msubckt nfet_03v3 3208 644 3209 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "a_2004_1105#" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 2805 644 2806 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 17600,576
+device msubckt nfet_03v3 2645 644 2646 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2485 644 2486 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2325 644 2326 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 2165 644 2166 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt nfet_03v3 2005 644 2006 645 l=56 w=200 "VSS" "TG_magic_1.CLK" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 1448 644 1449 645 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 17600,576
+device msubckt nfet_03v3 1288 644 1289 645 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 1128 644 1129 645 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 968 644 969 645 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 808 644 809 645 l=56 w=200 "VSS" "S0" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt nfet_03v3 648 644 649 645 l=56 w=200 "VSS" "S0" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt nfet_03v3 245 644 246 645 l=56 w=200 "VSS" "S0" 112 0 "VSS" 200 17600,576 "a_301_308#" 200 17600,576
+device msubckt nfet_03v3 -747 643 -746 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 17600,576
+device msubckt nfet_03v3 -907 643 -906 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 -1067 643 -1066 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt nfet_03v3 -1227 643 -1226 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 -1387 643 -1386 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt nfet_03v3 -1547 643 -1546 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "A2" 200 17600,576 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt nfet_03v3 -1950 643 -1949 644 l=56 w=200 "VSS" "a_n2298_307#" 112 0 "VSS" 200 17600,576 "a_n1894_307#" 200 17600,576
+device msubckt nfet_03v3 -2354 643 -2353 644 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n2298_307#" 200 17600,576
+device msubckt nfet_03v3 -3150 636 -3149 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 17600,576
+device msubckt nfet_03v3 -3310 636 -3309 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 -3470 636 -3469 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt nfet_03v3 -3630 636 -3629 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 -3790 636 -3789 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt nfet_03v3 -3950 636 -3949 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "A6" 200 17600,576 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt nfet_03v3 -4353 636 -4352 637 l=56 w=200 "VSS" "a_n4701_300#" 112 0 "VSS" 200 17600,576 "a_n4297_300#" 200 17600,576
+device msubckt nfet_03v3 -4757 636 -4756 637 l=56 w=200 "VSS" "ENA" 112 0 "VSS" 200 17600,576 "a_n4701_300#" 200 17600,576
+device msubckt pfet_03v3 6888 1225 6889 1226 l=56 w=200 "VDD" "S0" 112 0 "a_5684_1104#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 1225 6486 1226 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 17600,576
+device msubckt pfet_03v3 6325 1225 6326 1226 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 6165 1225 6166 1226 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 6005 1225 6006 1226 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5845 1225 5846 1226 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 5685 1225 5686 1226 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5021 1226 5022 1227 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 4861 1226 4862 1227 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4701 1226 4702 1227 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4541 1226 4542 1227 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4381 1226 4382 1227 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4221 1226 4222 1227 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 1226 3819 1227 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_308#" 200 17600,576
+device msubckt pfet_03v3 3208 1226 3209 1227 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_1105#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 1226 2806 1227 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 2645 1226 2646 1227 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2485 1226 2486 1227 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2325 1226 2326 1227 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2165 1226 2166 1227 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 1226 2006 1227 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1448 1226 1449 1227 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 17600,576
+device msubckt pfet_03v3 1288 1226 1289 1227 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1128 1226 1129 1227 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 968 1226 969 1227 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 808 1226 809 1227 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 648 1226 649 1227 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 245 1226 246 1227 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_308#" 200 17600,576
+device msubckt pfet_03v3 -747 1225 -746 1226 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 17600,576
+device msubckt pfet_03v3 -907 1225 -906 1226 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1067 1225 -1066 1226 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1227 1225 -1226 1226 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1387 1225 -1386 1226 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1547 1225 -1546 1226 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 17600,576 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1950 1225 -1949 1226 l=56 w=200 "VDD" "a_n2298_307#" 112 0 "VDD" 200 17600,576 "a_n1894_307#" 200 17600,576
+device msubckt pfet_03v3 -2354 1225 -2353 1226 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_307#" 200 17600,576
+device msubckt pfet_03v3 -3150 1218 -3149 1219 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 17600,576
+device msubckt pfet_03v3 -3310 1218 -3309 1219 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3470 1218 -3469 1219 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3630 1218 -3629 1219 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3790 1218 -3789 1219 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3950 1218 -3949 1219 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 17600,576 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -4353 1218 -4352 1219 l=56 w=200 "VDD" "a_n4701_300#" 112 0 "VDD" 200 17600,576 "a_n4297_300#" 200 17600,576
+device msubckt pfet_03v3 -4757 1218 -4756 1219 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_300#" 200 17600,576
+device msubckt pfet_03v3 6888 1561 6889 1562 l=56 w=200 "VDD" "S0" 112 0 "a_5684_1104#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 1561 6486 1562 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 17600,576
+device msubckt pfet_03v3 6325 1561 6326 1562 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 6165 1561 6166 1562 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 6005 1561 6006 1562 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5845 1561 5846 1562 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 5685 1561 5686 1562 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5021 1562 5022 1563 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 4861 1562 4862 1563 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4701 1562 4702 1563 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4541 1562 4542 1563 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4381 1562 4382 1563 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4221 1562 4222 1563 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 1562 3819 1563 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_308#" 200 17600,576
+device msubckt pfet_03v3 3208 1562 3209 1563 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_1105#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 1562 2806 1563 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 2645 1562 2646 1563 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2485 1562 2486 1563 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2325 1562 2326 1563 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2165 1562 2166 1563 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 1562 2006 1563 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1448 1562 1449 1563 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 17600,576
+device msubckt pfet_03v3 1288 1562 1289 1563 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1128 1562 1129 1563 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 968 1562 969 1563 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 808 1562 809 1563 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 648 1562 649 1563 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 245 1562 246 1563 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_308#" 200 17600,576
+device msubckt pfet_03v3 -747 1561 -746 1562 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 17600,576
+device msubckt pfet_03v3 -907 1561 -906 1562 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1067 1561 -1066 1562 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1227 1561 -1226 1562 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1387 1561 -1386 1562 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1547 1561 -1546 1562 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 17600,576 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1950 1561 -1949 1562 l=56 w=200 "VDD" "a_n2298_307#" 112 0 "VDD" 200 17600,576 "a_n1894_307#" 200 17600,576
+device msubckt pfet_03v3 -2354 1561 -2353 1562 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_307#" 200 17600,576
+device msubckt pfet_03v3 -3150 1554 -3149 1555 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 17600,576
+device msubckt pfet_03v3 -3310 1554 -3309 1555 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3470 1554 -3469 1555 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3630 1554 -3629 1555 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3790 1554 -3789 1555 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3950 1554 -3949 1555 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 17600,576 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -4353 1554 -4352 1555 l=56 w=200 "VDD" "a_n4701_300#" 112 0 "VDD" 200 17600,576 "a_n4297_300#" 200 17600,576
+device msubckt pfet_03v3 -4757 1554 -4756 1555 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_300#" 200 17600,576
+device msubckt pfet_03v3 6888 1897 6889 1898 l=56 w=200 "VDD" "S0" 112 0 "a_5684_1104#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 1897 6486 1898 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 17600,576
+device msubckt pfet_03v3 6325 1897 6326 1898 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 6165 1897 6166 1898 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 6005 1897 6006 1898 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5845 1897 5846 1898 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 5685 1897 5686 1898 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5021 1898 5022 1899 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 4861 1898 4862 1899 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4701 1898 4702 1899 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4541 1898 4542 1899 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4381 1898 4382 1899 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4221 1898 4222 1899 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 1898 3819 1899 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_308#" 200 17600,576
+device msubckt pfet_03v3 3208 1898 3209 1899 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_1105#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 1898 2806 1899 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 2645 1898 2646 1899 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2485 1898 2486 1899 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2325 1898 2326 1899 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2165 1898 2166 1899 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 1898 2006 1899 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1448 1898 1449 1899 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 17600,576
+device msubckt pfet_03v3 1288 1898 1289 1899 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1128 1898 1129 1899 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 968 1898 969 1899 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 808 1898 809 1899 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 648 1898 649 1899 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 245 1898 246 1899 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_308#" 200 17600,576
+device msubckt pfet_03v3 -747 1897 -746 1898 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 17600,576
+device msubckt pfet_03v3 -907 1897 -906 1898 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1067 1897 -1066 1898 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1227 1897 -1226 1898 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1387 1897 -1386 1898 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1547 1897 -1546 1898 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 17600,576 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1950 1897 -1949 1898 l=56 w=200 "VDD" "a_n2298_307#" 112 0 "VDD" 200 17600,576 "a_n1894_307#" 200 17600,576
+device msubckt pfet_03v3 -2354 1897 -2353 1898 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_307#" 200 17600,576
+device msubckt pfet_03v3 -3150 1890 -3149 1891 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 17600,576
+device msubckt pfet_03v3 -3310 1890 -3309 1891 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3470 1890 -3469 1891 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3630 1890 -3629 1891 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3790 1890 -3789 1891 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3950 1890 -3949 1891 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 17600,576 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -4353 1890 -4352 1891 l=56 w=200 "VDD" "a_n4701_300#" 112 0 "VDD" 200 17600,576 "a_n4297_300#" 200 17600,576
+device msubckt pfet_03v3 -4757 1890 -4756 1891 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_300#" 200 17600,576
+device msubckt pfet_03v3 6888 2233 6889 2234 l=56 w=200 "VDD" "S0" 112 0 "a_5684_1104#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 6485 2233 6486 2234 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 17600,576
+device msubckt pfet_03v3 6325 2233 6326 2234 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 6165 2233 6166 2234 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 6005 2233 6006 2234 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5845 2233 5846 2234 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 5685 2233 5686 2234 l=56 w=200 "VDD" "a_5684_1104#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 5021 2234 5022 2235 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 17600,576
+device msubckt pfet_03v3 4861 2234 4862 2235 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4701 2234 4702 2235 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4541 2234 4542 2235 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 4381 2234 4382 2235 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_magic_5.A" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 4221 2234 4222 2235 l=56 w=200 "VDD" "a_3874_308#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 17600,576 "TG_magic_5.A" 200 10400,304
+device msubckt pfet_03v3 3818 2234 3819 2235 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "VDD" 200 17600,576 "a_3874_308#" 200 17600,576
+device msubckt pfet_03v3 3208 2234 3209 2235 l=56 w=200 "VDD" "TG_magic_1.CLK" 112 0 "a_2004_1105#" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2805 2234 2806 2235 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 17600,576
+device msubckt pfet_03v3 2645 2234 2646 2235 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2485 2234 2486 2235 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2325 2234 2326 2235 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 2165 2234 2166 2235 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_0.B" 200 10400,304
+device msubckt pfet_03v3 2005 2234 2006 2235 l=56 w=200 "VDD" "a_2004_1105#" 112 0 "TG_GATE_SWITCH_magic_0.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1448 2234 1449 2235 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 17600,576
+device msubckt pfet_03v3 1288 2234 1289 2235 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 1128 2234 1129 2235 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 968 2234 969 2235 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 10400,304 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 808 2234 809 2235 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_magic_0.A" 200 10400,304 "TG_GATE_SWITCH_magic_6.B" 200 10400,304
+device msubckt pfet_03v3 648 2234 649 2235 l=56 w=200 "VDD" "a_301_308#" 112 0 "TG_GATE_SWITCH_magic_6.B" 200 17600,576 "TG_magic_0.A" 200 10400,304
+device msubckt pfet_03v3 245 2234 246 2235 l=56 w=200 "VDD" "S0" 112 0 "VDD" 200 17600,576 "a_301_308#" 200 17600,576
+device msubckt pfet_03v3 -747 2233 -746 2234 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 17600,576
+device msubckt pfet_03v3 -907 2233 -906 2234 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1067 2233 -1066 2234 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1227 2233 -1226 2234 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 10400,304 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1387 2233 -1386 2234 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "TG_GATE_SWITCH_magic_7.B" 200 10400,304 "A2" 200 10400,304
+device msubckt pfet_03v3 -1547 2233 -1546 2234 l=56 w=200 "VDD" "a_n1894_307#" 112 0 "A2" 200 17600,576 "TG_GATE_SWITCH_magic_7.B" 200 10400,304
+device msubckt pfet_03v3 -1950 2233 -1949 2234 l=56 w=200 "VDD" "a_n2298_307#" 112 0 "VDD" 200 17600,576 "a_n1894_307#" 200 17600,576
+device msubckt pfet_03v3 -2354 2233 -2353 2234 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n2298_307#" 200 17600,576
+device msubckt pfet_03v3 -3150 2226 -3149 2227 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 17600,576
+device msubckt pfet_03v3 -3310 2226 -3309 2227 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3470 2226 -3469 2227 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3630 2226 -3629 2227 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 10400,304 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -3790 2226 -3789 2227 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "TG_GATE_SWITCH_magic_3.B" 200 10400,304 "A6" 200 10400,304
+device msubckt pfet_03v3 -3950 2226 -3949 2227 l=56 w=200 "VDD" "a_n4297_300#" 112 0 "A6" 200 17600,576 "TG_GATE_SWITCH_magic_3.B" 200 10400,304
+device msubckt pfet_03v3 -4353 2226 -4352 2227 l=56 w=200 "VDD" "a_n4701_300#" 112 0 "VDD" 200 17600,576 "a_n4297_300#" 200 17600,576
+device msubckt pfet_03v3 -4757 2226 -4756 2227 l=56 w=200 "VDD" "ENA" 112 0 "VDD" 200 17600,576 "a_n4701_300#" 200 17600,576

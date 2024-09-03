@@ -1,0 +1,9 @@
+** sch_path: /home/shahid/GF180Projects/Layout/Xschem/VCO/PLL_TOP_FINAL/Res_74k.sch
+**.subckt Res_74k P VDD M
+*.iopin P
+*.iopin VDD
+*.iopin M
+XR1 M P VDD ppolyf_u r_width=1.1e-6 r_length=2.6e-6 m=75
+XR2 VDD VDD VDD ppolyf_u r_width=48.4e-6 r_length=2.6e-6 m=1
+**.ends
+.end

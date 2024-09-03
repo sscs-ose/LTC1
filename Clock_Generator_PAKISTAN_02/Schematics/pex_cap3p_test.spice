@@ -1,0 +1,32 @@
+** sch_path: /home/shahid/GF180Projects/CP_PFD_dff_inv_nand_/Xschem/CAP/pex_cap3p_test.sch
+**.subckt pex_cap3p_test
+V1 IN Nn pwl 0 0 200n 3.3
+.save i(v1)
+R2 Pp IN 100k m=1
+V2 Nn GND 0
+.save i(v2)
+x1 Nn Pp pex_cap3p
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+.include pex_cap3p_layout.spice
+.control
+save all
+tran 0.1n 200n
+write pex_cap3p_test.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

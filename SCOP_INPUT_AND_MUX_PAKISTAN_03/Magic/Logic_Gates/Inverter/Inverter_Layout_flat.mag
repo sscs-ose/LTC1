@@ -1,0 +1,110 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1692017968
+<< nwell >>
+rect -62 310 342 856
+<< pwell >>
+rect 0 0 280 236
+<< nmos >>
+rect 112 68 168 168
+<< pmos >>
+rect 112 440 168 640
+<< ndiff >>
+rect 24 155 112 168
+rect 24 81 37 155
+rect 83 81 112 155
+rect 24 68 112 81
+rect 168 155 256 168
+rect 168 81 197 155
+rect 243 81 256 155
+rect 168 68 256 81
+<< pdiff >>
+rect 24 627 112 640
+rect 24 453 37 627
+rect 83 453 112 627
+rect 24 440 112 453
+rect 168 627 256 640
+rect 168 453 197 627
+rect 243 453 256 627
+rect 168 440 256 453
+<< ndiffc >>
+rect 37 81 83 155
+rect 197 81 243 155
+<< pdiffc >>
+rect 37 453 83 627
+rect 197 453 243 627
+<< psubdiff >>
+rect 10 -45 270 -32
+rect 10 -91 23 -45
+rect 69 -91 117 -45
+rect 163 -91 211 -45
+rect 257 -91 270 -45
+rect 10 -104 270 -91
+<< nsubdiff >>
+rect -37 810 317 823
+rect -37 764 -24 810
+rect 22 764 70 810
+rect 116 764 164 810
+rect 210 764 258 810
+rect 304 764 317 810
+rect -37 751 317 764
+<< psubdiffcont >>
+rect 23 -91 69 -45
+rect 117 -91 163 -45
+rect 211 -91 257 -45
+<< nsubdiffcont >>
+rect -24 764 22 810
+rect 70 764 116 810
+rect 164 764 210 810
+rect 258 764 304 810
+<< polysilicon >>
+rect 112 640 168 684
+rect -8 274 64 282
+rect 112 274 168 440
+rect -8 269 168 274
+rect -8 223 5 269
+rect 51 223 168 269
+rect -8 218 168 223
+rect -8 210 64 218
+rect 112 168 168 218
+rect 112 24 168 68
+<< polycontact >>
+rect 5 223 51 269
+<< metal1 >>
+rect -62 810 342 843
+rect -62 764 -24 810
+rect 22 764 70 810
+rect 116 764 164 810
+rect 210 764 258 810
+rect 304 764 342 810
+rect -62 731 342 764
+rect 37 627 83 731
+rect 37 442 83 453
+rect 197 627 243 638
+rect 197 396 243 453
+rect 197 350 340 396
+rect -6 269 62 280
+rect -60 223 5 269
+rect 51 223 62 269
+rect -6 212 62 223
+rect 37 155 83 166
+rect 37 -12 83 81
+rect 197 155 243 350
+rect 197 70 243 81
+rect -10 -45 290 -12
+rect -10 -91 23 -45
+rect 69 -91 117 -45
+rect 163 -91 211 -45
+rect 257 -91 290 -45
+rect -10 -124 290 -91
+<< labels >>
+flabel psubdiffcont 140 -68 140 -68 0 FreeSans 320 0 0 0 VSS
+port 7 nsew
+flabel metal1 140 790 140 790 0 FreeSans 320 0 0 0 VDD
+port 9 nsew
+flabel metal1 -40 246 -40 246 0 FreeSans 320 0 0 0 IN
+port 4 nsew
+flabel metal1 279 373 279 373 0 FreeSans 320 0 0 0 OUT
+port 6 nsew
+<< end >>

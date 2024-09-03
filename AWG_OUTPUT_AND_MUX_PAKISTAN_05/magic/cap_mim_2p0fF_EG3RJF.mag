@@ -1,0 +1,45 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1695274000
+<< mimcap >>
+rect -3427 2420 -427 2500
+rect -3427 -2420 -3347 2420
+rect -507 -2420 -427 2420
+rect -3427 -2500 -427 -2420
+rect 187 2420 3187 2500
+rect 187 -2420 267 2420
+rect 3107 -2420 3187 2420
+rect 187 -2500 3187 -2420
+<< mimcapcontact >>
+rect -3347 -2420 -507 2420
+rect 267 -2420 3107 2420
+<< metal4 >>
+rect -3547 2553 -67 2620
+rect -3547 2500 -217 2553
+rect -3547 -2500 -3427 2500
+rect -427 -2500 -217 2500
+rect -3547 -2553 -217 -2500
+rect -129 -2553 -67 2553
+rect -3547 -2620 -67 -2553
+rect 67 2553 3547 2620
+rect 67 2500 3397 2553
+rect 67 -2500 187 2500
+rect 3187 -2500 3397 2500
+rect 67 -2553 3397 -2500
+rect 3485 -2553 3547 2553
+rect 67 -2620 3547 -2553
+<< via4 >>
+rect -217 -2553 -129 2553
+rect 3397 -2553 3485 2553
+<< metal5 >>
+rect -217 2553 -129 2563
+rect 3397 2553 3485 2563
+rect -217 -2563 -129 -2553
+rect 3397 -2563 3485 -2553
+<< properties >>
+string FIXED_BBOX 67 -2620 3307 2620
+string gencell cap_mim_2p0fF
+string library gf180mcu
+string parameters w 15.00 l 25.00 val 10.975k carea 25.00 cperi 20.00 nx 2 ny 1 dummy 0 square 0 lmin 5.00 wmin 5.00 lmax 100.0 wmax 100.0 dc 0 bconnect 1 tconnect 1
+<< end >>

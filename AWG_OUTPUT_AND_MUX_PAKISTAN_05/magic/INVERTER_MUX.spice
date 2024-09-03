@@ -1,0 +1,35 @@
+* NGSPICE file created from INVERTER_MUX.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MWBYAR a_108_n268# a_n356_68# a_268_n268# a_268_68# a_n52_68# a_52_24#
++ a_108_68# a_n356_n268# a_52_n312# a_n52_n268# a_212_24# a_n108_n312# a_212_n312#
++ a_n212_68# a_n212_n268# a_n268_24# a_n268_n312# a_n108_24# w_n442_n398#
+X0 a_268_68# a_212_24# a_108_68# w_n442_n398# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X1 a_n212_68# a_n268_24# a_n356_68# w_n442_n398# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X2 a_108_n268# a_52_n312# a_n52_n268# w_n442_n398# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X3 a_268_n268# a_212_n312# a_108_n268# w_n442_n398# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X4 a_n52_68# a_n108_24# a_n212_68# w_n442_n398# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X5 a_n212_n268# a_n268_n312# a_n356_n268# w_n442_n398# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X6 a_n52_n268# a_n108_n312# a_n212_n268# w_n442_n398# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 a_108_68# a_52_24# a_n52_68# w_n442_n398# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt nmos_3p3_MEGST2 a_n212_n168# a_n268_n212# a_n356_68# a_268_68# a_n52_68# a_52_24#
++ a_108_68# a_108_n168# a_268_n168# a_212_24# a_n212_68# a_n356_n168# a_n268_24# a_52_n212#
++ a_n52_n168# a_n108_24# a_n108_n212# a_212_n212# VSUBS
+X0 a_268_68# a_212_24# a_108_68# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+X1 a_n212_68# a_n268_24# a_n356_68# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+X2 a_n52_68# a_n108_24# a_n212_68# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X3 a_108_68# a_52_24# a_n52_68# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X4 a_108_n168# a_52_n212# a_n52_n168# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+X5 a_268_n168# a_212_n212# a_108_n168# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.28u
+X6 a_n212_n168# a_n268_n212# a_n356_n168# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.28u
+X7 a_n52_n168# a_n108_n212# a_n212_n168# VSUBS nfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.28u
+.ends
+
+.subckt INVERTER_MUX VDD VSS IN OUT
+Xpmos_3p3_MWBYAR_0 OUT VDD VDD VDD VDD IN OUT VDD IN VDD IN IN IN OUT OUT IN IN IN
++ VDD pmos_3p3_MWBYAR
+Xnmos_3p3_MEGST2_0 OUT IN VSS VSS VSS IN OUT OUT VSS IN OUT VSS IN IN VSS IN IN IN
++ VSS nmos_3p3_MEGST2
+.ends
+

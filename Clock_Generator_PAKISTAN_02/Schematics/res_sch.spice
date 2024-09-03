@@ -1,0 +1,8 @@
+** sch_path: /home/shahid/GF180Projects/CP_PFD_dff_inv_nand_/Xschem/CP_LF_CMB/res_sch.sch
+**.subckt res_sch VDD A B
+*.iopin VDD
+*.iopin A
+*.iopin B
+XR1 B A VDD ppolyf_u r_width=0.8e-6 r_length=100e-6 m=1
+**.ends
+.end

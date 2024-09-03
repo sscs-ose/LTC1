@@ -1,0 +1,144 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713530185
+<< checkpaint >>
+rect 91391 802 495811 5046
+rect 45505 -1360 495811 802
+rect 502267 -1360 606372 5046
+rect 623284 -1360 827494 5046
+rect 4106 -2169 11608 -1422
+rect -2000 -2631 17714 -2169
+rect -2000 -3800 22656 -2631
+rect 45505 -3800 827494 -1360
+rect -2000 -10000 827494 -3800
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+rect 0 -4400 200 -4200
+rect 0 -4800 200 -4600
+rect 0 -5200 200 -5000
+rect 0 -5600 200 -5400
+rect 0 -6000 200 -5800
+rect 0 -6400 200 -6200
+rect 0 -6800 200 -6600
+rect 0 -7200 200 -7000
+rect 0 -7600 200 -7400
+rect 0 -8000 200 -7800
+use x3_inp_AND_magic  X3_inp_AND_magic_0
+timestamp 1713530183
+transform 1 0 21032 0 1 -6000
+box -376 -2000 12702 200
+use x3_inp_NOR  X3_inp_NOR_0
+timestamp 1713530183
+transform 1 0 34110 0 1 -6000
+box -376 -2000 13395 200
+use buffer_magic  Xbuffer_magic_0
+timestamp 1713530185
+transform 1 0 494191 0 1 -3939
+box -380 -4061 10076 579
+use buffer_magic  Xbuffer_magic_1
+timestamp 1713530185
+transform 1 0 615208 0 1 -3939
+box -380 -4061 10076 579
+use buffer_magic  Xbuffer_magic_2
+timestamp 1713530185
+transform 1 0 604752 0 1 -3939
+box -380 -4061 10076 579
+use DFF_magic  XDFF_magic_0
+timestamp 1713530183
+transform 1 0 53141 0 1 -5045
+box -5636 -2955 40250 3847
+use inverter_magic  Xinverter_magic_0
+timestamp 1713530182
+transform 1 0 6270 0 1 -4002
+box -164 -3998 3338 580
+use MDFF  XMDFF_0
+timestamp 1713530185
+transform 1 0 199652 0 1 2846
+box -6156 -10846 93949 200
+use MDFF  XMDFF_1
+timestamp 1713530185
+transform 1 0 99547 0 1 2846
+box -6156 -10846 93949 200
+use MDFF  XMDFF_3
+timestamp 1713530185
+transform 1 0 299757 0 1 2846
+box -6156 -10846 93949 200
+use MDFF  XMDFF_4
+timestamp 1713530185
+transform 1 0 399862 0 1 2846
+box -6156 -10846 93949 200
+use MDFF  XMDFF_5
+timestamp 1713530185
+transform 1 0 510423 0 1 2846
+box -6156 -10846 93949 200
+use MDFF  XMDFF_6
+timestamp 1713530185
+transform 1 0 631440 0 1 2846
+box -6156 -10846 93949 200
+use MDFF  XMDFF_7
+timestamp 1713530185
+transform 1 0 731545 0 1 2846
+box -6156 -10846 93949 200
+use NAND_magic  XNAND_magic_0
+timestamp 1713530182
+transform 1 0 16310 0 1 -5167
+box -596 -2833 4346 536
+use NOR_gate  XNOR_gate_0
+timestamp 1713530182
+transform 1 0 581 0 1 -4837
+box -581 -3163 5525 668
+use NOR_gate  XNOR_gate_1
+timestamp 1713530182
+transform 1 0 10189 0 1 -4837
+box -581 -3163 5525 668
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 Q1
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 Q2
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 Q3
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 Q4
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 1280 0 0 0 Q5
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 1280 0 0 0 D2_5
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 1280 0 0 0 Q6
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 1280 0 0 0 Q7
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 1280 0 0 0 G-CLK
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 1280 0 0 0 LD
+port 9 nsew
+flabel metal1 0 -4400 200 -4200 0 FreeSans 1280 0 0 0 D2_2
+port 11 nsew
+flabel metal1 0 -4800 200 -4600 0 FreeSans 1280 0 0 0 D2_1
+port 12 nsew
+flabel metal1 0 -5200 200 -5000 0 FreeSans 1280 0 0 0 D2_6
+port 13 nsew
+flabel metal1 0 -5600 200 -5400 0 FreeSans 1280 0 0 0 D2_4
+port 14 nsew
+flabel metal1 0 -6000 200 -5800 0 FreeSans 1280 0 0 0 {}
+port 15 nsew
+flabel metal1 0 -6400 200 -6200 0 FreeSans 1280 0 0 0 D2_7
+port 16 nsew
+flabel metal1 0 -6800 200 -6600 0 FreeSans 1280 0 0 0 D2_3
+port 17 nsew
+flabel metal1 0 -7600 200 -7400 0 FreeSans 1280 0 0 0 VSS
+port 19 nsew
+flabel metal1 0 -8000 200 -7800 0 FreeSans 1280 0 0 0 VDD
+port 20 nsew
+<< end >>

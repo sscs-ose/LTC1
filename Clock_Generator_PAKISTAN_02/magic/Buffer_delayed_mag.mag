@@ -1,0 +1,82 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1714534647
+<< nwell >>
+rect -122 572 584 669
+rect -122 538 468 572
+rect -118 526 468 538
+rect -36 525 130 526
+rect 243 525 468 526
+rect -32 292 31 525
+rect 263 524 454 525
+<< pwell >>
+rect 269 -60 397 134
+<< psubdiff >>
+rect -80 -95 236 -82
+rect -80 -141 -67 -95
+rect 223 -141 236 -95
+rect -80 -154 236 -141
+<< nsubdiff >>
+rect -33 631 140 642
+rect -33 628 141 631
+rect -33 582 -3 628
+rect 43 582 141 628
+rect -33 570 141 582
+rect -33 569 140 570
+<< psubdiffcont >>
+rect -67 -141 223 -95
+<< nsubdiffcont >>
+rect -3 582 43 628
+<< polysilicon >>
+rect -44 187 156 250
+rect -44 141 31 187
+rect 87 141 156 187
+rect -44 103 156 141
+<< polycontact >>
+rect 31 141 87 187
+<< metal1 >>
+rect -33 631 140 642
+rect -122 628 454 631
+rect -122 582 -3 628
+rect 43 582 454 628
+rect -122 525 454 582
+rect -122 292 -59 525
+rect 263 524 454 525
+rect 179 200 242 450
+rect -118 187 93 200
+rect -118 141 31 187
+rect 87 141 93 187
+rect -118 128 93 141
+rect 179 131 435 200
+rect 740 140 830 170
+rect 179 128 432 131
+rect -134 -69 -67 60
+rect 179 14 242 128
+rect 266 -69 457 -68
+rect -134 -95 457 -69
+rect -134 -141 -67 -95
+rect 223 -141 457 -95
+rect -134 -175 457 -141
+use Inverter_delayed_mag  Inverter_delayed_mag_0
+timestamp 1714534647
+transform 1 0 548 0 1 0
+box -218 -175 330 669
+use nmos_3p3_MGBSF7  nmos_3p3_MGBSF7_0
+timestamp 1714126980
+transform 1 0 56 0 1 37
+box -216 -97 216 97
+use pmos_3p3_MW53B7  pmos_3p3_MW53B7_0
+timestamp 1714126980
+transform 1 0 56 0 1 369
+box -274 -210 274 210
+<< labels >>
+flabel metal1 -80 160 -80 160 0 FreeSans 320 0 0 0 IN
+port 0 nsew
+flabel metal1 770 160 770 160 0 FreeSans 320 0 0 0 OUT
+port 1 nsew
+flabel psubdiffcont 80 -110 80 -110 0 FreeSans 320 0 0 0 VSS
+port 3 nsew
+flabel nsubdiffcont 32 603 32 603 0 FreeSans 640 0 0 0 VDD
+port 4 nsew
+<< end >>

@@ -1,0 +1,174 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1691673501
+<< nwell >>
+rect 98 770 822 833
+rect 122 728 233 770
+rect 259 728 270 770
+rect 330 728 822 770
+<< psubdiff >>
+rect 28 -229 1041 -216
+rect 28 -275 41 -229
+rect 87 -275 135 -229
+rect 181 -275 229 -229
+rect 275 -275 323 -229
+rect 369 -275 417 -229
+rect 463 -275 511 -229
+rect 557 -275 605 -229
+rect 651 -275 699 -229
+rect 745 -275 793 -229
+rect 839 -275 887 -229
+rect 933 -275 981 -229
+rect 1027 -275 1041 -229
+rect 28 -288 1041 -275
+<< nsubdiff >>
+rect 142 787 778 800
+rect 142 741 155 787
+rect 201 741 249 787
+rect 295 741 343 787
+rect 389 741 437 787
+rect 483 741 531 787
+rect 577 741 625 787
+rect 671 741 719 787
+rect 765 741 778 787
+rect 142 728 778 741
+<< psubdiffcont >>
+rect 41 -275 87 -229
+rect 135 -275 181 -229
+rect 229 -275 275 -229
+rect 323 -275 369 -229
+rect 417 -275 463 -229
+rect 511 -275 557 -229
+rect 605 -275 651 -229
+rect 699 -275 745 -229
+rect 793 -275 839 -229
+rect 887 -275 933 -229
+rect 981 -275 1027 -229
+<< nsubdiffcont >>
+rect 155 741 201 787
+rect 249 741 295 787
+rect 343 741 389 787
+rect 437 741 483 787
+rect 531 741 577 787
+rect 625 741 671 787
+rect 719 741 765 787
+<< polysilicon >>
+rect 79 281 151 289
+rect 272 281 328 446
+rect 79 276 328 281
+rect 79 230 92 276
+rect 138 230 328 276
+rect 79 225 328 230
+rect 79 217 168 225
+rect 112 168 168 217
+rect 272 152 328 225
+rect 432 162 488 446
+rect 592 401 648 431
+rect 589 393 661 401
+rect 589 388 946 393
+rect 589 342 602 388
+rect 648 342 946 388
+rect 589 337 946 342
+rect 589 329 661 337
+rect 592 162 648 217
+rect 890 150 946 337
+rect 432 -8 648 48
+rect 81 -74 153 -66
+rect 432 -74 488 -8
+rect 81 -79 488 -74
+rect 81 -125 94 -79
+rect 140 -125 488 -79
+rect 81 -130 488 -125
+rect 81 -138 153 -130
+<< polycontact >>
+rect 92 230 138 276
+rect 602 342 648 388
+rect 94 -125 140 -79
+<< metal1 >>
+rect 98 787 822 820
+rect 98 741 155 787
+rect 201 741 249 787
+rect 295 741 343 787
+rect 389 741 437 787
+rect 483 741 531 787
+rect 577 741 625 787
+rect 671 741 719 787
+rect 765 741 822 787
+rect 98 708 822 741
+rect 197 609 243 708
+rect 517 609 563 708
+rect 357 388 403 488
+rect 677 442 1085 488
+rect 591 388 659 399
+rect 197 342 602 388
+rect 648 342 659 388
+rect 81 276 149 287
+rect 41 230 92 276
+rect 138 230 149 276
+rect 81 219 149 230
+rect 197 137 243 342
+rect 591 331 659 342
+rect 357 212 723 258
+rect 357 137 403 212
+rect 677 120 723 212
+rect 37 24 83 98
+rect 357 24 403 96
+rect 37 -22 403 24
+rect 83 -79 151 -68
+rect 34 -125 94 -79
+rect 140 -125 151 -79
+rect 83 -136 151 -125
+rect 517 -196 563 98
+rect 815 -196 861 98
+rect 975 95 1021 442
+rect 8 -229 1061 -196
+rect 8 -275 41 -229
+rect 87 -275 135 -229
+rect 181 -275 229 -229
+rect 275 -275 323 -229
+rect 369 -275 417 -229
+rect 463 -275 511 -229
+rect 557 -275 605 -229
+rect 651 -275 699 -229
+rect 745 -275 793 -229
+rect 839 -275 887 -229
+rect 933 -275 981 -229
+rect 1027 -275 1061 -229
+rect 8 -308 1061 -275
+use nmos_3p3_BGGST2#0  nmos_3p3_BGGST2_0
+timestamp 1691319639
+transform 1 0 540 0 1 118
+box -220 -118 220 118
+use nmos_3p3_BGGST2#0  nmos_3p3_BGGST2_1
+timestamp 1691319639
+transform 1 0 220 0 1 118
+box -220 -118 220 118
+use nmos_3p3_GGGST2#3  nmos_3p3_GGGST2_0
+timestamp 1691670445
+transform 1 0 918 0 1 118
+box -140 -118 140 118
+use pmos_3p3_MNVUAR#3  pmos_3p3_MNVUAR_0
+timestamp 1691670445
+transform 1 0 620 0 1 540
+box -202 -230 202 230
+use pmos_3p3_MNVUAR#3  pmos_3p3_MNVUAR_1
+timestamp 1691670445
+transform 1 0 300 0 1 540
+box -202 -230 202 230
+use pmos_3p3_MNVUAR#3  pmos_3p3_MNVUAR_2
+timestamp 1691670445
+transform 1 0 460 0 1 540
+box -202 -230 202 230
+<< labels >>
+flabel metal1 71 253 71 253 0 FreeSans 320 0 0 0 A
+port 2 nsew
+flabel metal1 1025 465 1025 465 0 FreeSans 320 0 0 0 OUT
+port 4 nsew
+flabel nsubdiffcont 460 764 460 764 0 FreeSans 320 0 0 0 VDD
+port 5 nsew
+flabel metal1 48 -102 48 -102 0 FreeSans 320 0 0 0 B
+port 3 nsew
+flabel psubdiffcont 534 -252 534 -252 0 FreeSans 320 0 0 0 VSS
+port 6 nsew
+<< end >>

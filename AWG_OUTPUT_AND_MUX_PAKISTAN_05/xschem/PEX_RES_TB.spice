@@ -1,0 +1,39 @@
+** sch_path: /home/shahid/Documents/resistor_pga/xschem/PEX_RES_TB.sch
+**.subckt PEX_RES_TB
+V1 A GND 3
+.save i(v1)
+V2 VDD GND 3
+.save i(v2)
+V3 B GND 0
+.save i(v3)
+x1 A B C D E F G H VDD pex_pga_res_magice_parallel
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+
+
+.include pex_pga_res_magice_parallel.spice
+*vp p 0 0
+*vm m 0 0
+*vb b 0 3.3
+
+.control
+save all
+*dc vp 0 3.3 0.01
+dc v1 0.1 3.3 0.1
+let i1 = i(v1)
+let r  = maximum(v(A)/i(v1))
+plot r
+display all
+*write res_sch_test.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,16 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1713866589
+<< error_p >>
+rect -16 -79 30 79
+<< metal1 >>
+rect -16 16 16 79
+rect -16 -79 16 -16
+<< rmetal1 >>
+rect -16 -16 16 16
+<< properties >>
+string gencell rm1
+string library gf180mcu
+string parameters w 0.160 l 0.160 m 1 nx 1 wmin 0.16 lmin 0.16 rho 0.076 val 76.0m dummy 0 dw 0.0 term 0.0 roverlap 0 full_metal {}
+<< end >>

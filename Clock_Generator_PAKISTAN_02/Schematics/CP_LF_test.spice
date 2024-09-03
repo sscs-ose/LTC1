@@ -1,0 +1,87 @@
+** sch_path: /home/shahid/GF180Projects/PFD/xschem/CP_LF_test.sch
+**.subckt CP_LF_test
+V1 VDD VSS 3.3
+.save i(v1)
+V2 VSS GND 0
+.save i(v2)
+V3 PU VSS pulse(3.3 0 50n 100p 100p 75n 100n)
+.save i(v3)
+V4 PD VSS pulse(3.3 0 0 100p 100p 75n 100n)
+.save i(v4)
+C1 VCNTL VSS 1p m=1
+x1 VSS PU VCNTL PD VDD CP_LF
+**** begin user architecture code
+
+.include /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/shahid/OSPDKs/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+
+.control
+save all
+tran 50p 500n
+plot v(PU)
+plot v(PD)
+plot v(VCNTL)
+*write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  CP_LF.sym # of pins=5
+** sym_path: /home/shahid/GF180Projects/PFD/xschem/CP_LF.sym
+** sch_path: /home/shahid/GF180Projects/PFD/xschem/CP_LF.sch
+.subckt CP_LF VSS PU VCNTL PD VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin PU
+*.opin VCNTL
+*.ipin PD
+XM1 VCNTL net5 net4 VDD pfet_03v3_dss L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM4 net3 PD VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM2 net4 net6 VDD VDD pfet_03v3_dss L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM3 net5 net5 VDD VDD pfet_03v3_dss L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+x1 VSS PU net6 VDD inv_my
+XM5 VCNTL net1 net3 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+XM6 net1 net1 VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=2
+C1 net2 VSS 119p m=1
+C2 VCNTL VSS 3p m=1
+R1 VCNTL net2 148k m=1
+I0 VDD net1 20u
+I1 net5 VSS 20u
+.ends
+
+
+* expanding   symbol:  inv_my.sym # of pins=4
+** sym_path: /home/shahid/GF180Projects/PFD/xschem/inv_my.sym
+** sch_path: /home/shahid/GF180Projects/PFD/xschem/inv_my.sch
+.subckt inv_my VSS IN OUT VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDD VDD pfet_03v3 L=0.28u W=0.8u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

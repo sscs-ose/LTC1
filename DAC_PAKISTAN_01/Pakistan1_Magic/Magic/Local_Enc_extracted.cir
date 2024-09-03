@@ -1,0 +1,32 @@
+* Extracted by KLayout with GF180 LVS runset on : 03/08/2023 16:00
+
+.SUBCKT Local_Enc
+X$1 \$I41 VDD QB \$4 VSS Q gf180mcu_gnd NAND
+X$2 \$I48 VDD Ri\x2d1 Ri\x2d1 VSS \$16 gf180mcu_gnd NAND
+X$3 \$I47 VDD \$16 \$16 VSS \$13 gf180mcu_gnd NAND
+X$4 \$I46 VDD Ci Ci VSS \$7 gf180mcu_gnd NAND
+X$5 \$I45 VDD Ri Ri VSS \$3 gf180mcu_gnd NAND
+X$6 \$17 VDD \$6 Q VSS QB gf180mcu_gnd NAND
+X$7 \$I44 VDD \$13 \$5 VSS \$4 gf180mcu_gnd NAND
+X$8 \$I43 VDD \$7 \$3 VSS \$5 gf180mcu_gnd NAND
+X$9 \$I42 VDD \$4 \$4 VSS \$6 gf180mcu_gnd NAND
+.ENDS Local_Enc
+
+.SUBCKT NAND \$1 \$4 B A \$7 OUT gf180mcu_gnd
+X$1 \$4 OUT \$I2 \$1 A \$4 pmos_3p3_M8RWPS
+X$2 \$4 OUT \$I2 \$1 B \$4 pmos_3p3_M8RWPS
+X$3 \$7 \$20 \$I12 B \$12 nmos_3p3_HZS5UA
+X$4 \$20 OUT \$I12 A \$12 nmos_3p3_HZS5UA
+M$1 OUT B \$4 \$4 pfet_03v3 L=0.28U W=0.5U AS=0.22P AD=0.13P PS=1.88U PD=1.02U
+M$2 \$4 A OUT \$4 pfet_03v3 L=0.28U W=0.5U AS=0.13P AD=0.22P PS=1.02U PD=1.88U
+M$3 \$20 B \$7 gf180mcu_gnd nfet_03v3 L=0.28U W=0.5U AS=0.22P AD=0.13P PS=1.88U
++ PD=1.02U
+M$4 OUT A \$20 gf180mcu_gnd nfet_03v3 L=0.28U W=0.5U AS=0.13P AD=0.22P PS=1.02U
++ PD=1.88U
+.ENDS NAND
+
+.SUBCKT nmos_3p3_HZS5UA \$1 \$2 \$3 \$4 \$5
+.ENDS nmos_3p3_HZS5UA
+
+.SUBCKT pmos_3p3_M8RWPS \$1 \$2 \$3 \$4 \$5 \$6
+.ENDS pmos_3p3_M8RWPS

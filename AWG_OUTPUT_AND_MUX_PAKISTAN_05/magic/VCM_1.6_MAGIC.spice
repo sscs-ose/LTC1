@@ -1,0 +1,20 @@
+* NGSPICE file created from VCM_1.6_MAGIC.ext - technology: gf180mcuC
+
+.subckt ppolyf_u_PVCJS8 a_880_700# a_600_700# a_n520_700# a_40_n802# a_320_n802# w_n1264_n986#
++ a_40_700# a_600_n802# a_n1080_700# a_n800_700# a_880_n802# a_n240_n802# a_320_700#
++ a_n520_n802# a_n1080_n802# a_n240_700# a_n800_n802#
+X0 a_n520_700# a_n520_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X1 a_n1080_700# a_n1080_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X2 a_n800_700# a_n800_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X3 a_n240_700# a_n240_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X4 a_40_700# a_40_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X5 a_600_700# a_600_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X6 a_880_700# a_880_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+X7 a_320_700# a_320_n802# w_n1264_n986# ppolyf_u r_width=1u r_length=7u
+.ends
+
+.subckt VCM_1.6_MAGIC VDD VSS VCM_1.6
+Xppolyf_u_PVCJS8_0 VDD m1_1247_1427# VSS m1_689_136# VCM_1.6 VDD m1_1247_1427# VCM_1.6
++ VDD VDD VDD m1_406_n84# m1_966_1668# m1_689_136# VDD m1_966_1668# m1_406_n84# ppolyf_u_PVCJS8
+.ends
+

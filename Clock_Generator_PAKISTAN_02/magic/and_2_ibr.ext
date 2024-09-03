@@ -1,0 +1,60 @@
+timestamp 1714558529
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use nverterlayout_ibr nverterlayout_ibr_0 1 0 915 0 1 917
+use nand2_ibr nand2_ibr_0 1 0 327 0 1 1184
+port "VSS" 0 535 1056 535 1056 m1
+port "IN2" 2 429 1474 429 1474 m1
+port "OUT" 4 1114 1540 1114 1540 m1
+port "IN1" 5 753 1572 753 1572 m1
+port "VDD" 1 525 1933 525 1933 m1
+node "VSS" 0 78.0932 535 1056 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9600 440 0 0 0 0 0 0 0 0
+node "m1_819_996#" 1 121.025 819 996 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11305 648 0 0 0 0 0 0 0 0
+node "m1_727_1450#" 0 108.601 727 1450 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12079 608 0 0 0 0 0 0 0 0
+node "IN2" 0 27.5835 429 1474 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1500 160 0 0 0 0 0 0 0 0
+node "OUT" 0 47.5696 1114 1540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 0 0 0 0 0 0 0 0
+node "IN1" 0 21.8396 753 1572 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1500 160 0 0 0 0 0 0 0 0
+node "m1_823_1889#" 1 41.6194 823 1889 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1180 256 0 0 0 0 0 0 0 0
+node "VDD" 0 93.8115 525 1933 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0 0 0 0 0
+node "w_823_1889#" 11800 3.54 823 1889 nw 1180 256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_819_996#" "VSS" 12.861
+cap "OUT" "IN1" 2.7008
+cap "m1_823_1889#" "m1_727_1450#" 1.06052
+cap "m1_819_996#" "m1_727_1450#" 9.91096
+cap "m1_727_1450#" "IN2" 4.55191
+cap "m1_823_1889#" "VDD" 13.2826
+cap "VSS" "VDD" 7.90478
+cap "m1_823_1889#" "w_823_1889#" 0.864468
+cap "m1_727_1450#" "IN1" 38.2189
+cap "IN2" "VDD" 1.9762
+cap "nand2_ibr_0/nmos_3p3_5QNVWA_1/a_n116_n44#" "nverterlayout_ibr_0/IN" 0.0979529
+cap "nand2_ibr_0/IN1" "nverterlayout_ibr_0/IN" 37.7347
+cap "nverterlayout_ibr_0/IN" "nverterlayout_ibr_0/OUT" 8.27536
+cap "nverterlayout_ibr_0/VDD" "nverterlayout_ibr_0/VSS" -33.4942
+cap "nverterlayout_ibr_0/IN" "nverterlayout_ibr_0/VSS" 117.91
+cap "nverterlayout_ibr_0/IN" "nverterlayout_ibr_0/VDD" 56.6517
+cap "nand2_ibr_0/IN1" "nverterlayout_ibr_0/OUT" 6.17891
+cap "nand2_ibr_0/IN2" "nverterlayout_ibr_0/VSS" 0.46193
+cap "nand2_ibr_0/nmos_3p3_5QNVWA_1/a_n116_n44#" "nverterlayout_ibr_0/VSS" 0.0520783
+cap "nand2_ibr_0/IN2" "nverterlayout_ibr_0/VDD" -1.9762
+cap "nand2_ibr_0/IN1" "nverterlayout_ibr_0/VSS" -2.81648
+cap "nand2_ibr_0/IN2" "nverterlayout_ibr_0/IN" -4.55191
+cap "nand2_ibr_0/IN1" "nverterlayout_ibr_0/VDD" 13.6225
+cap "nverterlayout_ibr_0/VDD" "nverterlayout_ibr_0/OUT" 1.4865
+merge "nand2_ibr_0/VSS" "VSS" -228.434 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11038 -1010 0 0 0 0 0 0 0 0
+merge "VSS" "nverterlayout_ibr_0/VSS"
+merge "nverterlayout_ibr_0/VSS" "VSUBS"
+merge "VSUBS" "m1_819_996#"
+merge "nand2_ibr_0/VDD" "VDD" -291.571 -2020 -1316 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13059 -1086 0 0 0 0 0 0 0 0
+merge "VDD" "nverterlayout_ibr_0/VDD"
+merge "nverterlayout_ibr_0/VDD" "m1_823_1889#"
+merge "m1_823_1889#" "w_823_1889#"
+merge "nand2_ibr_0/OUT" "nverterlayout_ibr_0/IN" -162.672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1034 -232 0 0 0 0 0 0 0 0
+merge "nverterlayout_ibr_0/IN" "m1_727_1450#"
+merge "nverterlayout_ibr_0/OUT" "OUT" -62.7183 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0
+merge "nand2_ibr_0/IN1" "IN1" -59.3902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1500 -160 0 0 0 0 0 0 0 0
+merge "nand2_ibr_0/IN2" "IN2" -27.5835 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1500 -160 0 0 0 0 0 0 0 0

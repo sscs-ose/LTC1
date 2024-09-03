@@ -1,0 +1,89 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1694581763
+<< error_p >>
+rect -202 70 -191 116
+rect -34 70 -23 116
+rect 134 70 145 116
+rect -202 -116 -191 -70
+rect -34 -116 -23 -70
+rect 134 -116 145 -70
+<< pwell >>
+rect -228 -192 228 192
+<< nmos >>
+rect -112 68 -56 118
+rect 56 68 112 118
+rect -112 -118 -56 -68
+rect 56 -118 112 -68
+<< ndiff >>
+rect -204 118 -132 129
+rect -36 118 36 129
+rect 132 118 204 129
+rect -204 116 -112 118
+rect -204 70 -191 116
+rect -145 70 -112 116
+rect -204 68 -112 70
+rect -56 116 56 118
+rect -56 70 -23 116
+rect 23 70 56 116
+rect -56 68 56 70
+rect 112 116 204 118
+rect 112 70 145 116
+rect 191 70 204 116
+rect 112 68 204 70
+rect -204 57 -132 68
+rect -36 57 36 68
+rect 132 57 204 68
+rect -204 -68 -132 -57
+rect -36 -68 36 -57
+rect 132 -68 204 -57
+rect -204 -70 -112 -68
+rect -204 -116 -191 -70
+rect -145 -116 -112 -70
+rect -204 -118 -112 -116
+rect -56 -70 56 -68
+rect -56 -116 -23 -70
+rect 23 -116 56 -70
+rect -56 -118 56 -116
+rect 112 -70 204 -68
+rect 112 -116 145 -70
+rect 191 -116 204 -70
+rect 112 -118 204 -116
+rect -204 -129 -132 -118
+rect -36 -129 36 -118
+rect 132 -129 204 -118
+<< ndiffc >>
+rect -191 70 -145 116
+rect -23 70 23 116
+rect 145 70 191 116
+rect -191 -116 -145 -70
+rect -23 -116 23 -70
+rect 145 -116 191 -70
+<< polysilicon >>
+rect -112 118 -56 162
+rect 56 118 112 162
+rect -112 24 -56 68
+rect 56 24 112 68
+rect -112 -68 -56 -24
+rect 56 -68 112 -24
+rect -112 -162 -56 -118
+rect 56 -162 112 -118
+<< metal1 >>
+rect -202 70 -191 116
+rect -145 70 -134 116
+rect -34 70 -23 116
+rect 23 70 34 116
+rect 134 70 145 116
+rect 191 70 202 116
+rect -202 -116 -191 -70
+rect -145 -116 -134 -70
+rect -34 -116 -23 -70
+rect 23 -116 34 -70
+rect 134 -116 145 -70
+rect 191 -116 202 -70
+<< properties >>
+string gencell nmos_3p3
+string library gf180mcu
+string parameters w 0.25 l 0.280 m 2 nf 2 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 full_metal 0 compatible {nmos_3p3 nmos_6p0 nmos_6p0_nat}
+<< end >>

@@ -1,0 +1,87 @@
+* NGSPICE file created from BIASING_1m_MAGIC.ext - technology: gf180mcuC
+
+.subckt pfet_03v3_GKYWHF a_n1100_n1036# a_n404_n1080# a_n100_n344# a_1012_n1036# a_n508_n1036#
++ a_n508_n300# a_n1012_n344# a_n812_436# a_1012_n300# a_n1100_n300# a_n204_n300# a_508_392#
++ a_812_n1080# a_n708_n1080# a_n1012_n1080# a_n100_392# a_n1012_392# a_n812_n1036#
++ a_708_436# a_n812_n300# a_204_392# a_n508_436# a_508_n344# a_204_n344# a_404_436#
++ a_n708_392# a_100_n1036# a_708_n300# a_n204_436# a_204_n1080# a_812_392# a_404_n1036#
++ w_n1186_n1166# a_n100_n1080# a_404_n300# a_n708_n344# a_n204_n1036# a_100_n300#
++ a_812_n344# a_100_436# a_n1100_436# a_n404_392# a_n404_n344# a_1012_436# a_508_n1080#
++ a_708_n1036#
+X0 a_n508_436# a_n708_392# a_n812_436# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X1 a_100_n300# a_n100_n344# a_n204_n300# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X2 a_708_n300# a_508_n344# a_404_n300# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X3 a_n204_436# a_n404_392# a_n508_436# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X4 a_708_n1036# a_508_n1080# a_404_n1036# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X5 a_n812_n300# a_n1012_n344# a_n1100_n300# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=1u
+X6 a_1012_436# a_812_392# a_708_436# w_n1186_n1166# pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=1u
+X7 a_n508_n1036# a_n708_n1080# a_n812_n1036# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X8 a_n204_n300# a_n404_n344# a_n508_n300# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X9 a_100_n1036# a_n100_n1080# a_n204_n1036# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X10 a_1012_n1036# a_812_n1080# a_708_n1036# w_n1186_n1166# pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=1u
+X11 a_1012_n300# a_812_n344# a_708_n300# w_n1186_n1166# pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=1u
+X12 a_n812_436# a_n1012_392# a_n1100_436# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=1u
+X13 a_708_436# a_508_392# a_404_436# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X14 a_n812_n1036# a_n1012_n1080# a_n1100_n1036# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=1u
+X15 a_n508_n300# a_n708_n344# a_n812_n300# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X16 a_404_n1036# a_204_n1080# a_100_n1036# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X17 a_404_436# a_204_392# a_100_436# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X18 a_404_n300# a_204_n344# a_100_n300# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X19 a_n204_n1036# a_n404_n1080# a_n508_n1036# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X20 a_100_436# a_n100_392# a_n204_436# w_n1186_n1166# pfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+.ends
+
+.subckt pfet_03v3_GKYJHF a_n100_n344# a_n100_392# w_n274_n1166# a_n188_436# a_n188_n300#
++ a_100_n1036# a_n100_n1080# a_n188_n1036# a_100_n300# a_100_436#
+X0 a_100_n300# a_n100_n344# a_n188_n300# w_n274_n1166# pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=1u
+X1 a_100_n1036# a_n100_n1080# a_n188_n1036# w_n274_n1166# pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=1u
+X2 a_100_436# a_n100_392# a_n188_436# w_n274_n1166# pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=1u
+.ends
+
+.subckt nfet_03v3_U5DXAV a_458_n300# a_358_n344# a_662_n300# a_n458_n344# a_562_n344#
++ a_n662_n344# a_254_n300# a_n766_n300# a_154_n344# a_n970_n300# a_n1158_n300# a_n254_n344#
++ a_n358_n300# a_n562_n300# a_50_n300# a_866_n300# a_766_n344# a_n1070_n344# a_n50_n344#
++ a_n866_n344# a_1070_n300# a_n154_n300# a_970_n344# VSUBS
+X0 a_n358_n300# a_n458_n344# a_n562_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X1 a_1070_n300# a_970_n344# a_866_n300# VSUBS nfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X2 a_458_n300# a_358_n344# a_254_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X3 a_n766_n300# a_n866_n344# a_n970_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X4 a_866_n300# a_766_n344# a_662_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X5 a_n154_n300# a_n254_n344# a_n358_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X6 a_50_n300# a_n50_n344# a_n154_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X7 a_254_n300# a_154_n344# a_50_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X8 a_n562_n300# a_n662_n344# a_n766_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+X9 a_n970_n300# a_n1070_n344# a_n1158_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+X10 a_662_n300# a_562_n344# a_458_n300# VSUBS nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.5u
+.ends
+
+.subckt nfet_03v3_8Z2ENZ a_n138_n300# a_50_n300# a_n50_n344# VSUBS
+X0 a_50_n300# a_n50_n344# a_n138_n300# VSUBS nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+.ends
+
+.subckt BIASING_1m_MAGIC VDD IOUT G_SINK_UP G_SINK_DOWN VSS
+Xpfet_03v3_GKYWHF_0 VDD a_207_1485# a_207_1485# IOUT VDD VDD a_207_1485# IOUT IOUT
++ VDD IOUT a_207_1485# a_207_1485# a_207_1485# a_207_1485# a_207_1485# a_207_1485#
++ IOUT VDD IOUT a_207_1485# VDD a_207_1485# a_207_1485# IOUT a_207_1485# VDD VDD IOUT
++ a_207_1485# a_207_1485# IOUT VDD a_207_1485# IOUT a_207_1485# IOUT VDD a_207_1485#
++ VDD VDD a_207_1485# a_207_1485# IOUT a_207_1485# VDD pfet_03v3_GKYWHF
+Xpfet_03v3_GKYJHF_0 VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD pfet_03v3_GKYJHF
+Xpfet_03v3_GKYJHF_1 a_207_1485# a_207_1485# VDD a_207_1485# a_207_1485# VDD a_207_1485#
++ a_207_1485# VDD VDD pfet_03v3_GKYJHF
+Xpfet_03v3_GKYJHF_2 VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD pfet_03v3_GKYJHF
+Xnfet_03v3_U5DXAV_0 a_207_1485# G_SINK_UP m1_221_n1033# G_SINK_UP G_SINK_UP G_SINK_UP
++ m1_221_n1033# a_207_1485# G_SINK_UP m1_221_n1033# a_207_1485# G_SINK_UP a_207_1485#
++ m1_221_n1033# a_207_1485# a_207_1485# G_SINK_UP G_SINK_UP G_SINK_UP G_SINK_UP m1_221_n1033#
++ m1_221_n1033# G_SINK_UP VSS nfet_03v3_U5DXAV
+Xnfet_03v3_U5DXAV_1 VSS G_SINK_DOWN m1_221_n1033# G_SINK_DOWN G_SINK_DOWN G_SINK_DOWN
++ m1_221_n1033# VSS G_SINK_DOWN m1_221_n1033# VSS G_SINK_DOWN VSS m1_221_n1033# VSS
++ VSS G_SINK_DOWN G_SINK_DOWN G_SINK_DOWN G_SINK_DOWN m1_221_n1033# m1_221_n1033#
++ G_SINK_DOWN VSS nfet_03v3_U5DXAV
+Xnfet_03v3_8Z2ENZ_0 VSS VSS VSS VSS nfet_03v3_8Z2ENZ
+Xnfet_03v3_8Z2ENZ_1 m1_221_n1033# a_207_1485# G_SINK_UP VSS nfet_03v3_8Z2ENZ
+Xnfet_03v3_8Z2ENZ_2 VSS VSS VSS VSS nfet_03v3_8Z2ENZ
+Xnfet_03v3_8Z2ENZ_3 VSS VSS VSS VSS nfet_03v3_8Z2ENZ
+Xnfet_03v3_8Z2ENZ_4 m1_221_n1033# VSS G_SINK_DOWN VSS nfet_03v3_8Z2ENZ
+Xnfet_03v3_8Z2ENZ_5 VSS VSS VSS VSS nfet_03v3_8Z2ENZ
+.ends
+

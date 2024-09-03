@@ -1,0 +1,39 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -80 130 -80 {}
+L 4 -130 80 130 80 {}
+L 4 -130 -80 -130 80 {}
+L 4 130 -80 130 80 {}
+L 7 -10 -100 -10 -80 {}
+L 7 10 80 10 100 {}
+L 7 -10 80 -10 100 {}
+L 7 -150 10 -130 10 {}
+L 7 -150 -10 -130 -10 {}
+L 7 130 -10 150 -10 {}
+L 7 130 10 150 10 {}
+L 7 10 -100 10 -80 {}
+B 5 -12.5 -102.5 -7.5 -97.5 {name=VDD dir=inout}
+B 5 7.5 97.5 12.5 102.5 {name=VSS dir=inout}
+B 5 -12.5 97.5 -7.5 102.5 {name=VCONT dir=inout}
+B 5 -152.5 7.5 -147.5 12.5 {name=IN dir=inout}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=INB dir=inout}
+B 5 147.5 -12.5 152.5 -7.5 {name=OUT dir=inout}
+B 5 147.5 7.5 152.5 12.5 {name=OUTB dir=inout}
+B 5 7.5 -102.5 12.5 -97.5 {name=EN dir=inout}
+T {Delay_Cell} -31.5 -6 0 0 0.3 0.3 {}
+T {VDD} -14 -75 3 1 0.2 0.2 {}
+T {VSS} 14 75 1 1 0.2 0.2 {}
+T {VCONT} -6 75 1 1 0.2 0.2 {}
+T {IN} -125 6 0 0 0.2 0.2 {}
+T {INB} -125 -14 0 0 0.2 0.2 {}
+T {OUT} 125 -14 0 1 0.2 0.2 {}
+T {OUTB} 125 6 0 1 0.2 0.2 {}
+T {EN} 6 -75 3 1 0.2 0.2 {}

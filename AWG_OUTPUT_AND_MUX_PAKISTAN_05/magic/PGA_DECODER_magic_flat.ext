@@ -1,0 +1,463 @@
+timestamp 0
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "S6" 23 2688 993 2688 993 m1
+port "S5" 21 2689 2330 2689 2330 m1
+port "A" 1 33 6712 33 6712 m2
+port "S4" 19 2690 3374 2690 3374 m1
+port "S3" 17 2690 4244 2690 4244 m1
+port "B" 3 -229 6711 -229 6711 m2
+port "S2" 15 2689 5287 2689 5287 m1
+port "C" 5 -486 6714 -486 6714 m2
+port "S1" 13 2689 6159 2689 6159 m1
+port "VDD" 7 2634 6737 2634 6737 m2
+port "VSS" 11 2491 6582 2491 6582 m2
+node "AND_1.OUT" 22 481.542 1821 872 pdif 0 0 0 0 6184 328 8800 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60655 2680 0 0 0 0 0 0 0 0
+equiv "AND_1.OUT" "S6"
+node "a_1333_1282#" 152 491.593 1333 1282 ndif 0 0 0 0 7184 368 10400 408 0 0 0 0 57138 2124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42530 1898 0 0 0 0 0 0 0 0
+node "a_1185_1271#" 74 713.982 1185 1271 ndif 0 0 0 0 19552 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53724 2424 0 0 0 0 0 0 0 0
+node "a_400_841#" 119 3.67448 400 841 pdif 0 0 0 0 0 0 28736 1472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24242 1146 0 0 0 0 0 0 0 0
+node "OR_magic_1.OUT" 179 604.351 870 1104 pdif 0 0 0 0 6184 328 12368 656 0 0 0 0 53158 1978 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57782 2546 0 0 0 0 0 0 0 0
+equiv "OR_magic_1.OUT" "AND_1.A"
+node "a_252_1525#" 229 627.087 252 1525 ndif 0 0 0 0 12368 656 24736 1312 0 0 0 0 34872 1334 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70826 3142 0 0 0 0 0 0 0 0
+node "a_1091_2199#" 78 368.559 1091 2199 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_587_2199#" 78 83.9524 587 2199 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "AND_3_magic_5.OUT" 29 367.909 1931 2531 pdif 0 0 0 0 6184 328 7184 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51842 2346 0 0 0 0 0 0 0 0
+equiv "AND_3_magic_5.OUT" "S5"
+node "a_439_2188#" 256 416.048 439 2188 ndif 0 0 0 0 13368 696 21552 1104 0 0 0 0 47608 1902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110794 4882 0 0 0 0 0 0 0 0
+node "AND_3_magic_5.A" 573 2597.83 308 11 p 0 0 0 0 0 0 0 0 0 0 0 0 186584 7626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 126734 5514 458652 16518 0 0 0 0 0 0
+equiv "AND_3_magic_5.A" "INVERTER_magic_0.IN"
+equiv "AND_3_magic_5.A" "AND_1.B"
+equiv "AND_3_magic_5.A" "A"
+node "AND_3_magic_2.OUT" 29 364.778 1931 3120 pdif 0 0 0 0 6184 328 7184 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51842 2346 0 0 0 0 0 0 0 0
+equiv "AND_3_magic_2.OUT" "S4"
+node "a_1091_3452#" 78 368.559 1091 3452 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_587_3452#" 78 83.9524 587 3452 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_439_3441#" 256 414.831 439 3441 ndif 0 0 0 0 13368 696 21552 1104 0 0 0 0 47608 1902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110794 4882 0 0 0 0 0 0 0 0
+node "a_1091_4113#" 78 368.559 1091 4113 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_587_4113#" 78 83.9524 587 4113 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "AND_3_magic_3.OUT" 29 364.715 1931 4445 pdif 0 0 0 0 6184 328 7184 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51842 2346 0 0 0 0 0 0 0 0
+equiv "AND_3_magic_3.OUT" "S3"
+node "a_439_4102#" 256 414.831 439 4102 ndif 0 0 0 0 13368 696 21552 1104 0 0 0 0 47608 1902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110794 4882 0 0 0 0 0 0 0 0
+node "AND_3_magic_3.B" 907 2693.01 135 744 p 0 0 0 0 0 0 0 0 0 0 0 0 314920 12472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 171471 7484 462292 16604 0 0 0 0 0 0
+equiv "AND_3_magic_3.B" "AND_3_magic_2.B"
+equiv "AND_3_magic_3.B" "OR_magic_1.A"
+equiv "AND_3_magic_3.B" "INVERTER_magic_2.IN"
+equiv "AND_3_magic_3.B" "B"
+node "AND_3_magic_0.OUT" 29 364.701 1931 5034 pdif 0 0 0 0 6184 328 7184 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51842 2346 0 0 0 0 0 0 0 0
+equiv "AND_3_magic_0.OUT" "S2"
+node "a_1091_5366#" 78 368.559 1091 5366 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_587_5366#" 78 83.9524 587 5366 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_439_5355#" 256 414.831 439 5355 ndif 0 0 0 0 13368 696 21552 1104 0 0 0 0 47608 1902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110794 4882 0 0 0 0 0 0 0 0
+node "AND_3_magic_0.C" 770 5304.15 477 1328 p 0 0 0 0 0 0 0 0 0 0 0 0 251872 10210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 383967 16658 462602 16652 0 0 0 0 0 0
+equiv "AND_3_magic_0.C" "AND_3_magic_2.C"
+equiv "AND_3_magic_0.C" "OR_magic_1.B"
+equiv "AND_3_magic_0.C" "INVERTER_magic_1.IN"
+equiv "AND_3_magic_0.C" "C"
+node "a_1091_6027#" 78 368.559 1091 6027 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "a_587_6027#" 78 83.9524 587 6027 ndif 0 0 0 0 21552 1104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 2396 0 0 0 0 0 0 0 0
+node "AND_3_magic_1.OUT" 29 366.711 1931 6359 pdif 0 0 0 0 6184 328 7184 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51842 2346 0 0 0 0 0 0 0 0
+equiv "AND_3_magic_1.OUT" "S1"
+node "AND_3_magic_1.C" 825 9120.13 1371 2487 p 0 0 0 0 6184 328 12368 656 0 0 0 0 236640 9840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 520349 22602 482208 17342 0 0 0 0 0 0
+equiv "AND_3_magic_1.C" "AND_3_magic_3.C"
+equiv "AND_3_magic_1.C" "AND_3_magic_5.C"
+equiv "AND_3_magic_1.C" "INVERTER_magic_1.OUT"
+node "a_439_6016#" 256 425.405 439 6016 ndif 0 0 0 0 13368 696 21552 1104 0 0 0 0 47608 1902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110794 4882 0 0 0 0 0 0 0 0
+node "AND_3_magic_1.A" 978 4287.52 246 -113 pdif 0 0 0 0 6184 328 12368 656 0 0 0 0 286624 11968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 244393 10710 473508 17014 0 0 0 0 0 0
+equiv "AND_3_magic_1.A" "AND_3_magic_0.A"
+equiv "AND_3_magic_1.A" "AND_3_magic_3.A"
+equiv "AND_3_magic_1.A" "AND_3_magic_2.A"
+equiv "AND_3_magic_1.A" "INVERTER_magic_0.OUT"
+node "AND_3_magic_1.B" 986 3586.69 321 2669 p 0 0 0 0 6184 328 12368 656 0 0 0 0 311904 12528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 272463 11868 476832 17150 0 0 0 0 0 0
+equiv "AND_3_magic_1.B" "AND_3_magic_0.B"
+equiv "AND_3_magic_1.B" "AND_3_magic_5.B"
+equiv "AND_3_magic_1.B" "INVERTER_magic_2.OUT"
+node "AND_3_magic_1.VDD" 32193 26377.3 160 -238 nw 6519722 28622 0 0 658716 18396 331664 16992 0 0 0 0 150280 6498 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1680647 50804 541636 15608 0 0 0 0 0 0
+equiv "AND_3_magic_1.VDD" "AND_3_magic_0.VDD"
+equiv "AND_3_magic_1.VDD" "AND_3_magic_3.VDD"
+equiv "AND_3_magic_1.VDD" "AND_3_magic_2.VDD"
+equiv "AND_3_magic_1.VDD" "AND_3_magic_5.VDD"
+equiv "AND_3_magic_1.VDD" "OR_magic_1.VDD"
+equiv "AND_3_magic_1.VDD" "INVERTER_magic_2.VDD"
+equiv "AND_3_magic_1.VDD" "INVERTER_magic_1.VDD"
+equiv "AND_3_magic_1.VDD" "INVERTER_magic_0.VDD"
+equiv "AND_3_magic_1.VDD" "AND_1.VDD"
+equiv "AND_3_magic_1.VDD" "VDD"
+substrate "AND_3_magic_1.VSS" 0 0 186 -621 ppd 0 0 0 0 138680 7160 672691 19510 0 0 0 0 38736 1692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1333500 36252 541636 15608 0 0 0 0 0 0
+equiv "AND_3_magic_1.VSS" "AND_3_magic_0.VSS"
+equiv "AND_3_magic_1.VSS" "AND_3_magic_3.VSS"
+equiv "AND_3_magic_1.VSS" "AND_3_magic_2.VSS"
+equiv "AND_3_magic_1.VSS" "AND_3_magic_5.VSS"
+equiv "AND_3_magic_1.VSS" "OR_magic_1.VSS"
+equiv "AND_3_magic_1.VSS" "INVERTER_magic_2.VSS"
+equiv "AND_3_magic_1.VSS" "INVERTER_magic_1.VSS"
+equiv "AND_3_magic_1.VSS" "INVERTER_magic_0.VSS"
+equiv "AND_3_magic_1.VSS" "AND_1.VSS"
+equiv "AND_3_magic_1.VSS" "VSS"
+cap "AND_3_magic_1.C" "a_587_4113#" 457.03
+cap "a_1091_6027#" "AND_3_magic_5.A" 0.826307
+cap "a_1185_1271#" "a_252_1525#" 1.18588
+cap "AND_3_magic_3.B" "AND_3_magic_2.OUT" 0.0631011
+cap "AND_3_magic_1.VDD" "AND_3_magic_2.OUT" 247.142
+cap "a_587_2199#" "AND_3_magic_5.A" 37.9371
+cap "a_400_841#" "AND_3_magic_5.A" 5.28355
+cap "a_1091_6027#" "a_439_6016#" 284.663
+cap "AND_3_magic_0.C" "AND_3_magic_1.A" 241.808
+cap "a_1091_5366#" "AND_3_magic_1.B" 35.4567
+cap "AND_3_magic_3.B" "AND_3_magic_1.B" 3514.13
+cap "AND_3_magic_1.VDD" "AND_3_magic_1.B" 2525.04
+cap "a_587_3452#" "AND_3_magic_5.A" 2.72155
+cap "AND_3_magic_1.A" "OR_magic_1.OUT" 0.0581066
+cap "a_439_6016#" "AND_3_magic_0.OUT" 0.00830547
+cap "a_439_3441#" "AND_3_magic_5.A" 6.5408
+cap "a_439_4102#" "a_1091_4113#" 284.663
+cap "a_439_2188#" "AND_3_magic_2.OUT" 0.117963
+cap "a_252_1525#" "AND_3_magic_1.B" 0.4565
+cap "a_439_2188#" "AND_3_magic_1.B" 59.5354
+cap "a_1091_5366#" "AND_3_magic_5.A" 0.826307
+cap "AND_3_magic_3.B" "AND_3_magic_5.A" 237.46
+cap "a_1091_6027#" "AND_3_magic_0.C" 0.135133
+cap "AND_3_magic_1.VDD" "AND_3_magic_5.A" 2824.28
+cap "a_587_4113#" "AND_3_magic_1.B" 0.129836
+cap "AND_3_magic_1.VDD" "a_1333_1282#" 411.074
+cap "AND_3_magic_0.C" "AND_3_magic_0.OUT" 1.41917
+cap "AND_3_magic_3.B" "a_439_6016#" 0.408305
+cap "AND_3_magic_0.C" "a_400_841#" 83.5073
+cap "AND_3_magic_0.C" "a_587_2199#" 0.0717945
+cap "AND_3_magic_1.C" "a_1091_4113#" 502.105
+cap "AND_3_magic_1.VDD" "a_439_6016#" 1068.74
+cap "AND_3_magic_0.C" "a_587_3452#" 457.044
+cap "a_400_841#" "OR_magic_1.OUT" 0.144275
+cap "a_587_2199#" "OR_magic_1.OUT" 0.0628484
+cap "a_587_6027#" "AND_3_magic_1.A" 35.8726
+cap "AND_3_magic_0.C" "a_439_3441#" 111.293
+cap "a_252_1525#" "AND_3_magic_5.A" 15.4412
+cap "a_587_5366#" "a_1091_5366#" 320.075
+cap "a_587_5366#" "AND_3_magic_3.B" 0.158121
+cap "a_587_5366#" "AND_3_magic_1.VDD" 6.8448
+cap "a_252_1525#" "a_1333_1282#" 0.227638
+cap "AND_3_magic_3.OUT" "AND_3_magic_0.OUT" 1.84705
+cap "a_439_2188#" "AND_3_magic_5.A" 198.752
+cap "a_439_4102#" "AND_3_magic_1.C" 111.245
+cap "a_439_2188#" "a_1333_1282#" 1.48715
+cap "a_439_4102#" "a_439_5355#" 5.30912
+cap "AND_1.OUT" "AND_3_magic_1.VDD" 152.953
+cap "a_587_4113#" "AND_3_magic_5.A" 2.72155
+cap "a_439_3441#" "AND_3_magic_3.OUT" 0.00830547
+cap "AND_3_magic_1.C" "AND_3_magic_5.OUT" 1.41917
+cap "AND_3_magic_3.B" "AND_3_magic_0.C" 1264.05
+cap "AND_3_magic_0.C" "a_1091_5366#" 502.105
+cap "AND_3_magic_0.C" "AND_3_magic_1.VDD" 2119.65
+cap "a_1091_6027#" "a_587_6027#" 320.075
+cap "AND_3_magic_3.B" "OR_magic_1.OUT" 1.22309
+cap "AND_3_magic_1.VDD" "OR_magic_1.OUT" 361.147
+cap "AND_3_magic_1.C" "a_439_5355#" 0.322991
+cap "AND_1.OUT" "a_252_1525#" 0.0176951
+cap "a_1091_2199#" "a_587_2199#" 320.075
+cap "AND_3_magic_3.B" "AND_3_magic_3.OUT" 0.0631011
+cap "AND_3_magic_1.VDD" "AND_3_magic_3.OUT" 247.192
+cap "AND_3_magic_0.C" "a_252_1525#" 399.153
+cap "a_1185_1271#" "AND_3_magic_1.C" 0.478272
+cap "a_439_4102#" "AND_3_magic_2.OUT" 0.00830547
+cap "AND_3_magic_0.C" "a_439_2188#" 0.388437
+cap "a_252_1525#" "OR_magic_1.OUT" 120.635
+cap "a_439_4102#" "AND_3_magic_1.B" 0.539254
+cap "AND_3_magic_0.C" "a_587_4113#" 0.0717945
+cap "a_439_2188#" "OR_magic_1.OUT" 0.0636791
+cap "AND_3_magic_1.C" "a_1091_3452#" 0.205882
+cap "AND_3_magic_1.C" "AND_3_magic_1.OUT" 1.41917
+cap "a_439_5355#" "AND_3_magic_1.OUT" 0.00830547
+cap "AND_3_magic_5.OUT" "AND_3_magic_2.OUT" 1.84705
+cap "a_1091_4113#" "AND_3_magic_5.A" 0.826307
+cap "a_587_2199#" "AND_3_magic_1.A" 0.167337
+cap "AND_3_magic_5.OUT" "AND_3_magic_1.B" 0.0631011
+cap "a_1091_2199#" "AND_3_magic_1.VDD" 3.58065
+cap "AND_3_magic_3.B" "a_587_6027#" 0.119452
+cap "a_587_6027#" "AND_3_magic_1.VDD" 6.8448
+cap "a_587_3452#" "AND_3_magic_1.A" 35.8726
+cap "AND_3_magic_1.C" "AND_3_magic_1.B" 2362.82
+cap "a_439_5355#" "AND_3_magic_1.B" 59.573
+cap "a_439_3441#" "AND_3_magic_1.A" 192.889
+cap "a_439_4102#" "AND_3_magic_5.A" 6.5408
+cap "a_1185_1271#" "AND_3_magic_1.B" 0.363771
+cap "AND_3_magic_2.OUT" "a_1091_3452#" 13.4129
+cap "a_1091_2199#" "a_439_2188#" 284.663
+cap "AND_3_magic_5.OUT" "a_1333_1282#" 0.172629
+cap "AND_3_magic_3.B" "AND_3_magic_1.A" 3254.11
+cap "AND_3_magic_1.VDD" "AND_3_magic_1.A" 1590.85
+cap "AND_3_magic_1.B" "AND_3_magic_1.OUT" 0.0631011
+cap "AND_3_magic_1.C" "AND_3_magic_5.A" 176.796
+cap "a_439_5355#" "AND_3_magic_5.A" 6.5408
+cap "AND_3_magic_0.C" "a_1091_4113#" 0.205882
+cap "AND_3_magic_1.C" "a_1333_1282#" 1.37251
+cap "AND_3_magic_1.C" "a_439_6016#" 111.245
+cap "a_439_5355#" "a_439_6016#" 2.33634
+cap "a_1185_1271#" "AND_3_magic_5.A" 44.8227
+cap "a_1185_1271#" "a_1333_1282#" 319.427
+cap "a_252_1525#" "AND_3_magic_1.A" 1.15411
+cap "a_439_3441#" "a_587_3452#" 475.481
+cap "AND_3_magic_0.C" "a_439_4102#" 0.371114
+cap "a_1091_4113#" "AND_3_magic_3.OUT" 13.4129
+cap "a_439_2188#" "AND_3_magic_1.A" 0.60219
+cap "AND_1.OUT" "AND_3_magic_5.OUT" 5.85525
+cap "a_587_5366#" "AND_3_magic_1.C" 0.0579688
+cap "a_1091_3452#" "AND_3_magic_5.A" 0.826307
+cap "a_587_5366#" "a_439_5355#" 475.481
+cap "AND_3_magic_1.A" "a_587_4113#" 35.8726
+cap "a_1091_6027#" "AND_3_magic_1.VDD" 3.58065
+cap "AND_1.OUT" "AND_3_magic_1.C" 0.0662484
+cap "a_1091_5366#" "AND_3_magic_0.OUT" 13.4129
+cap "AND_3_magic_1.VDD" "AND_3_magic_0.OUT" 247.203
+cap "AND_3_magic_1.VDD" "a_400_841#" 219.191
+cap "AND_3_magic_3.B" "a_400_841#" 20.2761
+cap "a_439_6016#" "AND_3_magic_1.OUT" 80.6198
+cap "a_587_2199#" "AND_3_magic_1.VDD" 6.84703
+cap "AND_3_magic_3.B" "a_587_2199#" 0.158121
+cap "AND_3_magic_1.VDD" "a_587_3452#" 6.8448
+cap "a_439_4102#" "AND_3_magic_3.OUT" 80.6198
+cap "AND_3_magic_3.B" "a_587_3452#" 54.8655
+cap "AND_3_magic_0.C" "AND_3_magic_1.C" 3624.51
+cap "AND_3_magic_0.C" "a_439_5355#" 111.293
+cap "AND_1.OUT" "a_1185_1271#" 31.5286
+cap "AND_3_magic_5.A" "AND_3_magic_1.B" 278.12
+cap "a_1333_1282#" "AND_3_magic_1.B" 0.298763
+cap "AND_3_magic_1.C" "OR_magic_1.OUT" 0.883506
+cap "AND_3_magic_3.B" "a_439_3441#" 59.68
+cap "a_439_3441#" "AND_3_magic_1.VDD" 1072.63
+cap "a_439_6016#" "AND_3_magic_1.B" 59.573
+cap "AND_3_magic_0.C" "a_1185_1271#" 0.17561
+cap "a_252_1525#" "a_400_841#" 179.542
+cap "a_252_1525#" "a_587_2199#" 0.135506
+cap "AND_3_magic_1.C" "AND_3_magic_3.OUT" 1.41917
+cap "a_439_2188#" "a_587_2199#" 475.481
+cap "a_1185_1271#" "OR_magic_1.OUT" 134.225
+cap "a_439_5355#" "AND_3_magic_3.OUT" 0.117963
+cap "AND_3_magic_0.C" "a_1091_3452#" 502.105
+cap "AND_3_magic_1.VDD" "a_1091_5366#" 3.58065
+cap "a_587_5366#" "AND_3_magic_1.B" 54.8372
+cap "AND_3_magic_3.B" "AND_3_magic_1.VDD" 3495.43
+cap "a_439_2188#" "a_439_3441#" 5.30912
+cap "a_1333_1282#" "AND_3_magic_5.A" 86.5406
+cap "a_1091_2199#" "AND_3_magic_5.OUT" 13.4129
+cap "AND_3_magic_0.C" "AND_3_magic_2.OUT" 1.41917
+cap "a_439_6016#" "AND_3_magic_5.A" 6.5408
+cap "AND_3_magic_0.C" "AND_3_magic_1.B" 3177.71
+cap "a_1091_2199#" "AND_3_magic_1.C" 502.105
+cap "a_587_6027#" "AND_3_magic_1.C" 457.03
+cap "AND_3_magic_3.B" "a_252_1525#" 22.0353
+cap "a_252_1525#" "AND_3_magic_1.VDD" 606.224
+cap "OR_magic_1.OUT" "AND_3_magic_1.B" 2.66497
+cap "AND_3_magic_3.B" "a_439_2188#" 0.646264
+cap "a_439_2188#" "AND_3_magic_1.VDD" 1072.57
+cap "a_439_4102#" "AND_3_magic_1.A" 192.889
+cap "a_587_5366#" "AND_3_magic_5.A" 2.72155
+cap "AND_3_magic_3.OUT" "AND_3_magic_2.OUT" 9.19598
+cap "AND_3_magic_3.B" "a_587_4113#" 54.8655
+cap "AND_3_magic_1.VDD" "a_587_4113#" 6.8448
+cap "AND_1.OUT" "AND_3_magic_5.A" 1.42475
+cap "AND_1.OUT" "a_1333_1282#" 74.2216
+cap "a_439_2188#" "a_252_1525#" 0.104218
+cap "AND_3_magic_0.C" "AND_3_magic_5.A" 1483.82
+cap "AND_3_magic_0.C" "a_1333_1282#" 3.0908
+cap "AND_3_magic_1.C" "AND_3_magic_1.A" 236.986
+cap "a_439_5355#" "AND_3_magic_1.A" 192.889
+cap "OR_magic_1.OUT" "AND_3_magic_5.A" 95.8978
+cap "a_1333_1282#" "OR_magic_1.OUT" 153.704
+cap "AND_3_magic_0.C" "a_439_6016#" 0.289921
+cap "a_1091_2199#" "AND_3_magic_1.B" 34.9184
+cap "a_587_6027#" "AND_3_magic_1.B" 54.8372
+cap "a_439_4102#" "AND_3_magic_0.OUT" 0.117963
+cap "a_587_5366#" "AND_3_magic_0.C" 457.044
+cap "AND_1.OUT" "AND_3_magic_0.C" 0.183626
+cap "a_439_4102#" "a_439_3441#" 2.33634
+cap "a_1091_6027#" "AND_3_magic_1.C" 502.105
+cap "AND_1.OUT" "OR_magic_1.OUT" 0.231415
+cap "AND_3_magic_3.B" "a_1091_4113#" 35.4567
+cap "a_1091_4113#" "AND_3_magic_1.VDD" 3.58065
+cap "a_439_5355#" "AND_3_magic_0.OUT" 80.6198
+cap "AND_3_magic_1.C" "a_587_2199#" 457.03
+cap "AND_3_magic_1.C" "a_587_3452#" 0.0579688
+cap "a_1091_2199#" "AND_3_magic_5.A" 0.999479
+cap "a_587_6027#" "AND_3_magic_5.A" 2.72155
+cap "AND_3_magic_0.C" "OR_magic_1.OUT" 0.835797
+cap "a_439_3441#" "AND_3_magic_5.OUT" 0.117963
+cap "AND_3_magic_1.A" "AND_3_magic_1.B" 1611.6
+cap "AND_3_magic_3.B" "a_439_4102#" 59.68
+cap "a_439_4102#" "AND_3_magic_1.VDD" 1072.63
+cap "a_587_6027#" "a_439_6016#" 475.481
+cap "AND_3_magic_1.C" "a_439_3441#" 0.322991
+cap "a_1091_6027#" "AND_3_magic_1.OUT" 13.4129
+cap "a_1091_4113#" "a_587_4113#" 320.075
+cap "AND_3_magic_0.OUT" "AND_3_magic_1.OUT" 9.19598
+cap "AND_3_magic_1.VDD" "AND_3_magic_5.OUT" 247.579
+cap "a_587_3452#" "a_1091_3452#" 320.075
+cap "AND_3_magic_3.B" "AND_3_magic_1.C" 124.713
+cap "AND_3_magic_1.C" "a_1091_5366#" 0.205882
+cap "AND_3_magic_1.C" "AND_3_magic_1.VDD" 1191.45
+cap "AND_3_magic_3.B" "a_439_5355#" 0.646264
+cap "a_439_5355#" "a_1091_5366#" 284.663
+cap "AND_3_magic_1.VDD" "a_439_5355#" 1072.63
+cap "a_439_3441#" "a_1091_3452#" 284.663
+cap "a_1091_6027#" "AND_3_magic_1.B" 35.4567
+cap "AND_3_magic_1.A" "AND_3_magic_5.A" 3386.03
+cap "a_439_4102#" "a_587_4113#" 475.481
+cap "AND_3_magic_1.B" "AND_3_magic_0.OUT" 0.0631011
+cap "AND_3_magic_0.C" "a_1091_2199#" 0.0707485
+cap "AND_3_magic_1.A" "a_439_6016#" 192.889
+cap "AND_3_magic_0.C" "a_587_6027#" 0.0717945
+cap "a_587_2199#" "AND_3_magic_1.B" 54.5466
+cap "a_400_841#" "AND_3_magic_1.B" 0.0451708
+cap "a_1185_1271#" "AND_3_magic_1.VDD" 14.6214
+cap "AND_3_magic_3.B" "a_1185_1271#" 0.0228028
+cap "a_587_3452#" "AND_3_magic_1.B" 0.129836
+cap "a_1091_2199#" "OR_magic_1.OUT" 0.304395
+cap "a_439_2188#" "AND_3_magic_5.OUT" 80.6198
+cap "a_439_3441#" "AND_3_magic_2.OUT" 80.6198
+cap "a_252_1525#" "AND_3_magic_1.C" 0.412519
+cap "a_439_3441#" "AND_3_magic_1.B" 0.539254
+cap "AND_3_magic_1.VDD" "a_1091_3452#" 3.58065
+cap "AND_3_magic_3.B" "a_1091_3452#" 35.4567
+cap "AND_3_magic_1.VDD" "AND_3_magic_1.OUT" 247.108
+cap "a_439_2188#" "AND_3_magic_1.C" 111.245
+cap "a_587_5366#" "AND_3_magic_1.A" 35.8726
+device msubckt nfet_03v3 2017 -396 2018 -395 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_1.C" 50 6184,328
+device msubckt nfet_03v3 1849 -396 1850 -395 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.VSS" 112 0 "AND_3_magic_1.VSS" 100 6184,328 "AND_3_magic_1.VSS" 0 0
+device msubckt nfet_03v3 1262 -396 1263 -395 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_1.B" 50 6184,328
+device msubckt nfet_03v3 1094 -396 1095 -395 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.VSS" 112 0 "AND_3_magic_1.VSS" 100 6184,328 "AND_3_magic_1.VSS" 0 0
+device msubckt nfet_03v3 506 -392 507 -391 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_5.A" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_1.A" 50 6184,328
+device msubckt nfet_03v3 338 -392 339 -391 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.VSS" 112 0 "AND_3_magic_1.VSS" 100 6184,328 "AND_3_magic_1.VSS" 0 0
+device msubckt pfet_03v3 2017 -106 2018 -105 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_1.C" 50 6184,328
+device msubckt pfet_03v3 1849 -106 1850 -105 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.C" 50 6184,328 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1262 -106 1263 -105 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_1.B" 50 6184,328
+device msubckt pfet_03v3 1094 -106 1095 -105 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.B" 50 6184,328 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 506 -102 507 -101 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_5.A" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_1.A" 50 6184,328
+device msubckt pfet_03v3 338 -102 339 -101 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_5.A" 112 0 "AND_3_magic_1.A" 50 6184,328 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1765 872 1766 873 l=56 w=100 "AND_3_magic_1.VDD" "a_1333_1282#" 112 0 "AND_3_magic_1.VDD" 100 5200,204 "AND_1.OUT" 100 8800,376
+device msubckt pfet_03v3 1605 872 1606 873 l=56 w=100 "AND_3_magic_1.VDD" "AND_3_magic_5.A" 112 0 "a_1333_1282#" 100 5200,204 "AND_3_magic_1.VDD" 100 5200,204
+device msubckt pfet_03v3 1445 872 1446 873 l=56 w=100 "AND_3_magic_1.VDD" "OR_magic_1.OUT" 112 0 "AND_3_magic_1.VDD" 100 8800,376 "a_1333_1282#" 100 5200,204
+device msubckt pfet_03v3 814 841 815 842 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 6184,328 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 512 841 513 842 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "a_400_841#" 50 3592,184 "a_252_1525#" 50 6184,328
+device msubckt pfet_03v3 344 841 345 842 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_400_841#" 50 3592,184
+device msubckt nfet_03v3 2146 1282 2147 1283 l=56 w=50 "AND_3_magic_1.VSS" "a_1333_1282#" 112 0 "AND_3_magic_1.VSS" 50 6184,328 "AND_1.OUT" 50 6184,328
+device msubckt pfet_03v3 512 971 513 972 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "a_400_841#" 50 3592,184 "a_252_1525#" 50 6184,328
+device msubckt pfet_03v3 344 971 345 972 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_400_841#" 50 3592,184
+device msubckt pfet_03v3 814 1104 815 1105 l=56 w=50 "AND_3_magic_1.VDD" "a_252_1525#" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "OR_magic_1.OUT" 50 6184,328
+device msubckt pfet_03v3 512 1104 513 1105 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "a_400_841#" 50 3592,184 "a_252_1525#" 50 6184,328
+device msubckt pfet_03v3 344 1104 345 1105 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_400_841#" 50 3592,184
+device msubckt nfet_03v3 1781 1282 1782 1283 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_5.A" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_1185_1271#" 50 6184,328
+device msubckt nfet_03v3 1613 1282 1614 1283 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_5.A" 112 0 "a_1185_1271#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1445 1282 1446 1283 l=56 w=50 "AND_3_magic_1.VSS" "OR_magic_1.OUT" 112 0 "a_1333_1282#" 50 3592,184 "a_1185_1271#" 50 3592,184
+device msubckt nfet_03v3 1277 1282 1278 1283 l=56 w=50 "AND_3_magic_1.VSS" "OR_magic_1.OUT" 112 0 "a_1185_1271#" 50 6184,328 "a_1333_1282#" 50 3592,184
+device msubckt pfet_03v3 814 1234 815 1235 l=56 w=50 "AND_3_magic_1.VDD" "a_252_1525#" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "OR_magic_1.OUT" 50 6184,328
+device msubckt pfet_03v3 512 1234 513 1235 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "a_400_841#" 50 3592,184 "a_252_1525#" 50 6184,328
+device msubckt pfet_03v3 344 1234 345 1235 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_400_841#" 50 3592,184
+device msubckt nfet_03v3 814 1536 815 1537 l=56 w=50 "AND_3_magic_1.VSS" "a_252_1525#" 112 0 "AND_3_magic_1.VSS" 50 6184,328 "OR_magic_1.OUT" 50 6184,328
+device msubckt nfet_03v3 512 1536 513 1537 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_252_1525#" 50 6184,328
+device msubckt nfet_03v3 344 1536 345 1537 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_252_1525#" 50 6184,328 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 2043 2199 2044 2200 l=56 w=50 "AND_3_magic_1.VSS" "a_439_2188#" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_5.OUT" 50 6184,328
+device msubckt nfet_03v3 1875 2199 1876 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "a_1091_2199#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1707 2199 1708 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_1091_2199#" 50 3592,184
+device msubckt nfet_03v3 1539 2199 1540 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "a_1091_2199#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1371 2199 1372 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_587_2199#" 50 3592,184 "a_1091_2199#" 50 3592,184
+device msubckt nfet_03v3 1203 2199 1204 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_1091_2199#" 50 3592,184 "a_587_2199#" 50 3592,184
+device msubckt nfet_03v3 1035 2199 1036 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_587_2199#" 50 3592,184 "a_1091_2199#" 50 3592,184
+device msubckt nfet_03v3 867 2199 868 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_5.A" 112 0 "a_439_2188#" 50 3592,184 "a_587_2199#" 50 3592,184
+device msubckt nfet_03v3 699 2199 700 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_5.A" 112 0 "a_587_2199#" 50 3592,184 "a_439_2188#" 50 3592,184
+device msubckt nfet_03v3 531 2199 532 2200 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_5.A" 112 0 "a_439_2188#" 50 6184,328 "a_587_2199#" 50 3592,184
+device msubckt pfet_03v3 2043 2531 2044 2532 l=56 w=50 "AND_3_magic_1.VDD" "a_439_2188#" 112 0 "AND_3_magic_5.OUT" 50 3592,184 "AND_3_magic_1.VDD" 50 6184,328
+device msubckt pfet_03v3 1875 2531 1876 2532 l=56 w=50 "AND_3_magic_1.VDD" "a_439_2188#" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_5.OUT" 50 3592,184
+device msubckt pfet_03v3 1707 2531 1708 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1539 2531 1540 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.C" 112 0 "a_439_2188#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1371 2531 1372 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.C" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_2188#" 50 3592,184
+device msubckt pfet_03v3 1203 2531 1204 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1035 2531 1036 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.B" 112 0 "a_439_2188#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 867 2531 868 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.B" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_2188#" 50 3592,184
+device msubckt pfet_03v3 699 2531 700 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_5.A" 112 0 "a_439_2188#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 531 2531 532 2532 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_5.A" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_439_2188#" 50 3592,184
+device msubckt pfet_03v3 2043 3120 2044 3121 l=56 w=50 "AND_3_magic_1.VDD" "a_439_3441#" 112 0 "AND_3_magic_2.OUT" 50 3592,184 "AND_3_magic_1.VDD" 50 6184,328
+device msubckt pfet_03v3 1875 3120 1876 3121 l=56 w=50 "AND_3_magic_1.VDD" "a_439_3441#" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_2.OUT" 50 3592,184
+device msubckt pfet_03v3 1707 3120 1708 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1539 3120 1540 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "a_439_3441#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1371 3120 1372 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_3441#" 50 3592,184
+device msubckt pfet_03v3 1203 3120 1204 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1035 3120 1036 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "a_439_3441#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 867 3120 868 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_3441#" 50 3592,184
+device msubckt pfet_03v3 699 3120 700 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "a_439_3441#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 531 3120 532 3121 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_439_3441#" 50 3592,184
+device msubckt nfet_03v3 2043 3452 2044 3453 l=56 w=50 "AND_3_magic_1.VSS" "a_439_3441#" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_2.OUT" 50 6184,328
+device msubckt nfet_03v3 1875 3452 1876 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "a_1091_3452#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1707 3452 1708 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_1091_3452#" 50 3592,184
+device msubckt nfet_03v3 1539 3452 1540 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "a_1091_3452#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1371 3452 1372 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_587_3452#" 50 3592,184 "a_1091_3452#" 50 3592,184
+device msubckt nfet_03v3 1203 3452 1204 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_1091_3452#" 50 3592,184 "a_587_3452#" 50 3592,184
+device msubckt nfet_03v3 1035 3452 1036 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_587_3452#" 50 3592,184 "a_1091_3452#" 50 3592,184
+device msubckt nfet_03v3 867 3452 868 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_3441#" 50 3592,184 "a_587_3452#" 50 3592,184
+device msubckt nfet_03v3 699 3452 700 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_587_3452#" 50 3592,184 "a_439_3441#" 50 3592,184
+device msubckt nfet_03v3 531 3452 532 3453 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_3441#" 50 6184,328 "a_587_3452#" 50 3592,184
+device msubckt nfet_03v3 2043 4113 2044 4114 l=56 w=50 "AND_3_magic_1.VSS" "a_439_4102#" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_3.OUT" 50 6184,328
+device msubckt nfet_03v3 1875 4113 1876 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "a_1091_4113#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1707 4113 1708 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_1091_4113#" 50 3592,184
+device msubckt nfet_03v3 1539 4113 1540 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "a_1091_4113#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1371 4113 1372 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_587_4113#" 50 3592,184 "a_1091_4113#" 50 3592,184
+device msubckt nfet_03v3 1203 4113 1204 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_1091_4113#" 50 3592,184 "a_587_4113#" 50 3592,184
+device msubckt nfet_03v3 1035 4113 1036 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_3.B" 112 0 "a_587_4113#" 50 3592,184 "a_1091_4113#" 50 3592,184
+device msubckt nfet_03v3 867 4113 868 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_4102#" 50 3592,184 "a_587_4113#" 50 3592,184
+device msubckt nfet_03v3 699 4113 700 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_587_4113#" 50 3592,184 "a_439_4102#" 50 3592,184
+device msubckt nfet_03v3 531 4113 532 4114 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_4102#" 50 6184,328 "a_587_4113#" 50 3592,184
+device msubckt pfet_03v3 2043 4445 2044 4446 l=56 w=50 "AND_3_magic_1.VDD" "a_439_4102#" 112 0 "AND_3_magic_3.OUT" 50 3592,184 "AND_3_magic_1.VDD" 50 6184,328
+device msubckt pfet_03v3 1875 4445 1876 4446 l=56 w=50 "AND_3_magic_1.VDD" "a_439_4102#" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_3.OUT" 50 3592,184
+device msubckt pfet_03v3 1707 4445 1708 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1539 4445 1540 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.C" 112 0 "a_439_4102#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1371 4445 1372 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.C" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_4102#" 50 3592,184
+device msubckt pfet_03v3 1203 4445 1204 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1035 4445 1036 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "a_439_4102#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 867 4445 868 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_3.B" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_4102#" 50 3592,184
+device msubckt pfet_03v3 699 4445 700 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "a_439_4102#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 531 4445 532 4446 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_439_4102#" 50 3592,184
+device msubckt pfet_03v3 2043 5034 2044 5035 l=56 w=50 "AND_3_magic_1.VDD" "a_439_5355#" 112 0 "AND_3_magic_0.OUT" 50 3592,184 "AND_3_magic_1.VDD" 50 6184,328
+device msubckt pfet_03v3 1875 5034 1876 5035 l=56 w=50 "AND_3_magic_1.VDD" "a_439_5355#" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_0.OUT" 50 3592,184
+device msubckt pfet_03v3 1707 5034 1708 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1539 5034 1540 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "a_439_5355#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1371 5034 1372 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_5355#" 50 3592,184
+device msubckt pfet_03v3 1203 5034 1204 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1035 5034 1036 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.B" 112 0 "a_439_5355#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 867 5034 868 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.B" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_5355#" 50 3592,184
+device msubckt pfet_03v3 699 5034 700 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "a_439_5355#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 531 5034 532 5035 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_439_5355#" 50 3592,184
+device msubckt nfet_03v3 2043 5366 2044 5367 l=56 w=50 "AND_3_magic_1.VSS" "a_439_5355#" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_0.OUT" 50 6184,328
+device msubckt nfet_03v3 1875 5366 1876 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "a_1091_5366#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1707 5366 1708 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_1091_5366#" 50 3592,184
+device msubckt nfet_03v3 1539 5366 1540 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_0.C" 112 0 "a_1091_5366#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1371 5366 1372 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_587_5366#" 50 3592,184 "a_1091_5366#" 50 3592,184
+device msubckt nfet_03v3 1203 5366 1204 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_1091_5366#" 50 3592,184 "a_587_5366#" 50 3592,184
+device msubckt nfet_03v3 1035 5366 1036 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_587_5366#" 50 3592,184 "a_1091_5366#" 50 3592,184
+device msubckt nfet_03v3 867 5366 868 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_5355#" 50 3592,184 "a_587_5366#" 50 3592,184
+device msubckt nfet_03v3 699 5366 700 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_587_5366#" 50 3592,184 "a_439_5355#" 50 3592,184
+device msubckt nfet_03v3 531 5366 532 5367 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_5355#" 50 6184,328 "a_587_5366#" 50 3592,184
+device msubckt nfet_03v3 2043 6027 2044 6028 l=56 w=50 "AND_3_magic_1.VSS" "a_439_6016#" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "AND_3_magic_1.OUT" 50 6184,328
+device msubckt nfet_03v3 1875 6027 1876 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "a_1091_6027#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1707 6027 1708 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "AND_3_magic_1.VSS" 50 3592,184 "a_1091_6027#" 50 3592,184
+device msubckt nfet_03v3 1539 6027 1540 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.C" 112 0 "a_1091_6027#" 50 3592,184 "AND_3_magic_1.VSS" 50 3592,184
+device msubckt nfet_03v3 1371 6027 1372 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_587_6027#" 50 3592,184 "a_1091_6027#" 50 3592,184
+device msubckt nfet_03v3 1203 6027 1204 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_1091_6027#" 50 3592,184 "a_587_6027#" 50 3592,184
+device msubckt nfet_03v3 1035 6027 1036 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.B" 112 0 "a_587_6027#" 50 3592,184 "a_1091_6027#" 50 3592,184
+device msubckt nfet_03v3 867 6027 868 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_6016#" 50 3592,184 "a_587_6027#" 50 3592,184
+device msubckt nfet_03v3 699 6027 700 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_587_6027#" 50 3592,184 "a_439_6016#" 50 3592,184
+device msubckt nfet_03v3 531 6027 532 6028 l=56 w=50 "AND_3_magic_1.VSS" "AND_3_magic_1.A" 112 0 "a_439_6016#" 50 6184,328 "a_587_6027#" 50 3592,184
+device msubckt pfet_03v3 2043 6359 2044 6360 l=56 w=50 "AND_3_magic_1.VDD" "a_439_6016#" 112 0 "AND_3_magic_1.OUT" 50 3592,184 "AND_3_magic_1.VDD" 50 6184,328
+device msubckt pfet_03v3 1875 6359 1876 6360 l=56 w=50 "AND_3_magic_1.VDD" "a_439_6016#" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "AND_3_magic_1.OUT" 50 3592,184
+device msubckt pfet_03v3 1707 6359 1708 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1539 6359 1540 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.C" 112 0 "a_439_6016#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 1371 6359 1372 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.C" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_6016#" 50 3592,184
+device msubckt pfet_03v3 1203 6359 1204 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.VDD" 112 0 "AND_3_magic_1.VDD" 100 3592,184 "AND_3_magic_1.VDD" 0 0
+device msubckt pfet_03v3 1035 6359 1036 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.B" 112 0 "a_439_6016#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 867 6359 868 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.B" 112 0 "AND_3_magic_1.VDD" 50 3592,184 "a_439_6016#" 50 3592,184
+device msubckt pfet_03v3 699 6359 700 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "a_439_6016#" 50 3592,184 "AND_3_magic_1.VDD" 50 3592,184
+device msubckt pfet_03v3 531 6359 532 6360 l=56 w=50 "AND_3_magic_1.VDD" "AND_3_magic_1.A" 112 0 "AND_3_magic_1.VDD" 50 6184,328 "a_439_6016#" 50 3592,184

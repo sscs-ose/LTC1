@@ -1,0 +1,51 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1695273674
+<< mimcap >>
+rect -2220 4300 1980 4380
+rect -2220 260 -2140 4300
+rect 1900 260 1980 4300
+rect -2220 180 1980 260
+rect -2220 -260 1980 -180
+rect -2220 -4300 -2140 -260
+rect 1900 -4300 1980 -260
+rect -2220 -4380 1980 -4300
+<< mimcapcontact >>
+rect -2140 260 1900 4300
+rect -2140 -4300 1900 -260
+<< metal4 >>
+rect -2340 4433 2340 4500
+rect -2340 4380 2190 4433
+rect -2340 180 -2220 4380
+rect 1980 180 2190 4380
+rect -2340 127 2190 180
+rect 2278 127 2340 4433
+rect -2340 60 2340 127
+rect -2340 -127 2340 -60
+rect -2340 -180 2190 -127
+rect -2340 -4380 -2220 -180
+rect 1980 -4380 2190 -180
+rect -2340 -4433 2190 -4380
+rect 2278 -4433 2340 -127
+rect -2340 -4500 2340 -4433
+<< via4 >>
+rect 2190 127 2278 4433
+rect 2190 -4433 2278 -127
+<< metal5 >>
+rect -226 4300 -14 4560
+rect 2128 4433 2340 4560
+rect -226 -260 -14 260
+rect 2128 127 2190 4433
+rect 2278 127 2340 4433
+rect 2128 -127 2340 127
+rect -226 -4560 -14 -4300
+rect 2128 -4433 2190 -127
+rect 2278 -4433 2340 -127
+rect 2128 -4560 2340 -4433
+<< properties >>
+string FIXED_BBOX -2340 60 2100 4500
+string gencell cap_mim_2p0fF
+string library gf180mcu
+string parameters w 21 l 21 val 12.705k carea 25.00 cperi 20.00 nx 1 ny 2 dummy 0 square 0 lmin 5.00 wmin 5.00 lmax 100.0 wmax 100.0 dc 0 bconnect 1 tconnect 1
+<< end >>

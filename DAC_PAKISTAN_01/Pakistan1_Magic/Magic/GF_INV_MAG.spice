@@ -1,0 +1,15 @@
+* NGSPICE file created from GF_INV_MAG.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_MQGBLR a_n28_n124# a_n116_n80# a_28_n80# w_n202_n210#
+X0 a_28_n80# a_n28_n124# a_n116_n80# w_n202_n210# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.28u
+.ends
+
+.subckt nmos_3p3_DDNVWA a_n120_n36# a_28_n22# a_n28_n66# VSUBS
+X0 a_28_n22# a_n28_n66# a_n120_n36# VSUBS nfet_03v3 ad=0.152p pd=1.64u as=0.152p ps=1.64u w=0.22u l=0.28u
+.ends
+
+.subckt GF_INV_MAG VDD VSS IN OUT
+Xpmos_3p3_MQGBLR_0 IN VDD OUT VDD pmos_3p3_MQGBLR
+Xnmos_3p3_DDNVWA_0 VSS OUT IN VSS nmos_3p3_DDNVWA
+.ends
+

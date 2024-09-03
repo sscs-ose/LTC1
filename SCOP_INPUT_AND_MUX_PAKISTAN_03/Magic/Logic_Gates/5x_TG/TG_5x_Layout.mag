@@ -1,0 +1,76 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1699521709
+<< nwell >>
+rect 297 867 1332 953
+<< polysilicon >>
+rect 462 757 1158 801
+rect 462 740 518 757
+rect 196 498 298 509
+rect 462 498 518 543
+rect 196 494 518 498
+rect 196 446 226 494
+rect 274 446 518 494
+rect 196 442 518 446
+rect 196 433 298 442
+rect 98 371 518 382
+rect 71 315 518 371
+rect 462 259 518 315
+rect 462 101 1318 145
+<< polycontact >>
+rect 226 446 274 494
+<< metal1 >>
+rect -107 828 297 940
+rect 387 781 1073 827
+rect 387 706 433 781
+rect 707 690 753 781
+rect 1027 690 1073 781
+rect 198 494 298 504
+rect 198 446 226 494
+rect 274 446 298 494
+rect 198 437 298 446
+rect 387 234 433 554
+rect 547 493 593 568
+rect 867 493 913 579
+rect 1187 493 1233 581
+rect 547 447 1337 493
+rect 1187 355 1233 447
+rect 547 309 1233 355
+rect 547 234 593 309
+rect 867 223 913 309
+rect 1187 221 1233 309
+rect 1347 304 1482 350
+rect 1347 234 1393 304
+rect 387 121 433 195
+rect 707 121 753 195
+rect 1027 121 1073 195
+rect 1347 121 1393 198
+rect -55 -27 245 85
+rect 387 75 1393 121
+use Inverter_Layout  Inverter_Layout_0 ~/GF180Projects/Tapeout/Magic/Logic_Gates/Inverter
+timestamp 1699521709
+transform 1 0 -45 0 1 97
+box -62 -124 342 856
+use nmos_3p3_FGGST2  nmos_3p3_FGGST2_0
+timestamp 1691266842
+transform 1 0 890 0 1 215
+box -540 -118 540 118
+use pmos_3p3_MN2VAR  pmos_3p3_MN2VAR_0
+timestamp 1691493578
+transform 1 0 810 0 1 637
+box -522 -230 522 230
+<< labels >>
+flabel metal1 1436 326 1436 326 0 FreeSans 320 0 0 0 VOUT
+port 3 nsew
+flabel metal1 1296 470 1296 470 0 FreeSans 320 0 0 0 VIN
+port 2 nsew
+flabel metal1 95 29 95 29 0 FreeSans 320 0 0 0 VSS
+port 4 nsew
+flabel polysilicon 207 343 207 343 0 FreeSans 320 0 0 0 CLK
+port 6 nsew
+flabel metal1 95 887 95 887 0 FreeSans 320 0 0 0 VDD
+port 5 nsew
+flabel metal1 281 483 281 483 0 FreeSans 480 0 0 0 CLKB
+port 7 nsew
+<< end >>

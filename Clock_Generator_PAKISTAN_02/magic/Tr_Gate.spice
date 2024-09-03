@@ -1,0 +1,27 @@
+* NGSPICE file created from Tr_Gate.ext - technology: gf180mcuC
+
+.subckt pmos_3p3_YMKZL5 a_n138_n84# a_50_n84# a_n50_n128# w_n224_n214#
+X0 a_50_n84# a_n50_n128# a_n138_n84# w_n224_n214# pfet_03v3 ad=0.37p pd=2.56u as=0.37p ps=2.56u w=0.84u l=0.5u
+.ends
+
+.subckt nmos_3p3_UKFAHE a_n138_n84# a_50_n84# a_n50_n128# VSUBS
+X0 a_50_n84# a_n50_n128# a_n138_n84# VSUBS nfet_03v3 ad=0.37p pd=2.56u as=0.37p ps=2.56u w=0.84u l=0.5u
+.ends
+
+.subckt Tr_Gate VSS OUT IN CLK VDD
+Xpmos_3p3_YMKZL5_0 OUT IN a_174_n81# VDD pmos_3p3_YMKZL5
+Xpmos_3p3_YMKZL5_1 IN OUT a_174_n81# VDD pmos_3p3_YMKZL5
+Xpmos_3p3_YMKZL5_2 OUT IN a_174_n81# VDD pmos_3p3_YMKZL5
+Xpmos_3p3_YMKZL5_3 IN OUT a_174_n81# VDD pmos_3p3_YMKZL5
+Xpmos_3p3_YMKZL5_4 a_174_n81# VDD CLK VDD pmos_3p3_YMKZL5
+Xpmos_3p3_YMKZL5_5 VDD a_174_n81# CLK VDD pmos_3p3_YMKZL5
+Xnmos_3p3_UKFAHE_0 OUT IN CLK VSS nmos_3p3_UKFAHE
+Xpmos_3p3_YMKZL5_6 a_174_n81# VDD CLK VDD pmos_3p3_YMKZL5
+Xnmos_3p3_UKFAHE_1 IN OUT CLK VSS nmos_3p3_UKFAHE
+Xpmos_3p3_YMKZL5_7 VDD a_174_n81# CLK VDD pmos_3p3_YMKZL5
+Xnmos_3p3_UKFAHE_2 OUT IN CLK VSS nmos_3p3_UKFAHE
+Xnmos_3p3_UKFAHE_3 OUT IN CLK VSS nmos_3p3_UKFAHE
+Xnmos_3p3_UKFAHE_5 a_174_n81# VSS CLK VSS nmos_3p3_UKFAHE
+Xnmos_3p3_UKFAHE_4 VSS a_174_n81# CLK VSS nmos_3p3_UKFAHE
+.ends
+

@@ -1,0 +1,408 @@
+timestamp 1714558529
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use mux_4x1_ibr mux_4x1_ibr_1 1 0 1194 0 -1 5
+use mux_4x1_ibr mux_4x1_ibr_0 1 0 1194 0 1 -5
+use mux_2x1_ibr mux_2x1_ibr_0 1 0 3377 0 1 1051
+port "I3" 3 1299 -1535 1299 -1535 m1
+port "I1" 1 169 -1539 169 -1539 m1
+port "VSS" 8 1489 -993 1489 -993 m1
+port "I0" 0 984 -474 984 -474 m1
+port "I2" 2 2110 -474 2110 -474 m1
+port "VDD" 9 1966 -117 1966 -117 m1
+port "I6" 6 2106 476 2106 476 m1
+port "I4" 4 979 476 979 476 m1
+port "S2" 13 3713 689 3713 689 m1
+port "OUT" 10 4445 1528 4445 1528 m1
+port "I7" 7 1299 1532 1299 1532 m1
+port "I5" 5 169 1537 169 1537 m1
+port "S1" 12 2675 1634 2675 1634 m1
+port "S0" 11 414 1634 414 1634 m1
+node "m2_2567_n746#" 3 519.355 2567 -746 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59072 2192 44252 1578 0 0 0 0
+node "m2_313_n737#" 2 509.356 313 -737 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94464 3080 0 0 0 0 0 0
+node "I3" 0 44.4395 1299 -1535 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300 230 0 0 0 0 0 0 0 0
+node "I1" 0 45.8101 169 -1539 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300 230 0 0 0 0 0 0 0 0
+node "VSS" 0 104.551 1489 -993 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13689 500 0 0 0 0 0 0 0 0
+node "I0" 0 40.5861 984 -474 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300 230 0 0 0 0 0 0 0 0
+node "I2" 0 44.5716 2110 -474 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3844 250 0 0 0 0 0 0 0 0
+node "VDD" 0 39.3456 1966 -117 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3724 250 0 0 0 0 0 0 0 0
+node "m1_2259_n4#" 1 38.7944 2259 -4 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1640 348 0 0 0 0 0 0 0 0
+node "m1_1129_n5#" 1 40.3647 1129 -5 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 382 0 0 0 0 0 0 0 0
+node "m1_3377_11#" 0 127.254 3377 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53624 1014 0 0 0 0 0 0 0 0
+node "m1_3301_n1554#" 6 1329.74 3301 -1554 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136829 5482 40935 1424 0 0 0 0 0 0
+node "I6" 0 42.0546 2106 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300 230 0 0 0 0 0 0 0 0
+node "I4" 0 32.3188 979 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2209 188 0 0 0 0 0 0 0 0
+node "S2" 0 24.776 3713 689 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1369 148 0 0 0 0 0 0 0 0
+node "m1_49_n978#" 3 879.545 49 -978 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 131923 4072 0 0 0 0 0 0 0 0
+node "OUT" 0 28.4831 4445 1528 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1369 148 0 0 0 0 0 0 0 0
+node "m1_3300_1504#" 0 109.277 3300 1504 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11466 566 0 0 0 0 0 0 0 0
+node "I7" 0 44.1592 1299 1532 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300 230 0 0 0 0 0 0 0 0
+node "I5" 0 45.7057 169 1537 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3300 230 0 0 0 0 0 0 0 0
+node "S1" 0 51.6187 2675 1634 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3724 250 0 0 0 0 0 0 0 0
+node "S0" 0 30.1755 414 1634 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1369 148 0 0 0 0 0 0 0 0
+node "a_2071_n2065#" 25 0 2071 -2065 nnd 0 0 0 0 28865 852 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_977_n1993#" 30 0 977 -1993 nnd 0 0 0 0 22416 788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_422_n52#" 6628 167.256 422 -52 nw 55752 1396 0 0 55752 1396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3381_141#" 1021 458.595 3381 141 nw 152865 1564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2197_n242#" 4363 1180.73 2197 -242 nw 393578 3212 0 0 55752 1396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1091_n180#" 4223 1175.21 1091 -180 nw 391738 3172 0 0 55752 1396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3279_1975#" 86701 6.342 3279 1975 nw 2114 866 0 0 27623 810 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_2259_n4#" "w_2197_n242#" 29.4829
+cap "w_3381_141#" "I6" 0.424884
+cap "I4" "I0" 1.73362
+cap "w_1091_n180#" "VDD" 7.31877
+cap "m1_1129_n5#" "m2_2567_n746#" 0.0835635
+cap "w_2197_n242#" "m1_3301_n1554#" 9.30458
+cap "I7" "w_1091_n180#" 0.502713
+cap "I2" "m2_2567_n746#" 0.710508
+cap "m1_3377_11#" "w_1091_n180#" 0.359344
+cap "a_977_n1993#" "I3" 0.0903622
+cap "w_422_n52#" "I0" 0.831068
+cap "I4" "w_422_n52#" 0.621421
+cap "m1_2259_n4#" "m2_2567_n746#" 0.3814
+cap "w_1091_n180#" "I6" 0.805717
+cap "m1_3300_1504#" "w_3279_1975#" 2.64057
+cap "m1_49_n978#" "m1_1129_n5#" 0.646253
+cap "m2_313_n737#" "w_1091_n180#" 17.2111
+cap "S1" "w_2197_n242#" 0.400745
+cap "I4" "I6" 1.75976
+cap "m2_313_n737#" "I0" 0.353069
+cap "I4" "m2_313_n737#" 0.273598
+cap "m1_3301_n1554#" "m2_2567_n746#" 4.18949
+cap "I3" "I1" 1.92731
+cap "m2_313_n737#" "VDD" 0.0384745
+cap "w_1091_n180#" "VSS" 3.3445
+cap "w_3381_141#" "m2_2567_n746#" 9.19557
+cap "I3" "m1_1129_n5#" 1.00398
+cap "S2" "w_3381_141#" 2.68393
+cap "m1_2259_n4#" "m1_1129_n5#" 0.428698
+cap "w_2197_n242#" "VDD" 4.24189
+cap "w_422_n52#" "m2_313_n737#" 7.90491
+cap "w_3381_141#" "m1_3300_1504#" 1.67733
+cap "m1_3377_11#" "w_2197_n242#" 10.3666
+cap "a_977_n1993#" "I0" 0.0240303
+cap "w_1091_n180#" "m2_2567_n746#" 19.9346
+cap "I0" "m2_2567_n746#" 0.0345956
+cap "m1_3301_n1554#" "I2" 1.81796
+cap "a_2071_n2065#" "I2" 0.114562
+cap "I4" "m2_2567_n746#" 0.0176338
+cap "VDD" "m2_2567_n746#" 0.4984
+cap "I7" "I5" 2.02943
+cap "m1_3300_1504#" "OUT" 1.70141
+cap "m1_49_n978#" "w_1091_n180#" 8.08982
+cap "m1_49_n978#" "I0" 2.65257
+cap "m1_3377_11#" "m2_2567_n746#" 3.15731
+cap "I4" "m1_49_n978#" 2.29129
+cap "w_422_n52#" "m2_2567_n746#" 0.154473
+cap "m1_3377_11#" "S2" 2.9741
+cap "w_1091_n180#" "m1_1129_n5#" 32.1212
+cap "w_1091_n180#" "I2" 0.849804
+cap "w_3381_141#" "m1_3301_n1554#" 14.1795
+cap "I0" "I2" 1.99622
+cap "I6" "m2_2567_n746#" 0.636916
+cap "m1_3377_11#" "m1_3300_1504#" 4.77506
+cap "I3" "w_1091_n180#" 0.250729
+cap "w_422_n52#" "m1_49_n978#" 6.03454
+cap "m1_2259_n4#" "w_1091_n180#" 1.27597
+cap "I7" "m1_1129_n5#" 1.01075
+cap "w_2197_n242#" "m2_2567_n746#" 54.4806
+cap "w_422_n52#" "S0" 0.00677012
+cap "w_422_n52#" "m1_1129_n5#" 1.85192
+cap "m1_49_n978#" "m2_313_n737#" 51.4767
+cap "I6" "I2" 2.76166
+cap "m2_313_n737#" "m1_1129_n5#" 0.126444
+cap "m1_49_n978#" "VSS" 0.698483
+cap "VDD" "m1_3301_n1554#" 1.39598
+cap "m1_3377_11#" "m1_3301_n1554#" 207.818
+cap "w_2197_n242#" "m1_1129_n5#" 0.145606
+cap "S2" "m2_2567_n746#" 0.0608031
+cap "m1_3377_11#" "w_3381_141#" 41.8379
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_0/nand2_ibr_2/OUT" 1.70814
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/VSS" 6.48579
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_0/nand2_ibr_2/OUT" 1.56317
+cap "mux_4x1_ibr_1/I3" "mux_4x1_ibr_1/I1" -1.92731
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/I3" -0.523369
+cap "mux_4x1_ibr_0/I0" "mux_4x1_ibr_1/mux_2x1_ibr_0/nand2_ibr_2/OUT" 0.299618
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_0/OUT" 0.0327432
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/I1" 0.246251
+cap "mux_4x1_ibr_1/S0" "mux_4x1_ibr_1/VSS" 15.9972
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/S0" 0.0117409
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/S0" 0.0109379
+cap "mux_4x1_ibr_1/S1" "mux_4x1_ibr_1/VDD" -0.0289218
+cap "mux_4x1_ibr_1/S1" "mux_4x1_ibr_1/OUT" 0.0219423
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" 0.0121472
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/VSS" -3.3445
+cap "mux_4x1_ibr_1/S1" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" -0.228139
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" "mux_4x1_ibr_1/VDD" -0.00150545
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/I1" "mux_4x1_ibr_1/VDD" 0.319714
+cap "mux_4x1_ibr_1/S1" "mux_4x1_ibr_1/VSS" 0.0308577
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/VSS" 205.541
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 0.988574
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/VDD" 6.19287
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_1/nmos_3p3_5QNVWA_1/a_n116_n44#" "mux_4x1_ibr_1/OUT" 0.0433266
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_1/IN2" 0.358306
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_2/OUT" 58.6025
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 0.342727
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/VDD" -1.83352
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/S1" -0.0620622
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/I0" -2.65257
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/S0" 9.83916
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/I0" -0.998111
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/I3" -0.505376
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S0" 24.3525
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 3.7901
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_0/OUT" 13.2017
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/I0" -0.879882
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/I0" 3.72102
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/S1" -0.0053612
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_0/OUT" 37.542
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S0" 24.3525
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 2.16304
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/S0" 9.83916
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/I0" 3.48734
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" 5.55112e-17
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/S1" 0.852705
+cap "mux_4x1_ibr_0/I0" "mux_4x1_ibr_1/S0" 0.467145
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/VDD" 769.645
+cap "mux_4x1_ibr_1/I0" "mux_4x1_ibr_1/S0" 0.387675
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_0/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 12.6152
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/S1" 0.806135
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/S0" 16.318
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S0" 0.967332
+cap "mux_4x1_ibr_1/I3" "mux_4x1_ibr_1/VDD" -0.501991
+cap "mux_4x1_ibr_1/I0" "mux_4x1_ibr_0/I0" 0.721633
+cap "mux_4x1_ibr_1/I0" "mux_4x1_ibr_1/S1" -0.00122633
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S0" 0.967332
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 12.6152
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/VDD" 13.195
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_0/I0" -2.29129
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 3.7901
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/S0" 405.33
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/VDD" 65.9881
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/I2" -0.908978
+cap "mux_4x1_ibr_1/S0" "mux_4x1_ibr_1/VDD" 4.62729
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_1/S1" 3.59715
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 2.28878
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 0.103838
+cap "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 0.244368
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 1.81532
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" 0.959813
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/IN2" -0.0100352
+cap "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" "mux_4x1_ibr_1/VDD" -0.00216652
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 0.103838
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/S1" 68.0261
+cap "mux_4x1_ibr_1/I0" "mux_4x1_ibr_1/S1" -0.0333692
+cap "mux_4x1_ibr_1/S0" "mux_4x1_ibr_1/S1" 0.0195216
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/VDD" 6.29054
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" 0.182486
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 1.81443
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" -0.11581
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_0/I2" -0.306405
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/VDD" 8.88178e-15
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_1/IN2" "mux_4x1_ibr_1/S1" 0.165357
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/VDD" -0.697992
+cap "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 4.33826
+cap "mux_4x1_ibr_0/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/VDD" 3.7901
+cap "mux_4x1_ibr_1/S1" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/IN2" 0.164782
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_1/IN2" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" -0.0100352
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/S1" 3.51826
+cap "mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 0.154495
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 0.0218144
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/I0" -0.998111
+cap "mux_4x1_ibr_0/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" 2.16304
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" "mux_4x1_ibr_1/VDD" -0.305813
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/S1" 0.83346
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 65.8061
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" -1.06657
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/S1" -0.76322
+cap "mux_2x1_ibr_0/Sel" "mux_4x1_ibr_1/S1" 0.196581
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/VSS" -0.11581
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/VDD" -1.06657
+cap "mux_4x1_ibr_0/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 2.29038
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 0.00138202
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 0.0955177
+cap "mux_4x1_ibr_0/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 0.0955177
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_1/VDD" 3.11628
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/I0" -0.879882
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" 3.7901
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 4.34095
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/S1" 68.9957
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 23.6615
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 23.6539
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 178.772
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/S1" 306.812
+cap "mux_4x1_ibr_0/I0" "mux_4x1_ibr_1/S1" -0.0176338
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/VDD" -1.33144
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/OUT" -0.908978
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_1/VDD" -1.33144
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" -0.128594
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 28.1971
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/S1" 2.00161
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 2.16304
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 98.0983
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/S1" 2.1069
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_2x1_ibr_0/Sel" 0.238297
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_0/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" -0.0862192
+cap "mux_4x1_ibr_1/VSS" "mux_4x1_ibr_1/VDD" 4.42492
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 43.3565
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" 3.78481
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 16.7663
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" -0.0811475
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 0.0192382
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 0.000163145
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 4.36942
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_4x1_ibr_1/S1" 0.0192382
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" -0.136701
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_4x1_ibr_1/OUT" 57.6598
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 7.32824
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 0.0955177
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 0.0955177
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 8.88321e-05
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_1/nand2_ibr_2/OUT" -1.01125
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_2x1_ibr_0/Sel" 4.70192
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" -7.10543e-15
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/OUT" -2.38753
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/S1" 44.8339
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" -0.817212
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_2x1_ibr_0/nand2_ibr_2/OUT" 0.346144
+cap "mux_4x1_ibr_1/I2" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" -0.101241
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/OUT" 600.664
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_2x1_ibr_0/Sel" 7.02378
+cap "mux_4x1_ibr_1/OUT" "mux_4x1_ibr_1/S1" -1.02219
+cap "mux_4x1_ibr_1/VDD" "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 2.11838
+cap "mux_4x1_ibr_1/mux_2x1_ibr_1/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/VDD" -0.817212
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" -1.01125
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" -0.107569
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/mux_2x1_ibr_2/I0" 68.4084
+cap "mux_4x1_ibr_1/OUT" "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 0.33842
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 3.7901
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 0.313604
+cap "mux_4x1_ibr_1/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" 4.118
+cap "mux_4x1_ibr_1/VDD" "mux_2x1_ibr_0/Sel" 0.870375
+cap "mux_4x1_ibr_1/S1" "mux_2x1_ibr_0/Sel" 0.19529
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/S1" 0.313604
+cap "mux_4x1_ibr_1/OUT" "mux_2x1_ibr_0/Sel" 0.425042
+cap "mux_2x1_ibr_0/Sel" "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" -1.42109e-14
+cap "mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/VDD" -0.0602452
+cap "mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/OUT" 0.0135008
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/OUT" 3.51757
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VSS" "mux_4x1_ibr_1/OUT" 0.164873
+cap "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_1/OUT" 3.41167
+cap "mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/OUT" 27.2506
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/VDD" "mux_4x1_ibr_1/OUT" 305.353
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" 1.56317
+cap "mux_4x1_ibr_0/I1" "mux_4x1_ibr_0/I3" -2.02943
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/Sel" "mux_4x1_ibr_0/VSS" 16.9836
+cap "mux_4x1_ibr_0/I1" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" 0.246251
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/I0" 0.299618
+cap "mux_4x1_ibr_1/mux_2x1_ibr_0/Sel" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" 0.0049708
+cap "mux_4x1_ibr_0/I3" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" -0.688375
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_0/nand2_ibr_2/OUT" 1.70814
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_0/VSS" 6.48579
+cap "mux_4x1_ibr_0/mux_2x1_ibr_0/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" 0.0327432
+cap "mux_4x1_ibr_0/I2" "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" 0.00210787
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" -0.228139
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" -0.428189
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_1/mux_2x1_ibr_0/Sel" 0.0109379
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" "mux_2x1_ibr_0/Sel" 0.701515
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_1/nand2_ibr_2/OUT" -0.000868166
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/I1" 0.319714
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" "mux_4x1_ibr_0/VSS" 0.0592228
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_0/VSS" 0.177596
+cap "mux_4x1_ibr_0/OUT" "mux_2x1_ibr_0/nand2_ibr_1/IN2" 13.9163
+cap "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 3.9327
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_2x1_ibr_0/Sel" 2.18321
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" "mux_2x1_ibr_0/nand2_ibr_1/IN2" 10.6041
+cap "mux_4x1_ibr_0/VSS" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" -3.18856
+cap "mux_2x1_ibr_0/Sel" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/IN2" 0.00451992
+cap "mux_4x1_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 25.6438
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_2x1_ibr_0/Sel" 0.485456
+cap "mux_2x1_ibr_0/OUT" "mux_4x1_ibr_0/OUT" -0.850706
+cap "mux_4x1_ibr_0/VSS" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/IN2" 0.303725
+cap "mux_2x1_ibr_0/Sel" "mux_2x1_ibr_0/nand2_ibr_1/IN2" -5.68434e-14
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_0/VSS" 0.473954
+cap "mux_4x1_ibr_0/OUT" "mux_2x1_ibr_0/Sel" 4.36424
+cap "mux_2x1_ibr_0/I0" "mux_4x1_ibr_0/OUT" 0.0274028
+cap "mux_4x1_ibr_0/VSS" "mux_4x1_ibr_0/OUT" 42.8887
+cap "mux_2x1_ibr_0/nand2_ibr_0/nmos_3p3_5QNVWA_1/a_n116_n44#" "mux_4x1_ibr_0/OUT" 0.255615
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" "mux_2x1_ibr_0/Sel" 0.64307
+cap "mux_2x1_ibr_0/Sel" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 101.544
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/nmos_3p3_5QNVWA_1/a_n116_n44#" "mux_4x1_ibr_0/VSS" 0.0380326
+cap "mux_4x1_ibr_0/VSS" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 32.4553
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/IN2" 0.300596
+cap "mux_2x1_ibr_0/nand2_ibr_0/nmos_3p3_5QNVWA_1/a_n116_n44#" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 0.946187
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" 0.00707234
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/I0" "mux_2x1_ibr_0/nverterlayout_ibr_0/OUT" 0.566152
+cap "mux_4x1_ibr_0/VSS" "mux_2x1_ibr_0/Sel" 3.80335
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_2x1_ibr_0/nand2_ibr_1/IN2" 3.49173
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/OUT" 34.5925
+cap "mux_2x1_ibr_0/I0" "mux_2x1_ibr_0/Sel" 0.000300337
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/nmos_3p3_5QNVWA_1/a_n116_n44#" "mux_2x1_ibr_0/Sel" 0.215801
+cap "mux_4x1_ibr_0/OUT" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_1/IN2" -1.42109e-14
+cap "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/OUT" "mux_2x1_ibr_0/Sel" 0.127247
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/nand2_ibr_2/OUT" 14.8129
+cap "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_2x1_ibr_0/OUT" 5.68434e-14
+cap "mux_4x1_ibr_0/OUT" "mux_2x1_ibr_0/OUT" -0.850706
+cap "mux_2x1_ibr_0/nand2_ibr_2/OUT" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" -2.83655
+cap "mux_2x1_ibr_0/I0" "mux_2x1_ibr_0/nand2_ibr_2/OUT" 4.75548
+merge "mux_2x1_ibr_0/a_83_n28#" "mux_4x1_ibr_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/VSUBS" "mux_4x1_ibr_1/VSUBS"
+merge "mux_4x1_ibr_1/VSUBS" "VSUBS"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/pmos_3p3_MQGBLR_0/w_n202_n210#" "mux_2x1_ibr_0/w_361_n401#" -4956.87 -846514 -19298 0 0 -91396 -9594 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -37175 -8722 0 0 0 0 0 0 0 0
+merge "mux_2x1_ibr_0/w_361_n401#" "mux_4x1_ibr_0/w_1061_146#"
+merge "mux_4x1_ibr_0/w_1061_146#" "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD"
+merge "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/VDD"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_2/VDD" "mux_2x1_ibr_0/VDD"
+merge "mux_2x1_ibr_0/VDD" "mux_4x1_ibr_0/VDD"
+merge "mux_4x1_ibr_0/VDD" "w_3279_1975#"
+merge "w_3279_1975#" "mux_4x1_ibr_1/mux_2x1_ibr_2/VDD"
+merge "mux_4x1_ibr_1/mux_2x1_ibr_2/VDD" "mux_2x1_ibr_0/nverterlayout_ibr_0/VDD"
+merge "mux_2x1_ibr_0/nverterlayout_ibr_0/VDD" "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/VDD" "m1_3377_11#"
+merge "m1_3377_11#" "w_3381_141#"
+merge "w_3381_141#" "mux_4x1_ibr_1/VDD"
+merge "mux_4x1_ibr_1/VDD" "m1_2259_n4#"
+merge "m1_2259_n4#" "m1_1129_n5#"
+merge "m1_1129_n5#" "VDD"
+merge "VDD" "a_2071_n2065#"
+merge "a_2071_n2065#" "a_977_n1993#"
+merge "a_977_n1993#" "w_2197_n242#"
+merge "w_2197_n242#" "w_1091_n180#"
+merge "w_1091_n180#" "w_422_n52#"
+merge "mux_4x1_ibr_1/mux_2x1_ibr_2/nverterlayout_ibr_0/IN" "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" -480.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3724 -250 -11340 -618 0 0 0 0 0 0
+merge "mux_4x1_ibr_1/mux_2x1_ibr_2/Sel" "mux_4x1_ibr_0/S1"
+merge "mux_4x1_ibr_0/S1" "S1"
+merge "S1" "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/IN"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/IN" "mux_4x1_ibr_0/mux_2x1_ibr_2/Sel"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_2/Sel" "mux_4x1_ibr_1/S1"
+merge "mux_4x1_ibr_1/S1" "m2_2567_n746#"
+merge "mux_4x1_ibr_1/mux_2x1_ibr_0/Sel" "mux_4x1_ibr_0/S0" -409.634 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1369 -148 -11236 -608 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/S0" "S0"
+merge "S0" "mux_4x1_ibr_0/mux_2x1_ibr_0/Sel"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_0/Sel" "mux_4x1_ibr_1/S0"
+merge "mux_4x1_ibr_1/S0" "m2_313_n737#"
+merge "mux_2x1_ibr_0/Sel" "S2" -157.174 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1369 -148 0 0 0 0 0 0 0 0
+merge "mux_2x1_ibr_0/VSS" "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/VSS" -762.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20942 -1416 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/mux_2x1_ibr_2/nverterlayout_ibr_0/VSS" "mux_4x1_ibr_0/VSS"
+merge "mux_4x1_ibr_0/VSS" "mux_4x1_ibr_1/VSS"
+merge "mux_4x1_ibr_1/VSS" "m1_49_n978#"
+merge "m1_49_n978#" "VSS"
+merge "mux_4x1_ibr_0/I1" "I5" -45.8511 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3300 -230 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/mux_2x1_ibr_0/I0" "mux_4x1_ibr_0/I0" -38.339 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2209 -188 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/I0" "I4"
+merge "mux_4x1_ibr_0/mux_2x1_ibr_1/I0" "mux_4x1_ibr_0/I2" -48.0747 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3294 -230 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/I2" "I6"
+merge "mux_4x1_ibr_0/I3" "I7" -44.3613 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3300 -230 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_1/I0" "I0" -46.6062 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3300 -230 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_1/I1" "I1" -45.9556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3300 -230 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_1/I2" "I2" -50.5917 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3713 -246 0 0 0 0 0 0 0 0
+merge "mux_2x1_ibr_0/I0" "mux_4x1_ibr_1/OUT" -543.468 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7278 -482 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_1/OUT" "m1_3301_n1554#"
+merge "mux_4x1_ibr_1/I3" "I3" -44.6416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3300 -230 0 0 0 0 0 0 0 0
+merge "mux_2x1_ibr_0/I1" "mux_4x1_ibr_0/OUT" -168.783 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4329 -378 0 0 0 0 0 0 0 0
+merge "mux_4x1_ibr_0/OUT" "m1_3300_1504#"
+merge "mux_2x1_ibr_0/OUT" "OUT" -28.4831 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1369 -148 0 0 0 0 0 0 0 0

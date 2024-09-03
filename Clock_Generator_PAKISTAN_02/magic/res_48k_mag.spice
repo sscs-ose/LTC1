@@ -1,0 +1,25 @@
+* NGSPICE file created from res_48k_mag.ext - technology: gf180mcuC
+
+.subckt ppolyf_u_TPG873 a_1000_n1102# a_280_1000# a_n440_1000# a_n920_n1102# a_n440_n1102#
++ a_520_n1102# a_40_1000# a_n200_1000# a_n1160_1000# a_n200_n1102# a_n1160_n1102#
++ w_n1344_n1286# a_1000_1000# a_760_1000# a_n680_n1102# a_n920_1000# a_760_n1102#
++ a_520_1000# a_280_n1102# a_n680_1000# a_40_n1102#
+X0 a_n920_1000# a_n920_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X1 a_280_1000# a_280_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X2 a_520_1000# a_520_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X3 a_n1160_1000# a_n1160_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X4 a_40_1000# a_40_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X5 a_760_1000# a_760_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X6 a_1000_1000# a_1000_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X7 a_n200_1000# a_n200_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X8 a_n440_1000# a_n440_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+X9 a_n680_1000# a_n680_n1102# w_n1344_n1286# ppolyf_u r_width=0.8u r_length=10u
+.ends
+
+.subckt res_48k_mag A B VDD
+Xppolyf_u_TPG873_0 m1_n2577_205# m1_n3297_2306# m1_n3777_2306# m1_n4497_204# m1_n4017_204#
++ m1_n3057_204# m1_n3297_2306# m1_n3777_2306# A m1_n3537_204# m1_n4497_204# VDD B
++ m1_n2817_2306# m1_n4017_204# m1_n4257_2306# m1_n2577_205# m1_n2817_2306# m1_n3057_204#
++ m1_n4257_2306# m1_n3537_204# ppolyf_u_TPG873
+.ends
+

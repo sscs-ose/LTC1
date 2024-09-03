@@ -1,0 +1,26 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pmos_3p3_MEVUAR in circuit NOR_Layout.spice (0)(2 instances)
+Flattening unmatched subcell nmos_3p3_GGGST2 in circuit NOR_Layout.spice (0)(2 instances)
+
+Class NOR_Layout.spice (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: NOR_Layout.spice                |Circuit 2: NOR.spice                       
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (4->2)                           |pfet_03v3 (2)                              
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes NOR_Layout.spice and NOR.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
